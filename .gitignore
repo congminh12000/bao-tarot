@@ -1,0 +1,9 @@
+logs/
+agent-skills/
+product_export.tsv
+
+app/public/.codex/
+app/public/local-xdebuginfo.php
+app/public/wp-content/uploads/
+app/public/wp-content/upgrade/
+app/public/wp-content/updraft/

@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP_Scraper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-02 15:50+0000\n"
+"PO-Revision-Date: 2024-09-02 16:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.9; wp-6.6.1\n"
+"X-Domain: extfsp"
+
+#: admin/wp-scrapper-admin.php:1470 admin/wp-scrapper-admin.php:1678
+msgid "Choose..."
+msgstr "Elegir..."
+
+#: admin/wp-scrapper-admin.php:1429
+msgid "Container Id/Class:"
+msgstr "Id./clase del contenedor:"
+
+#: admin/wp-scrapper-admin.php:1693
+msgid "Content Class:"
+msgstr "Clase de contenido:"
+
+#. Author of the plugin
+msgid "Extendons"
+msgstr "Extensiones"
+
+#: admin/wp-scrapper-admin.php:1418
+msgid "Extendons Custom Site Scrapper"
+msgstr "Scrapper de sitios personalizados de Extendons"
+
+#: admin/wp-scrapper-admin.php:1671
+msgid "Extendons WP Scrapper"
+msgstr "Extensiones WP Scrapper"
+
+#: admin/wp-scrapper-admin.php:1424 admin/wp-scrapper-admin.php:1431
+#: admin/wp-scrapper-admin.php:1439 admin/wp-scrapper-admin.php:1446
+#: admin/wp-scrapper-admin.php:1453 admin/wp-scrapper-admin.php:1460
+msgid "Help"
+msgstr "Ayuda"
+
+#. Author URI of the plugin
+msgid "http://extendons.com/"
+msgstr "http://extendons.com/"
+
+#. URI of the plugin
+msgid "https://www.extendons.com/"
+msgstr "https://www.extendons.com/"
+
+#: admin/wp-scrapper-admin.php:1684
+msgid ""
+"If products are not scrapable directly, please check the checkbox and "
+"provide further details:"
+msgstr ""
+"Si los productos no se pueden desechar directamente, marque la casilla de "
+"verificación y proporcione más detalles:"
+
+#: admin/wp-scrapper-admin.php:1697
+msgid "Image Class:"
+msgstr "Clase de imagen:"
+
+#: admin/wp-scrapper-admin.php:1482 admin/wp-scrapper-admin.php:1707
+msgid "Import"
+msgstr "Importar"
+
+#: admin/batching.php:61 admin/batching.php:65
+msgid "Please Select the scrape type"
+msgstr "Por favor seleccione el tipo de raspado"
+
+#: admin/wp-scrapper-admin.php:63 admin/wp-scrapper-admin.php:74
+#: admin/wp-scrapper-admin.php:275
+msgid "Please select the scrape type"
+msgstr "Por favor seleccione el tipo de raspado"
+
+#: admin/wp-scrapper-admin.php:1691
+msgid "Price Class:"
+msgstr "Clase de precio:"
+
+#: admin/wp-scrapper-admin.php:1451
+msgid "Product Description Id/Class:"
+msgstr "Descripción del producto Id/Clase:"
+
+#: admin/wp-scrapper-admin.php:1458
+msgid "Product Image Id/Class:"
+msgstr "Id./clase de imagen del producto:"
+
+#: admin/wp-scrapper-admin.php:1444
+msgid "Product Price Id/Class:"
+msgstr "Id./Clase del precio del producto:"
+
+#: admin/wp-scrapper-admin.php:1437
+msgid "Product Title Id/Class:"
+msgstr "Id./clase del título del producto:"
+
+#: admin/wp-scrapper-admin.php:1705
+msgid "Result:"
+msgstr "Resultado:"
+
+#. Description of the plugin
+msgid "Scrap each and everything from any wordpress site"
+msgstr "Elimina todo lo que puedas de cualquier sitio de WordPress"
+
+#: admin/wp-scrapper-admin.php:1475 admin/wp-scrapper-admin.php:1700
+msgid "Search"
+msgstr "Buscar"
+
+#: admin/wp-scrapper-admin.php:1468
+msgid "Select Type"
+msgstr "Seleccionar tipo"
+
+#: admin/wp-scrapper-admin.php:1675
+msgid "Select Type:"
+msgstr "Seleccionar tipo:"
+
+#: admin/wp-scrapper-admin.php:1422
+msgid "Shop Container Id/Class:"
+msgstr "Id./clase del contenedor de la tienda:"
+
+#: admin/wp-scrapper-admin.php:1473 admin/wp-scrapper-admin.php:1681
+msgid "Shop/Category Page"
+msgstr "Página de la tienda/categoría"
+
+#: admin/wp-scrapper-admin.php:1679
+msgid "Single Post Page"
+msgstr "Página de publicación única"
+
+#: admin/wp-scrapper-admin.php:1472 admin/wp-scrapper-admin.php:1680
+msgid "Single Product Page"
+msgstr "Página de producto individual"
+
+#: admin/wp-scrapper-admin.php:1695
+msgid "SKU Class:"
+msgstr "Clase SKU:"
+
+#: admin/wp-scrapper-admin.php:1420
+msgid "Start Id name with \"#\" and Class name with \".\""
+msgstr "Comience con el nombre de Id. \"#\" y el nombre de la clase con \".\""
+
+#: admin/wp-scrapper-admin.php:1466 admin/wp-scrapper-admin.php:1673
+msgid "Target link:"
+msgstr "Enlace de destino:"
+
+#: admin/wp-scrapper-admin.php:1689
+msgid "Title Class:"
+msgstr "Título Clase:"
+
+#. Name of the plugin
+msgid "WP_Scraper"
+msgstr "Raspador WP"

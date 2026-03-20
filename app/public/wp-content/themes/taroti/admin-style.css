@@ -1,0 +1,103 @@
+/*class*/
+.nicdark_section { float: left; width: 100%; box-sizing: border-box;  }
+
+.nicdark_margin_0 { margin: 0px;  }
+.nicdark_margin_top_10 { margin-top: 10px;  }
+.nicdark_margin_top_15 { margin-top: 15px;  }
+.nicdark_margin_top_15_important { margin-top: 15px !important;  }
+.nicdark_margin_top_20 { margin-top: 20px;  }
+.nicdark_margin_top_25 { margin-top: 25px;  }
+.nicdark_margin_top_30 { margin-top: 30px;  }
+.nicdark_margin_bottom_10 { margin-bottom: 10px; }
+.nicdark_margin_bottom_20 { margin-bottom: 20px; }
+
+.nicdark_margin_left_10 { margin-left: 10px; }
+.nicdark_margin_left_20_percentage { margin-left: 20%; }
+
+.nicdark_padding_0 { padding: 0px;  }
+.nicdark_padding_20 { padding: 20px;  }
+.nicdark_padding_8_20 { padding: 8px 20px; }
+.nicdark_padding_top_120 { padding-top: 120px;  }
+
+.nicdark_padding_bottom_120 { padding-bottom: 120px;  }
+.nicdark_padding_bottom_50 { padding-bottom: 50px;  }
+
+.nicdark_padding_right_20 { padding-right: 20px; }
+
+.nicdark_padding_left_2 { padding-left: 2px; }
+
+.nicdark_background_color_8fb1a6 { background-color: #8fb1a6; }
+.nicdark_background_color_E7E7E7 {  background-color: #e7e7e7; }
+.nicdark_background_color_1d2327 {  background-color: #1d2327; }
+.nicdark_background_color_ffffff { background-color:#fff; }
+.nicdark_background_color_2c3338 { background-color:#2c3338; }
+.nicdark_background_color_2271b1 { background-color:#2271b1; }
+
+.nicdark_box_shadow_0_1_1_000_4 { box-shadow: 0 1px 1px rgb(0 0 0 / 4%);  }
+
+.nicdark_display_inline_block { display: inline-block;  }
+.nicdark_display_block { display: block;  }
+
+.nicdark_box_sizing_border_box { box-sizing: border-box;  }
+
+.nicdark_text_align_center { text-align: center;  }
+
+.nicdark_float_left { float: left; }
+
+
+.nicdark_border_1_solid_e5e5e5 { border:1px solid #e5e5e5; }
+.nicdark_border_1_solid_e5e5e5 { border:1px solid #e5e5e5; }
+.nicdark_border_bottom_1_solid_cccccc { border-bottom: 1px solid #cccccc; }
+.nicdark_border_bottom_3_solid_2271b1 { border-bottom:3px solid #2271b1; }
+.nicdark_border_top_width_0 { border-top-width:0px;  }
+.nicdark_border_left_width_0 { border-left-width:0px;   }
+
+
+.nicdark_cursor_auto { cursor: auto;  }
+
+.nicdark_color_ffffff { color: #ffffff; }
+.nicdark_color_666666 { color: #666666;  }
+.nicdark_color_a0a5aa { color: #a0a5aa;  }
+
+
+.nicdark_width_20_percentage { width: 20%;  }
+.nicdark_width_40_percentage { width: 40%;  }
+.nicdark_width_50_percentage { width: 50%;  }
+.nicdark_width_80_percentage { width: 80%;  }
+.nicdark_width_100_percentage { width: 100%;  }
+
+.nicdark_height_1 { height: 1px;  }
+.nicdark_min_height_3000 { min-height: 3000px; }
+
+.nicdark_text_decoration_none { text-decoration:none;  }
+
+.nicdark_overflow_hidden { overflow: hidden; }
+
+.nicdark_position_relative { position: relative; }
+.nicdark_position_absolute { position: absolute; }
+
+.nicdark_list_style_none { list-style: none; }
+
+.nicdark_font_size_14px { font-size: 14px; }
+
+
+/*theme image welcome page*/
+@media only screen and (min-width: 2100px) and (max-width: 2300px) { #nicdark_theme_image { width: 50%; margin-bottom: 20px; padding: 0px 100px; } }
+@media only screen and (min-width: 1800px) and (max-width: 2099px) { #nicdark_theme_image { width: 60%; margin-bottom: 20px; padding: 0px 100px; } }
+@media only screen and (min-width: 1400px) and (max-width: 1799px) { #nicdark_theme_image { width: 80%; margin-bottom: 20px; padding: 0px 50px; } }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) { #nicdark_theme_image { width: 100%; margin-bottom: 20px; padding: 0px; } }
+
+
+/*disable theme options maneu label*/
+#toplevel_page_nd-shortcodes-settings,
+#toplevel_page_nd-shortcodes-themes { display:none; }
+
+ 
+
+
+
+
+
+
+
+ 
