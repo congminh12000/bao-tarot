@@ -30,6 +30,16 @@ function label(x, y, size, text, o) {
 
 function stringPath(d) { return '<path class="string" d="' + d + '"/>'; }
 
+// Motion markers read by the video build (ignored by the still storyboard).
+// Times are seconds from the start of the scene.
+//   data-pop="t"            pop in at t
+//   data-wipe="t"           wipe in left-to-right at t
+//   data-drift="dx,dy[,r]"  move across the whole scene
+//   data-scale="a,b"        scale a -> b across the scene (data-origin="x y" pins a point)
+//   data-bob="amp"          float up and down
+//   data-fall="dy"          looping fall (rain)
+function anim(attrs, body) { return "<g " + attrs + ">" + body + "</g>"; }
+
 // ---------------------------------------------------------------- people
 
 var BODY = {
@@ -293,7 +303,8 @@ var SYMPTOMS = [["tear", "BUỒN BÃ"], ["guitar", "MẤT HỨNG THÚ"], ["bowl"
                 ["book", "KHÓ TẬP TRUNG"], ["snail", "BỒN CHỒN · CHẬM"], ["mirror", "VÔ GIÁ TRỊ"], ["candle", "NGHĨ VỀ CÁI CHẾT"]];
 
 // 3x3 grid of symptom cards; the first `shown` cards get their icon.
-function symptomGrid(shown) {
+// pops[i] (optional) is the moment card i's icon and label pop in.
+function symptomGrid(shown, pops) {
   var out = "", text = "";
   for (var i = 0; i < 9; i++) {
     var col = i % 3, row = Math.floor(i / 3);
@@ -301,8 +312,11 @@ function symptomGrid(shown) {
     out += '<rect class="line" style="stroke-width:5" x="' + x + '" y="' + y + '" width="250" height="250" rx="22"/>';
     text += label(x + 24, y + 48, 40, String(i + 1), { anchor: "start" });
     if (i < shown) {
-      out += g("translate(" + (x + 125) + " " + (y + 110) + ") scale(0.85)", ICONS[SYMPTOMS[i][0]]);
-      text += label(x + 125, y + 230, 38, SYMPTOMS[i][1]);
+      var icon = g("translate(" + (x + 125) + " " + (y + 110) + ") scale(0.85)", ICONS[SYMPTOMS[i][0]]);
+      var name = label(x + 125, y + 230, 38, SYMPTOMS[i][1]);
+      var at = pops && pops[i] !== undefined ? 'data-pop="' + pops[i] + '"' : "";
+      out += at ? anim(at, icon) : icon;
+      text += at ? anim(at, name) : name;
     }
   }
   return [out, text];

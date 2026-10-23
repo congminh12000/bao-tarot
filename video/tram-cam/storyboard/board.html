@@ -22,7 +22,7 @@
     "Video dọc 9:16 · khoảng 2:55 · " + SCENES.length + " khung hình" + (part ? " · phần " + part + "/2" : "");
   document.getElementById("grid").innerHTML = list.map(function (s) {
     return '<figure><img src="frames/' + s.id + '.png" alt="Cảnh ' + s.id + '">' +
-      '<figcaption><b>' + s.id + '</b> · ' + s.time + '<span>' + s.cue + '</span></figcaption></figure>';
+      '<figcaption><b>' + s.id + '</b> · ' + s.time + '<span>' + s.cue.replace(/\|/g, " ") + '</span></figcaption></figure>';
   }).join("");
 </script>
 </body>
