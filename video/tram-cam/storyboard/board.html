@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Bảng phân cảnh – Trầm cảm là gì?</title>
+<link rel="stylesheet" href="storyboard.css">
+</head>
+<body class="board">
+<h1 id="title">BẢNG PHÂN CẢNH · TRẦM CẢM LÀ GÌ?</h1>
+<p class="meta" id="meta"></p>
+<div class="grid" id="grid"></div>
+<script src="lib.js"></script>
+<script src="scenes.js"></script>
+<script>
+  // board.html?part=1 → scenes 01–15, part=2 → 16–25b, no part → all.
+  var part = new URLSearchParams(location.search).get("part");
+  var list = SCENES.filter(function (s) {
+    var n = parseInt(s.id, 10);
+    return !part || (part === "1" ? n <= 15 : n >= 16);
+  });
+  document.getElementById("meta").textContent =
+    "Video dọc 9:16 · khoảng 2:55 · " + SCENES.length + " khung hình" + (part ? " · phần " + part + "/2" : "");
+  document.getElementById("grid").innerHTML = list.map(function (s) {
+    return '<figure><img src="frames/' + s.id + '.png" alt="Cảnh ' + s.id + '">' +
+      '<figcaption><b>' + s.id + '</b> · ' + s.time + '<span>' + s.cue + '</span></figcaption></figure>';
+  }).join("");
+</script>
+</body>
+</html>

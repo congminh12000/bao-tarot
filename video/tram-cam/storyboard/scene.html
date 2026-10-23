@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Storyboard – Trầm cảm là gì?</title>
+<link rel="stylesheet" href="storyboard.css">
+</head>
+<body>
+<div class="frame" id="frame">
+  <svg id="art" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div class="subtitle" id="sub"><span></span></div>
+  <div class="guides"><div class="top"></div><div class="right"></div><div class="bottom"></div></div>
+</div>
+<script src="lib.js"></script>
+<script src="scenes.js"></script>
+<script>
+  // Open as scene.html?s=01 (ids are listed in scenes.js).
+  (function () {
+    var id = new URLSearchParams(location.search).get("s") || "01";
+    var sc = SCENES.filter(function (s) { return s.id === id; })[0] || SCENES[0];
+    var bg = sc.bg === "ink" ? INK : PAPER;
+    document.title = "Cảnh " + sc.id + " – Trầm cảm là gì?";
+    document.getElementById("frame").style.background = bg;
+    document.getElementById("art").innerHTML =
+      '<defs>' +
+      '<filter id="wobble" x="-10%" y="-10%" width="120%" height="120%">' +
+      '<feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" result="n"/>' +
+      '<feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter>' +
+      '<filter id="wobble-soft" x="-10%" y="-10%" width="120%" height="120%">' +
+      '<feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="1" data-offset="5" result="n"/>' +
+      '<feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter>' +
+      '<pattern id="hatch" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)">' +
+      '<line x1="0" y1="0" x2="0" y2="7" stroke="' + CREAM + '" stroke-width="2.4"/></pattern>' +
+      '</defs>' +
+      '<rect width="1080" height="1920" fill="' + bg + '"/>' +
+      '<g filter="url(#wobble)">' + sc.art() + '</g>' +
+      '<g filter="url(#wobble-soft)">' + sc.text() + '</g>';
+    var sub = document.getElementById("sub");
+    if (sc.sub) sub.firstChild.textContent = sc.sub; else sub.style.display = "none";
+  })();
+</script>
+<script src="../style-frames/frame.js"></script>
+</body>
+</html>
