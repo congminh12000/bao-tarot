@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Cảnh 1 – Buồn hay trầm cảm?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="frame">
+  <svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- Hand-drawn wobble ("boil"): seed is swapped by frame.js -->
+      <filter id="wobble" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <filter id="wobble-soft" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="1" data-offset="5" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+
+      <!-- An, facing left, head bowed. Local box ~ 0..170 x 0..335 -->
+      <g id="an-standing-sad">
+        <path class="cream" d="M128 112 C150 100 172 118 165 140 C160 155 140 158 128 150 Z"/>
+        <path class="cream" d="M92 118 C62 138 48 200 56 262 L158 264 C172 214 170 150 140 116 Z"/>
+        <path class="line" d="M130 152 C142 190 137 226 120 242"/>
+        <path class="cream" d="M70 262 L72 318 L98 318 L100 262 Z"/>
+        <path class="cream" d="M115 262 L122 316 L148 314 L150 262 Z"/>
+        <path class="ink" d="M48 334 C48 312 102 310 102 334 Z"/>
+        <path class="ink" d="M108 332 C108 310 156 310 156 332 Z"/>
+        <path d="M102 150 C82 166 58 174 36 182" fill="none" stroke="#141414" stroke-width="30" stroke-linecap="round"/>
+        <path d="M102 150 C82 166 58 174 36 182" fill="none" stroke="#E8E2CF" stroke-width="20" stroke-linecap="round"/>
+        <circle class="cream" cx="32" cy="182" r="13"/>
+        <path class="cream" d="M118 18 C150 20 166 58 154 92 C146 114 120 124 96 118 C86 116 78 110 72 104 L64 102 C58 101 56 96 60 92 L38 86 C30 84 30 76 38 74 L66 66 C66 40 88 16 118 18 Z"/>
+        <path class="ink" d="M70 52 C76 22 120 6 150 34 C160 46 162 60 158 70 C150 52 128 40 104 42 C90 43 78 48 70 52 Z"/>
+        <circle class="cream" cx="124" cy="76" r="10" style="stroke-width:4"/>
+        <path class="line" d="M78 58 Q90 54 100 59" style="stroke-width:5"/>
+        <circle class="ink" cx="90" cy="67" r="5"/>
+        <path class="line" d="M58 100 Q67 93 76 99" style="stroke-width:5"/>
+      </g>
+    </defs>
+
+    <g filter="url(#wobble)">
+      <!-- Balloon string: cloud -> An's hand -->
+      <path class="string" d="M690 1080 C700 1200 760 1260 752 1352"/>
+
+      <!-- The black cloud ("Trầm cảm") -->
+      <g data-bob="8">
+        <g class="ink">
+          <circle cx="250" cy="620" r="190"/>
+          <circle cx="450" cy="480" r="230"/>
+          <circle cx="690" cy="520" r="200"/>
+          <circle cx="800" cy="700" r="150"/>
+          <circle cx="700" cy="900" r="210"/>
+          <circle cx="450" cy="930" r="230"/>
+          <circle cx="230" cy="850" r="190"/>
+          <circle cx="480" cy="700" r="280"/>
+        </g>
+        <!-- Heavy, half-closed eyes, looking down at An -->
+        <g>
+          <ellipse class="cline" cx="640" cy="470" rx="36" ry="22"/>
+          <path class="cline" d="M606 466 L674 466"/>
+          <ellipse cx="646" cy="480" rx="10" ry="6" fill="#E8E2CF"/>
+          <ellipse class="cline" cx="752" cy="480" rx="36" ry="22"/>
+          <path class="cline" d="M718 476 L786 476"/>
+          <ellipse cx="758" cy="490" rx="10" ry="6" fill="#E8E2CF"/>
+        </g>
+      </g>
+
+      <!-- An -->
+      <use href="#an-standing-sad" transform="translate(720 1168)"/>
+    </g>
+
+    <!-- Hand-lettered title on the cloud -->
+    <g data-bob="8">
+      <g filter="url(#wobble-soft)">
+        <text class="letter" x="470" y="770" font-size="150">BUỒN HAY</text>
+        <text class="letter" x="470" y="975" font-size="215">TRẦM CẢM?</text>
+      </g>
+    </g>
+  </svg>
+
+  <div class="subtitle"><span>Bạn đang buồn… hay bạn đang trầm cảm?</span></div>
+  <div class="guides"><div class="top"></div><div class="right"></div><div class="bottom"></div></div>
+</div>
+<script src="frame.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Cảnh 16 – Trông vẫn ổn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="frame">
+  <svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wobble" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+
+      <!-- An, upper body, laughing. Drawn facing left; mirrored in use. -->
+      <g id="an-sitting-laugh">
+        <path class="cream" d="M128 112 C150 100 172 118 165 140 C160 155 140 158 128 150 Z"/>
+        <path class="cream" d="M92 118 C62 138 50 190 52 240 L160 240 C168 196 168 150 140 116 Z"/>
+        <path class="line" d="M130 152 C142 186 138 214 124 232"/>
+        <path d="M98 150 C76 170 60 196 40 214" fill="none" stroke="#141414" stroke-width="30" stroke-linecap="round"/>
+        <path d="M98 150 C76 170 60 196 40 214" fill="none" stroke="#E8E2CF" stroke-width="20" stroke-linecap="round"/>
+        <g transform="rotate(14 110 70)">
+          <path class="cream" d="M118 18 C150 20 166 58 154 92 C146 114 120 124 96 118 C86 116 78 110 72 104 L64 102 C58 101 56 96 60 92 L38 86 C30 84 30 76 38 74 L66 66 C66 40 88 16 118 18 Z"/>
+          <path class="ink" d="M70 52 C76 22 120 6 150 34 C160 46 162 60 158 70 C150 52 128 40 104 42 C90 43 78 48 70 52 Z"/>
+          <circle class="cream" cx="124" cy="76" r="10" style="stroke-width:4"/>
+          <!-- closed, smiling eye + open laughing mouth -->
+          <path class="line" d="M80 68 Q90 58 100 68" style="stroke-width:5"/>
+          <path class="ink" d="M60 96 Q72 116 88 100 Z"/>
+        </g>
+      </g>
+
+      <!-- Friend: inverse colours (black coat, cream details), facing left -->
+      <g id="friend-sitting-laugh">
+        <path class="ink" d="M90 120 C58 140 46 192 48 240 L166 240 C172 196 170 150 142 118 Z"/>
+        <path class="cline" d="M132 154 C144 186 140 214 126 232" style="stroke-width:6"/>
+        <path d="M96 152 C74 172 58 198 38 214" fill="none" stroke="#141414" stroke-width="26" stroke-linecap="round"/>
+        <path class="cline" d="M96 152 C74 172 58 198 38 214" style="stroke-width:6"/>
+        <g transform="rotate(-8 110 70)">
+          <path class="cream" d="M118 22 C150 24 164 60 152 94 C144 116 120 124 96 118 C86 116 78 110 72 104 L64 102 C58 101 56 96 60 92 L44 84 C38 82 38 76 44 74 L66 66 C66 42 88 20 118 22 Z"/>
+          <!-- tall puff of hair -->
+          <path class="ink" d="M66 56 C56 20 80 -14 116 -10 C150 -8 172 22 164 60 C158 76 156 86 150 92 C150 66 136 46 110 44 C92 44 76 50 66 56 Z"/>
+          <circle class="cream" cx="128" cy="80" r="10" style="stroke-width:4"/>
+          <path class="line" d="M80 70 Q90 60 100 70" style="stroke-width:5"/>
+          <path class="ink" d="M60 96 Q72 114 86 100 Z"/>
+        </g>
+      </g>
+
+      <!-- Coffee cup -->
+      <g id="cup">
+        <path class="cream" d="M0 0 L60 0 L54 58 C53 64 48 68 42 68 L18 68 C12 68 7 64 6 58 Z"/>
+        <path class="line" d="M58 14 C82 12 84 44 56 44" style="stroke-width:5"/>
+        <path class="line" d="M18 -18 C10 -32 28 -42 20 -58" style="stroke-width:4"/>
+        <path class="line" d="M40 -18 C32 -32 50 -42 42 -58" style="stroke-width:4"/>
+      </g>
+    </defs>
+
+    <g filter="url(#wobble)">
+      <!-- Wall / floor line -->
+      <path class="line" d="M60 1420 L1020 1420" style="stroke-width:5"/>
+
+      <!-- An's shadow on the wall: huddled, holding the cloud -->
+      <!-- curved back, face buried in the knees, arms wrapped round the shins -->
+      <path class="ink" d="M200 1248 C130 1120 150 880 250 770 C290 725 330 700 360 690 C400 630 500 630 530 690 C550 730 545 770 520 790 L532 802 C560 770 630 790 630 850 C630 900 615 1000 612 1170 C650 1180 665 1245 620 1248 Z"/>
+      <path class="cline" d="M318 790 C330 900 360 985 420 998 C500 1004 560 990 604 974"/>
+      <circle cx="606" cy="972" r="13" fill="#E8E2CF"/>
+
+      <!-- string from the shadow's hand to its cloud -->
+      <path class="string" d="M606 960 C650 820 610 650 575 520"/>
+      <g data-bob="6">
+        <g class="ink">
+          <circle cx="420" cy="420" r="110"/>
+          <circle cx="545" cy="350" r="130"/>
+          <circle cx="670" cy="410" r="110"/>
+          <circle cx="560" cy="470" r="120"/>
+          <circle cx="440" cy="485" r="95"/>
+          <circle cx="690" cy="495" r="80"/>
+        </g>
+        <ellipse class="cline" cx="545" cy="400" rx="28" ry="17" style="stroke-width:7"/>
+        <path class="cline" d="M518 396 L572 396" style="stroke-width:7"/>
+        <ellipse cx="540" cy="408" rx="8" ry="5" fill="#E8E2CF"/>
+        <ellipse class="cline" cx="635" cy="410" rx="28" ry="17" style="stroke-width:7"/>
+        <path class="cline" d="M608 406 L662 406" style="stroke-width:7"/>
+        <ellipse cx="630" cy="418" rx="8" ry="5" fill="#E8E2CF"/>
+      </g>
+
+      <!-- An (left, facing right) and friend (right, facing left), laughing -->
+      <use href="#an-sitting-laugh" transform="translate(480 1022) scale(-1 1)"/>
+      <use href="#friend-sitting-laugh" transform="translate(620 1018)"/>
+
+      <!-- Table -->
+      <rect class="ink" x="250" y="1250" width="580" height="40" rx="8"/>
+      <rect class="ink" x="300" y="1286" width="26" height="136" rx="6"/>
+      <rect class="ink" x="754" y="1286" width="26" height="136" rx="6"/>
+      <use href="#cup" transform="translate(470 1184)"/>
+      <use href="#cup" transform="translate(610 1184) scale(-1 1) translate(-60 0)"/>
+    </g>
+  </svg>
+
+  <div class="subtitle"><span>Một người trông vẫn ổn có thể đang rất chật vật bên trong.</span></div>
+  <div class="guides"><div class="top"></div><div class="right"></div><div class="bottom"></div></div>
+</div>
+<script src="frame.js"></script>
+</body>
+</html>

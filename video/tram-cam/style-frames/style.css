@@ -1,0 +1,76 @@
+@import url("fonts/fonts.css");
+
+:root {
+  --paper: #FFFFFF;
+  --ink: #141414;
+  --cream: #E8E2CF;
+  --hope: #F2B33D;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 1080px;
+  height: 1920px;
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.frame {
+  position: relative;
+  width: 1080px;
+  height: 1920px;
+  background: var(--paper);
+}
+
+.frame > svg {
+  position: absolute;
+  inset: 0;
+  width: 1080px;
+  height: 1920px;
+}
+
+/* SVG paint classes */
+.ink   { fill: var(--ink); }
+.cream { fill: var(--cream); stroke: var(--ink); stroke-width: 5; stroke-linejoin: round; }
+.line  { fill: none; stroke: var(--ink); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+.cline { fill: none; stroke: var(--cream); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+.string { fill: none; stroke: var(--ink); stroke-width: 5; stroke-linecap: round; }
+
+/* Hand-lettered illustration text */
+.letter {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  fill: var(--cream);
+  text-anchor: middle;
+}
+
+/* Subtitle (phụ đề) */
+.subtitle {
+  position: absolute;
+  left: 60px;
+  right: 120px;
+  top: 1540px;
+  display: flex;
+  justify-content: center;
+}
+.subtitle span {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  text-wrap: balance;
+  line-height: 1.3;
+  color: var(--cream);
+  background: var(--ink);
+  padding: 14px 30px 18px;
+  border-radius: 22px;
+  text-align: center;
+}
+
+/* Safe-zone guides: open the file with #guides */
+.guides { display: none; position: absolute; inset: 0; pointer-events: none; }
+.guides.on { display: block; }
+.guides div { position: absolute; background: rgba(230, 40, 40, 0.18); border: 2px dashed rgba(230, 40, 40, 0.6); }
+.guides .top    { left: 0; right: 0; top: 0; height: 200px; }
+.guides .bottom { left: 0; right: 0; bottom: 0; height: 420px; }
+.guides .right  { right: 0; top: 200px; bottom: 420px; width: 140px; }
