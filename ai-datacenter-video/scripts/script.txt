@@ -1,0 +1,5 @@
+You type a question. How do I make potato salad? You hit enter, and it feels like the answer lives inside your laptop. But your six words just left your house. They raced through the cables under your street and landed in a building like this, miles away.
+This is an AI data center. A giant warehouse packed with computers, and it's where your answer actually gets made.
+Inside, rows of chips turn your words into numbers and run billions of tiny math problems on them, all at the same time. All that math makes heat. A lot of it. So the data center pumps cold water past every rack, and burns even more power just to stop the chips from cooking themselves.
+One AI data center can use as much electricity as a small city. And since 2019, more than a thousand of them have gone up around the world.
+So the next time you ask AI something, that's where your question goes.

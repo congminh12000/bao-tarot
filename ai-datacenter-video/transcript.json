@@ -1,0 +1,827 @@
+[
+{
+"text": "You",
+"start": 0.0,
+"end": 0.24
+},
+{
+"text": "type",
+"start": 0.24,
+"end": 0.48
+},
+{
+"text": "a",
+"start": 0.48,
+"end": 0.64
+},
+{
+"text": "question,",
+"start": 0.64,
+"end": 1.28
+},
+{
+"text": "how",
+"start": 1.28,
+"end": 1.44
+},
+{
+"text": "do",
+"start": 1.44,
+"end": 1.6
+},
+{
+"text": "I",
+"start": 1.6,
+"end": 1.76
+},
+{
+"text": "make",
+"start": 1.76,
+"end": 1.92
+},
+{
+"text": "potato",
+"start": 1.92,
+"end": 2.48
+},
+{
+"text": "salad?",
+"start": 2.48,
+"end": 3.04
+},
+{
+"text": "You",
+"start": 3.04,
+"end": 3.2
+},
+{
+"text": "hit",
+"start": 3.2,
+"end": 3.44
+},
+{
+"text": "enter,",
+"start": 3.44,
+"end": 3.92
+},
+{
+"text": "and",
+"start": 3.92,
+"end": 4.08
+},
+{
+"text": "it",
+"start": 4.08,
+"end": 4.24
+},
+{
+"text": "feels",
+"start": 4.24,
+"end": 4.4
+},
+{
+"text": "like",
+"start": 4.4,
+"end": 4.64
+},
+{
+"text": "the",
+"start": 4.64,
+"end": 4.72
+},
+{
+"text": "answer",
+"start": 4.72,
+"end": 5.12
+},
+{
+"text": "lives",
+"start": 5.12,
+"end": 5.6
+},
+{
+"text": "inside",
+"start": 5.6,
+"end": 5.92
+},
+{
+"text": "your",
+"start": 5.92,
+"end": 6.08
+},
+{
+"text": "laptop.",
+"start": 6.08,
+"end": 6.8
+},
+{
+"text": "But",
+"start": 6.8,
+"end": 6.96
+},
+{
+"text": "your",
+"start": 6.96,
+"end": 7.12
+},
+{
+"text": "six",
+"start": 7.12,
+"end": 7.44
+},
+{
+"text": "words",
+"start": 7.44,
+"end": 7.76
+},
+{
+"text": "just",
+"start": 7.76,
+"end": 8.0
+},
+{
+"text": "left",
+"start": 8.0,
+"end": 8.24
+},
+{
+"text": "your",
+"start": 8.24,
+"end": 8.4
+},
+{
+"text": "house.",
+"start": 8.4,
+"end": 8.88
+},
+{
+"text": "They",
+"start": 8.88,
+"end": 9.04
+},
+{
+"text": "raced",
+"start": 9.04,
+"end": 9.44
+},
+{
+"text": "through",
+"start": 9.44,
+"end": 9.6
+},
+{
+"text": "the",
+"start": 9.6,
+"end": 9.68
+},
+{
+"text": "cables",
+"start": 9.68,
+"end": 10.16
+},
+{
+"text": "under",
+"start": 10.16,
+"end": 10.4
+},
+{
+"text": "your",
+"start": 10.4,
+"end": 10.56
+},
+{
+"text": "street",
+"start": 10.56,
+"end": 10.96
+},
+{
+"text": "and",
+"start": 10.96,
+"end": 11.12
+},
+{
+"text": "landed",
+"start": 11.12,
+"end": 11.52
+},
+{
+"text": "in",
+"start": 11.52,
+"end": 11.68
+},
+{
+"text": "a",
+"start": 11.68,
+"end": 11.76
+},
+{
+"text": "building",
+"start": 11.76,
+"end": 12.16
+},
+{
+"text": "like",
+"start": 12.16,
+"end": 12.32
+},
+{
+"text": "this,",
+"start": 12.32,
+"end": 12.88
+},
+{
+"text": "miles",
+"start": 12.88,
+"end": 13.36
+},
+{
+"text": "away.",
+"start": 13.36,
+"end": 14.0
+},
+{
+"text": "This",
+"start": 14.0,
+"end": 14.16
+},
+{
+"text": "is",
+"start": 14.16,
+"end": 14.32
+},
+{
+"text": "an",
+"start": 14.32,
+"end": 14.56
+},
+{
+"text": "AI",
+"start": 14.56,
+"end": 14.96
+},
+{
+"text": "data",
+"start": 14.96,
+"end": 15.28
+},
+{
+"text": "center,",
+"start": 15.28,
+"end": 15.92
+},
+{
+"text": "a",
+"start": 15.92,
+"end": 16.08
+},
+{
+"text": "giant",
+"start": 16.08,
+"end": 16.4
+},
+{
+"text": "warehouse",
+"start": 16.4,
+"end": 16.96
+},
+{
+"text": "packed",
+"start": 16.96,
+"end": 17.28
+},
+{
+"text": "with",
+"start": 17.28,
+"end": 17.44
+},
+{
+"text": "computers.",
+"start": 17.44,
+"end": 18.2
+},
+{
+"text": "And",
+"start": 18.2,
+"end": 18.36
+},
+{
+"text": "it's",
+"start": 18.36,
+"end": 18.52
+},
+{
+"text": "where",
+"start": 18.52,
+"end": 18.68
+},
+{
+"text": "your",
+"start": 18.68,
+"end": 18.84
+},
+{
+"text": "answer",
+"start": 18.84,
+"end": 19.24
+},
+{
+"text": "actually",
+"start": 19.24,
+"end": 19.56
+},
+{
+"text": "gets",
+"start": 19.56,
+"end": 19.96
+},
+{
+"text": "made.",
+"start": 19.96,
+"end": 20.6
+},
+{
+"text": "Inside,",
+"start": 20.6,
+"end": 21.24
+},
+{
+"text": "rows",
+"start": 21.24,
+"end": 21.56
+},
+{
+"text": "of",
+"start": 21.56,
+"end": 21.64
+},
+{
+"text": "chips",
+"start": 21.64,
+"end": 22.04
+},
+{
+"text": "turn",
+"start": 22.04,
+"end": 22.28
+},
+{
+"text": "your",
+"start": 22.28,
+"end": 22.44
+},
+{
+"text": "words",
+"start": 22.44,
+"end": 22.68
+},
+{
+"text": "into",
+"start": 22.68,
+"end": 22.92
+},
+{
+"text": "numbers",
+"start": 22.92,
+"end": 23.4
+},
+{
+"text": "and",
+"start": 23.4,
+"end": 23.64
+},
+{
+"text": "run",
+"start": 23.64,
+"end": 23.88
+},
+{
+"text": "billions",
+"start": 23.88,
+"end": 24.36
+},
+{
+"text": "of",
+"start": 24.36,
+"end": 24.52
+},
+{
+"text": "tiny",
+"start": 24.52,
+"end": 24.92
+},
+{
+"text": "math",
+"start": 24.92,
+"end": 25.32
+},
+{
+"text": "problems",
+"start": 25.32,
+"end": 25.8
+},
+{
+"text": "on",
+"start": 25.8,
+"end": 25.96
+},
+{
+"text": "them,",
+"start": 25.96,
+"end": 26.44
+},
+{
+"text": "all",
+"start": 26.44,
+"end": 26.68
+},
+{
+"text": "at",
+"start": 26.68,
+"end": 26.84
+},
+{
+"text": "the",
+"start": 26.84,
+"end": 27.0
+},
+{
+"text": "same",
+"start": 27.0,
+"end": 27.16
+},
+{
+"text": "time.",
+"start": 27.16,
+"end": 27.72
+},
+{
+"text": "All",
+"start": 27.72,
+"end": 27.88
+},
+{
+"text": "that",
+"start": 27.88,
+"end": 28.04
+},
+{
+"text": "math",
+"start": 28.04,
+"end": 28.36
+},
+{
+"text": "makes",
+"start": 28.36,
+"end": 28.68
+},
+{
+"text": "heat.",
+"start": 28.68,
+"end": 29.24
+},
+{
+"text": "A",
+"start": 29.24,
+"end": 29.4
+},
+{
+"text": "lot",
+"start": 29.4,
+"end": 29.56
+},
+{
+"text": "of",
+"start": 29.56,
+"end": 29.72
+},
+{
+"text": "it.",
+"start": 29.72,
+"end": 30.2
+},
+{
+"text": "So",
+"start": 30.2,
+"end": 30.36
+},
+{
+"text": "the",
+"start": 30.36,
+"end": 30.44
+},
+{
+"text": "data",
+"start": 30.44,
+"end": 30.84
+},
+{
+"text": "center",
+"start": 30.84,
+"end": 31.24
+},
+{
+"text": "pumps",
+"start": 31.24,
+"end": 31.64
+},
+{
+"text": "cold",
+"start": 31.64,
+"end": 31.96
+},
+{
+"text": "water",
+"start": 31.96,
+"end": 32.36
+},
+{
+"text": "past",
+"start": 32.36,
+"end": 32.68
+},
+{
+"text": "every",
+"start": 32.68,
+"end": 32.92
+},
+{
+"text": "rack",
+"start": 32.92,
+"end": 33.56
+},
+{
+"text": "and",
+"start": 33.56,
+"end": 33.72
+},
+{
+"text": "burns",
+"start": 33.72,
+"end": 34.2
+},
+{
+"text": "even",
+"start": 34.2,
+"end": 34.36
+},
+{
+"text": "more",
+"start": 34.36,
+"end": 34.6
+},
+{
+"text": "power",
+"start": 34.6,
+"end": 35.0
+},
+{
+"text": "just",
+"start": 35.0,
+"end": 35.24
+},
+{
+"text": "to",
+"start": 35.24,
+"end": 35.4
+},
+{
+"text": "stop",
+"start": 35.4,
+"end": 35.64
+},
+{
+"text": "the",
+"start": 35.64,
+"end": 35.8
+},
+{
+"text": "chips",
+"start": 35.8,
+"end": 36.12
+},
+{
+"text": "from",
+"start": 36.12,
+"end": 36.28
+},
+{
+"text": "cooking",
+"start": 36.28,
+"end": 36.6
+},
+{
+"text": "themselves.",
+"start": 36.6,
+"end": 37.415
+},
+{
+"text": "One",
+"start": 37.415,
+"end": 37.815
+},
+{
+"text": "AI",
+"start": 37.815,
+"end": 38.375
+},
+{
+"text": "data",
+"start": 38.375,
+"end": 38.695
+},
+{
+"text": "center",
+"start": 38.695,
+"end": 39.175
+},
+{
+"text": "can",
+"start": 39.175,
+"end": 39.415
+},
+{
+"text": "use",
+"start": 39.415,
+"end": 39.655
+},
+{
+"text": "as",
+"start": 39.655,
+"end": 39.815
+},
+{
+"text": "much",
+"start": 39.815,
+"end": 40.055
+},
+{
+"text": "electricity",
+"start": 40.055,
+"end": 40.695
+},
+{
+"text": "as",
+"start": 40.695,
+"end": 40.935
+},
+{
+"text": "a",
+"start": 40.935,
+"end": 41.095
+},
+{
+"text": "small",
+"start": 41.095,
+"end": 41.335
+},
+{
+"text": "city,",
+"start": 41.335,
+"end": 41.895
+},
+{
+"text": "and",
+"start": 41.895,
+"end": 42.055
+},
+{
+"text": "since",
+"start": 42.055,
+"end": 42.375
+},
+{
+"text": "twenty",
+"start": 42.375,
+"end": 42.855
+},
+{
+"text": "nineteen",
+"start": 42.855,
+"end": 43.575
+},
+{
+"text": "more",
+"start": 43.575,
+"end": 43.815
+},
+{
+"text": "than",
+"start": 43.815,
+"end": 44.055
+},
+{
+"text": "a",
+"start": 44.055,
+"end": 44.215
+},
+{
+"text": "thousand",
+"start": 44.215,
+"end": 44.535
+},
+{
+"text": "of",
+"start": 44.535,
+"end": 44.695
+},
+{
+"text": "them",
+"start": 44.695,
+"end": 44.855
+},
+{
+"text": "have",
+"start": 44.855,
+"end": 45.015
+},
+{
+"text": "gone",
+"start": 45.015,
+"end": 45.255
+},
+{
+"text": "up",
+"start": 45.255,
+"end": 45.495
+},
+{
+"text": "around",
+"start": 45.495,
+"end": 45.815
+},
+{
+"text": "the",
+"start": 45.815,
+"end": 45.975
+},
+{
+"text": "world.",
+"start": 45.975,
+"end": 46.615
+},
+{
+"text": "So",
+"start": 46.615,
+"end": 46.775
+},
+{
+"text": "the",
+"start": 46.775,
+"end": 46.935
+},
+{
+"text": "next",
+"start": 46.935,
+"end": 47.175
+},
+{
+"text": "time",
+"start": 47.175,
+"end": 47.335
+},
+{
+"text": "you",
+"start": 47.335,
+"end": 47.495
+},
+{
+"text": "ask",
+"start": 47.495,
+"end": 47.735
+},
+{
+"text": "AI",
+"start": 47.735,
+"end": 48.215
+},
+{
+"text": "something,",
+"start": 48.215,
+"end": 48.695
+},
+{
+"text": "that's",
+"start": 48.695,
+"end": 49.015
+},
+{
+"text": "where",
+"start": 49.015,
+"end": 49.175
+},
+{
+"text": "your",
+"start": 49.175,
+"end": 49.415
+},
+{
+"text": "question",
+"start": 49.415,
+"end": 49.815
+},
+{
+"text": "goes.",
+"start": 49.815,
+"end": 50.215
+}
+]

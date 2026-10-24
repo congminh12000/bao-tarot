@@ -1,0 +1,260 @@
+<template>
+<style>
+@font-face{font-family:"Nunito";src:url("assets/fonts/Nunito-var.woff2") format("woff2");font-weight:200 1000;}
+@font-face{font-family:"Caveat";src:url("assets/fonts/Caveat-700.woff2") format("woff2");font-weight:700;}
+@font-face{font-family:"Barlow";src:url("assets/fonts/Barlow-600.woff2") format("woff2");font-weight:600;}
+@font-face{font-family:"Barlow";src:url("assets/fonts/Barlow-700.woff2") format("woff2");font-weight:700;}
+#root{position:absolute;inset:0;overflow:hidden;font-family:"Nunito",sans-serif;}
+.cam{position:absolute;left:0;top:0;width:1920px;height:1080px;}
+.cam>svg{position:absolute;left:0;top:0;overflow:visible;}
+.lbl{font-family:"Barlow",sans-serif;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;}
+
+#s1-ui{position:absolute;left:0;top:0;width:1920px;height:1080px;background:#15303D;opacity:0;}
+#s1-glass{position:absolute;left:70px;top:60px;right:70px;bottom:60px;border-radius:18px;background:radial-gradient(ellipse at 50% 45%, #FFF4DE 0%, #FBE6C4 55%, #EBCB9E 100%);}
+#s1-box{position:absolute;left:260px;right:260px;top:420px;height:150px;border-radius:40px;background:#FFFBF2;border:4px solid #EBCB9E;box-shadow:0 14px 0 #EBCB9E;display:flex;align-items:center;padding-left:64px;}
+#s1-q{font-family:"Nunito";font-weight:800;font-size:66px;color:#15303D;white-space:pre;}
+#s1-caret{display:inline-block;width:6px;height:70px;background:#FF7A45;margin-left:6px;}
+#s1-send{position:absolute;right:28px;top:28px;width:94px;height:94px;border-radius:47px;background:#FF7A45;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 #D95E33;}
+
+</style>
+<div id="root" data-composition-id="s1" data-width="1920" data-height="1080">
+
+<div class="cam" id="s1-cam">
+<svg width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="s1-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2F5F6F"/><stop offset="0.55" stop-color="#E9A58A"/><stop offset="1" stop-color="#F2B880"/></linearGradient>
+    <radialGradient id="s1-lamp"><stop offset="0" stop-color="#FFD15C" stop-opacity="0.6"/><stop offset="0.45" stop-color="#FFD15C" stop-opacity="0.21"/><stop offset="1" stop-color="#FFD15C" stop-opacity="0"/></radialGradient>
+    <radialGradient id="s1-scr"><stop offset="0" stop-color="#FBE6C4" stop-opacity="0.5"/><stop offset="0.45" stop-color="#FBE6C4" stop-opacity="0.17"/><stop offset="1" stop-color="#FBE6C4" stop-opacity="0"/></radialGradient>
+    <radialGradient id="s1-bowlg"><stop offset="0" stop-color="#FFD15C" stop-opacity="0.8"/><stop offset="0.45" stop-color="#FFD15C" stop-opacity="0.28"/><stop offset="1" stop-color="#FFD15C" stop-opacity="0"/></radialGradient>
+    <clipPath id="s1-lensclip"><circle cx="0" cy="0" r="150"/></clipPath>
+  </defs>
+  <!-- room -->
+  <rect x="-400" y="-300" width="2720" height="1300" fill="#2F5F6F"/>
+  <rect x="-400" y="-300" width="1000" height="1300" fill="#3E7585" opacity="0.5"/>
+  <rect x="-400" y="700" width="2720" height="180" fill="#3B6470"/>
+  <rect x="-400" y="700" width="2720" height="14" fill="#4F7F8A"/>
+  <rect x="-400" y="870" width="2720" height="500" fill="#D4A372"/>
+  <rect x="-400" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="-200" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="0" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="200" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="400" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="600" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="800" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="1000" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="1200" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="1400" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="1600" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="1800" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="2000" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/><rect x="2200" y="870" width="6" height="500" fill="#A87A50" opacity="0.5"/>
+  <rect x="-400" y="870" width="2720" height="12" fill="#A87A50"/>
+  
+  <g id="s1-window">
+    <rect x="1062" y="132" width="376" height="326" fill="#EBCB9E"/>
+    <rect x="1080" y="150" width="340" height="290" fill="url(#s1-sky)"/>
+    <circle cx="1318" cy="329.8" r="34.8" fill="#FFD15C" opacity="0.9"/>
+    <path d="M1080,376.20000000000005 Q1182,324 1267,364.6 T1420,347.20000000000005 L1420,440 L1080,440 Z" fill="#4F7F8A"/>
+    <path d="M1080,405.2 Q1216,370.4 1420,399.4 L1420,440 L1080,440 Z" fill="#3B6470"/>
+    <rect x="1244" y="150" width="12" height="290" fill="#EBCB9E"/>
+    <rect x="1080" y="274.5" width="340" height="12" fill="#EBCB9E"/>
+    <rect x="1050" y="450" width="400" height="16" fill="#D4A372"/>
+    <rect x="1050" y="466" width="400" height="8" fill="#A87A50"/>
+  </g>
+  <path d="M1080,440 L1420,440 L1200,1080 L640,1080 Z" fill="#F2B880" opacity="0.10"/>
+  <!-- frame on the wall -->
+  <rect x="190" y="200" width="200" height="150" fill="#EBCB9E"/><rect x="206" y="216" width="168" height="118" fill="#6E9C6C"/>
+  <path d="M206,334 L270,262 L320,310 L346,286 L374,334 Z" fill="#4B7457"/><circle cx="330" cy="248" r="14" fill="#FFD15C"/>
+  <!-- shelf with books and a plant -->
+  <rect x="1560" y="330" width="300" height="16" fill="#D4A372"/><rect x="1560" y="346" width="300" height="8" fill="#A87A50"/>
+  <rect x="1580" y="246" width="30" height="84" fill="#FF7A45"/><rect x="1612" y="262" width="26" height="68" fill="#5ED6C6"/>
+  <rect x="1640" y="236" width="34" height="94" fill="#7E4F66"/><rect x="1676" y="270" width="24" height="60" fill="#FFD15C"/>
+  <path d="M1760,330 L1830,330 L1820,280 L1770,280 Z" fill="#C7876A"/>
+  <path d="M1795,282 C1760,240 1740,220 1750,190 C1780,210 1795,240 1795,282 C1800,230 1820,200 1850,196 C1850,230 1830,260 1795,282 Z" fill="#6E9C6C"/>
+  <!-- lamp glow -->
+  <ellipse cx="1330" cy="480" rx="520" ry="360" fill="url(#s1-lamp)" />
+  <!-- desk -->
+  <path d="M600,612 L1540,612 L1500,560 L640,560 Z" fill="#D4A372"/>
+  <rect x="600" y="612" width="940" height="30" fill="#A87A50"/>
+  <rect x="640" y="642" width="34" height="250" fill="#A87A50"/><rect x="1470" y="642" width="34" height="250" fill="#A87A50"/>
+  <rect x="640" y="642" width="12" height="250" fill="#D4A372"/><rect x="1470" y="642" width="12" height="250" fill="#D4A372"/>
+  <!-- lamp -->
+  <ellipse cx="1340" cy="578" rx="58" ry="14" fill="#15303D"/>
+  <path d="M1336,574 L1300,430 L1314,426 L1350,570 Z" fill="#3B6470"/>
+  <path d="M1306,430 L1400,360 L1408,372 L1316,440 Z" fill="#3B6470"/>
+  <path d="M1370,330 L1460,390 L1420,440 L1350,380 Z" fill="#FF7A45"/>
+  <path d="M1420,440 L1460,390 L1468,400 L1428,450 Z" fill="#D95E33"/>
+  <ellipse cx="1430" cy="432" rx="34" ry="14" fill="#FFD15C" transform="rotate(-50 1430 432)"/>
+  <!-- mug -->
+  <path d="M1170,520 L1222,520 L1218,580 L1174,580 Z" fill="#5ED6C6"/>
+  <path d="M1200,520 L1222,520 L1218,580 L1198,580 Z" fill="#3FAFA2"/>
+  <path d="M1222,534 Q1246,540 1222,566" stroke="#3FAFA2" stroke-width="8" fill="none"/>
+  <ellipse cx="1196" cy="520" rx="26" ry="7" fill="#15303D"/>
+  <ellipse cx="1060" cy="900" rx="520" ry="26" fill="#15303D" opacity="0.22"/>
+  <ellipse cx="580" cy="944" rx="200" ry="18" fill="#15303D" opacity="0.25"/>
+  <!-- chair back -->
+  <path d="M396,560 L428,560 L436,900 L404,900 Z" fill="#3B6470"/>
+  <path d="M380,420 C380,380 420,370 430,400 L440,640 L396,640 Z" fill="#4F7F8A"/>
+  <path d="M420,800 L700,800 L690,830 L420,830 Z" fill="#4F7F8A"/>
+  <path d="M420,830 L690,830 L688,846 L420,846 Z" fill="#3B6470"/>
+  <rect x="540" y="846" width="26" height="80" fill="#15303D"/>
+  <path d="M460,930 L650,930 L640,946 L470,946 Z" fill="#15303D"/>
+  <!-- woman -->
+  <g transform="translate(560,800) scale(1.35)">
+  <g id="s1-woman">
+    <path d="M-44,-36 L118,-44 Q144,-44 144,-18 L142,4 L-44,10 Z" fill="#7E4F66"/>
+    <path d="M60,-42 L118,-44 Q144,-44 144,-18 L142,4 L60,6 Z" fill="#5E3A4D" opacity="0.55"/>
+    <path d="M112,-8 L142,-8 L152,126 L122,126 Z" fill="#5E3A4D"/>
+    <path d="M116,122 L170,120 Q182,134 170,140 L116,140 Z" fill="#15303D"/>
+    <path d="M-58,-252 C-90,-210 -92,-110 -74,-28 L52,-34 C64,-110 60,-200 32,-252 Z" fill="#E9A58A"/>
+    <path d="M2,-252 L32,-252 C60,-200 64,-110 52,-34 L14,-32 C22,-120 18,-200 2,-252 Z" fill="#D48A74"/>
+    <path d="M-40,-246 C-62,-210 -66,-150 -62,-110" stroke="#FBE6C4" stroke-opacity="0.35" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M0,-270 L26,-270 L30,-244 L-2,-244 Z" fill="#C98468"/>
+    <g id="s1-head">
+      <path d="M-30,-330 C-32,-385 10,-405 45,-385 C62,-372 66,-352 64,-338 L76,-320 L64,-314 C66,-298 60,-284 40,-280 C20,-276 -10,-282 -24,-300 Z" fill="#E7A884"/>
+      <path d="M8,-281 C30,-277 52,-280 62,-294 L60,-306 C48,-296 30,-292 8,-281 Z" fill="#C98468"/>
+      <path d="M64,-338 L76,-320 L64,-314 Z" fill="#C98468"/>
+      <circle cx="40" cy="-308" r="10" fill="#E9A58A" opacity="0.7"/>
+      <path d="M-48,-298 C-64,-352 -40,-412 22,-410 C62,-408 80,-382 72,-350 C54,-360 32,-368 10,-364 L4,-330 C-2,-310 -6,-296 -8,-280 C-26,-274 -42,-282 -48,-298 Z" fill="#35222E"/>
+      <path d="M-38,-362 C-30,-394 0,-406 28,-404 C0,-396 -20,-382 -28,-352 Z" fill="#4E3443"/>
+      <path d="M10,-364 C30,-368 54,-360 72,-350 C60,-346 42,-348 26,-352 Z" fill="#4E3443"/>
+      <ellipse cx="0" cy="-322" rx="9" ry="13" fill="#C98468"/>
+      <path d="M34,-354 Q44,-358 54,-353" stroke="#35222E" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="46" cy="-337" rx="5" ry="7" fill="#35222E"/>
+      <circle cx="48" cy="-340" r="1.8" fill="#FBE6C4"/>
+      <path id="s1-lid" d="M39,-346 L54,-346 L54,-329 L39,-329 Z" fill="#E7A884" transform="scale(1,0)" style="transform-origin:46px -346px"/>
+      <path id="s1-mouth" d="M54,-297 Q60,-295 63,-299" stroke="#5E3A4D" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    </g>
+    <path d="M-28,-244 L14,-240 L60,-152 L30,-126 Z" fill="#D48A74"/>
+    <g id="s1-fore">
+      <path d="M28,-150 L52,-126 L176,-146 L172,-170 Z" fill="#E9A58A"/>
+      <path d="M40,-138 L52,-126 L176,-146 L174,-156 Z" fill="#D48A74"/>
+      <path d="M170,-170 Q196,-174 200,-160 Q198,-146 176,-144 Z" fill="#E7A884"/>
+      <path d="M180,-150 Q196,-150 200,-160 Q198,-146 176,-144 Z" fill="#C98468"/>
+    </g>
+  </g></g>
+  <!-- screen light on desk -->
+  <ellipse cx="881.5" cy="486.7" rx="300" ry="220" fill="url(#s1-scr)" />
+  <!-- laptop -->
+  <g transform="translate(706,606) scale(1.35)">
+    
+  <g id="s1-laptop">
+    <path d="M0,0 L190,6 L214,-22 L30,-30 Z" fill="#6A9AA3"/>
+    <path d="M0,0 L190,6 L190,14 L0,8 Z" fill="#3B6470"/>
+    <path d="M30,-24 L196,-18 L204,-26 L40,-30 Z" fill="#4F7F8A"/>
+    <path d="M60,-10 L150,-6 L158,-14 L70,-18 Z" fill="#4F7F8A" opacity="0.6"/>
+    <path d="M34,-30 L214,-22 L226,-206 L40,-226 Z" fill="#15303D"/>
+    <path d="M214,-22 L222,-24 L234,-208 L226,-206 Z" fill="#3B6470"/>
+    <path id="s1-screen" d="M46,-40 L204,-33 L214,-196 L52,-214 Z" fill="#FBE6C4"/>
+  </g>
+    <g transform="matrix(1,0.044,0.034,1,0,0)">
+      <rect x="66" y="-140" width="128" height="30" rx="8" fill="#FFFBF2" stroke="#EBCB9E" stroke-width="2"/>
+      <circle cx="182" cy="-125" r="9" fill="#FF7A45"/>
+      <text id="s1-mini" opacity="0" x="74" y="-120" font-family="Nunito" font-weight="800" font-size="8.6" fill="#15303D">How do I make potato salad?</text>
+    </g>
+  </g>
+  <!-- the forearm sits over the laptop base -->
+  <!-- lens: x-ray of the laptop showing the imagined answer inside -->
+  <g id="s1-lens" transform="translate(881.5,446.7)">
+    <g id="s1-lensin">
+      <circle r="164" fill="#EBCB9E"/>
+      <g clip-path="url(#s1-lensclip)">
+        <circle r="150" fill="#173342"/>
+        <path d="M-150,-90 H-60 V-70 H150" stroke="#3E7585" stroke-width="5" fill="none"/><path d="M-150,-60 H-30 V-40 H150" stroke="#3E7585" stroke-width="5" fill="none"/><path d="M-150,-30 H0 V-10 H150" stroke="#3E7585" stroke-width="5" fill="none"/><path d="M-150,0 H-60 V20 H150" stroke="#3E7585" stroke-width="5" fill="none"/><path d="M-150,30 H-30 V50 H150" stroke="#3E7585" stroke-width="5" fill="none"/><path d="M-150,60 H0 V80 H150" stroke="#3E7585" stroke-width="5" fill="none"/><path d="M-150,90 H-60 V110 H150" stroke="#3E7585" stroke-width="5" fill="none"/>
+        <rect x="-60" y="-40" width="120" height="80" rx="8" fill="#3B6470"/>
+        <g id="s1-bowl">
+          <ellipse cx="0" cy="10" rx="130" ry="110" fill="url(#s1-bowlg)" />
+          <path d="M-80,10 L80,10 Q76,74 0,82 Q-76,74 -80,10 Z" fill="#5ED6C6"/>
+          <path d="M20,10 L80,10 Q76,74 0,82 Q30,60 20,10 Z" fill="#3FAFA2"/>
+          <path d="M-78,12 C-70,-30 -30,-44 0,-40 C40,-46 72,-26 78,12 Z" fill="#FBE6C4"/>
+          <rect x="-46" y="-6" width="22" height="18" rx="5" fill="#FFD15C" transform="rotate(-6 -46 -6)"/><rect x="-18" y="-22" width="22" height="18" rx="5" fill="#FFD15C" transform="rotate(-18 -18 -22)"/><rect x="14" y="-14" width="22" height="18" rx="5" fill="#FFD15C" transform="rotate(14 14 -14)"/><rect x="44" y="-4" width="22" height="18" rx="5" fill="#FFD15C" transform="rotate(4 44 -4)"/><rect x="-6" y="2" width="22" height="18" rx="5" fill="#FFD15C" transform="rotate(-6 -6 2)"/><rect x="28" y="-30" width="22" height="18" rx="5" fill="#FFD15C" transform="rotate(8 28 -30)"/>
+          <circle cx="-30" cy="-16" r="5" fill="#6E9C6C"/><circle cx="6" cy="-28" r="5" fill="#6E9C6C"/><circle cx="36" cy="-16" r="5" fill="#6E9C6C"/><circle cx="-50" cy="4" r="5" fill="#6E9C6C"/>
+          <path d="M-96,-74 Q-92.1,-63.9 -82,-60 Q-92.1,-56.1 -96,-46 Q-99.9,-56.1 -110,-60 Q-99.9,-63.9 -96,-74Z" fill="#FFD15C" /><path d="M98,-50 Q100.8,-42.8 108,-40 Q100.8,-37.2 98,-30 Q95.2,-37.2 88,-40 Q95.2,-42.8 98,-50Z" fill="#FBE6C4" /><path d="M70,-100 Q72.2,-94.2 78,-92 Q72.2,-89.8 70,-84 Q67.8,-89.8 62,-92 Q67.8,-94.2 70,-100Z" fill="#FFD15C" />
+        </g>
+        <g id="s1-poof" opacity="0">
+          <circle cx="-40" cy="-10" r="34" fill="#EBCB9E"/><circle cx="10" cy="-30" r="40" fill="#EBCB9E"/><circle cx="44" cy="10" r="30" fill="#EBCB9E"/><circle cx="-6" cy="24" r="36" fill="#EBCB9E"/>
+        </g>
+      </g>
+      <circle r="158" fill="none" stroke="#6A9AA3" stroke-width="10"/>
+      <path d="M100,112 L170,190" stroke="#3B6470" stroke-width="26" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g class="spk-field"><g class="spk" data-a="0.63" data-ph="3.38" data-dx="-17" data-dy="-36"><path d="M982.2,452.9 Q985,460 992.1,462.8 Q985,465.5 982.2,472.6 Q979.5,465.5 972.4,462.8 Q979.5,460 982.2,452.9Z" fill="#FFD15C" /></g><g class="spk" data-a="0.44" data-ph="4.21" data-dx="7" data-dy="-25"><path d="M1166.9,393.4 Q1169.3,399.8 1175.7,402.2 Q1169.3,404.7 1166.9,411.1 Q1164.4,404.7 1158,402.2 Q1164.4,399.8 1166.9,393.4Z" fill="#FFD15C" /></g><g class="spk" data-a="0.51" data-ph="0.80" data-dx="4" data-dy="-37"><path d="M342.7,261.7 Q345,267.6 350.9,269.8 Q345,272.1 342.7,278 Q340.5,272.1 334.6,269.8 Q340.5,267.6 342.7,261.7Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.39" data-ph="3.91" data-dx="-10" data-dy="-22"><path d="M803.4,690.2 Q806.6,698.4 814.8,701.6 Q806.6,704.8 803.4,713.1 Q800.2,704.8 791.9,701.6 Q800.2,698.4 803.4,690.2Z" fill="#FFD15C" /></g><g class="spk" data-a="0.58" data-ph="2.18" data-dx="2" data-dy="-37"><path d="M1422.5,795.7 Q1424.6,801 1429.9,803 Q1424.6,805.1 1422.5,810.4 Q1420.5,805.1 1415.2,803 Q1420.5,801 1422.5,795.7Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.42" data-ph="0.16" data-dx="-17" data-dy="-45"><path d="M1623.4,157 Q1626.7,165.5 1635.2,168.8 Q1626.7,172.1 1623.4,180.6 Q1620.1,172.1 1611.6,168.8 Q1620.1,165.5 1623.4,157Z" fill="#FFD15C" /></g><g class="spk" data-a="0.58" data-ph="0.56" data-dx="6" data-dy="-21"><path d="M954.7,452.7 Q956.7,457.8 961.9,459.8 Q956.7,461.8 954.7,467 Q952.7,461.8 947.6,459.8 Q952.7,457.8 954.7,452.7Z" fill="#FFD15C" /></g><g class="spk" data-a="0.46" data-ph="2.22" data-dx="-18" data-dy="-42"><path d="M853.5,529.6 Q857.1,538.8 866.4,542.4 Q857.1,546 853.5,555.3 Q849.9,546 840.6,542.4 Q849.9,538.8 853.5,529.6Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.41" data-ph="5.29" data-dx="-14" data-dy="-24"><path d="M805.3,629.8 Q807.4,635.1 812.7,637.2 Q807.4,639.3 805.3,644.6 Q803.2,639.3 797.9,637.2 Q803.2,635.1 805.3,629.8Z" fill="#FFD15C" /></g><g class="spk" data-a="0.42" data-ph="5.89" data-dx="14" data-dy="-39"><path d="M1210,528 Q1211.7,532.3 1216,534 Q1211.7,535.6 1210,540 Q1208.4,535.6 1204,534 Q1208.4,532.3 1210,528Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.39" data-ph="3.23" data-dx="-20" data-dy="-46"><path d="M788.9,748.6 Q791.6,755.6 798.6,758.3 Q791.6,761 788.9,768 Q786.2,761 779.2,758.3 Q786.2,755.6 788.9,748.6Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.59" data-ph="3.42" data-dx="1" data-dy="-23"><path d="M579.1,364.2 Q580.7,368.5 585.1,370.2 Q580.7,371.9 579.1,376.2 Q577.4,371.9 573.1,370.2 Q577.4,368.5 579.1,364.2Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.52" data-ph="3.79" data-dx="3" data-dy="-35"><path d="M1074.6,520.7 Q1078,529.4 1086.7,532.8 Q1078,536.1 1074.6,544.8 Q1071.2,536.1 1062.5,532.8 Q1071.2,529.4 1074.6,520.7Z" fill="#FFD15C" /></g><g class="spk" data-a="0.57" data-ph="0.85" data-dx="-14" data-dy="-39"><path d="M181.3,545.1 Q184.2,552.5 191.5,555.3 Q184.2,558.2 181.3,565.5 Q178.5,558.2 171.1,555.3 Q178.5,552.5 181.3,545.1Z" fill="#FFD15C" /></g><g class="spk" data-a="0.59" data-ph="4.11" data-dx="-17" data-dy="-29"><path d="M1866.4,308.6 Q1869.9,317.6 1878.8,321 Q1869.9,324.5 1866.4,333.4 Q1862.9,324.5 1854,321 Q1862.9,317.6 1866.4,308.6Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.57" data-ph="1.98" data-dx="-16" data-dy="-37"><path d="M1274.9,424.2 Q1277.7,431.4 1284.9,434.2 Q1277.7,437 1274.9,444.2 Q1272.1,437 1264.9,434.2 Q1272.1,431.4 1274.9,424.2Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.59" data-ph="0.03" data-dx="-3" data-dy="-46"><path d="M731.4,186.1 Q734.6,194.4 742.9,197.6 Q734.6,200.8 731.4,209.1 Q728.1,200.8 719.8,197.6 Q728.1,194.4 731.4,186.1Z" fill="#FFD15C" /></g><g class="spk" data-a="0.47" data-ph="3.08" data-dx="-13" data-dy="-44"><path d="M1093,582.2 Q1095.8,589.4 1103,592.2 Q1095.8,595 1093,602.2 Q1090.2,595 1083,592.2 Q1090.2,589.4 1093,582.2Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.57" data-ph="5.24" data-dx="17" data-dy="-49"><path d="M122.3,111.5 Q125.9,120.8 135.3,124.4 Q125.9,128.1 122.3,137.4 Q118.7,128.1 109.3,124.4 Q118.7,120.8 122.3,111.5Z" fill="#FFD15C" /></g><g class="spk" data-a="0.44" data-ph="3.35" data-dx="-18" data-dy="-22"><path d="M97.2,178.2 Q99.9,185.3 107,188 Q99.9,190.7 97.2,197.8 Q94.5,190.7 87.4,188 Q94.5,185.3 97.2,178.2Z" fill="#FBE6C4" /></g><g class="spk" data-a="0.44" data-ph="2.12" data-dx="4" data-dy="-31"><path d="M888.2,257.2 Q890.5,263.2 896.5,265.6 Q890.5,267.9 888.2,273.9 Q885.8,267.9 879.8,265.6 Q885.8,263.2 888.2,257.2Z" fill="#FFD15C" /></g><g class="spk" data-a="0.56" data-ph="1.99" data-dx="2" data-dy="-39"><path d="M1872.6,277 Q1875,283.2 1881.2,285.6 Q1875,288 1872.6,294.2 Q1870.2,288 1864,285.6 Q1870.2,283.2 1872.6,277Z" fill="#FBE6C4" /></g></g>
+  <!-- tiles -->
+  <g class="s1-tile" id="s1-t0" data-layout-allow-overlap><g class="s1-tin" data-layout-allow-overlap>
+    <rect x="-45.5" y="-34" width="91" height="68" rx="16" fill="#FBE6C4"/>
+    <rect x="-45.5" y="22" width="91" height="12" rx="6" fill="#EBCB9E"/>
+    <text x="0" y="12" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#15303D">How</text></g></g><g class="s1-tile" id="s1-t1" data-layout-allow-overlap><g class="s1-tin" data-layout-allow-overlap>
+    <rect x="-36" y="-34" width="72" height="68" rx="16" fill="#FBE6C4"/>
+    <rect x="-36" y="22" width="72" height="12" rx="6" fill="#EBCB9E"/>
+    <text x="0" y="12" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#15303D">do</text></g></g><g class="s1-tile" id="s1-t2" data-layout-allow-overlap><g class="s1-tin" data-layout-allow-overlap>
+    <rect x="-26.5" y="-34" width="53" height="68" rx="16" fill="#FBE6C4"/>
+    <rect x="-26.5" y="22" width="53" height="12" rx="6" fill="#EBCB9E"/>
+    <text x="0" y="12" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#15303D">I</text></g></g><g class="s1-tile" id="s1-t3" data-layout-allow-overlap><g class="s1-tin" data-layout-allow-overlap>
+    <rect x="-55" y="-34" width="110" height="68" rx="16" fill="#FBE6C4"/>
+    <rect x="-55" y="22" width="110" height="12" rx="6" fill="#EBCB9E"/>
+    <text x="0" y="12" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#15303D">make</text></g></g><g class="s1-tile" id="s1-t4" data-layout-allow-overlap><g class="s1-tin" data-layout-allow-overlap>
+    <rect x="-74" y="-34" width="148" height="68" rx="16" fill="#FBE6C4"/>
+    <rect x="-74" y="22" width="148" height="12" rx="6" fill="#EBCB9E"/>
+    <text x="0" y="12" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#15303D">potato</text></g></g><g class="s1-tile" id="s1-t5" data-layout-allow-overlap><g class="s1-tin" data-layout-allow-overlap>
+    <rect x="-74" y="-34" width="148" height="68" rx="16" fill="#FBE6C4"/>
+    <rect x="-74" y="22" width="148" height="12" rx="6" fill="#EBCB9E"/>
+    <text x="0" y="12" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#15303D">salad?</text></g></g>
+  <text id="s1-six" class="lbl" x="881.5" y="111.69999999999999" text-anchor="middle" font-family="Barlow" font-weight="700" font-size="30" letter-spacing="3" fill="#FFD15C" opacity="0">6 WORDS</text>
+</svg>
+</div>
+<!-- the screen, seen straight on -->
+<div id="s1-ui">
+  <div id="s1-glass">
+    <div id="s1-box"><span id="s1-q"></span><span id="s1-caret"></span>
+      <div id="s1-send"><svg width="44" height="44" viewBox="0 0 44 44"><path d="M22,34 V12 M12,21 L22,11 L32,21" stroke="#FBE6C4" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+(function () {
+  const tl = gsap.timeline({ paused: true });
+
+  K.sparkles(tl, "#s1-cam", 8.6);
+  // camera: wide, push through the screen, pull back out, then into the window
+  K.cam(tl, "#s1-cam", [
+    [0, 0, 960, 540, 1.0],
+    [0.15, 1.15, 881.5, 446.7, 4.6, "power3.in"],
+    [3.55, 0.01, 881.5, 446.7, 1.7],
+    [3.56, 0.9, 821.5, 336.7, 1.5, "expo.out"],
+    [7.7, 0.9, 1250, 295, 3.4, "power3.in"],
+  ]);
+  // rigs (pivot points in each element's own coordinates)
+  const fore = K.rig(tl, "#s1-fore", 44, -140), head = K.rig(tl, "#s1-head", 14, -266);
+  const lens = K.rig(tl, "#s1-lensin", 0, 150), bowl = K.rig(tl, "#s1-bowl", 0, 60), poof = K.rig(tl, "#s1-poof", 0, 0);
+  const mouth = K.rig(tl, "#s1-mouth", 58, -297);
+  // typing hands in the wide shot (forearm jiggles from the elbow)
+  for (let i = 0; i < 8; i++) {
+    tl.fromTo(fore, { r: 0 }, { r: (i % 2 ? -2.2 : 1.8), duration: 0.08, ease: "sine.inOut", yoyo: true, repeat: 1, immediateRender: false }, 0.02 + i * 0.16);
+  }
+  K.blink(tl, "#s1-lid", [0.9, 4.0, 6.2]);
+  // the screen becomes the world
+  tl.fromTo("#s1-ui", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" }, 1.08);
+  K.type(tl, "#s1-q", "How do I make potato salad?", 1.3, 2.75);
+  tl.fromTo("#s1-caret", { opacity: 1 }, { opacity: 0, duration: 0.01, yoyo: true, repeat: 5, repeatDelay: 0.24, immediateRender: false }, 2.8);
+  // enter
+  tl.fromTo("#s1-send", { scale: 1 }, { scale: 0.84, duration: 0.12, ease: "power2.in" }, 3.3);
+  tl.fromTo("#s1-send", { scale: 0.84 }, { scale: 1.06, duration: 0.25, ease: "back.out(3)", immediateRender: false }, 3.44);
+  tl.fromTo("#s1-ui", { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.3, duration: 0.35, ease: "power3.in", immediateRender: false }, 3.55);
+  tl.fromTo("#s1-mini", { opacity: 0 }, { opacity: 1, duration: 0.1 }, 3.7);
+  // the answer seems to live inside the laptop: an x-ray lens shows a little bowl of potato salad
+  tl.fromTo(lens, { s: 0, r: -10 }, { s: 1, r: 0, duration: 0.6, ease: "back.out(1.7)" }, 4.2);
+  tl.fromTo(bowl, { s: 0.2, y: 40 }, { s: 1, y: 0, duration: 0.5, ease: "back.out(2.2)" }, 4.72);
+  tl.fromTo(bowl, { r: -4 }, { r: 4, duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: 3, immediateRender: false }, 5.2);
+  tl.fromTo(head, { r: 0 }, { r: -5, duration: 0.5, ease: "power2.out" }, 4.5);
+  tl.fromTo(mouth, { sx: 1 }, { sx: 1.4, duration: 0.3 }, 4.8);
+  // "But" — the idea pops
+  tl.fromTo(poof, { s: 0.4 }, { s: 1.25, duration: 0.2, ease: "power2.out" }, 6.8);
+  tl.fromTo("#s1-poof", { opacity: 0 }, { opacity: 1, duration: 0.06 }, 6.8);
+  tl.fromTo(bowl, { s: 1 }, { s: 0, duration: 0.14, ease: "power3.in", immediateRender: false }, 6.8);
+  tl.fromTo("#s1-poof", { opacity: 1 }, { opacity: 0, duration: 0.25, immediateRender: false }, 7.0);
+  tl.fromTo(lens, { s: 1 }, { s: 0, duration: 0.25, ease: "power3.in", immediateRender: false }, 7.05);
+  tl.fromTo(head, { r: -5 }, { r: 4, duration: 0.3, ease: "back.out(2)", immediateRender: false }, 6.85);
+  tl.fromTo(mouth, { sx: 1.4, sy: 1 }, { sx: 0.6, sy: 1.6, duration: 0.2, immediateRender: false }, 6.85);
+  // six words burst out of the screen, then race out of the window
+  const arc = [[501.5,196.7],[653.5,167.31073738537634],[805.5,149.1471741852423],[957.5,149.1471741852423],[1129.5,167.31073738537634],[1311.5,196.7]];
+  arc.forEach(([x, y], i) => {
+    const t0 = 7.12 + i * 0.07;
+    tl.fromTo("#s1-t" + i, { x: 881.5, y: 446.7, scale: 0.15, opacity: 0 }, { x, y, scale: 1, opacity: 1, duration: 0.42, ease: "back.out(1.6)" }, t0);
+    tl.fromTo("#s1-t" + i, { x, y, scale: 1 }, { x: 1250 + (i - 2.5) * 30, y: 280 + (i % 2) * 24, scale: 0.18, duration: 0.55, ease: "power3.in", immediateRender: false }, 7.8 + i * 0.03);
+  });
+  tl.fromTo("#s1-six", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 7.4);
+  tl.fromTo("#s1-six", { opacity: 1 }, { opacity: 0, duration: 0.15, immediateRender: false }, 7.86);
+
+  window.__timelines["s1"] = tl;
+})();
+</script>
+</template>
