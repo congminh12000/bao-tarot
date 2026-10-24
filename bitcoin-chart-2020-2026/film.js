@@ -119,6 +119,30 @@
     ctx.stroke(); ctx.restore();
   }
 
+  // the ₿ coin drawn from lines: ring, ticks, the B with its two bars; it turns on its vertical axis
+  function bitcoinLogo(ctx, cx, cy, R, t) {
+    const turn = Math.cos(t * 0.35), sx = 0.25 + 0.75 * Math.abs(turn);
+    ctx.save();
+    ctx.translate(cx, cy); ctx.scale(sx, 1); ctx.rotate(-0.24);
+    ctx.strokeStyle = rgba(L.accent, 0.16); ctx.lineWidth = 3; ctx.shadowColor = L.accent; ctx.shadowBlur = 18;
+    ctx.beginPath(); ctx.arc(0, 0, R, 0, Math.PI * 2); ctx.stroke();
+    ctx.lineWidth = 1.5; ctx.strokeStyle = rgba(L.accent, 0.10);
+    ctx.beginPath(); ctx.arc(0, 0, R * 0.88, 0, Math.PI * 2); ctx.stroke();
+    ctx.beginPath();
+    for (let k = 0; k < 60; k++) { const a = (k / 60) * Math.PI * 2 + t * 0.2, r0 = R * (k % 5 ? 0.92 : 0.9); ctx.moveTo(Math.cos(a) * r0, Math.sin(a) * r0); ctx.lineTo(Math.cos(a) * R * 0.96, Math.sin(a) * R * 0.96); }
+    ctx.stroke();
+    // the B: a stem and two bowls, plus the two bars through top and bottom
+    const u = R / 100;
+    ctx.lineWidth = 9 * u * 0.55; ctx.strokeStyle = rgba(L.accent, 0.16); ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+    ctx.beginPath();
+    ctx.moveTo(-28 * u, -50 * u); ctx.lineTo(-28 * u, 50 * u);
+    ctx.moveTo(-40 * u, -50 * u); ctx.lineTo(10 * u, -50 * u); ctx.bezierCurveTo(42 * u, -50 * u, 42 * u, -2 * u, 10 * u, -2 * u); ctx.lineTo(-28 * u, -2 * u);
+    ctx.moveTo(-28 * u, -2 * u); ctx.lineTo(16 * u, -2 * u); ctx.bezierCurveTo(52 * u, -2 * u, 52 * u, 50 * u, 16 * u, 50 * u); ctx.lineTo(-40 * u, 50 * u);
+    for (const x of [-12, 8]) { ctx.moveTo(x * u, -66 * u); ctx.lineTo(x * u, -50 * u); ctx.moveTo(x * u, 50 * u); ctx.lineTo(x * u, 66 * u); }
+    ctx.stroke();
+    ctx.restore();
+  }
+
   // ---------- background ----------
   let SCAN = null;
   function background(ctx, t, cam, D) {
@@ -157,12 +181,8 @@
       for (let k = 0; k < 8; k++) { const z = (k + ph) / 8, y = hz + (H - hz) * z * z; ctx.moveTo(0, y); ctx.lineTo(W, y); }
       ctx.stroke(); ctx.restore();
     }
-    // the year, a huge outlined hologram behind the chart
-    ctx.save();
-    ctx.font = font(330, 800, L.title); ctx.textAlign = 'center';
-    ctx.strokeStyle = rgba(L.accent, 0.10); ctx.lineWidth = 2;
-    ctx.strokeText(String(yearOf(Math.max(0, D))), PLOT_R / 2, H / 2 + 120);
-    ctx.restore();
+    // the Bitcoin coin, a slowly turning hologram behind the chart
+    bitcoinLogo(ctx, PLOT_R / 2, H / 2 + 20, 250, t);
   }
 
   function grid(ctx, cam, X, Y) {
@@ -292,15 +312,10 @@
   }
 
   function hud(ctx, t, D) {
-    panel(ctx, 70, 50, 420, 118, L.accent);
-    txt(ctx, 'BTC / USD', 96, 104, { size: 44, w: 800, fam: L.font, color: L.text, glow: 10, spacing: 2 });
-    ctx.save(); ctx.strokeStyle = L.accent; ctx.lineWidth = 1.5; ctx.strokeRect(386, 70, 74, 40); ctx.restore();
-    txt(ctx, '1D', 423, 100, { size: 26, w: 800, color: L.accent, align: 'center', glow: 10 });
-    txt(ctx, D < 0 ? '01/01/2020' : dateStr(D), 96, 148, { size: 28, w: 700, fam: L.mono, color: L.accent2, spacing: 2 });
-    const on = Math.floor(t * 2) % 2 === 0;
-    ctx.save(); ctx.fillStyle = DOWN; ctx.globalAlpha = on ? 1 : 0.25; ctx.shadowColor = DOWN; ctx.shadowBlur = 10;
-    ctx.beginPath(); ctx.arc(400, 140, 6, 0, Math.PI * 2); ctx.fill(); ctx.restore();
-    txt(ctx, 'LIVE', 414, 148, { size: 20, w: 800, color: L.text, spacing: 2 });
+    const x = 96, y = 104;
+    txt(ctx, 'BTC / USD', x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
+    const w = measure(ctx, 'BTC / USD', 44, 800) + 9 * 2;
+    txt(ctx, D < 0 ? '01/01/2020' : dateStr(D), x + w + 36, y, { size: 36, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
   }
 
   // light glowing dust: specks of light drifting through the beam
