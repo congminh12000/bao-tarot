@@ -37,7 +37,9 @@
   const PPD = 9.5; // pixels per day while following
   const LEFT = 70;
 
-  const fmt = (p) => '$' + Math.round(p).toLocaleString('en-US');
+  const fmt = (p) => '$' + (p >= 100 ? Math.round(p).toLocaleString('en-US') : p >= 1 ? (Number.isInteger(p) ? String(p) : p.toFixed(2)) : p.toPrecision(2));
+  const Y_START = S.dateOf(0).getUTCFullYear(), Y_END = S.dateOf(NDAYS - 1).getUTCFullYear();
+  let LOGO = null;
   const yearOf = (d) => S.dateOf(clamp(d, 0, NDAYS - 1)).getUTCFullYear();
   const pad2 = (x) => String(x).padStart(2, '0');
   const dateStr = (d) => { const x = S.dateOf(clamp(d, 0, NDAYS - 1)); return `${pad2(x.getUTCDate())}/${pad2(x.getUTCMonth() + 1)}/${x.getUTCFullYear()}`; };
@@ -121,24 +123,19 @@
 
   // the ₿ coin drawn from lines: ring, ticks, the B with its two bars; it turns on its vertical axis
   function bitcoinLogo(ctx, cx, cy, R, t) {
-    const turn = Math.cos(t * 0.35), sx = 0.25 + 0.75 * Math.abs(turn);
     ctx.save();
-    ctx.translate(cx, cy); ctx.scale(sx, 1); ctx.rotate(-0.24);
-    ctx.strokeStyle = rgba(L.accent, 0.16); ctx.lineWidth = 3; ctx.shadowColor = L.accent; ctx.shadowBlur = 18;
-    ctx.beginPath(); ctx.arc(0, 0, R, 0, Math.PI * 2); ctx.stroke();
-    ctx.lineWidth = 1.5; ctx.strokeStyle = rgba(L.accent, 0.10);
-    ctx.beginPath(); ctx.arc(0, 0, R * 0.88, 0, Math.PI * 2); ctx.stroke();
+    ctx.translate(cx, cy);
+    // a soft orange halo, then the coin, then a cyan scan ring around it
+    const g = ctx.createRadialGradient(0, 0, R * 0.4, 0, 0, R * 1.6);
+    g.addColorStop(0, 'rgba(247,147,26,0.10)'); g.addColorStop(1, 'rgba(247,147,26,0)');
+    ctx.fillStyle = g; ctx.fillRect(-R * 1.6, -R * 1.6, R * 3.2, R * 3.2);
+    ctx.save(); ctx.rotate(Math.sin(t * 0.4) * 0.08); ctx.scale(1 + 0.02 * Math.sin(t * 1.3), 1 + 0.02 * Math.sin(t * 1.3));
+    if (LOGO) { ctx.globalAlpha = 0.11; ctx.drawImage(LOGO, -R, -R, R * 2, R * 2); }
+    ctx.restore();
+    ctx.strokeStyle = rgba(L.accent, 0.14); ctx.lineWidth = 1.5; ctx.shadowColor = L.accent; ctx.shadowBlur = 12;
+    ctx.beginPath(); ctx.arc(0, 0, R * 1.12, 0, Math.PI * 2); ctx.stroke();
     ctx.beginPath();
-    for (let k = 0; k < 60; k++) { const a = (k / 60) * Math.PI * 2 + t * 0.2, r0 = R * (k % 5 ? 0.92 : 0.9); ctx.moveTo(Math.cos(a) * r0, Math.sin(a) * r0); ctx.lineTo(Math.cos(a) * R * 0.96, Math.sin(a) * R * 0.96); }
-    ctx.stroke();
-    // the B: a stem and two bowls, plus the two bars through top and bottom
-    const u = R / 100;
-    ctx.lineWidth = 9 * u * 0.55; ctx.strokeStyle = rgba(L.accent, 0.16); ctx.lineJoin = 'round'; ctx.lineCap = 'round';
-    ctx.beginPath();
-    ctx.moveTo(-28 * u, -50 * u); ctx.lineTo(-28 * u, 50 * u);
-    ctx.moveTo(-40 * u, -50 * u); ctx.lineTo(10 * u, -50 * u); ctx.bezierCurveTo(42 * u, -50 * u, 42 * u, -2 * u, 10 * u, -2 * u); ctx.lineTo(-28 * u, -2 * u);
-    ctx.moveTo(-28 * u, -2 * u); ctx.lineTo(16 * u, -2 * u); ctx.bezierCurveTo(52 * u, -2 * u, 52 * u, 50 * u, 16 * u, 50 * u); ctx.lineTo(-40 * u, 50 * u);
-    for (const x of [-12, 8]) { ctx.moveTo(x * u, -66 * u); ctx.lineTo(x * u, -50 * u); ctx.moveTo(x * u, 50 * u); ctx.lineTo(x * u, 66 * u); }
+    for (let k = 0; k < 72; k++) { const a = (k / 72) * Math.PI * 2 + t * 0.15, r0 = R * (k % 6 ? 1.16 : 1.14); ctx.moveTo(Math.cos(a) * r0, Math.sin(a) * r0); ctx.lineTo(Math.cos(a) * R * 1.2, Math.sin(a) * R * 1.2); }
     ctx.stroke();
     ctx.restore();
   }
@@ -182,7 +179,7 @@
       ctx.stroke(); ctx.restore();
     }
     // the Bitcoin coin, a slowly turning hologram behind the chart
-    bitcoinLogo(ctx, PLOT_R / 2, H / 2 + 20, 250, t);
+    bitcoinLogo(ctx, PLOT_R / 2, H / 2 + 20, 230, t);
   }
 
   function grid(ctx, cam, X, Y) {
@@ -190,7 +187,7 @@
     const span = pHi - pLo, raw = span / 6, mag = Math.pow(10, Math.floor(Math.log10(raw)));
     const step = [1, 2, 2.5, 5, 10].map((k) => k * mag).find((s) => s >= raw);
     const levels = [];
-    if (cam.k > 0.5) { for (const p of [5000, 10000, 20000, 50000, 100000]) if (p > pLo && p < pHi) levels.push(p); }
+    if (cam.k > 0.5) { for (const p of [0.01, 0.1, 1, 10, 100, 1000, 10000, 100000]) if (p > pLo && p < pHi) levels.push(p); }
     else for (let p = Math.ceil(pLo / step) * step; p < pHi; p += step) levels.push(p);
     ctx.save();
     for (const p of levels) {
@@ -203,15 +200,15 @@
     }
     const d0 = Math.floor(cam.off / cam.ppd) - 31, d1 = Math.ceil((PLOT_R + cam.off) / cam.ppd) + 31;
     const s0 = S.dateOf(0);
-    for (let mo = 0; mo < 7 * 12; mo++) {
-      const d = Math.round((Date.UTC(s0.getUTCFullYear(), mo, 1) - s0.getTime()) / 86400000);
+    for (let mo = 0; mo < (Y_END - Y_START + 2) * 12; mo++) {
+      const d = Math.round((Date.UTC(Y_START, mo, 1) - s0.getTime()) / 86400000);
       if (d < d0 || d > d1) continue;
       const x = Math.round(X(d)) + 0.5;
       if (x < 0 || x > PLOT_R) continue;
       const jan = mo % 12 === 0;
       if (jan) {
         glowLine(ctx, [[x, Y0 - 40], [x, Y1 + 8]], L.gridMajor, 1.2, 8);
-        txt(ctx, String(2020 + mo / 12), x + 10, Y1 + 50, { size: 30, w: 800, color: L.accent, glow: 12 });
+        if (cam.k < 0.5 || (Y_START + mo / 12) % 2 === 0 || cam.ppd > 0.5) txt(ctx, String(Y_START + mo / 12), x + 10, Y1 + 50, { size: 30, w: 800, color: L.accent, glow: 12 });
       } else if (cam.k < 0.5) {
         ctx.strokeStyle = L.grid; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x, Y0 - 40); ctx.lineTo(x, Y1 + 8); ctx.stroke();
         if (cam.k < 0.3) txt(ctx, 'TH' + ((mo % 12) + 1), x + 6, Y1 + 40, { size: 18, w: 700, fam: L.mono, color: L.dim, alpha: 1 - cam.k / 0.3, spacing: 1 });
@@ -249,25 +246,30 @@
   function labels(ctx, t, X, Y, cam) {
     const fade = 1 - clamp(cam.k * 3);
     if (fade <= 0) return;
+    const placed = []; // boxes already on screen: later labels step away from them
     EVENTS.forEach((e, n) => {
       const age = t - e.t;
       if (age < 0) return;
       const x = X(e.day + 0.5);
-      if (x < -300 || x > PLOT_R + 50) return;
+      if (x < -400 || x > PLOT_R + 50) return;
       const alpha = fade * clamp(1 - (age - 7) / 1.5);
       if (alpha <= 0) return;
       const up = e.kind !== 'down';
       const size = e.big ? 50 : e.hit ? 34 : 24;
       const ay = Y(e.price) + (up ? -10 : 10);
-      const dy = (e.hit ? 120 : 165) + (n % 2) * 30;
-      let ty = up ? ay - dy : ay + dy;
-      ty = clamp(ty, Y0 + 20, Y1 - 20);
       const s = e.text.toUpperCase(), tw = measure(ctx, s, size, 800);
-      const tx = clamp(x - tw / 2, 20, PLOT_R - tw - 30);
+      const tx = Math.min(x - tw / 2, PLOT_R - tw - 30); // scrolls off the left edge with its candle
+      let ty = clamp(up ? ay - (e.hit ? 110 : 140) : ay + (e.hit ? 120 : 150), Y0 + 40, Y1 - 20);
+      const box = (yy) => [tx - 16, yy - size * 0.95, tx + tw + 16, yy + size * 0.35];
+      const hit = (r) => placed.some((q) => r[0] < q[2] + 8 && r[2] > q[0] - 8 && r[1] < q[3] + 8 && r[3] > q[1] - 8);
+      for (let k = 0; k < 6 && hit(box(ty)); k++) {
+        const ny = ty + (up ? -1 : 1) * (size + 22);
+        ty = ny < Y0 + 40 || ny > Y1 - 20 ? ty + (up ? 1 : -1) * (size + 22) * (k + 1) : ny; // flip side at the frame edge
+      }
+      placed.push(box(ty));
       const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
-      // the panel types itself in, the leader line draws from the candle
       const k = clamp(age / 0.35);
-      const by = up ? ty + size * 0.35 : ty - size - 4;
+      const by = ty < ay ? ty + size * 0.35 : ty - size * 0.95;
       ctx.save(); ctx.globalAlpha = alpha;
       glowLine(ctx, [[x, ay], [x, lerp(ay, by, ease.outCubic(k))]], col, 1.6, 10);
       ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, ay, 4, 0, Math.PI * 2); ctx.fill();
@@ -315,7 +317,7 @@
     const x = 96, y = 104;
     txt(ctx, 'BTC / USD', x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
     const w = measure(ctx, 'BTC / USD', 44, 800) + 9 * 2;
-    txt(ctx, D < 0 ? '01/01/2020' : dateStr(D), x + w + 36, y, { size: 36, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
+    txt(ctx, dateStr(Math.max(0, D)), x + w + 36, y, { size: 36, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
   }
 
   // light glowing dust: specks of light drifting through the beam
@@ -349,17 +351,17 @@
       const flick = t < 0.5 ? (H_(Math.floor(t * 24), 3) > 0.4 ? 1 : 0.3) : 1; // neon tube flickering on
       ctx.save(); ctx.globalAlpha = a * flick;
       txt(ctx, 'BITCOIN', W / 2, H / 2 - 10, { size: 150, w: 400, fam: L.title, color: L.accent, align: 'center', glow: 40, spacing: 12 * k });
-      txt(ctx, '2020  →  2026', W / 2, H / 2 + 80, { size: 56, w: 700, fam: L.mono, color: L.text, align: 'center', glow: 12, spacing: 6 });
+      txt(ctx, `${Y_START}  →  ${Y_END}`, W / 2, H / 2 + 80, { size: 56, w: 700, fam: L.mono, color: L.text, align: 'center', glow: 12, spacing: 6 });
       ctx.restore();
     }
     if (t > ZOOM1 - 0.6) {
       const a = clamp((t - (ZOOM1 - 0.6)) / 0.6);
       const p0 = DAYS[0][0], p1 = DAYS[NDAYS - 1][3];
-      const pct = Math.round((p1 / p0 - 1) * 100);
+      const mult = p1 / p0, gain = mult >= 100 ? `×${Math.round(mult).toLocaleString('en-US')}` : `+${Math.round((mult - 1) * 100)}%`;
       ctx.save(); ctx.globalAlpha = a;
       panel(ctx, 880, 700, 760, 200, L.accent, { fill: 'rgba(2,6,12,0.88)', corner: 22, glow: 20 });
-      txt(ctx, '2020  →  2026', 1260, 778, { size: 52, w: 800, color: L.text, align: 'center', glow: 10, spacing: 3 });
-      txt(ctx, `${fmt(p0)}  →  ${fmt(p1)}   (+${pct}%)`, 1260, 856, { size: 40, w: 800, fam: L.mono, color: UP, align: 'center', glow: 16 });
+      txt(ctx, `${Y_START}  →  ${Y_END}`, 1260, 778, { size: 52, w: 800, color: L.text, align: 'center', glow: 10, spacing: 3 });
+      txt(ctx, `${fmt(p0)}  →  ${fmt(p1)}   (${gain})`, 1260, 856, { size: 40, w: 800, fam: L.mono, color: UP, align: 'center', glow: 16 });
       ctx.restore();
     }
   }
@@ -404,6 +406,7 @@
       dust(ctx, t);
       scanlines(ctx, t);
     },
+    async init() { LOGO = await Studio.loadImage('assets/bitcoin-logo.png'); },
     post: { paper: 0, vignette: 0.5, grain: 0.035, bloom: 1.1 },
     fadeOut: 1.2,
   });
