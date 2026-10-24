@@ -157,6 +157,7 @@ const out = path.join(__dirname, 'out');
 const mix = MIX.mixdown(stems, GAIN, { stemDir: process.env.STEMS ? out : null });
 MIX.highpass(mix, 24);
 MIX.gate(mix, ev.breath, ev.drop); // one beat of real silence before $100K
+for (const h of hits) if (Math.abs(h.t - ev.drop) > 0.01) MIX.gate(mix, h.t - BEAT / 4, h.t); // a held breath (a 16th) before every hit
 MIX.fadeOut(mix, DURATION - 2.2, DURATION);
 const M = MIX.master(mix, parseFloat(process.env.DRIVE || '0.8'), undefined, { lufs: process.env.LUFS ? parseFloat(process.env.LUFS) : null });
 MIX.writeWav(path.join(out, 'music.wav'), mix);

@@ -146,7 +146,7 @@
       const ay = Y(e.price) + (up ? -12 : 12);
       let dy = (e.hit ? 120 : 165) + (n % 2) * 30;
       let ty = up ? ay - dy : ay + dy;
-      if (ty < Y0 - 40) ty = Y0 - 40;
+      if (ty < Y0 + 20) ty = Y0 + 20;
       if (ty > Y1 - 10) ty = Y1 - 10;
       const tw = G.measure(ctx, e.text, size, FAM, 400);
       const tx = clamp(x - tw / 2, 20, PLOT_R - tw - 30);
