@@ -1,12 +1,34 @@
 // THE FILM — draws frame t. Everything is a pure function of t (no state), so any frame
 // can be rendered in any order by any worker, and it always lines up with song.js.
+// Look: "Glow Technology" — neon candles, bloom, HUD panels. Three variants in LOOKS, picked by look.js.
 (function () {
   const U = globalThis.U, G = globalThis.G, S = globalThis.SCORE, Studio = globalThis.Studio;
   const { ev, DAYS, NDAYS, hits, EVENTS } = S;
   const { clamp, lerp, ease } = U;
   const W = G.W, H = G.H;
-  const FAM = 'Patrick Hand'; // hand lettering with every Vietnamese diacritic
-  const UP = '#3DDC84', DOWN = '#FF4A5C', INK = '#E9E4D8', DIM = '#2A2A30', BG = '#07070A';
+
+  const LOOKS = {
+    // A: cyan hologram — a trading terminal projected in the dark
+    hologram: {
+      bg0: '#01040C', bg1: '#03142B', accent: '#00E5FF', accent2: '#8AF6FF', text: '#D6FBFF', dim: '#4F8FA0',
+      grid: 'rgba(0,229,255,0.09)', gridMajor: 'rgba(0,229,255,0.32)', up: '#00FFA3', down: '#FF2E63',
+      font: 'Inter', mono: 'Inter', title: 'Bungee', hex: true, floor: false, rain: false, scan: 0.05,
+    },
+    // B: cyberpunk — magenta + cyan, a synthwave floor grid under the chart
+    cyber: {
+      bg0: '#04010A', bg1: '#1A0533', accent: '#FF2BD6', accent2: '#00E5FF', text: '#FBE6FF', dim: '#A06AB4',
+      grid: 'rgba(255,43,214,0.09)', gridMajor: 'rgba(0,229,255,0.35)', up: '#00FFA3', down: '#FF2E63',
+      font: 'Inter', mono: 'Inter', title: 'Bungee', hex: false, floor: true, rain: false, scan: 0.04,
+    },
+    // C: terminal — black glass, teal phosphor, falling digits behind the chart
+    terminal: {
+      bg0: '#000000', bg1: '#00130E', accent: '#2BFFD0', accent2: '#B6FFEE', text: '#D8FFF4', dim: '#3C9E86',
+      grid: 'rgba(43,255,208,0.08)', gridMajor: 'rgba(43,255,208,0.30)', up: '#00FF7F', down: '#FF3355',
+      font: '"DejaVu Sans Mono", monospace', mono: '"DejaVu Sans Mono", monospace', title: '"DejaVu Sans Mono", monospace', hex: false, floor: false, rain: true, scan: 0.09,
+    },
+  };
+  const L = LOOKS[globalThis.LOOK] || LOOKS.hologram;
+  const UP = L.up, DOWN = L.down;
 
   // ---------- layout ----------
   const PLOT_R = 1660; // the price axis column starts here
@@ -19,6 +41,7 @@
   const yearOf = (d) => S.dateOf(clamp(d, 0, NDAYS - 1)).getUTCFullYear();
   const pad2 = (x) => String(x).padStart(2, '0');
   const dateStr = (d) => { const x = S.dateOf(clamp(d, 0, NDAYS - 1)); return `${pad2(x.getUTCDate())}/${pad2(x.getUTCMonth() + 1)}/${x.getUTCFullYear()}`; };
+  const rgba = (hex, a) => { const n = parseInt(hex.slice(1), 16); return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${a})`; };
 
   // ---------- the camera ----------
   const camX0 = (D) => Math.max(D * PPD - HEAD_X, -LEFT - 40);
@@ -63,70 +86,143 @@
     return { ppd: lerp(a.ppd, b.ppd, k), off: lerp(a.off, b.off, k), lo: lerp(a.lo, b.lo, k), hi: lerp(a.hi, b.hi, k), k };
   }
 
-  // ---------- drawing ----------
+  // ---------- drawing helpers ----------
   const H_ = U.hash;
-  const jit = (seed, i, amp) => G.jit(seed, i, amp);
+  const font = (size, w = 700, fam = L.font) => `${w} ${size}px ${/[,"]/.test(fam) ? fam : '"' + fam + '"'}`;
+  function txt(ctx, s, x, y, { size = 32, w = 700, fam = L.font, color = L.text, align = 'left', glow = 0, alpha = 1, spacing = 0 } = {}) {
+    ctx.save();
+    ctx.globalAlpha *= alpha;
+    ctx.font = font(size, w, fam); ctx.textAlign = align; ctx.textBaseline = 'alphabetic';
+    if (spacing) ctx.letterSpacing = spacing + 'px';
+    ctx.fillStyle = color;
+    if (glow) { ctx.shadowColor = color; ctx.shadowBlur = glow; ctx.fillText(s, x, y); }
+    ctx.shadowBlur = 0; ctx.fillText(s, x, y);
+    ctx.restore();
+  }
+  const measure = (ctx, s, size, w = 700, fam = L.font) => { ctx.save(); ctx.font = font(size, w, fam); const m = ctx.measureText(s).width; ctx.restore(); return m; };
+  function glowLine(ctx, pts, color, lw = 2, blur = 12, alpha = 1) {
+    ctx.save(); ctx.globalAlpha *= alpha; ctx.strokeStyle = color; ctx.lineWidth = lw; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    ctx.shadowColor = color; ctx.shadowBlur = blur;
+    ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]); for (const p of pts.slice(1)) ctx.lineTo(p[0], p[1]); ctx.stroke();
+    ctx.restore();
+  }
+  // a HUD panel: dark glass, thin border, bright corner brackets
+  function panel(ctx, x, y, w, h, color, { fill = 'rgba(2,8,16,0.72)', corner = 16, glow = 14, alpha = 1 } = {}) {
+    ctx.save(); ctx.globalAlpha *= alpha;
+    ctx.fillStyle = fill; ctx.fillRect(x, y, w, h);
+    ctx.strokeStyle = rgba(color, 0.35); ctx.lineWidth = 1.2; ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+    ctx.strokeStyle = color; ctx.lineWidth = 2.5; ctx.shadowColor = color; ctx.shadowBlur = glow;
+    ctx.beginPath();
+    for (const [cx, cy, sx, sy] of [[x, y, 1, 1], [x + w, y, -1, 1], [x, y + h, 1, -1], [x + w, y + h, -1, -1]]) {
+      ctx.moveTo(cx, cy + sy * corner); ctx.lineTo(cx, cy); ctx.lineTo(cx + sx * corner, cy);
+    }
+    ctx.stroke(); ctx.restore();
+  }
 
-  function grid(ctx, cam, X, Y, t) {
-    // price lines at round numbers
+  // ---------- background ----------
+  let SCAN = null;
+  function background(ctx, t, cam, D) {
+    const g = ctx.createRadialGradient(W * 0.55, H * 0.45, 100, W * 0.55, H * 0.45, W * 0.8);
+    g.addColorStop(0, L.bg1); g.addColorStop(1, L.bg0);
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    if (L.hex) { // a field of tiny tech dots that drifts with the camera
+      ctx.save(); ctx.fillStyle = rgba(L.accent, 0.13);
+      const off = (cam.off * 0.3) % 48;
+      for (let y = 24; y < H; y += 42) for (let x = -off + ((y / 42) % 2) * 24; x < W; x += 48) ctx.fillRect(x, y, 2, 2);
+      ctx.restore();
+    }
+    if (L.rain) { // falling digits, very faint
+      ctx.save(); ctx.font = font(18, 400, L.mono); ctx.textAlign = 'center';
+      for (let c = 0; c < 64; c++) {
+        const x = 15 + c * 30, sp = 60 + H_(c, 1) * 120, len = 8 + Math.floor(H_(c, 2) * 14);
+        const head = ((H_(c, 3) * H * 1.5 + t * sp) % (H * 1.5)) - 100;
+        for (let k = 0; k < len; k++) {
+          const y = head - k * 22;
+          if (y < -20 || y > H) continue;
+          ctx.fillStyle = rgba(L.accent, (k ? 0.10 : 0.30) * (1 - k / len));
+          ctx.fillText(String(Math.floor(H_(c, k, Math.floor(t * 8 + k)) * 10)), x, y);
+        }
+      }
+      ctx.restore();
+    }
+    if (L.floor) { // a synthwave perspective floor under the chart
+      ctx.save();
+      const hz = Y1 - 30, vx = W * 0.45;
+      const fg = ctx.createLinearGradient(0, hz, 0, H); fg.addColorStop(0, 'rgba(255,43,214,0)'); fg.addColorStop(1, 'rgba(255,43,214,0.10)');
+      ctx.fillStyle = fg; ctx.fillRect(0, hz, W, H - hz);
+      ctx.strokeStyle = rgba(L.accent, 0.22); ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      for (let i = -20; i <= 20; i++) { ctx.moveTo(vx + i * 30, hz); ctx.lineTo(vx + i * 260, H); }
+      const ph = (t * 0.9) % 1;
+      for (let k = 0; k < 8; k++) { const z = (k + ph) / 8, y = hz + (H - hz) * z * z; ctx.moveTo(0, y); ctx.lineTo(W, y); }
+      ctx.stroke(); ctx.restore();
+    }
+    // the year, a huge outlined hologram behind the chart
+    ctx.save();
+    ctx.font = font(330, 800, L.title); ctx.textAlign = 'center';
+    ctx.strokeStyle = rgba(L.accent, 0.10); ctx.lineWidth = 2;
+    ctx.strokeText(String(yearOf(Math.max(0, D))), PLOT_R / 2, H / 2 + 120);
+    ctx.restore();
+  }
+
+  function grid(ctx, cam, X, Y) {
     const pLo = Math.exp(cam.lo), pHi = Math.exp(cam.hi);
     const span = pHi - pLo, raw = span / 6, mag = Math.pow(10, Math.floor(Math.log10(raw)));
     const step = [1, 2, 2.5, 5, 10].map((k) => k * mag).find((s) => s >= raw);
     const levels = [];
     if (cam.k > 0.5) { for (const p of [5000, 10000, 20000, 50000, 100000]) if (p > pLo && p < pHi) levels.push(p); }
     else for (let p = Math.ceil(pLo / step) * step; p < pHi; p += step) levels.push(p);
+    ctx.save();
     for (const p of levels) {
-      const y = Y(p);
+      const y = Math.round(Y(p)) + 0.5;
       if (y < Y0 - 30 || y > Y1 + 10) continue;
-      G.line(ctx, [[0, y], [PLOT_R, y]], { color: DIM, lw: 1.6, seed: Math.round(p / 10) % 997, amp: 1.2, step: 120 });
-      G.text(ctx, fmt(p), PLOT_R + 22, y + 10, { size: 30, fam: FAM, weight: 400, color: '#8C887E', boil: 0.5 });
+      ctx.strokeStyle = L.grid; ctx.lineWidth = 1; ctx.setLineDash([2, 6]);
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(PLOT_R, y); ctx.stroke();
+      ctx.setLineDash([]);
+      txt(ctx, fmt(p), PLOT_R + 22, y + 9, { size: 24, w: 400, fam: L.mono, color: L.dim });
     }
-    // months and years
     const d0 = Math.floor(cam.off / cam.ppd) - 31, d1 = Math.ceil((PLOT_R + cam.off) / cam.ppd) + 31;
     const s0 = S.dateOf(0);
     for (let mo = 0; mo < 7 * 12; mo++) {
-      const dt = Date.UTC(s0.getUTCFullYear(), mo, 1);
-      const d = Math.round((dt - s0.getTime()) / 86400000);
+      const d = Math.round((Date.UTC(s0.getUTCFullYear(), mo, 1) - s0.getTime()) / 86400000);
       if (d < d0 || d > d1) continue;
-      const x = X(d);
+      const x = Math.round(X(d)) + 0.5;
       if (x < 0 || x > PLOT_R) continue;
       const jan = mo % 12 === 0;
-      if (jan || cam.k < 0.5) G.line(ctx, [[x, Y0 - 40], [x, Y1 + 8]], { color: jan ? '#3A3A42' : '#1A1A1F', lw: jan ? 2.2 : 1.3, seed: mo + 50, amp: 1.2, step: 120 });
-      if (jan) G.text(ctx, String(2020 + mo / 12), x + 10, Y1 + 50, { size: 38, fam: FAM, weight: 400, color: INK, boil: 0.6 });
-      else if (cam.k < 0.3) G.text(ctx, 'Th' + ((mo % 12) + 1), x + 6, Y1 + 42, { size: 24, fam: FAM, weight: 400, color: '#6E6A62', boil: 0.5, alpha: 1 - cam.k / 0.3 });
+      if (jan) {
+        glowLine(ctx, [[x, Y0 - 40], [x, Y1 + 8]], L.gridMajor, 1.2, 8);
+        txt(ctx, String(2020 + mo / 12), x + 10, Y1 + 50, { size: 30, w: 800, color: L.accent, glow: 12 });
+      } else if (cam.k < 0.5) {
+        ctx.strokeStyle = L.grid; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x, Y0 - 40); ctx.lineTo(x, Y1 + 8); ctx.stroke();
+        if (cam.k < 0.3) txt(ctx, 'TH' + ((mo % 12) + 1), x + 6, Y1 + 40, { size: 18, w: 700, fam: L.mono, color: L.dim, alpha: 1 - cam.k / 0.3, spacing: 1 });
+      }
     }
+    // the plot frame
+    ctx.strokeStyle = rgba(L.accent, 0.25); ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(0, Y1 + 8.5); ctx.lineTo(PLOT_R, Y1 + 8.5); ctx.stroke();
+    ctx.restore();
   }
 
-  function candle(ctx, i, c, x, Y, bw, live) {
+  // neon candles: a translucent body, a bright edge; the bloom pass makes them glow
+  function candle(ctx, i, c, x, Y, bw, live, t) {
     const up = c.c >= c.o, col = up ? UP : DOWN;
     const yh = Y(c.h), yl = Y(c.l), yo = Y(c.o), yc = Y(c.c);
     const top = Math.min(yo, yc), bot = Math.max(Math.max(yo, yc), top + 1.5);
-    ctx.strokeStyle = col; ctx.lineCap = 'round';
-    // wick: one pencil stroke
-    const j = jit(i * 7 + 1, 1, 0.8);
-    ctx.lineWidth = bw > 3 ? 1.7 : Math.max(1, bw * 0.9);
-    ctx.beginPath(); ctx.moveTo(x + j[0], yh); ctx.lineTo(x - j[0] * 0.5, yl); ctx.stroke();
-    if (bw <= 2.2) { // zoomed out: the whole candle is a pencil tick
-      ctx.lineWidth = Math.max(1, bw); ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bot); ctx.stroke(); return;
-    }
-    // body: a wobbly box, filled, outlined twice like a quick sketch
-    const a = jit(i, 2, 0.9), b = jit(i, 3, 0.9), cc = jit(i, 4, 0.9), d = jit(i, 5, 0.9);
+    ctx.strokeStyle = col; ctx.lineWidth = bw > 3 ? 1.4 : Math.max(1, bw * 0.9);
+    ctx.beginPath(); ctx.moveTo(x, yh); ctx.lineTo(x, yl); ctx.stroke();
+    if (bw <= 2.2) { ctx.lineWidth = Math.max(1, bw); ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bot); ctx.stroke(); return; }
     const hw = bw / 2;
-    ctx.beginPath();
-    ctx.moveTo(x - hw + a[0], top + a[1] * 0.5); ctx.lineTo(x + hw + b[0], top + b[1] * 0.5);
-    ctx.lineTo(x + hw + cc[0], bot + cc[1] * 0.5); ctx.lineTo(x - hw + d[0], bot + d[1] * 0.5); ctx.closePath();
-    ctx.globalAlpha = up ? 0.85 : 0.9; ctx.fillStyle = col; ctx.fill();
-    ctx.globalAlpha = 1; ctx.lineWidth = 1.4; ctx.strokeStyle = G.tint(col, 0.35); ctx.stroke();
-    if (bot - top > 14) { // hatching inside tall bodies
-      ctx.save(); ctx.clip(); ctx.strokeStyle = G.tint(col, -0.35); ctx.lineWidth = 1.1; ctx.globalAlpha = 0.55;
-      ctx.beginPath();
-      for (let y = top - bw; y < bot; y += 6) { ctx.moveTo(x - hw - 1, y + bw); ctx.lineTo(x + hw + 1, y); }
-      ctx.stroke(); ctx.restore();
-    }
+    ctx.fillStyle = rgba(col, up ? 0.38 : 0.5); ctx.fillRect(x - hw, top, bw, bot - top);
+    ctx.lineWidth = 1.5; ctx.strokeRect(x - hw, top, bw, bot - top);
     if (live) {
-      const g = ctx.createRadialGradient(x, yc, 0, x, yc, 60);
-      g.addColorStop(0, up ? 'rgba(61,220,132,0.45)' : 'rgba(255,74,92,0.45)'); g.addColorStop(1, 'rgba(0,0,0,0)');
-      ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = g; ctx.fillRect(x - 60, yc - 60, 120, 120); ctx.restore();
+      ctx.save();
+      ctx.shadowColor = col; ctx.shadowBlur = 25; ctx.fillStyle = col; ctx.fillRect(x - hw, top, bw, bot - top);
+      // a pulsing ring on the live price
+      const ph = (t * 1.6) % 1;
+      ctx.shadowBlur = 0; ctx.strokeStyle = rgba(col, 0.8 * (1 - ph)); ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.arc(x, yc, 6 + ph * 26, 0, Math.PI * 2); ctx.stroke();
+      ctx.fillStyle = '#FFFFFF'; ctx.beginPath(); ctx.arc(x, yc, 3.5, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
     }
   }
 
@@ -140,27 +236,26 @@
       if (x < -300 || x > PLOT_R + 50) return;
       const alpha = fade * clamp(1 - (age - 7) / 1.5);
       if (alpha <= 0) return;
-      const pop = ease.outBack(clamp(age / 0.3), 2.2);
       const up = e.kind !== 'down';
-      const size = e.big ? 60 : e.hit ? 44 : 32;
-      const ay = Y(e.price) + (up ? -12 : 12);
-      let dy = (e.hit ? 120 : 165) + (n % 2) * 30;
+      const size = e.big ? 50 : e.hit ? 34 : 24;
+      const ay = Y(e.price) + (up ? -10 : 10);
+      const dy = (e.hit ? 120 : 165) + (n % 2) * 30;
       let ty = up ? ay - dy : ay + dy;
-      if (ty < Y0 + 20) ty = Y0 + 20;
-      if (ty > Y1 - 10) ty = Y1 - 10;
-      const tw = G.measure(ctx, e.text, size, FAM, 400);
+      ty = clamp(ty, Y0 + 20, Y1 - 20);
+      const s = e.text.toUpperCase(), tw = measure(ctx, s, size, 800);
       const tx = clamp(x - tw / 2, 20, PLOT_R - tw - 30);
-      const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : '#F2C14E';
-      ctx.save();
-      ctx.globalAlpha = alpha;
-      ctx.translate(x, ay); ctx.scale(pop, pop); ctx.translate(-x, -ay);
-      // the arrow from the note to the wick
-      const by = up ? ty + 16 : ty - size - 6;
-      G.line(ctx, [[x + (tx + tw / 2 - x) * 0.6, by], [x, ay]], { color: col, lw: 3, seed: 300 + n, amp: 1.6, step: 18 });
-      const ang = Math.atan2(ay - by, x - (x + (tx + tw / 2 - x) * 0.6));
-      for (const s of [-0.5, 0.5]) G.line(ctx, [[x, ay], [x - Math.cos(ang + s) * 16, ay - Math.sin(ang + s) * 16]], { color: col, lw: 3, seed: 310 + n, amp: 1 });
-      G.rrect(ctx, tx - 14, ty - size * 0.95, tw + 28, size * 1.25, 10, { fill: 'rgba(10,10,12,0.88)', stroke: col, lw: e.hit ? 3 : 2, seed: 400 + n });
-      G.text(ctx, e.text, tx, ty, { size, fam: FAM, weight: 400, color: e.hit ? col : INK, boil: 0.7 });
+      const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
+      // the panel types itself in, the leader line draws from the candle
+      const k = clamp(age / 0.35);
+      const by = up ? ty + size * 0.35 : ty - size - 4;
+      ctx.save(); ctx.globalAlpha = alpha;
+      glowLine(ctx, [[x, ay], [x, lerp(ay, by, ease.outCubic(k))]], col, 1.6, 10);
+      ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, ay, 4, 0, Math.PI * 2); ctx.fill();
+      if (age > 0.12) {
+        const shown = s.slice(0, Math.ceil(s.length * clamp((age - 0.12) / 0.3)));
+        panel(ctx, tx - 16, ty - size * 0.95, tw + 32, size * 1.3, col, { corner: 10, glow: e.hit ? 16 : 8 });
+        txt(ctx, shown, tx, ty, { size, w: 800, color: e.hit ? col : L.text, glow: e.hit ? 14 : 0 });
+      }
       ctx.restore();
     });
   }
@@ -174,120 +269,127 @@
     const up = c.c >= c.o, col = up ? UP : DOWN;
     const y = clamp(Y(p), Y0 - 20, Y1);
     const hx = X(Math.max(0, D));
-    // dashed price line from the live candle to the bubble
+    // the price line: a glowing beam from the live candle to the bubble
     ctx.save();
-    ctx.setLineDash([10, 9]); ctx.lineDashOffset = -t * 30;
-    ctx.globalAlpha = 0.75 * (1 - cam.k);
-    G.line(ctx, [[hx + 8, y], [PLOT_R + 6, y]], { color: col, lw: 2, seed: 77, amp: 0.8, step: 60 });
+    ctx.globalAlpha = 1 - cam.k;
+    const g = ctx.createLinearGradient(hx, 0, PLOT_R, 0); g.addColorStop(0, rgba(col, 0.9)); g.addColorStop(1, rgba(col, 0.25));
+    ctx.strokeStyle = g; ctx.lineWidth = 1.5; ctx.shadowColor = col; ctx.shadowBlur = 10; ctx.setLineDash([6, 6]); ctx.lineDashOffset = -t * 40;
+    ctx.beginPath(); ctx.moveTo(hx + 10, y); ctx.lineTo(PLOT_R + 6, y); ctx.stroke();
     ctx.restore();
-    const txt = fmt(p), size = 40;
-    const tw = G.measure(ctx, txt, size, FAM, 400);
-    const bx = PLOT_R + 14, bw = Math.max(tw + 34, 200), bh = 62;
-    G.poly(ctx, [[bx - 18, y], [bx, y - bh / 2], [bx + bw, y - bh / 2], [bx + bw, y + bh / 2], [bx, y + bh / 2]], { fill: col, stroke: G.tint(col, 0.5), lw: 3, seed: 91, hatch: false });
-    G.text(ctx, txt, bx + bw / 2, y + 14, { size, fam: FAM, weight: 400, color: '#08080A', align: 'center', boil: 0.5 });
-    return { p, up, col, hx, y };
+    const s = fmt(p), size = 36;
+    const tw = measure(ctx, s, size, 800, L.mono);
+    const bx = PLOT_R + 18, bw = Math.max(tw + 40, 210), bh = 60;
+    ctx.save();
+    ctx.beginPath(); ctx.moveTo(bx - 16, y); ctx.lineTo(bx, y - bh / 2); ctx.lineTo(bx + bw, y - bh / 2); ctx.lineTo(bx + bw, y + bh / 2); ctx.lineTo(bx, y + bh / 2); ctx.closePath();
+    ctx.fillStyle = L.bg0; ctx.fill(); ctx.fillStyle = rgba(col, 0.22); ctx.fill();
+    ctx.strokeStyle = col; ctx.lineWidth = 2.5; ctx.shadowColor = col; ctx.shadowBlur = 22; ctx.stroke(); ctx.stroke();
+    ctx.restore();
+    txt(ctx, s, bx + bw / 2, y + 13, { size, w: 800, fam: L.mono, color: '#FFFFFF', align: 'center', glow: 6 });
+    // the change since the open of the candle, small, under the bubble
+    const pct = ((c.c / c.o - 1) * 100).toFixed(2);
+    ctx.save(); ctx.globalAlpha = 1 - cam.k; ctx.fillStyle = L.bg0; ctx.fillRect(bx + bw / 2 - 62, y + bh / 2 + 4, 124, 30); ctx.restore();
+    txt(ctx, `${up ? '▲' : '▼'} ${Math.abs(pct)}%`, bx + bw / 2, y + bh / 2 + 26, { size: 20, w: 700, fam: L.mono, color: col, align: 'center', alpha: 1 - cam.k });
   }
 
   function hud(ctx, t, D) {
-    G.text(ctx, 'BTC / USD', 96, 92, { size: 56, fam: FAM, weight: 400, color: INK });
-    G.text(ctx, '· 1D', 330, 92, { size: 40, fam: FAM, weight: 400, color: '#F2A93B' });
-    G.text(ctx, D < 0 ? '01/01/2020' : dateStr(D), 96, 142, { size: 36, fam: FAM, weight: 400, color: '#A9A49A' });
+    panel(ctx, 70, 50, 420, 118, L.accent);
+    txt(ctx, 'BTC / USD', 96, 104, { size: 44, w: 800, fam: L.font, color: L.text, glow: 10, spacing: 2 });
+    ctx.save(); ctx.strokeStyle = L.accent; ctx.lineWidth = 1.5; ctx.strokeRect(386, 70, 74, 40); ctx.restore();
+    txt(ctx, '1D', 423, 100, { size: 26, w: 800, color: L.accent, align: 'center', glow: 10 });
+    txt(ctx, D < 0 ? '01/01/2020' : dateStr(D), 96, 148, { size: 28, w: 700, fam: L.mono, color: L.accent2, spacing: 2 });
+    const on = Math.floor(t * 2) % 2 === 0;
+    ctx.save(); ctx.fillStyle = DOWN; ctx.globalAlpha = on ? 1 : 0.25; ctx.shadowColor = DOWN; ctx.shadowBlur = 10;
+    ctx.beginPath(); ctx.arc(400, 140, 6, 0, Math.PI * 2); ctx.fill(); ctx.restore();
+    txt(ctx, 'LIVE', 414, 148, { size: 20, w: 800, color: L.text, spacing: 2 });
   }
 
-  function watermark(ctx, D) {
-    const y = yearOf(Math.max(0, D));
-    G.text(ctx, String(y), (PLOT_R) / 2, H / 2 + 120, { size: 360, fam: FAM, weight: 400, color: '#111116', align: 'center', boil: 0.3 });
-  }
-
-  // light floating dust, hairs and specks: the old-film overlay
+  // light glowing dust: specks of light drifting through the beam
   function dust(ctx, t) {
-    ctx.save();
-    for (let i = 0; i < 110; i++) {
+    ctx.save(); ctx.globalCompositeOperation = 'lighter';
+    for (let i = 0; i < 120; i++) {
       const sp = 6 + H_(i, 3) * 22;
       const x = ((H_(i, 1) * W + t * sp * (H_(i, 4) - 0.5) * 2 + U.noise1(t * 0.3, i) * 40) % W + W) % W;
       const y = ((H_(i, 2) * H - t * sp * 0.6 + U.noise1(t * 0.25, i + 99) * 30) % H + H) % H;
-      const r = 0.8 + H_(i, 5) * 2.2;
-      ctx.globalAlpha = (0.12 + H_(i, 6) * 0.25) * (0.6 + 0.4 * Math.sin(t * (1 + H_(i, 7) * 3) + i));
-      ctx.fillStyle = '#E8E0CC';
+      const r = 0.6 + H_(i, 5) * 1.8;
+      ctx.globalAlpha = (0.10 + H_(i, 6) * 0.30) * (0.55 + 0.45 * Math.sin(t * (1 + H_(i, 7) * 3) + i));
+      ctx.fillStyle = H_(i, 8) < 0.3 ? L.accent2 : '#FFFFFF';
       ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
     }
-    // a few specks and hairs that flash for one drawing (12 fps "on twos")
-    const b = G.boil;
-    for (let k = 0; k < 3; k++) {
-      if (H_(b, k, 11) > 0.35) continue;
-      const x = H_(b, k, 12) * W, y = H_(b, k, 13) * H, L = 20 + H_(b, k, 14) * 60, a = H_(b, k, 15) * Math.PI;
-      ctx.globalAlpha = 0.18 + H_(b, k, 16) * 0.2; ctx.strokeStyle = '#DDD5C2'; ctx.lineWidth = 1.2;
-      ctx.beginPath(); ctx.moveTo(x, y);
-      ctx.quadraticCurveTo(x + Math.cos(a) * L * 0.5 + 12, y + Math.sin(a) * L * 0.5 - 10, x + Math.cos(a) * L, y + Math.sin(a) * L); ctx.stroke();
-    }
-    if (H_(b, 21) < 0.25) { ctx.globalAlpha = 0.08; ctx.fillStyle = '#EDE6D6'; ctx.fillRect(H_(b, 22) * W, 0, 1.5, H); } // a vertical film scratch
+    ctx.restore();
+  }
+  function scanlines(ctx, t) {
+    if (!SCAN) { SCAN = G.makeCanvas(4, 4); const s = SCAN.getContext('2d'); s.fillStyle = '#000'; s.fillRect(0, 0, 4, 2); }
+    ctx.save(); ctx.globalAlpha = L.scan * 3; ctx.fillStyle = ctx.createPattern(SCAN, 'repeat'); ctx.fillRect(0, 0, W, H);
+    // a slow bright band rolling down the screen
+    const y = ((t * 140) % (H + 300)) - 150;
+    const g = ctx.createLinearGradient(0, y - 80, 0, y + 80); g.addColorStop(0, rgba(L.accent, 0)); g.addColorStop(0.5, rgba(L.accent, 0.035)); g.addColorStop(1, rgba(L.accent, 0));
+    ctx.globalAlpha = 1; ctx.fillStyle = g; ctx.fillRect(0, y - 80, W, 160);
     ctx.restore();
   }
 
   function titles(ctx, t) {
-    // intro: written in before the first candle
     if (t < ev.start + 1.2) {
       const a = 1 - clamp((t - ev.start - 0.3) / 0.9);
-      const k = ease.outBack(clamp(t / 0.6), 1.6);
-      ctx.save(); ctx.globalAlpha = a;
-      ctx.translate(W / 2, H / 2 - 40); ctx.scale(k, k); ctx.translate(-W / 2, -(H / 2 - 40));
-      G.text(ctx, 'BITCOIN', W / 2, H / 2 - 20, { size: 170, fam: FAM, weight: 400, color: '#F2A93B', align: 'center', stroke: '#07070A', strokeW: 12 });
-      G.text(ctx, '2020  →  2026', W / 2, H / 2 + 80, { size: 70, fam: FAM, weight: 400, color: INK, align: 'center', stroke: '#07070A', strokeW: 10 });
+      const k = ease.outCubic(clamp(t / 0.6));
+      const flick = t < 0.5 ? (H_(Math.floor(t * 24), 3) > 0.4 ? 1 : 0.3) : 1; // neon tube flickering on
+      ctx.save(); ctx.globalAlpha = a * flick;
+      txt(ctx, 'BITCOIN', W / 2, H / 2 - 10, { size: 150, w: 400, fam: L.title, color: L.accent, align: 'center', glow: 40, spacing: 12 * k });
+      txt(ctx, '2020  →  2026', W / 2, H / 2 + 80, { size: 56, w: 700, fam: L.mono, color: L.text, align: 'center', glow: 12, spacing: 6 });
       ctx.restore();
     }
-    // outro: the six years in one line
     if (t > ZOOM1 - 0.6) {
       const a = clamp((t - (ZOOM1 - 0.6)) / 0.6);
       const p0 = DAYS[0][0], p1 = DAYS[NDAYS - 1][3];
       const pct = Math.round((p1 / p0 - 1) * 100);
       ctx.save(); ctx.globalAlpha = a;
-      G.rrect(ctx, 880, 700, 760, 200, 18, { fill: 'rgba(8,8,10,0.92)', stroke: '#F2A93B', lw: 3, seed: 5 });
-      G.text(ctx, '2020  →  2026', 1260, 775, { size: 64, fam: FAM, weight: 400, color: INK, align: 'center' });
-      G.text(ctx, `${fmt(p0)}  →  ${fmt(p1)}   (+${pct}%)`, 1260, 860, { size: 52, fam: FAM, weight: 400, color: UP, align: 'center' });
+      panel(ctx, 880, 700, 760, 200, L.accent, { fill: 'rgba(2,6,12,0.88)', corner: 22, glow: 20 });
+      txt(ctx, '2020  →  2026', 1260, 778, { size: 52, w: 800, color: L.text, align: 'center', glow: 10, spacing: 3 });
+      txt(ctx, `${fmt(p0)}  →  ${fmt(p1)}   (+${pct}%)`, 1260, 856, { size: 40, w: 800, fam: L.mono, color: UP, align: 'center', glow: 16 });
       ctx.restore();
     }
   }
 
   Studio.film({
     draw(ctx, t) {
-      ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
       const cam = camera(t);
       const D = S.dayAt(Math.min(t, ev.end));
-      // a hit = a kick of the camera and a flash of the move's colour
       let shake = 0, flash = 0, fcol = UP;
       for (const h of [...hits, { t: ev.end, kind: 'up', big: true }]) {
         const a = t - h.t;
         if (a >= 0 && a < 0.8) { const e = Math.exp(-a * 7); if (e > flash) { flash = e; fcol = h.kind === 'down' ? DOWN : UP; } shake = Math.max(shake, (h.big ? 16 : 10) * Math.exp(-a * 6)); }
       }
+      background(ctx, t, cam, D);
       ctx.save();
       ctx.translate(U.noise1(t * 30, 1) * shake, U.noise1(t * 30, 2) * shake);
       const X = (d) => d * cam.ppd - cam.off;
       const Y = (p) => Y1 - ((Math.log(p) - cam.lo) / (cam.hi - cam.lo)) * (Y1 - Y0);
-      watermark(ctx, D);
-      grid(ctx, cam, X, Y, t);
-      // the candles
-      const bw = Math.max(1, cam.ppd * 0.66);
+      grid(ctx, cam, X, Y);
+      const bw = Math.max(1, cam.ppd * 0.62);
       const i0 = Math.max(0, Math.floor(cam.off / cam.ppd) - 1), i1 = Math.min(NDAYS - 1, Math.floor(D));
       ctx.save(); ctx.beginPath(); ctx.rect(0, 0, PLOT_R, H); ctx.clip();
       for (let i = i0; i <= i1; i++) {
         const x = X(i + 0.5);
         if (x > PLOT_R + 10) break;
         const c = S.candleAt(i, Math.min(t, ev.end));
-        if (c) candle(ctx, i, c, x, Y, bw, !c.done);
+        if (c) candle(ctx, i, c, x, Y, bw, !c.done, t);
       }
       labels(ctx, t, X, Y, cam);
       ctx.restore();
-      // the price axis column
-      ctx.fillStyle = 'rgba(7,7,10,0.0)';
-      G.line(ctx, [[PLOT_R, Y0 - 60], [PLOT_R, Y1 + 10]], { color: '#3A3A42', lw: 2, seed: 3, step: 80 });
+      glowLine(ctx, [[PLOT_R + 0.5, Y0 - 60], [PLOT_R + 0.5, Y1 + 8]], rgba(L.accent, 0.5), 1.2, 8);
       bubble(ctx, t, cam, Y, X);
       ctx.restore();
       hud(ctx, t, D);
-      if (flash > 0.01) { ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.globalAlpha = flash * 0.32; ctx.fillStyle = fcol; ctx.fillRect(0, 0, W, H); ctx.restore(); }
+      if (flash > 0.01) {
+        ctx.save(); ctx.globalCompositeOperation = 'lighter';
+        const g = ctx.createRadialGradient(W / 2, H / 2, 100, W / 2, H / 2, W * 0.75);
+        g.addColorStop(0, rgba(fcol, 0.12 * flash)); g.addColorStop(1, rgba(fcol, 0.45 * flash));
+        ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
+      }
       titles(ctx, t);
       dust(ctx, t);
+      scanlines(ctx, t);
     },
-    post: { paper: 0, vignette: 0.45, grain: 0.07 },
+    post: { paper: 0, vignette: 0.5, grain: 0.035, bloom: 1.1 },
     fadeOut: 1.2,
   });
 })();
