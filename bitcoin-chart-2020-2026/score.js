@@ -1,13 +1,16 @@
 // THE SCORE — the single source of truth for music AND picture, built from the data (btc-data.js).
-// - Every event with hit ≥ 1 in data/events.csv is pinned to a bar line: the candle that makes the move and the hit
-//   in the music land on the same frame. hit = 2 gets a 4-bar build, a beat of silence and a drop.
-// - The music's mood follows the market: near the all-time high it drives (bull), deep under it it broods (bear).
-// Add data or events, run `node make-data.js`, and the whole film re-times itself.
+// - The market is cut into phases (data/phases.csv): uptrend, downtrend, sideway, peak, bottom. Each phase plays a
+//   cue from data/music.js at that cue's tempo: trends fast, sideways medium, the turns (peak / bottom) slow.
+// - The chart rides the music: inside a phase a bar always shows the same number of days, so the candles run as fast
+//   as the tempo; on every beat they surge a little.
+// - Every event with hit ≥ 1 in data/events.csv is a hit in the music and a flash on screen, on the same frame.
+// Add data, phases or events, run `node make-data.js`, and the whole film re-times itself.
 (function () {
   const node = typeof require !== 'undefined';
   const U = node ? require('./engine/util') : globalThis.U;
   const MU = node ? require('./engine/music') : globalThis.MUSIC;
   const BTC = node ? require('./btc-data') : globalThis.BTC;
+  const LIB = node ? require('./data/music') : globalThis.MUSIC_LIBRARY;
   const { m, makeClock, makeChords } = MU;
 
   const FPS = node && process.env.FPS ? +process.env.FPS : 24; // FPS=30 node … renders at another frame rate
@@ -23,17 +26,12 @@
   const dateOf = (d) => new Date(START + Math.floor(d) * 86400000);
   const yearAt = (d) => dateOf(U.clamp(d, 0, NDAYS - 1)).getUTCFullYear();
 
-  // ---------- pacing: days per bar (the quiet early years go faster) ----------
-  // SPEED < 1 slows the whole chart down (0.7 = 30% slower than the first cut, so the eye can follow every candle)
-  const SPEED = 0.7;
-  const DPB0 = (d) => { const y = yearAt(d); return (y <= 2012 ? 130 : y <= 2019 ? 85 : 70) * SPEED; };
-  // the mood of the market around each event: the chart slows into a crash (heavy) and rushes into a rally (euphoric)
+  // ---------- the mood around each event (for the picture: a creeping shake into crashes, a glow into rallies) ----------
   const MOODS = BTC.events.filter((e) => e.kind === 'up' || e.kind === 'down').map((e) => {
     const day = dayOf(e.date), big = e.hit > 0;
     return { day, up: e.kind === 'up', w: big ? 1 : 0.55, before: big ? 45 : 18, after: big ? 6 : 4 };
   }).filter((e) => e.day >= 0 && e.day < NDAYS);
   const smooth = (x) => x * x * (3 - 2 * x);
-  // 0..1: how close day d is to each mood event (ramps up before it, fades quickly after)
   function moodAt(d) {
     let up = 0, down = 0;
     for (const e of MOODS) {
@@ -44,93 +42,77 @@
     }
     return { up, down };
   }
-  // into a crash: up to 2.5x slower; into a rally: up to 1.7x faster
-  const DPB = (d) => { const md = moodAt(d + 0.5); return DPB0(d) * (1 - 0.6 * md.down) * (1 + 0.7 * md.up); };
-  const natural = [0]; // natural[d] = bars from the first candle to day d
-  for (let d = 1; d <= NDAYS; d++) natural.push(natural[d - 1] + 1 / DPB(d - 1));
-  const nat = (D) => {
-    if (D <= 0) return D / DPB(0);
-    if (D >= NDAYS) return natural[NDAYS];
-    const i = Math.floor(D); return natural[i] + (D - i) * (natural[i + 1] - natural[i]);
-  };
-  function natInv(v) { // the day whose natural position is v
-    if (v <= 0) return v * DPB(0);
-    if (v >= natural[NDAYS]) return NDAYS;
-    let lo = 0, hi = NDAYS;
-    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (natural[mid] <= v) lo = mid; else hi = mid; }
-    return lo + (v - natural[lo]) / (natural[lo + 1] - natural[lo]);
-  }
 
-  const FIRST_BAR = 1; // the first candle starts forming here (after a one-bar title)
+  // ---------- phases -> bars ----------
+  // SPEED < 1 slows the whole chart down; days per bar at the reference tempo (120 BPM) by era
+  const SPEED = 0.7;
+  const DPB0 = (d) => { const y = yearAt(d); return (y <= 2012 ? 130 : y <= 2019 ? 85 : 70) * SPEED; };
+  const MIN_BARS = 2; // every phase gets at least two bars, so a short turn is still felt (and heard)
+  const isTurn = (type) => type === 'peak' || type === 'bottom';
+  let PH = (BTC.phases || []).map((p) => ({ type: p.type, cue: p.cue, d0: Math.max(0, dayOf(p.start)), d1: Math.min(NDAYS - 1, dayOf(p.end)) })).filter((p) => p.d1 >= p.d0);
+  if (!PH.length) PH = [{ type: 'sideway', cue: LIB.pickCue('sideway', 0).id, d0: 0, d1: NDAYS - 1 }];
+  PH[0].d0 = 0; PH[PH.length - 1].d1 = NDAYS - 1;
+  for (let i = 1; i < PH.length; i++) PH[i].d0 = PH[i - 1].d1 + 1; // back to back, no holes
+  const cueOf = (id) => LIB.CUES.find((c) => c.id === id) || LIB.pickCue('sideway', 0);
+  const FIRST_BAR = 1; // bar 0 is the title
+  let bar = FIRST_BAR;
+  for (const p of PH) {
+    p.c = cueOf(p.cue);
+    const days = p.d1 - p.d0 + 1, mid = (p.d0 + p.d1) / 2;
+    // at this cue's tempo a bar lasts 240/bpm s; keep the chart's days-per-second of the era at 120 BPM, scaled by tempo
+    p.bars = Math.max(MIN_BARS, Math.round(days / DPB0(mid)));
+    p.b0 = bar; bar += p.bars; p.b1 = bar;
+  }
+  const END_BAR = bar;
+
+  // knots (bar, day): phase starts, and the hit events inside their phase on a bar line where one is free
   const hitEv = BTC.events.filter((e) => e.hit > 0).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
-  const PINS = [[FIRST_BAR, -0.5]];
-  let last = FIRST_BAR;
-  for (const e of hitEv) {
-    const gap = e.hit === 2 ? 5 : 2; // room for a build before the big one
-    const bar = Math.max(last + gap, FIRST_BAR + Math.round(nat(e.day + 0.5)));
-    PINS.push([bar, e.day + 0.5]);
-    e.bar = bar; last = bar;
+  const KN = [];
+  for (const p of PH) {
+    KN.push([p.b0, p === PH[0] ? -0.5 : p.d0]);
+    let last = p.b0;
+    for (const e of hitEv.filter((h) => h.day >= p.d0 && h.day <= p.d1)) {
+      const want = p.b0 + Math.round(((e.day + 0.5 - p.d0) / (p.d1 + 1 - p.d0)) * p.bars);
+      const hb = U.clamp(want, last + 1, p.b1 - 1);
+      if (hb > last && hb < p.b1) { KN.push([hb, e.day + 0.5]); e.bar = hb; last = hb; }
+    }
   }
-  const END_BAR = Math.max(last + 2, FIRST_BAR + Math.round(natural[NDAYS]));
-  PINS.push([END_BAR, NDAYS]);
-
-  // between two pins the chart follows the natural pacing (with its slow-downs and rushes), stretched so that
-  // every pinned event lands exactly on its bar line
-  const PB = PINS.map((p) => p[0]), PD = PINS.map((p) => p[1]), PN = PD.map(nat), n = PINS.length;
-  function dayOfBar(b) { // the market's pacing in bars (era + mood), pins exact
-    if (b <= PB[0]) return PD[0];
-    if (b >= PB[n - 1]) return PD[n - 1];
-    let i = 0; while (b > PB[i + 1]) i++;
-    return natInv(PN[i] + ((b - PB[i]) / (PB[i + 1] - PB[i])) * (PN[i + 1] - PN[i]));
+  KN.push([END_BAR, NDAYS]);
+  const KB = KN.map((k) => k[0]), KD = KN.map((k) => k[1]);
+  function dayOfBar(b) {
+    if (b <= KB[0]) return KD[0];
+    if (b >= KB[KB.length - 1]) return KD[KD.length - 1];
+    let lo = 0, hi = KB.length - 1;
+    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (KB[mid] <= b) lo = mid; else hi = mid; }
+    return KD[lo] + ((b - KB[lo]) / (KB[lo + 1] - KB[lo])) * (KD[lo + 1] - KD[lo]);
   }
 
-  // ---------- the arrangement, bar by bar, from the market ----------
-  // ath[d] = the all-time high up to day d; a bar is 'bear' when the price sits far under it
-  const ath = []; let top = 0;
-  for (let d = 0; d < NDAYS; d++) { top = Math.max(top, DAYS[d][1]); ath.push(top); }
-  const ARR = [];
+  // ---------- per bar: which phase and cue, and the tempo ----------
+  const BARS = []; // b -> { type, cue, k (bar inside the phase), p (phase index) }
   for (let b = 0; b < END_BAR + 3; b++) {
-    if (b < FIRST_BAR + 1) { ARR.push('intro'); continue; }
-    if (b >= END_BAR) { ARR.push('outro'); continue; }
-    const d = U.clamp(Math.floor(dayOfBar(b + 0.5)), 0, NDAYS - 1);
-    ARR.push(DAYS[d][3] / ath[d] < 0.5 ? 'bear' : 'bull');
+    const i = b < FIRST_BAR ? 0 : b >= END_BAR ? PH.length - 1 : PH.findIndex((p) => b >= p.b0 && b < p.b1);
+    const p = PH[i];
+    BARS.push({ type: b < FIRST_BAR ? 'intro' : b >= END_BAR ? 'outro' : p.type, cue: p.c, k: b - p.b0, p: i });
   }
-  for (const e of hitEv.filter((h) => h.hit === 2)) {
-    for (let b = e.bar - 4; b < e.bar; b++) if (b > FIRST_BAR) ARR[b] = 'build';
-    for (let b = e.bar; b < Math.min(e.bar + 6, END_BAR); b++) ARR[b] = 'drop';
+  // tempo points on every bar line: the cue's tempo; into a turn the tempo starts sinking a bar early (ritardando);
+  // the clock ramps linearly between points, so every change takes one bar
+  const bpmOf = (b) => BARS[U.clamp(b, 0, BARS.length - 1)].cue.bpm;
+  const tempo = [];
+  for (let b = 0; b < BARS.length; b++) {
+    let v = bpmOf(b);
+    if (b >= FIRST_BAR && b + 1 < END_BAR && isTurn(BARS[b + 1].type) && !isTurn(BARS[b].type)) v = (v + bpmOf(b + 1)) / 2;
+    tempo.push([b, v]);
   }
-  // a lone bar of one mood inside another is smoothed away
-  for (let b = 2; b < END_BAR - 1; b++) if ((ARR[b] === 'bull' || ARR[b] === 'bear') && ARR[b - 1] === ARR[b + 1] && ARR[b - 1] !== ARR[b] && ['bull', 'bear'].includes(ARR[b - 1])) ARR[b] = ARR[b - 1];
-
-  // ---------- the chart rides the music ----------
-  // The tempo never changes. What changes is how the music FEELS, and the candles follow it: the half-time bear
-  // grooves drag, a build accelerates bar by bar with its snare roll, a drop rushes; and inside every beat the
-  // chart surges on the beat and eases off between beats. Pinned events still land exactly on their bar lines.
-  const runOf = (b) => { let r = 0; while (b - r - 1 >= 0 && ARR[b - r - 1] === ARR[b]) r++; return r; };
-  const FEEL = ARR.map((st, b) => (st === 'bear' ? 0.7 : st === 'build' ? 1 + 0.12 * runOf(b) : st === 'drop' ? 1.3 : 1));
-  const feelAt = (x) => { // linear between bar centres
-    const i = Math.floor(x - 0.5), u = x - 0.5 - i;
-    const a = FEEL[U.clamp(i, 0, FEEL.length - 1)], c = FEEL[U.clamp(i + 1, 0, FEEL.length - 1)];
-    return a + (c - a) * u;
-  };
-  const RES = 16; // integration steps per bar
-  const CUM = [0];
-  for (let q = 1; q <= FEEL.length * RES; q++) CUM.push(CUM[q - 1] + feelAt((q - 0.5) / RES) / RES);
-  const cum = (b) => { const q = U.clamp(b * RES, 0, CUM.length - 1), i = Math.floor(q); return i >= CUM.length - 1 ? CUM[CUM.length - 1] : CUM[i] + (q - i) * (CUM[i + 1] - CUM[i]); };
-  const PULSE = 0.3; // how hard the candles surge on each beat (0 = smooth)
-  function warp(b) { // music bars -> market bars: feel inside each pin segment, then the beat pulse
-    if (b <= PB[0] || b >= PB[n - 1]) return b;
-    let i = 0; while (b > PB[i + 1]) i++;
-    const w = PB[i] + ((cum(b) - cum(PB[i])) / (cum(PB[i + 1]) - cum(PB[i]))) * (PB[i + 1] - PB[i]);
-    return w + (PULSE * Math.sin(2 * Math.PI * 4 * w)) / (2 * Math.PI * 4); // speed 1 + 0.3 cos(beat): fast on the beat
-  }
-  const clock = makeClock({ bpm: 120, offset: 0 }); // 1 beat = 0.5s, 1 bar = 2s — constant
+  const clock = makeClock({ bpm: bpmOf(0), offset: 0, tempo });
   const { T, BEAT } = clock;
   const DURATION = T(END_BAR + 2) + 0.5;
-  const dayAt = (t) => dayOfBar(warp(t / clock.BAR));
+  const PULSE = 0.3; // how hard the candles surge on each beat (0 = smooth)
+  const pulse = (b) => b + (PULSE * Math.sin(2 * Math.PI * 4 * b)) / (2 * Math.PI * 4);
+  const barAt = (t) => clock.beatPos(t) / clock.beatsPerBar;
+  const dayAt = (t) => dayOfBar(pulse(barAt(t)));
   function timeOfDay(d) { // dayAt is monotone: bisect
     let a = 0, c = DURATION;
-    for (let k = 0; k < 40; k++) { const m = (a + c) / 2; if (dayAt(m) < d) a = m; else c = m; }
+    for (let k = 0; k < 44; k++) { const mid = (a + c) / 2; if (dayAt(mid) < d) a = mid; else c = mid; }
     return (a + c) / 2;
   }
 
@@ -164,54 +146,42 @@
   const EVENTS = BTC.events.map((e) => {
     const d = dayOf(e.date);
     if (d < 0 || d >= NDAYS) return null;
-    const pin = hitEv.find((h) => h.day === d && h.hit);
+    const pin = hitEv.find((h) => h.day === d && h.bar !== undefined);
     const c = DAYS[d];
-    return { ...e, day: d, t: pin ? T(pin.bar) : timeOfDay(d + 0.5), big: e.hit === 2, price: e.kind === 'down' ? c[2] : c[1] };
+    return { ...e, day: d, t: pin ? T(pin.bar) : timeOfDay(d + 0.5), bar: pin ? pin.bar : undefined, big: e.hit === 2, price: e.kind === 'down' ? c[2] : c[1] };
   }).filter(Boolean);
   for (const e of EVENTS) PEAK.set(e.day, e.kind !== 'down');
   const hits = EVENTS.filter((e) => e.hit > 0);
   const bigs = hits.filter((e) => e.big);
-
-  const styleAt = (t) => ARR[U.clamp(Math.floor(t / clock.BAR + 1e-6), 0, ARR.length - 1)];
-  const breaths = bigs.map((e) => [T(e.bar, -1), T(e.bar)]); // one beat of real silence before each big one
+  const breaths = bigs.map((e) => [e.t - BEAT, e.t]); // one beat of real silence before each big one
   const inBreath = (t) => breaths.some(([a, b]) => t >= a - 1e-6 && t < b - 1e-6);
 
-  // sections (for the level meter): runs of the same style
-  const S = {};
-  for (let b = 0, k = 0; b < ARR.length; ) {
-    let e = b; while (e < ARR.length && ARR[e] === ARR[b]) e++;
-    S[`${ARR[b]}${k++ ? '@' + b : ''}`] = [T(b), Math.min(T(e), DURATION)]; b = e;
-  }
+  // sections (for the level meter): one per phase
+  const S = { intro: [0, T(FIRST_BAR)] };
+  PH.forEach((p, i) => { S[`${i + 1}-${p.type}`] = [T(p.b0), T(p.b1)]; });
+  S.outro = [T(END_BAR), DURATION];
 
-  // ---------- harmony (D minor) ----------
+  // ---------- harmony: every chord any cue uses ----------
   const CH = {
-    Dm: { notes: ['D4', 'F4', 'A4'], bass: 'D2' }, Bb: { notes: ['D4', 'F4', 'Bb4'], bass: 'Bb1' },
-    F: { notes: ['C4', 'F4', 'A4'], bass: 'F2' }, C: { notes: ['C4', 'E4', 'G4'], bass: 'C2' },
-    Gm: { notes: ['D4', 'G4', 'Bb4'], bass: 'G1' }, A: { notes: ['C#4', 'E4', 'A4'], bass: 'A1' },
+    Dm: { notes: ['D4', 'F4', 'A4'], bass: 'D2' }, 'Dm/C': { notes: ['D4', 'F4', 'A4'], bass: 'C2' }, Dm7: { notes: ['C4', 'F4', 'A4'], bass: 'D2' },
+    D: { notes: ['D4', 'F#4', 'A4'], bass: 'D2' }, Bb: { notes: ['D4', 'F4', 'Bb4'], bass: 'Bb1' }, F: { notes: ['C4', 'F4', 'A4'], bass: 'F2' },
+    C: { notes: ['C4', 'E4', 'G4'], bass: 'C2' }, Gm: { notes: ['D4', 'G4', 'Bb4'], bass: 'G1' }, G: { notes: ['D4', 'G4', 'B4'], bass: 'G1' },
+    A: { notes: ['C#4', 'E4', 'A4'], bass: 'A1' }, Asus4: { notes: ['D4', 'E4', 'A4'], bass: 'A1' }, Am: { notes: ['C4', 'E4', 'A4'], bass: 'A1' },
+    Am7: { notes: ['C4', 'E4', 'G4'], bass: 'A1' }, E: { notes: ['B3', 'E4', 'G#4'], bass: 'E2' }, Eb: { notes: ['Eb4', 'G4', 'Bb4'], bass: 'Eb2' },
+    Cm: { notes: ['C4', 'Eb4', 'G4'], bass: 'C2' }, Bm: { notes: ['D4', 'F#4', 'B4'], bass: 'B1' },
   };
-  const PROG = { intro: ['Dm', 'Dm', 'Bb'], bull: ['Dm', 'Bb', 'F', 'C'], bear: ['Dm', 'Gm', 'Bb', 'A'], build: ['Dm', 'Bb', 'Gm', 'A'], drop: ['Dm', 'Bb', 'F', 'C'], outro: ['Dm'] };
-  const prog = [];
-  for (let b = 0, run = 0; b < ARR.length; b++) { run = b && ARR[b] === ARR[b - 1] ? run + 1 : 0; const p = PROG[ARR[b]]; prog.push([b, 0, 4, p[run % p.length]]); }
+  const prog = BARS.map((x, b) => [b, 0, 4, x.type === 'outro' ? PH[PH.length - 1].c.chords[0] : x.cue.chords[Math.max(0, x.k) % x.cue.chords.length]]);
   const { chords, chordAt } = makeChords(clock, CH, prog);
-
-  const HOOK = [
-    [['D5', 0, 3], ['F5', 3, 1], ['E5', 4, 1], ['D5', 5, 1], ['C5', 6, 2]],
-    [['D5', 0, 2], ['Bb4', 2, 2], ['F4', 4, 2], ['A4', 6, 2]],
-    [['C5', 0, 3], ['A4', 3, 1], ['F5', 4, 2], ['E5', 6, 1], ['C5', 7, 1]],
-    [['E5', 0, 4], ['G5', 4, 2], ['E5', 6, 2]],
-  ];
-  const brass = [];
-  for (let b = 0, run = 0; b < ARR.length; b++) { run = b && ARR[b] === ARR[b - 1] ? run + 1 : 0; if (ARR[b] === 'drop') brass.push(...MU.placeBar(clock, HOOK[run % 4], b)); }
 
   const ev = { start: T(FIRST_BAR, -0.5), end: T(END_BAR) };
   const markers = { start: ev.start, end: { t: ev.end, sync: 'av' } };
   hits.forEach((h, i) => { markers['hit' + (i + 1)] = { t: h.t, sync: 'av' }; });
-  bigs.forEach((h, i) => { markers['drop' + (i + 1)] = h.t; });
+  PH.forEach((p, i) => { markers[`phase${i + 1}-${p.type}`] = T(p.b0); });
 
   const SCORE = {
-    FPS, FORMAT, W, H, SAFE, WIDE, DURATION, clock, T, BEAT, S, m, chords, chordAt, ev, markers, brass,
+    FPS, FORMAT, W, H, SAFE, WIDE, DURATION, clock, T, BEAT, S, m, chords, chordAt, ev, markers,
     DAYS, NDAYS, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
-    ARR, styleAt, inBreath, breaths, moodAt, MOODS,
+    inBreath, breaths, moodAt, MOODS, PHASES: PH, BARS, FIRST_BAR, END_BAR, LIB,
   };
   if (node) module.exports = SCORE; else globalThis.SCORE = SCORE;
 })();

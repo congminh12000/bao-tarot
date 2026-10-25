@@ -1,6 +1,5 @@
-// THE SONG — a dark, driving cue in D minor, rendered from the score into out/music.wav.
-// The arrangement follows score.ARR bar by bar (intro / bull / bear / build / drop / outro), and every event in
-// score.hits is a hit here (sub boom + crash + timpani + brass stab).
+// THE SONG — plays the cue of every market phase (data/music.js) bar by bar, at the tempo map in score.js,
+// plus a hit on every event in score.hits. Renders out/music.wav.
 //   node song.js            (STEMS=1 also writes out/stem-*.wav, LUFS=-14 masters to a loudness)
 const path = require('path');
 const { SR, Bus, reverb, pingpong } = require('./engine/audio/dsp');
@@ -8,115 +7,166 @@ const I = require('./engine/audio/instruments');
 const MIX = require('./engine/audio/mix');
 const MU = require('./engine/music');
 const sc = require('./score');
-const { T, BEAT, DURATION, m, ev, clock, hits, ARR, styleAt, inBreath, breaths } = sc;
-const BAR = BEAT * 4;
-const LAST = ARR.length - 3; // the last chart bar + 1
+const { T, DURATION, m, ev, clock, hits, BARS, FIRST_BAR, END_BAR, inBreath, breaths } = sc;
 
 const N = Math.ceil(DURATION * SR);
 const bus = () => new Bus(N);
 const drums = bus(), bass = bus(), pad = bus(), ost = bus(), lead = bus(), perc = bus(), fx = bus();
 const verb = bus(), dly = bus();
-
-const K = I.kick({ punch: 1.2, tail: 0.4 }), K2 = I.kick({ punch: 0.8, tail: 0.6, seed: 4 });
-const SN = I.snare({ tone: 1.1, decay: 0.18 }), CL = I.clap(), CR = I.crash(18), CR2 = I.crash(23);
-const HC = [I.hat(false, 11), I.hat(false, 12)], HO = I.hat(true, 14);
 const kicks = [];
-// how far into its run of the same style a bar is (0 = first bar of the section)
-const runOf = (b) => { let r = 0; while (b - r - 1 >= 0 && ARR[b - r - 1] === ARR[b]) r++; return r; };
+const beatLen = (t) => clock.beatAt(t); // seconds per beat at t (the tempo changes)
 
-// ---------- drums ----------
-clock.eachStep(0, LAST, 16, (t, b, s) => {
-  if (inBreath(t)) return;
-  const st = ARR[b], run = runOf(b);
-  if (st === 'intro') { if (b >= 1 && (s === 0 || s === 3 || s === 8 || s === 11)) drums.addMono(K2, t, s % 8 ? 0.45 : 0.7); return; }
-  if (st === 'bull') {
-    const full = run >= 2;
-    if (s === 0 || s === 8 || (full && (s === 6 || s === 10))) { drums.addMono(K, t, 0.85); kicks.push(t); }
-    if (run >= 1 && (s === 4 || s === 12)) { drums.addMono(SN, t, 0.55); verb.addMono(SN, t, 0.25); }
-    if (full ? s % 2 === 0 : s % 4 === 2) drums.addMono(HC[(s / 2) % 2], t, s % 4 === 2 ? 0.2 : 0.11, 0.25);
-    return;
-  }
-  if (st === 'bear') { // half time, heavy and empty, a clock ticking
-    if (s === 0) { drums.addMono(K, t, 0.8); kicks.push(t); }
-    if (s === 8) { const tm = I.tom(70, 0.5, b); drums.addMono(tm, t, 0.5); verb.addMono(tm, t, 0.3); }
-    if (s % 4 === 0) perc.addMono(I.woodTick(s % 8 ? 1.4 : 1.8), t, 0.12, 0.4);
-    return;
-  }
-  if (st === 'build') { // the snare roll speeds up bar by bar into the silence
-    if (s % 8 === 0 || (run >= 2 && s % 4 === 0)) { drums.addMono(K, t, 0.85); kicks.push(t); }
-    const roll = [8, 4, 2, 1][Math.min(run, 3)];
-    if (s % roll === (roll === 8 ? 4 : 0)) drums.addMono(SN, t, 0.25 + 0.1 * run + 0.02 * s / 16 * run, 0.05);
-    if (s % 2 === 0) drums.addMono(HC[0], t, 0.1, 0.3);
-    return;
-  }
-  if (st === 'drop') { // four on the floor
-    if (s % 4 === 0) { drums.addMono(K, t, 0.95); kicks.push(t); }
-    if (s === 4 || s === 12) { drums.addMono(CL, t, 0.6); drums.addMono(SN, t, 0.35); verb.addMono(CL, t, 0.25); }
-    if (s % 4 === 2) drums.addMono(HO, t, 0.14, 0.3); else drums.addMono(HC[s % 2], t, 0.09, -0.3);
-  }
-});
+// ---------- scales: scale degrees -> MIDI ----------
+const MODES = { minor: [0, 2, 3, 5, 7, 8, 10], major: [0, 2, 4, 5, 7, 9, 11], dorian: [0, 2, 3, 5, 7, 9, 10] };
+const PC = { C: 0, 'C#': 1, Db: 1, D: 2, 'D#': 3, Eb: 3, E: 4, F: 5, 'F#': 6, G: 7, 'G#': 8, Ab: 8, A: 9, 'A#': 10, Bb: 10, B: 11 };
+function keyOf(cue) {
+  const [tonic, mode] = cue.key.split(' ');
+  return { tonic: PC[tonic], scale: MODES[mode] || MODES.minor };
+}
+// degree 1 = tonic, 8 = octave above, 0 / -1 / -2 … below; `from` = the degree index the figure is built on
+function degMidi(key, deg, from = 0, octave = 4) {
+  const idx = (deg > 0 ? deg - 1 : deg) + from;
+  const o = Math.floor(idx / 7), s = ((idx % 7) + 7) % 7;
+  return 12 * (octave + 1) + key.tonic + 12 * o + key.scale[s];
+}
+// the scale degree (0-based) of a chord's root inside the key, so a figure follows the chords diatonically
+function rootDeg(key, chordName) {
+  const root = chordName.match(/^[A-G][b#]?/)[0];
+  const iv = (PC[root] - key.tonic + 12) % 12;
+  let best = 0;
+  key.scale.forEach((x, i) => { if (Math.abs(x - iv) < Math.abs(key.scale[best] - iv)) best = i; });
+  return best;
+}
 
-// ---------- bass ----------
-clock.eachStep(1, LAST, 8, (t, b, s) => {
-  if (inBreath(t)) return;
-  const c = sc.chordAt(t);
-  if (!c) return;
-  const R = c.bass + 12, st = ARR[b];
-  if (st === 'intro') { if (s === 0) bass.addMono(I.bass(R - 12, BAR * 0.95, { bright: 0.2, sub: 1 }), t, 0.5); }
-  else if (st === 'bull' || st === 'build') bass.addMono(I.bass(R, BEAT / 2 * 0.75, { bright: 0.6 }), t, s % 2 ? 0.35 : 0.5);
-  else if (st === 'bear') { if (s === 0 || s === 3) bass.addMono(I.bass(R - 12, BEAT * (s ? 1 : 1.5), { bright: 0.25, sub: 1 }), t, 0.55); }
-  else if (st === 'drop') { if (s % 2 === 0) bass.addMono(I.bass808(R - 12, BEAT * 0.9, { drive: 1.8 }), t, 0.42); bass.addMono(I.bass(s % 2 ? R + 12 : R, BEAT / 2 * 0.7, { bright: 1 }), t, 0.3); }
-});
-
-// ---------- pads + strings ----------
-for (const c of sc.chords) {
-  if (c.t0 >= DURATION) continue;
-  let t1 = Math.min(c.t1, DURATION);
-  for (const [a] of breaths) if (c.t0 < a && t1 > a) t1 = a;
-  const st = styleAt(c.t0 + 0.01);
-  if (st === 'outro') continue;
-  const big = st === 'drop';
-  for (const nn of c.notes) {
-    const { L, R } = I.padNote(nn - 12, t1 - c.t0, big ? { cutoff: 2400, attack: 0.04 } : { cutoff: 900, attack: 0.6, release: 1.2 });
-    pad.addStereo(L, R, c.t0, 0.08);
-    if (big) { const sw = I.supersaw(nn, (t1 - c.t0) * 0.98, { cutoff: 4200 }); pad.addStereo(sw.L, sw.R, c.t0, 0.05); }
-    if (st === 'bear' || st === 'build') { const sr = I.strings(nn, t1 - c.t0, { attack: 0.4, bright: 0.7 }); pad.addStereo(sr.L, sr.R, c.t0, 0.06); verb.addStereo(sr.L, sr.R, c.t0, 0.04); }
+// ---------- instruments by name ----------
+function play(target, name, midi, t, dur, gain, pan = 0, seed = 1) {
+  switch (name) {
+    case 'pizz': target.addMono(I.pizz(midi, { seed }), t, gain, pan); break;
+    case 'pluck': target.addMono(I.pluck(midi, { decay: 0.2, cutoff: 3600, seed }), t, gain * 0.9, pan); break;
+    case 'marimba': target.addMono(I.marimba(midi, { thock: 0.2, seed }), t, gain, pan); break;
+    case 'musicBox': target.addMono(I.musicBox(midi, { seed }), t, gain * 0.9, pan); break;
+    case 'bell': target.addMono(I.bell(MU.mtof(midi), 0.6), t, gain * 0.5, pan); break;
+    case 'epiano': target.addMono(I.epiano(midi, dur), t, gain, pan); break;
+    case 'strings': case 'cello': { const s = I.strings(name === 'cello' ? midi - 12 : midi, dur, { attack: 0.08, bright: 0.8, seed }); target.addStereo(s.L, s.R, t, gain * 0.8); break; }
+    case 'brass': case 'lowBrass': { const b = I.brassNote(name === 'lowBrass' ? midi - 12 : midi, dur, { seed }); target.addStereo(b.L, b.R, t, gain); break; }
+    case 'supersaw': { const s = I.supersaw(midi, dur, { cutoff: 4800, seed }); target.addStereo(s.L, s.R, t, gain * 0.6); break; }
+    default: target.addMono(I.pluck(midi, { seed }), t, gain, pan);
   }
 }
 
-// ---------- the ostinato: 16th-note pizzicato, the engine of the cue ----------
-const OST = [0, 7, 12, 7, 3, 7, 12, 15];
-clock.eachStep(1, LAST, 16, (t, b, s) => {
-  if (inBreath(t)) return;
-  const c = sc.chordAt(t);
-  if (!c) return;
-  const st = ARR[b];
-  const minor = ['Dm', 'Gm'].includes(c.name);
-  let iv = OST[s % 8];
-  if (iv === 3 && !minor) iv = 4;
-  if (iv === 15 && !minor) iv = 16;
-  const quiet = st === 'intro' || st === 'bear';
-  if (quiet && s % 2) return; // 8ths when it's quiet
-  const g = st === 'intro' ? 0.12 + 0.1 * (t / T(2)) : st === 'bear' ? 0.13 : st === 'drop' ? 0.16 : 0.2;
-  const x = I.pizz(c.bass + 24 + iv, { seed: s + 1 });
-  ost.addMono(x, t, g * (s % 4 === 0 ? 1.15 : 0.85), s % 2 ? 0.35 : -0.35);
-  if (st !== 'bear') dly.addMono(x, t, 0.03);
-});
+// ---------- drums by pattern ----------
+const K = I.kick({ punch: 1.2, tail: 0.4 }), K2 = I.kick({ punch: 0.8, tail: 0.6, seed: 4 });
+const SN = I.snare({ tone: 1.1, decay: 0.18 }), CL = I.clap(), CR = I.crash(18), CR2 = I.crash(23);
+const HC = [I.hat(false, 11), I.hat(false, 12)], HO = I.hat(true, 14), SH = [I.shaker(1, 15), I.shaker(0.6, 16)];
+const kick = (t, g) => { drums.addMono(K, t, g); kicks.push(t); };
+function drumStep(pattern, t, s, b, k) {
+  switch (pattern) {
+    case 'fourFloor':
+      if (s % 4 === 0) kick(t, 0.9);
+      if (s === 4 || s === 12) { drums.addMono(CL, t, 0.55); verb.addMono(CL, t, 0.2); }
+      if (s % 4 === 2) drums.addMono(HO, t, 0.12, 0.3); else drums.addMono(HC[s % 2], t, 0.08, -0.3);
+      break;
+    case 'breakbeat':
+      if (s === 0 || s === 6 || s === 10) kick(t, 0.85);
+      if (s === 4 || s === 12) { drums.addMono(SN, t, 0.5); drums.addMono(CL, t, 0.3); }
+      if (s % 2 === 0) drums.addMono(HC[(s / 2) % 2], t, s % 4 ? 0.07 : 0.12, 0.25);
+      break;
+    case 'halfTime':
+      if (s === 0 || s === 3) kick(t, s ? 0.6 : 0.9);
+      if (s === 8) { drums.addMono(SN, t, 0.55); verb.addMono(SN, t, 0.3); }
+      drums.addMono(HC[s % 2], t, s % 2 ? 0.05 : 0.09, 0.3);
+      break;
+    case 'toms':
+      if (s === 0 || s === 8) kick(t, 0.9);
+      if (s === 4 || s === 12) drums.addMono(SN, t, 0.5);
+      if (s % 2 === 1) { const tm = I.tom(160 - (s % 8) * 12, 0.22, s); drums.addMono(tm, t, 0.28, (s % 8) / 8 - 0.5); }
+      break;
+    case 'rimShaker':
+      if (s === 0 || s === 10) kick(t, 0.6);
+      if (s === 4 || s === 12) drums.addMono(I.rim(1, s), t, 0.35, -0.2);
+      if (s % 2 === 0) drums.addMono(SH[(s / 2) % 2], t, 0.14, 0.35);
+      if (s % 4 === 0) perc.addMono(I.woodTick(s % 8 ? 1.4 : 1.8), t, 0.07, 0.4);
+      break;
+    case 'heartbeat':
+      if (s === 0 || s === 3) drums.addMono(K2, t, s ? 0.45 : 0.75);
+      break;
+    default: break; // 'none'
+  }
+}
 
-// ---------- brass hook in the drops ----------
-for (const nn of sc.brass) {
-  const a = I.brassNote(nn.midi, nn.dur * 0.92), b = I.brassNote(nn.midi - 12, nn.dur * 0.92, { bright: 0.8, seed: 99 });
-  lead.addStereo(a.L, a.R, nn.t, 0.28); lead.addStereo(b.L, b.R, nn.t, 0.18);
-  verb.addStereo(a.L, a.R, nn.t, 0.12); dly.addStereo(a.L, a.R, nn.t, 0.04);
+// how loud each instrument plays the running figure (measured with STEMS=1 + tools/levels.js)
+const OST_GAIN = { pizz: 0.32, pluck: 0.16, marimba: 0.14, musicBox: 0.05, bell: 0.09, strings: 0.07 };
+
+// ---------- every bar ----------
+for (let b = 0; b < BARS.length; b++) {
+  const bi = BARS[b], cue = bi.cue, key = keyOf(cue), t0 = T(b), t1 = T(b + 1);
+  if (bi.type === 'outro' || t0 >= DURATION) continue;
+  const c = sc.chordAt(t0 + 0.001);
+  if (!c) continue;
+  const rd = rootDeg(key, c.name);
+  const intro = bi.type === 'intro', turn = bi.type === 'peak' || bi.type === 'bottom';
+  const barDur = t1 - t0;
+
+  // pads: the chord for the whole bar
+  for (const nn of c.notes) {
+    if (cue.pads === 'supersaw' && !intro) { const s = I.supersaw(nn, barDur * 0.98, { cutoff: 4200 }); pad.addStereo(s.L, s.R, t0, 0.045); }
+    else if (cue.pads === 'strings') { const s = I.strings(nn, barDur, { attack: 0.3, bright: 0.7 }); pad.addStereo(s.L, s.R, t0, 0.07); verb.addStereo(s.L, s.R, t0, 0.04); }
+    else { const p = I.padNote(nn - 12, barDur, { cutoff: cue.pads === 'darkPad' ? 700 : 1300, attack: 0.4, release: 1.1 }); pad.addStereo(p.L, p.R, t0, 0.08); }
+  }
+  if (intro) { // title: a timpani roll rising into the first phase
+    for (let i = 0; i < 12; i++) perc.addMono(I.timpani(c.bass + 12, { decay: 0.5, seed: i }), t0 + (i * barDur) / 12, 0.08 + 0.2 * i / 12);
+    continue;
+  }
+
+  // drums, bass, ostinato on the 16th grid of this bar
+  clock.eachStep(b, b + 1, 16, (t, _b, s) => {
+    if (inBreath(t)) return;
+    drumStep(cue.drums, t, s, b, bi.k);
+    const R = c.bass + 12, bl = beatLen(t);
+    switch (cue.bass) {
+      case 'octaves': if (s % 2 === 0) bass.addMono(I.bass(s % 4 ? R + 12 : R, bl * 0.4, { bright: 0.8 }), t, s % 4 ? 0.35 : 0.5); break;
+      case 'rolling808': if (s === 0 || s === 6 || s === 10) bass.addMono(I.bass808(R - 12, bl * 1.2, { drive: 1.6 }), t, 0.45); break;
+      case 'pulse8': if (s % 2 === 0) bass.addMono(I.bass(R, bl * 0.4, { bright: 0.5 }), t, 0.45); break;
+      case 'root': if (s === 0 || s === 8) bass.addMono(I.bass(R, bl * 1.8, { bright: 0.4, sub: 0.9 }), t, 0.5); break;
+      case 'drone': if (s === 0) bass.addMono(I.bass(R - 12, barDur * 0.95, { bright: 0.2, sub: 1 }), t, 0.5); break;
+      default: break;
+    }
+    const o = cue.ostinato, every = 16 / (4 * o.perBeat);
+    if (s % every === 0) {
+      const step = s / every, deg = o.figure[step % o.figure.length];
+      const midi = degMidi(key, deg, rd, o.instrument === 'musicBox' || o.instrument === 'bell' ? 5 : 4);
+      play(ost, o.instrument, midi, t, bl / o.perBeat, OST_GAIN[o.instrument] || 0.12, step % 2 ? 0.3 : -0.3, s + 1);
+      if (!turn) dly.addMono(I.pizz(midi, { seed: s }), t, 0.02);
+    }
+  });
+
+  // lead phrase on every second bar of the phase (the hook answers itself)
+  if (bi.k % 2 === 1 || turn) {
+    for (const [deg, st, len] of cue.lead.phrase) {
+      const t = T(b, st / 2), dur = (len / 2) * beatLen(t);
+      if (inBreath(t)) continue;
+      play(lead, cue.lead.instrument, degMidi(key, deg, rd, 4), t, dur * 0.95, turn ? 0.14 : 0.18, 0, deg + 7);
+      verb.addMono(I.pluck(degMidi(key, deg, rd, 4), { decay: 0.3 }), t, 0.03);
+    }
+  }
+
+  // the first bar of a phase: a crash for a trend, a timpani swell for a turn, a soft wash for a sideway
+  if (bi.k === 0) {
+    if (bi.type === 'uptrend' || bi.type === 'downtrend') drums.addMono(bi.type === 'uptrend' ? CR : CR2, t0, 0.3, 0.2);
+    else if (turn) { const tp = I.timpani(c.bass + 12, { decay: 1.8 }); perc.addMono(tp, t0, 0.5); verb.addMono(tp, t0, 0.3); }
+    else fx.addMono(I.noiseSweep(barDur, 300, 2000, { q: 0.8, pink: true, seed: b }), t0, 0.06);
+  }
+  // the last bar before a turn: a riser into the slow-down
+  const next = BARS[b + 1];
+  if (next && next.k === 0 && (next.type === 'peak' || next.type === 'bottom') && !turn) fx.addMono(I.noiseSweep(barDur, 200, 7000, { q: 0.9, shape: (x) => x * x, pink: true, seed: b }), t0, 0.25);
 }
 
 // ---------- the hits ----------
 for (const h of hits) {
-  const up = h.kind !== 'down';
+  const up = h.kind !== 'down', ch = sc.chordAt(h.t + 0.01);
   fx.addMono(I.subBoom(h.big ? 2.6 : 1.6, up ? 70 : 58, up ? 34 : 26), h.t, h.big ? 0.8 : 0.6);
   drums.addMono(up ? CR : CR2, h.t, h.big ? 0.5 : 0.36, up ? 0.25 : -0.25);
   drums.addMono(K, h.t, 0.9);
-  const ch = sc.chordAt(h.t + 0.01);
   const tp = I.timpani(ch.bass + 12, { decay: 1.4 });
   perc.addMono(tp, h.t, 0.7); verb.addMono(tp, h.t, 0.3);
   for (const iv of up ? [0, 7, 12, 16] : [0, 3, 7, 12]) {
@@ -131,23 +181,10 @@ for (const e of sc.EVENTS) {
   if (e.kind === 'down') {
     fx.addMono(I.thud(55, 0.35, e.day), e.t, 0.5);
     fx.addMono(I.noiseSweep(0.7, 2500, 180, { q: 1.2, pink: true, seed: e.day }), e.t, 0.14, -0.2);
-    perc.addMono(I.timpani(m('D2'), { decay: 0.9, seed: e.day }), e.t, 0.35);
   } else {
     for (const [k, nn] of [[0, 'D6'], [1, 'A6'], [2, 'D7']]) { const b = I.bell(MU.mtof(m(nn)), 0.5); fx.addMono(b, e.t + k * 0.045, 0.1, (k - 1) * 0.4); verb.addMono(b, e.t + k * 0.045, 0.08); }
-    fx.addMono(I.noiseSweep(0.5, 1500, 9000, { q: 1.1, pink: true, seed: e.day }), e.t - 0.05, 0.08, 0.2);
   }
 }
-// approaching a big moment: a low rumble swells into each crash, a riser lifts into each rally
-for (const h of hits) {
-  const t0 = sc.timeOfDay(h.day + 0.5 - 45), len = h.t - t0 - BEAT / 4;
-  if (len < 0.4 || h.big) continue; // the big ones have their own build
-  if (h.kind === 'down') fx.addMono(I.noiseSweep(len, 60, 400, { q: 2, shape: (x) => x * x, pink: true, seed: h.day }), t0, 0.35);
-  else fx.addMono(I.noiseSweep(len, 400, 8000, { q: 1, shape: (x) => x * x, pink: true, seed: h.day }), t0, 0.22);
-}
-// the timpani roll + riser under the title, and a riser through every build
-for (let i = 0; i < 18; i++) { const t = T(0, 1) + i * BEAT / 3; perc.addMono(I.timpani(m('D2'), { decay: 0.5, seed: i }), t, 0.08 + 0.18 * i / 18); }
-fx.addMono(I.noiseSweep(T(2) - T(1), 200, 7000, { q: 0.9, shape: (x) => x * x, pink: true }), T(1), 0.3);
-for (const [a] of breaths) fx.addMono(I.noiseSweep(a - (a - T(4) + BEAT), 150, 9000, { q: 0.9, shape: (x) => x * x * x, pink: true }), a - T(4) + BEAT, 0.5);
 // the end: the last candle closes
 fx.addMono(I.subBoom(3.2), ev.end, 0.8);
 drums.addMono(CR, ev.end, 0.45); drums.addMono(K, ev.end, 0.9);
@@ -158,19 +195,19 @@ for (const nn of ['D3', 'A3', 'D4', 'F4', 'A4']) {
 }
 
 // ---------- mix ----------
-MIX.sidechain([pad, bass], kicks.filter((t) => styleAt(t) === 'drop'));
+MIX.sidechain([pad, bass], kicks);
 const stems = {
   drums, bass, pad, ost, lead, perc, fx,
   verb: reverb(verb, { room: 0.88, damp: 0.35 }),
-  dly: pingpong(dly, BEAT * 0.75, 0.35, 3500),
+  dly: pingpong(dly, 0.375, 0.3, 3500),
 };
-const GAIN = { drums: 0.42, bass: 0.75, pad: 2.4, ost: 3.4, lead: 1.7, perc: 0.8, fx: 0.8, verb: 1, dly: 1 };
+const GAIN = { drums: 0.42, bass: 0.75, pad: 2.2, ost: 3.0, lead: 1.6, perc: 0.8, fx: 0.8, verb: 1, dly: 1 };
 const out = path.join(__dirname, 'out');
 const mix = MIX.mixdown(stems, GAIN, { stemDir: process.env.STEMS ? out : null });
 MIX.highpass(mix, 24);
 for (const [a, b] of breaths) MIX.gate(mix, a, b); // one beat of real silence before each big moment
-for (const h of hits) if (!h.big) MIX.gate(mix, h.t - BEAT / 4, h.t); // a held 16th before every other hit
+for (const h of hits) if (!h.big) MIX.gate(mix, h.t - beatLen(h.t) / 4, h.t); // a held 16th before every other hit
 MIX.fadeOut(mix, DURATION - 2.2, DURATION);
 const M = MIX.master(mix, parseFloat(process.env.DRIVE || '0.8'), undefined, { lufs: process.env.LUFS ? parseFloat(process.env.LUFS) : null });
 MIX.writeWav(path.join(out, 'music.wav'), mix);
-console.log(`wrote out/music.wav (${DURATION.toFixed(2)}s${M.lufs !== undefined ? `, ${M.lufs.toFixed(1)} LUFS at drive ${M.drive.toFixed(2)}` : ''})`);
+console.log(`wrote out/music.wav (${DURATION.toFixed(2)}s, ${END_BAR - FIRST_BAR} bars in ${sc.PHASES.length} phases${M.lufs !== undefined ? `, ${M.lufs.toFixed(1)} LUFS at drive ${M.drive.toFixed(2)}` : ''})`);
