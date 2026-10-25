@@ -398,7 +398,7 @@
         const K = camAt(t), on = [];
         EVENTS.forEach((e, n) => {
           const P = placeLabel(n);
-          if (t < e.t + 0.25 || (P.cut && t >= P.cut)) return;
+          if (t < e.t + 0.25 || (P.cut && t >= P.cut) || labelFade(t) <= 0) return;
           const bx = K.X(e.day + 0.5) + P.off;
           if (bx > W + 50 || bx + P.bw < -20) return;
           on.push({ e, f: footprint(K, e, P, P.gap) });
@@ -412,8 +412,10 @@
     },
   };
 
+  // the labels are gone before the closing zoom-out starts (squeezed by the zoom they would run into each other)
+  const labelFade = (t) => clamp((ZOOM0 - t) / 0.4);
   function labels(ctx, t, X, Y, cam) {
-    const fade = 1 - clamp(cam.k * 3);
+    const fade = labelFade(t);
     if (fade <= 0) return;
     EVENTS.forEach((e, n) => {
       const age = t - e.t;
