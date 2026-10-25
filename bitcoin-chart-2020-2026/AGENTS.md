@@ -3,7 +3,8 @@
 Read **PROJECT.md** first: it is the approved spec and the working rules for this video. In short:
 
 - Reply to the user in **Vietnamese**; all text inside the video is **English**.
-- After every change: render a **short, low-quality preview** (`--draft`, a short FROM/TO range), send it, and
+- After every change: render a **short, low-quality preview** (30 fps, 16:9, 480p: `FPS=30 … --res 480`, a short
+  FROM/TO range), send it, and
   **wait for the user's OK** before doing anything else. Never render the full film unless asked.
 - Never drop an event label, never let labels overlap each other or cover candles; up labels above, down below,
   right of the candle or centred first, left only when needed (details in PROJECT.md §3).

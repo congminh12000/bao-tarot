@@ -13,6 +13,7 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 1. Người dùng giao tiếp bằng **tiếng Việt** → trả lời bằng tiếng Việt. Chữ hiển thị TRONG video là **tiếng Anh**.
 2. Sau mỗi đợt thay đổi: **render preview chất lượng thấp** (đoạn ngắn, ví dụ 2017–2018 và đoạn có vấn đề),
    gửi người dùng xem, **chờ duyệt "OK" rồi mới làm tiếp**. Không tự render bản đầy đủ khi chưa được yêu cầu.
+   Preview mặc định: **30 fps, 16:9, 480p** (854×480): `FPS=30 … --res 480` (lệnh ở §8), trừ khi người dùng chọn khác.
 3. Không nghe được âm thanh → chỉ báo số đo (LUFS, levels), nói rõ là chưa nghe, mời người dùng nghe góp ý.
 4. Commit + push lên branch `claude/bitcoin-price-chart-animation-l7ta0e` sau mỗi thay đổi (repo
    `congminh12000/bao-tarot`). Không tạo Pull Request nếu không được yêu cầu.
@@ -31,7 +32,7 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 
 | Hạng mục | Yêu cầu |
 |---|---|
-| Khung hình | 16:9. Bản cuối: 1920×1080, 24 fps (preview: `--draft` 960×540; đã thử 1080p @30 và @60 fps: `FPS=30` / `FPS=60`) |
+| Khung hình | 16:9. Bản cuối: hỏi 3 bước (§1.6), mặc định 1920×1080 @30 fps. Preview: 854×480 @30 fps (`FPS=30 … --res 480`) |
 | Phong cách | "Glow Technology" — mẫu **A Hologram** (`look.js` → `hologram`): nền xanh navy đậm, đường nét cyan, bloom, bụi sáng nhẹ, scanline |
 | Nến | Nến ngày, xanh = tăng, đỏ = giảm, chạy từ trái qua phải, camera bám theo nến đang chạy |
 | Zoom | `PPD = 16.06` px/ngày (đã zoom 2 lần ×1.3 so với 9.5) |
@@ -163,8 +164,8 @@ node song.js                               # nhạc (master −16 LUFS)
 node engine/render.js stills 30 60         # ảnh tĩnh tại giây 30, 60 → out/stills/
 # preview chất lượng thấp một đoạn:
 FROM=2017-01-01 TO=2018-12-31 node make-data.js && node song.js
-node engine/render.js video --draft && node engine/render.js mux --draft
-node engine/render.js verify --draft       # kiểm tra khớp hình/tiếng ở các điểm hit
+FPS=30 node engine/render.js video --res 480 && FPS=30 node engine/render.js mux --res 480   # 480p @30 fps
+FPS=30 node engine/render.js verify --res 480   # kiểm tra khớp hình/tiếng ở các điểm hit → out/bitcoin-chart-2020-2026-480p.mp4
 node check-labels.js                       # kiểm tra cả phim: không có 2 nhãn nào đè nhau
 node make-data.js && node song.js          # LUÔN khôi phục dữ liệu đầy đủ sau khi render đoạn ngắn
 # bản cuối 1080p 24fps (~8 phút 45 giây; khoảng 12.600 khung hình):
