@@ -16,4 +16,6 @@ Read **PROJECT.md** first: it is the approved spec and the working rules for thi
 - Prices on labels come from the TradingView data in `data/tradingview/`, never from memory; do not invent event causes.
 - After a FROM/TO preview always restore the full data: `node make-data.js && node song.js`.
 - Status and what is waiting for approval: PROJECT.md §10. Commands (incl. first-time setup on a Mac): PROJECT.md §8.
+- When the user says "render video final": ask 3 steps, one at a time — FPS (24 / 30 / 60), aspect ratio
+  (16:9 / 1:1 / 9:16), resolution (Full HD / 2K / 4K); defaults 30 fps, 16:9, Full HD (PROJECT.md §1.6).
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.

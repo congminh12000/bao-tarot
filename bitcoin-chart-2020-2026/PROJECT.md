@@ -18,6 +18,14 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
    `congminh12000/bao-tarot`). Không tạo Pull Request nếu không được yêu cầu.
 5. Thông tin sự kiện (tên, ngày) **phải trung thực**: không bịa nguyên nhân; chỗ không chắc thì nói rõ.
    Giá trên nhãn lấy từ dữ liệu TradingView, không lấy từ trí nhớ.
+6. Khi người dùng nói **"render video final"** (bản cuối, phim đầy đủ): hỏi **3 bước, lần lượt từng bước**, mỗi bước
+   một câu hỏi có lựa chọn, rồi mới render:
+   1. **FPS**: 24 · **30** · 60
+   2. **Tỷ lệ khung hình**: **16:9** · 1:1 · 9:16
+   3. **Độ phân giải**: **Full HD** · 2K · 4K
+   Mặc định (in đậm): **30 fps, 16:9, Full HD**. Cách chạy: `FPS=<fps> node engine/render.js video --format <tỷ lệ>
+   --res <1080|1440|2160>` (cạnh ngắn, px), rồi `mux` + `verify` với cùng các tham số. Layout `film.js` được thiết kế
+   cho 16:9; với 1:1 / 9:16 phải render preview kiểm tra bố cục trước khi chạy bản cuối.
 
 ## 2. Đặc tả video (đã duyệt)
 
