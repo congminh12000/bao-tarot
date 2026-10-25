@@ -127,10 +127,10 @@
     ctx.translate(cx, cy);
     // a soft orange halo, then the coin, then a cyan scan ring around it
     const g = ctx.createRadialGradient(0, 0, R * 0.4, 0, 0, R * 1.6);
-    g.addColorStop(0, 'rgba(8,108,229,0.14)'); g.addColorStop(1, 'rgba(8,108,229,0)');
+    g.addColorStop(0, 'rgba(8,108,229,0.07)'); g.addColorStop(1, 'rgba(8,108,229,0)');
     ctx.fillStyle = g; ctx.fillRect(-R * 1.6, -R * 1.6, R * 3.2, R * 3.2);
     ctx.save(); ctx.rotate(Math.sin(t * 0.4) * 0.08); ctx.scale(1 + 0.02 * Math.sin(t * 1.3), 1 + 0.02 * Math.sin(t * 1.3));
-    if (LOGO) { ctx.globalAlpha = 0.2; ctx.drawImage(LOGO, -R, -R, R * 2, R * 2); }
+    if (LOGO) { ctx.globalAlpha = 0.1; ctx.drawImage(LOGO, -R, -R, R * 2, R * 2); }
     ctx.restore();
     ctx.strokeStyle = rgba(L.accent, 0.14); ctx.lineWidth = 1.5; ctx.shadowColor = L.accent; ctx.shadowBlur = 12;
     ctx.beginPath(); ctx.arc(0, 0, R * 1.12, 0, Math.PI * 2); ctx.stroke();
