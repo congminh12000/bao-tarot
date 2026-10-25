@@ -68,7 +68,7 @@
     const lp = Math.log(S.priceAt(Math.min(t, ev.end)));
     if (hi - lo < Math.log(1.35)) { const mid = (hi + lo) / 2; lo = mid - Math.log(1.35) / 2; hi = mid + Math.log(1.35) / 2; }
     const r = hi - lo;
-    lo -= r * 0.12; hi += r * 0.2; // headroom for the event labels
+    lo -= r * 0.2; hi += r * 0.2; // headroom for the event labels, above and below
     lo = Math.min(lo, lp - r * 0.06); hi = Math.max(hi, lp + r * 0.08); // the live price never leaves the frame
     return { ppd: PPD, off: camX0(S.dayAt(t)), lo, hi };
   }
@@ -244,80 +244,102 @@
     }
   }
 
+  // ---------- event labels ----------
+  // Each label is placed ONCE, at the moment its event happens, and then stays fixed to its candle:
+  // up events above the candles, down events below them, never over a candle, never over an earlier label.
+  // A two-segment callout (a diagonal, then a horizontal run) points from the candle to the label.
+  const DIAG = 34, RUN = 30, PAD = 14; // callout geometry, px
+  const MEASURE = G.makeCanvas(8, 8).getContext('2d');
+  const PLACE = [];
+  const sizeOf = (e) => (e.big ? 50 : e.hit ? 34 : 24);
+  const camAt = (t) => { const c = camera(t); return { X: (d) => d * c.ppd - c.off, Y: (p) => Y1 - ((Math.log(p) - c.lo) / (c.hi - c.lo)) * (Y1 - Y0), c }; };
+  function placeLabel(n) {
+    if (PLACE[n]) return PLACE[n];
+    const e = EVENTS[n], up = e.kind !== 'down', size = sizeOf(e), h = size * 1.3;
+    const s = e.text.toUpperCase(), tw = measure(MEASURE, s, size, 800);
+    const { X, Y, c } = camAt(e.t);
+    const x = X(e.day + 0.5), ay = Y(e.price) + (up ? -8 : 8);
+    const bw = tw + PAD * 2;
+    // try the label on each side of its candle; keep the side where it sits closest to the candle
+    let best = null;
+    for (const dir of [1, -1]) {
+      const off = dir > 0 ? DIAG + RUN : -(DIAG + RUN + bw); // box left edge relative to the anchor x
+      if (x + off + bw > PLOT_R - 20 && dir > 0) continue;
+      // every candle under the callout and the box, including the ones still to come
+      const x0 = Math.min(x, x + off) - 6, x1 = Math.max(x, x + off + bw) + 6;
+      const dA = Math.max(0, Math.floor((x0 + c.off) / c.ppd - 1)), dB = Math.min(NDAYS - 1, Math.ceil((x1 + c.off) / c.ppd));
+      let ref = up ? 0 : Infinity;
+      for (let d = dA; d <= dB; d++) ref = up ? Math.max(ref, DAYS[d][1]) : Math.min(ref, DAYS[d][2]);
+      const base = up ? Math.min(Y(ref) - 24 - h / 2, ay - 44) : Math.max(Y(ref) + 24 + h / 2, ay + 44); // box middle
+      if (!best || Math.abs(base - ay) < Math.abs(best.base - ay) - 4) best = { dir, off, ref, base };
+    }
+    const { dir, off, ref, base } = best;
+    const step = h + 12;
+    // boxes of the earlier labels still on screen at this moment
+    const others = [];
+    for (let m = 0; m < n; m++) {
+      const o = EVENTS[m];
+      if (e.t - o.t > 8.5 || e.t < o.t) continue;
+      const P = placeLabel(m), ox = X(o.day + 0.5) + P.off, oy = Y(P.ref) + P.gap;
+      others.push([ox, oy - P.h / 2, ox + P.bw, oy + P.h / 2]);
+    }
+    const bx = x + off, clash = (my) => others.some((q) => bx < q[2] + 10 && bx + bw > q[0] - 10 && my - h / 2 < q[3] + 10 && my + h / 2 > q[1] - 10);
+    const inside = (my) => (up ? my - h / 2 >= (bx > 700 ? 112 : Y0 - 10) : my + h / 2 <= Y1 - 4);
+    let mid = base;
+    for (let k = 0; k < 6; k++) { const my = base + (up ? -1 : 1) * k * step; if (!inside(my)) break; mid = my; if (!clash(my)) break; }
+    return (PLACE[n] = { s, tw, bw, h, size, up, off, dir, ref, gap: mid - Y(ref) }); // gap: px from the reference candle
+  }
+
   function labels(ctx, t, X, Y, cam) {
     const fade = 1 - clamp(cam.k * 3);
     if (fade <= 0) return;
-    const placed = []; // boxes already on screen: later labels step away from them
     EVENTS.forEach((e, n) => {
       const age = t - e.t;
       if (age < 0) return;
+      const P = placeLabel(n);
       const x = X(e.day + 0.5);
-      if (x < -400 || x > PLOT_R + 50) return;
+      if (x + Math.min(0, P.off) > PLOT_R + 50 || x + Math.max(0, P.off + P.bw) < -50) return;
       const alpha = fade * clamp(1 - (age - 7) / 1.5);
       if (alpha <= 0) return;
-      const up = e.kind !== 'down';
-      const size = e.big ? 50 : e.hit ? 34 : 24;
-      const ay = Y(e.price) + (up ? -10 : 10);
-      const s = e.text.toUpperCase(), tw = measure(ctx, s, size, 800);
-      const tx = Math.min(x - tw / 2, PLOT_R - tw - 30); // scrolls off the left edge with its candle
-      const box = (yy) => [tx - 16, yy - size * 0.95, tx + tw + 16, yy + size * 0.35];
-      const hit = (r) => placed.some((q) => r[0] < q[2] + 8 && r[2] > q[0] - 8 && r[1] < q[3] + 8 && r[3] > q[1] - 8);
-      // the candles under the whole width of the label (also the ones still to come): the text never covers them
-      const dA = Math.max(0, Math.floor((tx - 20 + cam.off) / cam.ppd - 1)), dB = Math.min(NDAYS - 1, Math.ceil((tx + tw + 20 + cam.off) / cam.ppd));
-      let hiP = 0, loP = Infinity;
-      for (let d = dA; d <= dB; d++) { hiP = Math.max(hiP, DAYS[d][1]); loP = Math.min(loP, DAYS[d][2]); }
-      const above = Math.min(ay - (e.hit ? 70 : 60), Y(hiP) - 22) - size * 0.35; // text baseline when above the candles
-      const below = Math.max(ay + (e.hit ? 80 : 70), Y(loP) + 22) + size * 0.95; // … when below them
-      const step = size * 1.3 + 14, cands = [];
-      for (const side of up ? [-1, 1] : [1, -1]) for (let k = 0; k < 5; k++) cands.push(side < 0 ? above - k * step : below + k * step);
-      const topLimit = tx > 700 ? 110 : Y0 - 20; // above the plot is free except under the title
-      let ty = cands.find((y) => y - size * 0.95 >= topLimit && y + size * 0.35 <= Y1 && !hit(box(y)));
-      if (ty === undefined) ty = clamp(up ? above : below, Y0 + 20, Y1 - 10);
-      placed.push(box(ty));
+      const ay = Y(e.price) + (P.up ? -8 : 8), my = Y(P.ref) + P.gap, bx = x + P.off;
       const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
-      const k = clamp(age / 0.35);
-      const by = ty < ay ? ty + size * 0.35 : ty - size * 0.95;
+      // the callout: anchor -> diagonal -> horizontal -> box, drawn out over 0.35 s
+      const B = [x + P.dir * DIAG, my], C = [P.dir > 0 ? bx : bx + P.bw, my];
+      const k = ease.outCubic(clamp(age / 0.35));
+      const l1 = Math.hypot(B[0] - x, B[1] - ay), l2 = Math.abs(C[0] - B[0]), L_ = (l1 + l2) * k;
+      const pts = [[x, ay]];
+      if (L_ <= l1) pts.push([lerp(x, B[0], L_ / l1), lerp(ay, B[1], L_ / l1)]);
+      else pts.push(B, [lerp(B[0], C[0], (L_ - l1) / l2), my]);
       ctx.save(); ctx.globalAlpha = alpha;
-      glowLine(ctx, [[x, ay], [x, lerp(ay, by, ease.outCubic(k))]], col, 1.6, 10);
+      glowLine(ctx, pts, col, 1.6, 10);
       ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, ay, 4, 0, Math.PI * 2); ctx.fill();
-      if (age > 0.12) {
-        const shown = s.slice(0, Math.ceil(s.length * clamp((age - 0.12) / 0.3)));
-        panel(ctx, tx - 16, ty - size * 0.95, tw + 32, size * 1.3, col, { corner: 10, glow: e.hit ? 16 : 8 });
-        txt(ctx, shown, tx, ty, { size, w: 800, color: e.hit ? col : L.text, glow: e.hit ? 14 : 0 });
+      if (age > 0.25) {
+        const shown = P.s.slice(0, Math.ceil(P.s.length * clamp((age - 0.25) / 0.3)));
+        panel(ctx, bx, my - P.h / 2, P.bw, P.h, col, { corner: 10, glow: e.hit ? 16 : 8 });
+        txt(ctx, shown, bx + PAD, my + P.size * 0.35, { size: P.size, w: 800, color: e.hit ? col : L.text, glow: e.hit ? 14 : 0 });
       }
       ctx.restore();
     });
   }
 
-  function bubble(ctx, t, cam, Y, X) {
-    const tt = Math.min(t, ev.end);
-    const D = S.dayAt(tt);
+  // the live candle (the one forming at t), or the last one after the end
+  function live(t) {
+    const tt = Math.min(t, ev.end), D = S.dayAt(tt);
     const i = Math.min(NDAYS - 1, Math.max(0, Math.floor(D)));
-    const c = D >= NDAYS ? { o: DAYS[i][0], c: DAYS[i][3] } : S.candleAt(i, tt) || { o: DAYS[0][0], c: DAYS[0][0] };
-    const p = D < 0 ? DAYS[0][0] : c.c;
-    const up = c.c >= c.o, col = up ? UP : DOWN;
-    const y = clamp(Y(p), Y0 - 20, Y1);
-    const hx = X(Math.max(0, D));
-    // the price line: a glowing beam from the live candle to the bubble
+    const c = D < 0 ? { o: DAYS[0][0], c: DAYS[0][0] } : D >= NDAYS ? { o: DAYS[i][0], c: DAYS[i][3] } : S.candleAt(i, tt);
+    return { D, o: c.o, p: c.c, up: c.c >= c.o };
+  }
+
+  // the dotted price line from the live candle across to the axis
+  function priceLine(ctx, t, cam, Y, X) {
+    const L0 = live(t), col = L0.up ? UP : DOWN;
+    const y = clamp(Y(L0.p), Y0 - 20, Y1), hx = X(Math.max(0, L0.D));
     ctx.save();
     ctx.globalAlpha = 1 - cam.k;
-    const g = ctx.createLinearGradient(hx, 0, PLOT_R, 0); g.addColorStop(0, rgba(col, 0.9)); g.addColorStop(1, rgba(col, 0.25));
-    ctx.strokeStyle = g; ctx.lineWidth = 1.5; ctx.shadowColor = col; ctx.shadowBlur = 10; ctx.setLineDash([6, 6]); ctx.lineDashOffset = -t * 40;
+    const g = ctx.createLinearGradient(hx, 0, PLOT_R, 0); g.addColorStop(0, rgba(col, 0.9)); g.addColorStop(1, rgba(col, 0.3));
+    ctx.strokeStyle = g; ctx.lineWidth = 1.5; ctx.shadowColor = col; ctx.shadowBlur = 10; ctx.setLineDash([3, 7]); ctx.lineCap = 'round'; ctx.lineDashOffset = -t * 40;
     ctx.beginPath(); ctx.moveTo(hx + 10, y); ctx.lineTo(PLOT_R + 6, y); ctx.stroke();
     ctx.restore();
-    const s = fmt(p), size = 36;
-    const tw = measure(ctx, s, size, 800, L.mono);
-    const bx = PLOT_R + 18, bw = Math.max(tw + 40, 210), bh = 60;
-    ctx.save();
-    ctx.beginPath(); ctx.moveTo(bx - 16, y); ctx.lineTo(bx, y - bh / 2); ctx.lineTo(bx + bw, y - bh / 2); ctx.lineTo(bx + bw, y + bh / 2); ctx.lineTo(bx, y + bh / 2); ctx.closePath();
-    ctx.fillStyle = L.bg0; ctx.fill(); ctx.fillStyle = rgba(col, 0.22); ctx.fill();
-    ctx.strokeStyle = col; ctx.lineWidth = 2.5; ctx.shadowColor = col; ctx.shadowBlur = 22; ctx.stroke(); ctx.stroke();
-    ctx.restore();
-    txt(ctx, s, bx + bw / 2, y + 13, { size, w: 800, fam: L.mono, color: '#FFFFFF', align: 'center', glow: 6 });
-    // the change since the open of the candle, small, under the bubble
-    const pct = ((c.c / c.o - 1) * 100).toFixed(2);
-    ctx.save(); ctx.globalAlpha = 1 - cam.k; ctx.fillStyle = L.bg0; ctx.fillRect(bx + bw / 2 - 62, y + bh / 2 + 4, 124, 30); ctx.restore();
-    txt(ctx, `${up ? '▲' : '▼'} ${Math.abs(pct)}%`, bx + bw / 2, y + bh / 2 + 26, { size: 20, w: 700, fam: L.mono, color: col, align: 'center', alpha: 1 - cam.k });
   }
 
   function hud(ctx, t, D) {
@@ -325,6 +347,12 @@
     txt(ctx, 'BTC / USD', x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
     const w = measure(ctx, 'BTC / USD', 44, 800) + 9 * 2;
     txt(ctx, dateStr(Math.max(0, D)), x + w + 36, y, { size: 36, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
+    // the live price and its change on the day, on the same line, right side
+    const L0 = live(t), col = L0.up ? UP : DOWN;
+    const pct = `${L0.up ? '▲' : '▼'} ${Math.abs((L0.p / L0.o - 1) * 100).toFixed(2)}%`;
+    const xr = W - 96, pw = measure(ctx, pct, 30, 800, L.mono);
+    txt(ctx, pct, xr, y, { size: 30, w: 800, fam: L.mono, color: col, align: 'right', glow: 8 });
+    txt(ctx, fmt(L0.p), xr - pw - 28, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 });
   }
 
   // light glowing dust: specks of light drifting through the beam
@@ -403,7 +431,7 @@
       labels(ctx, t, X, Y, cam);
       ctx.restore();
       glowLine(ctx, [[PLOT_R + 0.5, Y0 - 60], [PLOT_R + 0.5, Y1 + 8]], rgba(L.accent, 0.5), 1.2, 8);
-      bubble(ctx, t, cam, Y, X);
+      priceLine(ctx, t, cam, Y, X);
       ctx.restore();
       hud(ctx, t, D);
       if (mood.up > 0.01) { // a rally lights the screen up from the edges
