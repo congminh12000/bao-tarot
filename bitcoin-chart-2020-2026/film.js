@@ -252,7 +252,9 @@
   const MEASURE = G.makeCanvas(8, 8).getContext('2d');
   const PLACE = [];
   const sizeOf = (e) => (e.big ? 62 : e.hit ? 40 : 22); // the big moments shout, the small ones whisper
-  const camAt = (t) => { const c = camera(t); return { X: (d) => d * c.ppd - c.off, Y: (p) => Y1 - ((Math.log(p) - c.lo) / (c.hi - c.lo)) * (Y1 - Y0), c }; };
+  const CAMS = new Map();
+  const camAt = (t) => { const key = Math.round(t * 1000); if (CAMS.has(key)) return CAMS.get(key); const c = camera(t); return { X: (d) => d * c.ppd - c.off, Y: (p) => Y1 - ((Math.log(p) - c.lo) / (c.hi - c.lo)) * (Y1 - Y0), c }; }; // eslint-disable-line
+  const camAtM = (t) => { const key = Math.round(t * 1000); let v = CAMS.get(key); if (!v) { v = camAt(t); CAMS.set(key, v); } return v; };
   function placeLabel(n) {
     if (PLACE[n]) return PLACE[n];
     const e = EVENTS[n], up = e.kind !== 'down', size = sizeOf(e), h = size * 1.3;
@@ -277,19 +279,27 @@
     }
     const elbow = cand.filter((q) => q.dir).sort((a, b) => a.len - b.len)[0], straight = cand.find((q) => !q.dir);
     const { dir, off, ref, base } = !elbow || (straight && elbow.len > 110 && straight.len < elbow.len) ? straight : elbow;
-    const step = h + 12;
-    // boxes of the earlier labels still on screen at this moment
+    // earlier labels that share the screen with this one at any moment of its life (checked every 0.4 s, since the
+    // camera keeps zooming): this label keeps a clear gap from all of them, the whole time
+    const GAPX = 28, GAPY = 22, LIFE = 8.5;
     const others = [];
-    for (let m = 0; m < n; m++) {
-      const o = EVENTS[m];
-      if (e.t - o.t > 8.5 || e.t < o.t) continue;
-      const P = placeLabel(m), ox = X(o.day + 0.5) + P.off, oy = Y(P.ref) + P.gap;
-      others.push([ox, oy - P.h / 2, ox + P.bw, oy + P.h / 2]);
+    for (let m = 0; m < n; m++) if (EVENTS[m].t <= e.t && e.t - EVENTS[m].t < LIFE) others.push(m);
+    const samples = [];
+    for (let j = 0; j * 0.4 < LIFE; j++) {
+      const ts = e.t + j * 0.4, live = others.filter((m) => ts - EVENTS[m].t < LIFE);
+      if (!live.length) break;
+      const K = camAtM(ts);
+      samples.push({ K, boxes: live.map((m) => { const P = placeLabel(m), ox = K.X(EVENTS[m].day + 0.5) + P.off, oy = K.Y(P.ref) + P.gap; return [ox, oy - P.h / 2, ox + P.bw, oy + P.h / 2]; }) });
     }
-    const bx = x + off, clash = (my) => others.some((q) => bx < q[2] + 10 && bx + bw > q[0] - 10 && my - h / 2 < q[3] + 10 && my + h / 2 > q[1] - 10);
+    const bx = x + off;
+    const clash = (my) => samples.some(({ K, boxes }) => {
+      const cx = K.X(e.day + 0.5) + off, cy = K.Y(ref) + (my - Y(ref));
+      return boxes.some((q) => cx < q[2] + GAPX && cx + bw > q[0] - GAPX && cy - h / 2 < q[3] + GAPY && cy + h / 2 > q[1] - GAPY);
+    });
     const inside = (my) => (up ? my - h / 2 >= (bx > 700 ? 112 : Y0 - 10) : my + h / 2 <= Y1 - 4);
+    const step = h + GAPY;
     let mid = base;
-    for (let k = 0; k < 6; k++) { const my = base + (up ? -1 : 1) * k * step; if (!inside(my)) break; mid = my; if (!clash(my)) break; }
+    for (let k = 0; k < 8; k++) { const my = base + (up ? -1 : 1) * k * step; if (!inside(my)) break; mid = my; if (!clash(my)) break; }
     return (PLACE[n] = { s, tw, bw, h, size, up, off, dir, ref, gap: mid - Y(ref) }); // gap: px from the reference candle
   }
 
@@ -359,7 +369,7 @@
     // the live price and its change on the day, on the same line, right side
     const L0 = live(t), col = L0.up ? UP : DOWN;
     const pct = `${L0.up ? '▲' : '▼'} ${Math.abs((L0.p / L0.o - 1) * 100).toFixed(2)}%`;
-    const xr = W - 96, pw = measure(ctx, fmt(L0.p), 44, 800, L.mono);
+    const xr = PLOT_R - 12, pw = measure(ctx, fmt(L0.p), 44, 800, L.mono); // right edge = the chart's right edge
     txt(ctx, fmt(L0.p), xr, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 }); // price on the right
     txt(ctx, pct, xr - pw - 24, y, { size: 21, w: 800, fam: L.mono, color: col, align: 'right', glow: 8 }); // the day's change, left of it
   }
