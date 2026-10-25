@@ -172,6 +172,7 @@ node make-data.js && node song.js          # LUÔN khôi phục dữ liệu đ�
 node make-data.js && node song.js && node check-labels.js
 node engine/render.js video && node engine/render.js mux && node engine/render.js verify
 # → out/bitcoin-chart-2020-2026.mp4   (hoặc gọn: npm run build)
+# thư mục out/ (video, nhạc, preview) KHÔNG đưa lên git (.gitignore): gửi file cho người dùng trực tiếp
 # đổi FPS: FPS=30 node … ; độ phân giải khác: --res 580 (cạnh ngắn, px)
 ```
 
