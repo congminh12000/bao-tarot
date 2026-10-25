@@ -251,7 +251,7 @@
   const DIAG = 34, RUN = 30, PAD = 14; // callout geometry, px
   const MEASURE = G.makeCanvas(8, 8).getContext('2d');
   const PLACE = [];
-  const sizeOf = (e) => (e.big ? 50 : e.hit ? 34 : 24);
+  const sizeOf = (e) => (e.big ? 62 : e.hit ? 40 : 22); // the big moments shout, the small ones whisper
   const camAt = (t) => { const c = camera(t); return { X: (d) => d * c.ppd - c.off, Y: (p) => Y1 - ((Math.log(p) - c.lo) / (c.hi - c.lo)) * (Y1 - Y0), c }; };
   function placeLabel(n) {
     if (PLACE[n]) return PLACE[n];
@@ -260,20 +260,23 @@
     const { X, Y, c } = camAt(e.t);
     const x = X(e.day + 0.5), ay = Y(e.price) + (up ? -8 : 8);
     const bw = tw + PAD * 2;
-    // try the label on each side of its candle; keep the side where it sits closest to the candle
-    let best = null;
-    for (const dir of [1, -1]) {
-      const off = dir > 0 ? DIAG + RUN : -(DIAG + RUN + bw); // box left edge relative to the anchor x
-      if (x + off + bw > PLOT_R - 20 && dir > 0) continue;
+    // candidates: a callout to the right (dir 1), to the left (-1), or the box straight above/below the candle (0);
+    // the callout wins unless its line would get long and the straight one is shorter
+    const cand = [];
+    for (const dir of [1, -1, 0]) {
+      const off = dir > 0 ? DIAG + RUN : dir < 0 ? -(DIAG + RUN + bw) : -bw / 2; // box left edge relative to the anchor x
+      if (x + off + bw > PLOT_R - 20 && dir >= 0) continue;
       // every candle under the callout and the box, including the ones still to come
       const x0 = Math.min(x, x + off) - 6, x1 = Math.max(x, x + off + bw) + 6;
       const dA = Math.max(0, Math.floor((x0 + c.off) / c.ppd - 1)), dB = Math.min(NDAYS - 1, Math.ceil((x1 + c.off) / c.ppd));
       let ref = up ? 0 : Infinity;
       for (let d = dA; d <= dB; d++) ref = up ? Math.max(ref, DAYS[d][1]) : Math.min(ref, DAYS[d][2]);
-      const base = up ? Math.min(Y(ref) - 24 - h / 2, ay - 44) : Math.max(Y(ref) + 24 + h / 2, ay + 44); // box middle
-      if (!best || Math.abs(base - ay) < Math.abs(best.base - ay) - 4) best = { dir, off, ref, base };
+      const min = dir ? 44 : 34 + h / 2; // the shortest line each shape allows
+      const base = up ? Math.min(Y(ref) - 22 - h / 2, ay - min) : Math.max(Y(ref) + 22 + h / 2, ay + min); // box middle
+      cand.push({ dir, off, ref, base, len: Math.abs(base - ay) - (dir ? 0 : h / 2) });
     }
-    const { dir, off, ref, base } = best;
+    const elbow = cand.filter((q) => q.dir).sort((a, b) => a.len - b.len)[0], straight = cand.find((q) => !q.dir);
+    const { dir, off, ref, base } = !elbow || (straight && elbow.len > 110 && straight.len < elbow.len) ? straight : elbow;
     const step = h + 12;
     // boxes of the earlier labels still on screen at this moment
     const others = [];
@@ -303,20 +306,26 @@
       if (alpha <= 0) return;
       const ay = Y(e.price) + (P.up ? -8 : 8), my = Y(P.ref) + P.gap, bx = x + P.off;
       const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
-      // the callout: anchor -> diagonal -> horizontal -> box, drawn out over 0.35 s
-      const B = [x + P.dir * DIAG, my], C = [P.dir > 0 ? bx : bx + P.bw, my];
+      // the line, drawn out over 0.35 s: anchor -> diagonal -> horizontal -> box, or straight up/down into the box
       const k = ease.outCubic(clamp(age / 0.35));
-      const l1 = Math.hypot(B[0] - x, B[1] - ay), l2 = Math.abs(C[0] - B[0]), L_ = (l1 + l2) * k;
       const pts = [[x, ay]];
-      if (L_ <= l1) pts.push([lerp(x, B[0], L_ / l1), lerp(ay, B[1], L_ / l1)]);
-      else pts.push(B, [lerp(B[0], C[0], (L_ - l1) / l2), my]);
+      if (P.dir) {
+        const B = [x + P.dir * DIAG, my], C = [P.dir > 0 ? bx : bx + P.bw, my];
+        const l1 = Math.hypot(B[0] - x, B[1] - ay), l2 = Math.abs(C[0] - B[0]), L_ = (l1 + l2) * k;
+        if (L_ <= l1) pts.push([lerp(x, B[0], L_ / l1), lerp(ay, B[1], L_ / l1)]);
+        else pts.push(B, [lerp(B[0], C[0], (L_ - l1) / l2), my]);
+      } else pts.push([x, lerp(ay, my + (P.up ? P.h / 2 : -P.h / 2), k)]);
+      const tier = e.big ? 2 : e.hit ? 1 : 0;
       ctx.save(); ctx.globalAlpha = alpha;
-      glowLine(ctx, pts, col, 1.6, 10);
+      glowLine(ctx, pts, col, [1.3, 2.2, 3][tier], [6, 12, 18][tier]);
       ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, ay, 4, 0, Math.PI * 2); ctx.fill();
       if (age > 0.25) {
         const shown = P.s.slice(0, Math.ceil(P.s.length * clamp((age - 0.25) / 0.3)));
-        panel(ctx, bx, my - P.h / 2, P.bw, P.h, col, { corner: 10, glow: e.hit ? 16 : 8 });
-        txt(ctx, shown, bx + PAD, my + P.size * 0.35, { size: P.size, w: 800, color: e.hit ? col : L.text, glow: e.hit ? 14 : 0 });
+        // three tiers: small = quiet grey box; hit = coloured, tinted, glowing; big = brighter, pulsing glow
+        const pulse = tier === 2 ? 0.6 + 0.4 * Math.sin(age * 6) : 1;
+        panel(ctx, bx, my - P.h / 2, P.bw, P.h, col, { fill: tier ? `rgba(2,8,16,0.82)` : 'rgba(2,8,16,0.6)', corner: [8, 12, 16][tier], glow: [4, 18, 30 * pulse][tier], alpha: tier ? 1 : 0.85 });
+        if (tier) { ctx.save(); ctx.fillStyle = rgba(col, tier === 2 ? 0.2 : 0.12); ctx.fillRect(bx, my - P.h / 2, P.bw, P.h); ctx.restore(); }
+        txt(ctx, shown, bx + PAD, my + P.size * 0.35, { size: P.size, w: 800, color: tier ? col : rgba(L.text, 0.85), glow: [0, 14, 26 * pulse][tier] });
       }
       ctx.restore();
     });
@@ -346,13 +355,13 @@
     const x = 96, y = 104;
     txt(ctx, 'BTC / USD', x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
     const w = measure(ctx, 'BTC / USD', 44, 800) + 9 * 2;
-    txt(ctx, dateStr(Math.max(0, D)), x + w + 36, y, { size: 36, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
+    txt(ctx, dateStr(Math.max(0, D)), x + w + 30, y, { size: 25, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
     // the live price and its change on the day, on the same line, right side
     const L0 = live(t), col = L0.up ? UP : DOWN;
     const pct = `${L0.up ? '▲' : '▼'} ${Math.abs((L0.p / L0.o - 1) * 100).toFixed(2)}%`;
-    const xr = W - 96, pw = measure(ctx, pct, 30, 800, L.mono);
-    txt(ctx, pct, xr, y, { size: 30, w: 800, fam: L.mono, color: col, align: 'right', glow: 8 });
-    txt(ctx, fmt(L0.p), xr - pw - 28, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 });
+    const xr = W - 96, pw = measure(ctx, fmt(L0.p), 44, 800, L.mono);
+    txt(ctx, fmt(L0.p), xr, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 }); // price on the right
+    txt(ctx, pct, xr - pw - 24, y, { size: 21, w: 800, fam: L.mono, color: col, align: 'right', glow: 8 }); // the day's change, left of it
   }
 
   // light glowing dust: specks of light drifting through the beam
