@@ -210,7 +210,7 @@
 
   const ev = { start: TB(FIRST_BEAT - 0.5), end: TB(END_BEAT) };
   const markers = { start: ev.start, end: { t: ev.end, sync: 'av' } };
-  hits.forEach((h, i) => { markers['hit' + (i + 1)] = { t: h.t, sync: 'av' }; });
+  hits.forEach((h, i) => { markers['hit' + (i + 1)] = { t: h.t, sync: h.kind === 'info' ? 'a' : 'av' }; }); // info has no flash
   PH.forEach((p, i) => { markers[`phase${i + 1}-${p.type}`] = TB(p.q0); });
 
   const SCORE = {

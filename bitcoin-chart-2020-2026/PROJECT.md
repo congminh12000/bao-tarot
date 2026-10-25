@@ -37,7 +37,7 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 
 ## 3. Nhãn sự kiện (đã duyệt)
 
-- Nguồn: `data/events.csv` (`date,kind,hit,text`). `kind`: up/down/info. `hit`: 0 nhỏ, 1 quan trọng, 2 lớn nhất.
+- Nguồn: `data/events.csv` (`date,kind,hit,text`) — bộ 238 sự kiện từ 99Bitcoins (ATH theo TradingView), người dùng soạn/kiểm chứng; đã thay hẳn bộ 56 sự kiện cũ. `kind`: up/down/info. `hit`: 0 nhỏ, 1 quan trọng, 2 lớn nhất.
 - Nhãn **up** (và info) đặt **phía trên** nến; nhãn **down** đặt **phía dưới** nến. **Không bao giờ đè lên nến**
   (tính cả những nến chưa chạy tới nằm dưới bề ngang nhãn).
 - Đường dẫn: **gấp khúc 2 đoạn** (chéo rồi ngang). Nếu đường gấp khúc quá dài (>110 px) → dùng **đường thẳng đứng ngắn**, nhãn đặt giữa nến.
@@ -136,5 +136,5 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại
 
-- Đã duyệt tới preview v2 (2017–2018, 2022–2023) — đang chờ người dùng kiểm chứng danh sách sự kiện (nhờ ChatGPT).
+- Đã duyệt tới preview v2 (2017–2018, 2022–2023). Đã thay events.csv bằng bộ 99Bitcoins (238 sự kiện) → preview v3 (2019–2020 dày nhất, 2017–2018) đang chờ duyệt.
 - Bản đầy đủ 2010–2026 dài ~8 phút 45 giây ở `SPEED 0.35`; chưa render bản cuối.

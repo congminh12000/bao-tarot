@@ -337,21 +337,24 @@
     // own side: every shape at the first level before stepping a level further from the candles (left beats deep)
     let pick = null, fallback = null;
     const own = cand.filter((q) => q.above === up), other = cand.filter((q) => q.above !== up);
-    for (let k = 0; k < 4 && !pick; k++) for (const q of own) {
+    for (let k = 0; k < 8 && !pick; k++) for (const q of own) {
       const my = q.base + (q.above ? -1 : 1) * k * step;
       if (!inside(q, my)) continue;
       if (!fallback) fallback = { q, my };
       if (!clash(q, my)) { pick = { q, my }; break; }
     }
-    for (let k = 0; k < 4 && !pick; k++) for (const q of other) {
+    for (let k = 0; k < 8 && !pick; k++) for (const q of other) {
       const my = q.base + (q.above ? -1 : 1) * k * step;
       if (inside(q, my) && !clash(q, my)) { pick = { q, my }; break; }
     }
     const { q: ch, my: mid } = pick || fallback || { q: cand[0], my: cand[0].base };
-    const P = { s, tw, bw, h, size, up, above: ch.above, off: ch.off, dir: ch.dir, ref: ch.ref, gap: mid - Y(ch.ref) };
+    const P = { s, tw, bw, h, size, up, above: ch.above, off: ch.off, dir: ch.dir, ref: ch.ref, gap: mid - Y(ch.ref), forced: !pick };
     P.exit = exitTime(e, P);
     return (PLACE[n] = P);
   }
+
+  // labels that found no clear spot (they would overlap something): SCORE_DEBUG.crowded() in the browser console
+  globalThis.SCORE_DEBUG = { crowded: () => EVENTS.map((e, n) => ({ e, P: placeLabel(n) })).filter((x) => x.P.forced).map((x) => `${x.e.date} ${x.e.text}`) };
 
   function labels(ctx, t, X, Y, cam) {
     const fade = 1 - clamp(cam.k * 3);
