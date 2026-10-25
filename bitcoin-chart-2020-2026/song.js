@@ -143,14 +143,13 @@ function renderBar(cue, type, q0, q1, k, chordName, nextIsTurnStart) {
       verb.addMono(I.pluck(degMidi(key, deg, rd, 4), { decay: 0.3 }), t, 0.03);
     }
   }
-  // the first bar of a phase: a crash for a trend, a timpani swell for a turn, a soft wash for a sideway
-  if (k === 0) {
-    if (type === 'uptrend' || type === 'downtrend') drums.addMono(type === 'uptrend' ? CR : CR2, t0, 0.3, 0.2);
-    else if (turn) { const tp = I.timpani(c.bass + 12, { decay: 1.8 }); perc.addMono(tp, t0, 0.5); verb.addMono(tp, t0, 0.3); }
-    else fx.addMono(I.noiseSweep(barDur, 300, 2000, { q: 0.8, pink: true, seed: q0 }), t0, 0.06);
+  // the first bar of a phase (= right after a top or a bottom): a timpani swell and a crash as the new trend sets off
+  if (k === 0 && q0 > FIRST_BEAT) {
+    const tp = I.timpani(c.bass + 12, { decay: 2.2 }); perc.addMono(tp, t0, 0.5); verb.addMono(tp, t0, 0.3);
+    drums.addMono(type === 'uptrend' ? CR : CR2, t0, 0.28, 0.2);
   }
   // the last bar before a turn: a riser into the slow-down
-  if (nextIsTurnStart && !turn) fx.addMono(I.noiseSweep(barDur, 200, 7000, { q: 0.9, shape: (x) => x * x, pink: true, seed: q0 }), t0, 0.25);
+  if (nextIsTurnStart) fx.addMono(I.noiseSweep(barDur, 200, 7000, { q: 0.9, shape: (x) => x * x, pink: true, seed: q0 }), t0, 0.22);
 }
 
 // the title bar: a pad and a timpani roll rising into the first phase
@@ -160,7 +159,7 @@ function renderBar(cue, type, q0, q1, k, chordName, nextIsTurnStart) {
   for (let i = 0; i < 12; i++) perc.addMono(I.timpani(c0.bass + 12, { decay: 0.5, seed: i }), (i * dur) / 12, 0.08 + 0.2 * i / 12);
 }
 PHASES.forEach((p, i) => {
-  const next = PHASES[i + 1], toTurn = next && (next.type === 'peak' || next.type === 'bottom');
+  const toTurn = !!PHASES[i + 1]; // every phase ends on a top or a bottom
   for (let q = p.q0, k = 0; q < p.q1; q += 4, k++) {
     const q1 = Math.min(q + 4, p.q1);
     renderBar(p.c, p.type, q, q1, k, p.c.chords[k % p.c.chords.length], toTurn && q1 === p.q1);

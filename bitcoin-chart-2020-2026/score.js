@@ -1,6 +1,6 @@
 // THE SCORE — the single source of truth for music AND picture, built from the data (btc-data.js).
-// - The market is cut into phases (data/phases.csv): uptrend, downtrend, sideway, peak, bottom. Each phase plays a
-//   cue from data/music.js at that cue's tempo: trends fast, sideways medium, the turns (peak / bottom) slow.
+// - The market is cut into phases (data/phases.csv): uptrends and downtrends. Each plays a cue from data/music.js at
+//   that cue's tempo; at every top and bottom the music slows down for ~3 s, then picks up again.
 // - The chart rides the music: inside a phase a bar always shows the same number of days, so the candles run as fast
 //   as the tempo; on every beat they surge a little.
 // - Every event with hit ≥ 1 in data/events.csv is a hit in the music and a flash on screen, on the same frame.
@@ -46,14 +46,13 @@
   }
 
   // ---------- phases -> beats ----------
-  // The chart runs in step with the music: inside an era a BEAT always shows the same number of days, so the candles
-  // move exactly as fast as the tempo (a 120 BPM uptrend runs 1.5x faster than an 80 BPM bottom). Phases are cut on
-  // beats (not bars) so nothing is stretched to fill a bar; the shortest phase still gets one bar to be heard.
+  // Two phases: uptrend (a bottom to the next top) and downtrend (a top to the next bottom). The chart runs in step
+  // with the music: inside a phase every BEAT shows the same number of days, so the candles move exactly as fast as
+  // the tempo — and slow right down with the music at every top and bottom.
   // SPEED < 1 slows the whole chart down; DPB0 = days per bar (4 beats) by era
   const SPEED = 0.7;
   const DPB0 = (d) => { const y = yearAt(d); return (y <= 2012 ? 130 : y <= 2019 ? 85 : 70) * SPEED; };
   const MIN_BEATS = 4;
-  const isTurn = (type) => type === 'peak' || type === 'bottom';
   let PH = (BTC.phases || []).map((p) => ({ type: p.type, cue: p.cue, d0: Math.max(0, dayOf(p.start)), d1: Math.min(NDAYS - 1, dayOf(p.end)) })).filter((p) => p.d1 >= p.d0);
   if (!PH.length) PH = [{ type: 'sideway', cue: LIB.pickCue('sideway', 0).id, d0: 0, d1: NDAYS - 1 }];
   if (PREVIEW) { const c = LIB.CUES.find((q) => q.id === PREVIEW.cue); if (!c) throw new Error(`no cue ${PREVIEW.cue}`); PH = [{ type: c.phase, cue: c.id, d0: 0, d1: NDAYS - 1 }]; }
@@ -101,14 +100,19 @@
     const p = PH[i];
     BEATS.push({ type: x < FIRST_BEAT ? 'intro' : x >= END_BEAT ? 'outro' : p.type, cue: p.c, k: x - p.q0, p: i });
   }
-  // a tempo point at each phase start; the change ramps over the bar before it (LIB.TRANSITION.bars), and into a
-  // turn over two bars (turnBars): the music sinks into a peak or a bottom before it gets there
-  const tempo = [[0, PH[0].c.bpm]];
-  PH.forEach((p, i) => {
-    if (i === 0) { tempo.push([p.b0, p.c.bpm]); return; }
-    const prev = PH[i - 1], ramp = 4 * (isTurn(p.type) && !isTurn(prev.type) ? LIB.TRANSITION.turnBars : LIB.TRANSITION.bars);
-    tempo.push([Math.max(prev.q0, p.q0 - ramp) / 4, prev.c.bpm], [p.b0, p.c.bpm]);
-  });
+  // the tempo map: each phase plays at its cue's tempo; at every turn (the top or bottom between two phases) the music
+  // slows down over TURN.rampInBeats, holds TURN.slowBpm for about TURN.holdSec seconds around the turn, then the new
+  // phase speeds back up to its own tempo over TURN.rampOutBeats. The film ends with the same slow-down.
+  const TURN = LIB.TURN, HOLD = (TURN.holdSec * TURN.slowBpm) / 60; // beats held slow
+  const tempo = [[0, PH[0].c.bpm], [FIRST_BEAT / 4, PH[0].c.bpm]];
+  const turnAt = (P, prev, next) => { // P = the beat of the turn
+    const lo = prev.q0 + 1, hi = next ? next.q1 - 1 : END_BEAT + 8;
+    const h0 = Math.max(lo, P - HOLD / 2), h1 = Math.min(hi, P + HOLD / 2);
+    tempo.push([Math.max(lo - 1, h0 - TURN.rampInBeats) / 4, prev.c.bpm], [h0 / 4, TURN.slowBpm], [h1 / 4, TURN.slowBpm]);
+    if (next) tempo.push([Math.min(hi, h1 + TURN.rampOutBeats) / 4, next.c.bpm]);
+  };
+  PH.forEach((p, i) => { if (i > 0) turnAt(p.q0, PH[i - 1], p); });
+  if (!PREVIEW) turnAt(END_BEAT, PH[PH.length - 1], null);
   tempo.sort((x, y) => x[0] - y[0]);
   for (let i = tempo.length - 1; i > 0; i--) if (tempo[i][0] - tempo[i - 1][0] < 1e-9) tempo.splice(i - 1, 1); // one point per position (the later wins)
   const clock = makeClock({ bpm: PH[0].c.bpm, offset: 0, tempo });

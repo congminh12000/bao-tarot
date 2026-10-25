@@ -1,12 +1,12 @@
-// THE MUSIC LIBRARY — one or more cues per market phase (phases: data/phases.csv, from detect-phases.js).
+// THE MUSIC LIBRARY — the cues of the two market phases (phases: data/phases.csv, from detect-phases.js).
 //
-// Tempo rule:
-//   uptrend / downtrend   fast    (the market is moving: 116–124 BPM)
-//   sideway               medium  (waiting, coiling: 108–112 BPM)
-//   peak / bottom         slow    (the turn between two trends: 76–84 BPM)
-// Between two phases the tempo ramps over TRANSITION.bars bars; into a peak or a bottom it slows over
-// TRANSITION.turnBars bars (a ritardando), so the turn is felt before it arrives.
-// The candles follow the music: a fixed number of days per beat inside a phase, so a fast cue runs the chart fast.
+//   uptrend     from a bottom to the next top      cues: Ascent, Euphoria
+//   downtrend   from a top to the next bottom      cues: Freefall, Pressure
+//
+// The turn between two phases (a top or a bottom) is where the music breathes: it slows down into the turn
+// (TURN.rampInBeats), holds a slow tempo for about TURN.holdSec seconds around the top / bottom, then the new phase
+// starts slow and speeds back up to its own tempo (TURN.rampOutBeats). The candles follow the music: inside a phase
+// every beat shows the same number of days, so the chart slows into the turn and picks up again with the music.
 //
 // Every cue is pure data, read by song.js:
 //   bpm        tempo of the cue
@@ -17,16 +17,15 @@
 //   ostinato   the running figure that sets the speed (instrument, notes per beat, figure in scale degrees)
 //   lead       the hook instrument and its phrase (scale degrees on an 8th grid: [degree, start, length])
 //   pads       sustained harmony
-//   fx         extra colour
-// Cues of the same phase take turns (round robin), so a long story does not repeat the same loop each time.
+// Cues of the same phase take turns (round robin), so the story does not repeat the same loop each time.
 (function () {
-  const PHASE_TEMPO = { uptrend: 120, downtrend: 118, sideway: 110, peak: 84, bottom: 78 };
-  const TRANSITION = { bars: 1, turnBars: 2 };
+  const PHASE_TEMPO = { uptrend: 100, downtrend: 98 };
+  const TURN = { slowBpm: 60, holdSec: 3, rampInBeats: 4, rampOutBeats: 8 };
 
   const CUES = [
-    // ---------------- uptrend: fast, bright, rising ----------------
+    // ---------------- uptrend: bright, rising ----------------
     {
-      id: 'up-ascent', phase: 'uptrend', title: 'Ascent', bpm: 120, key: 'D minor',
+      id: 'up-ascent', phase: 'uptrend', title: 'Ascent', bpm: 100, key: 'D minor',
       chords: ['Dm', 'Bb', 'F', 'C'],
       drums: 'fourFloor', bass: 'octaves',
       ostinato: { instrument: 'pizz', perBeat: 4, figure: [1, 5, 8, 5, 3, 5, 8, 10] },
@@ -35,7 +34,7 @@
       mood: 'driving, confident climb',
     },
     {
-      id: 'up-euphoria', phase: 'uptrend', title: 'Euphoria', bpm: 124, key: 'F major',
+      id: 'up-euphoria', phase: 'uptrend', title: 'Euphoria', bpm: 104, key: 'F major',
       chords: ['F', 'C', 'Dm', 'Bb'],
       drums: 'breakbeat', bass: 'rolling808',
       ostinato: { instrument: 'pluck', perBeat: 4, figure: [1, 3, 5, 8, 5, 3, 5, 8] },
@@ -43,9 +42,9 @@
       pads: 'strings', fx: ['claps on 2 and 4', 'shimmer bells on new highs'],
       mood: 'euphoric, a party at the top of the chart',
     },
-    // ---------------- downtrend: fast, dark, falling ----------------
+    // ---------------- downtrend: dark, falling ----------------
     {
-      id: 'down-freefall', phase: 'downtrend', title: 'Freefall', bpm: 118, key: 'D minor',
+      id: 'down-freefall', phase: 'downtrend', title: 'Freefall', bpm: 98, key: 'D minor',
       chords: ['Dm', 'C', 'Bb', 'A'],
       drums: 'toms', bass: 'pulse8',
       ostinato: { instrument: 'strings', perBeat: 4, figure: [8, 7, 6, 5, 4, 3, 2, 1] },
@@ -54,7 +53,7 @@
       mood: 'panic, a descending line that will not stop',
     },
     {
-      id: 'down-pressure', phase: 'downtrend', title: 'Pressure', bpm: 116, key: 'G minor',
+      id: 'down-pressure', phase: 'downtrend', title: 'Pressure', bpm: 96, key: 'G minor',
       chords: ['Gm', 'Eb', 'Cm', 'D'],
       drums: 'halfTime', bass: 'rolling808',
       ostinato: { instrument: 'pizz', perBeat: 4, figure: [1, 1, 8, 1, 7, 1, 6, 5] },
@@ -62,51 +61,12 @@
       pads: 'darkPad', fx: ['ticking hats', 'reverse cymbals into each bar'],
       mood: 'grinding sell-off, heavy and relentless',
     },
-    // ---------------- sideway: medium, coiled, waiting ----------------
-    {
-      id: 'side-range', phase: 'sideway', title: 'Range', bpm: 112, key: 'D dorian',
-      chords: ['Dm7', 'G', 'Dm7', 'Am7'],
-      drums: 'rimShaker', bass: 'root',
-      ostinato: { instrument: 'marimba', perBeat: 2, figure: [1, 5, 3, 5] },
-      lead: { instrument: 'epiano', phrase: [[5, 0, 2], [4, 2, 2], [3, 4, 4]] },
-      pads: 'softPad', fx: ['clock ticks'],
-      mood: 'patient, the market catching its breath',
-    },
-    {
-      id: 'side-coil', phase: 'sideway', title: 'Coil', bpm: 108, key: 'A minor',
-      chords: ['Am', 'F', 'Am', 'E'],
-      drums: 'rimShaker', bass: 'pulse8',
-      ostinato: { instrument: 'pluck', perBeat: 2, figure: [1, 3, 1, 5] },
-      lead: { instrument: 'musicBox', phrase: [[8, 0, 2], [7, 4, 2]] },
-      pads: 'softPad', fx: ['rising filter, tension before the breakout'],
-      mood: 'a spring winding up',
-    },
-    // ---------------- peak: slow, the turn from up to down ----------------
-    {
-      id: 'peak-summit', phase: 'peak', title: 'Summit', bpm: 84, key: 'D major',
-      chords: ['D', 'Bm', 'G', 'Asus4'],
-      drums: 'none', bass: 'drone',
-      ostinato: { instrument: 'musicBox', perBeat: 1, figure: [8, 5, 3, 5] },
-      lead: { instrument: 'strings', phrase: [[10, 0, 6], [9, 6, 2]] },
-      pads: 'strings', fx: ['timpani swell', 'everything holds its breath on the last bar'],
-      mood: 'the view from the top, wide and fragile',
-    },
-    // ---------------- bottom: slow, the turn from down to up ----------------
-    {
-      id: 'bottom-abyss', phase: 'bottom', title: 'Abyss', bpm: 78, key: 'D minor',
-      chords: ['Dm', 'Dm/C', 'Bb', 'A'],
-      drums: 'heartbeat', bass: 'drone',
-      ostinato: { instrument: 'bell', perBeat: 1, figure: [1, -2, 1, 3] },
-      lead: { instrument: 'cello', phrase: [[1, 0, 4], [3, 4, 2], [2, 6, 2]] },
-      pads: 'darkPad', fx: ['timpani', 'silence between phrases'],
-      mood: 'the floor, cold and quiet, a heartbeat that slowly comes back',
-    },
   ];
 
   // the cue for the k-th phase of a type (round robin)
   const cuesOf = (phase) => CUES.filter((c) => c.phase === phase);
   const pickCue = (phase, k) => { const list = cuesOf(phase); return list[k % list.length]; };
 
-  const MUSIC_LIBRARY = { PHASE_TEMPO, TRANSITION, CUES, cuesOf, pickCue };
+  const MUSIC_LIBRARY = { PHASE_TEMPO, TURN, CUES, cuesOf, pickCue };
   if (typeof module !== 'undefined') module.exports = MUSIC_LIBRARY; else globalThis.MUSIC_LIBRARY = MUSIC_LIBRARY;
 })();
