@@ -10,7 +10,7 @@
   const BTC = node ? require('./btc-data') : globalThis.BTC;
   const { m, makeClock, makeChords } = MU;
 
-  const FPS = 24;
+  const FPS = node && process.env.FPS ? +process.env.FPS : 24; // FPS=30 node … renders at another frame rate
   const FORMAT = U.pickFormat('16:9');
   const [W, H] = U.formatSize(FORMAT);
   const SAFE = U.safeArea(W, H);
