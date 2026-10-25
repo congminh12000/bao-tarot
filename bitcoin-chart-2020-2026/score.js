@@ -50,7 +50,7 @@
   // with the music: inside a phase every BEAT shows the same number of days, so the candles move exactly as fast as
   // the tempo — and slow right down with the music at every top and bottom.
   // SPEED < 1 slows the whole chart down; DPB0 = days per bar (4 beats) by era
-  const SPEED = 0.7;
+  const SPEED = 0.35;
   const DPB0 = (d) => { const y = yearAt(d); return (y <= 2012 ? 130 : y <= 2019 ? 85 : 70) * SPEED; };
   const MIN_BEATS = 4;
   let PH = (BTC.phases || []).map((p) => ({ type: p.type, cue: p.cue, d0: Math.max(0, dayOf(p.start)), d1: Math.min(NDAYS - 1, dayOf(p.end)) })).filter((p) => p.d1 >= p.d0);
@@ -71,7 +71,21 @@
   const END_BEAT = q, END_BAR = END_BEAT / 4;
 
   // knots (beat, day): phase starts, and the hit events inside their phase on a beat
-  const EVSRC = PREVIEW ? [] : BTC.events;
+  // every top and bottom between two phases is an event: the one the data already has near it (promoted to a hit),
+  // or a TOP / BOTTOM label made here. The turn starts the moment its label appears.
+  const kfmt = (p) => (p >= 1000 ? `$${(p / 1000).toFixed(p >= 10000 ? 0 : 1)}K` : p >= 1 ? `$${Math.round(p)}` : `$${p.toPrecision(2)}`);
+  const iso = (d) => dateOf(d).toISOString().slice(0, 10);
+  const EVSRC = PREVIEW ? [] : BTC.events.map((e) => ({ ...e }));
+  if (!PREVIEW) PH.forEach((p, i) => {
+    if (i === 0) return;
+    const top = p.type === 'downtrend', d = p.d0; // a downtrend starts at a top, an uptrend at a bottom
+    const near = EVSRC.filter((e) => e.kind === (top ? 'up' : 'down') && Math.abs(dayOf(e.date) - d) <= 7)
+      .sort((a, b) => (b.hit > 0) - (a.hit > 0) || Math.abs(dayOf(a.date) - d) - Math.abs(dayOf(b.date) - d))[0];
+    if (near) { near.hit = Math.max(1, near.hit); near.turn = i; return; }
+    const price = top ? DAYS[d][1] : DAYS[d][2];
+    EVSRC.push({ date: iso(d), kind: top ? 'up' : 'down', hit: 1, text: `${top ? 'TOP' : 'BOTTOM'}: ${kfmt(price)}`, turn: i });
+  });
+  EVSRC.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
   const hitEv = EVSRC.filter((e) => e.hit > 0).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
   const KN = [];
   for (const p of PH) {
@@ -100,21 +114,26 @@
     const p = PH[i];
     BEATS.push({ type: x < FIRST_BEAT ? 'intro' : x >= END_BEAT ? 'outro' : p.type, cue: p.c, k: x - p.q0, p: i });
   }
-  // the tempo map: each phase plays at its cue's tempo right up to its top / bottom; there the music brakes over
-  // TURN.brakeBeats to TURN.slowBpm, holds it for TURN.holdSec seconds, then the next phase speeds back up to its own
-  // tempo along a smooth S-curve (smoothstep, one point per beat) over TURN.rampOutBeats. The film ends the same way.
+  // the tempo map: each phase plays at its cue's tempo right up to the moment its top / bottom label appears; there
+  // the music brakes (TURN.brakeBeats) to TURN.slowBpm, holds it for TURN.holdSec seconds, then speeds back up to the
+  // next phase's tempo along a smooth S-curve (smoothstep, a point every half beat) taking about TURN.rampSec seconds.
+  // The candles follow the music, so the chart brakes, hangs, and gathers speed with it. The film ends the same way.
   const TURN = LIB.TURN, HOLD = (TURN.holdSec * TURN.slowBpm) / 60; // beats held slow
   const tempo = [[0, PH[0].c.bpm], [FIRST_BEAT / 4, PH[0].c.bpm]];
-  const turnAt = (P, prev, next) => { // P = the beat of the turn (the top or the bottom)
-    const hi = next ? next.q1 - 1 : END_BEAT + 8;
-    const b0 = Math.min(hi, P + TURN.brakeBeats), h1 = Math.min(hi, b0 + HOLD);
-    tempo.push([P / 4, prev.c.bpm], [b0 / 4, TURN.slowBpm], [h1 / 4, TURN.slowBpm]);
-    if (!next) return;
-    const n = Math.max(1, Math.min(TURN.rampOutBeats, hi - h1));
-    for (let j = 1; j <= n; j++) { const u = j / n, e = u * u * (3 - 2 * u); tempo.push([(h1 + j) / 4, TURN.slowBpm + (next.c.bpm - TURN.slowBpm) * e]); }
+  const turnAt = (E, from, to, hi) => { // E = the beat the turn's label appears
+    const b0 = Math.min(hi, E + TURN.brakeBeats), h1 = Math.min(hi, b0 + HOLD);
+    tempo.push([E / 4, from], [b0 / 4, TURN.slowBpm], [h1 / 4, TURN.slowBpm]);
+    if (to === null) return;
+    const n = Math.max(1, Math.min(hi - h1, Math.round((TURN.rampSec * (TURN.slowBpm + to)) / 120))); // beats in ~rampSec s (at the mean tempo)
+    for (let j = 1; j <= 2 * n; j++) { const u = j / (2 * n), e = u * u * (3 - 2 * u); tempo.push([(h1 + j / 2) / 4, TURN.slowBpm + (to - TURN.slowBpm) * e]); }
   };
-  PH.forEach((p, i) => { if (i > 0) turnAt(p.q0, PH[i - 1], p); });
-  if (!PREVIEW) turnAt(END_BEAT, PH[PH.length - 1], null);
+  PH.forEach((p, i) => {
+    if (i === 0) return;
+    const e = hitEv.find((h) => h.turn === i && h.beat !== undefined);
+    const E = e ? e.beat : p.q0, next = PH[i + 1];
+    turnAt(E, PH[i - 1].c.bpm, p.c.bpm, next ? next.q0 - 2 : END_BEAT - 1);
+  });
+  if (!PREVIEW) turnAt(END_BEAT, PH[PH.length - 1].c.bpm, null, END_BEAT + 8);
   tempo.sort((x, y) => x[0] - y[0]);
   for (let i = tempo.length - 1; i > 0; i--) if (tempo[i][0] - tempo[i - 1][0] < 1e-9) tempo.splice(i - 1, 1); // one point per position (the later wins)
   const clock = makeClock({ bpm: PH[0].c.bpm, offset: 0, tempo });
