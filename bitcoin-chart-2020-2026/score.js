@@ -87,16 +87,9 @@
   });
   EVSRC.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
   const hitEv = EVSRC.filter((e) => e.hit > 0).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
-  const KN = [];
-  for (const p of PH) {
-    KN.push([p.q0, p === PH[0] ? -0.5 : p.d0]);
-    let last = p.q0;
-    for (const e of hitEv.filter((h) => h.day >= p.d0 && h.day <= p.d1)) {
-      const want = p.q0 + Math.round(((e.day + 0.5 - p.d0) / (p.d1 + 1 - p.d0)) * p.beats);
-      const hq = U.clamp(want, last + 1, p.q1 - 1);
-      if (hq > last && hq < p.q1) { KN.push([hq, e.day + 0.5]); e.beat = hq; last = hq; }
-    }
-  }
+  // knots (beat, day): only the phase starts — inside a phase the chart runs at one steady pace right up to the
+  // turn (events are NOT pinned to beats: pinning bent the pace and the chart seemed to brake before a top)
+  const KN = PH.map((p) => [p.q0, p === PH[0] ? -0.5 : p.d0]);
   KN.push([END_BEAT, NDAYS]);
   const KQ = KN.map((k) => k[0]), KD = KN.map((k) => k[1]);
   function dayOfBeat(x) {
@@ -105,7 +98,14 @@
     let lo = 0, hi = KQ.length - 1;
     while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (KQ[mid] <= x) lo = mid; else hi = mid; }
     return KD[lo] + ((x - KQ[lo]) / (KQ[lo + 1] - KQ[lo])) * (KD[lo + 1] - KD[lo]);
+  }  function beatOfDay(d) {
+    if (d <= KD[0]) return KQ[0];
+    if (d >= KD[KD.length - 1]) return KQ[KQ.length - 1];
+    let lo = 0, hi = KD.length - 1;
+    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (KD[mid] <= d) lo = mid; else hi = mid; }
+    return KQ[lo] + ((d - KD[lo]) / (KD[lo + 1] - KD[lo])) * (KQ[lo + 1] - KQ[lo]);
   }
+
 
   // ---------- per beat: which phase and cue; the tempo map ----------
   const BEATS = []; // q -> { type, cue, k (beat inside the phase), p (phase index) }
@@ -129,8 +129,8 @@
   };
   PH.forEach((p, i) => {
     if (i === 0) return;
-    const e = hitEv.find((h) => h.turn === i && h.beat !== undefined);
-    const E = e ? e.beat : p.q0, next = PH[i + 1];
+    const e = hitEv.find((h) => h.turn === i);
+    const E = e ? beatOfDay(e.day + 0.5) : p.q0, next = PH[i + 1]; // the beat its label appears (the candle's extreme)
     turnAt(E, PH[i - 1].c.bpm, p.c.bpm, next ? next.q0 - 2 : END_BEAT - 1);
   });
   if (!PREVIEW) turnAt(END_BEAT, PH[PH.length - 1].c.bpm, null, END_BEAT + 8);
@@ -179,14 +179,14 @@
   const EVENTS = EVSRC.map((e) => {
     const d = dayOf(e.date);
     if (d < 0 || d >= NDAYS) return null;
-    const pin = hitEv.find((h) => h.day === d && h.beat !== undefined);
+
     const c = DAYS[d];
-    return { ...e, day: d, t: pin ? TB(pin.beat) : timeOfDay(d + 0.5), beat: pin ? pin.beat : undefined, big: e.hit === 2, price: e.kind === 'down' ? c[2] : c[1] };
+    return { ...e, day: d, t: timeOfDay(d + 0.5), big: e.hit === 2, price: e.kind === 'down' ? c[2] : c[1] };
   }).filter(Boolean);
   for (const e of EVENTS) PEAK.set(e.day, e.kind !== 'down');
   const hits = EVENTS.filter((e) => e.hit > 0);
   const bigs = hits.filter((e) => e.big);
-  const breaths = bigs.map((e) => [e.t - BEAT, e.t]); // one beat of real silence before each big one
+  const breaths = []; // no silence before a top / bottom: the music keeps going until the label appears, then brakes
   const inBreath = (t) => breaths.some(([a, b]) => t >= a - 1e-6 && t < b - 1e-6);
 
   // sections (for the level meter): one per phase

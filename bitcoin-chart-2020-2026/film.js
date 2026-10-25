@@ -267,8 +267,11 @@
     // it must to stay on screen (it may cover the price axis, never a candle).
     const RLIM = W - 24;
     const cand = [];
-    for (const dir of [1, 0]) {
-      let off = dir > 0 ? DIAG + RUN : -bw / 2; // box left edge relative to the anchor x
+    // the right-hand callout also comes with a longer horizontal run (EXTRA px), so a label can step right, past
+    // another label, instead of covering it
+    const EXTRA = [0, 110, 220, 330, 440];
+    for (const [dir, extra] of [[1, 0], [0, 0], ...EXTRA.slice(1).map((x) => [1, x])]) {
+      let off = dir > 0 ? DIAG + RUN + extra : -bw / 2; // box left edge relative to the anchor x
       if (dir > 0 && x + off + bw > RLIM) continue;
       if (dir === 0 && x + off + bw > RLIM) off = RLIM - bw - x; // slide left just enough
       // every candle under the callout and the box, including the ones still to come
@@ -278,10 +281,11 @@
       for (let d = dA; d <= dB; d++) ref = up ? Math.max(ref, DAYS[d][1]) : Math.min(ref, DAYS[d][2]);
       const min = dir ? 44 : 34 + h / 2; // the shortest line each shape allows
       const base = up ? Math.min(Y(ref) - 22 - h / 2, ay - min) : Math.max(Y(ref) + 22 + h / 2, ay + min); // box middle
-      cand.push({ dir, off, ref, base, len: Math.abs(base - ay) - (dir ? 0 : h / 2) });
+      cand.push({ dir, off, ref, base, extra, len: Math.abs(base - ay) - (dir ? 0 : h / 2) });
     }
-    const elbow = cand.find((q) => q.dir), straight = cand.find((q) => !q.dir);
-    const order = !elbow ? [straight] : !straight ? [elbow] : elbow.len > 110 && straight.len < elbow.len ? [straight, elbow] : [elbow, straight];
+    const elbow = cand.find((q) => q.dir && !q.extra), straight = cand.find((q) => !q.dir);
+    const first = !elbow ? [straight] : !straight ? [elbow] : elbow.len > 110 && straight.len < elbow.len ? [straight, elbow] : [elbow, straight];
+    const order = [...first.filter(Boolean), ...cand.filter((q) => q.dir && q.extra)]; // then the longer runs, nearest first
     // earlier labels that share the screen with this one at any moment of its life (checked every 0.4 s, since the
     // camera keeps zooming): this label — its box AND its line — keeps a clear gap from their boxes and lines
     const GAPX = 28, GAPY = 22, LIFE = 8.5, FAR = [-1e9, -1e9, -1e9, -1e9], GONE = [FAR, FAR];
@@ -296,10 +300,21 @@
     };
     const samples = [];
     const alive = others.filter((m) => !(placeLabel(m).until <= e.t)); // ones already cut short don't count
+    // important labels still to come while this one is on screen: keep clear of the spot each will want (its line and
+    // box right under / over its candle), so it is free when it arrives
+    const coming = EVENTS.map((o, m) => ({ o, m })).filter(({ o, m }) => m > n && o.hit > 0 && o.t > e.t && o.t - e.t < LIFE)
+      .map(({ o }) => ({ o, h: sizeOf(o) * 1.3, bw: measure(MEASURE, o.text.toUpperCase(), sizeOf(o), 800) + PAD * 2, up: o.kind !== 'down' }));
     for (let j = 0; j * 0.4 < LIFE; j++) {
       const ts = e.t + j * 0.4;
       const K = camAtM(ts);
-      samples.push({ K, rects: alive.map((m) => { const P = placeLabel(m); return ts - EVENTS[m].t < LIFE ? footprint(K, EVENTS[m], P, P.gap) : GONE; }) });
+      const rects = alive.map((m) => { const P = placeLabel(m); return ts - EVENTS[m].t < LIFE ? footprint(K, EVENTS[m], P, P.gap) : GONE; });
+      for (const r of coming) {
+        if (ts < r.o.t) continue;
+        const ax = K.X(r.o.day + 0.5), ay = K.Y(r.o.price) + (r.up ? -8 : 8), reach = 44 + r.h + 6;
+        const zone = [ax - 10, r.up ? ay - reach : ay, ax + DIAG + RUN + r.bw + 10, r.up ? ay : ay + reach];
+        rects.push([zone, FAR]);
+      }
+      samples.push({ K, rects });
     }
     const hits = (a, q, gx, gy) => a[0] < q[2] + gx && a[2] > q[0] - gx && a[1] < q[3] + gy && a[3] > q[1] - gy;
     const clashWith = (c, my) => { // the earlier labels this spot would touch, at any moment
@@ -311,7 +326,7 @@
       return set;
     };
     const clash = (c, my) => clashWith(c, my).size > 0;
-    const inside = (c, my) => (up ? my - h / 2 >= (x + c.off > 700 ? 112 : Y0 - 10) : my + h / 2 <= H - 16); // down labels may sit over the month row
+    const inside = (c, my) => (up ? my - h / 2 >= (x + c.off > 700 ? 112 : Y0 - 10) : my + h / 2 <= H - 4); // down labels may sit over the month row (drawing keeps them on screen)
     const step = h + GAPY;
     // try each shape, stepping away from the candles, until a spot is clear; else the first spot that fits
     let pick = null, fallback = null;
@@ -326,16 +341,14 @@
     }
     const { c: ch, my: mid } = pick || fallback || { c: order[0], my: order[0].base };
     const { dir, off, ref } = ch;
-    // no clear spot at all: the less important label yields (an equal one: the older yields). Yielding = fading out
-    // at this moment, so two labels never overlap.
+    // no clear spot at all: only SMALL labels ever give way (fade out at this moment). An important label (a hit,
+    // a top or a bottom) is never hidden: a small new label hides itself instead, and small old ones fade for it.
     let until = Infinity;
     if (!pick) {
       const tier = (q) => (q.big ? 2 : q.hit ? 1 : 0);
-      for (const i of clashWith(ch, mid)) {
-        const m = alive[i], P = placeLabel(m);
-        if (tier(EVENTS[m]) > tier(e)) until = e.t - 1; // this one gives way and never shows
-        else P.until = Math.min(P.until, e.t);
-      }
+      const touched = [...clashWith(ch, mid)].filter((i) => i < alive.length).map((i) => alive[i]);
+      if (tier(e) === 0 && touched.some((m) => tier(EVENTS[m]) > 0)) until = e.t - 1;
+      else for (const m of touched) if (tier(EVENTS[m]) === 0) placeLabel(m).until = Math.min(placeLabel(m).until, e.t);
     }
     return (PLACE[n] = { s, tw, bw, h, size, up, off, dir, ref, gap: mid - Y(ref), until }); // gap: px from the reference candle
   }
@@ -352,7 +365,7 @@
       if (x + Math.min(0, P.off) > PLOT_R + 50 || x + Math.max(0, P.off + P.bw) < -50) return;
       const alpha = fade * clamp(1 - (age - 7) / 1.5) * clamp(1 - (t - P.until) / 0.3);
       if (alpha <= 0) return;
-      const ay = Y(e.price) + (P.up ? -8 : 8), my = clamp(Y(P.ref) + P.gap, 112 + P.h / 2, H - 16 - P.h / 2), bx = x + P.off;
+      const ay = Y(e.price) + (P.up ? -8 : 8), my = clamp(Y(P.ref) + P.gap, 112 + P.h / 2, H - 8 - P.h / 2), bx = x + P.off;
       const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
       // the line, drawn out over 0.35 s: anchor -> diagonal -> horizontal -> box, or straight up/down into the box
       const k = ease.outCubic(clamp(age / 0.35));
@@ -404,12 +417,9 @@
     txt(ctx, 'BTC / USD', x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
     const w = measure(ctx, 'BTC / USD', 44, 800) + 9 * 2;
     txt(ctx, dateStr(Math.max(0, D)), x + w + 30, y, { size: 25, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
-    // the live price and its change on the day, on the same line, right side
-    const L0 = live(t), col = L0.up ? UP : DOWN;
-    const pct = `${L0.up ? '▲' : '▼'} ${Math.abs((L0.p / L0.o - 1) * 100).toFixed(2)}%`;
-    const xr = PLOT_R - 12, pw = measure(ctx, fmt(L0.p), 44, 800, L.mono); // right edge = the chart's right edge
-    txt(ctx, fmt(L0.p), xr, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 }); // price on the right
-    txt(ctx, pct, xr - pw - 24, y, { size: 21, w: 800, fam: L.mono, color: col, align: 'right', glow: 8 }); // the day's change, left of it
+    // the live price, on the same line, right side
+    const L0 = live(t);
+    txt(ctx, fmt(L0.p), PLOT_R - 12, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 });
   }
 
   // light glowing dust: specks of light drifting through the beam
