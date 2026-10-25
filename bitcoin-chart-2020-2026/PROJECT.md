@@ -37,33 +37,51 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 
 ## 3. Nhãn sự kiện (đã duyệt)
 
-- Nguồn: `data/events.csv` (`date,kind,hit,text`) — bộ 238 sự kiện từ 99Bitcoins (ATH theo TradingView), người dùng soạn/kiểm chứng; đã thay hẳn bộ 56 sự kiện cũ. `kind`: up/down/info. `hit`: 0 nhỏ, 1 quan trọng, 2 lớn nhất.
+- Nguồn: `data/events.csv` (`date,kind,hit,text`) — 99Bitcoins (ATH theo TradingView), người dùng soạn/kiểm chứng.
+  `kind`: up/down/info. **Chỉ dùng 2 mức**: `hit 1` = quan trọng, `hit 2` = rất quan trọng (cột mốc / khủng hoảng).
+  **Không lấy dữ liệu mức 0**: không ghi vào file; nếu có, `make-data.js` tự bỏ.
+- Nội dung sự kiện **ngắn gọn hết mức** (≤ ~30 ký tự, tối đa 38), tiếng Anh, không bịa nguyên nhân.
+- Số tiền viết gọn: `$266`, `$1.2K`, `$19.8K`, `$109K`, `$41M`, `$1.5B` (1 chữ số lẻ khi < 100 đơn vị).
+  `make-data.js` tự đổi mọi `$1,234,567` còn sót; nhãn TOP/BOTTOM tự tạo cũng dùng cùng định dạng.
 - Nhãn **up** (và info) đặt **phía trên** nến; nhãn **down** đặt **phía dưới** nến. **Không bao giờ đè lên nến**
   (tính cả những nến chưa chạy tới nằm dưới bề ngang nhãn).
 - Đường dẫn: **gấp khúc 2 đoạn** (chéo rồi ngang). Nếu đường gấp khúc quá dài (>110 px) → dùng **đường thẳng đứng ngắn**, nhãn đặt giữa nến.
 - Ưu tiên vị trí: **bên phải** nến → **giữa** → xa hơn bên phải (đường ngang dài hơn) → **bên trái**; thử ở tầng
   sát nến trước rồi mới xếp tầng xa hơn. Trường hợp không còn chỗ: phía ngược lại, bên trái (vd. trên-trái).
-- **Không bao giờ bỏ nhãn nào.** Các nhãn không được đè nhau, có khoảng cách rõ ràng (28 px ngang, 22 px dọc);
+- **Không bao giờ bỏ nhãn nào và tuyệt đối không đè nhau.** Khoảng cách rõ ràng (28 px ngang, 22 px dọc). Khi các vị trí
+  ưu tiên đều kín: tìm mọi chỗ trống trên màn hình (mọi độ dài đường dẫn, mọi tầng, cả 2 phía). Nếu màn hình thật sự
+  hết chỗ: nhãn cũ cản đường mờ đi ngay trước khi nhãn mới hiện. Kiểm tra: `node check-labels.js` (phải ra ✓).
   nhãn mới còn chừa chỗ cho nhãn đỉnh/đáy sắp xuất hiện.
 - Vị trí nhãn được **tính 1 lần lúc sự kiện xảy ra rồi cố định** theo cây nến.
 - Nhãn **còn hiển thị khi còn trong khung hình**; chỉ mờ dần khi trôi ra khỏi mép trái.
-- 3 cấp: nhỏ (22px, xám mờ) · quan trọng (31px, màu, nền nhuộm màu, glow) · lớn nhất (34px, glow nhấp nháy).
-  Nhãn quan trọng lớn hơn nhãn thường ~50% (không hơn).
-- Mỗi đỉnh/đáy giữa 2 giai đoạn **luôn có nhãn**: dùng sự kiện trong ±7 ngày (nâng lên hit), nếu không có thì
+- 2 kiểu nhãn: **mức 1** = kiểu nhỏ (22px, hộp xám, chữ xám, chỉ đường dẫn có màu) · **mức 2** = kiểu lớn (34px,
+  màu, nền nhuộm màu, glow nhấp nháy). Mức 2 lớn hơn mức 1 ~50%.
+- Mỗi đỉnh/đáy giữa 2 giai đoạn **luôn có nhãn**: dùng sự kiện từ ngày bắt đầu phase tới +7 ngày (ưu tiên mức 2, rồi
+  gần nhất; không lấy sự kiện trước ngày bắt đầu để nhạc không đổi bài giữa lúc phanh), nếu không có thì
   tự tạo `TOP: $X` / `BOTTOM: $X` từ dữ liệu.
-- Hiệu ứng: sự kiện giảm → màn hình rung nhẹ tăng dần + viền tối đỏ + SFX trầm; sự kiện tăng → viền tỏa sáng xanh + SFX chuông.
+- Hiệu ứng **chỉ cho mức 2** (mức 1 chỉ hiện nhãn, không SFX, không hiệu ứng):
+  - Trước: 45 ngày trước sự kiện màn hình rung nhẹ tăng dần + viền tối đỏ (giảm) / viền tỏa sáng xanh (tăng);
+    âm thanh: cymbal đảo ngược + riser dâng lên, cắt lặng 1/16 phách ngay trước khoảnh khắc.
+  - Khoảnh khắc: flash màu, rung mạnh, zoom "đấm" 4,5%, 2 vòng sóng xung kích lan ra từ cây nến + chớp sáng tâm;
+    âm thanh: 2 kick + sub boom, 2 crash trái/phải, timpani, hợp âm kèn đồng; tăng thêm chuỗi chuông đi lên + sweep
+    lên, giảm thêm tiếng thud trầm + sweep rơi xuống.
 
 ## 4. Giai đoạn và nhạc (đã duyệt)
 
 - Chỉ 2 loại giai đoạn (`data/phases.csv`, tạo bởi `detect-phases.js`, sửa tay được):
   - **UPTREND** = từ đáy kỳ trước → đỉnh kỳ sau; **DOWNTREND** = từ đỉnh kỳ trước → đáy kỳ sau.
   - Đỉnh/đáy: zig-zag giá đóng cửa, đảo chiều ≥ 45% (`REVERSAL`), sóng < 45 ngày bị bỏ (`MIN_DAYS`).
+- **Mỗi phase trong `data/phases.csv` = đúng 1 bản nhạc từ đầu tới cuối phase**; chỉ đổi bài ở ranh giới phase,
+  không bao giờ đổi trong 1 phase. Bản nhạc được chọn trên **toàn bộ** danh sách phase (preview FROM/TO cũng phát
+  đúng bài như phim đầy đủ).
 - Nhạc (`data/music.js`), giọng quanh Rê thứ, thay phiên các bản cùng loại:
   - Uptrend: **Ascent 100 BPM**, **Euphoria 104 BPM**. Downtrend: **Freefall 98 BPM**, **Pressure 96 BPM**.
 - **Chuyển giao ở đỉnh/đáy** (`TURN` trong `data/music.js`):
   - Nhạc và nến **giữ nguyên tốc độ** cho tới đúng khoảnh khắc **nhãn đỉnh/đáy hiện ra** (không chậm trước, không có khoảng lặng trước).
   - Lúc đó **phanh** (0.5 phách) xuống **60 BPM**, **giữ chậm 3 giây**, rồi **tăng tốc mượt (smoothstep) trong ~3 giây** về tempo bản nhạc mới.
 - Nghe thử 1 bản: `PREVIEW_CUE=up-ascent node song.js` → `out/music.wav`.
+- Âm lượng (không có voice-over): master **−16 LUFS** (mặc định của `song.js`), true peak ≤ −1 dBTP; SFX mức 2 nổi hơn
+  nhạc nền ~6 dB (đo: 4,8–8,6 dB, trung vị 6,0). Đo lại sau mỗi lần đổi mix.
 
 ## 5. Tốc độ nến (đã duyệt)
 
@@ -106,13 +124,14 @@ Cần Node 22+, ffmpeg, Google Chrome/Chromium. Chạy trong thư mục `bitcoin
 ```bash
 node make-data.js                          # dữ liệu đầy đủ 2010 → nay
 node detect-phases.js && node make-data.js # tính lại giai đoạn (chạy trên dữ liệu ĐẦY ĐỦ)
-LUFS=-14 node song.js                      # nhạc
+node song.js                      # nhạc
 node engine/render.js stills 30 60         # ảnh tĩnh tại giây 30, 60 → out/stills/
 # preview chất lượng thấp một đoạn:
-FROM=2017-01-01 TO=2018-12-31 node make-data.js && LUFS=-14 node song.js
+FROM=2017-01-01 TO=2018-12-31 node make-data.js && node song.js
 node engine/render.js video --draft && node engine/render.js mux --draft
 node engine/render.js verify --draft       # kiểm tra khớp hình/tiếng ở các điểm hit
-node make-data.js && LUFS=-14 node song.js # LUÔN khôi phục dữ liệu đầy đủ sau khi render đoạn ngắn
+node check-labels.js                       # kiểm tra cả phim: không có 2 nhãn nào đè nhau
+node make-data.js && node song.js # LUÔN khôi phục dữ liệu đầy đủ sau khi render đoạn ngắn
 # bản cuối 1080p 24fps:
 node engine/render.js video && node engine/render.js mux && node engine/render.js verify
 # đổi FPS: FPS=30 node … ; độ phân giải khác: --res 580 (cạnh ngắn, px)

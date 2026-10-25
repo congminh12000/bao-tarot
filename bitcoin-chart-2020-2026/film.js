@@ -251,7 +251,7 @@
   const DIAG = 34, RUN = 30, PAD = 14; // callout geometry, px
   const MEASURE = G.makeCanvas(8, 8).getContext('2d');
   const PLACE = [];
-  const sizeOf = (e) => (e.big ? 34 : e.hit ? 31 : 22); // the important moments ~50% bigger than the small ones
+  const sizeOf = (e) => (e.big ? 34 : 22); // hit 2 (milestone / crisis) ~50% bigger than hit 1
   const CAMS = new Map();
   const camAt = (t) => { const key = Math.round(t * 1000); if (CAMS.has(key)) return CAMS.get(key); const c = camera(t); return { X: (d) => d * c.ppd - c.off, Y: (p) => Y1 - ((Math.log(p) - c.lo) / (c.hi - c.lo)) * (Y1 - Y0), c }; }; // eslint-disable-line
   const camAtM = (t) => { const key = Math.round(t * 1000); let v = CAMS.get(key); if (!v) { v = camAt(t); CAMS.set(key, v); } return v; };
@@ -286,6 +286,17 @@
     // the label's own side (up events above the candles, down events below), stepping away from the candles. Only
     // when none of those is clear does it go to the other side, to the upper / lower LEFT. No label is ever dropped.
     const shapes = [[1, 0], [0, 0], [1, 110], [1, 220], [1, 330], [-1, 0], [-1, 110], [-1, 220]];
+    // a spot: the box's left edge `off` from the anchor, above or below the candles under the callout and the box
+    // (including the ones still to come), starting at the shortest line the shape allows
+    const spot = (dir, off, above, extra = 0) => {
+      const x0 = Math.min(x, x + off) - 6, x1 = Math.max(x, x + off + bw) + 6;
+      const dA = Math.max(0, Math.floor((x0 + c.off) / c.ppd - 1)), dB = Math.min(NDAYS - 1, Math.ceil((x1 + c.off) / c.ppd));
+      let ref = above ? 0 : Infinity;
+      for (let d = dA; d <= dB; d++) ref = above ? Math.max(ref, DAYS[d][1]) : Math.min(ref, DAYS[d][2]);
+      const min = dir ? 44 : 34 + h / 2;
+      const base = above ? Math.min(Y(ref) - 22 - h / 2, ay - min) : Math.max(Y(ref) + 22 + h / 2, ay + min);
+      return { dir, off, ref, base, above, extra, len: Math.abs(base - ay) };
+    };
     const cand = [];
     for (const above of [up, !up]) {
       for (const [dir, extra] of shapes) {
@@ -294,14 +305,7 @@
         if (dir > 0 && x + off + bw > RLIM) continue;
         if (dir === 0 && x + off + bw > RLIM) off = RLIM - bw - x; // slide left just enough
         if (dir < 0 && x + off < 8) continue;
-        // every candle under the callout and the box, including the ones still to come
-        const x0 = Math.min(x, x + off) - 6, x1 = Math.max(x, x + off + bw) + 6;
-        const dA = Math.max(0, Math.floor((x0 + c.off) / c.ppd - 1)), dB = Math.min(NDAYS - 1, Math.ceil((x1 + c.off) / c.ppd));
-        let ref = above ? 0 : Infinity;
-        for (let d = dA; d <= dB; d++) ref = above ? Math.max(ref, DAYS[d][1]) : Math.min(ref, DAYS[d][2]);
-        const min = dir ? 44 : 34 + h / 2; // the shortest line each shape allows
-        const base = above ? Math.min(Y(ref) - 22 - h / 2, ay - min) : Math.max(Y(ref) + 22 + h / 2, ay + min);
-        cand.push({ dir, off, ref, base, above, extra, len: Math.abs(base - ay) });
+        cand.push(spot(dir, off, above, extra));
       }
     }
     // a callout whose line would get long gives its place to the straight line
@@ -347,14 +351,66 @@
       const my = q.base + (q.above ? -1 : 1) * k * step;
       if (inside(q, my) && !clash(q, my)) { pick = { q, my }; break; }
     }
-    const { q: ch, my: mid } = pick || fallback || { q: cand[0], my: cand[0].base };
-    const P = { s, tw, bw, h, size, up, above: ch.above, off: ch.off, dir: ch.dir, ref: ch.ref, gap: mid - Y(ch.ref), forced: !pick };
+    // still nothing: search every free spot on the screen (any callout length, centred or either side, every level)
+    for (const above of [up, !up]) {
+      if (pick) break;
+      const offs = [];
+      for (let o = DIAG + RUN; x + o + bw <= RLIM; o += 40) offs.push([1, o]);
+      for (let o = -bw + 12; o <= -12; o += 40) offs.push([0, o]);
+      for (let o = -(DIAG + RUN + bw); x + o >= 8; o -= 40) offs.push([-1, o]);
+      for (let k = 0; k < 40 && !pick; k++) {
+        let any = false;
+        for (const [dir, off] of offs) {
+          const q = spot(dir, off, above), my = q.base + (above ? -1 : 1) * k * (h / 2 + 4);
+          if (!inside(q, my)) continue;
+          any = true;
+          if (!clash(q, my)) { pick = { q, my }; break; }
+        }
+        if (!any) break;
+      }
+    }
+    // the screen is truly full: take the first spot and let the labels in its way fade out just before this one
+    // appears (an earlier label leaves early rather than two labels ever overlapping)
+    let cut = [];
+    if (!pick) {
+      pick = fallback || { q: cand[0], my: cand[0].base };
+      const q = pick.q;
+      cut = others.filter((m, i) => samples.some(({ K, rects }) => {
+        if (gone(K, e, q.off, bw)) return false;
+        const [box, line] = footprint(K, e, { ...q, h, bw }, pick.my - Y(q.ref)), [ob, ol] = rects[i];
+        return hits(box, ob, GAPX, GAPY) || hits(line, ob, 2, 4) || hits(box, ol, 6, 4);
+      }));
+      for (const m of cut) { PLACE[m].exit = e.t; PLACE[m].cut = e.t; }
+    }
+    const { q: ch, my: mid } = pick;
+    const P = { s, tw, bw, h, size, up, above: ch.above, off: ch.off, dir: ch.dir, ref: ch.ref, gap: mid - Y(ch.ref), forced: cut.length > 0 };
     P.exit = exitTime(e, P);
     return (PLACE[n] = P);
   }
 
-  // labels that found no clear spot (they would overlap something): SCORE_DEBUG.crowded() in the browser console
-  globalThis.SCORE_DEBUG = { crowded: () => EVENTS.map((e, n) => ({ e, P: placeLabel(n) })).filter((x) => x.P.forced).map((x) => `${x.e.date} ${x.e.text}`) };
+  // labels that only fit by making earlier labels leave early: SCORE_DEBUG.crowded() in the browser console
+  // and an independent check, as drawn: every `step` s, any two label boxes touching (or a box over another's line)
+  globalThis.SCORE_DEBUG = {
+    crowded: () => EVENTS.map((e, n) => ({ e, P: placeLabel(n) })).filter((x) => x.P.forced).map((x) => `${x.e.date} ${x.e.text}`),
+    overlaps(step = 0.2) {
+      const out = [], meet = (a, b) => a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
+      for (let t = 0; t < ev.end + 2; t += step) {
+        const K = camAt(t), on = [];
+        EVENTS.forEach((e, n) => {
+          const P = placeLabel(n);
+          if (t < e.t + 0.25 || (P.cut && t >= P.cut)) return;
+          const bx = K.X(e.day + 0.5) + P.off;
+          if (bx > W + 50 || bx + P.bw < -20) return;
+          on.push({ e, f: footprint(K, e, P, P.gap) });
+        });
+        for (let i = 0; i < on.length; i++) for (let j = i + 1; j < on.length; j++) {
+          const [a, al] = on[i].f, [b, bl] = on[j].f;
+          if (meet(a, b) || meet(a, bl) || meet(b, al)) out.push(`${t.toFixed(1)}s ${on[i].e.date} ${on[i].e.text} x ${on[j].e.date} ${on[j].e.text}`);
+        }
+      }
+      return out;
+    },
+  };
 
   function labels(ctx, t, X, Y, cam) {
     const fade = 1 - clamp(cam.k * 3);
@@ -366,7 +422,7 @@
       const x = X(e.day + 0.5), bx = x + P.off;
       if (bx > W + 50 || bx + P.bw < -20) return;
       // on screen = fully there; it fades only while it scrolls out past the left edge
-      const alpha = fade * clamp((bx + P.bw + 10) / 160);
+      const alpha = fade * clamp((bx + P.bw + 10) / 160) * (P.cut ? clamp((P.cut - t) / 0.3) : 1);
       if (alpha <= 0) return;
       const ay = Y(e.price) + (P.up ? -8 : 8), my = clamp(Y(P.ref) + P.gap, 112 + P.h / 2, H - 8 - P.h / 2);
       const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
@@ -379,13 +435,13 @@
         if (L_ <= l1) pts.push([lerp(x, B[0], L_ / l1), lerp(ay, B[1], L_ / l1)]);
         else pts.push(B, [lerp(B[0], C[0], (L_ - l1) / l2), my]);
       } else pts.push([x, lerp(ay, my + (my < ay ? P.h / 2 : -P.h / 2), k)]);
-      const tier = e.big ? 2 : e.hit ? 1 : 0;
+      const tier = e.big ? 2 : 0; // hit 1 = the quiet grey label, hit 2 = the bright pulsing one
       ctx.save(); ctx.globalAlpha = alpha;
       glowLine(ctx, pts, col, [1.3, 2.2, 3][tier], [6, 12, 18][tier]);
       ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, ay, 4, 0, Math.PI * 2); ctx.fill();
       if (age > 0.25) {
         const shown = P.s.slice(0, Math.ceil(P.s.length * clamp((age - 0.25) / 0.3)));
-        // three tiers: small = quiet grey box; hit = coloured, tinted, glowing; big = brighter, pulsing glow
+        // two looks: hit 1 = quiet grey box; hit 2 = coloured, tinted, bright pulsing glow (tier 1 is unused)
         const pulse = tier === 2 ? 0.6 + 0.4 * Math.sin(age * 6) : 1;
         panel(ctx, bx, my - P.h / 2, P.bw, P.h, col, { fill: tier ? `rgba(2,8,16,0.82)` : 'rgba(2,8,16,0.6)', corner: [8, 12, 16][tier], glow: [4, 18, 30 * pulse][tier], alpha: tier ? 1 : 0.85 });
         if (tier) { ctx.save(); ctx.fillStyle = rgba(col, tier === 2 ? 0.2 : 0.12); ctx.fillRect(bx, my - P.h / 2, P.bw, P.h); ctx.restore(); }
@@ -471,21 +527,44 @@
     }
   }
 
+  // a hit-2 moment: two glowing rings race out from the candle, a light burst at its centre
+  function shockwave(ctx, x, y, a, col) {
+    ctx.save(); ctx.globalCompositeOperation = 'lighter';
+    for (const [d, w] of [[0, 7], [0.14, 4]]) {
+      const b = a - d;
+      if (b <= 0 || b > 1.4) continue;
+      const k = ease.outCubic(b / 1.4), fade = (1 - b / 1.4) ** 2;
+      ctx.globalAlpha = fade; ctx.strokeStyle = col; ctx.lineWidth = w * (1 - k * 0.7); ctx.shadowColor = col; ctx.shadowBlur = 30;
+      ctx.beginPath(); ctx.arc(x, y, 20 + k * 1100, 0, Math.PI * 2); ctx.stroke();
+    }
+    const g = ctx.createRadialGradient(x, y, 0, x, y, 260);
+    g.addColorStop(0, rgba(col, 0.55 * Math.exp(-a * 5))); g.addColorStop(1, rgba(col, 0));
+    ctx.globalAlpha = 1; ctx.fillStyle = g; ctx.fillRect(x - 260, y - 260, 520, 520);
+    ctx.restore();
+  }
+
   Studio.film({
     draw(ctx, t) {
       const cam = camera(t);
       const D = S.dayAt(Math.min(t, ev.end));
-      let shake = 0, flash = 0, fcol = UP;
-      for (const h of [...EVENTS.filter((e) => e.kind !== 'info'), { t: ev.end, kind: 'up', big: true, hit: 1 }]) {
+      // only hit-2 events (and the last candle) hit the picture: a flash, a hard shake, a zoom punch, shockwave rings
+      let shake = 0, flash = 0, fcol = UP, punch = 0;
+      const booms = [];
+      for (const h of [...S.hits, { t: ev.end, kind: 'up', end: true }]) {
         const a = t - h.t;
-        const k = h.hit ? 1 : 0.45; // the smaller moments flash and shake less
-        if (a >= 0 && a < 0.8) { const e = Math.exp(-a * 7) * k; if (e > flash) { flash = e; fcol = h.kind === 'down' ? DOWN : UP; } shake = Math.max(shake, (h.big ? 16 : h.kind === 'down' ? 11 : 7) * k * Math.exp(-a * 6)); }
+        if (a < 0 || a >= 1.6) continue;
+        const e = Math.exp(-a * 4.5);
+        if (e > flash) { flash = e; fcol = h.kind === 'down' ? DOWN : UP; }
+        shake = Math.max(shake, (h.kind === 'down' ? 22 : 15) * Math.exp(-a * 5));
+        punch = Math.max(punch, Math.exp(-a * 7));
+        if (!h.end) booms.push({ h, a });
       }
       const mood = t < ev.end ? S.moodAt(D) : { up: 0, down: 0 };
       const rumble = 4.5 * mood.down; // the screen trembles more and more as a crash comes
       background(ctx, t, cam, D);
       ctx.save();
       ctx.translate(U.noise1(t * 30, 1) * shake + U.noise1(t * 17, 5) * rumble, U.noise1(t * 30, 2) * shake + U.noise1(t * 17, 6) * rumble);
+      if (punch > 0.001) { const z = 1 + 0.045 * punch; ctx.translate(W / 2, H / 2); ctx.scale(z, z); ctx.translate(-W / 2, -H / 2); }
       const X = (d) => d * cam.ppd - cam.off;
       const Y = (p) => Y1 - ((Math.log(p) - cam.lo) / (cam.hi - cam.lo)) * (Y1 - Y0);
       grid(ctx, cam, X, Y);
@@ -502,6 +581,7 @@
       glowLine(ctx, [[PLOT_R + 0.5, Y0 - 60], [PLOT_R + 0.5, Y1 + 8]], rgba(L.accent, 0.5), 1.2, 8);
       priceLine(ctx, t, cam, Y, X);
       labels(ctx, t, X, Y, cam); // on top of everything in the plot; may reach over the price axis
+      for (const { h, a } of booms) shockwave(ctx, X(h.day + 0.5), Y(h.price), a, h.kind === 'down' ? DOWN : UP);
       ctx.restore();
       hud(ctx, t, D);
       if (mood.up > 0.01) { // a rally lights the screen up from the edges
@@ -519,7 +599,7 @@
       if (flash > 0.01) {
         ctx.save(); ctx.globalCompositeOperation = 'lighter';
         const g = ctx.createRadialGradient(W / 2, H / 2, 100, W / 2, H / 2, W * 0.75);
-        g.addColorStop(0, rgba(fcol, 0.12 * flash)); g.addColorStop(1, rgba(fcol, 0.45 * flash));
+        g.addColorStop(0, rgba(fcol, 0.18 * flash)); g.addColorStop(1, rgba(fcol, 0.6 * flash));
         ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
       }
       titles(ctx, t);

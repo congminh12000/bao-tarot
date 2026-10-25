@@ -1,6 +1,6 @@
 // THE SONG — plays the cue of every market phase (data/music.js) bar by bar, at the tempo map in score.js,
-// plus a hit on every event in score.hits. Renders out/music.wav.
-//   node song.js            (STEMS=1 also writes out/stem-*.wav, LUFS=-14 masters to a loudness)
+// plus a hit on every hit-2 event in score.hits. Renders out/music.wav.
+//   node song.js            (STEMS=1 also writes out/stem-*.wav, LUFS=-14 overrides the -16 LUFS master)
 const path = require('path');
 const { SR, Bus, reverb, pingpong } = require('./engine/audio/dsp');
 const I = require('./engine/audio/instruments');
@@ -166,28 +166,30 @@ PHASES.forEach((p, i) => {
   }
 });
 
-// ---------- the hits ----------
+// ---------- the hits: hit-2 events only (hit 1 has no sound) ----------
+// a reversed cymbal and a riser swell INTO the moment (cut a 16th before it: a held breath), then
+// the impact: double kick + sub boom, two crashes spread wide, timpani, a brass chord stab; a rally adds a rising bell
+// cascade and an upward sweep, a crash adds a deep thud and a falling sweep
+const REV = I.crash(31).slice(0, Math.round(1.4 * SR)).reverse();
 for (const h of hits) {
-  const up = h.kind !== 'down', ch = sc.chordAt(h.t + 0.01);
-  fx.addMono(I.subBoom(h.big ? 2.6 : 1.6, up ? 70 : 58, up ? 34 : 26), h.t, h.big ? 0.8 : 0.6);
-  drums.addMono(up ? CR : CR2, h.t, h.big ? 0.5 : 0.36, up ? 0.25 : -0.25);
-  drums.addMono(K, h.t, 0.9);
-  const tp = I.timpani(ch.bass + 12, { decay: 1.4 });
-  perc.addMono(tp, h.t, 0.7); verb.addMono(tp, h.t, 0.3);
-  for (const iv of up ? [0, 7, 12, 16] : [0, 3, 7, 12]) {
-    const st = I.brassNote(ch.bass + 24 + iv, up ? 0.7 : 0.45, { stab: true, seed: iv + 3 });
-    lead.addStereo(st.L, st.R, h.t, 0.13); verb.addStereo(st.L, st.R, h.t, 0.08);
+  const up = h.kind !== 'down', ch = sc.chordAt(h.t + 0.01), pre = REV.length / SR;
+  fx.addMono(REV, h.t - pre, 0.32);
+  fx.addMono(I.noiseSweep(1.6, up ? 400 : 1200, up ? 9000 : 6000, { q: 1.1, shape: (x) => x * x * x, pink: true, seed: h.day }), h.t - 1.6, 0.16);
+  fx.addMono(I.subBoom(3.2, up ? 72 : 60, up ? 32 : 24), h.t, 0.95);
+  drums.addMono(K, h.t, 1); drums.addMono(K2, h.t + 0.004, 0.6);
+  drums.addMono(CR, h.t, 0.55, -0.45); drums.addMono(CR2, h.t + 0.012, 0.5, 0.45);
+  const tp = I.timpani(ch.bass + 12, { decay: 2 });
+  perc.addMono(tp, h.t, 0.85); verb.addMono(tp, h.t, 0.35);
+  for (const iv of up ? [0, 7, 12, 16, 19] : [0, 3, 7, 12, 15]) {
+    const st = I.brassNote(ch.bass + 24 + iv, up ? 1.1 : 0.8, { stab: true, seed: iv + 3 });
+    lead.addStereo(st.L, st.R, h.t, 0.15); verb.addStereo(st.L, st.R, h.t, 0.1);
   }
-  fx.addMono(I.noiseSweep(0.9, up ? 600 : 5000, up ? 6000 : 300, { q: 1.4, pink: true }), h.t + 0.05, 0.12);
-}
-// the smaller moments: a heavy thud into a crash, a bright shimmer into a rally
-for (const e of sc.EVENTS) {
-  if (e.hit || e.kind === 'info') continue;
-  if (e.kind === 'down') {
-    fx.addMono(I.thud(55, 0.35, e.day), e.t, 0.5);
-    fx.addMono(I.noiseSweep(0.7, 2500, 180, { q: 1.2, pink: true, seed: e.day }), e.t, 0.14, -0.2);
+  if (up) {
+    ['D6', 'F6', 'A6', 'D7', 'F7', 'A7'].forEach((nn, k) => { const b = I.bell(MU.mtof(m(nn)), 0.7); fx.addMono(b, h.t + 0.08 + k * 0.06, 0.12, (k / 5 - 0.5) * 1.2); verb.addMono(b, h.t + 0.08 + k * 0.06, 0.1); });
+    fx.addMono(I.noiseSweep(1.2, 800, 9000, { q: 1.3, pink: true, seed: h.day + 1 }), h.t + 0.05, 0.14);
   } else {
-    for (const [k, nn] of [[0, 'D6'], [1, 'A6'], [2, 'D7']]) { const b = I.bell(MU.mtof(m(nn)), 0.5); fx.addMono(b, e.t + k * 0.045, 0.1, (k - 1) * 0.4); verb.addMono(b, e.t + k * 0.045, 0.08); }
+    fx.addMono(I.thud(42, 0.6, h.day), h.t, 0.8);
+    fx.addMono(I.noiseSweep(1.6, 6000, 160, { q: 1.3, pink: true, seed: h.day + 1 }), h.t + 0.05, 0.16);
   }
 }
 // the end: the last candle closes
@@ -213,6 +215,8 @@ MIX.highpass(mix, 24);
 for (const [a, b] of breaths) MIX.gate(mix, a, b); // one beat of real silence before each big moment
 for (const t of [...hits.map((h) => h.t), ev.end]) MIX.gate(mix, t - beatLen(t) / 4, t); // a held 16th before every hit and the end
 MIX.fadeOut(mix, DURATION - 2.2, DURATION);
-const M = MIX.master(mix, parseFloat(process.env.DRIVE || '0.8'), undefined, { lufs: process.env.LUFS ? parseFloat(process.env.LUFS) : null });
+// No voice-over, so the music carries the film; it is mastered to -16 LUFS (not -14) so that the hit-2 moments have
+// room to land ~6 dB above the bed without the limiter flattening them (YouTube only turns louder films down)
+const M = MIX.master(mix, parseFloat(process.env.DRIVE || '0.8'), undefined, { lufs: parseFloat(process.env.LUFS || '-16') });
 MIX.writeWav(path.join(out, 'music.wav'), mix);
 console.log(`wrote out/music.wav (${DURATION.toFixed(2)}s, ${sc.END_BEAT - sc.FIRST_BEAT} beats in ${sc.PHASES.length} phases${M.lufs !== undefined ? `, ${M.lufs.toFixed(1)} LUFS at drive ${M.drive.toFixed(2)}` : ''})`);

@@ -28,11 +28,11 @@
   const dateOf = (d) => new Date(START + Math.floor(d) * 86400000);
   const yearAt = (d) => dateOf(U.clamp(d, 0, NDAYS - 1)).getUTCFullYear();
 
-  // ---------- the mood around each event (for the picture: a creeping shake into crashes, a glow into rallies) ----------
-  const MOODS = BTC.events.filter((e) => e.kind === 'up' || e.kind === 'down').map((e) => {
-    const day = dayOf(e.date), big = e.hit > 0;
-    return { day, up: e.kind === 'up', w: big ? 1 : 0.55, before: big ? 45 : 18, after: big ? 6 : 4 };
-  }).filter((e) => e.day >= 0 && e.day < NDAYS);
+  // ---------- the mood around each hit-2 event (a creeping shake into a crash, a glow into a rally) ----------
+  // hit 1 events have no effect at all: their label just appears
+  const MOODS = BTC.events.filter((e) => e.hit === 2 && (e.kind === 'up' || e.kind === 'down')).map((e) => (
+    { day: dayOf(e.date), up: e.kind === 'up', w: 1, before: 45, after: 6 }
+  )).filter((e) => e.day >= 0 && e.day < NDAYS);
   const smooth = (x) => x * x * (3 - 2 * x);
   function moodAt(d) {
     let up = 0, down = 0;
@@ -73,14 +73,20 @@
   // knots (beat, day): phase starts, and the hit events inside their phase on a beat
   // every top and bottom between two phases is an event: the one the data already has near it (promoted to a hit),
   // or a TOP / BOTTOM label made here. The turn starts the moment its label appears.
-  const kfmt = (p) => (p >= 1000 ? `$${(p / 1000).toFixed(p >= 10000 ? 0 : 1)}K` : p >= 1 ? `$${Math.round(p)}` : `$${p.toPrecision(2)}`);
+  const kfmt = (v) => { // $0.08, $32, $1.2K, $19.8K, $109K, $41M (same as the event text, make-data.js)
+    const [d, u] = v >= 1e6 ? [1e6, 'M'] : v >= 1e3 ? [1e3, 'K'] : [1, ''];
+    const x = v / d, r = x >= 100 || !u ? Math.round(x) : Math.round(x * 10) / 10;
+    return v < 1 ? `$${+v.toPrecision(2)}` : `$${r}${u}`;
+  };
   const iso = (d) => dateOf(d).toISOString().slice(0, 10);
   const EVSRC = PREVIEW ? [] : BTC.events.map((e) => ({ ...e }));
   if (!PREVIEW) PH.forEach((p, i) => {
     if (i === 0) return;
     const top = p.type === 'downtrend', d = p.d0; // a downtrend starts at a top, an uptrend at a bottom
-    const near = EVSRC.filter((e) => e.kind === (top ? 'up' : 'down') && Math.abs(dayOf(e.date) - d) <= 7)
-      .sort((a, b) => (b.hit > 0) - (a.hit > 0) || Math.abs(dayOf(a.date) - d) - Math.abs(dayOf(b.date) - d))[0];
+    // only an event ON or just after the phase start (0..7 days): the turn's brake must fall inside the new phase,
+    // so the music never changes cue in the middle of the slow-down
+    const near = EVSRC.filter((e) => e.kind === (top ? 'up' : 'down') && dayOf(e.date) - d >= 0 && dayOf(e.date) - d <= 7)
+      .sort((a, b) => b.hit - a.hit || Math.abs(dayOf(a.date) - d) - Math.abs(dayOf(b.date) - d))[0]; // a milestone first
     if (near) { near.hit = Math.max(1, near.hit); near.turn = i; return; }
     const price = top ? DAYS[d][1] : DAYS[d][2];
     EVSRC.push({ date: iso(d), kind: top ? 'up' : 'down', hit: 1, text: `${top ? 'TOP' : 'BOTTOM'}: ${kfmt(price)}`, turn: i });
@@ -184,8 +190,8 @@
     return { ...e, day: d, t: timeOfDay(d + 0.5), big: e.hit === 2, price: e.kind === 'down' ? c[2] : c[1] };
   }).filter(Boolean);
   for (const e of EVENTS) PEAK.set(e.day, e.kind !== 'down');
-  const hits = EVENTS.filter((e) => e.hit > 0);
-  const bigs = hits.filter((e) => e.big);
+  const hits = EVENTS.filter((e) => e.big); // only hit 2 gets SFX and a visual effect
+  const bigs = hits;
   const breaths = []; // no silence before a top / bottom: the music keeps going until the label appears, then brakes
   const inBreath = (t) => breaths.some(([a, b]) => t >= a - 1e-6 && t < b - 1e-6);
 
@@ -210,7 +216,7 @@
 
   const ev = { start: TB(FIRST_BEAT - 0.5), end: TB(END_BEAT) };
   const markers = { start: ev.start, end: { t: ev.end, sync: 'av' } };
-  hits.forEach((h, i) => { markers['hit' + (i + 1)] = { t: h.t, sync: h.kind === 'info' ? 'a' : 'av' }; }); // info has no flash
+  hits.forEach((h, i) => { markers['hit' + (i + 1)] = { t: h.t, sync: 'av' }; });
   PH.forEach((p, i) => { markers[`phase${i + 1}-${p.type}`] = TB(p.q0); });
 
   const SCORE = {
