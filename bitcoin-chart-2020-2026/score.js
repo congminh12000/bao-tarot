@@ -100,16 +100,18 @@
     const p = PH[i];
     BEATS.push({ type: x < FIRST_BEAT ? 'intro' : x >= END_BEAT ? 'outro' : p.type, cue: p.c, k: x - p.q0, p: i });
   }
-  // the tempo map: each phase plays at its cue's tempo; at every turn (the top or bottom between two phases) the music
-  // slows down over TURN.rampInBeats, holds TURN.slowBpm for about TURN.holdSec seconds around the turn, then the new
-  // phase speeds back up to its own tempo over TURN.rampOutBeats. The film ends with the same slow-down.
+  // the tempo map: each phase plays at its cue's tempo right up to its top / bottom; there the music brakes over
+  // TURN.brakeBeats to TURN.slowBpm, holds it for TURN.holdSec seconds, then the next phase speeds back up to its own
+  // tempo along a smooth S-curve (smoothstep, one point per beat) over TURN.rampOutBeats. The film ends the same way.
   const TURN = LIB.TURN, HOLD = (TURN.holdSec * TURN.slowBpm) / 60; // beats held slow
   const tempo = [[0, PH[0].c.bpm], [FIRST_BEAT / 4, PH[0].c.bpm]];
-  const turnAt = (P, prev, next) => { // P = the beat of the turn
-    const lo = prev.q0 + 1, hi = next ? next.q1 - 1 : END_BEAT + 8;
-    const h0 = Math.max(lo, P - HOLD / 2), h1 = Math.min(hi, P + HOLD / 2);
-    tempo.push([Math.max(lo - 1, h0 - TURN.rampInBeats) / 4, prev.c.bpm], [h0 / 4, TURN.slowBpm], [h1 / 4, TURN.slowBpm]);
-    if (next) tempo.push([Math.min(hi, h1 + TURN.rampOutBeats) / 4, next.c.bpm]);
+  const turnAt = (P, prev, next) => { // P = the beat of the turn (the top or the bottom)
+    const hi = next ? next.q1 - 1 : END_BEAT + 8;
+    const b0 = Math.min(hi, P + TURN.brakeBeats), h1 = Math.min(hi, b0 + HOLD);
+    tempo.push([P / 4, prev.c.bpm], [b0 / 4, TURN.slowBpm], [h1 / 4, TURN.slowBpm]);
+    if (!next) return;
+    const n = Math.max(1, Math.min(TURN.rampOutBeats, hi - h1));
+    for (let j = 1; j <= n; j++) { const u = j / n, e = u * u * (3 - 2 * u); tempo.push([(h1 + j) / 4, TURN.slowBpm + (next.c.bpm - TURN.slowBpm) * e]); }
   };
   PH.forEach((p, i) => { if (i > 0) turnAt(p.q0, PH[i - 1], p); });
   if (!PREVIEW) turnAt(END_BEAT, PH[PH.length - 1], null);

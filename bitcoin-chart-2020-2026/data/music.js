@@ -3,10 +3,11 @@
 //   uptrend     from a bottom to the next top      cues: Ascent, Euphoria
 //   downtrend   from a top to the next bottom      cues: Freefall, Pressure
 //
-// The turn between two phases (a top or a bottom) is where the music breathes: it slows down into the turn
-// (TURN.rampInBeats), holds a slow tempo for about TURN.holdSec seconds around the top / bottom, then the new phase
-// starts slow and speeds back up to its own tempo (TURN.rampOutBeats). The candles follow the music: inside a phase
-// every beat shows the same number of days, so the chart slows into the turn and picks up again with the music.
+// The turn between two phases (a top or a bottom) is where the music breathes: the trend runs at full tempo right up
+// to the top / bottom; there it brakes (TURN.brakeBeats) to TURN.slowBpm and holds it for TURN.holdSec seconds; then
+// the new phase speeds back up to its own tempo along a smooth S-curve over TURN.rampOutBeats beats. The candles
+// follow the music: inside a phase every beat shows the same number of days, so the chart brakes at the turn and
+// picks up again with the music.
 //
 // Every cue is pure data, read by song.js:
 //   bpm        tempo of the cue
@@ -20,7 +21,7 @@
 // Cues of the same phase take turns (round robin), so the story does not repeat the same loop each time.
 (function () {
   const PHASE_TEMPO = { uptrend: 100, downtrend: 98 };
-  const TURN = { slowBpm: 60, holdSec: 3, rampInBeats: 4, rampOutBeats: 8 };
+  const TURN = { slowBpm: 60, brakeBeats: 1, holdSec: 3, rampOutBeats: 16 };
 
   const CUES = [
     // ---------------- uptrend: bright, rising ----------------
