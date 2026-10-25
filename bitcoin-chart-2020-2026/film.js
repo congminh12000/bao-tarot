@@ -29,6 +29,7 @@
   };
   const L = LOOKS[globalThis.LOOK] || LOOKS.hologram;
   const UP = L.up, DOWN = L.down;
+  const GOLD = '#FFC93C'; // halvings (tag halving in data/events.csv): the protocol's own special events
 
   // ---------- layout ----------
   const PLOT_R = 1660; // the price axis column starts here
@@ -38,16 +39,18 @@
   const LEFT = 70;
 
   const fmt = (p) => '$' + (p >= 100 ? Math.round(p).toLocaleString('en-US') : p >= 1 ? (Number.isInteger(p) ? String(p) : p.toFixed(2)) : p.toPrecision(2));
-  const Y_START = S.dateOf(0).getUTCFullYear(), Y_END = S.dateOf(NDAYS - 1).getUTCFullYear();
+  const P0 = S.P0; // the first day of the film (the days before it are the pre-run under the title)
+  const Y_DATA = S.dateOf(Math.min(0, Math.floor(S.dayAt(0)) - 120)).getUTCFullYear(); // the first year on screen (pre-run included), for the grid
+  const Y_START = S.dateOf(P0).getUTCFullYear(), Y_END = S.dateOf(NDAYS - 1).getUTCFullYear();
   let LOGO = null;
   const yearOf = (d) => S.dateOf(clamp(d, 0, NDAYS - 1)).getUTCFullYear();
   const pad2 = (x) => String(x).padStart(2, '0');
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const dateStr = (d) => { const x = S.dateOf(clamp(d, 0, NDAYS - 1)); return `${MON[x.getUTCMonth()]} ${pad2(x.getUTCDate())}, ${x.getUTCFullYear()}`; };
+  const dateStr = (d) => { const x = S.dateOf(Math.min(d, NDAYS - 1)); return `${MON[x.getUTCMonth()]} ${pad2(x.getUTCDate())}, ${x.getUTCFullYear()}`; };
   const rgba = (hex, a) => { const n = parseInt(hex.slice(1), 16); return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${a})`; };
 
   // ---------- the camera ----------
-  const camX0 = (D) => Math.max(D * PPD - HEAD_X, -LEFT - 40);
+  const camX0 = (D) => D * PPD - HEAD_X; // the pre-run makes sure the screen is full of days (or empty pre-data days)
   function rawRange(tt) {
     const D = S.dayAt(tt), cx = camX0(D);
     const i0 = Math.max(0, Math.floor((cx + LEFT * 0.5) / PPD)), i1 = Math.min(NDAYS - 1, Math.floor(D));
@@ -78,9 +81,9 @@
   function fullCam() {
     if (FULL) return FULL;
     let lo = Infinity, hi = -Infinity;
-    for (const c of DAYS) { lo = Math.min(lo, c[2]); hi = Math.max(hi, c[1]); }
-    const ppd = (HEAD_X + 120 - LEFT) / NDAYS, l = Math.log(lo), h = Math.log(hi), r = h - l;
-    return (FULL = { ppd, off: -LEFT, lo: l - r * 0.06, hi: h + r * 0.1 });
+    for (let i = P0; i < NDAYS; i++) { lo = Math.min(lo, DAYS[i][2]); hi = Math.max(hi, DAYS[i][1]); }
+    const ppd = (HEAD_X + 120 - LEFT) / (NDAYS - P0), l = Math.log(lo), h = Math.log(hi), r = h - l;
+    return (FULL = { ppd, off: P0 * ppd - LEFT, lo: l - r * 0.06, hi: h + r * 0.1 });
   }
   function camera(t) {
     const a = followCam(Math.min(t, ZOOM0));
@@ -183,12 +186,18 @@
     bitcoinLogo(ctx, PLOT_R / 2, H / 2 + 20, 230, t);
   }
 
-  function grid(ctx, cam, X, Y) {
+  function grid(ctx, cam, X, Y, noPrice) {
     const pLo = Math.exp(cam.lo), pHi = Math.exp(cam.hi);
     const span = pHi - pLo, raw = span / 6, mag = Math.pow(10, Math.floor(Math.log10(raw)));
     const step = [1, 2, 2.5, 5, 10].map((k) => k * mag).find((s) => s >= raw);
     const levels = [];
-    if (cam.k > 0.5) { for (const p of [0.01, 0.1, 1, 10, 100, 1000, 10000, 100000]) if (p > pLo && p < pHi) levels.push(p); }
+    if (cam.k > 0.5) { // log scale: the sparsest series per decade (1, 1-3, 1-2-5, …) that still shows 6 levels
+      for (const ms of [[1], [1, 3], [1, 2, 5], [1, 2, 3, 5, 7], [1, 2, 3, 4, 5, 6, 7, 8, 9]]) {
+        levels.length = 0;
+        for (let e = -3; e <= 6; e++) for (const m of ms) { const p = m * 10 ** e; if (p > pLo && p < pHi) levels.push(p); }
+        if (levels.length >= 6) break;
+      }
+    }
     else for (let p = Math.ceil(pLo / step) * step; p < pHi; p += step) levels.push(p);
     ctx.save();
     for (const p of levels) {
@@ -197,28 +206,33 @@
       ctx.strokeStyle = L.grid; ctx.lineWidth = 1; ctx.setLineDash([2, 6]);
       ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(PLOT_R, y); ctx.stroke();
       ctx.setLineDash([]);
-      txt(ctx, fmt(p), PLOT_R + 22, y + 9, { size: 24, w: 400, fam: L.mono, color: L.dim });
+      if (!noPrice) txt(ctx, fmt(p), PLOT_R + 22, y + 9, { size: 24, w: 400, fam: L.mono, color: L.dim });
     }
     const d0 = Math.floor(cam.off / cam.ppd) - 31, d1 = Math.ceil((PLOT_R + cam.off) / cam.ppd) + 31;
     const s0 = S.dateOf(0);
-    for (let mo = 0; mo < (Y_END - Y_START + 2) * 12; mo++) {
-      const d = Math.round((Date.UTC(Y_START, mo, 1) - s0.getTime()) / 86400000);
+    for (let mo = 0; mo < (Y_END - Y_DATA + 2) * 12; mo++) {
+      const d = Math.round((Date.UTC(Y_DATA, mo, 1) - s0.getTime()) / 86400000);
       if (d < d0 || d > d1) continue;
       const x = Math.round(X(d)) + 0.5;
       if (x < 0 || x > PLOT_R) continue;
       const jan = mo % 12 === 0;
       if (jan) {
         glowLine(ctx, [[x, Y0 - 40], [x, Y1 + 8]], L.gridMajor, 1.2, 8);
-        if (cam.k < 0.5 || (Y_START + mo / 12) % 2 === 0 || cam.ppd > 0.5) txt(ctx, String(Y_START + mo / 12), x + 10, Y1 + 50, { size: 30, w: 800, color: L.accent, glow: 12 });
+        if (cam.k < 0.5 || (Y_DATA + mo / 12) % 2 === 0 || cam.ppd > 0.5) txt(ctx, String(Y_DATA + mo / 12), x + 10, Y1 + 50, { size: 30, w: 800, color: L.accent, glow: 12 });
       } else if (cam.k < 0.5) {
         ctx.strokeStyle = L.grid; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x, Y0 - 40); ctx.lineTo(x, Y1 + 8); ctx.stroke();
         if (cam.k < 0.3) txt(ctx, MON[mo % 12].toUpperCase(), x + 6, Y1 + 40, { size: 18, w: 700, fam: L.mono, color: L.dim, alpha: 1 - cam.k / 0.3, spacing: 1 });
       }
     }
-    // the plot frame
+    ctx.restore();
+  }
+  // the two axes (time along the bottom, price on the right): drawn last in the plot, so nothing ever covers them
+  function axes(ctx) {
+    ctx.save();
     ctx.strokeStyle = rgba(L.accent, 0.25); ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(0, Y1 + 8.5); ctx.lineTo(PLOT_R, Y1 + 8.5); ctx.stroke();
     ctx.restore();
+    glowLine(ctx, [[PLOT_R + 0.5, Y0 - 60], [PLOT_R + 0.5, Y1 + 8]], rgba(L.accent, 0.5), 1.2, 8);
   }
 
   // neon candles: a translucent body, a bright edge; the bloom pass makes them glow
@@ -252,6 +266,7 @@
   const MEASURE = G.makeCanvas(8, 8).getContext('2d');
   const PLACE = [];
   const sizeOf = (e) => (e.big ? 34 : 22); // hit 2 (milestone / crisis) ~50% bigger than hit 1
+  const dhOf = (e) => (e.big ? 32 : 0); // hit 2 carries its date under the box: the room it takes
   const CAMS = new Map();
   const camAt = (t) => { const key = Math.round(t * 1000); if (CAMS.has(key)) return CAMS.get(key); const c = camera(t); return { X: (d) => d * c.ppd - c.off, Y: (p) => Y1 - ((Math.log(p) - c.lo) / (c.hi - c.lo)) * (Y1 - Y0), c }; }; // eslint-disable-line
   const camAtM = (t) => { const key = Math.round(t * 1000); let v = CAMS.get(key); if (!v) { v = camAt(t); CAMS.set(key, v); } return v; };
@@ -263,7 +278,7 @@
   // a label's footprint at a camera: [its box, the strip its line runs through]
   const footprint = (K, o, P, gap) => {
     const ox = K.X(o.day + 0.5), oy = K.Y(P.ref) + gap, oay = K.Y(o.price), bx0 = ox + P.off;
-    const box = [bx0, oy - P.h / 2, bx0 + P.bw, oy + P.h / 2];
+    const box = [bx0, oy - P.h / 2, bx0 + P.bw, oy + P.h / 2 + (P.dh || 0)];
     const lx0 = P.dir < 0 ? ox - DIAG - 4 : ox - 4, lx1 = P.dir > 0 ? ox + DIAG + 4 : ox + 4;
     return [box, [lx0, Math.min(oay, oy), lx1, Math.max(oay, oy)]];
   };
@@ -275,7 +290,9 @@
 
   function placeLabel(n) {
     if (PLACE[n]) return PLACE[n];
-    const e = EVENTS[n], up = e.kind !== 'down', size = sizeOf(e), h = size * 1.3;
+    const e = EVENTS[n], up = e.kind !== 'down', size = sizeOf(e), h = size * 1.3, dh = dhOf(e);
+    // an ALL-TIME HIGH / LOW (a phase turn) holds its own side: up above the candles, down below, on a short line
+    const turn = e.turn !== undefined, CG = turn ? 12 : 22;
     const s = e.text.toUpperCase(), tw = measure(MEASURE, s, size, 800);
     const { X, Y, c } = camAt(e.t);
     const x = X(e.day + 0.5), ay = Y(e.price) + (up ? -8 : 8);
@@ -293,8 +310,8 @@
       const dA = Math.max(0, Math.floor((x0 + c.off) / c.ppd - 1)), dB = Math.min(NDAYS - 1, Math.ceil((x1 + c.off) / c.ppd));
       let ref = above ? 0 : Infinity;
       for (let d = dA; d <= dB; d++) ref = above ? Math.max(ref, DAYS[d][1]) : Math.min(ref, DAYS[d][2]);
-      const min = dir ? 44 : 34 + h / 2;
-      const base = above ? Math.min(Y(ref) - 22 - h / 2, ay - min) : Math.max(Y(ref) + 22 + h / 2, ay + min);
+      const min = turn ? (dir ? 26 : 16 + h / 2) : dir ? 44 : 34 + h / 2;
+      const base = above ? Math.min(Y(ref) - CG - h / 2 - dh, ay - min - dh) : Math.max(Y(ref) + CG + h / 2, ay + min);
       return { dir, off, ref, base, above, extra, len: Math.abs(base - ay) };
     };
     const cand = [];
@@ -316,8 +333,9 @@
     // label still to come will want (its line and box right under / over its candle)
     const others = [];
     for (let m = 0; m < n; m++) { const o = EVENTS[m]; if (o.t <= e.t && placeLabel(m).exit > e.t) others.push(m); }
-    const coming = EVENTS.map((o, m) => ({ o, m })).filter(({ o, m }) => m > n && o.hit > 0 && o.t > e.t && o.t < e.t + 20)
-      .map(({ o }) => ({ o, h: sizeOf(o) * 1.3, bw: measure(MEASURE, o.text.toUpperCase(), sizeOf(o), 800) + PAD * 2, up: o.kind !== 'down' }));
+    // (a turn label does not give way to them: the labels still to come find room around it instead)
+    const coming = EVENTS.map((o, m) => ({ o, m })).filter(({ o, m }) => !turn && m > n && o.hit > 0 && o.t > e.t && o.t < e.t + 20)
+      .map(({ o }) => ({ o, h: sizeOf(o) * 1.3 + dhOf(o), bw: measure(MEASURE, o.text.toUpperCase(), sizeOf(o), 800) + PAD * 2, up: o.kind !== 'down' }));
     const samples = [];
     for (let ts = gridFrom(e.t); ts < DUR_END; ts += GRID) {
       const K = camAtM(ts);
@@ -333,11 +351,11 @@
     const hits = (a, q, gx, gy) => a[0] < q[2] + gx && a[2] > q[0] - gx && a[1] < q[3] + gy && a[3] > q[1] - gy;
     const clash = (q, my) => samples.some(({ K, rects }) => {
       if (gone(K, e, q.off, bw)) return false;
-      const [box, line] = footprint(K, e, { ...q, h, bw }, my - Y(q.ref));
+      const [box, line] = footprint(K, e, { ...q, h, bw, dh }, my - Y(q.ref));
       return rects.some(([ob, ol]) => hits(box, ob, GAPX, GAPY) || hits(line, ob, 2, 4) || hits(box, ol, 6, 4));
     });
-    const inside = (q, my) => (q.above ? my - h / 2 >= (x + q.off > 700 ? 112 : Y0 - 10) : my + h / 2 <= H - 4);
-    const step = h + GAPY;
+    const inside = (q, my) => (q.above ? my - h / 2 >= (x + q.off > 700 ? 112 : Y0 - 10) : my + h / 2 + dh <= H - 4);
+    const step = h + dh + GAPY;
     // own side: every shape at the first level before stepping a level further from the candles (left beats deep)
     let pick = null, fallback = null;
     const own = cand.filter((q) => q.above === up), other = cand.filter((q) => q.above !== up);
@@ -347,13 +365,9 @@
       if (!fallback) fallback = { q, my };
       if (!clash(q, my)) { pick = { q, my }; break; }
     }
-    for (let k = 0; k < 8 && !pick; k++) for (const q of other) {
-      const my = q.base + (q.above ? -1 : 1) * k * step;
-      if (inside(q, my) && !clash(q, my)) { pick = { q, my }; break; }
-    }
-    // still nothing: search every free spot on the screen (any callout length, centred or either side, every level)
-    for (const above of [up, !up]) {
-      if (pick) break;
+    // search every free spot on one side of the screen (any callout length, centred or either side, every level)
+    const freeSearch = (above) => {
+      if (pick) return;
       const offs = [];
       for (let o = DIAG + RUN; x + o + bw <= RLIM; o += 40) offs.push([1, o]);
       for (let o = -bw + 12; o <= -12; o += 40) offs.push([0, o]);
@@ -368,7 +382,16 @@
         }
         if (!any) break;
       }
+    };
+    // a turn label tries every free spot on its own side before the other side; any other label tries the other
+    // side's usual spots first
+    if (turn) freeSearch(up);
+    for (let k = 0; k < 8 && !pick; k++) for (const q of other) {
+      const my = q.base + (q.above ? -1 : 1) * k * step;
+      if (inside(q, my) && !clash(q, my)) { pick = { q, my }; break; }
     }
+    if (!turn) freeSearch(up);
+    freeSearch(!up);
     // the screen is truly full: take the first spot and let the labels in its way fade out just before this one
     // appears (an earlier label leaves early rather than two labels ever overlapping)
     let cut = [];
@@ -377,13 +400,13 @@
       const q = pick.q;
       cut = others.filter((m, i) => samples.some(({ K, rects }) => {
         if (gone(K, e, q.off, bw)) return false;
-        const [box, line] = footprint(K, e, { ...q, h, bw }, pick.my - Y(q.ref)), [ob, ol] = rects[i];
+        const [box, line] = footprint(K, e, { ...q, h, bw, dh }, pick.my - Y(q.ref)), [ob, ol] = rects[i];
         return hits(box, ob, GAPX, GAPY) || hits(line, ob, 2, 4) || hits(box, ol, 6, 4);
       }));
       for (const m of cut) { PLACE[m].exit = e.t; PLACE[m].cut = e.t; }
     }
     const { q: ch, my: mid } = pick;
-    const P = { s, tw, bw, h, size, up, above: ch.above, off: ch.off, dir: ch.dir, ref: ch.ref, gap: mid - Y(ch.ref), forced: cut.length > 0 };
+    const P = { s, tw, bw, h, dh, date: dateStr(e.day), size, up, above: ch.above, off: ch.off, dir: ch.dir, ref: ch.ref, gap: mid - Y(ch.ref), forced: cut.length > 0 };
     P.exit = exitTime(e, P);
     return (PLACE[n] = P);
   }
@@ -394,11 +417,11 @@
     crowded: () => EVENTS.map((e, n) => ({ e, P: placeLabel(n) })).filter((x) => x.P.forced).map((x) => `${x.e.date} ${x.e.text}`),
     overlaps(step = 0.2) {
       const out = [], meet = (a, b) => a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
-      for (let t = 0; t < ev.end + 2; t += step) {
+      for (let t = 0; t < ZOOM0; t += step) {
         const K = camAt(t), on = [];
         EVENTS.forEach((e, n) => {
           const P = placeLabel(n);
-          if (t < e.t + 0.25 || (P.cut && t >= P.cut) || labelFade(t) <= 0) return;
+          if (t < e.t + 0.25 || (P.cut && t >= P.cut)) return;
           const bx = K.X(e.day + 0.5) + P.off;
           if (bx > W + 50 || bx + P.bw < -20) return;
           on.push({ e, f: footprint(K, e, P, P.gap) });
@@ -412,22 +435,34 @@
     },
   };
 
-  // the labels are gone before the closing zoom-out starts (squeezed by the zoom they would run into each other)
-  const labelFade = (t) => clamp((ZOOM0 - t) / 0.4);
+  // the hit-2 labels (ALL-TIME HIGH / LOW at the phase turns included) and the halvings stay on through the closing
+  // zoom-out (the hit-1 labels fade away): each one shrinks with the chart around its own
+  // candle, keeping the shape it had when it appeared, and the ones that had scrolled out come back as the camera pulls away
+  const zoomScale = () => clamp(Math.sqrt(fullCam().ppd / PPD), 0.12, 1);
+  const DATE_SIZE = 20, DATE_GAP = 8; // hit 2: the date under the box, at its lower-left edge
   function labels(ctx, t, X, Y, cam) {
-    const fade = labelFade(t);
-    if (fade <= 0) return;
+    const zk = cam.k, zs = lerp(1, zoomScale(), zk), back = ease.inOutCubic(clamp(zk * 1.6));
     EVENTS.forEach((e, n) => {
       const age = t - e.t;
       if (age < 0) return;
       const P = placeLabel(n);
-      const x = X(e.day + 0.5), bx = x + P.off;
-      if (bx > W + 50 || bx + P.bw < -20) return;
-      // on screen = fully there; it fades only while it scrolls out past the left edge
-      const alpha = fade * clamp((bx + P.bw + 10) / 160) * (P.cut ? clamp((P.cut - t) / 0.3) : 1);
+      // the label is drawn in the coordinates of camera (Xc, Yc); during the zoom that is the camera of the moment it
+      // appeared, mapped onto the candle's place now and scaled down around it
+      const KZc = zk > 0 ? camAtM(e.t) : null;
+      const Xc = KZc ? KZc.X : X, Yc = KZc ? KZc.Y : Y;
+      const x = Xc(e.day + 0.5), bx = x + P.off;
+      if (!KZc && (bx > W + 50 || bx + P.bw < -20)) return;
+      // on screen = fully there; it fades only while it scrolls out past the left edge (and is back for the zoom-out)
+      let alpha = clamp((bx + P.bw + 10) / 160) * (P.cut ? clamp((P.cut - t) / 0.3) : 1);
+      if (KZc) alpha = e.big || e.turn !== undefined || e.tag === 'halving' ? Math.max(alpha, back) : alpha * (1 - back);
       if (alpha <= 0) return;
-      const ay = Y(e.price) + (P.up ? -8 : 8), my = clamp(Y(P.ref) + P.gap, 112 + P.h / 2, H - 8 - P.h / 2);
-      const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
+      const ay = Yc(e.price) + (P.up ? -8 : 8), my = clamp(Yc(P.ref) + P.gap, 112 + P.h / 2, H - 8 - P.h / 2 - P.dh);
+      const gold = e.tag === 'halving', col = gold ? GOLD : e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
+      ctx.save(); ctx.globalAlpha = alpha;
+      if (KZc) {
+        const ax = X(e.day + 0.5), ay2 = Y(e.price) + (P.up ? -8 : 8);
+        ctx.translate(ax, ay2); ctx.scale(zs, zs); ctx.translate(-x, -ay);
+      }
       // the line, drawn out over 0.35 s: anchor -> diagonal -> horizontal -> box, or straight up/down into the box
       const k = ease.outCubic(clamp(age / 0.35));
       const pts = [[x, ay]];
@@ -436,18 +471,19 @@
         const l1 = Math.hypot(B[0] - x, B[1] - ay), l2 = Math.abs(C[0] - B[0]), L_ = (l1 + l2) * k;
         if (L_ <= l1) pts.push([lerp(x, B[0], L_ / l1), lerp(ay, B[1], L_ / l1)]);
         else pts.push(B, [lerp(B[0], C[0], (L_ - l1) / l2), my]);
-      } else pts.push([x, lerp(ay, my + (my < ay ? P.h / 2 : -P.h / 2), k)]);
+      } else pts.push([x, lerp(ay, my + (my < ay ? P.h / 2 + P.dh : -P.h / 2), k)]);
       const tier = e.big ? 2 : 0; // hit 1 = the quiet grey label, hit 2 = the bright pulsing one
-      ctx.save(); ctx.globalAlpha = alpha;
       glowLine(ctx, pts, col, [1.3, 2.2, 3][tier], [6, 12, 18][tier]);
       ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, ay, 4, 0, Math.PI * 2); ctx.fill();
       if (age > 0.25) {
         const shown = P.s.slice(0, Math.ceil(P.s.length * clamp((age - 0.25) / 0.3)));
         // two looks: hit 1 = quiet grey box; hit 2 = coloured, tinted, bright pulsing glow (tier 1 is unused)
         const pulse = tier === 2 ? 0.6 + 0.4 * Math.sin(age * 6) : 1;
-        panel(ctx, bx, my - P.h / 2, P.bw, P.h, col, { fill: tier ? `rgba(2,8,16,0.82)` : 'rgba(2,8,16,0.6)', corner: [8, 12, 16][tier], glow: [4, 18, 30 * pulse][tier], alpha: tier ? 1 : 0.85 });
+        panel(ctx, bx, my - P.h / 2, P.bw, P.h, col, { fill: tier ? `rgba(2,8,16,0.82)` : gold ? 'rgba(20,14,2,0.7)' : 'rgba(2,8,16,0.6)', corner: [8, 12, 16][tier], glow: [4, 18, 30 * pulse][tier], alpha: tier ? 1 : 0.85 });
         if (tier) { ctx.save(); ctx.fillStyle = rgba(col, tier === 2 ? 0.2 : 0.12); ctx.fillRect(bx, my - P.h / 2, P.bw, P.h); ctx.restore(); }
-        txt(ctx, shown, bx + PAD, my + P.size * 0.35, { size: P.size, w: 800, color: tier ? col : rgba(L.text, 0.85), glow: [0, 14, 26 * pulse][tier] });
+        txt(ctx, shown, bx + PAD, my + P.size * 0.35, { size: P.size, w: 800, color: tier || gold ? col : rgba(L.text, 0.85), glow: [gold ? 8 : 0, 14, 26 * pulse][tier] });
+        // hit 2: the event's date outside the box, under its lower-left edge, written like the running date
+        if (P.dh) txt(ctx, P.date, bx + 2, my + P.h / 2 + DATE_GAP + DATE_SIZE * 0.8, { size: DATE_SIZE, w: 700, fam: L.mono, color: col, glow: 6, spacing: 2, alpha: 0.9 * clamp((age - 0.4) / 0.3) });
       }
       ctx.restore();
     });
@@ -464,6 +500,7 @@
   // the dotted price line from the live candle across to the axis
   function priceLine(ctx, t, cam, Y, X) {
     const L0 = live(t), col = L0.up ? UP : DOWN;
+    if (L0.D < 0) return; // before the data: no price yet
     const y = clamp(Y(L0.p), Y0 - 20, Y1), hx = X(Math.max(0, L0.D));
     ctx.save();
     ctx.globalAlpha = 1 - cam.k;
@@ -477,10 +514,10 @@
     const x = 96, y = 104;
     txt(ctx, 'BTC / USD', x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
     const w = measure(ctx, 'BTC / USD', 44, 800) + 9 * 2;
-    txt(ctx, dateStr(Math.max(0, D)), x + w + 30, y, { size: 25, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
+    txt(ctx, dateStr(D), x + w + 30, y, { size: 25, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
     // the live price, on the same line, right side
     const L0 = live(t);
-    txt(ctx, fmt(L0.p), PLOT_R - 12, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 });
+    if (L0.D >= 0) txt(ctx, fmt(L0.p), PLOT_R - 12, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 });
   }
 
   // light glowing dust: specks of light drifting through the beam
@@ -507,26 +544,96 @@
     ctx.restore();
   }
 
+  // the opening: the title is up from the first frame over the running pre-run chart, blurred and dimmed; the title and
+  // the blur are gone after 1.5 s, and right after that the music comes in (S.TB(FIRST_BEAT)) and the film really starts
+  const TITLE_OUT = 1.5; // the title is on for 1.5 s (gone by then); the music comes in just after (S.FIRST_BEAT)
+  const sstep = (x) => { x = clamp(x); return x * x * (3 - 2 * x); };
+  const titleAlpha = (t) => 1 - sstep((t - (TITLE_OUT - 0.4)) / 0.4);
+  const blurAmount = (t) => 1 - sstep((t - (TITLE_OUT - 0.5)) / 0.6);
+  function blurBehind(ctx, k) {
+    const cv = ctx.canvas, b = G.scratch('title-blur', cv.width, cv.height), bx = b.getContext('2d');
+    bx.setTransform(1, 0, 0, 1, 0, 0); bx.clearRect(0, 0, cv.width, cv.height);
+    bx.filter = `blur(${(14 * k * cv.width / W).toFixed(2)}px)`; bx.drawImage(cv, 0, 0); bx.filter = 'none';
+    ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.drawImage(b, 0, 0); ctx.fillStyle = `rgba(2,6,14,${0.45 * k})`; ctx.fillRect(0, 0, cv.width, cv.height);
+    ctx.restore();
+  }
+
+  // the closing card, kept lean: the years on top, first price → last price (counting up) and the gain chip on one row, on a small bright
+  // glass HUD panel (tinted top, double neon border, corner brackets, fine inner grid); a light sweep crosses it once
+  function summaryCard(ctx, t) {
+    const t0 = ZOOM1 - 0.6, age = t - t0;
+    if (age <= 0) return;
+    const a = sstep(age / 0.5), pop = 0.94 + 0.06 * ease.outCubic(clamp(age / 0.6));
+    const p0 = DAYS[P0][0], p1 = DAYS[NDAYS - 1][3], mult = p1 / p0, up = p1 >= p0, col = up ? UP : DOWN;
+    const gain = mult >= 100 ? `×${Math.round(mult).toLocaleString('en-US')}` : `${up ? '+' : '−'}${Math.abs(Math.round((mult - 1) * 100))}%`;
+    const pNow = Math.exp(lerp(Math.log(p0), Math.log(p1), ease.outCubic(clamp((age - 0.2) / 1.1)))); // the count-up
+    // as wide as the price row needs (first price, arrow, last price, gain chip), at least 500
+    const need = 24 + measure(ctx, fmt(p0), 28, 700, L.mono) + 54 + measure(ctx, fmt(p1), 42, 800, L.mono) + 18 + measure(ctx, gain, 24, 800, L.mono) + 28 + 24;
+    const w = Math.max(500, Math.ceil(need)), h = 140, x = PLOT_R - 36 - w, y = Y1 - 26 - h, r = 14;
+    ctx.save();
+    ctx.globalAlpha = a;
+    ctx.translate(x + w / 2, y + h / 2); ctx.scale(pop, pop); ctx.translate(-(x + w / 2), -(y + h / 2));
+    const card = () => { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); };
+    // halo + glass
+    ctx.save(); ctx.shadowColor = L.accent; ctx.shadowBlur = 36; ctx.fillStyle = 'rgba(4,16,30,0.9)'; card(); ctx.fill(); ctx.restore();
+    const g = ctx.createLinearGradient(0, y, 0, y + h);
+    g.addColorStop(0, rgba(L.accent, 0.24)); g.addColorStop(0.4, rgba(L.accent, 0.07)); g.addColorStop(1, 'rgba(2,8,18,0)');
+    ctx.fillStyle = g; card(); ctx.fill();
+    // fine grid inside, and the light sweep (once)
+    ctx.save(); card(); ctx.clip();
+    ctx.strokeStyle = rgba(L.accent, 0.07); ctx.lineWidth = 1; ctx.beginPath();
+    for (let gx = x + 14; gx < x + w; gx += 22) { ctx.moveTo(gx + 0.5, y); ctx.lineTo(gx + 0.5, y + h); }
+    for (let gy = y + 11; gy < y + h; gy += 22) { ctx.moveTo(x, gy + 0.5); ctx.lineTo(x + w, gy + 0.5); }
+    ctx.stroke();
+    const sw = (age - 0.35) / 0.9;
+    if (sw > 0 && sw < 1) {
+      const sx = x - 150 + sw * (w + 300);
+      const lg = ctx.createLinearGradient(sx - 90, 0, sx + 90, 0);
+      lg.addColorStop(0, 'rgba(255,255,255,0)'); lg.addColorStop(0.5, 'rgba(200,250,255,0.16)'); lg.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = lg;
+      ctx.beginPath(); ctx.moveTo(sx - 40, y); ctx.lineTo(sx + 90, y); ctx.lineTo(sx + 40, y + h); ctx.lineTo(sx - 90, y + h); ctx.fill();
+    }
+    ctx.restore();
+    // double border + white-hot corner brackets
+    ctx.save();
+    ctx.strokeStyle = L.accent; ctx.lineWidth = 2; ctx.shadowColor = L.accent; ctx.shadowBlur = 16; card(); ctx.stroke();
+    ctx.shadowBlur = 0; ctx.strokeStyle = rgba(L.accent, 0.28); ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.roundRect(x + 6, y + 6, w - 12, h - 12, r - 5); ctx.stroke();
+    ctx.strokeStyle = '#E8FDFF'; ctx.lineWidth = 2.5; ctx.shadowColor = L.accent; ctx.shadowBlur = 12; ctx.lineCap = 'round';
+    ctx.beginPath();
+    for (const [cx, cy, sx, sy] of [[x, y, 1, 1], [x + w, y, -1, 1], [x, y + h, 1, -1], [x + w, y + h, -1, -1]]) {
+      ctx.moveTo(cx + sx * 3, cy + sy * 24); ctx.lineTo(cx + sx * 3, cy + sy * 3); ctx.lineTo(cx + sx * 24, cy + sy * 3);
+    }
+    ctx.stroke(); ctx.restore();
+    // the years, a little bigger, flush right on top; under them first price → last price (counting up) with the gain
+    // chip on the same row
+    txt(ctx, `${Y_START}  →  ${Y_END}`, x + w - 24, y + 46, { size: 30, w: 800, fam: L.mono, color: L.text, align: 'right', glow: 8, spacing: 3 });
+    const by = y + h - 30, s0 = fmt(p0), s1 = fmt(pNow), s1End = fmt(p1);
+    txt(ctx, s0, x + 24, by, { size: 28, w: 700, fam: L.mono, color: rgba(L.text, 0.75), glow: 4 });
+    const w0 = measure(ctx, s0, 28, 700, L.mono);
+    txt(ctx, '→', x + 24 + w0 + 14, by - 2, { size: 28, w: 800, color: L.accent, glow: 10 });
+    const x1 = x + 24 + w0 + 54;
+    txt(ctx, s1, x1, by + 2, { size: 42, w: 800, fam: L.mono, color: '#FFFFFF', glow: 6 });
+    const cs = 24, cw = measure(ctx, gain, cs, 800, L.mono) + 28, chx = Math.max(x1 + measure(ctx, s1End, 42, 800, L.mono) + 18, x + w - 24 - cw), chy = by - 30;
+    ctx.save();
+    ctx.fillStyle = 'rgba(2,10,16,0.85)'; ctx.strokeStyle = col; ctx.lineWidth = 2; ctx.shadowColor = col; ctx.shadowBlur = 14 * (0.75 + 0.25 * Math.sin(age * 5));
+    ctx.beginPath(); ctx.roundRect(chx, chy, cw, 38, 19); ctx.fill(); ctx.stroke();
+    ctx.shadowBlur = 0; ctx.fillStyle = rgba(col, 0.14); ctx.fill();
+    ctx.restore();
+    txt(ctx, gain, chx + cw / 2, chy + 27, { size: cs, w: 800, fam: L.mono, color: up ? '#D9FFEC' : '#FFE0E6', align: 'center', alpha: clamp((age - 0.9) / 0.4) });
+    ctx.restore();
+  }
+
   function titles(ctx, t) {
-    if (t < ev.start + 1.2) {
-      const a = 1 - clamp((t - ev.start - 0.3) / 0.9);
-      const k = ease.outCubic(clamp(t / 0.6));
-      const flick = t < 0.5 ? (H_(Math.floor(t * 24), 3) > 0.4 ? 1 : 0.3) : 1; // neon tube flickering on
-      ctx.save(); ctx.globalAlpha = a * flick;
-      txt(ctx, 'BITCOIN', W / 2, H / 2 - 10, { size: 150, w: 400, fam: L.title, color: L.accent, align: 'center', glow: 40, spacing: 12 * k });
-      txt(ctx, `${Y_START}  →  ${Y_END}`, W / 2, H / 2 + 80, { size: 56, w: 700, fam: L.mono, color: L.text, align: 'center', glow: 12, spacing: 6 });
-      ctx.restore();
-    }
-    if (t > ZOOM1 - 0.6) {
-      const a = clamp((t - (ZOOM1 - 0.6)) / 0.6);
-      const p0 = DAYS[0][0], p1 = DAYS[NDAYS - 1][3];
-      const mult = p1 / p0, gain = mult >= 100 ? `×${Math.round(mult).toLocaleString('en-US')}` : `+${Math.round((mult - 1) * 100)}%`;
+    const a = titleAlpha(t);
+    if (a > 0) {
       ctx.save(); ctx.globalAlpha = a;
-      panel(ctx, 880, 700, 760, 200, L.accent, { fill: 'rgba(2,6,12,0.88)', corner: 22, glow: 20 });
-      txt(ctx, `${Y_START}  →  ${Y_END}`, 1260, 778, { size: 52, w: 800, color: L.text, align: 'center', glow: 10, spacing: 3 });
-      txt(ctx, `${fmt(p0)}  →  ${fmt(p1)}   (${gain})`, 1260, 856, { size: 40, w: 800, fam: L.mono, color: UP, align: 'center', glow: 16 });
+      txt(ctx, 'BITCOIN', W / 2, H / 2 - 10, { size: 150, w: 400, fam: L.title, color: L.accent, align: 'center', glow: 12, spacing: 12 });
+      txt(ctx, `${Y_START}  →  ${Y_END}`, W / 2, H / 2 + 80, { size: 56, w: 700, fam: L.mono, color: L.text, align: 'center', glow: 5, spacing: 6 });
       ctx.restore();
     }
+    summaryCard(ctx, t);
   }
 
   // a hit-2 moment: two glowing rings race out from the candle, a light burst at its centre
@@ -569,7 +676,7 @@
       if (punch > 0.001) { const z = 1 + 0.045 * punch; ctx.translate(W / 2, H / 2); ctx.scale(z, z); ctx.translate(-W / 2, -H / 2); }
       const X = (d) => d * cam.ppd - cam.off;
       const Y = (p) => Y1 - ((Math.log(p) - cam.lo) / (cam.hi - cam.lo)) * (Y1 - Y0);
-      grid(ctx, cam, X, Y);
+      grid(ctx, cam, X, Y, D < 0);
       const bw = Math.max(1, cam.ppd * 0.62);
       const i0 = Math.max(0, Math.floor(cam.off / cam.ppd) - 1), i1 = Math.min(NDAYS - 1, Math.floor(D));
       ctx.save(); ctx.beginPath(); ctx.rect(0, 0, PLOT_R, H); ctx.clip();
@@ -580,10 +687,10 @@
         if (c) candle(ctx, i, c, x, Y, bw, !c.done, t);
       }
       ctx.restore();
-      glowLine(ctx, [[PLOT_R + 0.5, Y0 - 60], [PLOT_R + 0.5, Y1 + 8]], rgba(L.accent, 0.5), 1.2, 8);
       priceLine(ctx, t, cam, Y, X);
-      labels(ctx, t, X, Y, cam); // on top of everything in the plot; may reach over the price axis
+      labels(ctx, t, X, Y, cam); // over the candles; may reach over the price axis
       for (const { h, a } of booms) shockwave(ctx, X(h.day + 0.5), Y(h.price), a, h.kind === 'down' ? DOWN : UP);
+      axes(ctx); // the X and Y axes always on top
       ctx.restore();
       hud(ctx, t, D);
       if (mood.up > 0.01) { // a rally lights the screen up from the edges
@@ -604,6 +711,8 @@
         g.addColorStop(0, rgba(fcol, 0.18 * flash)); g.addColorStop(1, rgba(fcol, 0.6 * flash));
         ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
       }
+      const blur = blurAmount(t);
+      if (blur > 0.01) blurBehind(ctx, blur);
       titles(ctx, t);
       dust(ctx, t);
       scanlines(ctx, t);

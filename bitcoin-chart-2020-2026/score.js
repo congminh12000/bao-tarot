@@ -23,6 +23,7 @@
 
   const DAYS = BTC.days; // [open, high, low, close]
   const NDAYS = DAYS.length;
+  const P0 = BTC.pre || 0; // day P0 = the first day of the film; the days before it are the pre-run under the title
   const START = Date.parse(BTC.start + 'T00:00:00Z');
   const dayOf = (s) => Math.round((Date.parse(s + 'T00:00:00Z') - START) / 86400000);
   const dateOf = (d) => new Date(START + Math.floor(d) * 86400000);
@@ -53,13 +54,13 @@
   const SPEED = 0.35;
   const DPB0 = (d) => { const y = yearAt(d); return (y <= 2012 ? 130 : y <= 2019 ? 85 : 70) * SPEED; };
   const MIN_BEATS = 4;
-  let PH = (BTC.phases || []).map((p) => ({ type: p.type, cue: p.cue, d0: Math.max(0, dayOf(p.start)), d1: Math.min(NDAYS - 1, dayOf(p.end)) })).filter((p) => p.d1 >= p.d0);
-  if (!PH.length) PH = [{ type: 'sideway', cue: LIB.pickCue('sideway', 0).id, d0: 0, d1: NDAYS - 1 }];
-  if (PREVIEW) { const c = LIB.CUES.find((q) => q.id === PREVIEW.cue); if (!c) throw new Error(`no cue ${PREVIEW.cue}`); PH = [{ type: c.phase, cue: c.id, d0: 0, d1: NDAYS - 1 }]; }
-  PH[0].d0 = 0; PH[PH.length - 1].d1 = NDAYS - 1;
+  let PH = (BTC.phases || []).map((p) => ({ type: p.type, cue: p.cue, d0: Math.max(P0, dayOf(p.start)), d1: Math.min(NDAYS - 1, dayOf(p.end)) })).filter((p) => p.d1 >= p.d0);
+  if (!PH.length) PH = [{ type: 'sideway', cue: LIB.pickCue('sideway', 0).id, d0: P0, d1: NDAYS - 1 }];
+  if (PREVIEW) { const c = LIB.CUES.find((q) => q.id === PREVIEW.cue); if (!c) throw new Error(`no cue ${PREVIEW.cue}`); PH = [{ type: c.phase, cue: c.id, d0: P0, d1: NDAYS - 1 }]; }
+  PH[0].d0 = P0; PH[PH.length - 1].d1 = NDAYS - 1;
   for (let i = 1; i < PH.length; i++) PH[i].d0 = PH[i - 1].d1 + 1; // back to back, no holes
   const cueOf = (id) => LIB.CUES.find((c) => c.id === id) || LIB.pickCue('sideway', 0);
-  const FIRST_BAR = 1, FIRST_BEAT = 4; // bar 0 is the title
+  const FIRST_BEAT = 3, FIRST_BAR = FIRST_BEAT / 4; // beats 0-2: the 1.5 s title over the pre-run, no music yet
   let q = FIRST_BEAT;
   for (const p of PH) {
     p.c = cueOf(p.cue);
@@ -71,8 +72,8 @@
   const END_BEAT = q, END_BAR = END_BEAT / 4;
 
   // knots (beat, day): phase starts, and the hit events inside their phase on a beat
-  // every top and bottom between two phases is an event: the one the data already has near it (promoted to a hit),
-  // or a TOP / BOTTOM label made here. The turn starts the moment its label appears.
+  // every turn between two phases (an ALL-TIME HIGH or an ALL-TIME LOW, detect-phases.js) is a hit-2 event: the
+  // "ALL-TIME HIGH / LOW" event the data has on that day, or one made here. The turn starts the moment its label appears.
   const kfmt = (v) => { // $0.08, $32, $1.2K, $19.8K, $109K, $41M (same as the event text, make-data.js)
     const [d, u] = v >= 1e6 ? [1e6, 'M'] : v >= 1e3 ? [1e3, 'K'] : [1, ''];
     const x = v / d, r = x >= 100 || !u ? Math.round(x) : Math.round(x * 10) / 10;
@@ -82,20 +83,22 @@
   const EVSRC = PREVIEW ? [] : BTC.events.map((e) => ({ ...e }));
   if (!PREVIEW) PH.forEach((p, i) => {
     if (i === 0) return;
-    const top = p.type === 'downtrend', d = p.d0; // a downtrend starts at a top, an uptrend at a bottom
-    // only an event ON or just after the phase start (0..7 days): the turn's brake must fall inside the new phase,
-    // so the music never changes cue in the middle of the slow-down
-    const near = EVSRC.filter((e) => e.kind === (top ? 'up' : 'down') && dayOf(e.date) - d >= 0 && dayOf(e.date) - d <= 7)
-      .sort((a, b) => b.hit - a.hit || Math.abs(dayOf(a.date) - d) - Math.abs(dayOf(b.date) - d))[0]; // a milestone first
-    if (near) { near.hit = Math.max(1, near.hit); near.turn = i; return; }
+    const top = p.type === 'downtrend', d = p.d0; // a downtrend starts at an all-time high, an uptrend at an all-time low
+    // the phase starts ON the turn's day, so its label (and the brake) falls inside the new phase's music
+    const name = top ? 'ALL-TIME HIGH' : 'ALL-TIME LOW';
+    const own = EVSRC.find((e) => dayOf(e.date) === d && e.kind === (top ? 'up' : 'down') && e.text.toUpperCase().startsWith(name));
+    if (own) { own.hit = 2; own.turn = i; return; }
     const price = top ? DAYS[d][1] : DAYS[d][2];
-    EVSRC.push({ date: iso(d), kind: top ? 'up' : 'down', hit: 1, text: `${top ? 'TOP' : 'BOTTOM'}: ${kfmt(price)}`, turn: i });
+    EVSRC.push({ date: iso(d), kind: top ? 'up' : 'down', hit: 2, text: `${name}: ${kfmt(price)}`, turn: i });
   });
   EVSRC.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
   const hitEv = EVSRC.filter((e) => e.hit > 0).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
   // knots (beat, day): only the phase starts — inside a phase the chart runs at one steady pace right up to the
   // turn (events are NOT pinned to beats: pinning bent the pace and the chart seemed to brake before a top)
-  const KN = PH.map((p) => [p.q0, p === PH[0] ? -0.5 : p.d0]);
+  const KN = PH.map((p) => [p.q0, p.d0]);
+  // the pre-run: under the title the chart is already running, at the first phase's pace, up to day P0 on FIRST_BEAT;
+  // days before the data (negative days) still scroll by, just without candles or a price
+  KN.unshift([0, P0 - (FIRST_BEAT * (PH[0].d1 - PH[0].d0 + 1)) / PH[0].beats]);
   KN.push([END_BEAT, NDAYS]);
   const KQ = KN.map((k) => k[0]), KD = KN.map((k) => k[1]);
   function dayOfBeat(x) {
@@ -221,7 +224,7 @@
 
   const SCORE = {
     FPS, FORMAT, W, H, SAFE, WIDE, DURATION, clock, T, BEAT, S, m, chords, chordAt, ev, markers,
-    DAYS, NDAYS, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
+    DAYS, NDAYS, P0, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
     inBreath, breaths, moodAt, MOODS, PHASES: PH, BEATS, FIRST_BEAT, END_BEAT, FIRST_BAR, END_BAR, TB, LIB,
   };
   if (node) module.exports = SCORE; else globalThis.SCORE = SCORE;

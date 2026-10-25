@@ -1,43 +1,48 @@
 // Finds the market phases of BTC/USD and writes them to data/phases.csv (which you may then edit by hand).
 //
-//   node make-data.js && node detect-phases.js        (run on the FULL history, not a FROM/TO cut)
+//   node make-data.js && node detect-phases.js && node make-data.js     (on the FULL history, not a FROM/TO cut)
 //
-// Two phase types (see data/music.js for the music each one gets):
-//   uptrend    from a major bottom to the next major top
-//   downtrend  from a major top to the next major bottom
-// The tops and bottoms themselves are the turns between phases: the music slows right down there (score.js).
-//
-// How:
-//   1. a zig-zag on daily closes: a swing counts once the price reverses REVERSAL from the last extreme;
-//      it gives the major tops and bottoms, alternating
-//   2. a leg shorter than MIN_DAYS is a wiggle, not a phase: its two turns are dropped and the remaining tops and
-//      bottoms are moved to the true extreme between their neighbours
+// There are only two kinds of turn, and only two phase types between them (data/music.js gives each its music):
+//   ALL-TIME HIGH  the cycle top: the highest close before the price closes REVERSAL below it
+//   ALL-TIME LOW   the cycle low: the lowest close between that top and the next new all-time high (close)
+//   uptrend    from an ALL-TIME LOW to the next ALL-TIME HIGH
+//   downtrend  from an ALL-TIME HIGH to the next ALL-TIME LOW
+// No minor tops or bottoms: a rally that does not make a new all-time high, or a drop smaller than REVERSAL from the
+// all-time high, stays inside its phase. The music changes only at these turns (score.js); the turns are labelled
+// "ALL-TIME HIGH: $X" / "ALL-TIME LOW: $X" (an event of data/events.csv on that day is used when it has one).
+// Closes, not intraday wicks, find the turns (the wild wicks of 2010-2011 would make dozens of false ones); a leg
+// shorter than MIN_DAYS is a spike, not a phase, and is dropped; then each turn is seated on the day of the real
+// highest high / lowest low within SEAT days of it, so the label shows the true price.
+// The leg still running at the end of the data (no new high or low yet) runs to the last day.
 const fs = require('fs');
 const path = require('path');
 const BTC = require('./btc-data');
 
-const REVERSAL = 0.45; // 45% against the move = a new swing
+const REVERSAL = 0.45; // a fall of 45% from the all-time high confirms it as the cycle top
 const MIN_DAYS = 45; // the shortest uptrend or downtrend
+const SEAT = 7; // days around a turn searched for its true intraday high / low
 
-const DAY = 86400000, START = Date.parse(BTC.start + 'T00:00:00Z');
+const DAY = 86400000, P0 = BTC.pre || 0, START = Date.parse(BTC.start + 'T00:00:00Z') + P0 * DAY;
 const iso = (d) => new Date(START + d * DAY).toISOString().slice(0, 10);
-const C = BTC.days.map((r) => r[3]), N = C.length;
+const D = BTC.days.slice(P0), N = D.length; // the film's days (no pre-run)
+const Hi = D.map((r) => r[1]), Lo = D.map((r) => r[2]), C = D.map((r) => r[3]);
 
-// 1. zig-zag
-let piv = []; // {d, type: 'H'|'L'}
-let dir = 0, hiD = 0, loD = 0;
+const piv = [{ d: 0, type: 'L', edge: true }]; // {d, type: 'H' (all-time high) | 'L' (all-time low)}
+let up = true, ath = 0, top = 0, low = 0;
 for (let d = 1; d < N; d++) {
-  if (dir >= 0 && C[d] > C[hiD]) hiD = d;
-  if (dir <= 0 && C[d] < C[loD]) loD = d;
-  if (dir >= 0 && C[d] <= C[hiD] * (1 - REVERSAL) && (dir > 0 || hiD > loD)) { piv.push({ d: hiD, type: 'H' }); dir = -1; loD = d; }
-  else if (dir <= 0 && C[d] >= C[loD] * (1 + REVERSAL) && (dir < 0 || loD > hiD)) { piv.push({ d: loD, type: 'L' }); dir = 1; hiD = d; }
+  if (up) {
+    if (C[d] > C[ath]) ath = d;
+    if (C[d] <= C[ath] * (1 - REVERSAL)) { top = ath; piv.push({ d: top, type: 'H' }); up = false; low = top + 1; for (let k = top + 1; k <= d; k++) if (C[k] < C[low]) low = k; }
+  } else {
+    if (C[d] < C[low]) low = d;
+    if (C[d] > C[top]) { piv.push({ d: low, type: 'L' }); up = true; ath = d; }
+  }
 }
-// the very first day opens the first leg; the swing still running at the end closes the last one
-piv.unshift({ d: 0, type: piv[0] && piv[0].type === 'H' ? 'L' : 'H', edge: true });
-piv.push(dir > 0 ? { d: hiD, type: 'H' } : { d: loD, type: 'L' });
-if (piv[piv.length - 1].d < N - 1) piv.push({ d: N - 1, type: piv[piv.length - 1].type === 'H' ? 'L' : 'H', edge: true });
+if (!up && low < N - 1) piv.push({ d: low, type: 'L' }); // the low of the drop still running: the last leg goes up from it
+piv.push({ d: N - 1, type: piv[piv.length - 1].type === 'H' ? 'L' : 'H', edge: true });
 
-// 2. drop wiggles: remove the two turns around a too-short leg, then re-seat every turn on its true extreme
+// drop spikes: remove the two turns around a too-short leg, then re-seat every turn on its extreme close between its
+// neighbours (so a top stays the highest close of its cycle, a low the lowest)
 const extreme = (a, b, type) => { let x = a; for (let d = a; d <= b; d++) if (type === 'H' ? C[d] > C[x] : C[d] < C[x]) x = d; return x; };
 for (let changed = true; changed; ) {
   changed = false;
@@ -48,22 +53,29 @@ for (let changed = true; changed; ) {
     break;
   }
 }
+// the last leg too short (a turn right before the end of the data): it stays part of the leg before
+if (piv.length > 2 && piv[piv.length - 1].d - piv[piv.length - 2].d < MIN_DAYS && !piv[piv.length - 2].edge) piv.splice(piv.length - 2, 1);
+// seat each turn on the day of its true intraday extreme near the close extreme
+for (let k = 1; k < piv.length - 1; k++) {
+  const p = piv[k], a = Math.max(piv[k - 1].d + 1, p.d - SEAT), b = Math.min(piv[k + 1].d - 1, p.d + SEAT);
+  for (let d = a; d <= b; d++) if (p.type === 'H' ? Hi[d] > Hi[p.d] : Lo[d] < Lo[p.d]) p.d = d;
+}
 
 const rows = [];
 for (let i = 0; i < piv.length - 1; i++) {
-  const a = piv[i].d, b = i + 1 === piv.length - 1 ? N - 1 : piv[i + 1].d - 1;
-  const type = piv[i + 1].type === 'H' ? 'uptrend' : 'downtrend';
-  if (b >= a) rows.push({ a, b, type, pct: Math.round((C[piv[i + 1].d] / C[a] - 1) * 100) });
+  const a = piv[i].d, b = i + 1 === piv.length - 1 ? N - 1 : piv[i + 1].d - 1, to = piv[i + 1];
+  const type = to.type === 'H' ? 'uptrend' : 'downtrend';
+  const from = i ? (piv[i].type === 'H' ? Hi[a] : Lo[a]) : C[0], end = to.edge ? C[N - 1] : to.type === 'H' ? Hi[to.d] : Lo[to.d];
+  if (b >= a) rows.push({ a, b, type, pct: Math.round((end / from - 1) * 100) });
 }
-// two legs of the same type in a row (left by the edges) become one
-for (let i = rows.length - 1; i > 0; i--) if (rows[i].type === rows[i - 1].type) { rows[i - 1].b = rows[i].b; rows.splice(i, 1); }
 
 const lines = [
   '# Market phases of BTC/USD, one row per phase, back to back. Generated by detect-phases.js — edit freely, then run',
-  '# `node make-data.js` again. type: uptrend (bottom -> next top) | downtrend (top -> next bottom). Music: data/music.js',
+  '# `node make-data.js` again. type: uptrend (ALL-TIME LOW -> next ALL-TIME HIGH) | downtrend (ALL-TIME HIGH -> next',
+  '# ALL-TIME LOW); change% from the turn\'s high/low to the next one\'s. Music: data/music.js',
   '# start,end,type,change%',
   ...rows.map((r) => `${iso(r.a)},${iso(r.b)},${r.type},${r.pct > 0 ? '+' : ''}${r.pct}%`),
 ];
 fs.writeFileSync(path.join(__dirname, 'data', 'phases.csv'), lines.join('\n') + '\n');
 console.log(`data/phases.csv: ${rows.length} phases ${iso(0)} → ${iso(N - 1)} (${rows.filter((r) => r.type === 'uptrend').length} up, ${rows.filter((r) => r.type === 'downtrend').length} down)`);
-console.log('turns:', piv.filter((p) => !p.edge).map((p) => `${p.type === 'H' ? '▲' : '▼'} ${iso(p.d)} $${C[p.d]}`).join('  '));
+console.log('turns:', piv.filter((p) => !p.edge).map((p) => `${p.type === 'H' ? '▲ ATH' : '▼ ATL'} ${iso(p.d)} $${p.type === 'H' ? Hi[p.d] : Lo[p.d]}`).join('\n       '));

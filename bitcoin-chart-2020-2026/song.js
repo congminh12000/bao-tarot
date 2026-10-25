@@ -12,6 +12,8 @@ const { T, DURATION, m, ev, clock, hits, FIRST_BAR, END_BAR, inBreath, breaths }
 const N = Math.ceil(DURATION * SR);
 const bus = () => new Bus(N);
 const drums = bus(), bass = bus(), pad = bus(), ost = bus(), lead = bus(), perc = bus(), fx = bus();
+// the hit-2 SFX get buses of their own, so the music under them can be ducked while they play
+const hDrums = bus(), hPerc = bus(), hLead = bus(), hFx = bus();
 const verb = bus(), dly = bus();
 const kicks = [];
 const beatLen = (t) => clock.beatAt(t); // seconds per beat at t (the tempo changes)
@@ -143,8 +145,9 @@ function renderBar(cue, type, q0, q1, k, chordName, nextIsTurnStart) {
       verb.addMono(I.pluck(degMidi(key, deg, rd, 4), { decay: 0.3 }), t, 0.03);
     }
   }
-  // the first bar of a phase (= right after a top or a bottom): a timpani swell and a crash as the new trend sets off
-  if (k === 0 && q0 > FIRST_BEAT) {
+  // the first bar of a phase (= right after a top or a bottom, or the music coming in after the title): a timpani
+  // swell and a crash as the new trend sets off
+  if (k === 0 && q0 >= FIRST_BEAT) {
     const tp = I.timpani(c.bass + 12, { decay: 2.2 }); perc.addMono(tp, t0, 0.5); verb.addMono(tp, t0, 0.3);
     drums.addMono(type === 'uptrend' ? CR : CR2, t0, 0.28, 0.2);
   }
@@ -152,12 +155,7 @@ function renderBar(cue, type, q0, q1, k, chordName, nextIsTurnStart) {
   if (nextIsTurnStart) fx.addMono(I.noiseSweep(barDur, 200, 7000, { q: 0.9, shape: (x) => x * x, pink: true, seed: q0 }), t0, 0.22);
 }
 
-// the title bar: a pad and a timpani roll rising into the first phase
-{
-  const c0 = sc.chordAt(0.001), dur = TB(FIRST_BEAT);
-  for (const nn of c0.notes) { const p = I.padNote(nn - 12, dur, { cutoff: 1000, attack: 0.4 }); pad.addStereo(p.L, p.R, 0, 0.08); }
-  for (let i = 0; i < 12; i++) perc.addMono(I.timpani(c0.bass + 12, { decay: 0.5, seed: i }), (i * dur) / 12, 0.08 + 0.2 * i / 12);
-}
+// the title bars (the pre-run under the title) are silent: the music comes in when the title has faded out
 PHASES.forEach((p, i) => {
   const toTurn = !!PHASES[i + 1]; // every phase ends on a top or a bottom
   for (let q = p.q0, k = 0; q < p.q1; q += 4, k++) {
@@ -173,25 +171,38 @@ PHASES.forEach((p, i) => {
 const REV = I.crash(31).slice(0, Math.round(1.4 * SR)).reverse();
 for (const h of hits) {
   const up = h.kind !== 'down', ch = sc.chordAt(h.t + 0.01), pre = REV.length / SR;
-  fx.addMono(REV, h.t - pre, 0.32);
-  fx.addMono(I.noiseSweep(1.6, up ? 400 : 1200, up ? 9000 : 6000, { q: 1.1, shape: (x) => x * x * x, pink: true, seed: h.day }), h.t - 1.6, 0.16);
-  fx.addMono(I.subBoom(3.2, up ? 72 : 60, up ? 32 : 24), h.t, 0.95);
-  drums.addMono(K, h.t, 1); drums.addMono(K2, h.t + 0.004, 0.6);
-  drums.addMono(CR, h.t, 0.55, -0.45); drums.addMono(CR2, h.t + 0.012, 0.5, 0.45);
+  hFx.addMono(REV, h.t - pre, 0.32);
+  hFx.addMono(I.noiseSweep(1.6, up ? 400 : 1200, up ? 9000 : 6000, { q: 1.1, shape: (x) => x * x * x, pink: true, seed: h.day }), h.t - 1.6, 0.16);
+  hFx.addMono(I.subBoom(3.2, up ? 72 : 60, up ? 32 : 24), h.t, 0.95);
+  hDrums.addMono(K, h.t, 1); hDrums.addMono(K2, h.t + 0.004, 0.6);
+  hDrums.addMono(CR, h.t, 0.55, -0.45); hDrums.addMono(CR2, h.t + 0.012, 0.5, 0.45);
   const tp = I.timpani(ch.bass + 12, { decay: 2 });
-  perc.addMono(tp, h.t, 0.85); verb.addMono(tp, h.t, 0.35);
+  hPerc.addMono(tp, h.t, 0.85); verb.addMono(tp, h.t, 0.35);
   for (const iv of up ? [0, 7, 12, 16, 19] : [0, 3, 7, 12, 15]) {
     const st = I.brassNote(ch.bass + 24 + iv, up ? 1.1 : 0.8, { stab: true, seed: iv + 3 });
-    lead.addStereo(st.L, st.R, h.t, 0.15); verb.addStereo(st.L, st.R, h.t, 0.1);
+    hLead.addStereo(st.L, st.R, h.t, 0.15); verb.addStereo(st.L, st.R, h.t, 0.1);
   }
   if (up) {
-    ['D6', 'F6', 'A6', 'D7', 'F7', 'A7'].forEach((nn, k) => { const b = I.bell(MU.mtof(m(nn)), 0.7); fx.addMono(b, h.t + 0.08 + k * 0.06, 0.12, (k / 5 - 0.5) * 1.2); verb.addMono(b, h.t + 0.08 + k * 0.06, 0.1); });
-    fx.addMono(I.noiseSweep(1.2, 800, 9000, { q: 1.3, pink: true, seed: h.day + 1 }), h.t + 0.05, 0.14);
+    ['D6', 'F6', 'A6', 'D7', 'F7', 'A7'].forEach((nn, k) => { const b = I.bell(MU.mtof(m(nn)), 0.7); hFx.addMono(b, h.t + 0.08 + k * 0.06, 0.12, (k / 5 - 0.5) * 1.2); verb.addMono(b, h.t + 0.08 + k * 0.06, 0.1); });
+    hFx.addMono(I.noiseSweep(1.2, 800, 9000, { q: 1.3, pink: true, seed: h.day + 1 }), h.t + 0.05, 0.14);
   } else {
-    fx.addMono(I.thud(42, 0.6, h.day), h.t, 0.8);
-    fx.addMono(I.noiseSweep(1.6, 6000, 160, { q: 1.3, pink: true, seed: h.day + 1 }), h.t + 0.05, 0.16);
+    hFx.addMono(I.thud(42, 0.6, h.day), h.t, 0.8);
+    hFx.addMono(I.noiseSweep(1.6, 6000, 160, { q: 1.3, pink: true, seed: h.day + 1 }), h.t + 0.05, 0.16);
   }
 }
+// the music does not change at a hit-2 event (only at the phase turns): it ducks under the SFX and the visual effect
+// (from the riser 1.6 s before the moment to the end of the flash/shake ~1.6 s after), then comes back
+const DUCK = { depth: 0.45, pre: 1.6, post: 1.6, attack: 0.4, release: 1.0 };
+const DUCK_ENV = new Float32Array(Math.ceil(DURATION * 1000) + 2).fill(1); // the gain, one value per ms
+for (const h of hits) {
+  const a = h.t - DUCK.pre, e = h.t + DUCK.post;
+  for (let i = Math.max(0, Math.floor(a * 1000)); i < Math.min(DUCK_ENV.length, Math.ceil((e + DUCK.release) * 1000)); i++) {
+    const t = i / 1000, k = Math.min(1, Math.max(0, t < a + DUCK.attack ? (t - a) / DUCK.attack : t <= e ? 1 : 1 - (t - e) / DUCK.release));
+    DUCK_ENV[i] = Math.min(DUCK_ENV[i], 1 - (1 - DUCK.depth) * k * k * (3 - 2 * k));
+  }
+}
+const duckAt = (t) => DUCK_ENV[Math.min(DUCK_ENV.length - 1, Math.floor(t * 1000))];
+for (const b of [drums, bass, pad, ost, lead, perc, fx, dly]) b.applyGain(duckAt);
 // the end: the last candle closes
 fx.addMono(I.subBoom(3.2), ev.end, 0.8);
 drums.addMono(CR, ev.end, 0.45); drums.addMono(K, ev.end, 0.9);
@@ -204,11 +215,12 @@ for (const nn of ['D3', 'A3', 'D4', 'F4', 'A4']) {
 // ---------- mix ----------
 MIX.sidechain([pad, bass], kicks);
 const stems = {
-  drums, bass, pad, ost, lead, perc, fx,
+  drums, bass, pad, ost, lead, perc, fx, hDrums, hPerc, hLead, hFx,
   verb: reverb(verb, { room: 0.88, damp: 0.35 }),
   dly: pingpong(dly, 0.375, 0.3, 3500),
 };
 const GAIN = { drums: 0.42, bass: 0.75, pad: 2.2, ost: 3.0, lead: 1.6, perc: 0.8, fx: 0.8, verb: 1, dly: 1 };
+Object.assign(GAIN, { hDrums: GAIN.drums, hPerc: GAIN.perc, hLead: GAIN.lead, hFx: GAIN.fx }); // the SFX keep the levels they had
 const out = path.join(__dirname, 'out');
 const mix = MIX.mixdown(stems, GAIN, { stemDir: process.env.STEMS ? out : null });
 MIX.highpass(mix, 24);

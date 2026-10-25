@@ -1,130 +1,132 @@
-# Bitcoin market moments shown on the chart.  date,kind,hit,text
+# Bitcoin market moments shown on the chart.  date,kind,hit,tag,text
 # Source: 99Bitcoins "Bitcoin Historical Events" (https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/),
 # retrieved 2026-10-25; ATH dates and prices from the TradingView daily highs in data/tradingview/. Dates and claims
 # may still need fact-checking. Full original list (238 rows, with hit 0): git history, commit c3d3e43b.
 #
 # kind: up = above the candles | down = below them | info = neutral (above, no direction)
+# tag:  empty, or a special kind of event drawn in its own colour: halving = the protocol's own halvings (gold),
+#       kept on screen through the closing zoom-out
 # hit:  1 = important: the label just appears (small label, no sound, no flash)
 #       2 = a milestone or crisis: big label + its own SFX and visual effect
 #       Only hit 1 and 2 are used; make-data.js drops any hit 0 row.
 # text: as short as possible; money as $266, $1.2K, $19.8K, $109K, $41M, $1.5B (make-data.js also shortens any
-#       "$1,234,567" it finds). Anything after the 3rd comma is the text.
-2009-01-03,info,1,Genesis block
-2010-05-22,up,1,Bitcoin Pizza Day
-2010-07-18,up,1,Mt. Gox opens
-2010-08-15,down,1,Overflow bug
-2011-02-09,up,1,BTC hits $1
-2011-06-08,up,2,ALL-TIME HIGH: $32
-2011-06-19,down,1,Mt. Gox hacked
-2012-03-01,down,1,Linode BTC theft
-2012-08-17,down,1,BTCST halts payouts
-2012-11-15,up,1,WordPress takes BTC
-2012-11-28,info,1,1st halving
-2013-03-11,down,1,v0.8 chain split
-2013-03-25,info,1,Cyprus bail-in
-2013-04-10,up,2,ALL-TIME HIGH: $266
-2013-05-14,down,1,DHS seizes Mt. Gox funds
-2013-10-01,down,1,Silk Road shut
-2013-11-18,info,1,US Senate hearing
-2013-11-29,up,2,ALL-TIME HIGH: $1.2K
-2013-12-05,down,1,China bank ban
-2014-02-07,down,1,Exchange DDoS
-2014-02-24,down,2,Mt. Gox collapses
-2014-04-10,down,1,China closes bank accounts
-2014-06-13,down,1,GHash.io 51% scare
-2014-07-17,info,1,BitLicense draft
-2014-10-06,up,1,BearWhale absorbed
-2014-12-11,up,1,Microsoft takes BTC
-2015-01-04,down,1,Bitstamp hacked
-2015-01-26,up,1,Coinbase exchange opens
-2015-06-03,info,1,BitLicense final
-2015-08-15,info,1,Bitcoin XT dispute
-2015-09-18,info,1,CFTC: BTC is a commodity
-2015-10-22,up,1,EU: no VAT on BTC
-2016-01-14,down,1,Mike Hearn quits
-2016-02-21,info,1,Scaling roundtable
-2016-07-09,info,1,2nd halving
-2016-08-02,down,1,Bitfinex hacked
-2017-01-03,up,1,Back above $1K
-2017-03-10,down,1,SEC rejects Winklevoss ETF
-2017-04-01,up,1,Japan legalizes BTC
-2017-08-01,info,1,Bitcoin Cash fork
-2017-09-03,down,1,China bans ICOs
-2017-09-15,down,1,China shuts exchanges
-2017-10-13,up,1,BTC > $5K
-2017-10-31,up,1,CME futures announced
-2017-11-08,info,1,SegWit2x called off
-2017-11-28,up,1,BTC > $10K
-2017-12-11,up,1,Cboe futures launch
-2017-12-17,up,2,ALL-TIME HIGH: $19.8K
-2017-12-28,down,1,Korea crackdown
-2018-01-08,down,1,CMC drops Korea prices
-2018-01-26,down,1,Coincheck hacked
-2018-07-26,down,1,SEC rejects ETF again
-2018-08-03,up,1,Bakkt announced
-2018-10-15,up,1,Fidelity custody
-2018-11-15,down,1,BCH hash war
-2019-02-01,down,1,QuadrigaCX collapse
-2019-04-26,down,1,Bitfinex/Tether probe
-2019-05-08,down,1,Binance $41M hack
-2019-06-18,info,1,Facebook Libra
-2019-09-22,up,1,Bakkt futures launch
-2019-10-28,up,1,China blockchain push
-2020-01-13,up,1,CME options launch
-2020-03-04,up,1,India lifts bank ban
-2020-03-13,down,2,COVID crash: -50% in 2 days
-2020-03-15,info,1,Fed: 0% rates + QE
-2020-03-23,up,1,Rally on Fed QE
-2020-05-07,up,1,Paul Tudor Jones buys
-2020-05-11,info,1,3rd halving
-2020-07-22,up,1,OCC: banks may hold crypto
-2020-08-11,up,1,MicroStrategy buys BTC
-2020-09-25,down,1,KuCoin hacked
-2020-10-01,down,1,BitMEX charged
-2020-10-08,up,1,Square buys $50M
-2020-10-16,down,1,OKEx freezes withdrawals
-2020-10-21,up,1,PayPal adds crypto
-2020-12-10,up,1,MassMutual buys $100M
-2020-12-16,up,2,BTC > $20K: 2017 peak broken
-2020-12-23,down,1,SEC sues Ripple
-2021-01-29,up,1,Musk's Bitcoin bio
-2021-02-08,up,1,Tesla buys $1.5B
-2021-02-12,up,1,Canada BTC ETF
-2021-02-23,up,1,Square buys $170M
-2021-03-17,up,1,Morgan Stanley BTC funds
-2021-03-24,up,1,Tesla takes BTC
-2021-04-13,up,1,BTC > $63K
-2021-04-14,up,2,ALL-TIME HIGH: $64.9K | Coinbase lists
-2021-05-12,down,1,Tesla drops BTC
-2021-05-19,down,2,China crypto ban
-2021-06-06,up,1,Bukele: BTC legal tender
-2021-06-19,down,1,China mining ban
-2021-09-07,info,1,El Salvador adopts BTC
-2021-09-24,down,1,China bans all crypto
-2021-10-19,up,1,US futures ETF launch
-2021-11-10,up,2,ALL-TIME HIGH: $69K
-2021-11-14,info,1,Taproot activates
-2022-03-03,info,1,US crypto order
-2022-04-27,up,1,CAR adopts BTC
-2022-05-07,down,2,LUNA collapse
-2022-06-13,down,1,Celsius freezes
-2022-07-14,down,1,Celsius bankrupt
-2022-07-20,down,1,Tesla sells 75%
-2022-08-11,up,1,BlackRock BTC trust
-2022-11-11,down,2,FTX bankrupt
-2022-12-20,down,1,Core Scientific bankrupt
-2023-01-21,info,1,Ordinals launch
-2023-03-03,down,1,Silvergate collapse
-2023-03-19,up,1,Rally on bank crisis
-2023-06-15,up,1,BlackRock files ETF
-2024-01-10,up,2,Spot ETFs approved
-2024-03-14,up,2,ALL-TIME HIGH: $73.8K
-2024-04-19,info,1,4th halving
-2024-05-05,info,1,1B transactions
-2024-11-06,up,1,Trump wins: new high
-2024-12-05,up,2,BTC > $100K
-2025-01-20,up,2,ALL-TIME HIGH: $109K | Inauguration
-2025-03-06,up,1,US Bitcoin reserve
-2025-05-22,up,1,BTC > $110K
-2025-07-15,up,1,BTC > $120K
-2025-10-06,up,2,ALL-TIME HIGH: $126K
+#       "$1,234,567" it finds). Anything after the 4th comma is the text.
+2009-01-03,info,1,,Genesis block
+2010-05-22,up,1,,Bitcoin Pizza Day
+2010-07-18,up,1,,Mt. Gox opens
+2010-08-15,down,1,,Overflow bug
+2011-02-09,up,1,,BTC hits $1
+2011-06-08,up,2,,ALL-TIME HIGH: $32
+2011-06-19,down,1,,Mt. Gox hacked
+2012-03-01,down,1,,Linode BTC theft
+2012-08-17,down,1,,BTCST halts payouts
+2012-11-15,up,1,,WordPress takes BTC
+2012-11-28,info,1,halving,1st halving
+2013-03-11,down,1,,v0.8 chain split
+2013-03-25,info,1,,Cyprus bail-in
+2013-04-10,up,2,,ALL-TIME HIGH: $266
+2013-05-14,down,1,,DHS seizes Mt. Gox funds
+2013-10-01,down,1,,Silk Road shut
+2013-11-18,info,1,,US Senate hearing
+2013-11-29,up,2,,ALL-TIME HIGH: $1.2K
+2013-12-05,down,1,,China bank ban
+2014-02-07,down,1,,Exchange DDoS
+2014-02-24,down,2,,Mt. Gox collapses
+2014-04-10,down,1,,China closes bank accounts
+2014-06-13,down,1,,GHash.io 51% scare
+2014-07-17,info,1,,BitLicense draft
+2014-10-06,up,1,,BearWhale absorbed
+2014-12-11,up,1,,Microsoft takes BTC
+2015-01-04,down,1,,Bitstamp hacked
+2015-01-26,up,1,,Coinbase exchange opens
+2015-06-03,info,1,,BitLicense final
+2015-08-15,info,1,,Bitcoin XT dispute
+2015-09-18,info,1,,CFTC: BTC is a commodity
+2015-10-22,up,1,,EU: no VAT on BTC
+2016-01-14,down,1,,Mike Hearn quits
+2016-02-21,info,1,,Scaling roundtable
+2016-07-09,info,1,halving,2nd halving
+2016-08-02,down,1,,Bitfinex hacked
+2017-01-03,up,1,,Back above $1K
+2017-03-10,down,1,,SEC rejects Winklevoss ETF
+2017-04-01,up,1,,Japan legalizes BTC
+2017-08-01,info,1,,Bitcoin Cash fork
+2017-09-03,down,1,,China bans ICOs
+2017-09-15,down,1,,China shuts exchanges
+2017-10-13,up,1,,BTC > $5K
+2017-10-31,up,1,,CME futures announced
+2017-11-08,info,1,,SegWit2x called off
+2017-11-28,up,1,,BTC > $10K
+2017-12-11,up,1,,Cboe futures launch
+2017-12-17,up,2,,ALL-TIME HIGH: $19.8K
+2017-12-28,down,1,,Korea crackdown
+2018-01-08,down,1,,CMC drops Korea prices
+2018-01-26,down,1,,Coincheck hacked
+2018-07-26,down,1,,SEC rejects ETF again
+2018-08-03,up,1,,Bakkt announced
+2018-10-15,up,1,,Fidelity custody
+2018-11-15,down,1,,BCH hash war
+2019-02-01,down,1,,QuadrigaCX collapse
+2019-04-26,down,1,,Bitfinex/Tether probe
+2019-05-08,down,1,,Binance $41M hack
+2019-06-18,info,1,,Facebook Libra
+2019-09-22,up,1,,Bakkt futures launch
+2019-10-28,up,1,,China blockchain push
+2020-01-13,up,1,,CME options launch
+2020-03-04,up,1,,India lifts bank ban
+2020-03-13,down,2,,COVID crash: -50% in 2 days
+2020-03-15,info,1,,Fed: 0% rates + QE
+2020-03-23,up,1,,Rally on Fed QE
+2020-05-07,up,1,,Paul Tudor Jones buys
+2020-05-11,info,1,halving,3rd halving
+2020-07-22,up,1,,OCC: banks may hold crypto
+2020-08-11,up,1,,MicroStrategy buys BTC
+2020-09-25,down,1,,KuCoin hacked
+2020-10-01,down,1,,BitMEX charged
+2020-10-08,up,1,,Square buys $50M
+2020-10-16,down,1,,OKEx freezes withdrawals
+2020-10-21,up,1,,PayPal adds crypto
+2020-12-10,up,1,,MassMutual buys $100M
+2020-12-16,up,2,,BTC > $20K: 2017 peak broken
+2020-12-23,down,1,,SEC sues Ripple
+2021-01-29,up,1,,Musk's Bitcoin bio
+2021-02-08,up,1,,Tesla buys $1.5B
+2021-02-12,up,1,,Canada BTC ETF
+2021-02-23,up,1,,Square buys $170M
+2021-03-17,up,1,,Morgan Stanley BTC funds
+2021-03-24,up,1,,Tesla takes BTC
+2021-04-13,up,1,,BTC > $63K
+2021-04-14,up,2,,ALL-TIME HIGH: $64.9K | Coinbase lists
+2021-05-12,down,1,,Tesla drops BTC
+2021-05-19,down,2,,China crypto ban
+2021-06-06,up,1,,Bukele: BTC legal tender
+2021-06-19,down,1,,China mining ban
+2021-09-07,info,1,,El Salvador adopts BTC
+2021-09-24,down,1,,China bans all crypto
+2021-10-19,up,1,,US futures ETF launch
+2021-11-10,up,2,,ALL-TIME HIGH: $69K
+2021-11-14,info,1,,Taproot activates
+2022-03-03,info,1,,US crypto order
+2022-04-27,up,1,,CAR adopts BTC
+2022-05-07,down,2,,LUNA collapse
+2022-06-13,down,1,,Celsius freezes
+2022-07-14,down,1,,Celsius bankrupt
+2022-07-20,down,1,,Tesla sells 75%
+2022-08-11,up,1,,BlackRock BTC trust
+2022-11-11,down,2,,FTX bankrupt
+2022-12-20,down,1,,Core Scientific bankrupt
+2023-01-21,info,1,,Ordinals launch
+2023-03-03,down,1,,Silvergate collapse
+2023-03-19,up,1,,Rally on bank crisis
+2023-06-15,up,1,,BlackRock files ETF
+2024-01-10,up,2,,Spot ETFs approved
+2024-03-14,up,2,,ALL-TIME HIGH: $73.8K
+2024-04-19,info,1,halving,4th halving
+2024-05-05,info,1,,1B transactions
+2024-11-06,up,1,,Trump wins: new high
+2024-12-05,up,2,,BTC > $100K
+2025-01-20,up,2,,ALL-TIME HIGH: $109K | Inauguration
+2025-03-06,up,1,,US Bitcoin reserve
+2025-05-22,up,1,,BTC > $110K
+2025-07-15,up,1,,BTC > $120K
+2025-10-06,up,2,,ALL-TIME HIGH: $126K

@@ -31,8 +31,10 @@ Chỉ dựng một giai đoạn: `FROM=2020-01-01 node make-data.js` (thêm `TO=
 
 ## Thêm / sửa sự kiện
 
-Mỗi dòng trong `events.csv` có dạng `ngày,kind,hit,nội dung`:
+Mỗi dòng trong `events.csv` có dạng `ngày,kind,hit,tag,nội dung`:
 - `kind`: `up` (nhãn đặt trên đỉnh nến), `down` (dưới đáy), `info`
-- `hit`: `0` = chỉ hiện nhãn, `1` = ghim vào nhịp nhạc + chớp sáng, `2` = khoảnh khắc lớn (lặng 1 phách rồi bùng nổ)
+- `hit`: `1` = quan trọng (nhãn nhỏ, không SFX), `2` = cột mốc / khủng hoảng (nhãn lớn + SFX + hiệu ứng). Không dùng mức 0.
+- `tag`: để trống, hoặc `halving` = sự kiện nội tại đặc biệt (nhãn màu vàng, còn hiện khi zoom-out cuối phim)
+- ALL-TIME HIGH / ALL-TIME LOW ở các điểm chuyển phase do `score.js` tự gắn (hoặc tự tạo), không cần ghi tay
 
 Thời lượng video và bản nhạc tự tính lại theo dữ liệu và các hit.
