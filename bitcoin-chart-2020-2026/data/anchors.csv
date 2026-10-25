@@ -1,4 +1,4 @@
-# Approximate daily closes at the turning points of BTC/USD (USD), used ONLY for days that no TradingView file covers.
+# Approximate daily closes (fallback only: TradingView data in data/tradingview/ now covers 2010-07-17 → 2026-10-25) at the turning points of BTC/USD (USD), used ONLY for days that no TradingView file covers.
 # date,close,high,low   (high/low optional: the famous wicks)
 2010-07-18,0.08,,
 2010-08-01,0.065,,

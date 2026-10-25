@@ -5,7 +5,7 @@
 # The chart slows down into every 'down' event (heavy, a light shake) and speeds up into every 'up' event (euphoric, a glow).
 2010-07-18,info,0,Mt.Gox opens: $0.08
 2011-02-09,up,0,Parity with the dollar: $1
-2011-06-08,up,1,First bubble: $31
+2011-06-08,up,1,First bubble: $32
 2011-06-19,down,0,Mt.Gox hacked
 2011-11-18,down,1,94% crash to $2
 2012-11-28,info,0,First halving
@@ -13,29 +13,29 @@
 2013-04-10,up,1,$266 peak, then crash
 2013-10-02,down,0,FBI shuts Silk Road
 2013-11-18,up,0,US Senate hearing
-2013-12-04,up,1,Peak: $1,242
+2013-11-29,up,1,Peak: $1,242
 2013-12-05,down,0,China bans banks from BTC
-2014-02-24,down,1,Mt.Gox collapses
-2015-01-14,down,1,Bottom: $152
+2014-02-25,down,1,Mt.Gox collapses
+2015-01-14,down,1,Bottom: $166
 2016-07-09,info,0,Second halving
 2016-08-02,down,0,Bitfinex hacked
 2017-08-01,info,0,Bitcoin Cash fork
 2017-09-04,down,0,China bans ICOs
 2017-12-10,up,0,CBOE futures launch
-2017-12-17,up,2,ALL-TIME HIGH: $19,783
+2017-12-17,up,2,ALL-TIME HIGH: $19,804
 2018-02-06,down,0,Sell-off to $6K
 2018-11-20,down,0,BCH hash war
-2018-12-15,down,1,Bottom: $3,122
-2019-06-26,up,1,Facebook Libra: $13,880
+2018-12-15,down,1,Bottom: $3,125
+2019-06-26,up,1,Facebook Libra: $13,871
 2019-10-26,up,0,Xi backs blockchain
-2020-03-12,down,1,COVID: -50% in one day
+2020-03-13,down,1,COVID crash: -50% in 2 days
 2020-05-11,info,0,Third halving
 2020-08-11,up,0,MicroStrategy buys BTC
 2020-12-16,up,0,Breaks the 2017 high: $20K
 2021-02-08,up,0,Tesla buys $1.5B of BTC
 2021-04-14,up,0,Coinbase lists: $64K
 2021-05-12,down,0,Tesla stops accepting BTC
-2021-05-19,down,1,China mining ban crash
+2021-05-19,down,1,China crackdown crash
 2021-09-07,info,0,El Salvador: legal tender
 2021-11-10,up,1,ALL-TIME HIGH: $69K
 2022-05-12,down,0,LUNA collapses
@@ -45,7 +45,7 @@
 2023-03-10,down,0,SVB collapses
 2023-06-15,up,0,BlackRock files for ETF
 2024-01-11,up,0,Spot ETFs approved
-2024-03-14,up,1,NEW HIGH: $73K
+2024-03-14,up,1,NEW HIGH: $73.8K
 2024-04-19,info,0,Fourth halving
 2024-08-05,down,0,Yen carry-trade unwind
 2024-11-05,up,0,Trump wins the election
@@ -56,4 +56,6 @@
 2025-10-06,up,1,ALL-TIME HIGH: $126K
 2025-10-10,down,0,Record $19B liquidation
 2025-11-21,down,0,Slides to $80K
-2026-02-05,down,1,Plunges to $60K
+2026-02-06,down,1,Plunges to $60K
+2026-07-01,down,1,2026 low: $57.7K
+2026-09-21,up,0,Rebounds to $87K

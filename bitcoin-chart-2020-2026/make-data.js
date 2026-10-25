@@ -22,6 +22,7 @@ const csvRows = (file) => fs.readFileSync(file, 'utf8').split(/\r?\n/).filter((l
 
 // ---------- TradingView exports: "time,open,high,low,close[,Volume…]" with unix seconds or an ISO date ----------
 const real = new Map(); // date -> [o, h, l, c]
+let firstTraded = null; // the first day with real volume (before it, index files carry flat reference prices)
 const tvDir = path.join(DIR, 'tradingview');
 const tvFiles = fs.existsSync(tvDir) ? fs.readdirSync(tvDir).filter((f) => f.toLowerCase().endsWith('.csv')).sort() : [];
 for (const f of tvFiles) {
@@ -29,7 +30,7 @@ for (const f of tvFiles) {
   const cols = head.toLowerCase().split(',').map((s) => s.trim().replace(/"/g, ''));
   const at = (n) => cols.findIndex((c) => c === n);
   const iT = at('time') >= 0 ? at('time') : at('date');
-  const idx = [at('open'), at('high'), at('low'), at('close')];
+  const idx = [at('open'), at('high'), at('low'), at('close')], iV = at('volume');
   if (iT < 0 || idx.some((i) => i < 0)) { console.warn(`skip ${f}: needs time/date, open, high, low, close columns`); continue; }
   let n = 0;
   for (const l of lines) {
@@ -39,6 +40,7 @@ for (const f of tvFiles) {
     const v = idx.map((i) => parseFloat(c[i]));
     if (v.some((x) => !isFinite(x) || x <= 0)) continue;
     real.set(date, v); n++;
+    if (iV >= 0 && parseFloat(c[iV]) > 0 && (!firstTraded || date < firstTraded)) firstTraded = date;
   }
   console.log(`  ${f}: ${n} days`);
 }
@@ -85,11 +87,22 @@ const est = estimate();
 
 // ---------- merge: TradingView wins, estimates fill the gaps ----------
 const all = [...new Set([...est.keys(), ...real.keys()])].sort();
-const FROM = process.env.FROM || all[0], TO = process.env.TO || all[all.length - 1];
+const FROM = process.env.FROM || firstTraded || all[0], TO = process.env.TO || all[all.length - 1];
+const realDays = [...real.keys()].sort();
 const days = [], src = [];
 for (let t = ms(FROM); t <= ms(TO); t += DAY) {
   const d = iso(t);
-  const r = real.get(d) || est.get(d);
+  let r = real.get(d);
+  if (!r && real.size && d > realDays[0] && d < realDays[realDays.length - 1]) {
+    // a hole inside the TradingView data (an exchange outage): bridge the closes on either side, flat candles
+    let a = t - DAY, b = t + DAY;
+    while (!real.has(iso(a))) a -= DAY;
+    while (!real.has(iso(b))) b += DAY;
+    const ca = real.get(iso(a))[3], cb = real.get(iso(b))[0], u = (t - a) / (b - a);
+    const c = Math.exp(Math.log(ca) + u * (Math.log(cb) - Math.log(ca)));
+    r = [c, c, c, c];
+  }
+  if (!r) r = est.get(d);
   if (!r) continue;
   days.push(r); src.push(real.has(d) ? 1 : 0);
 }
