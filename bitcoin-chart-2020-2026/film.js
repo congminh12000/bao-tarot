@@ -42,7 +42,8 @@
   let LOGO = null;
   const yearOf = (d) => S.dateOf(clamp(d, 0, NDAYS - 1)).getUTCFullYear();
   const pad2 = (x) => String(x).padStart(2, '0');
-  const dateStr = (d) => { const x = S.dateOf(clamp(d, 0, NDAYS - 1)); return `${pad2(x.getUTCDate())}/${pad2(x.getUTCMonth() + 1)}/${x.getUTCFullYear()}`; };
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const dateStr = (d) => { const x = S.dateOf(clamp(d, 0, NDAYS - 1)); return `${MON[x.getUTCMonth()]} ${pad2(x.getUTCDate())}, ${x.getUTCFullYear()}`; };
   const rgba = (hex, a) => { const n = parseInt(hex.slice(1), 16); return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${a})`; };
 
   // ---------- the camera ----------
@@ -67,7 +68,7 @@
     const lp = Math.log(S.priceAt(Math.min(t, ev.end)));
     if (hi - lo < Math.log(1.35)) { const mid = (hi + lo) / 2; lo = mid - Math.log(1.35) / 2; hi = mid + Math.log(1.35) / 2; }
     const r = hi - lo;
-    lo -= r * 0.1; hi += r * 0.14;
+    lo -= r * 0.12; hi += r * 0.2; // headroom for the event labels
     lo = Math.min(lo, lp - r * 0.06); hi = Math.max(hi, lp + r * 0.08); // the live price never leaves the frame
     return { ppd: PPD, off: camX0(S.dayAt(t)), lo, hi };
   }
@@ -211,7 +212,7 @@
         if (cam.k < 0.5 || (Y_START + mo / 12) % 2 === 0 || cam.ppd > 0.5) txt(ctx, String(Y_START + mo / 12), x + 10, Y1 + 50, { size: 30, w: 800, color: L.accent, glow: 12 });
       } else if (cam.k < 0.5) {
         ctx.strokeStyle = L.grid; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x, Y0 - 40); ctx.lineTo(x, Y1 + 8); ctx.stroke();
-        if (cam.k < 0.3) txt(ctx, 'TH' + ((mo % 12) + 1), x + 6, Y1 + 40, { size: 18, w: 700, fam: L.mono, color: L.dim, alpha: 1 - cam.k / 0.3, spacing: 1 });
+        if (cam.k < 0.3) txt(ctx, MON[mo % 12].toUpperCase(), x + 6, Y1 + 40, { size: 18, w: 700, fam: L.mono, color: L.dim, alpha: 1 - cam.k / 0.3, spacing: 1 });
       }
     }
     // the plot frame
@@ -259,13 +260,19 @@
       const ay = Y(e.price) + (up ? -10 : 10);
       const s = e.text.toUpperCase(), tw = measure(ctx, s, size, 800);
       const tx = Math.min(x - tw / 2, PLOT_R - tw - 30); // scrolls off the left edge with its candle
-      let ty = clamp(up ? ay - (e.hit ? 110 : 140) : ay + (e.hit ? 120 : 150), Y0 + 40, Y1 - 20);
       const box = (yy) => [tx - 16, yy - size * 0.95, tx + tw + 16, yy + size * 0.35];
       const hit = (r) => placed.some((q) => r[0] < q[2] + 8 && r[2] > q[0] - 8 && r[1] < q[3] + 8 && r[3] > q[1] - 8);
-      for (let k = 0; k < 6 && hit(box(ty)); k++) {
-        const ny = ty + (up ? -1 : 1) * (size + 22);
-        ty = ny < Y0 + 40 || ny > Y1 - 20 ? ty + (up ? 1 : -1) * (size + 22) * (k + 1) : ny; // flip side at the frame edge
-      }
+      // the candles under the whole width of the label (also the ones still to come): the text never covers them
+      const dA = Math.max(0, Math.floor((tx - 20 + cam.off) / cam.ppd - 1)), dB = Math.min(NDAYS - 1, Math.ceil((tx + tw + 20 + cam.off) / cam.ppd));
+      let hiP = 0, loP = Infinity;
+      for (let d = dA; d <= dB; d++) { hiP = Math.max(hiP, DAYS[d][1]); loP = Math.min(loP, DAYS[d][2]); }
+      const above = Math.min(ay - (e.hit ? 70 : 60), Y(hiP) - 22) - size * 0.35; // text baseline when above the candles
+      const below = Math.max(ay + (e.hit ? 80 : 70), Y(loP) + 22) + size * 0.95; // … when below them
+      const step = size * 1.3 + 14, cands = [];
+      for (const side of up ? [-1, 1] : [1, -1]) for (let k = 0; k < 5; k++) cands.push(side < 0 ? above - k * step : below + k * step);
+      const topLimit = tx > 700 ? 110 : Y0 - 20; // above the plot is free except under the title
+      let ty = cands.find((y) => y - size * 0.95 >= topLimit && y + size * 0.35 <= Y1 && !hit(box(y)));
+      if (ty === undefined) ty = clamp(up ? above : below, Y0 + 20, Y1 - 10);
       placed.push(box(ty));
       const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
       const k = clamp(age / 0.35);
@@ -371,13 +378,16 @@
       const cam = camera(t);
       const D = S.dayAt(Math.min(t, ev.end));
       let shake = 0, flash = 0, fcol = UP;
-      for (const h of [...hits, { t: ev.end, kind: 'up', big: true }]) {
+      for (const h of [...EVENTS.filter((e) => e.kind !== 'info'), { t: ev.end, kind: 'up', big: true, hit: 1 }]) {
         const a = t - h.t;
-        if (a >= 0 && a < 0.8) { const e = Math.exp(-a * 7); if (e > flash) { flash = e; fcol = h.kind === 'down' ? DOWN : UP; } shake = Math.max(shake, (h.big ? 16 : 10) * Math.exp(-a * 6)); }
+        const k = h.hit ? 1 : 0.45; // the smaller moments flash and shake less
+        if (a >= 0 && a < 0.8) { const e = Math.exp(-a * 7) * k; if (e > flash) { flash = e; fcol = h.kind === 'down' ? DOWN : UP; } shake = Math.max(shake, (h.big ? 16 : h.kind === 'down' ? 11 : 7) * k * Math.exp(-a * 6)); }
       }
+      const mood = t < ev.end ? S.moodAt(D) : { up: 0, down: 0 };
+      const rumble = 4.5 * mood.down; // the screen trembles more and more as a crash comes
       background(ctx, t, cam, D);
       ctx.save();
-      ctx.translate(U.noise1(t * 30, 1) * shake, U.noise1(t * 30, 2) * shake);
+      ctx.translate(U.noise1(t * 30, 1) * shake + U.noise1(t * 17, 5) * rumble, U.noise1(t * 30, 2) * shake + U.noise1(t * 17, 6) * rumble);
       const X = (d) => d * cam.ppd - cam.off;
       const Y = (p) => Y1 - ((Math.log(p) - cam.lo) / (cam.hi - cam.lo)) * (Y1 - Y0);
       grid(ctx, cam, X, Y);
@@ -396,6 +406,18 @@
       bubble(ctx, t, cam, Y, X);
       ctx.restore();
       hud(ctx, t, D);
+      if (mood.up > 0.01) { // a rally lights the screen up from the edges
+        ctx.save(); ctx.globalCompositeOperation = 'lighter';
+        const g = ctx.createRadialGradient(W / 2, H / 2, 200, W / 2, H / 2, W * 0.8);
+        g.addColorStop(0, rgba(UP, 0.03 * mood.up)); g.addColorStop(1, rgba(UP, 0.16 * mood.up));
+        ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
+      }
+      if (mood.down > 0.01) { // a crash darkens the edges, red creeping in
+        ctx.save();
+        const g = ctx.createRadialGradient(W / 2, H / 2, 300, W / 2, H / 2, W * 0.75);
+        g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, `rgba(40,0,10,${0.45 * mood.down})`);
+        ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
+      }
       if (flash > 0.01) {
         ctx.save(); ctx.globalCompositeOperation = 'lighter';
         const g = ctx.createRadialGradient(W / 2, H / 2, 100, W / 2, H / 2, W * 0.75);

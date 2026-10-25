@@ -26,9 +26,42 @@
   const yearAt = (d) => dateOf(U.clamp(d, 0, NDAYS - 1)).getUTCFullYear();
 
   // ---------- pacing: days per bar (the quiet early years go faster) ----------
-  const DPB = (d) => { const y = yearAt(d); return y <= 2012 ? 130 : y <= 2019 ? 85 : 70; };
+  // SPEED < 1 slows the whole chart down (0.7 = 30% slower than the first cut, so the eye can follow every candle)
+  const SPEED = 0.7;
+  const DPB0 = (d) => { const y = yearAt(d); return (y <= 2012 ? 130 : y <= 2019 ? 85 : 70) * SPEED; };
+  // the mood of the market around each event: the chart slows into a crash (heavy) and rushes into a rally (euphoric)
+  const MOODS = BTC.events.filter((e) => e.kind === 'up' || e.kind === 'down').map((e) => {
+    const day = dayOf(e.date), big = e.hit > 0;
+    return { day, up: e.kind === 'up', w: big ? 1 : 0.55, before: big ? 45 : 18, after: big ? 6 : 4 };
+  }).filter((e) => e.day >= 0 && e.day < NDAYS);
+  const smooth = (x) => x * x * (3 - 2 * x);
+  // 0..1: how close day d is to each mood event (ramps up before it, fades quickly after)
+  function moodAt(d) {
+    let up = 0, down = 0;
+    for (const e of MOODS) {
+      const x = d < e.day + 0.5 ? (d - (e.day + 0.5 - e.before)) / e.before : 1 - (d - e.day - 0.5) / e.after;
+      if (x <= 0 || x > 1.0001) continue;
+      const v = smooth(Math.min(1, x)) * e.w;
+      if (e.up) up = Math.max(up, v); else down = Math.max(down, v);
+    }
+    return { up, down };
+  }
+  // into a crash: up to 2.5x slower; into a rally: up to 1.7x faster
+  const DPB = (d) => { const md = moodAt(d + 0.5); return DPB0(d) * (1 - 0.6 * md.down) * (1 + 0.7 * md.up); };
   const natural = [0]; // natural[d] = bars from the first candle to day d
   for (let d = 1; d <= NDAYS; d++) natural.push(natural[d - 1] + 1 / DPB(d - 1));
+  const nat = (D) => {
+    if (D <= 0) return D / DPB(0);
+    if (D >= NDAYS) return natural[NDAYS];
+    const i = Math.floor(D); return natural[i] + (D - i) * (natural[i + 1] - natural[i]);
+  };
+  function natInv(v) { // the day whose natural position is v
+    if (v <= 0) return v * DPB(0);
+    if (v >= natural[NDAYS]) return NDAYS;
+    let lo = 0, hi = NDAYS;
+    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (natural[mid] <= v) lo = mid; else hi = mid; }
+    return lo + (v - natural[lo]) / (natural[lo + 1] - natural[lo]);
+  }
 
   const FIRST_BAR = 1; // the first candle starts forming here (after a one-bar title)
   const hitEv = BTC.events.filter((e) => e.hit > 0).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
@@ -36,7 +69,7 @@
   let last = FIRST_BAR;
   for (const e of hitEv) {
     const gap = e.hit === 2 ? 5 : 2; // room for a build before the big one
-    const bar = Math.max(last + gap, FIRST_BAR + Math.round(natural[e.day] + 0.5 / DPB(e.day)));
+    const bar = Math.max(last + gap, FIRST_BAR + Math.round(nat(e.day + 0.5)));
     PINS.push([bar, e.day + 0.5]);
     e.bar = bar; last = bar;
   }
@@ -44,22 +77,22 @@
   PINS.push([END_BAR, NDAYS]);
   const DURATION = T(END_BAR + 2) + 0.5;
 
-  // monotone cubic (Fritsch–Carlson) through the pins: the speed changes smoothly, never runs backwards
-  const px = PINS.map((p) => T(p[0])), py = PINS.map((p) => p[1]), n = px.length, dl = [], ms = [];
-  for (let i = 0; i < n - 1; i++) dl.push((py[i + 1] - py[i]) / (px[i + 1] - px[i]));
-  ms.push(dl[0]);
-  for (let i = 1; i < n - 1; i++) ms.push((2 * dl[i - 1] * dl[i]) / (dl[i - 1] + dl[i]));
-  ms.push(dl[n - 2]);
+  // between two pins the chart follows the natural pacing (with its slow-downs and rushes), stretched so that
+  // every pinned event lands exactly on its bar line
+  const PB = PINS.map((p) => p[0]), PD = PINS.map((p) => p[1]), PN = PD.map(nat), n = PINS.length;
   function dayAt(t) {
-    if (t <= px[0]) return py[0];
-    if (t >= px[n - 1]) return py[n - 1];
-    let lo = 0, hi = n - 1;
-    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (px[mid] <= t) lo = mid; else hi = mid; }
-    const i = lo, h = px[i + 1] - px[i], s = (t - px[i]) / h;
-    const h00 = 2 * s * s * s - 3 * s * s + 1, h10 = s * s * s - 2 * s * s + s, h01 = -2 * s * s * s + 3 * s * s, h11 = s * s * s - s * s;
-    return h00 * py[i] + h10 * h * ms[i] + h01 * py[i + 1] + h11 * h * ms[i + 1];
+    const b = t / clock.BAR;
+    if (b <= PB[0]) return PD[0];
+    if (b >= PB[n - 1]) return PD[n - 1];
+    let i = 0; while (b > PB[i + 1]) i++;
+    return natInv(PN[i] + ((b - PB[i]) / (PB[i + 1] - PB[i])) * (PN[i + 1] - PN[i]));
   }
-  const timeOfDay = (d) => { let a = 0, b = DURATION; for (let k = 0; k < 44; k++) { const mid = (a + b) / 2; if (dayAt(mid) < d) a = mid; else b = mid; } return (a + b) / 2; };
+  function timeOfDay(d) {
+    if (d <= PD[0]) return T(PB[0]);
+    if (d >= PD[n - 1]) return T(PB[n - 1]);
+    let i = 0; while (d > PD[i + 1]) i++;
+    return T(PB[i] + ((nat(d) - PN[i]) / (PN[i + 1] - PN[i])) * (PB[i + 1] - PB[i]));
+  }
 
   // ---------- candles ----------
   const PEAK = new Map(); // event day -> its extreme comes at mid-day (up: the high, down: the low)
@@ -155,7 +188,7 @@
   const SCORE = {
     FPS, FORMAT, W, H, SAFE, WIDE, DURATION, clock, T, BEAT, S, m, chords, chordAt, ev, markers, brass,
     DAYS, NDAYS, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
-    ARR, styleAt, inBreath, breaths,
+    ARR, styleAt, inBreath, breaths, moodAt, MOODS,
   };
   if (node) module.exports = SCORE; else globalThis.SCORE = SCORE;
 })();

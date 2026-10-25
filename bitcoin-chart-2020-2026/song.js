@@ -6,6 +6,7 @@ const path = require('path');
 const { SR, Bus, reverb, pingpong } = require('./engine/audio/dsp');
 const I = require('./engine/audio/instruments');
 const MIX = require('./engine/audio/mix');
+const MU = require('./engine/music');
 const sc = require('./score');
 const { T, BEAT, DURATION, m, ev, clock, hits, ARR, styleAt, inBreath, breaths } = sc;
 const BAR = BEAT * 4;
@@ -123,6 +124,25 @@ for (const h of hits) {
     lead.addStereo(st.L, st.R, h.t, 0.13); verb.addStereo(st.L, st.R, h.t, 0.08);
   }
   fx.addMono(I.noiseSweep(0.9, up ? 600 : 5000, up ? 6000 : 300, { q: 1.4, pink: true }), h.t + 0.05, 0.12);
+}
+// the smaller moments: a heavy thud into a crash, a bright shimmer into a rally
+for (const e of sc.EVENTS) {
+  if (e.hit || e.kind === 'info') continue;
+  if (e.kind === 'down') {
+    fx.addMono(I.thud(55, 0.35, e.day), e.t, 0.5);
+    fx.addMono(I.noiseSweep(0.7, 2500, 180, { q: 1.2, pink: true, seed: e.day }), e.t, 0.14, -0.2);
+    perc.addMono(I.timpani(m('D2'), { decay: 0.9, seed: e.day }), e.t, 0.35);
+  } else {
+    for (const [k, nn] of [[0, 'D6'], [1, 'A6'], [2, 'D7']]) { const b = I.bell(MU.mtof(m(nn)), 0.5); fx.addMono(b, e.t + k * 0.045, 0.1, (k - 1) * 0.4); verb.addMono(b, e.t + k * 0.045, 0.08); }
+    fx.addMono(I.noiseSweep(0.5, 1500, 9000, { q: 1.1, pink: true, seed: e.day }), e.t - 0.05, 0.08, 0.2);
+  }
+}
+// approaching a big moment: a low rumble swells into each crash, a riser lifts into each rally
+for (const h of hits) {
+  const t0 = sc.timeOfDay(h.day + 0.5 - 45), len = h.t - t0 - BEAT / 4;
+  if (len < 0.4 || h.big) continue; // the big ones have their own build
+  if (h.kind === 'down') fx.addMono(I.noiseSweep(len, 60, 400, { q: 2, shape: (x) => x * x, pink: true, seed: h.day }), t0, 0.35);
+  else fx.addMono(I.noiseSweep(len, 400, 8000, { q: 1, shape: (x) => x * x, pink: true, seed: h.day }), t0, 0.22);
 }
 // the timpani roll + riser under the title, and a riser through every build
 for (let i = 0; i < 18; i++) { const t = T(0, 1) + i * BEAT / 3; perc.addMono(I.timpani(m('D2'), { decay: 0.5, seed: i }), t, 0.08 + 0.18 * i / 18); }
