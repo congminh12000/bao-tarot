@@ -12,6 +12,8 @@
   const BTC = node ? require('./btc-data') : globalThis.BTC;
   const LIB = node ? require('./data/music') : globalThis.MUSIC_LIBRARY;
   const { m, makeClock, makeChords } = MU;
+  // PREVIEW_CUE=up-ascent node song.js -> just that cue, PREVIEW_BARS bars (default 8), no events: to listen to a cue
+  const PREVIEW = node && process.env.PREVIEW_CUE ? { cue: process.env.PREVIEW_CUE, bars: +(process.env.PREVIEW_BARS || 8) } : null;
 
   const FPS = node && process.env.FPS ? +process.env.FPS : 24; // FPS=30 node … renders at another frame rate
   const FORMAT = U.pickFormat('16:9');
@@ -51,6 +53,7 @@
   const isTurn = (type) => type === 'peak' || type === 'bottom';
   let PH = (BTC.phases || []).map((p) => ({ type: p.type, cue: p.cue, d0: Math.max(0, dayOf(p.start)), d1: Math.min(NDAYS - 1, dayOf(p.end)) })).filter((p) => p.d1 >= p.d0);
   if (!PH.length) PH = [{ type: 'sideway', cue: LIB.pickCue('sideway', 0).id, d0: 0, d1: NDAYS - 1 }];
+  if (PREVIEW) { const c = LIB.CUES.find((q) => q.id === PREVIEW.cue); if (!c) throw new Error(`no cue ${PREVIEW.cue}`); PH = [{ type: c.phase, cue: c.id, d0: 0, d1: NDAYS - 1 }]; }
   PH[0].d0 = 0; PH[PH.length - 1].d1 = NDAYS - 1;
   for (let i = 1; i < PH.length; i++) PH[i].d0 = PH[i - 1].d1 + 1; // back to back, no holes
   const cueOf = (id) => LIB.CUES.find((c) => c.id === id) || LIB.pickCue('sideway', 0);
@@ -60,13 +63,14 @@
     p.c = cueOf(p.cue);
     const days = p.d1 - p.d0 + 1, mid = (p.d0 + p.d1) / 2;
     // at this cue's tempo a bar lasts 240/bpm s; keep the chart's days-per-second of the era at 120 BPM, scaled by tempo
-    p.bars = Math.max(MIN_BARS, Math.round(days / DPB0(mid)));
+    p.bars = PREVIEW ? PREVIEW.bars : Math.max(MIN_BARS, Math.round(days / DPB0(mid)));
     p.b0 = bar; bar += p.bars; p.b1 = bar;
   }
   const END_BAR = bar;
 
   // knots (bar, day): phase starts, and the hit events inside their phase on a bar line where one is free
-  const hitEv = BTC.events.filter((e) => e.hit > 0).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
+  const EVSRC = PREVIEW ? [] : BTC.events;
+  const hitEv = EVSRC.filter((e) => e.hit > 0).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
   const KN = [];
   for (const p of PH) {
     KN.push([p.b0, p === PH[0] ? -0.5 : p.d0]);
@@ -143,7 +147,7 @@
   }
 
   // ---------- events ----------
-  const EVENTS = BTC.events.map((e) => {
+  const EVENTS = EVSRC.map((e) => {
     const d = dayOf(e.date);
     if (d < 0 || d >= NDAYS) return null;
     const pin = hitEv.find((h) => h.day === d && h.bar !== undefined);
