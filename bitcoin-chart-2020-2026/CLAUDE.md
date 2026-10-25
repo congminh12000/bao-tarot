@@ -1,6 +1,7 @@
 # CLAUDE.md — instructions for Claude (same as AGENTS.md)
 
-Read **PROJECT.md** first: it is the approved spec and the working rules for this video. In short:
+**PROJECT.md** is the approved spec and the working rules for this video; it is imported below, so it is always loaded.
+In short:
 
 - Reply to the user in **Vietnamese**; all text inside the video is **English**.
 - After every change: render a **short, low-quality preview** (`--draft`, a short FROM/TO range), send it, and
@@ -16,3 +17,5 @@ Read **PROJECT.md** first: it is the approved spec and the working rules for thi
 - After a FROM/TO preview always restore the full data: `node make-data.js && node song.js`.
 - Status and what is waiting for approval: PROJECT.md §10. Commands (incl. first-time setup on a Mac): PROJECT.md §8.
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.
+
+@PROJECT.md
