@@ -14,4 +14,5 @@ Read **PROJECT.md** first: it is the approved spec and the working rules for thi
 - One cue per phase of data/phases.csv, never a change inside a phase. Music mastered to -16 LUFS (no voice-over).
 - Prices on labels come from the TradingView data in `data/tradingview/`, never from memory; do not invent event causes.
 - After a FROM/TO preview always restore the full data: `node make-data.js && node song.js`.
+- Status and what is waiting for approval: PROJECT.md §10. Commands (incl. first-time setup on a Mac): PROJECT.md §8.
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.

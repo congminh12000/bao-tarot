@@ -1,7 +1,7 @@
 {
   "name": "bitcoin-chart-2020-2026",
   "private": true,
-  "description": "Bitcoin daily candlestick chart 2020-2026, hand-drawn, with a synthesized dramatic score.",
+  "description": "Bitcoin daily candlestick film 2010-2026: neon hologram chart drawn in code, with a synthesized score.",
   "scripts": {
     "music": "node song.js",
     "stems": "STEMS=1 node song.js && node engine/tools/levels.js out/music.wav out/stem-*.wav",
@@ -11,6 +11,10 @@
     "mux": "node engine/render.js mux",
     "check": "node engine/render.js check",
     "verify": "node engine/render.js verify",
-    "build": "node song.js && node engine/render.js video && node engine/render.js mux && node engine/render.js check && node engine/render.js verify"
+    "build": "node make-data.js && node song.js && node check-labels.js && node engine/render.js video && node engine/render.js mux && node engine/render.js check && node engine/render.js verify",
+    "labels": "node check-labels.js"
+  },
+  "devDependencies": {
+    "playwright-core": "1.47.2"
   }
 }

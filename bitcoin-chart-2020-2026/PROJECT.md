@@ -97,9 +97,9 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 - Phim bắt đầu từ ngày đầu tiên có volume (17/07/2010). Lỗ hổng trong dữ liệu (06/2011, 23/06/2013) được nối bằng nến phẳng nội suy.
 - `data/anchors.csv`: giá ước lượng, chỉ dùng khi không có dữ liệu TradingView.
 - Hướng dẫn cập nhật dữ liệu: `data/README.md`.
-- Sự kiện được viết từ kiến thức của AI (không tra nguồn); người dùng đang nhờ kiểm chứng. Các dòng chưa chắc:
-  Spot ETF (duyệt 10/01/2024), halving 2024 (20/04 UTC), Facebook Libra (công bố 18/06/2019), Xi (24–25/10/2019),
-  China crackdown (19/05/2021), Tariff shock (04/2025), $19B liquidation (10/10/2025). Sau 02/2026 chỉ ghi giá.
+- Sự kiện: `data/events.csv` — từ 99Bitcoins "Bitcoin Historical Events" (lấy 25/10/2026), ngày/giá ATH theo
+  TradingView; người dùng soạn và kiểm chứng (nhờ ChatGPT). Chỉ giữ mức 1 và 2 (119 dòng, 117 nằm trong phim).
+  Bản gốc 238 dòng (có mức 0) nằm trong lịch sử git, commit `c3d3e43b`.
 
 ## 7. Cấu trúc code
 
@@ -112,6 +112,7 @@ bitcoin-chart-2020-2026/
   film.js            vẽ từng khung hình (camera, nến, nhãn, HUD, hiệu ứng) — hàm thuần của t
   look.js            chọn phong cách (hologram)
   index.html         tải engine + data + score + film trong Chrome headless
+  check-labels.js    kiểm tra cả phim: không có 2 nhãn nào đè nhau (cần `npm install` 1 lần: playwright-core)
   data/              events.csv, phases.csv, music.js, tradingview/, anchors.csv, README.md
   assets/            logo Bitcoin (gốc + âm bản)
   engine/            bộ công cụ render/âm thanh (không sửa theo từng phim)
@@ -121,19 +122,29 @@ bitcoin-chart-2020-2026/
 
 Cần Node 22+, ffmpeg, Google Chrome/Chromium. Chạy trong thư mục `bitcoin-chart-2020-2026`.
 
+**Trên máy cá nhân (Mac) lần đầu:**
+```bash
+git clone https://github.com/congminh12000/bao-tarot.git && cd bao-tarot
+git checkout claude/bitcoin-price-chart-animation-l7ta0e && cd bitcoin-chart-2020-2026
+brew install node ffmpeg          # nếu chưa có; Chrome ở /Applications được tự tìm thấy
+npm install                       # chỉ để chạy check-labels.js
+```
+
 ```bash
 node make-data.js                          # dữ liệu đầy đủ 2010 → nay
 node detect-phases.js && node make-data.js # tính lại giai đoạn (chạy trên dữ liệu ĐẦY ĐỦ)
-node song.js                      # nhạc
+node song.js                               # nhạc (master −16 LUFS)
 node engine/render.js stills 30 60         # ảnh tĩnh tại giây 30, 60 → out/stills/
 # preview chất lượng thấp một đoạn:
 FROM=2017-01-01 TO=2018-12-31 node make-data.js && node song.js
 node engine/render.js video --draft && node engine/render.js mux --draft
 node engine/render.js verify --draft       # kiểm tra khớp hình/tiếng ở các điểm hit
 node check-labels.js                       # kiểm tra cả phim: không có 2 nhãn nào đè nhau
-node make-data.js && node song.js # LUÔN khôi phục dữ liệu đầy đủ sau khi render đoạn ngắn
-# bản cuối 1080p 24fps:
+node make-data.js && node song.js          # LUÔN khôi phục dữ liệu đầy đủ sau khi render đoạn ngắn
+# bản cuối 1080p 24fps (~8 phút 45 giây; khoảng 12.600 khung hình):
+node make-data.js && node song.js && node check-labels.js
 node engine/render.js video && node engine/render.js mux && node engine/render.js verify
+# → out/bitcoin-chart-2020-2026.mp4   (hoặc gọn: npm run build)
 # đổi FPS: FPS=30 node … ; độ phân giải khác: --res 580 (cạnh ngắn, px)
 ```
 
@@ -151,9 +162,20 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 | Chậm ở đỉnh/đáy | `TURN` trong `data/music.js` (`slowBpm`, `holdSec`, `rampSec`, `brakeBeats`) |
 | Độ nhạy đỉnh/đáy | `REVERSAL`, `MIN_DAYS` trong `detect-phases.js` |
 | Sự kiện | `data/events.csv` |
-| Cỡ chữ nhãn | `sizeOf` trong `film.js` |
+| Cỡ chữ nhãn | `sizeOf` trong `film.js` (mức 1 = 22, mức 2 = 34) |
+| Hiệu ứng hình mức 2 | `draw()` (flash, shake, punch) và `shockwave()` trong `film.js` |
+| SFX mức 2 | khối "the hits" trong `song.js` |
+| Âm lượng tổng | `LUFS=-14 node song.js` để đổi (mặc định −16) |
+| Mix từng nhóm | `GAIN` trong `song.js` |
 
-## 10. Trạng thái hiện tại
+## 10. Trạng thái hiện tại (25/10/2026)
 
-- Đã duyệt tới preview v2 (2017–2018, 2022–2023). Đã thay events.csv bằng bộ 99Bitcoins (238 sự kiện) → preview v3 (2019–2020 dày nhất, 2017–2018) đang chờ duyệt.
-- Bản đầy đủ 2010–2026 dài ~8 phút 45 giây ở `SPEED 0.35`; chưa render bản cuối.
+- Đã duyệt: preview v2 (2017–2018, 2022–2023).
+- Thay đổi mới nhất (đã review từng bước, demo 2019–2021 đã gửi, **đang chờ người dùng duyệt**):
+  - sự kiện chỉ còn mức 1/2, nội dung rút gọn, số tiền `$K/$M/$B`;
+  - nhãn mức 1 = kiểu nhỏ, không SFX/hiệu ứng; mức 2 = kiểu lớn + SFX + hiệu ứng mạnh;
+  - không bao giờ đè nhãn (kiểm bằng `node check-labels.js`), nhãn mờ hết trước cú zoom-out cuối phim;
+  - mỗi phase đúng 1 bản nhạc; master −16 LUFS (SFX mức 2 nổi hơn nền ~6 dB).
+- Kiểm tra gần nhất: `verify` ✓ khớp hình/tiếng (2019–2021); `check-labels` ✓ cả phim và 2019–2021.
+- Người dùng chuyển sang chạy Claude trên máy cá nhân (Mac) để render nhanh hơn. **Chưa render bản cuối.**
+- Bản đầy đủ 2010–2026 dài ~8 phút 45 giây (525 giây) ở `SPEED 0.35`.
