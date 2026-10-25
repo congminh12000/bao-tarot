@@ -1,7 +1,7 @@
 // THE MUSIC LIBRARY — one or more cues per market phase (phases: data/phases.csv, from detect-phases.js).
 //
 // Tempo rule:
-//   uptrend / downtrend   fast    (the market is moving: 136–144 BPM)
+//   uptrend / downtrend   fast    (the market is moving: 116–124 BPM)
 //   sideway               medium  (waiting, coiling: 108–112 BPM)
 //   peak / bottom         slow    (the turn between two trends: 76–84 BPM)
 // Between two phases the tempo ramps over TRANSITION.bars bars; into a peak or a bottom it slows over
@@ -20,13 +20,13 @@
 //   fx         extra colour
 // Cues of the same phase take turns (round robin), so a long story does not repeat the same loop each time.
 (function () {
-  const PHASE_TEMPO = { uptrend: 140, downtrend: 138, sideway: 110, peak: 84, bottom: 78 };
+  const PHASE_TEMPO = { uptrend: 120, downtrend: 118, sideway: 110, peak: 84, bottom: 78 };
   const TRANSITION = { bars: 1, turnBars: 2 };
 
   const CUES = [
     // ---------------- uptrend: fast, bright, rising ----------------
     {
-      id: 'up-ascent', phase: 'uptrend', title: 'Ascent', bpm: 140, key: 'D minor',
+      id: 'up-ascent', phase: 'uptrend', title: 'Ascent', bpm: 120, key: 'D minor',
       chords: ['Dm', 'Bb', 'F', 'C'],
       drums: 'fourFloor', bass: 'octaves',
       ostinato: { instrument: 'pizz', perBeat: 4, figure: [1, 5, 8, 5, 3, 5, 8, 10] },
@@ -35,7 +35,7 @@
       mood: 'driving, confident climb',
     },
     {
-      id: 'up-euphoria', phase: 'uptrend', title: 'Euphoria', bpm: 144, key: 'F major',
+      id: 'up-euphoria', phase: 'uptrend', title: 'Euphoria', bpm: 124, key: 'F major',
       chords: ['F', 'C', 'Dm', 'Bb'],
       drums: 'breakbeat', bass: 'rolling808',
       ostinato: { instrument: 'pluck', perBeat: 4, figure: [1, 3, 5, 8, 5, 3, 5, 8] },
@@ -45,7 +45,7 @@
     },
     // ---------------- downtrend: fast, dark, falling ----------------
     {
-      id: 'down-freefall', phase: 'downtrend', title: 'Freefall', bpm: 138, key: 'D minor',
+      id: 'down-freefall', phase: 'downtrend', title: 'Freefall', bpm: 118, key: 'D minor',
       chords: ['Dm', 'C', 'Bb', 'A'],
       drums: 'toms', bass: 'pulse8',
       ostinato: { instrument: 'strings', perBeat: 4, figure: [8, 7, 6, 5, 4, 3, 2, 1] },
@@ -54,7 +54,7 @@
       mood: 'panic, a descending line that will not stop',
     },
     {
-      id: 'down-pressure', phase: 'downtrend', title: 'Pressure', bpm: 136, key: 'G minor',
+      id: 'down-pressure', phase: 'downtrend', title: 'Pressure', bpm: 116, key: 'G minor',
       chords: ['Gm', 'Eb', 'Cm', 'D'],
       drums: 'halfTime', bass: 'rolling808',
       ostinato: { instrument: 'pizz', perBeat: 4, figure: [1, 1, 8, 1, 7, 1, 6, 5] },

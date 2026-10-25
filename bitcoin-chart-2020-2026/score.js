@@ -45,11 +45,14 @@
     return { up, down };
   }
 
-  // ---------- phases -> bars ----------
-  // SPEED < 1 slows the whole chart down; days per bar at the reference tempo (120 BPM) by era
+  // ---------- phases -> beats ----------
+  // The chart runs in step with the music: inside an era a BEAT always shows the same number of days, so the candles
+  // move exactly as fast as the tempo (a 120 BPM uptrend runs 1.5x faster than an 80 BPM bottom). Phases are cut on
+  // beats (not bars) so nothing is stretched to fill a bar; the shortest phase still gets one bar to be heard.
+  // SPEED < 1 slows the whole chart down; DPB0 = days per bar (4 beats) by era
   const SPEED = 0.7;
   const DPB0 = (d) => { const y = yearAt(d); return (y <= 2012 ? 130 : y <= 2019 ? 85 : 70) * SPEED; };
-  const MIN_BARS = 2; // every phase gets at least two bars, so a short turn is still felt (and heard)
+  const MIN_BEATS = 4;
   const isTurn = (type) => type === 'peak' || type === 'bottom';
   let PH = (BTC.phases || []).map((p) => ({ type: p.type, cue: p.cue, d0: Math.max(0, dayOf(p.start)), d1: Math.min(NDAYS - 1, dayOf(p.end)) })).filter((p) => p.d1 >= p.d0);
   if (!PH.length) PH = [{ type: 'sideway', cue: LIB.pickCue('sideway', 0).id, d0: 0, d1: NDAYS - 1 }];
@@ -57,63 +60,64 @@
   PH[0].d0 = 0; PH[PH.length - 1].d1 = NDAYS - 1;
   for (let i = 1; i < PH.length; i++) PH[i].d0 = PH[i - 1].d1 + 1; // back to back, no holes
   const cueOf = (id) => LIB.CUES.find((c) => c.id === id) || LIB.pickCue('sideway', 0);
-  const FIRST_BAR = 1; // bar 0 is the title
-  let bar = FIRST_BAR;
+  const FIRST_BAR = 1, FIRST_BEAT = 4; // bar 0 is the title
+  let q = FIRST_BEAT;
   for (const p of PH) {
     p.c = cueOf(p.cue);
     const days = p.d1 - p.d0 + 1, mid = (p.d0 + p.d1) / 2;
-    // at this cue's tempo a bar lasts 240/bpm s; keep the chart's days-per-second of the era at 120 BPM, scaled by tempo
-    p.bars = PREVIEW ? PREVIEW.bars : Math.max(MIN_BARS, Math.round(days / DPB0(mid)));
-    p.b0 = bar; bar += p.bars; p.b1 = bar;
+    p.beats = PREVIEW ? PREVIEW.bars * 4 : Math.max(MIN_BEATS, Math.round((days / DPB0(mid)) * 4));
+    p.q0 = q; q += p.beats; p.q1 = q;
+    p.b0 = p.q0 / 4; p.b1 = p.q1 / 4; // in bars (may be fractional)
   }
-  const END_BAR = bar;
+  const END_BEAT = q, END_BAR = END_BEAT / 4;
 
-  // knots (bar, day): phase starts, and the hit events inside their phase on a bar line where one is free
+  // knots (beat, day): phase starts, and the hit events inside their phase on a beat
   const EVSRC = PREVIEW ? [] : BTC.events;
   const hitEv = EVSRC.filter((e) => e.hit > 0).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
   const KN = [];
   for (const p of PH) {
-    KN.push([p.b0, p === PH[0] ? -0.5 : p.d0]);
-    let last = p.b0;
+    KN.push([p.q0, p === PH[0] ? -0.5 : p.d0]);
+    let last = p.q0;
     for (const e of hitEv.filter((h) => h.day >= p.d0 && h.day <= p.d1)) {
-      const want = p.b0 + Math.round(((e.day + 0.5 - p.d0) / (p.d1 + 1 - p.d0)) * p.bars);
-      const hb = U.clamp(want, last + 1, p.b1 - 1);
-      if (hb > last && hb < p.b1) { KN.push([hb, e.day + 0.5]); e.bar = hb; last = hb; }
+      const want = p.q0 + Math.round(((e.day + 0.5 - p.d0) / (p.d1 + 1 - p.d0)) * p.beats);
+      const hq = U.clamp(want, last + 1, p.q1 - 1);
+      if (hq > last && hq < p.q1) { KN.push([hq, e.day + 0.5]); e.beat = hq; last = hq; }
     }
   }
-  KN.push([END_BAR, NDAYS]);
-  const KB = KN.map((k) => k[0]), KD = KN.map((k) => k[1]);
-  function dayOfBar(b) {
-    if (b <= KB[0]) return KD[0];
-    if (b >= KB[KB.length - 1]) return KD[KD.length - 1];
-    let lo = 0, hi = KB.length - 1;
-    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (KB[mid] <= b) lo = mid; else hi = mid; }
-    return KD[lo] + ((b - KB[lo]) / (KB[lo + 1] - KB[lo])) * (KD[lo + 1] - KD[lo]);
+  KN.push([END_BEAT, NDAYS]);
+  const KQ = KN.map((k) => k[0]), KD = KN.map((k) => k[1]);
+  function dayOfBeat(x) {
+    if (x <= KQ[0]) return KD[0];
+    if (x >= KQ[KQ.length - 1]) return KD[KD.length - 1];
+    let lo = 0, hi = KQ.length - 1;
+    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (KQ[mid] <= x) lo = mid; else hi = mid; }
+    return KD[lo] + ((x - KQ[lo]) / (KQ[lo + 1] - KQ[lo])) * (KD[lo + 1] - KD[lo]);
   }
 
-  // ---------- per bar: which phase and cue, and the tempo ----------
-  const BARS = []; // b -> { type, cue, k (bar inside the phase), p (phase index) }
-  for (let b = 0; b < END_BAR + 3; b++) {
-    const i = b < FIRST_BAR ? 0 : b >= END_BAR ? PH.length - 1 : PH.findIndex((p) => b >= p.b0 && b < p.b1);
+  // ---------- per beat: which phase and cue; the tempo map ----------
+  const BEATS = []; // q -> { type, cue, k (beat inside the phase), p (phase index) }
+  for (let x = 0; x < END_BEAT + 12; x++) {
+    const i = x < FIRST_BEAT ? 0 : x >= END_BEAT ? PH.length - 1 : PH.findIndex((p) => x >= p.q0 && x < p.q1);
     const p = PH[i];
-    BARS.push({ type: b < FIRST_BAR ? 'intro' : b >= END_BAR ? 'outro' : p.type, cue: p.c, k: b - p.b0, p: i });
+    BEATS.push({ type: x < FIRST_BEAT ? 'intro' : x >= END_BEAT ? 'outro' : p.type, cue: p.c, k: x - p.q0, p: i });
   }
-  // tempo points on every bar line: the cue's tempo; into a turn the tempo starts sinking a bar early (ritardando);
-  // the clock ramps linearly between points, so every change takes one bar
-  const bpmOf = (b) => BARS[U.clamp(b, 0, BARS.length - 1)].cue.bpm;
-  const tempo = [];
-  for (let b = 0; b < BARS.length; b++) {
-    let v = bpmOf(b);
-    if (b >= FIRST_BAR && b + 1 < END_BAR && isTurn(BARS[b + 1].type) && !isTurn(BARS[b].type)) v = (v + bpmOf(b + 1)) / 2;
-    tempo.push([b, v]);
-  }
-  const clock = makeClock({ bpm: bpmOf(0), offset: 0, tempo });
+  // a tempo point at each phase start; the change ramps over the bar before it (LIB.TRANSITION.bars), and into a
+  // turn over two bars (turnBars): the music sinks into a peak or a bottom before it gets there
+  const tempo = [[0, PH[0].c.bpm]];
+  PH.forEach((p, i) => {
+    if (i === 0) { tempo.push([p.b0, p.c.bpm]); return; }
+    const prev = PH[i - 1], ramp = 4 * (isTurn(p.type) && !isTurn(prev.type) ? LIB.TRANSITION.turnBars : LIB.TRANSITION.bars);
+    tempo.push([Math.max(prev.q0, p.q0 - ramp) / 4, prev.c.bpm], [p.b0, p.c.bpm]);
+  });
+  tempo.sort((x, y) => x[0] - y[0]);
+  for (let i = tempo.length - 1; i > 0; i--) if (tempo[i][0] - tempo[i - 1][0] < 1e-9) tempo.splice(i - 1, 1); // one point per position (the later wins)
+  const clock = makeClock({ bpm: PH[0].c.bpm, offset: 0, tempo });
   const { T, BEAT } = clock;
-  const DURATION = T(END_BAR + 2) + 0.5;
+  const TB = (x) => T(0, x); // time of beat x
+  const DURATION = TB(END_BEAT + 8) + 0.5;
   const PULSE = 0.3; // how hard the candles surge on each beat (0 = smooth)
-  const pulse = (b) => b + (PULSE * Math.sin(2 * Math.PI * 4 * b)) / (2 * Math.PI * 4);
-  const barAt = (t) => clock.beatPos(t) / clock.beatsPerBar;
-  const dayAt = (t) => dayOfBar(pulse(barAt(t)));
+  const pulse = (x) => x + (PULSE * Math.sin(2 * Math.PI * x)) / (2 * Math.PI);
+  const dayAt = (t) => dayOfBeat(pulse(clock.beatPos(t)));
   function timeOfDay(d) { // dayAt is monotone: bisect
     let a = 0, c = DURATION;
     for (let k = 0; k < 44; k++) { const mid = (a + c) / 2; if (dayAt(mid) < d) a = mid; else c = mid; }
@@ -150,9 +154,9 @@
   const EVENTS = EVSRC.map((e) => {
     const d = dayOf(e.date);
     if (d < 0 || d >= NDAYS) return null;
-    const pin = hitEv.find((h) => h.day === d && h.bar !== undefined);
+    const pin = hitEv.find((h) => h.day === d && h.beat !== undefined);
     const c = DAYS[d];
-    return { ...e, day: d, t: pin ? T(pin.bar) : timeOfDay(d + 0.5), bar: pin ? pin.bar : undefined, big: e.hit === 2, price: e.kind === 'down' ? c[2] : c[1] };
+    return { ...e, day: d, t: pin ? TB(pin.beat) : timeOfDay(d + 0.5), beat: pin ? pin.beat : undefined, big: e.hit === 2, price: e.kind === 'down' ? c[2] : c[1] };
   }).filter(Boolean);
   for (const e of EVENTS) PEAK.set(e.day, e.kind !== 'down');
   const hits = EVENTS.filter((e) => e.hit > 0);
@@ -161,9 +165,9 @@
   const inBreath = (t) => breaths.some(([a, b]) => t >= a - 1e-6 && t < b - 1e-6);
 
   // sections (for the level meter): one per phase
-  const S = { intro: [0, T(FIRST_BAR)] };
-  PH.forEach((p, i) => { S[`${i + 1}-${p.type}`] = [T(p.b0), T(p.b1)]; });
-  S.outro = [T(END_BAR), DURATION];
+  const S = { intro: [0, TB(FIRST_BEAT)] };
+  PH.forEach((p, i) => { S[`${i + 1}-${p.type}`] = [TB(p.q0), TB(p.q1)]; });
+  S.outro = [TB(END_BEAT), DURATION];
 
   // ---------- harmony: every chord any cue uses ----------
   const CH = {
@@ -174,18 +178,20 @@
     Am7: { notes: ['C4', 'E4', 'G4'], bass: 'A1' }, E: { notes: ['B3', 'E4', 'G#4'], bass: 'E2' }, Eb: { notes: ['Eb4', 'G4', 'Bb4'], bass: 'Eb2' },
     Cm: { notes: ['C4', 'Eb4', 'G4'], bass: 'C2' }, Bm: { notes: ['D4', 'F#4', 'B4'], bass: 'B1' },
   };
-  const prog = BARS.map((x, b) => [b, 0, 4, x.type === 'outro' ? PH[PH.length - 1].c.chords[0] : x.cue.chords[Math.max(0, x.k) % x.cue.chords.length]]);
+  // the chord of beat x: the cue's loop, one chord per bar of the phase
+  const chordNameAt = (x) => { const bi = BEATS[U.clamp(x, 0, BEATS.length - 1)]; return bi.type === 'outro' ? PH[PH.length - 1].c.chords[0] : bi.cue.chords[Math.floor(Math.max(0, bi.k) / 4) % bi.cue.chords.length]; };
+  const prog = BEATS.map((_, x) => [Math.floor(x / 4), x % 4, 1, chordNameAt(x)]);
   const { chords, chordAt } = makeChords(clock, CH, prog);
 
-  const ev = { start: T(FIRST_BAR, -0.5), end: T(END_BAR) };
+  const ev = { start: TB(FIRST_BEAT - 0.5), end: TB(END_BEAT) };
   const markers = { start: ev.start, end: { t: ev.end, sync: 'av' } };
   hits.forEach((h, i) => { markers['hit' + (i + 1)] = { t: h.t, sync: 'av' }; });
-  PH.forEach((p, i) => { markers[`phase${i + 1}-${p.type}`] = T(p.b0); });
+  PH.forEach((p, i) => { markers[`phase${i + 1}-${p.type}`] = TB(p.q0); });
 
   const SCORE = {
     FPS, FORMAT, W, H, SAFE, WIDE, DURATION, clock, T, BEAT, S, m, chords, chordAt, ev, markers,
     DAYS, NDAYS, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
-    inBreath, breaths, moodAt, MOODS, PHASES: PH, BARS, FIRST_BAR, END_BAR, LIB,
+    inBreath, breaths, moodAt, MOODS, PHASES: PH, BEATS, FIRST_BEAT, END_BEAT, FIRST_BAR, END_BAR, TB, LIB,
   };
   if (node) module.exports = SCORE; else globalThis.SCORE = SCORE;
 })();

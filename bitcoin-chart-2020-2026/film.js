@@ -34,7 +34,7 @@
   const PLOT_R = 1660; // the price axis column starts here
   const HEAD_X = 1390; // where the live candle sits once the camera follows
   const Y0 = 190, Y1 = 935; // plot top / bottom
-  const PPD = 9.5; // pixels per day while following
+  const PPD = 12.35; // pixels per day while following (zoomed in 30%)
   const LEFT = 70;
 
   const fmt = (p) => '$' + (p >= 100 ? Math.round(p).toLocaleString('en-US') : p >= 1 ? (Number.isInteger(p) ? String(p) : p.toFixed(2)) : p.toPrecision(2));

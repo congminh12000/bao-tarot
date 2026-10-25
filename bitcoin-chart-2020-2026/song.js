@@ -7,7 +7,7 @@ const I = require('./engine/audio/instruments');
 const MIX = require('./engine/audio/mix');
 const MU = require('./engine/music');
 const sc = require('./score');
-const { T, DURATION, m, ev, clock, hits, BARS, FIRST_BAR, END_BAR, inBreath, breaths } = sc;
+const { T, DURATION, m, ev, clock, hits, FIRST_BAR, END_BAR, inBreath, breaths } = sc;
 
 const N = Math.ceil(DURATION * SR);
 const bus = () => new Bus(N);
@@ -97,31 +97,25 @@ function drumStep(pattern, t, s, b, k) {
 // how loud each instrument plays the running figure (measured with STEMS=1 + tools/levels.js)
 const OST_GAIN = { pizz: 0.32, pluck: 0.16, marimba: 0.14, musicBox: 0.05, bell: 0.09, strings: 0.07 };
 
-// ---------- every bar ----------
-for (let b = 0; b < BARS.length; b++) {
-  const bi = BARS[b], cue = bi.cue, key = keyOf(cue), t0 = T(b), t1 = T(b + 1);
-  if (bi.type === 'outro' || t0 >= DURATION) continue;
-  const c = sc.chordAt(t0 + 0.001);
-  if (!c) continue;
-  const rd = rootDeg(key, c.name);
-  const intro = bi.type === 'intro', turn = bi.type === 'peak' || bi.type === 'bottom';
-  const barDur = t1 - t0;
-
+// ---------- every bar of every phase (a phase starts on any beat; its bars count from its own start) ----------
+const { TB, BEATS, FIRST_BEAT, END_BEAT, PHASES } = sc;
+function renderBar(cue, type, q0, q1, k, chordName, nextIsTurnStart) {
+  // q0..q1: the beats of this bar (q1 - q0 ≤ 4 when the phase ends early); k: bar number inside the phase
+  const key = keyOf(cue), t0 = TB(q0), t1 = TB(q1), barDur = t1 - t0;
+  const c = { name: chordName, ...sc.chordAt(t0 + 0.001) };
+  const rd = rootDeg(key, chordName);
+  const turn = type === 'peak' || type === 'bottom';
   // pads: the chord for the whole bar
   for (const nn of c.notes) {
-    if (cue.pads === 'supersaw' && !intro) { const s = I.supersaw(nn, barDur * 0.98, { cutoff: 4200 }); pad.addStereo(s.L, s.R, t0, 0.045); }
+    if (cue.pads === 'supersaw') { const s = I.supersaw(nn, barDur * 0.98, { cutoff: 4200 }); pad.addStereo(s.L, s.R, t0, 0.045); }
     else if (cue.pads === 'strings') { const s = I.strings(nn, barDur, { attack: 0.3, bright: 0.7 }); pad.addStereo(s.L, s.R, t0, 0.07); verb.addStereo(s.L, s.R, t0, 0.04); }
     else { const p = I.padNote(nn - 12, barDur, { cutoff: cue.pads === 'darkPad' ? 700 : 1300, attack: 0.4, release: 1.1 }); pad.addStereo(p.L, p.R, t0, 0.08); }
   }
-  if (intro) { // title: a timpani roll rising into the first phase
-    for (let i = 0; i < 12; i++) perc.addMono(I.timpani(c.bass + 12, { decay: 0.5, seed: i }), t0 + (i * barDur) / 12, 0.08 + 0.2 * i / 12);
-    continue;
-  }
-
-  // drums, bass, ostinato on the 16th grid of this bar
-  clock.eachStep(b, b + 1, 16, (t, _b, s) => {
-    if (inBreath(t)) return;
-    drumStep(cue.drums, t, s, b, bi.k);
+  // drums, bass, ostinato on the 16th grid of this bar (the pattern's own bar, from the phase start)
+  for (let s = 0; s < (q1 - q0) * 4; s++) {
+    const t = TB(q0 + s / 4);
+    if (inBreath(t)) continue;
+    drumStep(cue.drums, t, s, 0, k);
     const R = c.bass + 12, bl = beatLen(t);
     switch (cue.bass) {
       case 'octaves': if (s % 2 === 0) bass.addMono(I.bass(s % 4 ? R + 12 : R, bl * 0.4, { bright: 0.8 }), t, s % 4 ? 0.35 : 0.5); break;
@@ -138,28 +132,40 @@ for (let b = 0; b < BARS.length; b++) {
       play(ost, o.instrument, midi, t, bl / o.perBeat, OST_GAIN[o.instrument] || 0.12, step % 2 ? 0.3 : -0.3, s + 1);
       if (!turn) dly.addMono(I.pizz(midi, { seed: s }), t, 0.02);
     }
-  });
-
-  // lead phrase on every second bar of the phase (the hook answers itself)
-  if (bi.k % 2 === 1 || turn) {
+  }
+  // lead phrase on every second bar of the phase, and always in a turn
+  if (k % 2 === 1 || turn) {
     for (const [deg, st, len] of cue.lead.phrase) {
-      const t = T(b, st / 2), dur = (len / 2) * beatLen(t);
+      if (st / 2 >= q1 - q0) continue; // the bar was cut short
+      const t = TB(q0 + st / 2), dur = Math.min(len / 2, q1 - q0 - st / 2) * beatLen(t);
       if (inBreath(t)) continue;
       play(lead, cue.lead.instrument, degMidi(key, deg, rd, 4), t, dur * 0.95, turn ? 0.14 : 0.18, 0, deg + 7);
       verb.addMono(I.pluck(degMidi(key, deg, rd, 4), { decay: 0.3 }), t, 0.03);
     }
   }
-
   // the first bar of a phase: a crash for a trend, a timpani swell for a turn, a soft wash for a sideway
-  if (bi.k === 0) {
-    if (bi.type === 'uptrend' || bi.type === 'downtrend') drums.addMono(bi.type === 'uptrend' ? CR : CR2, t0, 0.3, 0.2);
+  if (k === 0) {
+    if (type === 'uptrend' || type === 'downtrend') drums.addMono(type === 'uptrend' ? CR : CR2, t0, 0.3, 0.2);
     else if (turn) { const tp = I.timpani(c.bass + 12, { decay: 1.8 }); perc.addMono(tp, t0, 0.5); verb.addMono(tp, t0, 0.3); }
-    else fx.addMono(I.noiseSweep(barDur, 300, 2000, { q: 0.8, pink: true, seed: b }), t0, 0.06);
+    else fx.addMono(I.noiseSweep(barDur, 300, 2000, { q: 0.8, pink: true, seed: q0 }), t0, 0.06);
   }
   // the last bar before a turn: a riser into the slow-down
-  const next = BARS[b + 1];
-  if (next && next.k === 0 && (next.type === 'peak' || next.type === 'bottom') && !turn) fx.addMono(I.noiseSweep(barDur, 200, 7000, { q: 0.9, shape: (x) => x * x, pink: true, seed: b }), t0, 0.25);
+  if (nextIsTurnStart && !turn) fx.addMono(I.noiseSweep(barDur, 200, 7000, { q: 0.9, shape: (x) => x * x, pink: true, seed: q0 }), t0, 0.25);
 }
+
+// the title bar: a pad and a timpani roll rising into the first phase
+{
+  const c0 = sc.chordAt(0.001), dur = TB(FIRST_BEAT);
+  for (const nn of c0.notes) { const p = I.padNote(nn - 12, dur, { cutoff: 1000, attack: 0.4 }); pad.addStereo(p.L, p.R, 0, 0.08); }
+  for (let i = 0; i < 12; i++) perc.addMono(I.timpani(c0.bass + 12, { decay: 0.5, seed: i }), (i * dur) / 12, 0.08 + 0.2 * i / 12);
+}
+PHASES.forEach((p, i) => {
+  const next = PHASES[i + 1], toTurn = next && (next.type === 'peak' || next.type === 'bottom');
+  for (let q = p.q0, k = 0; q < p.q1; q += 4, k++) {
+    const q1 = Math.min(q + 4, p.q1);
+    renderBar(p.c, p.type, q, q1, k, p.c.chords[k % p.c.chords.length], toTurn && q1 === p.q1);
+  }
+});
 
 // ---------- the hits ----------
 for (const h of hits) {
@@ -210,4 +216,4 @@ for (const h of hits) if (!h.big) MIX.gate(mix, h.t - beatLen(h.t) / 4, h.t); //
 MIX.fadeOut(mix, DURATION - 2.2, DURATION);
 const M = MIX.master(mix, parseFloat(process.env.DRIVE || '0.8'), undefined, { lufs: process.env.LUFS ? parseFloat(process.env.LUFS) : null });
 MIX.writeWav(path.join(out, 'music.wav'), mix);
-console.log(`wrote out/music.wav (${DURATION.toFixed(2)}s, ${END_BAR - FIRST_BAR} bars in ${sc.PHASES.length} phases${M.lufs !== undefined ? `, ${M.lufs.toFixed(1)} LUFS at drive ${M.drive.toFixed(2)}` : ''})`);
+console.log(`wrote out/music.wav (${DURATION.toFixed(2)}s, ${sc.END_BEAT - sc.FIRST_BEAT} beats in ${sc.PHASES.length} phases${M.lufs !== undefined ? `, ${M.lufs.toFixed(1)} LUFS at drive ${M.drive.toFixed(2)}` : ''})`);
