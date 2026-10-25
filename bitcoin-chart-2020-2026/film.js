@@ -68,7 +68,7 @@
     const lp = Math.log(S.priceAt(Math.min(t, ev.end)));
     if (hi - lo < Math.log(1.35)) { const mid = (hi + lo) / 2; lo = mid - Math.log(1.35) / 2; hi = mid + Math.log(1.35) / 2; }
     const r = hi - lo;
-    lo -= r * 0.2; hi += r * 0.2; // headroom for the event labels, above and below
+    lo -= r * 0.26; hi += r * 0.2; // headroom for the event labels, above and below
     lo = Math.min(lo, lp - r * 0.06); hi = Math.max(hi, lp + r * 0.08); // the live price never leaves the frame
     return { ppd: PPD, off: camX0(S.dayAt(t)), lo, hi };
   }
@@ -251,7 +251,7 @@
   const DIAG = 34, RUN = 30, PAD = 14; // callout geometry, px
   const MEASURE = G.makeCanvas(8, 8).getContext('2d');
   const PLACE = [];
-  const sizeOf = (e) => (e.big ? 62 : e.hit ? 40 : 22); // the big moments shout, the small ones whisper
+  const sizeOf = (e) => (e.big ? 34 : e.hit ? 31 : 22); // the important moments ~50% bigger than the small ones
   const CAMS = new Map();
   const camAt = (t) => { const key = Math.round(t * 1000); if (CAMS.has(key)) return CAMS.get(key); const c = camera(t); return { X: (d) => d * c.ppd - c.off, Y: (p) => Y1 - ((Math.log(p) - c.lo) / (c.hi - c.lo)) * (Y1 - Y0), c }; }; // eslint-disable-line
   const camAtM = (t) => { const key = Math.round(t * 1000); let v = CAMS.get(key); if (!v) { v = camAt(t); CAMS.set(key, v); } return v; };
@@ -262,12 +262,15 @@
     const { X, Y, c } = camAt(e.t);
     const x = X(e.day + 0.5), ay = Y(e.price) + (up ? -8 : 8);
     const bw = tw + PAD * 2;
-    // candidates: a callout to the right (dir 1), to the left (-1), or the box straight above/below the candle (0);
-    // the callout wins unless its line would get long and the straight one is shorter
+    // the price runs left to right, so the eye is on the right: a label sits RIGHT of its candle (a callout), or at
+    // least centred over it (a straight line); never to the left. Near the right edge it slides left only as far as
+    // it must to stay on screen (it may cover the price axis, never a candle).
+    const RLIM = W - 24;
     const cand = [];
-    for (const dir of [1, -1, 0]) {
-      const off = dir > 0 ? DIAG + RUN : dir < 0 ? -(DIAG + RUN + bw) : -bw / 2; // box left edge relative to the anchor x
-      if (x + off + bw > PLOT_R - 20 && dir >= 0) continue;
+    for (const dir of [1, 0]) {
+      let off = dir > 0 ? DIAG + RUN : -bw / 2; // box left edge relative to the anchor x
+      if (dir > 0 && x + off + bw > RLIM) continue;
+      if (dir === 0 && x + off + bw > RLIM) off = RLIM - bw - x; // slide left just enough
       // every candle under the callout and the box, including the ones still to come
       const x0 = Math.min(x, x + off) - 6, x1 = Math.max(x, x + off + bw) + 6;
       const dA = Math.max(0, Math.floor((x0 + c.off) / c.ppd - 1)), dB = Math.min(NDAYS - 1, Math.ceil((x1 + c.off) / c.ppd));
@@ -277,44 +280,79 @@
       const base = up ? Math.min(Y(ref) - 22 - h / 2, ay - min) : Math.max(Y(ref) + 22 + h / 2, ay + min); // box middle
       cand.push({ dir, off, ref, base, len: Math.abs(base - ay) - (dir ? 0 : h / 2) });
     }
-    const elbow = cand.filter((q) => q.dir).sort((a, b) => a.len - b.len)[0], straight = cand.find((q) => !q.dir);
-    const { dir, off, ref, base } = !elbow || (straight && elbow.len > 110 && straight.len < elbow.len) ? straight : elbow;
+    const elbow = cand.find((q) => q.dir), straight = cand.find((q) => !q.dir);
+    const order = !elbow ? [straight] : !straight ? [elbow] : elbow.len > 110 && straight.len < elbow.len ? [straight, elbow] : [elbow, straight];
     // earlier labels that share the screen with this one at any moment of its life (checked every 0.4 s, since the
-    // camera keeps zooming): this label keeps a clear gap from all of them, the whole time
-    const GAPX = 28, GAPY = 22, LIFE = 8.5;
+    // camera keeps zooming): this label — its box AND its line — keeps a clear gap from their boxes and lines
+    const GAPX = 28, GAPY = 22, LIFE = 8.5, FAR = [-1e9, -1e9, -1e9, -1e9], GONE = [FAR, FAR];
     const others = [];
     for (let m = 0; m < n; m++) if (EVENTS[m].t <= e.t && e.t - EVENTS[m].t < LIFE) others.push(m);
+    // a label's footprint at a camera: [its box, the strip its line runs through]
+    const footprint = (K, o, P, gap) => {
+      const ox = K.X(o.day + 0.5), oy = K.Y(P.ref) + gap, oay = K.Y(o.price), bx0 = ox + P.off;
+      const box = [bx0, oy - P.h / 2, bx0 + P.bw, oy + P.h / 2];
+      const lx1 = P.dir ? ox + DIAG + 4 : ox + 4, ly0 = Math.min(oay, oy), ly1 = Math.max(oay, oy);
+      return [box, [ox - 4, ly0, lx1, ly1]];
+    };
     const samples = [];
+    const alive = others.filter((m) => !(placeLabel(m).until <= e.t)); // ones already cut short don't count
     for (let j = 0; j * 0.4 < LIFE; j++) {
-      const ts = e.t + j * 0.4, live = others.filter((m) => ts - EVENTS[m].t < LIFE);
-      if (!live.length) break;
+      const ts = e.t + j * 0.4;
       const K = camAtM(ts);
-      samples.push({ K, boxes: live.map((m) => { const P = placeLabel(m), ox = K.X(EVENTS[m].day + 0.5) + P.off, oy = K.Y(P.ref) + P.gap; return [ox, oy - P.h / 2, ox + P.bw, oy + P.h / 2]; }) });
+      samples.push({ K, rects: alive.map((m) => { const P = placeLabel(m); return ts - EVENTS[m].t < LIFE ? footprint(K, EVENTS[m], P, P.gap) : GONE; }) });
     }
-    const bx = x + off;
-    const clash = (my) => samples.some(({ K, boxes }) => {
-      const cx = K.X(e.day + 0.5) + off, cy = K.Y(ref) + (my - Y(ref));
-      return boxes.some((q) => cx < q[2] + GAPX && cx + bw > q[0] - GAPX && cy - h / 2 < q[3] + GAPY && cy + h / 2 > q[1] - GAPY);
-    });
-    const inside = (my) => (up ? my - h / 2 >= (bx > 700 ? 112 : Y0 - 10) : my + h / 2 <= Y1 - 4);
+    const hits = (a, q, gx, gy) => a[0] < q[2] + gx && a[2] > q[0] - gx && a[1] < q[3] + gy && a[3] > q[1] - gy;
+    const clashWith = (c, my) => { // the earlier labels this spot would touch, at any moment
+      const set = new Set();
+      for (const { K, rects } of samples) {
+        const [box, line] = footprint(K, e, { ...c, h, bw }, my - Y(c.ref));
+        rects.forEach(([ob, ol], i) => { if (hits(box, ob, GAPX, GAPY) || hits(line, ob, 2, 4) || hits(box, ol, 6, 4)) set.add(i); });
+      }
+      return set;
+    };
+    const clash = (c, my) => clashWith(c, my).size > 0;
+    const inside = (c, my) => (up ? my - h / 2 >= (x + c.off > 700 ? 112 : Y0 - 10) : my + h / 2 <= H - 16); // down labels may sit over the month row
     const step = h + GAPY;
-    let mid = base;
-    for (let k = 0; k < 8; k++) { const my = base + (up ? -1 : 1) * k * step; if (!inside(my)) break; mid = my; if (!clash(my)) break; }
-    return (PLACE[n] = { s, tw, bw, h, size, up, off, dir, ref, gap: mid - Y(ref) }); // gap: px from the reference candle
+    // try each shape, stepping away from the candles, until a spot is clear; else the first spot that fits
+    let pick = null, fallback = null;
+    for (const c of order) {
+      for (let k = 0; k < 8 && !pick; k++) {
+        const my = c.base + (up ? -1 : 1) * k * step;
+        if (!inside(c, my)) break;
+        if (!fallback) fallback = { c, my };
+        if (!clash(c, my)) pick = { c, my };
+      }
+      if (pick) break;
+    }
+    const { c: ch, my: mid } = pick || fallback || { c: order[0], my: order[0].base };
+    const { dir, off, ref } = ch;
+    // no clear spot at all: the less important label yields (an equal one: the older yields). Yielding = fading out
+    // at this moment, so two labels never overlap.
+    let until = Infinity;
+    if (!pick) {
+      const tier = (q) => (q.big ? 2 : q.hit ? 1 : 0);
+      for (const i of clashWith(ch, mid)) {
+        const m = alive[i], P = placeLabel(m);
+        if (tier(EVENTS[m]) > tier(e)) until = e.t - 1; // this one gives way and never shows
+        else P.until = Math.min(P.until, e.t);
+      }
+    }
+    return (PLACE[n] = { s, tw, bw, h, size, up, off, dir, ref, gap: mid - Y(ref), until }); // gap: px from the reference candle
   }
 
   function labels(ctx, t, X, Y, cam) {
     const fade = 1 - clamp(cam.k * 3);
     if (fade <= 0) return;
+    EVENTS.forEach((e, n) => { if (e.t <= t) placeLabel(n); }); // place every label due by now first: later ones may cut earlier ones short
     EVENTS.forEach((e, n) => {
       const age = t - e.t;
       if (age < 0) return;
       const P = placeLabel(n);
       const x = X(e.day + 0.5);
       if (x + Math.min(0, P.off) > PLOT_R + 50 || x + Math.max(0, P.off + P.bw) < -50) return;
-      const alpha = fade * clamp(1 - (age - 7) / 1.5);
+      const alpha = fade * clamp(1 - (age - 7) / 1.5) * clamp(1 - (t - P.until) / 0.3);
       if (alpha <= 0) return;
-      const ay = Y(e.price) + (P.up ? -8 : 8), my = Y(P.ref) + P.gap, bx = x + P.off;
+      const ay = Y(e.price) + (P.up ? -8 : 8), my = clamp(Y(P.ref) + P.gap, 112 + P.h / 2, H - 16 - P.h / 2), bx = x + P.off;
       const col = e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
       // the line, drawn out over 0.35 s: anchor -> diagonal -> horizontal -> box, or straight up/down into the box
       const k = ease.outCubic(clamp(age / 0.35));
@@ -447,10 +485,10 @@
         const c = S.candleAt(i, Math.min(t, ev.end));
         if (c) candle(ctx, i, c, x, Y, bw, !c.done, t);
       }
-      labels(ctx, t, X, Y, cam);
       ctx.restore();
       glowLine(ctx, [[PLOT_R + 0.5, Y0 - 60], [PLOT_R + 0.5, Y1 + 8]], rgba(L.accent, 0.5), 1.2, 8);
       priceLine(ctx, t, cam, Y, X);
+      labels(ctx, t, X, Y, cam); // on top of everything in the plot; may reach over the price axis
       ctx.restore();
       hud(ctx, t, D);
       if (mood.up > 0.01) { // a rally lights the screen up from the edges

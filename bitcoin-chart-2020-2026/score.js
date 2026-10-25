@@ -15,8 +15,6 @@
   const [W, H] = U.formatSize(FORMAT);
   const SAFE = U.safeArea(W, H);
   const WIDE = W / H > 1.2;
-  const clock = makeClock({ bpm: 120, offset: 0 }); // 1 beat = 0.5s, 1 bar = 2s
-  const { T, BEAT } = clock;
 
   const DAYS = BTC.days; // [open, high, low, close]
   const NDAYS = DAYS.length;
@@ -29,7 +27,8 @@
   // SPEED < 1 slows the whole chart down (0.7 = 30% slower than the first cut, so the eye can follow every candle)
   const SPEED = 0.7;
   const DPB0 = (d) => { const y = yearAt(d); return (y <= 2012 ? 130 : y <= 2019 ? 85 : 70) * SPEED; };
-  // the mood of the market around each event: the chart slows into a crash (heavy) and rushes into a rally (euphoric)
+  // the mood of the market around each event: the MUSIC slows into a crash (heavy) and rushes into a rally (euphoric),
+  // and the chart moves with the music: a fixed number of days per bar, so its speed is the tempo
   const MOODS = BTC.events.filter((e) => e.kind === 'up' || e.kind === 'down').map((e) => {
     const day = dayOf(e.date), big = e.hit > 0;
     return { day, up: e.kind === 'up', w: big ? 1 : 0.55, before: big ? 45 : 18, after: big ? 6 : 4 };
@@ -46,8 +45,9 @@
     }
     return { up, down };
   }
-  // into a crash: up to 2.5x slower; into a rally: up to 1.7x faster
-  const DPB = (d) => { const md = moodAt(d + 0.5); return DPB0(d) * (1 - 0.6 * md.down) * (1 + 0.7 * md.up); };
+  const DPB = DPB0; // days per bar: set by the era only; how fast a bar goes by is the tempo's business
+  const BPM = 120; // the tempo in calm water; into a crash it sinks to ~66, into a rally it climbs to ~160
+  const tempoOf = (md) => BPM * (1 - 0.45 * md.down) * (1 + 0.33 * md.up);
   const natural = [0]; // natural[d] = bars from the first candle to day d
   for (let d = 1; d <= NDAYS; d++) natural.push(natural[d - 1] + 1 / DPB(d - 1));
   const nat = (D) => {
@@ -75,24 +75,43 @@
   }
   const END_BAR = Math.max(last + 2, FIRST_BAR + Math.round(natural[NDAYS]));
   PINS.push([END_BAR, NDAYS]);
-  const DURATION = T(END_BAR + 2) + 0.5;
 
-  // between two pins the chart follows the natural pacing (with its slow-downs and rushes), stretched so that
-  // every pinned event lands exactly on its bar line
+  // between two pins the chart follows the era's pacing, stretched so every pinned event lands exactly on its bar line
   const PB = PINS.map((p) => p[0]), PD = PINS.map((p) => p[1]), PN = PD.map(nat), n = PINS.length;
-  function dayAt(t) {
-    const b = t / clock.BAR;
+  function dayOfBar(b) {
     if (b <= PB[0]) return PD[0];
     if (b >= PB[n - 1]) return PD[n - 1];
     let i = 0; while (b > PB[i + 1]) i++;
     return natInv(PN[i] + ((b - PB[i]) / (PB[i + 1] - PB[i])) * (PN[i + 1] - PN[i]));
   }
-  function timeOfDay(d) {
-    if (d <= PD[0]) return T(PB[0]);
-    if (d >= PD[n - 1]) return T(PB[n - 1]);
+  function barOfDay(d) {
+    if (d <= PD[0]) return PB[0];
+    if (d >= PD[n - 1]) return PB[n - 1];
     let i = 0; while (d > PD[i + 1]) i++;
-    return T(PB[i] + ((nat(d) - PN[i]) / (PN[i + 1] - PN[i])) * (PB[i + 1] - PB[i]));
+    return PB[i] + ((nat(d) - PN[i]) / (PN[i + 1] - PN[i])) * (PB[i + 1] - PB[i]);
   }
+
+  // ---------- the tempo map: one tempo per bar, from the mood of the days that bar shows ----------
+  // in bars: a big event pulls the tempo for 3 bars before it (felt), a small one for 1; it lets go within a bar after
+  const MOODB = MOODS.map((e) => ({ ...e, bar: barOfDay(e.day + 0.5), before: e.w === 1 ? 3 : 1, after: e.w === 1 ? 1 : 0.5 }));
+  function moodAtBar(b) {
+    let up = 0, down = 0;
+    for (const e of MOODB) {
+      const x = b <= e.bar ? (b - (e.bar - e.before)) / e.before : 1 - (b - e.bar) / e.after;
+      if (x <= 0) continue;
+      const v = smooth(Math.min(1, x)) * e.w;
+      if (e.up) up = Math.max(up, v); else down = Math.max(down, v);
+    }
+    return { up, down };
+  }
+  const tempo = [];
+  for (let q = 0; q <= (END_BAR + 3) * 4; q++) { const b = q / 4; tempo.push([b, b < FIRST_BAR + 1 || b >= END_BAR ? BPM : tempoOf(moodAtBar(b))]); } // a point every beat
+  const clock = makeClock({ bpm: BPM, offset: 0, tempo });
+  const { T, BEAT } = clock;
+  const DURATION = T(END_BAR + 2) + 0.5;
+  const dayAt = (t) => dayOfBar(clock.beatPos(t) / clock.beatsPerBar);
+  const moodAtDay = (d) => moodAtBar(barOfDay(d)); // the same mood the music plays, for the picture (shake / glow)
+  const timeOfDay = (d) => { const b = barOfDay(d); return T(Math.floor(b), (b - Math.floor(b)) * clock.beatsPerBar); };
 
   // ---------- candles ----------
   const PEAK = new Map(); // event day -> its extreme comes at mid-day (up: the high, down: the low)
@@ -149,7 +168,7 @@
   }
   // a lone bar of one mood inside another is smoothed away
   for (let b = 2; b < END_BAR - 1; b++) if ((ARR[b] === 'bull' || ARR[b] === 'bear') && ARR[b - 1] === ARR[b + 1] && ARR[b - 1] !== ARR[b] && ['bull', 'bear'].includes(ARR[b - 1])) ARR[b] = ARR[b - 1];
-  const styleAt = (t) => ARR[U.clamp(Math.floor(t / clock.BAR + 1e-6), 0, ARR.length - 1)];
+  const styleAt = (t) => ARR[U.clamp(Math.floor(clock.beatPos(t) / clock.beatsPerBar + 1e-6), 0, ARR.length - 1)];
   const breaths = bigs.map((e) => [T(e.bar, -1), T(e.bar)]); // one beat of real silence before each big one
   const inBreath = (t) => breaths.some(([a, b]) => t >= a - 1e-6 && t < b - 1e-6);
 
@@ -188,7 +207,7 @@
   const SCORE = {
     FPS, FORMAT, W, H, SAFE, WIDE, DURATION, clock, T, BEAT, S, m, chords, chordAt, ev, markers, brass,
     DAYS, NDAYS, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
-    ARR, styleAt, inBreath, breaths, moodAt, MOODS,
+    ARR, styleAt, inBreath, breaths, moodAt: moodAtDay, MOODS,
   };
   if (node) module.exports = SCORE; else globalThis.SCORE = SCORE;
 })();
