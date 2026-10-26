@@ -1,7 +1,7 @@
 // THE MUSIC LIBRARY — the cues of the two market phases (phases: data/phases.csv, from detect-phases.js).
 //
 //   uptrend     ALL-TIME LOW -> ALL-TIME HIGH      cues: Vanguard, Titan, Crusade, Overdrive, Horizon, Warpath (approved)
-//   downtrend   ALL-TIME HIGH -> ALL-TIME LOW      cues: Collapse, Siege, Undertow (approved 2026-10-26)
+//   downtrend   ALL-TIME HIGH -> ALL-TIME LOW      cues: Siege, Undertow, Collapse, Tremor, Shadow, Vertigo, Standoff (approved)
 // A cue with `rotation: false` is in audition: it can be heard (PREVIEW_CUE=<id> PREVIEW_BARS=16 node song.js) but the
 // film does not use it until it is approved.
 //
@@ -331,11 +331,11 @@
     // ---------------- downtrend, suspense: unbearable tension, a moderate beat, 80 BPM, NOT dramatic ----------------
     // The opposite of the uptrend cues: slower, held back, dark and unresolved, no fanfare, no crashes, no swells, a soft
     // pickup (a dark swell + heartbeat instead of a drum roll).
-    // ---------------- downtrend, audition (2026-10-26): four more in Siege's spirit (80 BPM, suspense, not dramatic) -----
+    // ---------------- downtrend, approved 2026-10-26: four more in Siege's spirit (80 BPM, suspense, not dramatic) -----
     {
       // TREMOR: the ground shaking. A low pizzicato repeating on the root like a tremor, a pendulum tick-tock over the
       // heartbeat, staccato bass 8ths, a low cello holding long notes; Dm-Dm(b9)-Bb(#11)-A
-      id: 'down-tremor', phase: 'downtrend', title: 'Tremor', bpm: 80, key: 'D minor', rotation: false,
+      id: 'down-tremor', phase: 'downtrend', title: 'Tremor', bpm: 80, key: 'D minor', approved: '2026-10-26',
       chords: ['Dm', 'Dm(b9)', 'Bb(#11)', 'A'],
       drums: 'pendulum', bass: 'pulse8',
       ostinato: { instrument: 'pizz', perBeat: 4, octave: 3, gain: 0.14, figure: [1, 1, 1, 2] },
@@ -347,7 +347,7 @@
     {
       // SHADOW: something behind you. A pulsing spiccato that keeps falling back a step (8-8-7-8), closed hats ticking
       // over the heartbeat, a sparse electric piano line, Dm-Gm(add9)-Dm-Eb (the Eb a step above D, unresolved)
-      id: 'down-shadow', phase: 'downtrend', title: 'Shadow', bpm: 80, key: 'D minor', rotation: false,
+      id: 'down-shadow', phase: 'downtrend', title: 'Shadow', bpm: 80, key: 'D minor', approved: '2026-10-26',
       chords: ['Dm', 'Gm(add9)', 'Dm', 'Eb'],
       drums: 'fallPulse', bass: 'pulse8',
       ostinato: { instrument: 'spiccato', perBeat: 4, figure: [8, 8, 7, 8] },
@@ -359,7 +359,7 @@
     {
       // VERTIGO: losing footing. A syncopated pizzicato rocking a step up and back (3-3-3-3-2-2), rim clicks sweeping
       // over the heartbeat, staccato bass, high violins sliding down D-C-Bb-A one bar each; Dm-Dm-Bb-Bb
-      id: 'down-vertigo', phase: 'downtrend', title: 'Vertigo', bpm: 80, key: 'D minor', rotation: false,
+      id: 'down-vertigo', phase: 'downtrend', title: 'Vertigo', bpm: 80, key: 'D minor', approved: '2026-10-26',
       chords: ['Dm', 'Dm', 'Bb', 'Bb'],
       drums: 'sonarPulse', bass: 'pulse8',
       ostinato: { instrument: 'pizz', perBeat: 4, figure: [1, 2, 1, 3], mask: [1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0] },
@@ -371,7 +371,7 @@
     {
       // STANDOFF: two sides waiting. The wood-tick clock over the heartbeat, a soft marimba in 8ths, staccato bass, a
       // low muted horn holding long notes; Dm-Bb-Dm-C, nothing moves, nothing resolves
-      id: 'down-standoff', phase: 'downtrend', title: 'Standoff', bpm: 80, key: 'D minor', rotation: false,
+      id: 'down-standoff', phase: 'downtrend', title: 'Standoff', bpm: 80, key: 'D minor', approved: '2026-10-26',
       chords: ['Dm', 'Bb', 'Dm', 'C'],
       drums: 'clockLight', bass: 'pulse8',
       ostinato: { instrument: 'marimba', perBeat: 2, gain: 0.06, figure: [1, 5, 1, 8] },

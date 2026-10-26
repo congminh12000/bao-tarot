@@ -102,7 +102,11 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
     kèn đồng). Bốn bài sau là bản đầu tiên ("v1") của chúng.
   - **Downtrend — 80 BPM, hồi hộp căng thẳng, beat vừa phải, KHÔNG kịch tính:** **Siege** (đồng hồ tích tắc + nhịp tim, bass
     ngắt móc đơn, spiccato rung, violin giữ nốt dài) · **Undertow** (Rê phrygian, spiccato láy D–Eb, rim kiểu sonar, cello
-    trầm — không dùng chuông vì quá chói) · **Collapse** (hi-hat tích tắc, spiccato chạy xuống, e-piano bước xuống).
+    trầm — không dùng chuông vì quá chói) · **Collapse** (hi-hat tích tắc, spiccato chạy xuống, e-piano bước xuống)
+    · **Tremor** (con lắc tích–tắc, pizzicato trầm lặp, cello) · **Shadow** (spiccato lùi bậc 8-8-7-8, e-piano thưa)
+    · **Vertigo** (pizzicato nghịch phách, rim sonar, violin trượt xuống) · **Standoff** (đồng hồ gỗ, marimba, horn trầm).
+  - Thứ tự luân phiên = thứ tự bài trong `data/music.js` (theo từng loại). Hiện 13 phase: Vanguard, Tremor, Titan, Shadow,
+    Crusade, Vertigo, Overdrive, Standoff, Horizon, Undertow, Warpath, Siege, Vanguard (Collapse chưa tới lượt).
   - Uptrend và downtrend phải **khác hẳn nhau** (tempo, trống, hòa âm). Downtrend: lấy đà êm (swell tối + nhịp tim), không
     crash, không swell, không fanfare.
   - Mỗi bài mở bằng **~1 s lấy đà** (`pickup: 2` phách) rồi vào nhạc chính ngay (không xây dần nhiều ô nhịp).
@@ -215,11 +219,11 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
-- Đã duyệt (26/10/2026): preview và bản cuối luôn 60 fps; bỏ tiêu đề, fade-in 1 s; 9 bài nhạc (uptrend: Vanguard, Titan,
-  Crusade, Overdrive, Horizon, Warpath / downtrend: Siege, Undertow, Collapse); nhạc không
+- Đã duyệt (26/10/2026): preview và bản cuối luôn 60 fps; bỏ tiêu đề, fade-in 1 s; 13 bài nhạc (uptrend: Vanguard, Titan,
+  Crusade, Overdrive, Horizon, Warpath / downtrend: Siege, Undertow, Collapse, Tremor, Shadow, Vertigo, Standoff); nhạc không
   giảm tốc ở ATH / ATL (đồ thị vẫn như cũ); nhạc không giảm âm lượng dưới SFX. Preview đã xem: 2010–2015 (480p, 30 fps).
 - Đang thử nghe, chưa duyệt (`rotation: false` trong `data/music.js`): uptrend — Ironclad, Legion, Spartan, Valhalla,
-  Conquest, Last Stand, Blood Oath, War Cry, Dominion, Eclipse, Ascendant; downtrend — Tremor, Shadow, Vertigo, Standoff.
+  Conquest, Last Stand, Blood Oath, War Cry, Dominion, Eclipse, Ascendant.
 - Kiểm tra gần nhất: `verify` ✓ (2010–2015); `check-labels` ✓ cả phim.
 - Đã biết, chấp nhận: ở đoạn FROM/TO ngắn, khung zoom-out lùi ra ít và ô tổng kết có thể che nhãn ATL / nến ở góc
   dưới phải (phim đầy đủ không bị).
