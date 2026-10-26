@@ -544,20 +544,14 @@
     ctx.restore();
   }
 
-  // the opening: the title is up from the first frame over the running pre-run chart, blurred and dimmed; the title and
-  // the blur are gone after 1.5 s, and right after that the music comes in (S.TB(FIRST_BEAT)) and the film really starts
-  const TITLE_OUT = 1.5; // the title is on for 1.5 s (gone by then); the music comes in just after (S.FIRST_BEAT)
+  // the opening: no title. The picture fades in from black over FADE_IN s (after the post pass, so bloom and grain
+  // fade in too) while the chart is already running (the pre-run fills the screen) and the music starts on frame 0
+  const FADE_IN = 1.0;
   const sstep = (x) => { x = clamp(x); return x * x * (3 - 2 * x); };
-  const titleAlpha = (t) => 1 - sstep((t - (TITLE_OUT - 0.4)) / 0.4);
-  const blurAmount = (t) => 1 - sstep((t - (TITLE_OUT - 0.5)) / 0.6);
-  function blurBehind(ctx, k) {
-    const cv = ctx.canvas, b = G.scratch('title-blur', cv.width, cv.height), bx = b.getContext('2d');
-    bx.setTransform(1, 0, 0, 1, 0, 0); bx.clearRect(0, 0, cv.width, cv.height);
-    bx.filter = `blur(${(14 * k * cv.width / W).toFixed(2)}px)`; bx.drawImage(cv, 0, 0); bx.filter = 'none';
-    ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.drawImage(b, 0, 0); ctx.fillStyle = `rgba(2,6,14,${0.45 * k})`; ctx.fillRect(0, 0, cv.width, cv.height);
-    ctx.restore();
-  }
+  Studio.afterFrame = (ctx, t) => {
+    const f = 1 - sstep(t / FADE_IN);
+    if (f > 0) { ctx.save(); ctx.globalAlpha = 1; ctx.fillStyle = `rgba(5,5,8,${f})`; ctx.fillRect(0, 0, W, H); ctx.restore(); }
+  };
 
   // the closing card, kept lean: the years on top, first price → last price (counting up) and the gain chip on one row, on a small bright
   // glass HUD panel (tinted top, double neon border, corner brackets, fine inner grid); a light sweep crosses it once
@@ -623,17 +617,6 @@
     ctx.restore();
     txt(ctx, gain, chx + cw / 2, chy + 27, { size: cs, w: 800, fam: L.mono, color: up ? '#D9FFEC' : '#FFE0E6', align: 'center', alpha: clamp((age - 0.9) / 0.4) });
     ctx.restore();
-  }
-
-  function titles(ctx, t) {
-    const a = titleAlpha(t);
-    if (a > 0) {
-      ctx.save(); ctx.globalAlpha = a;
-      txt(ctx, 'BITCOIN', W / 2, H / 2 - 10, { size: 150, w: 400, fam: L.title, color: L.accent, align: 'center', glow: 12, spacing: 12 });
-      txt(ctx, `${Y_START}  →  ${Y_END}`, W / 2, H / 2 + 80, { size: 56, w: 700, fam: L.mono, color: L.text, align: 'center', glow: 5, spacing: 6 });
-      ctx.restore();
-    }
-    summaryCard(ctx, t);
   }
 
   // a hit-2 moment: two glowing rings race out from the candle, a light burst at its centre
@@ -711,9 +694,7 @@
         g.addColorStop(0, rgba(fcol, 0.18 * flash)); g.addColorStop(1, rgba(fcol, 0.6 * flash));
         ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
       }
-      const blur = blurAmount(t);
-      if (blur > 0.01) blurBehind(ctx, blur);
-      titles(ctx, t);
+      summaryCard(ctx, t);
       dust(ctx, t);
       scanlines(ctx, t);
     },

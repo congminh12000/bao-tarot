@@ -41,7 +41,7 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 | Góc phải trên | Chỉ **giá đang chạy**, mép phải thẳng hàng mép phải chart. **Không có %**. Chưa có dữ liệu giá → không hiện giá |
 | Bên phải chart | Không có bubble giá; chỉ có **đường chấm chấm** từ nến đang chạy tới trục giá |
 | Trục X / Y | 2 đường trục (đáy chart, trục giá) **luôn vẽ trên cùng**: không nhãn, sóng xung kích hay hiệu ứng nào đè lên |
-| Mở đầu | **Pre-run**: nến của 180 ngày trước đoạn phim đã chạy sẵn (cùng tốc độ phase đầu; ngày chưa có dữ liệu thì lưới/ngày vẫn chạy nhưng không có nến, không giá). Chữ "BITCOIN" + `năm đầu → năm cuối` (glow nhẹ: 12 / 5) **hiện ngay khung đầu** trên nền mờ + tối, giữ 1,1 s, tắt hẳn ở **1,5 s**. **Không có nhạc** trong lúc tiêu đề; nhạc vào ở phách kế tiếp (~1,8 s) bằng timpani + crash |
+| Mở đầu | **Không có tiêu đề.** Hình **fade-in từ đen trong 1 s** (sau bloom/grain, `FADE_IN` trong `film.js`), nhạc bắt đầu ngay khung đầu và cũng fade-in 1 s (`FADE_IN` trong `song.js`). Nến chạy ngay từ khung đầu ở tốc độ phase đầu; 180 ngày **pre-run** lấp đầy màn hình phía sau (ngày chưa có dữ liệu: không nến, không giá) |
 | Kết thúc | Camera lùi ra toàn cảnh. Giữ lại nhãn **mức 2** (kể cả ATH/ATL) và **halving**, thu nhỏ quanh cây nến của chúng (giữ hình dạng lúc xuất hiện); nhãn mức 1 mờ đi. Trục giá: mốc thưa nhất (1, 1-3, 1-2-5…) mà vẫn ≥ 6 mốc. **Ô tổng kết** tinh gọn kiểu glow tech (kính sáng, viền neon đôi, góc trắng, vệt sáng quét 1 lần): hàng trên = năm (30px, sát phải); hàng dưới = giá đầu → giá cuối (chạy số) + chip % cùng hàng; tự giãn theo độ dài số, góc dưới phải chart |
 | Ngôn ngữ trong video | Tiếng Anh |
 
@@ -94,22 +94,30 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 - **Mỗi phase trong `data/phases.csv` = đúng 1 bản nhạc từ đầu tới cuối phase**; chỉ đổi bài ở ranh giới phase,
   không bao giờ đổi trong 1 phase. Bản nhạc được chọn trên **toàn bộ** danh sách phase (preview FROM/TO cũng phát
   đúng bài như phim đầy đủ).
-- Nhạc (`data/music.js`), giọng quanh Rê thứ, thay phiên các bản cùng loại:
-  - Uptrend: **Ascent 100 BPM**, **Euphoria 104 BPM**. Downtrend: **Freefall 98 BPM**, **Pressure 96 BPM**.
-- **Chuyển giao ở ATH / ATL** (`TURN` trong `data/music.js`):
-  - Nhạc và nến **giữ nguyên tốc độ** cho tới đúng khoảnh khắc **nhãn ATH / ATL hiện ra** (không chậm trước, không có khoảng lặng trước).
-  - Lúc đó **phanh** (0.5 phách) xuống **60 BPM**, **giữ chậm 3 giây**, rồi **tăng tốc mượt (smoothstep) trong ~3 giây** về tempo bản nhạc mới.
-- **Sự kiện mức 2 nằm giữa phase không đổi bài**: nhạc nền (mọi bus trừ SFX) **giảm ~7,5 dB** từ lúc riser chạy
-  (1,6 s trước khoảnh khắc) tới hết flash/rung (1,6 s sau), rồi lên lại trong 1 s (`DUCK` trong `song.js`; đo ở
-  COVID crash: pizz −16 → −23,6 dB, pad −29 → −36,5 dB, trống −16 → −23 dB). SFX mức 2 nằm ở bus riêng
-  (`hDrums`, `hPerc`, `hLead`, `hFx`) với mức cũ nên không bị giảm theo.
-- Nghe thử 1 bản: `PREVIEW_CUE=up-ascent node song.js` → `out/music.wav`.
+- Nhạc (`data/music.js`), giọng quanh Rê thứ, các bài cùng loại thay phiên nhau (chọn trên toàn bộ danh sách phase).
+  **Bài đã duyệt (26/10/2026)**, bản nghe lưu ở `out/approved/` (máy người dùng):
+  - **Uptrend — 100 BPM, cinematic hào hùng:** **Vanguard** (hành quân: cello móc đơn có nhấn, tom trailer, horn 4 ô nhịp,
+    hợp xướng từ ô 5, violin đánh đôi từ ô 9) · **Titan** (xung trận: snare quân hành, bass móc đơn, spiccato, kèn fanfare).
+  - **Downtrend — 80 BPM, hồi hộp căng thẳng, beat vừa phải, KHÔNG kịch tính:** **Siege** (đồng hồ tích tắc + nhịp tim, bass
+    ngắt móc đơn, spiccato rung, violin giữ nốt dài) · **Undertow** (Rê phrygian, spiccato láy D–Eb, rim kiểu sonar, cello
+    trầm — không dùng chuông vì quá chói) · **Collapse** (hi-hat tích tắc, spiccato chạy xuống, e-piano bước xuống).
+  - Uptrend và downtrend phải **khác hẳn nhau** (tempo, trống, hòa âm). Downtrend: lấy đà êm (swell tối + nhịp tim), không
+    crash, không swell, không fanfare.
+  - Mỗi bài mở bằng **~1 s lấy đà** (`pickup: 2` phách) rồi vào nhạc chính ngay (không xây dần nhiều ô nhịp).
+  - Bài đang thử nghe: `rotation: false` (phim không dùng). Nghe: `PREVIEW_CUE=<id> PREVIEW_BARS=16 node song.js`.
+- **Chuyển giao ở ATH / ATL**: **nhạc KHÔNG giảm tốc** — mỗi phase phát bài của nó đúng tempo của bài (đồng hồ nhạc riêng
+  trong `song.js`), tới đúng lúc nhãn ATH / ATL hiện ra thì đổi bài ngay, bài mới tự lấy đà ~1 s. **Đường giá vẫn giữ tốc độ
+  như cũ**: đồ thị dùng bản đồ tempo của `score.js` (`TURN` trong `data/music.js`: phanh 0.5 phách xuống 60, giữ 3 s, tăng
+  tốc mượt ~3 s) nên nến vẫn chậm lại rồi tăng tốc ở mỗi ATH / ATL; nhạc không chạy theo nhịp đó.
+- **Sự kiện mức 2 không đổi bài và KHÔNG giảm âm lượng nhạc**: SFX chơi chồng lên nhạc (bus riêng `hDrums`, `hPerc`,
+  `hLead`, `hFx`). Còn giữ khoảng lặng 1/16 phách ngay trước mỗi hit.
 - Âm lượng (không có voice-over): master **−16 LUFS** (mặc định của `song.js`), true peak ≤ −1 dBTP; SFX mức 2 nổi hơn
   nhạc nền ~6 dB (đo: 4,8–8,6 dB, trung vị 6,0). Đo lại sau mỗi lần đổi mix.
 
 ## 5. Tốc độ nến (đã duyệt)
 
-- **Nến chạy theo nhạc**: trong một giai đoạn, mỗi phách nhạc hiển thị một số ngày cố định.
+- **Nến chạy theo tempo của bài** (bản đồ tempo trong `score.js`): trong một giai đoạn, mỗi phách hiển thị một số ngày cố định
+  (downtrend 80 BPM nên chạy chậm hơn uptrend 100 BPM). Nhạc có đồng hồ riêng, không phanh ở ATH / ATL (§4).
   - Ngày/phách = (ngày/ô nhịp theo thời kỳ × `SPEED`) ÷ 4. Thời kỳ: ≤2012 = 130, 2013–2019 = 85, ≥2020 = 70 ngày/ô nhịp.
   - **`SPEED = 0.35`** (đã chọn). Ví dụ 2017 ở 100 BPM ≈ 12 ngày/giây.
   - Tốc độ (ngày/giây) = ngày/phách × BPM ÷ 60. Nến nhích nhẹ theo từng phách (`PULSE = 0.3`).
@@ -191,10 +199,10 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 | Nhịp nhích theo phách | `PULSE` trong `score.js` |
 | Zoom | `PPD` trong `film.js` |
 | Tempo bản nhạc | `bpm` từng cue trong `data/music.js` |
-| Chậm ở ATH / ATL | `TURN` trong `data/music.js` (`slowBpm`, `holdSec`, `rampSec`, `brakeBeats`) |
+| Đồ thị chậm ở ATH / ATL | `TURN` trong `data/music.js` (`slowBpm`, `holdSec`, `rampSec`, `brakeBeats`) — chỉ đồ thị, nhạc không phanh |
 | Độ nhạy ATH/ATL | `REVERSAL`, `MIN_DAYS`, `SEAT` trong `detect-phases.js` |
-| Nhạc giảm khi có mức 2 | `DUCK` trong `song.js` (`depth`, `pre`, `post`, `attack`, `release`) |
-| Thời gian tiêu đề / pre-run | `TITLE_OUT` trong `film.js`, `FIRST_BEAT` trong `score.js`, `PRE` khi chạy `make-data.js` |
+| Fade-in đầu phim / pre-run | `FADE_IN` trong `film.js` và `song.js`, `PRE` khi chạy `make-data.js` |
+| Lấy đà đầu mỗi bài | `pickup` (phách) và `softPickup` từng cue trong `data/music.js` |
 | Màu halving | `GOLD` trong `film.js` |
 | Sự kiện | `data/events.csv` |
 | Cỡ chữ nhãn | `sizeOf` trong `film.js` (mức 1 = 22, mức 2 = 34) |
@@ -203,13 +211,15 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 | Âm lượng tổng | `LUFS=-14 node song.js` để đổi (mặc định −16) |
 | Mix từng nhóm | `GAIN` trong `song.js` |
 
-## 10. Trạng thái hiện tại (25/10/2026)
+## 10. Trạng thái hiện tại (26/10/2026)
 
-- Đã duyệt (25/10/2026): pre-run + tiêu đề 1,5 s; trục X/Y trên cùng; ngày dưới nhãn mức 2; phase chỉ đổi ở ATH/ATL
-  (13 phase); nhạc giảm âm lượng dưới mức 2 giữa phase; halving màu vàng (cột `tag`); zoom-out giữ mức 2 + halving;
-  ô tổng kết tinh gọn. Preview đã xem: 2019–2022 (nháp) và 03–08/2021 (1080p @30 và @60 fps).
-- Kiểm tra gần nhất: `verify` ✓ (2019–2022, 03–08/2021, cả phim bản nháp); `check-labels` ✓ cả phim.
+- Đã duyệt (26/10/2026): bỏ tiêu đề, fade-in 1 s; 5 bài nhạc mới (Vanguard, Titan / Siege, Undertow, Collapse); nhạc không
+  giảm tốc ở ATH / ATL (đồ thị vẫn như cũ); nhạc không giảm âm lượng dưới SFX. Preview đã xem: 2010–2015 (480p, 30 fps).
+- Đang thử nghe, chưa duyệt (`rotation: false` trong `data/music.js`): 14 bài uptrend — Crusade, Ironclad, Horizon,
+  Warpath, Legion, Spartan, Valhalla, Conquest, Last Stand, Blood Oath, War Cry, Dominion, Eclipse, Ascendant.
+- Kiểm tra gần nhất: `verify` ✓ (2010–2015); `check-labels` ✓ cả phim.
 - Đã biết, chấp nhận: ở đoạn FROM/TO ngắn, khung zoom-out lùi ra ít và ô tổng kết có thể che nhãn ATL / nến ở góc
   dưới phải (phim đầy đủ không bị).
-- Chưa nghe thử phần nhạc giảm âm lượng (mới có số đo). **Chưa render bản cuối 1080p.**
-- Bản đầy đủ 2010–2026 dài ~8 phút 44 giây (524 giây).
+- Bản final 1080p 30 fps đã render 26/10/2026 nhưng là **nhạc cũ** — cần render lại với nhạc mới. True peak sau khi
+  nén AAC là −0,6 dBTP (spec ≤ −1).
+- Bản đầy đủ 2010–2026 dài ~9 phút 18 giây (558 giây, downtrend 80 BPM).

@@ -1,8 +1,8 @@
-// THE SCORE — the single source of truth for music AND picture, built from the data (btc-data.js).
-// - The market is cut into phases (data/phases.csv): uptrends and downtrends. Each plays a cue from data/music.js at
-//   that cue's tempo; at every top and bottom the music slows down for ~3 s, then picks up again.
-// - The chart rides the music: inside a phase a bar always shows the same number of days, so the candles run as fast
-//   as the tempo; on every beat they surge a little.
+// THE SCORE — the single source of truth for the timing of the picture (and where the music changes), from btc-data.js.
+// - The market is cut into phases (data/phases.csv): uptrends and downtrends, each with a cue from data/music.js.
+// - The chart rides a tempo map: inside a phase a bar always shows the same number of days at the cue's tempo; at every
+//   ALL-TIME HIGH / LOW the CHART slows down for ~3 s, then picks up again. (The music itself keeps its cue's steady
+//   tempo and only changes cue at the turn: song.js plays each phase on its own clock from TB(phase start).)
 // - Every event with hit ≥ 1 in data/events.csv is a hit in the music and a flash on screen, on the same frame.
 // Add data, phases or events, run `node make-data.js`, and the whole film re-times itself.
 (function () {
@@ -60,7 +60,7 @@
   PH[0].d0 = P0; PH[PH.length - 1].d1 = NDAYS - 1;
   for (let i = 1; i < PH.length; i++) PH[i].d0 = PH[i - 1].d1 + 1; // back to back, no holes
   const cueOf = (id) => LIB.CUES.find((c) => c.id === id) || LIB.pickCue('sideway', 0);
-  const FIRST_BEAT = 3, FIRST_BAR = FIRST_BEAT / 4; // beats 0-2: the 1.5 s title over the pre-run, no music yet
+  const FIRST_BEAT = 0, FIRST_BAR = 0; // no title: the music and the run start on frame 0 (the picture fades in, film.js)
   let q = FIRST_BEAT;
   for (const p of PH) {
     p.c = cueOf(p.cue);
@@ -96,9 +96,9 @@
   // knots (beat, day): only the phase starts — inside a phase the chart runs at one steady pace right up to the
   // turn (events are NOT pinned to beats: pinning bent the pace and the chart seemed to brake before a top)
   const KN = PH.map((p) => [p.q0, p.d0]);
-  // the pre-run: under the title the chart is already running, at the first phase's pace, up to day P0 on FIRST_BEAT;
-  // days before the data (negative days) still scroll by, just without candles or a price
-  KN.unshift([0, P0 - (FIRST_BEAT * (PH[0].d1 - PH[0].d0 + 1)) / PH[0].beats]);
+  // the pre-run days (before P0) fill the screen behind the first candle; with intro beats (FIRST_BEAT > 0) the chart
+  // would also run through them, at the first phase's pace (days before the data scroll by without candles or a price)
+  if (FIRST_BEAT > 0) KN.unshift([0, P0 - (FIRST_BEAT * (PH[0].d1 - PH[0].d0 + 1)) / PH[0].beats]);
   KN.push([END_BEAT, NDAYS]);
   const KQ = KN.map((k) => k[0]), KD = KN.map((k) => k[1]);
   function dayOfBeat(x) {
@@ -123,10 +123,10 @@
     const p = PH[i];
     BEATS.push({ type: x < FIRST_BEAT ? 'intro' : x >= END_BEAT ? 'outro' : p.type, cue: p.c, k: x - p.q0, p: i });
   }
-  // the tempo map: each phase plays at its cue's tempo right up to the moment its top / bottom label appears; there
-  // the music brakes (TURN.brakeBeats) to TURN.slowBpm, holds it for TURN.holdSec seconds, then speeds back up to the
-  // next phase's tempo along a smooth S-curve (smoothstep, a point every half beat) taking about TURN.rampSec seconds.
-  // The candles follow the music, so the chart brakes, hangs, and gathers speed with it. The film ends the same way.
+  // the chart's tempo map: each phase runs at its cue's tempo right up to the moment its ALL-TIME HIGH / LOW label
+  // appears; there the chart brakes (TURN.brakeBeats) to TURN.slowBpm, holds it for TURN.holdSec seconds, then speeds
+  // back up to the next phase's tempo along a smooth S-curve (smoothstep, a point every half beat) in about TURN.rampSec
+  // seconds. The film ends the same way. (The music does not follow this map: song.js keeps each cue's own tempo.)
   const TURN = LIB.TURN, HOLD = (TURN.holdSec * TURN.slowBpm) / 60; // beats held slow
   const tempo = [[0, PH[0].c.bpm], [FIRST_BEAT / 4, PH[0].c.bpm]];
   const turnAt = (E, from, to, hi) => { // E = the beat the turn's label appears
@@ -208,23 +208,25 @@
     Dm: { notes: ['D4', 'F4', 'A4'], bass: 'D2' }, 'Dm/C': { notes: ['D4', 'F4', 'A4'], bass: 'C2' }, Dm7: { notes: ['C4', 'F4', 'A4'], bass: 'D2' },
     D: { notes: ['D4', 'F#4', 'A4'], bass: 'D2' }, Bb: { notes: ['D4', 'F4', 'Bb4'], bass: 'Bb1' }, F: { notes: ['C4', 'F4', 'A4'], bass: 'F2' },
     C: { notes: ['C4', 'E4', 'G4'], bass: 'C2' }, Gm: { notes: ['D4', 'G4', 'Bb4'], bass: 'G1' }, G: { notes: ['D4', 'G4', 'B4'], bass: 'G1' },
-    A: { notes: ['C#4', 'E4', 'A4'], bass: 'A1' }, Asus4: { notes: ['D4', 'E4', 'A4'], bass: 'A1' }, Am: { notes: ['C4', 'E4', 'A4'], bass: 'A1' },
+    A: { notes: ['C#4', 'E4', 'A4'], bass: 'A1' }, Asus4: { notes: ['D4', 'E4', 'A4'], bass: 'A1' }, Csus4: { notes: ['C4', 'F4', 'G4'], bass: 'C2' }, Dsus4: { notes: ['D4', 'G4', 'A4'], bass: 'D2' },
+    // tension clusters (suspense cues): a semitone rubbing inside the chord
+    'Dm(b9)': { notes: ['D4', 'Eb4', 'A4'], bass: 'D2' }, 'Gm(add9)': { notes: ['A3', 'Bb3', 'D4'], bass: 'G1' }, 'Bb(#11)': { notes: ['D4', 'E4', 'F4'], bass: 'Bb1' }, Am: { notes: ['C4', 'E4', 'A4'], bass: 'A1' },
     Am7: { notes: ['C4', 'E4', 'G4'], bass: 'A1' }, E: { notes: ['B3', 'E4', 'G#4'], bass: 'E2' }, Eb: { notes: ['Eb4', 'G4', 'Bb4'], bass: 'Eb2' },
     Cm: { notes: ['C4', 'Eb4', 'G4'], bass: 'C2' }, Bm: { notes: ['D4', 'F#4', 'B4'], bass: 'B1' },
   };
   // the chord of beat x: the cue's loop, one chord per bar of the phase
-  const chordNameAt = (x) => { const bi = BEATS[U.clamp(x, 0, BEATS.length - 1)]; return bi.type === 'outro' ? PH[PH.length - 1].c.chords[0] : bi.cue.chords[Math.floor(Math.max(0, bi.k) / 4) % bi.cue.chords.length]; };
+  const chordNameAt = (x) => { const bi = BEATS[U.clamp(x, 0, BEATS.length - 1)]; return bi.type === 'outro' ? PH[PH.length - 1].c.chords[0] : bi.cue.chords[Math.floor(Math.max(0, bi.k) / 4 / (bi.cue.barsPerChord || 1)) % bi.cue.chords.length]; };
   const prog = BEATS.map((_, x) => [Math.floor(x / 4), x % 4, 1, chordNameAt(x)]);
   const { chords, chordAt } = makeChords(clock, CH, prog);
 
-  const ev = { start: TB(FIRST_BEAT - 0.5), end: TB(END_BEAT) };
+  const ev = { start: TB(Math.max(0, FIRST_BEAT - 0.5)), end: TB(END_BEAT) };
   const markers = { start: ev.start, end: { t: ev.end, sync: 'av' } };
   hits.forEach((h, i) => { markers['hit' + (i + 1)] = { t: h.t, sync: 'av' }; });
   PH.forEach((p, i) => { markers[`phase${i + 1}-${p.type}`] = TB(p.q0); });
 
   const SCORE = {
     FPS, FORMAT, W, H, SAFE, WIDE, DURATION, clock, T, BEAT, S, m, chords, chordAt, ev, markers,
-    DAYS, NDAYS, P0, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
+    CH, DAYS, NDAYS, P0, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
     inBreath, breaths, moodAt, MOODS, PHASES: PH, BEATS, FIRST_BEAT, END_BEAT, FIRST_BAR, END_BAR, TB, LIB,
   };
   if (node) module.exports = SCORE; else globalThis.SCORE = SCORE;
