@@ -5,7 +5,8 @@ Approved by the user on 2026-10-27. Rules for the text below:
 - The **description** has no years, no Bitcoin prices and nothing that changes over time (no "today", no current price,
   no "X years", no gain since the start).
 - **Chapters**: every ALL-TIME HIGH, every ALL-TIME LOW, every hit-2 event and every halving — no "today" — each
-  starting **3 s before** its moment in the video. Moments closer than 10 s share one chapter (YouTube needs ≥ 10 s per
+  starting **3 s before** its moment in the video. All-time high / low are written **ATH / ATL**, followed by what
+  sets that one apart from the others (no prices, no years), e.g. "ATH: the ICO boom", "ATL: after FTX". Moments closer than 10 s share one chapter (YouTube needs ≥ 10 s per
   chapter and a first chapter at 0:00). Generate them with `node youtube-chapters.js` on the FULL data, from the same
   code + data as the uploaded render (the times move whenever the film's timing changes); names are in that script.
 
@@ -38,26 +39,29 @@ Events: 99Bitcoins "Bitcoin Historical Events", edited; all-time highs and lows 
 
 ## Chapters (current timeline, film of 9:18)
 
+Checked 2026-10-27 against the kept full render (`out/renders/full/`, same timeline): at each chapter time the label is
+not on screen yet, and it is on screen within 1 s after its moment (3 s later).
+
 ```
 0:00 The first trades
-0:14 All-time high: the first bubble bursts
-0:26 All-time low
-0:47 First halving · New all-time high
-1:07 All-time high
+0:14 ATH: the first bubble
+0:26 ATL: the first bubble bursts
+0:47 First halving · ATH: the Cyprus crisis rally
+1:07 ATH: the first great mania
 1:17 Mt. Gox collapses
-1:49 All-time low
+1:49 ATL: after Mt. Gox
 2:35 Second halving
-3:18 All-time high
-3:56 All-time low
+3:18 ATH: the ICO boom
+3:56 ATL: the crypto winter
 4:42 COVID crash · Third halving
 5:09 Bitcoin breaks its previous peak
-5:21 All-time high & Coinbase listing · China crypto ban
-5:34 All-time low
-5:47 All-time high
+5:21 ATH: Coinbase goes public · China crypto ban
+5:34 ATL: after the China ban
+5:47 ATH: the second peak of the cycle
 6:10 LUNA collapse
-6:33 FTX bankruptcy · All-time low
-7:17 Spot ETFs approved · New all-time high · Fourth halving
-7:49 Bitcoin crosses six figures · New all-time high
-8:19 All-time high
-8:53 All-time low
+6:33 FTX bankruptcy · ATL: after FTX
+7:17 Spot ETFs approved · ATH: the ETF rally · Fourth halving
+7:49 Bitcoin crosses six figures · ATH: inauguration day
+8:19 ATH: the cycle top
+8:53 ATL: the cycle bottom
 ```
