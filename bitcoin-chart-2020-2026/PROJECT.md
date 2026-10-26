@@ -62,7 +62,7 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 | Zoom | `PPD = 16.06` px/ngày (đã zoom 2 lần ×1.3 so với 9.5) |
 | Nền giữa | Logo Bitcoin **âm bản** (`assets/bitcoin-logo-negative.png`, đảo màu từ logo cam), mờ (alpha 0.1), lắc nhẹ, vòng quét cyan |
 | Góc trái trên | Chỉ `BTC / USD` + ngày dạng `Mar 12, 2020` (chữ ngày nhỏ hơn) |
-| Góc phải trên | Chỉ **giá đang chạy**, mép phải thẳng hàng mép phải chart. **Không có %**. Chưa có dữ liệu giá → không hiện giá |
+| Góc phải trên | **Giá đang chạy**, mép phải thẳng hàng mép phải chart; nhãn **▲ UPTREND / ▼ DOWNTREND** ngay bên phải giá, xanh/đỏ theo phase, vị trí cố định. `PHASE_BADGE = 'price'` trong `look.js`, độc lập với overlay (`date` = cạnh ngày, `none` = tắt). **Không có %**. Chưa có dữ liệu giá → không hiện giá hay nhãn phase |
 | Bên phải chart | Không có bubble giá; chỉ có **đường chấm chấm** từ nến đang chạy tới trục giá |
 | Trục X / Y | 2 đường trục (đáy chart, trục giá) **luôn vẽ trên cùng**: không nhãn, sóng xung kích hay hiệu ứng nào đè lên |
 | Mở đầu | **Không có tiêu đề.** Hình **fade-in từ đen trong 1 s** (sau bloom/grain, `FADE_IN` trong `film.js`), nhạc bắt đầu ngay khung đầu và cũng fade-in 1 s (`FADE_IN` trong `song.js`). Nến chạy ngay từ khung đầu ở tốc độ phase đầu; 180 ngày **pre-run** lấp đầy màn hình phía sau (ngày chưa có dữ liệu: không nến, không giá) |
@@ -249,6 +249,7 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 | Fade-in đầu phim / pre-run | `FADE_IN` trong `film.js` và `song.js`, `PRE` khi chạy `make-data.js` |
 | Lấy đà đầu mỗi bài | `pickup` (phách) và `softPickup` từng cue trong `data/music.js` |
 | Màu halving | `GOLD` trong `film.js` |
+| Nhãn uptrend/downtrend cạnh giá | `PHASE_BADGE` trong `look.js` (`price` / `date` / `none`), độc lập với `PHASE_OVERLAY` |
 | Sự kiện | `data/events.csv` |
 | Cỡ chữ nhãn | `sizeOf` trong `film.js` (mức 1 = 22, mức 2 = 34) |
 | Hiệu ứng hình mức 2 | `draw()` (flash, shake, punch) và `shockwave()` trong `film.js` |
@@ -258,6 +259,7 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- Đã tách nhãn phase khỏi overlay và bật lại nhãn cạnh giá theo yêu cầu; preview 01/12/2017–31/01/2018 (60 fps, 480p) có cả UPTREND và DOWNTREND, `verify` ✓; `check-labels` ✓ cả phim. Chờ người dùng duyệt preview.
 - Đã duyệt (26/10/2026): không dùng overlay uptrend/downtrend; ô tổng kết ghi số năm nguyên ("2 YEARS"); ô tổng kết mới (khung mức 2 + mức 1, logo, số năm, % giá); preview và bản cuối luôn 60 fps; bỏ tiêu đề, fade-in 1 s; 17 bài nhạc (uptrend: Vanguard, Titan,
   Crusade, Overdrive, Horizon, Warpath, Spartan, Last Stand, War Cry, Dominion / downtrend: Siege, Undertow, Collapse, Tremor, Shadow, Vertigo, Standoff); nhạc không
   giảm tốc ở ATH / ATL (đồ thị vẫn như cũ); nhạc không giảm âm lượng dưới SFX. Preview đã xem: 2010–2015 (480p, 30 fps).
@@ -266,6 +268,6 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 - Kiểm tra gần nhất: `verify` ✓ (2010–2015); `check-labels` ✓ cả phim.
 - Đã biết, chấp nhận: ở đoạn FROM/TO ngắn, khung zoom-out lùi ra ít và ô tổng kết có thể che nhãn ATL / nến ở góc
   dưới phải (phim đầy đủ không bị).
-- Bản final 1080p 30 fps đã render 26/10/2026 nhưng là **nhạc cũ** — cần render lại với nhạc mới. True peak sau khi
-  nén AAC là −0,6 dBTP (spec ≤ −1).
+- Bản final 1080p 60 fps đã render 26/10/2026 với nhạc mới: 558,10 s, 33.486 khung hình, `verify` ✓, −16,0 LUFS,
+  true peak AAC −1,3 dBTP; lưu ở `out/renders/final-20261026-1080p60/`. Bản này chưa có nhãn phase cạnh giá; thay đổi nhãn mới chỉ có trong preview ở trên.
 - Bản đầy đủ 2010–2026 dài ~9 phút 18 giây (558 giây, downtrend 80 BPM).

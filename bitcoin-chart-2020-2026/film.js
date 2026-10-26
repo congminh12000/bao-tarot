@@ -681,7 +681,7 @@
   }
 
   function phaseBadge(ctx, xb, y, D, where = 'date') { // "▲ UPTREND" / "▼ DOWNTREND" pill: after the date, or next to the price
-    if (where === 'date' ? OVERLAY !== 'ribbon' && OVERLAY !== 'tint' : OVERLAY !== 'area') return;
+    if (globalThis.PHASE_BADGE !== where) return;
     const p = phaseOf(Math.max(0, D)); if (!p || D < 0) return;
     const col = phaseCol(p), s = p.type === 'downtrend' ? '▼ DOWNTREND' : '▲ UPTREND', tw = measure(ctx, s, 17, 800) + 4 * s.length;
     ctx.save();

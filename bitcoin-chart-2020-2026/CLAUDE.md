@@ -16,6 +16,7 @@ In short:
 - Events: only hit 1 and hit 2 (never hit 0); text as short as possible; money as $1.2K / $19.8K / $41M / $1.5B.
   hit 1 = small grey label, no SFX, no effect; hit 2 = big label + SFX + strong visual effect. Check `node check-labels.js`.
 - One cue per phase of data/phases.csv, never a change inside a phase. Music mastered to -16 LUFS (no voice-over).
+- Keep the phase badge beside the live price (`PHASE_BADGE = 'price'` in `look.js`), independent of the disabled chart overlay (`PHASE_OVERLAY = 'none'`).
 - Prices on labels come from the TradingView data in `data/tradingview/`, never from memory; do not invent event causes.
 - After a FROM/TO preview always restore the full data: `node make-data.js && node song.js`.
 - Status and what is waiting for approval: PROJECT.md §10. Commands (incl. first-time setup on a Mac): PROJECT.md §8.
