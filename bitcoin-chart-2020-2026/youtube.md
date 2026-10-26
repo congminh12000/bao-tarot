@@ -1,7 +1,8 @@
 # YouTube — full film (16:9)
 
 Approved by the user on 2026-10-27 — the template for every YouTube text of this project (PROJECT.md §1.9). Rules:
-- The **title** starts with "Bitcoin", has no years, and shows both the price chart and the history.
+- The **title** starts with the coin's name ("Bitcoin", "Ethereum", …), has no years, and shows both the price chart and
+  the history. Other coins: chapter names in `coins/<SYMBOL>/chapter-names.json`, `COIN=<SYMBOL> node youtube-chapters.js`.
 - This film's **title** is fixed (chosen by the user).
 - The **description** has no years, no Bitcoin prices and nothing that changes over time (no "today", no current price,
   no "X years", no gain since the start).

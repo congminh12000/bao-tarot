@@ -27,9 +27,11 @@
       font: '"DejaVu Sans Mono", monospace', mono: '"DejaVu Sans Mono", monospace', title: '"DejaVu Sans Mono", monospace', hex: false, floor: false, rain: true, scan: 0.09,
     },
   };
-  const L = LOOKS[globalThis.LOOK] || LOOKS.hologram;
+  // the coin (coins/<SYMBOL>/coin.json, copied into btc-data.js by make-data.js): its pair, logos and colour accents
+  const COINCFG = globalThis.BTC.coin || { symbol: 'BTC', pair: 'BTC / USD', logo: 'assets/bitcoin-logo.png', logoNegative: 'assets/bitcoin-logo-negative.png', logoGlow: '#F7931A', colors: {} };
+  const L = { ...(LOOKS[globalThis.LOOK] || LOOKS.hologram), ...(COINCFG.colors || {}) };
   const UP = L.up, DOWN = L.down;
-  const GOLD = '#FFC93C'; // halvings (tag halving in data/events.csv): the protocol's own special events
+  const GOLD = COINCFG.special || '#FFC93C'; // events with a tag (Bitcoin: halving) — the protocol's own special events
 
   // ---------- layout ----------
   const PLOT_R = 1660; // the price axis column starts here
@@ -467,10 +469,10 @@
       if (!KZc && (bx > W + 50 || bx + P.bw < -20)) return;
       // on screen = fully there; it fades only while it scrolls out past the left edge (and is back for the zoom-out)
       let alpha = clamp((bx + P.bw + 10) / 160) * (P.cut ? clamp((P.cut - t) / 0.3) : 1);
-      if (KZc) alpha = e.big || e.turn !== undefined || e.tag === 'halving' ? Math.max(alpha, back) : alpha * (1 - back);
+      if (KZc) alpha = e.big || e.turn !== undefined || e.tag ? Math.max(alpha, back) : alpha * (1 - back);
       if (alpha <= 0) return;
       const ay = Yc(e.price) + (P.up ? -8 : 8), my = clamp(Yc(P.ref) + P.gap, 112 + P.h / 2, H - 8 - P.h / 2 - P.dh);
-      const gold = e.tag === 'halving', col = gold ? GOLD : e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
+      const gold = !!e.tag, col = gold ? GOLD : e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
       ctx.save(); ctx.globalAlpha = alpha;
       if (KZc) {
         const ax = X(e.day + 0.5), ay2 = Y(e.price) + (P.up ? -8 : 8);
@@ -693,8 +695,8 @@
 
   function hud(ctx, t, D) {
     const x = 96, y = 104;
-    txt(ctx, 'BTC / USD', x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
-    const w = measure(ctx, 'BTC / USD', 44, 800) + 9 * 2;
+    txt(ctx, COINCFG.pair, x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
+    const w = measure(ctx, COINCFG.pair, 44, 800) + 9 * 2;
     txt(ctx, dateStr(D), x + w + 30, y, { size: 25, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
     phaseBadge(ctx, x + w + 30 + measure(ctx, 'Mmm 00, 0000', 25, 700, L.mono) + 2 * 12 + 26, y, D);
     // the live price, on the same line, right side
@@ -762,7 +764,7 @@
     panel(ctx, x, y, w, H1, col, { fill: 'rgba(2,8,16,0.82)', corner: 16, glow: 30 * pulse });
     ctx.save(); ctx.fillStyle = rgba(col, 0.2); ctx.fillRect(x, y, w, H1); ctx.restore();
     if (COIN) {
-      ctx.save(); ctx.shadowColor = '#F7931A'; ctx.shadowBlur = 18;
+      ctx.save(); ctx.shadowColor = COINCFG.logoGlow || L.accent; ctx.shadowBlur = 18;
       ctx.drawImage(COIN, x + PADX, y + (H1 - ICON) / 2, ICON, ICON); ctx.restore();
     }
     const by = y + H1 / 2 + S1 * 0.35, xr = x + w - PADX;
@@ -863,7 +865,7 @@
       dust(ctx, t);
       scanlines(ctx, t);
     },
-    async init() { LOGO = await Studio.loadImage('assets/bitcoin-logo-negative.png'); COIN = await Studio.loadImage('assets/bitcoin-logo.png'); },
+    async init() { LOGO = await Studio.loadImage(COINCFG.logoNegative); COIN = await Studio.loadImage(COINCFG.logo); },
     post: { paper: 0, vignette: 0.5, grain: 0.035, bloom: 1.1 },
     fadeOut: 1.2,
   });

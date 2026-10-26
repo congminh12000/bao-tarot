@@ -62,10 +62,21 @@ nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn,
      năm, dựa trên sự kiện có thật trong dữ liệu), ví dụ "ATH: the ICO boom", "ATL: after FTX"; sự kiện khác cũng bỏ
      giá/năm ("Bitcoin crosses six figures"). Tạo bằng `node youtube-chapters.js` (tên trong `NAMES`; thêm tên cho sự
      kiện mới).
+   - Đồng khác Bitcoin: tiêu đề bắt đầu bằng **tên đồng** (vd. "Ethereum Price History: …"), cùng quy tắc.
    - **Kiểm tra thời gian chương** với video thật, **không cần render**: dùng bản render đã lưu cùng timeline
      (`out/renders/…`, xác nhận dữ liệu/tempo/nhạc không đổi từ lúc render và độ dài video = `S.DURATION`), trích khung
      tại mốc chương (nhãn chưa hiện) và ~1 s sau mốc sự kiện (nhãn đã hiện). Sau khi render bản final: chạy lại
      `youtube-chapters.js` và cập nhật `youtube.md`.
+
+10. **Video về một đồng khác** (ETH, DOGE, BNB, SOL, … — bất kỳ đồng nào chưa có trong `coins/`): **tự làm luôn, không cần
+    hỏi**, theo quy trình §11, cho ra **một video giống hệt video Bitcoin** (cùng đặc tả §2–§6, cùng quy tắc nhãn, phase,
+    nhạc, ô tổng kết, YouTube): dữ liệu giá TradingView + sự kiện 99Bitcoins, lưu như Bitcoin; **màu riêng cho mỗi đồng**
+    (vẫn glow tech — bảng đề xuất trong `coins/README.md`, người dùng duyệt); **logo/icon tự tìm trên Google nhưng phải
+    chính xác** (logo chính thức); **nhạc dùng các bài đã duyệt của Bitcoin nhưng xáo thứ tự phát ngẫu nhiên** (tự động,
+    theo mã đồng) — vẫn không được lặp (§1.8).
+11. **Khi render preview hay final**: nếu chưa rõ đang làm đồng nào thì **hỏi render đồng nào**; nếu đang trong flow làm
+    một đồng thì không hỏi, cứ làm đồng đó. Luôn chạy với `COIN=<SYMBOL>` và đặt tên file theo mã đồng
+    (`mux eth-preview…`, `keep-render.js save eth-…`).
 
 ## 2. Đặc tả video (đã duyệt)
 
@@ -199,6 +210,8 @@ bitcoin-chart-2020-2026/
   index.html         tải engine + data + score + film trong Chrome headless
   check-labels.js    kiểm tra cả phim: không có 2 nhãn nào đè nhau (cần `npm install` 1 lần: playwright-core)
   keep-render.js     lưu / kiểm tra / dùng lại khung hình đã render (out/renders/)
+  coin.js            chọn đồng (COIN=ETH …, mặc định BTC) → coins/<SYMBOL>/coin.json
+  coins/             mỗi đồng một thư mục (README.md: cấu trúc, bảng màu); fetch-tradingview.js lấy giá TradingView
   youtube.md         tiêu đề + mô tả YouTube đã duyệt (quy tắc viết mô tả, chương)
   youtube-chapters.js in các chương YouTube từ timeline hiện tại (chạy trên dữ liệu ĐẦY ĐỦ)
   data/              events.csv, phases.csv, music.js, tradingview/, anchors.csv, README.md
@@ -286,3 +299,27 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 - Bản final 1080p 60 fps đã render 26/10/2026 với nhạc mới: 558,10 s, 33.486 khung hình, `verify` ✓, −16,0 LUFS,
   true peak AAC −1,3 dBTP; lưu ở `out/renders/final-20261026-1080p60/`. Bản này chưa có nhãn phase cạnh giá; thay đổi nhãn mới chỉ có trong preview ở trên.
 - Bản đầy đủ 2010–2026 dài ~9 phút 18 giây (558 giây, downtrend 80 BPM).
+
+## 11. Làm video cho một đồng khác (ETH, DOGE, BNB, SOL, …)
+
+Hạ tầng: `coin.js` (chọn đồng bằng `COIN=<SYMBOL>`, mặc định `BTC`), `coins/<SYMBOL>/coin.json`, `fetch-tradingview.js`.
+Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin giữ dữ liệu ở `./data` (`coins/BTC/coin.json`).
+
+1. **Tạo `coins/<SYMBOL>/coin.json`**: tên, cặp (`ETH / USD`), mã TradingView. Thử `INDEX:<X>USD`, `CRYPTO:<X>USD` và vài
+   sàn lớn bằng `node fetch-tradingview.js <mã> --print`, chọn mã có **lịch sử dài nhất**.
+2. **Giá**: `COIN=<SYMBOL> node fetch-tradingview.js` → `coins/<SYMBOL>/data/tradingview/`.
+3. **Sự kiện**: trang "historical price/events" của **99Bitcoins** cho đồng đó (mở bằng trình duyệt nếu WebFetch bị chặn);
+   nếu 99Bitcoins không có, dùng nguồn uy tín khác và **ghi rõ nguồn**. Cùng định dạng `date,kind,hit,tag,text`, chỉ mức
+   1/2, chữ ngắn, tiếng Anh, không bịa nguyên nhân; `tag` cho sự kiện nội tại đặc biệt của giao thức (Bitcoin: `halving`,
+   ETH: nâng cấp mạng…). ATH/ATL do `score.js` tự gắn. Ghi nguồn vào `coin.json` (`eventsSource`).
+4. **Logo**: tự tìm trên Google, **phải chính xác** — logo chính thức (trang chủ / brand kit của dự án), nền trong suốt,
+   kích thước ≥ 512 px → `coins/<SYMBOL>/logo.png`; tạo `logo-negative.png`
+   (`ffmpeg -i logo.png -vf "negate=negate_alpha=0" logo-negative.png`). Gửi người dùng xem logo.
+5. **Màu**: lấy theo bảng trong `coins/README.md` (đồng chưa có thì đề xuất theo màu thương hiệu) → `coin.json`
+   (`colors`, `logoGlow`, `special`); chụp ảnh tĩnh cho người dùng duyệt.
+6. **Phase + nhạc**: `COIN=<SYMBOL> node make-data.js && COIN=<SYMBOL> node detect-phases.js && COIN=<SYMBOL> node make-data.js --strict`.
+   Nhạc = các bài đã duyệt, thứ tự xáo theo mã đồng; nếu "NOT ENOUGH MUSIC" thì làm thêm bài (§1.8).
+7. **Preview → duyệt → final** như Bitcoin (§1.2, §1.6, §1.7), luôn `COIN=<SYMBOL>`, tên file theo mã đồng.
+8. **YouTube**: `coins/<SYMBOL>/chapter-names.json` + `COIN=<SYMBOL> node youtube-chapters.js`; tiêu đề bắt đầu bằng tên đồng (§1.9).
+9. Commit + push dữ liệu, `coin.json`, logo, chapter names (không commit `out/`).
+

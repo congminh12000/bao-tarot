@@ -33,6 +33,11 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
   no years; description with no years, prices or anything that changes; chapters = every ATH, ATL, hit-2 event and
   halving (no "today"), 3 s early, "ATH: <what sets it apart>", merged when < 10 s apart (`node youtube-chapters.js`);
   check the times against a kept render of the same timeline (no re-render), and redo them after the final render.
+- A video about another coin (ETH, DOGE, BNB, SOL, … not in `coins/` yet): do it without asking, exactly like the Bitcoin
+  film (PROJECT.md §1.10, §11, `coins/README.md`): TradingView prices (`fetch-tradingview.js`) + 99Bitcoins events, saved
+  like Bitcoin's; its own glow-tech colours (palette in `coins/README.md`, user approves); its exact official logo found
+  on Google; the approved music in a shuffled order (automatic per coin; still no repeats). Run everything with
+  `COIN=<SYMBOL>`. Before a preview/final render, ask which coin unless already working on one (§1.11).
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.
 
 ## Running here (Codex / ChatGPT)

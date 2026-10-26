@@ -1,0 +1,13 @@
+{
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "pair": "BTC / USD",
+  "tradingview": "INDEX:BTCUSD",
+  "eventsSource": "99Bitcoins \"Bitcoin Historical Events\" (https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/)",
+  "dataDir": "data",
+  "logo": "assets/bitcoin-logo.png",
+  "logoNegative": "assets/bitcoin-logo-negative.png",
+  "logoGlow": "#F7931A",
+  "colors": {},
+  "musicShuffle": false
+}
