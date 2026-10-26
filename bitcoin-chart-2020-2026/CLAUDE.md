@@ -38,7 +38,10 @@ In short:
 
 - A full render takes ~35 min at 1080p 60 fps (a 480p preview of 1–2 years ~2–4 min): run long commands in the
   background; never leave a FROM/TO cut in place (restore with `node make-data.js && node song.js`).
-- `git pull` before starting, so work done meanwhile by another assistant (ChatGPT / Codex) is not overwritten.
+- Before EVERY request and each new work phase (inspection, docs/code edits, data generation, render, commit/push):
+  check `git status --short --branch`, run `git fetch origin`, inspect the latest local/upstream commits and
+  ahead/behind counts, then `git pull --ff-only` before proceeding. Re-read changed instructions and relevant files.
+  Preserve uncommitted work; if changes or diverged history prevent a safe pull, report the condition before dependent work.
 - `out/` is not committed (.gitignore): send the rendered files to the user directly.
 - When a rule changes, update PROJECT.md and keep CLAUDE.md and AGENTS.md saying the same thing.
 

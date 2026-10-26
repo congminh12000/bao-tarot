@@ -10,6 +10,21 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 
 ## 1. Quy trình làm việc với người dùng (bắt buộc)
 
+**Trước mọi công việc trong dự án:** mỗi lượt yêu cầu và trước mỗi đợt kiểm tra, sửa tài liệu/code, tạo dữ liệu,
+render hoặc commit/push, phải kiểm tra commit và đồng bộ code mới:
+
+```bash
+git status --short --branch
+git fetch origin
+git log -1 --format='%h %s' HEAD
+git log -1 --format='%h %s' '@{upstream}'
+git rev-list --left-right --count 'HEAD...@{upstream}'
+git pull --ff-only
+```
+
+Đọc lại các hướng dẫn và file liên quan nếu remote có thay đổi. Giữ nguyên công việc local chưa commit;
+nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn, báo rõ trước khi tiếp tục phần việc phụ thuộc.
+
 1. Người dùng giao tiếp bằng **tiếng Việt** → trả lời bằng tiếng Việt. Chữ hiển thị TRONG video là **tiếng Anh**.
 2. Sau mỗi đợt thay đổi: **render preview chất lượng thấp** (đoạn ngắn, ví dụ 2017–2018 và đoạn có vấn đề),
    gửi người dùng xem, **chờ duyệt "OK" rồi mới làm tiếp**. Không tự render bản đầy đủ khi chưa được yêu cầu.
