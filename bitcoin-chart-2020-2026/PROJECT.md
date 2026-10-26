@@ -167,6 +167,8 @@ bitcoin-chart-2020-2026/
   index.html         tải engine + data + score + film trong Chrome headless
   check-labels.js    kiểm tra cả phim: không có 2 nhãn nào đè nhau (cần `npm install` 1 lần: playwright-core)
   keep-render.js     lưu / kiểm tra / dùng lại khung hình đã render (out/renders/)
+  youtube.md         tiêu đề + mô tả YouTube đã duyệt (quy tắc viết mô tả, chương)
+  youtube-chapters.js in các chương YouTube từ timeline hiện tại (chạy trên dữ liệu ĐẦY ĐỦ)
   data/              events.csv, phases.csv, music.js, tradingview/, anchors.csv, README.md
   assets/            logo Bitcoin (gốc + âm bản)
   engine/            bộ công cụ render/âm thanh (không sửa theo từng phim)
@@ -200,6 +202,7 @@ FPS=60 node keep-render.js save 2017-2018 --res 480   # LUÔN lưu bản render 
 FPS=60 node keep-render.js check 2017-2018 --res 480    # ✓ dùng lại được / ✗ hình đã đổi (liệt kê phần đổi)
 FPS=60 node keep-render.js restore 2017-2018 --res 480 && node song.js && FPS=60 node engine/render.js mux --res 480
 node keep-render.js list                               # các bản đã lưu
+node make-data.js && node youtube-chapters.js          # chương YouTube (dán vào mô tả trong youtube.md)
 # bản cuối 1080p 60 fps (~9 phút 18 giây; khoảng 33.500 khung hình, render ~35 phút):
 node make-data.js --strict && node song.js && node check-labels.js   # --strict: dừng nếu nhạc sẽ bị lặp
 FPS=60 node engine/render.js video && FPS=60 node engine/render.js mux && FPS=60 node engine/render.js verify
