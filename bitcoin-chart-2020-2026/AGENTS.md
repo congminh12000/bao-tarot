@@ -28,6 +28,10 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
 - NO cue may repeat in the film: approved cues of each type ≥ phases of that type (`make-data.js` warns "NOT ENOUGH
   MUSIC"; `--strict` before a final). If short: make new cues in the approved style, send the user an audition, and
   render only once enough are approved (PROJECT.md §1.7–1.8).
+- YouTube title / description / chapters: follow `youtube.md` and PROJECT.md §1.9 exactly — title starts with "Bitcoin",
+  no years; description with no years, prices or anything that changes; chapters = every ATH, ATL, hit-2 event and
+  halving (no "today"), 3 s early, "ATH: <what sets it apart>", merged when < 10 s apart (`node youtube-chapters.js`);
+  check the times against a kept render of the same timeline (no re-render), and redo them after the final render.
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.
 
 ## Running here (Codex / ChatGPT)

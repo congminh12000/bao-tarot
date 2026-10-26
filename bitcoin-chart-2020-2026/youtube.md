@@ -1,7 +1,8 @@
 # YouTube — full film (16:9)
 
-Approved by the user on 2026-10-27. Rules for the text below:
-- The **title** is fixed (chosen by the user).
+Approved by the user on 2026-10-27 — the template for every YouTube text of this project (PROJECT.md §1.9). Rules:
+- The **title** starts with "Bitcoin", has no years, and shows both the price chart and the history.
+- This film's **title** is fixed (chosen by the user).
 - The **description** has no years, no Bitcoin prices and nothing that changes over time (no "today", no current price,
   no "X years", no gain since the start).
 - **Chapters**: every ALL-TIME HIGH, every ALL-TIME LOW, every hit-2 event and every halving — no "today" — each

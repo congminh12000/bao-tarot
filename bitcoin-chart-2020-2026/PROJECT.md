@@ -34,6 +34,23 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 8. **Nhạc không được lặp lại** trong phim: số bài đã duyệt của mỗi loại phải ≥ số phase loại đó. `make-data.js` in
    "⚠ NOT ENOUGH MUSIC" khi thiếu (`--strict` thì dừng hẳn, dùng trước bản cuối). Thiếu bài → **tự tạo bài mới đúng phong
    cách đã duyệt, gửi người dùng nghe thử trước**, chỉ render khi đã đủ bài được duyệt.
+9. **Tiêu đề, mô tả, chương YouTube** (mẫu đã duyệt: `youtube.md`; làm lại y như vậy cho mỗi video/bản cắt mới):
+   - **Tiêu đề**: chữ **"Bitcoin" đứng đầu**, **không ghi số năm**, thể hiện cả **biểu đồ giá** và **yếu tố lịch sử**
+     (bản đã chọn: "Bitcoin Price History: Every All-Time High & Crash, Animated in 9 Minutes"). Đề xuất vài phương án,
+     người dùng chọn.
+   - **Mô tả**: **không** số năm, **không** giá Bitcoin, **không** thứ gì sẽ thay đổi theo thời gian (today, giá hiện
+     tại, "X years", % tăng từ đầu…). Có: đoạn mở đầu, 2 loại phase + nhạc riêng, chương, nguồn dữ liệu (TradingView
+     INDEX:BTCUSD; 99Bitcoins), nhạc tự tạo, "not financial advice", hashtag.
+   - **Chương**: **đủ tất cả** ATH, ATL, sự kiện mức 2 và halving — **không** "today"; mỗi chương bắt đầu **sớm 3 s** so
+     với lúc nhãn hiện trên video; chương đầu `0:00 The first trades`; mốc cách nhau < 10 s gộp một chương ("A · B")
+     vì YouTube cần ≥ 10 s/chương. Viết **ATH / ATL** rồi thêm nội dung phân biệt với các ATH/ATL khác (không giá, không
+     năm, dựa trên sự kiện có thật trong dữ liệu), ví dụ "ATH: the ICO boom", "ATL: after FTX"; sự kiện khác cũng bỏ
+     giá/năm ("Bitcoin crosses six figures"). Tạo bằng `node youtube-chapters.js` (tên trong `NAMES`; thêm tên cho sự
+     kiện mới).
+   - **Kiểm tra thời gian chương** với video thật, **không cần render**: dùng bản render đã lưu cùng timeline
+     (`out/renders/…`, xác nhận dữ liệu/tempo/nhạc không đổi từ lúc render và độ dài video = `S.DURATION`), trích khung
+     tại mốc chương (nhãn chưa hiện) và ~1 s sau mốc sự kiện (nhãn đã hiện). Sau khi render bản final: chạy lại
+     `youtube-chapters.js` và cập nhật `youtube.md`.
 
 ## 2. Đặc tả video (đã duyệt)
 
