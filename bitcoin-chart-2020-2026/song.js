@@ -9,7 +9,9 @@ const MU = require('./engine/music');
 const sc = require('./score');
 const { T, DURATION, m, ev, clock, hits, FIRST_BAR, END_BAR, inBreath, breaths } = sc;
 
-const N = Math.ceil(DURATION * SR);
+// a short (SHORT=<n> node make-data.js) loops: it is rendered LOOP_TAIL s longer and that tail is folded onto its start
+const SHORT = sc.SHORT, LOOP_TAIL = SHORT ? 4 : 0;
+const N = Math.ceil((DURATION + LOOP_TAIL) * SR);
 const bus = () => new Bus(N);
 const drums = bus(), bass = bus(), pad = bus(), ost = bus(), lead = bus(), perc = bus(), fx = bus();
 // the hit-2 SFX get buses of their own, so the music under them can be ducked while they play
@@ -242,7 +244,7 @@ const { TB, BEATS, FIRST_BEAT, END_BEAT, PHASES } = sc;
 function layersAt(cue, k) {
   const A = cue.arrange, on = { drums: true, bass: true, ost: !!cue.ostinato, lead: true, answer: !!cue.answer, choir: !!cue.choir, double: false, drop: false };
   if (!A) return on;
-  const b = k % A.cycle;
+  const b = SHORT ? A.cycle - 4 + (k % 4) : k % A.cycle; // a short loops inside the cue's fullest 4 bars
   for (const [layer, from] of Object.entries(A.from || {})) on[layer] = (layer === 'double' || layer === 'chorus' || on[layer]) && b >= from;
   if ((A.drop || []).includes(b)) { on.drop = true; for (const l of ['drums', 'bass', 'ost', 'lead', 'answer', 'double']) on[l] = false; }
   return on;
@@ -271,7 +273,7 @@ function renderBar(cue, type, q0, q1, k, chordName, nextIsTurnStart) {
   const on = layersAt(cue, k);
   // the pickup (cue.pickup beats, ~1 s): the first bar of a phase opens on a drum roll swelling into the groove, which
   // then starts at once on beat pickup + 1 (instead of building up over bars)
-  const pick = k === 0 && cue.pickup ? Math.min(cue.pickup, q1 - q0) : 0;
+  const pick = k === 0 && cue.pickup && !SHORT ? Math.min(cue.pickup, q1 - q0) : 0; // a short starts in the groove
   if (pick && cue.softPickup) { // the tense cues: no roll, no crash — a dark swell and a low heartbeat into the groove
     const tp0 = MB(q0 + pick);
     fx.addMono(I.noiseSweep(tp0 - t0, 120, 1800, { q: 0.8, shape: (x) => x * x, pink: true, seed: q0 + 3 }), t0, 0.14);
@@ -383,7 +385,7 @@ function renderBar(cue, type, q0, q1, k, chordName, nextIsTurnStart) {
 
 // no title: the music starts on frame 0, faded in with the picture (FADE_IN below)
 PHASES.forEach((p, i) => {
-  const toTurn = !!PHASES[i + 1]; // every phase ends on an ALL-TIME HIGH or LOW
+  const toTurn = !!PHASES[i + 1]; // every phase ends on an ALL-TIME HIGH or LOW (a short has one phase: no riser)
   MT0 = TB(p.q0); MBL = 60 / p.c.bpm;
   const beats = (TB(p.q1) - MT0) / MBL; // the phase's length in beats of its own cue (the last bar may be cut short)
   for (let q = 0, k = 0; q < beats - 1e-6; q += 4, k++) {
@@ -419,13 +421,15 @@ for (const h of hits) {
   }
 }
 // the music does not change or duck at a hit-2 event: the SFX play on top of it (they keep their own buses)
-// the end: the last candle closes
+// the end: the last candle closes (not in a short: its end is the hit of the closing turn, then the loop)
+if (!SHORT) {
 fx.addMono(I.subBoom(3.2), ev.end, 0.8);
 drums.addMono(CR, ev.end, 0.45); drums.addMono(K, ev.end, 0.9);
 perc.addMono(I.timpani(m('D2'), { decay: 2.5 }), ev.end, 0.8);
 for (const nn of ['D3', 'A3', 'D4', 'F4', 'A4']) {
   const b = I.brassNote(m(nn), 3.4, { seed: m(nn) }); lead.addStereo(b.L, b.R, ev.end, 0.12); verb.addStereo(b.L, b.R, ev.end, 0.08);
   const st = I.strings(m(nn), 4, { attack: 0.05 }); pad.addStereo(st.L, st.R, ev.end, 0.07);
+}
 }
 
 // ---------- mix ----------
@@ -441,10 +445,16 @@ const out = path.join(__dirname, 'out');
 const mix = MIX.mixdown(stems, GAIN, { stemDir: process.env.STEMS ? out : null });
 MIX.highpass(mix, 24);
 for (const [a, b] of breaths) MIX.gate(mix, a, b); // one beat of real silence before each big moment
-for (const t of [...hits.map((h) => h.t), ev.end]) MIX.gate(mix, t - beatLen(t) / 4, t); // a held 16th before every hit and the end
+for (const t of [...hits.map((h) => h.t), ...(SHORT ? [] : [ev.end])]) MIX.gate(mix, t - beatLen(t) / 4, t); // a held 16th before every hit and the end
+if (SHORT) { // the loop: what rings on past the end (reverb, the last notes) plays over the start, then cut to DURATION
+  const n0 = Math.round(DURATION * SR);
+  for (let i = n0; i < mix.n; i++) { mix.L[i - n0] += mix.L[i]; mix.R[i - n0] += mix.R[i]; }
+  mix.L = mix.L.slice(0, n0); mix.R = mix.R.slice(0, n0); mix.n = n0;
+} else {
 MIX.fadeOut(mix, DURATION - 2.2, DURATION);
 const FADE_IN = 1.0; // the music fades in with the picture (film.js FADE_IN), an S-curve
 mix.applyGain((t) => (t >= FADE_IN ? 1 : (t / FADE_IN) ** 2 * (3 - 2 * t / FADE_IN)));
+}
 // No voice-over, so the music carries the film; it is mastered to -16 LUFS (not -14) so that the hit-2 moments have
 // room to land ~6 dB above the bed without the limiter flattening them (YouTube only turns louder films down)
 const M = MIX.master(mix, parseFloat(process.env.DRIVE || '0.8'), undefined, { lufs: parseFloat(process.env.LUFS || '-16') });

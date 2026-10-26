@@ -38,6 +38,10 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
   like Bitcoin's; its own glow-tech colours (palette in `coins/README.md`, user approves); its exact official logo found
   on Google; the approved music in a shuffled order (automatic per coin; still no repeats). Run everything with
   `COIN=<SYMBOL>`. Before a preview/final render, ask which coin unless already working on one (§1.11).
+- Shorts 9:16 (PROJECT.md §12, `shorts.md`): `SHORT=<phase> node make-data.js`, one phase per short, 20–45 s in 4-bar
+  blocks, no axes, 2-row header, all event levels but NOT the opening turn label (downtrend: no ATH, uptrend: no ATL), loops by
+  running on into the first candle (no zoom-out). Preview 480p 60 fps with at least one loop seam inside (play it twice,
+  `-loop2`); final = one cycle, end joins start. Always restore the long film's data after.
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.
 
 ## Running here (Codex / ChatGPT)

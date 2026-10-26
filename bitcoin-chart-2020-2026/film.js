@@ -34,11 +34,16 @@
   const GOLD = COINCFG.special || '#FFC93C'; // events with a tag (Bitcoin: halving) — the protocol's own special events
 
   // ---------- layout ----------
-  const PLOT_R = 1660; // the price axis column starts here
-  const HEAD_X = 1390; // where the live candle sits once the camera follows
-  const Y0 = 190, Y1 = 935; // plot top / bottom
-  const PPD = 16.06; // pixels per day while following (zoomed in 30% twice)
-  const LEFT = 70;
+  // SHORT (a 9:16 short, shorts.md): no axes or grid, the pair / price / date / phase in a header above the platform icons'
+  // column, the candles in x 60–900 · y 560–1400 (the right ~160 px and the bottom ~420 px stay clear for the app's UI)
+  const SHORT = !!S.SHORT;
+  const PLOT_R = SHORT ? 900 : 1660; // the price axis column starts here
+  const HEAD_X = SHORT ? 760 : 1390; // where the live candle sits once the camera follows
+  const Y0 = SHORT ? 560 : 190, Y1 = SHORT ? 1400 : 935; // plot top / bottom
+  const PPD = SHORT ? 20 : 16.06; // pixels per day while following (zoomed in 30% twice; a short: ~6 weeks on screen)
+  const LEFT = SHORT ? 60 : 70;
+  const LAB_TOP = SHORT ? 500 : 112, LAB_BOT = SHORT ? 1480 : H; // labels stay between these
+  const FX = SHORT ? 0.5 : 1; // a short: shake, dust and scanlines at half strength (a phone screen is small)
 
   const fmt = (p) => '$' + (p >= 100 ? Math.round(p).toLocaleString('en-US') : p >= 1 ? (Number.isInteger(p) ? String(p) : p.toFixed(2)) : p.toPrecision(2));
   const P0 = S.P0; // the first day of the film (the days before it are the pre-run under the title)
@@ -63,10 +68,18 @@
     return [Math.log(lo), Math.log(hi)];
   }
   // smoothed over ±0.5 s (a gaussian), so the vertical zoom glides instead of jumping
+  // a short loops by running on (score.js): a moment past the end is the same moment after the start, its prices
+  // ×LOOPK — so the camera's smoothing reads across the seam and the last frame runs straight into frame 0
+  const LK = Math.log(S.LOOPK || 1);
+  function rangeAt(tt) {
+    if (SHORT && tt > S.DURATION) { const r = rawRange(tt - S.DURATION); return [r[0] - LK, r[1] - LK]; }
+    if (SHORT && tt < 0) { const r = rawRange(tt + S.DURATION); return [r[0] + LK, r[1] + LK]; }
+    return rawRange(Math.min(tt, ev.end));
+  }
   function followCam(t) {
     let lo = 0, hi = 0, wsum = 0;
     for (let k = -8; k <= 8; k++) {
-      const w = Math.exp(-(k * k) / 24), r = rawRange(Math.min(t + k * 0.0625, ev.end));
+      const w = Math.exp(-(k * k) / 24), r = rangeAt(t + k * 0.0625);
       lo += r[0] * w; hi += r[1] * w; wsum += w;
     }
     lo /= wsum; hi /= wsum;
@@ -88,6 +101,7 @@
     return (FULL = { ppd, off: P0 * ppd - LEFT, lo: l - r * 0.06, hi: h + r * 0.1 });
   }
   function camera(t) {
+    if (SHORT) return { ...followCam(t), k: 0 }; // a short: no zoom-out, it loops
     const a = followCam(Math.min(t, ZOOM0));
     if (t <= ZOOM0) return { ...a, k: 0 };
     const b = fullCam(), k = ease.inOutCubic(clamp((t - ZOOM0) / (ZOOM1 - ZOOM0)));
@@ -197,7 +211,8 @@
       ctx.stroke(); ctx.restore();
     }
     // the Bitcoin coin, a slowly turning hologram behind the chart
-    bitcoinLogo(ctx, PLOT_R / 2, H / 2 + 20, 230, t);
+    if (SHORT) { ctx.save(); ctx.globalAlpha = 0.4; bitcoinLogo(ctx, W / 2, H / 2, 300, t); ctx.restore(); } // fainter
+    else bitcoinLogo(ctx, PLOT_R / 2, H / 2 + 20, 230, t);
     phaseWatermark(ctx, D);
   }
 
@@ -255,20 +270,20 @@
     const up = c.c >= c.o, col = up ? UP : DOWN;
     const yh = Y(c.h), yl = Y(c.l), yo = Y(c.o), yc = Y(c.c);
     const top = Math.min(yo, yc), bot = Math.max(Math.max(yo, yc), top + 1.5);
-    ctx.strokeStyle = col; ctx.lineWidth = bw > 3 ? 1.4 : Math.max(1, bw * 0.9);
+    ctx.strokeStyle = col; ctx.lineWidth = SHORT ? 2.6 : bw > 3 ? 1.4 : Math.max(1, bw * 0.9);
     ctx.beginPath(); ctx.moveTo(x, yh); ctx.lineTo(x, yl); ctx.stroke();
     if (bw <= 2.2) { ctx.lineWidth = Math.max(1, bw); ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bot); ctx.stroke(); return; }
     const hw = bw / 2;
     ctx.fillStyle = rgba(col, up ? 0.38 : 0.5); ctx.fillRect(x - hw, top, bw, bot - top);
-    ctx.lineWidth = 1.5; ctx.strokeRect(x - hw, top, bw, bot - top);
+    ctx.lineWidth = SHORT ? 2.4 : 1.5; ctx.strokeRect(x - hw, top, bw, bot - top);
     if (live) {
       ctx.save();
       ctx.shadowColor = col; ctx.shadowBlur = 25; ctx.fillStyle = col; ctx.fillRect(x - hw, top, bw, bot - top);
       // a pulsing ring on the live price
       const ph = (t * 1.6) % 1;
       ctx.shadowBlur = 0; ctx.strokeStyle = rgba(col, 0.8 * (1 - ph)); ctx.lineWidth = 2;
-      ctx.beginPath(); ctx.arc(x, yc, 6 + ph * 26, 0, Math.PI * 2); ctx.stroke();
-      ctx.fillStyle = '#FFFFFF'; ctx.beginPath(); ctx.arc(x, yc, 3.5, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.arc(x, yc, (6 + ph * 26) * (SHORT ? 1.4 : 1), 0, Math.PI * 2); ctx.stroke();
+      ctx.fillStyle = '#FFFFFF'; ctx.beginPath(); ctx.arc(x, yc, SHORT ? 5.5 : 3.5, 0, Math.PI * 2); ctx.fill();
       ctx.restore();
     }
   }
@@ -280,8 +295,10 @@
   const DIAG = 34, RUN = 30, PAD = 14; // callout geometry, px
   const MEASURE = G.makeCanvas(8, 8).getContext('2d');
   const PLACE = [];
-  const sizeOf = (e) => (e.big ? 34 : 22); // hit 2 (milestone / crisis) ~50% bigger than hit 1
-  const dhOf = (e) => (e.big ? 32 : 0); // hit 2 carries its date under the box: the room it takes
+  // a short's day past the end is the first days again, ÷LOOPK (the loop runs on): a label near the end keeps clear of them
+  const dayHL = (d) => (d < NDAYS ? DAYS[d] : DAYS[d - S.LOOPLEN].map((v) => v / S.LOOPK));
+  const sizeOf = (e) => (SHORT ? (e.big ? 40 : 28) : e.big ? 34 : 22); // hit 2 (milestone / crisis) ~50% bigger than hit 1
+  const dhOf = (e) => (e.big ? (SHORT ? 38 : 32) : 0); // hit 2 carries its date under the box: the room it takes
   const CAMS = new Map();
   const camAt = (t) => { const key = Math.round(t * 1000); if (CAMS.has(key)) return CAMS.get(key); const c = camera(t); return { X: (d) => d * c.ppd - c.off, Y: (p) => Y1 - ((Math.log(p) - c.lo) / (c.hi - c.lo)) * (Y1 - Y0), c }; }; // eslint-disable-line
   const camAtM = (t) => { const key = Math.round(t * 1000); let v = CAMS.get(key); if (!v) { v = camAt(t); CAMS.set(key, v); } return v; };
@@ -312,7 +329,7 @@
     const { X, Y, c } = camAt(e.t);
     const x = X(e.day + 0.5), ay = Y(e.price) + (up ? -8 : 8);
     const bw = tw + PAD * 2;
-    const RLIM = W - 24;
+    const RLIM = SHORT ? PLOT_R : W - 24;
     // Candidate spots, best first. The eye follows the price to the right, so: RIGHT of the candle (a callout), or
     // CENTRED over it (a straight line), then further right with a longer callout, then LEFT of the candle; each on
     // the label's own side (up events above the candles, down events below), stepping away from the candles. Only
@@ -322,9 +339,9 @@
     // (including the ones still to come), starting at the shortest line the shape allows
     const spot = (dir, off, above, extra = 0) => {
       const x0 = Math.min(x, x + off) - 6, x1 = Math.max(x, x + off + bw) + 6;
-      const dA = Math.max(0, Math.floor((x0 + c.off) / c.ppd - 1)), dB = Math.min(NDAYS - 1, Math.ceil((x1 + c.off) / c.ppd));
+      const dA = Math.max(0, Math.floor((x0 + c.off) / c.ppd - 1)), dB = Math.min(NDAYS - 1 + (SHORT ? S.LOOPLEN : 0), Math.ceil((x1 + c.off) / c.ppd));
       let ref = above ? 0 : Infinity;
-      for (let d = dA; d <= dB; d++) ref = above ? Math.max(ref, DAYS[d][1]) : Math.min(ref, DAYS[d][2]);
+      for (let d = dA; d <= dB; d++) { const v = dayHL(d); ref = above ? Math.max(ref, v[1]) : Math.min(ref, v[2]); }
       const min = turn ? (dir ? 26 : 16 + h / 2) : dir ? 44 : 34 + h / 2;
       const base = above ? Math.min(Y(ref) - CG - h / 2 - dh, ay - min - dh) : Math.max(Y(ref) + CG + h / 2, ay + min);
       return { dir, off, ref, base, above, extra, len: Math.abs(base - ay) };
@@ -336,7 +353,7 @@
         let off = dir > 0 ? DIAG + RUN + extra : dir < 0 ? -(DIAG + RUN + extra + bw) : -bw / 2; // box left edge vs the anchor
         if (dir > 0 && x + off + bw > RLIM) continue;
         if (dir === 0 && x + off + bw > RLIM) off = RLIM - bw - x; // slide left just enough
-        if (dir < 0 && x + off < 8) continue;
+        if (dir < 0 && x + off < (SHORT ? LEFT : 8)) continue;
         cand.push(spot(dir, off, above, extra));
       }
     }
@@ -369,7 +386,7 @@
       const [box, line] = footprint(K, e, { ...q, h, bw, dh }, my - Y(q.ref));
       return rects.some(([ob, ol]) => hits(box, ob, GAPX, GAPY) || hits(line, ob, 2, 4) || hits(box, ol, 6, 4));
     });
-    const inside = (q, my) => (q.above ? my - h / 2 >= (x + q.off > 700 ? 112 : Y0 - 10) : my + h / 2 + dh <= H - 4);
+    const inside = (q, my) => (SHORT ? (q.above ? my - h / 2 >= LAB_TOP : my + h / 2 + dh <= LAB_BOT) : q.above ? my - h / 2 >= (x + q.off > 700 ? 112 : Y0 - 10) : my + h / 2 + dh <= H - 4);
     const step = h + dh + GAPY;
     // own side: every shape at the first level before stepping a level further from the candles (left beats deep)
     let pick = null, fallback = null;
@@ -386,7 +403,7 @@
       const offs = [];
       for (let o = DIAG + RUN; x + o + bw <= RLIM; o += 40) offs.push([1, o]);
       for (let o = -bw + 12; o <= -12; o += 40) offs.push([0, o]);
-      for (let o = -(DIAG + RUN + bw); x + o >= 8; o -= 40) offs.push([-1, o]);
+      for (let o = -(DIAG + RUN + bw); x + o >= (SHORT ? LEFT : 8); o -= 40) offs.push([-1, o]);
       for (let k = 0; k < 40 && !pick; k++) {
         let any = false;
         for (const [dir, off] of offs) {
@@ -454,13 +471,16 @@
   // zoom-out (the hit-1 labels fade away): each one shrinks with the chart around its own
   // candle, keeping the shape it had when it appeared, and the ones that had scrolled out come back as the camera pulls away
   const zoomScale = () => clamp(Math.sqrt(fullCam().ppd / PPD), 0.12, 1);
-  const DATE_SIZE = 20, DATE_GAP = 8; // hit 2: the date under the box, at its lower-left edge
+  const DATE_SIZE = SHORT ? 26 : 20, DATE_GAP = 8; // hit 2: the date under the box, at its lower-left edge
+  // a short's loop: the labels of the last seconds carry on past the seam, on the copies of their candles before the start
+  const wrapped = (e) => ({ ...e, t: e.t - S.DURATION, day: e.day - S.LOOPLEN, price: e.price * S.LOOPK });
+  const LABELS = () => EVENTS.map((e, n) => ({ e, P: placeLabel(n) })).concat(!SHORT ? [] : EVENTS.filter((e) => e.t > S.DURATION - 12)
+    .map((e) => { const P = placeLabel(EVENTS.indexOf(e)); return { e: wrapped(e), P: { ...P, ref: P.ref * S.LOOPK, cut: 0 } }; }));
   function labels(ctx, t, X, Y, cam) {
     const zk = cam.k, zs = lerp(1, zoomScale(), zk), back = ease.inOutCubic(clamp(zk * 1.6));
-    EVENTS.forEach((e, n) => {
+    LABELS().forEach(({ e, P }) => {
       const age = t - e.t;
       if (age < 0) return;
-      const P = placeLabel(n);
       // the label is drawn in the coordinates of camera (Xc, Yc); during the zoom that is the camera of the moment it
       // appeared, mapped onto the candle's place now and scaled down around it
       const KZc = zk > 0 ? camAtM(e.t) : null;
@@ -471,7 +491,7 @@
       let alpha = clamp((bx + P.bw + 10) / 160) * (P.cut ? clamp((P.cut - t) / 0.3) : 1);
       if (KZc) alpha = e.big || e.turn !== undefined || e.tag ? Math.max(alpha, back) : alpha * (1 - back);
       if (alpha <= 0) return;
-      const ay = Yc(e.price) + (P.up ? -8 : 8), my = clamp(Yc(P.ref) + P.gap, 112 + P.h / 2, H - 8 - P.h / 2 - P.dh);
+      const ay = Yc(e.price) + (P.up ? -8 : 8), my = clamp(Yc(P.ref) + P.gap, LAB_TOP + P.h / 2, LAB_BOT - 8 - P.h / 2 - P.dh);
       const gold = !!e.tag, col = gold ? GOLD : e.kind === 'down' ? DOWN : e.kind === 'up' ? UP : L.accent2;
       ctx.save(); ctx.globalAlpha = alpha;
       if (KZc) {
@@ -506,7 +526,7 @@
 
   // the live candle (the one forming at t), or the last one after the end
   function live(t) {
-    const tt = Math.min(t, ev.end), D = S.dayAt(tt);
+    const tt = SHORT ? t : Math.min(t, ev.end), D = S.dayAt(tt);
     const i = Math.min(NDAYS - 1, Math.max(0, Math.floor(D)));
     const c = D < 0 ? { o: DAYS[0][0], c: DAYS[0][0] } : D >= NDAYS ? { o: DAYS[i][0], c: DAYS[i][3] } : S.candleAt(i, tt);
     return { D, o: c.o, p: c.c, up: c.c >= c.o };
@@ -693,7 +713,26 @@
     txt(ctx, s, xb + 14, y - 3, { size: 17, w: 800, color: col, glow: 6, spacing: 4 });
   }
 
+  // a short's header: two rows across the full width (above the icons' column), left and right edges at 60 px
+  //   BTC / USD ............ $12,345      (80 px)
+  //   Dec 15, 2018 .. ▼ DOWNTREND −84%    (36 px / 26 px; the change since the short's first frame)
+  const P_START = S.priceAt(0);
+  function shortHud(ctx, t, D) {
+    const xl = 60, xr = W - 60, y1 = 372, y2 = 444, L0 = live(t);
+    txt(ctx, COINCFG.pair, xl, y1, { size: 80, w: 800, color: L.text, glow: 4.2, spacing: 2 });
+    txt(ctx, fmt(L0.p), xr, y1, { size: 80, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 4.2 });
+    txt(ctx, dateStr(D), xl + 2, y2, { size: 36, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
+    const p = S.PHASES[0], col = phaseCol(p), pc = Math.round((L0.p / P_START - 1) * 100);
+    const s = `${p.type === 'downtrend' ? '▼ DOWNTREND' : '▲ UPTREND'}  ${pc >= 0 ? '+' : '−'}${Math.abs(pc).toLocaleString('en-US')}%`;
+    const tw = measure(ctx, s, 26, 800) + 3 * s.length, bh = 44, bx = xr - tw - 32;
+    ctx.save();
+    ctx.fillStyle = rgba(col, 0.14); ctx.strokeStyle = rgba(col, 0.8); ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.roundRect(bx, y2 - 34, tw + 32, bh, 22); ctx.fill(); ctx.stroke();
+    ctx.restore();
+    txt(ctx, s, bx + 16, y2 - 3, { size: 26, w: 800, color: col, glow: 6, spacing: 3 });
+  }
   function hud(ctx, t, D) {
+    if (SHORT) return shortHud(ctx, t, D);
     const x = 96, y = 104;
     txt(ctx, COINCFG.pair, x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
     const w = measure(ctx, COINCFG.pair, 44, 800) + 9 * 2;
@@ -714,7 +753,7 @@
       const x = ((H_(i, 1) * W + t * sp * (H_(i, 4) - 0.5) * 2 + U.noise1(t * 0.3, i) * 40) % W + W) % W;
       const y = ((H_(i, 2) * H - t * sp * 0.6 + U.noise1(t * 0.25, i + 99) * 30) % H + H) % H;
       const r = 0.6 + H_(i, 5) * 1.8;
-      ctx.globalAlpha = (0.10 + H_(i, 6) * 0.30) * (0.55 + 0.45 * Math.sin(t * (1 + H_(i, 7) * 3) + i));
+      ctx.globalAlpha = FX * (0.10 + H_(i, 6) * 0.30) * (0.55 + 0.45 * Math.sin(t * (1 + H_(i, 7) * 3) + i));
       ctx.fillStyle = H_(i, 8) < 0.3 ? L.accent2 : '#FFFFFF';
       ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
     }
@@ -722,11 +761,11 @@
   }
   function scanlines(ctx, t) {
     if (!SCAN) { SCAN = G.makeCanvas(4, 4); const s = SCAN.getContext('2d'); s.fillStyle = '#000'; s.fillRect(0, 0, 4, 2); }
-    ctx.save(); ctx.globalAlpha = L.scan * 3; ctx.fillStyle = ctx.createPattern(SCAN, 'repeat'); ctx.fillRect(0, 0, W, H);
+    ctx.save(); ctx.globalAlpha = L.scan * 3 * FX; ctx.fillStyle = ctx.createPattern(SCAN, 'repeat'); ctx.fillRect(0, 0, W, H);
     // a slow bright band rolling down the screen
     const y = ((t * 140) % (H + 300)) - 150;
     const g = ctx.createLinearGradient(0, y - 80, 0, y + 80); g.addColorStop(0, rgba(L.accent, 0)); g.addColorStop(0.5, rgba(L.accent, 0.035)); g.addColorStop(1, rgba(L.accent, 0));
-    ctx.globalAlpha = 1; ctx.fillStyle = g; ctx.fillRect(0, y - 80, W, 160);
+    ctx.globalAlpha = FX; ctx.fillStyle = g; ctx.fillRect(0, y - 80, W, 160);
     ctx.restore();
   }
 
@@ -734,7 +773,7 @@
   // fade in too) while the chart is already running (the pre-run fills the screen) and the music starts on frame 0
   const FADE_IN = 1.0;
   const sstep = (x) => { x = clamp(x); return x * x * (3 - 2 * x); };
-  Studio.afterFrame = (ctx, t) => {
+  if (!SHORT) Studio.afterFrame = (ctx, t) => { // (a short opens on a full frame: it loops)
     const f = 1 - sstep(t / FADE_IN);
     if (f > 0) { ctx.save(); ctx.globalAlpha = 1; ctx.fillStyle = `rgba(5,5,8,${f})`; ctx.fillRect(0, 0, W, H); ctx.restore(); }
   };
@@ -798,21 +837,22 @@
   Studio.film({
     draw(ctx, t) {
       const cam = camera(t);
-      const D = S.dayAt(Math.min(t, ev.end));
+      const tc = SHORT ? t : Math.min(t, ev.end); // the chart's clock (a short's loop runs it back to the first day)
+      const D = S.dayAt(tc);
       // only hit-2 events (and the last candle) hit the picture: a flash, a hard shake, a zoom punch, shockwave rings
       let shake = 0, flash = 0, fcol = UP, punch = 0;
       const booms = [];
-      for (const h of [...S.hits, { t: ev.end, kind: 'up', end: true }]) {
+      for (const h of [...S.hits, ...(SHORT ? S.hits.map(wrapped) : [{ t: ev.end, kind: 'up', end: true }])]) {
         const a = t - h.t;
         if (a < 0 || a >= 1.6) continue;
         const e = Math.exp(-a * 4.5);
         if (e > flash) { flash = e; fcol = h.kind === 'down' ? DOWN : UP; }
-        shake = Math.max(shake, (h.kind === 'down' ? 22 : 15) * Math.exp(-a * 5));
+        shake = Math.max(shake, FX * (h.kind === 'down' ? 22 : 15) * Math.exp(-a * 5));
         punch = Math.max(punch, Math.exp(-a * 7));
         if (!h.end) booms.push({ h, a });
       }
       const mood = t < ev.end ? S.moodAt(D) : { up: 0, down: 0 };
-      const rumble = 4.5 * mood.down; // the screen trembles more and more as a crash comes
+      const rumble = 4.5 * FX * mood.down; // the screen trembles more and more as a crash comes
       background(ctx, t, cam, D);
       ctx.save();
       ctx.translate(U.noise1(t * 30, 1) * shake + U.noise1(t * 17, 5) * rumble, U.noise1(t * 30, 2) * shake + U.noise1(t * 17, 6) * rumble);
@@ -820,7 +860,7 @@
       const X = (d) => d * cam.ppd - cam.off;
       const Y = (p) => Y1 - ((Math.log(p) - cam.lo) / (cam.hi - cam.lo)) * (Y1 - Y0);
       phaseBands(ctx, X, D, cam);
-      grid(ctx, cam, X, Y, D < 0);
+      if (!SHORT) grid(ctx, cam, X, Y, D < 0);
       phaseArea(ctx, X, Y, D, t, cam);
       const bw = Math.max(1, cam.ppd * 0.62);
       const i0 = Math.max(0, Math.floor(cam.off / cam.ppd) - 1), i1 = Math.min(NDAYS - 1, Math.floor(D));
@@ -828,17 +868,17 @@
       for (let i = i0; i <= i1; i++) {
         const x = X(i + 0.5);
         if (x > PLOT_R + 10) break;
-        const c = S.candleAt(i, Math.min(t, ev.end));
+        const c = S.candleAt(i, tc);
         if (c) candle(ctx, i, c, x, Y, bw, !c.done, t);
       }
       ctx.restore();
       phaseEma(ctx, X, Y, D, cam);
       phaseTrend(ctx, X, Y, D, t, cam);
-      priceLine(ctx, t, cam, Y, X);
+      if (!SHORT) priceLine(ctx, t, cam, Y, X);
       labels(ctx, t, X, Y, cam); // over the candles; may reach over the price axis
       for (const { h, a } of booms) shockwave(ctx, X(h.day + 0.5), Y(h.price), a, h.kind === 'down' ? DOWN : UP);
       phaseRibbon(ctx, X, D, cam);
-      axes(ctx);
+      if (!SHORT) axes(ctx);
       phaseGauge(ctx, Y, D, t); // the X and Y axes always on top
       ctx.restore();
       phaseTint(ctx, D);
@@ -861,12 +901,12 @@
         g.addColorStop(0, rgba(fcol, 0.18 * flash)); g.addColorStop(1, rgba(fcol, 0.6 * flash));
         ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
       }
-      summaryCard(ctx, t);
+      if (!SHORT) summaryCard(ctx, t);
       dust(ctx, t);
       scanlines(ctx, t);
     },
     async init() { LOGO = await Studio.loadImage(COINCFG.logoNegative); COIN = await Studio.loadImage(COINCFG.logo); },
     post: { paper: 0, vignette: 0.5, grain: 0.035, bloom: 1.1 },
-    fadeOut: 1.2,
+    fadeOut: SHORT ? 0 : 1.2,
   });
 })();

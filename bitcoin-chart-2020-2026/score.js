@@ -14,6 +14,12 @@
   const { m, makeClock, makeChords } = MU;
   // PREVIEW_CUE=up-ascent node song.js -> just that cue, PREVIEW_BARS bars (default 8), no events: to listen to a cue
   const PREVIEW = node && process.env.PREVIEW_CUE ? { cue: process.env.PREVIEW_CUE, bars: +(process.env.PREVIEW_BARS || 8) } : null;
+  // SHORT=<n> node make-data.js -> BTC.short: one phase as a 9:16 looping short (shorts.md): one steady tempo, a length of
+  // 4-bar blocks (20–45 s). It loops by running on: the last candle (the closing ALL-TIME HIGH / LOW) is followed by the
+  // first one again, at its own price — the days before the first candle are the end of the phase scaled onto the
+  // starting price (no axis shows it), so the last frame runs straight into frame 0: a downtrend falls forever, an
+  // uptrend climbs forever
+  const SHORT = PREVIEW ? null : BTC.short || null;
 
   const FPS = node && process.env.FPS ? +process.env.FPS : 24; // FPS=30 node … renders at another frame rate
   const FORMAT = U.pickFormat('16:9');
@@ -23,7 +29,9 @@
 
   const DAYS = BTC.days; // [open, high, low, close]
   const NDAYS = DAYS.length;
-  const P0 = BTC.pre || 0; // day P0 = the first day of the film; the days before it are the pre-run under the title
+  const P0 = BTC.pre || 0;
+  const LOOPLEN = NDAYS - P0, LOOPK = SHORT ? DAYS[P0][0] / DAYS[NDAYS - 1][3] : 1; // SHORT: day i ≡ day i + LOOPLEN × LOOPK
+  if (SHORT) for (let i = P0 - 1; i >= 0; i--) DAYS[i] = DAYS[i + LOOPLEN].map((v) => v * LOOPK); // (a phase shorter than the pre-run wraps again) // day P0 = the first day of the film; the days before it are the pre-run under the title
   const START = Date.parse(BTC.start + 'T00:00:00Z');
   const dayOf = (s) => Math.round((Date.parse(s + 'T00:00:00Z') - START) / 86400000);
   const dateOf = (d) => new Date(START + Math.floor(d) * 86400000);
@@ -33,9 +41,13 @@
   // hit 1 events have no effect at all: their label just appears
   const MOODS = BTC.events.filter((e) => e.hit === 2 && (e.kind === 'up' || e.kind === 'down')).map((e) => (
     { day: dayOf(e.date), up: e.kind === 'up', w: 1, before: 45, after: 6 }
-  )).filter((e) => e.day >= 0 && e.day < NDAYS);
+  )).filter((e) => e.day >= (SHORT ? P0 + 1 : 0) && e.day < NDAYS); // (a short: not the turn it opens on)
   const smooth = (x) => x * x * (3 - 2 * x);
   function moodAt(d) {
+    if (SHORT && d < P0 + 30) { const a = moodAt0(d), b = moodAt0(d + LOOPLEN); return { up: Math.max(a.up, b.up), down: Math.max(a.down, b.down) }; } // across the loop
+    return moodAt0(d);
+  }
+  function moodAt0(d) {
     let up = 0, down = 0;
     for (const e of MOODS) {
       const x = d < e.day + 0.5 ? (d - (e.day + 0.5 - e.before)) / e.before : 1 - (d - e.day - 0.5) / e.after;
@@ -56,6 +68,7 @@
   const MIN_BEATS = 4;
   let PH = (BTC.phases || []).map((p) => ({ type: p.type, cue: p.cue, d0: Math.max(P0, dayOf(p.start)), d1: Math.min(NDAYS - 1, dayOf(p.end)) })).filter((p) => p.d1 >= p.d0);
   if (!PH.length) PH = [{ type: 'sideway', cue: LIB.pickCue('sideway', 0).id, d0: P0, d1: NDAYS - 1 }];
+  if (SHORT) PH = [{ type: SHORT.type, cue: SHORT.cue, d0: P0, d1: NDAYS - 1 }];
   if (PREVIEW) { const c = LIB.CUES.find((q) => q.id === PREVIEW.cue); if (!c) throw new Error(`no cue ${PREVIEW.cue}`); PH = [{ type: c.phase, cue: c.id, d0: P0, d1: NDAYS - 1 }]; }
   PH[0].d0 = P0; PH[PH.length - 1].d1 = NDAYS - 1;
   for (let i = 1; i < PH.length; i++) PH[i].d0 = PH[i - 1].d1 + 1; // back to back, no holes
@@ -66,6 +79,10 @@
     p.c = cueOf(p.cue);
     const days = p.d1 - p.d0 + 1, mid = (p.d0 + p.d1) / 2;
     p.beats = PREVIEW ? PREVIEW.bars * 4 : Math.max(MIN_BEATS, Math.round((days / DPB0(mid)) * 4));
+    if (SHORT) { // as long as in the long film, held to 20–45 s, in whole 4-bar blocks (the music loops cleanly)
+      const g = (16 * 60) / p.c.bpm, len = U.clamp((p.beats * 60) / p.c.bpm, 20, 45);
+      p.beats = 16 * U.clamp(Math.round(len / g), 2, Math.floor(45 / g));
+    }
     p.q0 = q; q += p.beats; p.q1 = q;
     p.b0 = p.q0 / 4; p.b1 = p.q1 / 4; // in bars (may be fractional)
   }
@@ -81,7 +98,18 @@
   };
   const iso = (d) => dateOf(d).toISOString().slice(0, 10);
   const EVSRC = PREVIEW ? [] : BTC.events.map((e) => ({ ...e }));
-  if (!PREVIEW) PH.forEach((p, i) => {
+  if (SHORT) { // every event level shows, as in the long film; the closing turn is the hit at the end. The opening turn has
+    // no label (approved 2026-10-26): a downtrend short shows no ALL-TIME HIGH, an uptrend short no ALL-TIME LOW
+    const down = SHORT.type === 'downtrend', open = down ? 'ALL-TIME HIGH' : 'ALL-TIME LOW', close = down ? 'ALL-TIME LOW' : 'ALL-TIME HIGH';
+    for (let i = EVSRC.length - 1; i >= 0; i--) if (dayOf(EVSRC[i].date) === P0 && EVSRC[i].text.toUpperCase().startsWith(open)) EVSRC.splice(i, 1);
+    if (SHORT.endTurn) {
+      const d = NDAYS - 1, kind = down ? 'down' : 'up';
+      const own = EVSRC.find((e) => dayOf(e.date) === d && e.kind === kind && e.text.toUpperCase().startsWith(close));
+      if (own) { own.hit = 2; own.turn = 1; } else EVSRC.push({ date: iso(d), kind, hit: 2, text: `${close}: ${kfmt(down ? DAYS[d][2] : DAYS[d][1])}`, turn: 1 });
+    }
+    for (const e of EVSRC) if (dayOf(e.date) <= P0) e.pre = true; // an event on the first day shows quietly (no hit: the loop's seam)
+  }
+  if (!PREVIEW && !SHORT) PH.forEach((p, i) => {
     if (i === 0) return;
     const top = p.type === 'downtrend', d = p.d0; // a downtrend starts at an all-time high, an uptrend at an all-time low
     // the phase starts ON the turn's day, so its label (and the brake) falls inside the new phase's music
@@ -92,7 +120,7 @@
     EVSRC.push({ date: iso(d), kind: top ? 'up' : 'down', hit: 2, text: `${name}: ${kfmt(price)}`, turn: i });
   });
   EVSRC.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
-  const hitEv = EVSRC.filter((e) => e.hit > 0).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
+  const hitEv = EVSRC.filter((e) => e.hit > 0 && !e.pre).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
   // knots (beat, day): only the phase starts — inside a phase the chart runs at one steady pace right up to the
   // turn (events are NOT pinned to beats: pinning bent the pace and the chart seemed to brake before a top)
   const KN = PH.map((p) => [p.q0, p.d0]);
@@ -129,6 +157,7 @@
   // seconds. The film ends the same way. (The music does not follow this map: song.js keeps each cue's own tempo.)
   const TURN = LIB.TURN, HOLD = (TURN.holdSec * TURN.slowBpm) / 60; // beats held slow
   const tempo = [[0, PH[0].c.bpm], [FIRST_BEAT / 4, PH[0].c.bpm]];
+  if (SHORT) tempo.push([(END_BEAT + 12) / 4, PH[0].c.bpm]); // a short: one steady tempo, no brakes
   const turnAt = (E, from, to, hi) => { // E = the beat the turn's label appears
     const b0 = Math.min(hi, E + TURN.brakeBeats), h1 = Math.min(hi, b0 + HOLD);
     tempo.push([E / 4, from], [b0 / 4, TURN.slowBpm], [h1 / 4, TURN.slowBpm]);
@@ -136,19 +165,19 @@
     const n = Math.max(1, Math.min(hi - h1, Math.round((TURN.rampSec * (TURN.slowBpm + to)) / 120))); // beats in ~rampSec s (at the mean tempo)
     for (let j = 1; j <= 2 * n; j++) { const u = j / (2 * n), e = u * u * (3 - 2 * u); tempo.push([(h1 + j / 2) / 4, TURN.slowBpm + (to - TURN.slowBpm) * e]); }
   };
-  PH.forEach((p, i) => {
+  if (!SHORT) PH.forEach((p, i) => {
     if (i === 0) return;
     const e = hitEv.find((h) => h.turn === i);
     const E = e ? beatOfDay(e.day + 0.5) : p.q0, next = PH[i + 1]; // the beat its label appears (the candle's extreme)
     turnAt(E, PH[i - 1].c.bpm, p.c.bpm, next ? next.q0 - 2 : END_BEAT - 1);
   });
-  if (!PREVIEW) turnAt(END_BEAT, PH[PH.length - 1].c.bpm, null, END_BEAT + 8);
+  if (!PREVIEW && !SHORT) turnAt(END_BEAT, PH[PH.length - 1].c.bpm, null, END_BEAT + 8);
   tempo.sort((x, y) => x[0] - y[0]);
   for (let i = tempo.length - 1; i > 0; i--) if (tempo[i][0] - tempo[i - 1][0] < 1e-9) tempo.splice(i - 1, 1); // one point per position (the later wins)
   const clock = makeClock({ bpm: PH[0].c.bpm, offset: 0, tempo });
   const { T, BEAT } = clock;
   const TB = (x) => T(0, x); // time of beat x
-  const DURATION = TB(END_BEAT + 8) + 0.5;
+  const DURATION = SHORT ? TB(END_BEAT) : TB(END_BEAT + 8) + 0.5; // a short ends exactly on a bar line, on the last day: it loops
   const PULSE = 0.3; // how hard the candles surge on each beat (0 = smooth)
   const pulse = (x) => x + (PULSE * Math.sin(2 * Math.PI * x)) / (2 * Math.PI);
   const dayAt = (t) => dayOfBeat(pulse(clock.beatPos(t)));
@@ -193,7 +222,7 @@
     return { ...e, day: d, t: timeOfDay(d + 0.5), big: e.hit === 2, price: e.kind === 'down' ? c[2] : c[1] };
   }).filter(Boolean);
   for (const e of EVENTS) PEAK.set(e.day, e.kind !== 'down');
-  const hits = EVENTS.filter((e) => e.big); // only hit 2 gets SFX and a visual effect
+  const hits = EVENTS.filter((e) => e.big && !e.pre); // only hit 2 gets SFX and a visual effect
   const bigs = hits;
   const breaths = []; // no silence before a top / bottom: the music keeps going until the label appears, then brakes
   const inBreath = (t) => breaths.some(([a, b]) => t >= a - 1e-6 && t < b - 1e-6);
@@ -220,7 +249,7 @@
   const { chords, chordAt } = makeChords(clock, CH, prog);
 
   const ev = { start: TB(Math.max(0, FIRST_BEAT - 0.5)), end: TB(END_BEAT) };
-  const markers = { start: ev.start, end: { t: ev.end, sync: 'av' } };
+  const markers = { start: ev.start, ...(SHORT ? {} : { end: { t: ev.end, sync: 'av' } }) }; // (a short has no closing boom)
   hits.forEach((h, i) => { markers['hit' + (i + 1)] = { t: h.t, sync: 'av' }; });
   PH.forEach((p, i) => { markers[`phase${i + 1}-${p.type}`] = TB(p.q0); });
 
@@ -228,6 +257,7 @@
     FPS, FORMAT, W, H, SAFE, WIDE, DURATION, clock, T, BEAT, S, m, chords, chordAt, ev, markers,
     CH, DAYS, NDAYS, P0, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
     inBreath, breaths, moodAt, MOODS, PHASES: PH, BEATS, FIRST_BEAT, END_BEAT, FIRST_BAR, END_BAR, TB, LIB,
+    SHORT, LOOPLEN, LOOPK,
   };
   if (node) module.exports = SCORE; else globalThis.SCORE = SCORE;
 })();

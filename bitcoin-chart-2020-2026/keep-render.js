@@ -1,5 +1,6 @@
 // Keeps rendered videos so a small change does not mean rendering every frame again.
 //
+//   (a short / another format: add --format 9:16, as for engine/render.js)
 //   FPS=60 node keep-render.js save <name> [--res 480]      after a render: keep out/video[-480p].mp4 (the silent frames)
 //                                                           and the shareable mp4 next to it, with a fingerprint
 //   FPS=60 node keep-render.js check <name> [--res 480]     are the kept frames still valid for the current code + data?
@@ -19,7 +20,8 @@ const ROOT = __dirname, OUT = path.join(ROOT, 'out'), KEEP = path.join(OUT, 'ren
 const [cmd, name] = process.argv.slice(2);
 const argVal = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
 const res = argVal('--res') ? parseInt(argVal('--res'), 10) : 0;
-const SUFFIX = res ? `-${res}p` : ''; // the same naming as engine/render.js (no format / style override)
+const FORMAT = argVal('--format');
+const SUFFIX = (FORMAT ? `-${FORMAT.replace(':', 'x')}` : '') + (res ? `-${res}p` : ''); // the same naming as engine/render.js
 const FPS = process.env.FPS ? +process.env.FPS : 24;
 
 const files = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? files(path.join(dir, e.name)) : [path.join(dir, e.name)])).sort();
@@ -30,7 +32,7 @@ function fingerprint() {
   for (const f of [...files(path.join(ROOT, 'engine', 'video')), ...files(path.join(ROOT, 'assets'))]) add(path.relative(ROOT, f), fs.readFileSync(f));
   const LIB = require('./data/music');
   add('cue tempos + TURN', JSON.stringify({ cues: LIB.CUES.map((c) => [c.id, c.phase, c.bpm, c.rotation !== false]), turn: LIB.TURN }));
-  add('fps + resolution', `${FPS}@${res || 1080}`);
+  add('fps + resolution', `${FPS}@${res || 1080}` + (FORMAT ? ` ${FORMAT}` : ''));
   return { all: h.digest('hex').slice(0, 16), parts };
 }
 const BTC = () => { const b = require('./btc-data'); const d = new Date(Date.parse(b.start + 'T00:00:00Z') + (b.pre || 0) * 86400000); return { from: d.toISOString().slice(0, 10), days: b.days.length - (b.pre || 0) }; };

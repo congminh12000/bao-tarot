@@ -214,6 +214,7 @@ bitcoin-chart-2020-2026/
   coins/             mỗi đồng một thư mục (README.md: cấu trúc, bảng màu); fetch-tradingview.js lấy giá TradingView
   youtube.md         tiêu đề + mô tả YouTube đã duyệt (quy tắc viết mô tả, chương)
   youtube-chapters.js in các chương YouTube từ timeline hiện tại (chạy trên dữ liệu ĐẦY ĐỦ)
+  shorts.md          đặc tả Shorts 9:16 đã duyệt (SHORT=<số phase>, §12)
   data/              events.csv, phases.csv, music.js, tradingview/, anchors.csv, README.md
   assets/            logo Bitcoin (gốc + âm bản)
   engine/            bộ công cụ render/âm thanh (không sửa theo từng phim)
@@ -299,6 +300,8 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 - Bản final 1080p 60 fps đã render 26/10/2026 với nhạc mới: 558,10 s, 33.486 khung hình, `verify` ✓, −16,0 LUFS,
   true peak AAC −1,3 dBTP; lưu ở `out/renders/final-20261026-1080p60/`. Bản này chưa có nhãn phase cạnh giá; thay đổi nhãn mới chỉ có trong preview ở trên.
 - Bản đầy đủ 2010–2026 dài ~9 phút 18 giây (558 giây, downtrend 80 BPM).
+- Shorts 9:16 đã duyệt (26/10/2026) qua preview short #6 (downtrend 12/2017 → 12/2018, 36 s, lặp 2 lần), lưu ở
+  `out/renders/btc-short-6-down/`. Chưa render final short nào.
 
 ## 11. Làm video cho một đồng khác (ETH, DOGE, BNB, SOL, …)
 
@@ -323,3 +326,17 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
 8. **YouTube**: `coins/<SYMBOL>/chapter-names.json` + `COIN=<SYMBOL> node youtube-chapters.js`; tiêu đề bắt đầu bằng tên đồng (§1.9).
 9. Commit + push dữ liệu, `coin.json`, logo, chapter names (không commit `out/`).
 
+## 12. Shorts 9:16 — TikTok, Reels, YouTube Shorts (đã duyệt 26/10/2026)
+
+Đặc tả đầy đủ và lệnh: **`shorts.md`**. Tóm tắt:
+
+- **1 short = 1 phase** (`SHORT=<số phase> node make-data.js`), cùng dữ liệu và bài nhạc như video dài; 20–45 s, bội số
+  4 ô nhịp, tempo cố định. Không fade-in, không lấy đà, nhạc vào thẳng phần đầy đủ nhất.
+- **Vòng lặp chạy tiếp**: tới ATH / ATL cuối phase, chart chạy tiếp sang nến đầu ở mức giá đầu (downtrend → downtrend mãi,
+  uptrend → uptrend mãi), không zoom-out; nhạc lặp không vấp.
+- **Bố cục**: không trục X / Y, không lưới; phần trên 2 hàng canh đều (BTC / USD + giá 80 px glow 4,2; ngày + badge
+  phase % từ khung đầu); nến x 60–900, y 560–1400, PPD 20; coin nền đúng giữa; chừa vùng an toàn của nền tảng.
+- **Nhãn**: đủ các mức như video dài, mờ dần khi trôi ra; **bỏ nhãn điểm chuyển đầu phase** (downtrend bỏ ATH, uptrend bỏ ATL).
+- **Preview**: 480p 60 fps, phải có **ít nhất 1 chỗ nối vòng lặp bên trong** (phát 2 lần, file `-loop2`). **Final**: 1080 × 1920
+  60 fps, **1 vòng** (cuối nối thẳng vào đầu). Tên file `<coin>-short-<số phase>-<up|down>`; lưu bằng
+  `keep-render.js … --format 9:16`; luôn khôi phục dữ liệu phim dài sau đó.
