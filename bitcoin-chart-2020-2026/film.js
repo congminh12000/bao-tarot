@@ -146,9 +146,21 @@
 
   // ---------- background ----------
   let SCAN = null;
+  // 'background' phase overlay: the navy background itself turns to a deep teal-green in an uptrend and a deep maroon in a
+  // downtrend, crossfading over the first ~20 days of a phase
+  const BG_PHASE = { uptrend: ['#04302A', '#010D0B'], downtrend: ['#33091A', '#0E0307'] };
+  const mixHex = (a, b, k) => { const p = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)); const A = p(a), B = p(b); return `rgb(${A.map((v, i) => Math.round(v + (B[i] - v) * k)).join(',')})`; };
+  function bgColors(D) {
+    if (globalThis.PHASE_OVERLAY !== 'background' || D < 0) return [L.bg1, L.bg0];
+    const ph = S.PHASES.find((p) => D >= p.d0 && D <= p.d1); if (!ph) return [L.bg1, L.bg0];
+    const prev = S.PHASES[S.PHASES.indexOf(ph) - 1], k = prev ? Math.min(1, (D - ph.d0) / 20) : 1;
+    const to = BG_PHASE[ph.type], from = prev ? BG_PHASE[prev.type] : to;
+    return [mixHex(from[0], to[0], k), mixHex(from[1], to[1], k)];
+  }
   function background(ctx, t, cam, D) {
+    const [c1, c0] = bgColors(D);
     const g = ctx.createRadialGradient(W * 0.55, H * 0.45, 100, W * 0.55, H * 0.45, W * 0.8);
-    g.addColorStop(0, L.bg1); g.addColorStop(1, L.bg0);
+    g.addColorStop(0, c1); g.addColorStop(1, c0);
     ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
     if (L.hex) { // a field of tiny tech dots that drifts with the camera
       ctx.save(); ctx.fillStyle = rgba(L.accent, 0.13);
@@ -184,6 +196,7 @@
     }
     // the Bitcoin coin, a slowly turning hologram behind the chart
     bitcoinLogo(ctx, PLOT_R / 2, H / 2 + 20, 230, t);
+    phaseWatermark(ctx, D);
   }
 
   function grid(ctx, cam, X, Y, noPrice) {
@@ -510,13 +523,184 @@
     ctx.restore();
   }
 
+  // ---------- the phase overlay: a light layer that shows whether the price is in an uptrend or a downtrend ----------
+  // globalThis.PHASE_OVERLAY (look.js): 'background' = the background colour itself (see bgColors), 'bands' = a soft colour band behind the candles over each phase (only up to the
+  // live candle), 'ribbon' = a thin coloured strip along the time axis + a badge in the header, 'tint' = the screen edges
+  // tinted in the phase colour + the badge, 'none' = off. Green = uptrend, red = downtrend; it flips at the ALL-TIME HIGH /
+  // LOW, on the same candle as the label.
+  const OVERLAY = globalThis.PHASE_OVERLAY || 'none';
+  const phaseOf = (d) => S.PHASES.find((p) => d >= p.d0 && d <= p.d1) || null;
+  const phaseCol = (p) => (p && p.type === 'downtrend' ? DOWN : UP);
+  function phaseBands(ctx, X, D, cam) {
+    if (OVERLAY !== 'bands') return;
+    ctx.save(); ctx.globalAlpha = 1 - cam.k * 0.6;
+    for (const p of S.PHASES) {
+      const x0 = Math.max(0, X(p.d0)), x1 = Math.min(PLOT_R, X(Math.min(p.d1 + 1, Math.max(D, p.d0))));
+      if (x1 <= x0) continue;
+      const col = phaseCol(p), g = ctx.createLinearGradient(0, Y0 - 40, 0, Y1 + 8);
+      g.addColorStop(0, rgba(col, 0)); g.addColorStop(0.55, rgba(col, 0.035)); g.addColorStop(1, rgba(col, 0.1));
+      ctx.fillStyle = g; ctx.fillRect(x0, Y0 - 40, x1 - x0, Y1 + 8 - (Y0 - 40));
+      if (X(p.d0) > 0 && p !== S.PHASES[0]) { ctx.fillStyle = rgba(col, 0.35); ctx.fillRect(Math.round(X(p.d0)), Y0 - 40, 1.5, Y1 + 8 - (Y0 - 40)); }
+    }
+    ctx.restore();
+  }
+  function phaseRibbon(ctx, X, D, cam) {
+    if (OVERLAY !== 'ribbon') return;
+    ctx.save();
+    for (const p of S.PHASES) {
+      const x0 = Math.max(0, X(p.d0)), x1 = Math.min(PLOT_R, X(Math.min(p.d1 + 1, Math.max(D, p.d0))));
+      if (x1 <= x0) continue;
+      const col = phaseCol(p);
+      ctx.shadowColor = col; ctx.shadowBlur = 10; ctx.fillStyle = rgba(col, 0.6);
+      ctx.fillRect(x0 + 1, Y1 + 12, x1 - x0 - 2, 5);
+    }
+    ctx.restore();
+  }
+  function phaseTint(ctx, D) {
+    if (OVERLAY !== 'tint') return;
+    const p = phaseOf(Math.max(0, D)); if (!p) return;
+    const col = phaseCol(p), k = clamp((D - p.d0) / 20); // eases in over the first ~20 days of a phase
+    const prev = S.PHASES[S.PHASES.indexOf(p) - 1];
+    ctx.save();
+    for (const [c, a] of [[col, k], ...(prev ? [[phaseCol(prev), 1 - k]] : [])]) {
+      if (a <= 0.01) continue;
+      const g = ctx.createRadialGradient(W / 2, H / 2, W * 0.32, W / 2, H / 2, W * 0.78);
+      g.addColorStop(0, rgba(c, 0)); g.addColorStop(1, rgba(c, 0.1 * a));
+      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    }
+    ctx.restore();
+  }
+  // the price a phase starts from: its ALL-TIME LOW (uptrend) / HIGH (downtrend) candle's low / high; the film's first close
+  const phaseStartPrice = (p) => (p === S.PHASES[0] ? DAYS[p.d0][3] : p.type === 'downtrend' ? DAYS[p.d0][1] : DAYS[p.d0][2]);
+  // 'area': a band under the closes of each phase (up to the live candle) in the phase colour, only AREA_DEPTH of the way
+  // from the candles down to the time axis, fading out toward its lower edge
+  const AREA_DEPTH = 0.3, AREA_ALPHA = 0.127, AREA_SLICES = 8;
+  function phaseArea(ctx, X, Y, D, t, cam) {
+    if (OVERLAY !== 'area') return;
+    ctx.save(); ctx.beginPath(); ctx.rect(0, 0, PLOT_R, H); ctx.clip();
+    ctx.globalAlpha = 1 - cam.k * 0.6;
+    const floor = Y1 + 8;
+    for (const p of S.PHASES) {
+      const a = Math.max(p.d0, Math.floor(cam.off / cam.ppd) - 1), b = Math.min(p.d1, Math.floor(D));
+      if (b < a) continue;
+      const col = phaseCol(p), pts = [];
+      for (let d = a; d <= b; d++) { const c = d === Math.floor(D) ? S.candleAt(d, Math.min(t, ev.end)) : null; pts.push([X(d + 0.5), Y(c ? c.c : DAYS[d][3])]); }
+      // the band in slices, each a little fainter: the colour hugs the candles and fades out AREA_DEPTH below them
+      for (let i = 0; i < AREA_SLICES; i++) {
+        const f0 = (i / AREA_SLICES) * AREA_DEPTH, f1 = ((i + 1) / AREA_SLICES) * AREA_DEPTH, path = new Path2D();
+        pts.forEach(([x, y], j) => { const yy = y + (floor - y) * f0; if (j) path.lineTo(x, yy); else path.moveTo(x, yy); });
+        for (let j = pts.length - 1; j >= 0; j--) { const [x, y] = pts[j]; path.lineTo(x, y + (floor - y) * f1); }
+        path.closePath();
+        ctx.fillStyle = rgba(col, AREA_ALPHA * (1 - i / AREA_SLICES)); ctx.fill(path);
+      }
+    }
+    ctx.restore();
+  }
+  // 'trend': a glowing dashed arrow from where the phase began (its ALL-TIME LOW / HIGH) to the live price, with the change in
+  // %; finished phases keep a faint line from their start to their end
+  function phaseTrend(ctx, X, Y, D, t, cam) {
+    if (OVERLAY !== 'trend' || D < 0) return;
+    ctx.save(); ctx.beginPath(); ctx.rect(0, 0, PLOT_R, H); ctx.clip();
+    S.PHASES.forEach((p, i) => {
+      if (p.d0 > D) return;
+      const col = phaseCol(p), isLive = D <= p.d1 + 1, next = S.PHASES[i + 1];
+      const x0 = X(p.d0 + 0.5), y0 = Y(phaseStartPrice(p));
+      const pe = isLive ? live(t).p : phaseStartPrice(next), x1 = isLive ? X(Math.max(p.d0, D)) : X(next.d0 + 0.5), y1 = Y(pe);
+      if (x1 < -50 || x0 > PLOT_R + 50) return;
+      ctx.save(); ctx.globalAlpha = isLive ? 0.9 : 0.3;
+      ctx.strokeStyle = col; ctx.lineWidth = isLive ? 2.5 : 1.5; ctx.setLineDash([10, 8]); ctx.lineDashOffset = -t * 30; ctx.shadowColor = col; ctx.shadowBlur = 12;
+      ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
+      ctx.setLineDash([]); ctx.beginPath(); ctx.arc(x0, y0, 5, 0, Math.PI * 2); ctx.fillStyle = col; ctx.fill();
+      if (isLive && Math.hypot(x1 - x0, y1 - y0) > 40) {
+        const an = Math.atan2(y1 - y0, x1 - x0);
+        ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x1 - 16 * Math.cos(an - 0.45), y1 - 16 * Math.sin(an - 0.45)); ctx.lineTo(x1 - 16 * Math.cos(an + 0.45), y1 - 16 * Math.sin(an + 0.45)); ctx.closePath(); ctx.fill();
+        const pc = Math.round((pe / phaseStartPrice(p) - 1) * 100);
+        ctx.restore(); ctx.save();
+        txt(ctx, `${pc >= 0 ? '+' : '−'}${Math.abs(pc).toLocaleString('en-US')}%`, x1 + 18, y1 + (p.type === 'downtrend' ? 34 : -18), { size: 26, w: 800, fam: L.mono, color: col, glow: 8 });
+      }
+      ctx.restore();
+    });
+    ctx.restore();
+  }
+  // 'timeline': a slim mini-map of the whole film under the header: the phases passed so far in their colours, the rest
+  // grey (nothing ahead is revealed), a glowing playhead on today
+  function phaseTimeline(ctx, D) {
+    if (OVERLAY !== 'timeline' || D < 0) return;
+    const x0 = 96, x1 = PLOT_R - 12, y = 136, hgt = 8, N = NDAYS - P0, X = (d) => x0 + ((d - P0) / N) * (x1 - x0);
+    ctx.save();
+    ctx.fillStyle = rgba(L.text, 0.08); ctx.beginPath(); ctx.roundRect(x0, y, x1 - x0, hgt, 4); ctx.fill();
+    for (const p of S.PHASES) {
+      if (p.d0 > D) break;
+      const a = X(p.d0), b = X(Math.min(p.d1 + 1, D)), col = phaseCol(p);
+      ctx.shadowColor = col; ctx.shadowBlur = 8; ctx.fillStyle = rgba(col, 0.75); ctx.fillRect(a, y, Math.max(1, b - a), hgt);
+    }
+    const xp = X(D); ctx.shadowColor = '#FFFFFF'; ctx.shadowBlur = 12; ctx.fillStyle = '#FFFFFF';
+    ctx.beginPath(); ctx.arc(xp, y + hgt / 2, 7, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+  }
+
+  // 'ema': a smooth glowing trend line (the 20-day exponential average of the closes) over the candles, coloured by phase
+  const EMA = (() => { const k = 2 / 21, out = []; let e = DAYS[0][3]; for (const d of DAYS) { e = d[3] * k + e * (1 - k); out.push(e); } return out; })();
+  function phaseEma(ctx, X, Y, D, cam) {
+    if (OVERLAY !== 'ema' || D < 1) return;
+    ctx.save(); ctx.beginPath(); ctx.rect(0, 0, PLOT_R, H); ctx.clip();
+    ctx.lineWidth = 3; ctx.lineJoin = 'round'; ctx.lineCap = 'round'; ctx.globalAlpha = 0.85;
+    const a = Math.max(P0, Math.floor(cam.off / cam.ppd) - 1), b = Math.min(NDAYS - 1, Math.floor(D));
+    let p = null;
+    for (let d = a; d < b; d++) {
+      const ph = phaseOf(d + 1), col = phaseCol(ph);
+      if (p !== col) { if (p) ctx.stroke(); ctx.beginPath(); ctx.moveTo(X(d + 0.5), Y(EMA[d])); ctx.strokeStyle = col; ctx.shadowColor = col; ctx.shadowBlur = 14; p = col; }
+      ctx.lineTo(X(d + 1.5), Y(EMA[d + 1]));
+    }
+    if (p) ctx.stroke();
+    ctx.restore();
+  }
+  // 'watermark': a huge, faint "UPTREND" / "DOWNTREND" behind the chart (like the coin), crossfading at each turn
+  function phaseWatermark(ctx, D) {
+    if (OVERLAY !== 'watermark' || D < 0) return;
+    const ph = phaseOf(D); if (!ph) return;
+    const prev = S.PHASES[S.PHASES.indexOf(ph) - 1], k = prev ? clamp((D - ph.d0) / 20) : 1;
+    for (const [p, a] of [[ph, k], ...(prev ? [[prev, 1 - k]] : [])]) {
+      if (a <= 0.01) continue;
+      const s = p.type === 'downtrend' ? '▼ DOWNTREND' : '▲ UPTREND';
+      txt(ctx, s, PLOT_R / 2, Y1 - 40, { size: 150, w: 900, color: phaseCol(p), align: 'center', alpha: 0.07 * a, spacing: 18 });
+    }
+  }
+  // 'gauge': a glowing bar on the price axis from where the phase began (its ALL-TIME LOW / HIGH) to the live price —
+  // how far the move has gone, at a glance
+  function phaseGauge(ctx, Y, D, t) {
+    if (OVERLAY !== 'gauge' || D < 0) return;
+    const ph = phaseOf(D); if (!ph) return;
+    const col = phaseCol(ph), ya = clamp(Y(phaseStartPrice(ph)), Y0 - 50, Y1 + 8), yb = clamp(Y(live(t).p), Y0 - 50, Y1 + 8), x = PLOT_R + 6;
+    ctx.save();
+    const g = ctx.createLinearGradient(0, ya, 0, yb); g.addColorStop(0, rgba(col, 0.25)); g.addColorStop(1, rgba(col, 0.95));
+    ctx.fillStyle = g; ctx.shadowColor = col; ctx.shadowBlur = 14;
+    ctx.fillRect(x, Math.min(ya, yb), 7, Math.max(2, Math.abs(yb - ya)));
+    ctx.fillStyle = col; ctx.fillRect(x - 4, ya - 1, 15, 2.5);
+    ctx.restore();
+  }
+
+  function phaseBadge(ctx, xb, y, D, where = 'date') { // "▲ UPTREND" / "▼ DOWNTREND" pill: after the date, or next to the price
+    if (where === 'date' ? OVERLAY !== 'ribbon' && OVERLAY !== 'tint' : OVERLAY !== 'area') return;
+    const p = phaseOf(Math.max(0, D)); if (!p || D < 0) return;
+    const col = phaseCol(p), s = p.type === 'downtrend' ? '▼ DOWNTREND' : '▲ UPTREND', tw = measure(ctx, s, 17, 800) + 4 * s.length;
+    ctx.save();
+    ctx.fillStyle = rgba(col, 0.14); ctx.strokeStyle = rgba(col, 0.8); ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.roundRect(xb, y - 25, tw + 28, 32, 16); ctx.fill(); ctx.stroke();
+    ctx.restore();
+    txt(ctx, s, xb + 14, y - 3, { size: 17, w: 800, color: col, glow: 6, spacing: 4 });
+  }
+
   function hud(ctx, t, D) {
     const x = 96, y = 104;
     txt(ctx, 'BTC / USD', x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
     const w = measure(ctx, 'BTC / USD', 44, 800) + 9 * 2;
     txt(ctx, dateStr(D), x + w + 30, y, { size: 25, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
+    phaseBadge(ctx, x + w + 30 + measure(ctx, 'Mmm 00, 0000', 25, 700, L.mono) + 2 * 12 + 26, y, D);
     // the live price, on the same line, right side
     const L0 = live(t);
+    phaseTimeline(ctx, D);
+    phaseBadge(ctx, PLOT_R + 14, y, D, 'price'); // right of the live price, in the price-axis column (a fixed spot: no jitter)
     if (L0.D >= 0) txt(ctx, fmt(L0.p), PLOT_R - 12, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 });
   }
 
@@ -562,7 +746,8 @@
     const a = sstep(age / 0.5), pop = 0.94 + 0.06 * ease.outCubic(clamp(age / 0.6));
     const p0 = DAYS[P0][0], p1 = DAYS[NDAYS - 1][3], mult = p1 / p0, up = p1 >= p0, col = up ? UP : DOWN;
     const pct = `${up ? '+' : '−'}${Math.abs(Math.round((mult - 1) * 100)).toLocaleString('en-US')}%`;
-    const yrs = (NDAYS - P0) / 365.25, years = `${yrs >= 2 ? Math.round(yrs) : yrs.toFixed(1)} ${yrs >= 0.95 && yrs < 1.05 ? 'YEAR' : 'YEARS'}`;
+    const yrs = (NDAYS - P0) / 365.25, whole = yrs >= 2 || Math.abs(yrs - Math.round(yrs)) < 0.05; // 730 days = 2 YEARS, not 2.0
+    const years = `${whole ? Math.round(yrs) : yrs.toFixed(1)} ${whole && Math.round(yrs) === 1 ? 'YEAR' : 'YEARS'}`;
     const pNow = Math.exp(lerp(Math.log(p0), Math.log(p1), ease.outCubic(clamp((age - 0.2) / 1.1)))); // the count-up
     const S1 = 48, S0 = S1, S2 = 32, PADX = 22, GAP = 10, H1 = 84, H2 = 56, ICON = 56; // S0: the first price (same size, dimmer)
     const s0 = fmt(p0), s1 = fmt(pNow), arrow = '  →  ';
@@ -632,7 +817,9 @@
       if (punch > 0.001) { const z = 1 + 0.045 * punch; ctx.translate(W / 2, H / 2); ctx.scale(z, z); ctx.translate(-W / 2, -H / 2); }
       const X = (d) => d * cam.ppd - cam.off;
       const Y = (p) => Y1 - ((Math.log(p) - cam.lo) / (cam.hi - cam.lo)) * (Y1 - Y0);
+      phaseBands(ctx, X, D, cam);
       grid(ctx, cam, X, Y, D < 0);
+      phaseArea(ctx, X, Y, D, t, cam);
       const bw = Math.max(1, cam.ppd * 0.62);
       const i0 = Math.max(0, Math.floor(cam.off / cam.ppd) - 1), i1 = Math.min(NDAYS - 1, Math.floor(D));
       ctx.save(); ctx.beginPath(); ctx.rect(0, 0, PLOT_R, H); ctx.clip();
@@ -643,11 +830,16 @@
         if (c) candle(ctx, i, c, x, Y, bw, !c.done, t);
       }
       ctx.restore();
+      phaseEma(ctx, X, Y, D, cam);
+      phaseTrend(ctx, X, Y, D, t, cam);
       priceLine(ctx, t, cam, Y, X);
       labels(ctx, t, X, Y, cam); // over the candles; may reach over the price axis
       for (const { h, a } of booms) shockwave(ctx, X(h.day + 0.5), Y(h.price), a, h.kind === 'down' ? DOWN : UP);
-      axes(ctx); // the X and Y axes always on top
+      phaseRibbon(ctx, X, D, cam);
+      axes(ctx);
+      phaseGauge(ctx, Y, D, t); // the X and Y axes always on top
       ctx.restore();
+      phaseTint(ctx, D);
       hud(ctx, t, D);
       if (mood.up > 0.01) { // a rally lights the screen up from the edges
         ctx.save(); ctx.globalCompositeOperation = 'lighter';
