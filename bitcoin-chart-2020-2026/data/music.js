@@ -1,6 +1,6 @@
 // THE MUSIC LIBRARY — the cues of the two market phases (phases: data/phases.csv, from detect-phases.js).
 //
-//   uptrend     ALL-TIME LOW -> ALL-TIME HIGH      cues: Vanguard, Titan, Crusade, Overdrive, Horizon, Warpath (approved)
+//   uptrend     ALL-TIME LOW -> ALL-TIME HIGH      cues: Vanguard, Titan, Crusade, Overdrive, Horizon, Warpath, Spartan, Last Stand, War Cry, Dominion (approved)
 //   downtrend   ALL-TIME HIGH -> ALL-TIME LOW      cues: Siege, Undertow, Collapse, Tremor, Shadow, Vertigo, Standoff (approved)
 // A cue with `rotation: false` is in audition: it can be heard (PREVIEW_CUE=<id> PREVIEW_BARS=16 node song.js) but the
 // film does not use it until it is approved.
@@ -174,7 +174,7 @@
     },
     {
       // SPARTAN: G minor, Gm-F-Eb-F, harder: open brass and the choir on "oh"
-      id: 'up-spartan', phase: 'uptrend', title: 'Spartan', bpm: 100, key: 'G minor', rotation: false,
+      id: 'up-spartan', phase: 'uptrend', title: 'Spartan', bpm: 100, key: 'G minor', approved: '2026-10-26',
       chords: ['Gm', 'F', 'Eb', 'F'],
       drums: 'warMarch', bass: 'celloDrive',
       ostinato: null,
@@ -226,7 +226,7 @@
     {
       // LAST STAND: taiko war drums, 16th spiccato racing, braams, driving bass, an open-brass melody climbing to A;
       // Dm-Bb-Gm-A; the choir holds from bar 5 and sings the melody from bar 9
-      id: 'up-laststand', phase: 'uptrend', title: 'Last Stand', bpm: 100, key: 'D minor', rotation: false,
+      id: 'up-laststand', phase: 'uptrend', title: 'Last Stand', bpm: 100, key: 'D minor', approved: '2026-10-26',
       chords: ['Dm', 'Bb', 'Gm', 'A'],
       drums: 'taiko', bass: 'drive8',
       ostinato: { instrument: 'spiccato', perBeat: 4, figure: [1, 5, 8, 5, 10, 8, 5, 8] },
@@ -260,7 +260,7 @@
     {
       // WAR CRY: an all-out hybrid battle beat (rock kit + taiko), gritty power chords, braams, soaring violins with
       // brass stabbing back, the descending Dm-C-Bb-A of a charge downhill; choir from bar 5
-      id: 'up-warcry', phase: 'uptrend', title: 'War Cry', bpm: 100, key: 'D minor', rotation: false,
+      id: 'up-warcry', phase: 'uptrend', title: 'War Cry', bpm: 100, key: 'D minor', approved: '2026-10-26',
       chords: ['Dm', 'C', 'Bb', 'A'],
       drums: 'battleHybrid', bass: 'drive8',
       ostinato: null,
@@ -279,7 +279,7 @@
     {
       // DOMINION: the full orchestra in power: a 16th synth-and-strings pulse, trailer toms, braams every 2 bars,
       // horns in unison climbing an arpeggio to the high A, Dm-Bb-Gm-C; choir from bar 5, violins doubling from bar 9
-      id: 'up-dominion', phase: 'uptrend', title: 'Dominion', bpm: 100, key: 'D minor', rotation: false,
+      id: 'up-dominion', phase: 'uptrend', title: 'Dominion', bpm: 100, key: 'D minor', approved: '2026-10-26',
       chords: ['Dm', 'Bb', 'Gm', 'C'],
       drums: 'epicToms', bass: 'celloDrive',
       ostinato: { instrument: 'spiccato', perBeat: 4, figure: [1, 8, 5, 8] },
