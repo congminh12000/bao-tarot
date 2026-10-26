@@ -13,18 +13,17 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 1. Người dùng giao tiếp bằng **tiếng Việt** → trả lời bằng tiếng Việt. Chữ hiển thị TRONG video là **tiếng Anh**.
 2. Sau mỗi đợt thay đổi: **render preview chất lượng thấp** (đoạn ngắn, ví dụ 2017–2018 và đoạn có vấn đề),
    gửi người dùng xem, **chờ duyệt "OK" rồi mới làm tiếp**. Không tự render bản đầy đủ khi chưa được yêu cầu.
-   Preview mặc định: **30 fps, 16:9, 480p** (854×480): `FPS=30 … --res 480` (lệnh ở §8), trừ khi người dùng chọn khác.
+   Preview: **luôn 60 fps**, mặc định 16:9, 480p (854×480): `FPS=60 … --res 480` (lệnh ở §8).
 3. Không nghe được âm thanh → chỉ báo số đo (LUFS, levels), nói rõ là chưa nghe, mời người dùng nghe góp ý.
 4. Commit + push lên branch `claude/bitcoin-price-chart-animation-l7ta0e` sau mỗi thay đổi (repo
    `congminh12000/bao-tarot`). Không tạo Pull Request nếu không được yêu cầu.
 5. Thông tin sự kiện (tên, ngày) **phải trung thực**: không bịa nguyên nhân; chỗ không chắc thì nói rõ.
    Giá trên nhãn lấy từ dữ liệu TradingView, không lấy từ trí nhớ.
-6. Khi người dùng nói **"render video final"** (bản cuối, phim đầy đủ): hỏi **3 bước, lần lượt từng bước**, mỗi bước
-   một câu hỏi có lựa chọn, rồi mới render:
-   1. **FPS**: 24 · **30** · 60
-   2. **Tỷ lệ khung hình**: **16:9** · 1:1 · 9:16
-   3. **Độ phân giải**: **Full HD** · 2K · 4K
-   Mặc định (in đậm): **30 fps, 16:9, Full HD**. Cách chạy: `FPS=<fps> node engine/render.js video --format <tỷ lệ>
+6. Khi người dùng nói **"render video final"** (bản cuối, phim đầy đủ): **luôn 60 fps** (không hỏi). Hỏi **2 bước, lần lượt
+   từng bước**, mỗi bước một câu hỏi có lựa chọn, rồi mới render:
+   1. **Tỷ lệ khung hình**: **16:9** · 1:1 · 9:16
+   2. **Độ phân giải**: **Full HD** · 2K · 4K
+   Mặc định (in đậm): **16:9, Full HD**. Cách chạy: `FPS=60 node engine/render.js video --format <tỷ lệ>
    --res <1080|1440|2160>` (cạnh ngắn, px), rồi `mux` + `verify` với cùng các tham số. Layout `film.js` được thiết kế
    cho 16:9; với 1:1 / 9:16 phải render preview kiểm tra bố cục trước khi chạy bản cuối.
 
@@ -32,7 +31,7 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 
 | Hạng mục | Yêu cầu |
 |---|---|
-| Khung hình | 16:9. Bản cuối: hỏi 3 bước (§1.6), mặc định 1920×1080 @30 fps. Preview: 854×480 @30 fps (`FPS=30 … --res 480`) |
+| Khung hình | 16:9, **luôn 60 fps** (preview và bản cuối). Bản cuối: hỏi tỷ lệ + độ phân giải (§1.6), mặc định 1920×1080. Preview: 854×480 (`FPS=60 … --res 480`) |
 | Phong cách | "Glow Technology" — mẫu **A Hologram** (`look.js` → `hologram`): nền xanh navy đậm, đường nét cyan, bloom, bụi sáng nhẹ, scanline |
 | Nến | Nến ngày, xanh = tăng, đỏ = giảm, chạy từ trái qua phải, camera bám theo nến đang chạy |
 | Zoom | `PPD = 16.06` px/ngày (đã zoom 2 lần ×1.3 so với 9.5) |
@@ -97,7 +96,10 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 - Nhạc (`data/music.js`), giọng quanh Rê thứ, các bài cùng loại thay phiên nhau (chọn trên toàn bộ danh sách phase).
   **Bài đã duyệt (26/10/2026)**, bản nghe lưu ở `out/approved/` (máy người dùng):
   - **Uptrend — 100 BPM, cinematic hào hùng:** **Vanguard** (hành quân: cello móc đơn có nhấn, tom trailer, horn 4 ô nhịp,
-    hợp xướng từ ô 5, violin đánh đôi từ ô 9) · **Titan** (xung trận: snare quân hành, bass móc đơn, spiccato, kèn fanfare).
+    hợp xướng từ ô 5, violin đánh đôi từ ô 9) · **Titan** (xung trận: snare quân hành, bass móc đơn, spiccato, kèn fanfare)
+    · **Crusade** (Rê dorian, spiccato móc đơn kiểu Celtic, horn) · **Overdrive** (rock điện ảnh: power chord rè, beat rock,
+    kèn đồng) · **Horizon** (Fa trưởng, beat lai, violin vút lên + horn đáp) · **Warpath** (taiko, hợp xướng nam hô nhịp,
+    kèn đồng). Bốn bài sau là bản đầu tiên ("v1") của chúng.
   - **Downtrend — 80 BPM, hồi hộp căng thẳng, beat vừa phải, KHÔNG kịch tính:** **Siege** (đồng hồ tích tắc + nhịp tim, bass
     ngắt móc đơn, spiccato rung, violin giữ nốt dài) · **Undertow** (Rê phrygian, spiccato láy D–Eb, rim kiểu sonar, cello
     trầm — không dùng chuông vì quá chói) · **Collapse** (hi-hat tích tắc, spiccato chạy xuống, e-piano bước xuống).
@@ -172,16 +174,16 @@ node song.js                               # nhạc (master −16 LUFS)
 node engine/render.js stills 30 60         # ảnh tĩnh tại giây 30, 60 → out/stills/
 # preview chất lượng thấp một đoạn:
 FROM=2017-01-01 TO=2018-12-31 node make-data.js && node song.js
-FPS=30 node engine/render.js video --res 480 && FPS=30 node engine/render.js mux --res 480   # 480p @30 fps
-FPS=30 node engine/render.js verify --res 480   # kiểm tra khớp hình/tiếng ở các điểm hit → out/bitcoin-chart-2020-2026-480p.mp4
+FPS=60 node engine/render.js video --res 480 && FPS=60 node engine/render.js mux --res 480   # 480p @60 fps
+FPS=60 node engine/render.js verify --res 480   # kiểm tra khớp hình/tiếng ở các điểm hit → out/bitcoin-chart-2020-2026-480p.mp4
 node check-labels.js                       # kiểm tra cả phim: không có 2 nhãn nào đè nhau
 node make-data.js && node song.js          # LUÔN khôi phục dữ liệu đầy đủ sau khi render đoạn ngắn
-# bản cuối 1080p 24fps (~8 phút 45 giây; khoảng 12.600 khung hình):
+# bản cuối 1080p 60 fps (~9 phút 18 giây; khoảng 33.500 khung hình, render ~35 phút):
 node make-data.js && node song.js && node check-labels.js
-node engine/render.js video && node engine/render.js mux && node engine/render.js verify
+FPS=60 node engine/render.js video && FPS=60 node engine/render.js mux && FPS=60 node engine/render.js verify
 # → out/bitcoin-chart-2020-2026.mp4   (hoặc gọn: npm run build)
 # thư mục out/ (video, nhạc, preview) KHÔNG đưa lên git (.gitignore): gửi file cho người dùng trực tiếp
-# đổi FPS: FPS=30 node … ; độ phân giải khác: --res 580 (cạnh ngắn, px)
+# luôn FPS=60 (preview và bản cuối); độ phân giải khác: --res 1440 / 2160 (cạnh ngắn, px)
 ```
 
 **Dùng với ChatGPT (Codex CLI) thay cho Claude:** Codex tự đọc `AGENTS.md` (ở gốc repo và trong thư mục này), cùng quy
@@ -213,10 +215,11 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
-- Đã duyệt (26/10/2026): bỏ tiêu đề, fade-in 1 s; 5 bài nhạc mới (Vanguard, Titan / Siege, Undertow, Collapse); nhạc không
+- Đã duyệt (26/10/2026): preview và bản cuối luôn 60 fps; bỏ tiêu đề, fade-in 1 s; 9 bài nhạc (uptrend: Vanguard, Titan,
+  Crusade, Overdrive, Horizon, Warpath / downtrend: Siege, Undertow, Collapse); nhạc không
   giảm tốc ở ATH / ATL (đồ thị vẫn như cũ); nhạc không giảm âm lượng dưới SFX. Preview đã xem: 2010–2015 (480p, 30 fps).
-- Đang thử nghe, chưa duyệt (`rotation: false` trong `data/music.js`): 14 bài uptrend — Crusade, Ironclad, Horizon,
-  Warpath, Legion, Spartan, Valhalla, Conquest, Last Stand, Blood Oath, War Cry, Dominion, Eclipse, Ascendant.
+- Đang thử nghe, chưa duyệt (`rotation: false` trong `data/music.js`): uptrend — Ironclad, Legion, Spartan, Valhalla,
+  Conquest, Last Stand, Blood Oath, War Cry, Dominion, Eclipse, Ascendant; downtrend — Tremor, Shadow, Vertigo, Standoff.
 - Kiểm tra gần nhất: `verify` ✓ (2010–2015); `check-labels` ✓ cả phim.
 - Đã biết, chấp nhận: ở đoạn FROM/TO ngắn, khung zoom-out lùi ra ít và ô tổng kết có thể che nhãn ATL / nến ở góc
   dưới phải (phim đầy đủ không bị).

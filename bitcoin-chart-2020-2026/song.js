@@ -176,6 +176,12 @@ function drumStep(pattern, t, s, b, k) {
       if ((s === 4 || s === 12) && !(k % 4 === 3 && s >= 8)) { const tm = I.tom(68, 0.4, s + k + 140); perc.addMono(tm, t, 0.3, s === 4 ? -0.3 : 0.3); }
       if (k % 4 === 3 && s >= 8) perc.addMono(I.tom(140 - (s - 8) * 9, 0.22, s + 151), t, 0.26 + (s - 8) * 0.03, ((s - 8) / 7 - 0.5) * 0.8);
       break;
+    case 'pendulum': // Siege's heartbeat with a pendulum: a tick-tock on every beat (high, low), soft shaker 8ths between
+      if (s % 4 === 0) perc.addMono(I.woodTick(s % 8 === 0 ? 1.95 : 1.45), t, 0.13, s % 8 === 0 ? -0.4 : 0.4);
+      if (s % 4 === 2) drums.addMono(SH[0], t, 0.04, 0);
+      if (s === 0 || s === 8) drums.addMono(K2, t, 0.55);
+      if (s === 3 || s === 11) drums.addMono(K2, t, 0.32);
+      break;
     case 'sonarPulse': // Siege's heartbeat, but rim clicks in 8ths panned left/right like a sonar sweep instead of the clock
       if (s % 2 === 0) drums.addMono(I.rim(s % 4 === 0 ? 1.25 : 1.05, s + k), t, s % 4 === 0 ? 0.14 : 0.08, (s % 8 < 4 ? -0.45 : 0.45));
       if (s === 0 || s === 8) drums.addMono(K2, t, 0.55);

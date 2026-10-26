@@ -1,6 +1,6 @@
 // THE MUSIC LIBRARY — the cues of the two market phases (phases: data/phases.csv, from detect-phases.js).
 //
-//   uptrend     ALL-TIME LOW -> ALL-TIME HIGH      cues: Vanguard, Titan (approved 2026-10-26)
+//   uptrend     ALL-TIME LOW -> ALL-TIME HIGH      cues: Vanguard, Titan, Crusade, Overdrive, Horizon, Warpath (approved)
 //   downtrend   ALL-TIME HIGH -> ALL-TIME LOW      cues: Collapse, Siege, Undertow (approved 2026-10-26)
 // A cue with `rotation: false` is in audition: it can be heard (PREVIEW_CUE=<id> PREVIEW_BARS=16 node song.js) but the
 // film does not use it until it is approved.
@@ -65,26 +65,77 @@
       arrange: { cycle: 16, from: { choir: 4, double: 8 } },
       mood: 'a battle charge: snare rolls, brass fanfare, relentless',
     },
-    // ---------------- uptrend, audition (2026-10-26): four new cues built on Vanguard v3 ----------------
-    // Same skeleton as Vanguard (approved): trailer toms (epicToms), the accented cello in 8ths (celloDrive), no 16th
-    // ostinato, a 4-bar melody, string pads, a 2-beat pickup then the groove at once, choir from bar 5, violins doubling
-    // the melody from bar 9. Each has its own chords, key, melody and lead colour.
+    // ---------------- uptrend, approved 2026-10-26 (the first versions, "v1"): four more characters ----------------
     {
-      // CRUSADE: Vanguard's twin with a brighter lift: Dm-C-Bb-C (the C keeps pushing forward), a rising horn line
-      id: 'up-crusade', phase: 'uptrend', title: 'Crusade', bpm: 100, key: 'D minor', rotation: false,
-      chords: ['Dm', 'C', 'Bb', 'C'],
+      // CRUSADE: the knights. D dorian (the bright minor, a B natural), a celtic-feeling spiccato in 8ths over a driving
+      // cello and trailer toms, a horn melody; choir from bar 5, violins doubling from bar 9
+      id: 'up-crusade', phase: 'uptrend', title: 'Crusade', bpm: 100, key: 'D dorian', approved: '2026-10-26',
+      chords: ['Dm', 'C', 'G', 'Am'],
       drums: 'epicToms', bass: 'celloDrive',
-      ostinato: null,
+      ostinato: { instrument: 'spiccato', perBeat: 2, figure: [1, 5, 8, 5] },
       lead: { instrument: 'horn', bars: 4, gain: 0.2, melody: [
-        [8, 0, 3], [10, 3, 1], [8, 4, 2], [5, 6, 2],
-        [7, 8, 3], [9, 11, 1], [11, 12, 4],
-        [10, 16, 3], [8, 19, 1], [6, 20, 4],
-        [7, 24, 2], [9, 26, 2], [8, 28, 2], [9, 30, 2],
+        [1, 0, 1], [3, 1, 1], [5, 2, 2], [8, 4, 3], [7, 7, 1],
+        [7, 8, 2], [9, 10, 2], [8, 12, 2], [7, 14, 2],
+        [4, 16, 2], [6, 18, 2], [8, 20, 3], [6, 23, 1],
+        [5, 24, 4], [9, 28, 2], [8, 30, 2],
       ] },
       pads: 'strings', choir: 'a', swell: true, pickup: 2,
       arrange: { cycle: 16, from: { choir: 4, double: 8 } },
-      mood: 'Vanguard family: pushing forward, noble',
+      mood: 'a crusade: bright minor, galloping, noble',
     },
+    {
+      // OVERDRIVE: cinematic rock. Gritty supersaw power chords, a rock beat (fat snare, open hats), driving bass 8ths,
+      // a bold brass riff-melody; no ostinato, violins doubling from bar 9
+      id: 'up-overdrive', phase: 'uptrend', title: 'Overdrive', bpm: 100, key: 'D minor', approved: '2026-10-26',
+      chords: ['Dm', 'C', 'Bb', 'C'],
+      drums: 'rockDrive', bass: 'drive8',
+      ostinato: null,
+      lead: { instrument: 'brass', bars: 4, gain: 0.18, melody: [
+        [8, 0, 2], [8, 2, 1], [7, 3, 1], [8, 4, 2], [10, 6, 2],
+        [9, 8, 3], [8, 11, 1], [7, 12, 4],
+        [6, 16, 2], [8, 18, 2], [10, 20, 3], [8, 23, 1],
+        [7, 24, 2], [9, 26, 2], [11, 28, 4],
+      ] },
+      pads: 'power', swell: true, pickup: 2,
+      arrange: { cycle: 16, from: { double: 8 } },
+      mood: 'cinematic rock: gritty, pounding, defiant',
+    },
+    {
+      // HORIZON: the sunrise. F major, uplifting: 16th spiccato, a hybrid beat, soaring violins with the horns answering,
+      // F-Bb-Dm-C; choir from bar 9
+      id: 'up-horizon', phase: 'uptrend', title: 'Horizon', bpm: 100, key: 'F major', approved: '2026-10-26',
+      chords: ['F', 'Bb', 'Dm', 'C'],
+      drums: 'cineHybrid', bass: 'octaves',
+      ostinato: { instrument: 'spiccato', perBeat: 4, figure: [1, 5, 8, 5, 10, 8, 5, 8] },
+      lead: { instrument: 'stringsHigh', bars: 4, gain: 0.2, octave: 5, melody: [
+        [5, 0, 3], [8, 3, 1], [10, 4, 4],
+        [11, 8, 3], [10, 11, 1], [8, 12, 2], [6, 14, 2],
+        [6, 16, 2], [8, 18, 2], [10, 20, 4],
+        [9, 24, 3], [8, 27, 1], [7, 28, 2], [5, 30, 2],
+      ] },
+      answer: { instrument: 'horn', bars: 2, gain: 0.13, octave: 4, notes: [[8, 4, 2], [5, 6, 2], [11, 12, 2], [8, 14, 2]] },
+      pads: 'strings', choir: 'a', swell: true, pickup: 2,
+      arrange: { cycle: 16, from: { choir: 8 } },
+      mood: 'a sunrise: uplifting, open, hopeful power',
+    },
+    {
+      // WARPATH: the war drums. A taiko ensemble, a male choir chanting in 8ths, driving bass, brass melody over
+      // Dm-F-Gm-A; violins doubling from bar 5, a held choir from bar 9
+      id: 'up-warpath', phase: 'uptrend', title: 'Warpath', bpm: 100, key: 'D minor', approved: '2026-10-26',
+      chords: ['Dm', 'F', 'Gm', 'A'],
+      drums: 'taiko', bass: 'drive8',
+      ostinato: { instrument: 'chant', perBeat: 2, octave: 3, figure: [1, 1, 5, 1] },
+      lead: { instrument: 'brass', bars: 4, gain: 0.18, melody: [
+        [1, 0, 3], [5, 3, 1], [8, 4, 4],
+        [7, 8, 3], [5, 11, 1], [3, 12, 4],
+        [4, 16, 2], [6, 18, 2], [8, 20, 4],
+        [5, 24, 3], [9, 27, 1], [5, 28, 4],
+      ] },
+      pads: 'brassPad', choir: 'o', swell: true, pickup: 2,
+      arrange: { cycle: 16, from: { double: 4, choir: 8 } },
+      mood: 'war drums: tribal, chanting, unstoppable',
+    },
+    // ---------------- uptrend, audition (2026-10-26): Ironclad, built on Vanguard v3's skeleton ----------------
     {
       // IRONCLAD: the same march with a brighter, harder lead (open brass instead of horn) climbing Bb-C-Dm-Dm
       id: 'up-ironclad', phase: 'uptrend', title: 'Ironclad', bpm: 100, key: 'D minor', rotation: false,
@@ -100,38 +151,6 @@
       pads: 'strings', choir: 'o', swell: true, pickup: 2,
       arrange: { cycle: 16, from: { choir: 4, double: 8 } },
       mood: 'Vanguard family: harder, brighter brass, a climb to D',
-    },
-    {
-      // HORIZON: the march in F major (D minor's relative), F-C-Dm-Bb: the same drive, a more hopeful horn melody
-      id: 'up-horizon', phase: 'uptrend', title: 'Horizon', bpm: 100, key: 'F major', rotation: false,
-      chords: ['F', 'C', 'Dm', 'Bb'],
-      drums: 'epicToms', bass: 'celloDrive',
-      ostinato: null,
-      lead: { instrument: 'horn', bars: 4, gain: 0.2, melody: [
-        [8, 0, 3], [10, 3, 1], [12, 4, 4],
-        [12, 8, 2], [9, 10, 2], [7, 12, 4],
-        [6, 16, 3], [8, 19, 1], [10, 20, 4],
-        [11, 24, 3], [10, 27, 1], [8, 28, 4],
-      ] },
-      pads: 'strings', choir: 'a', swell: true, pickup: 2,
-      arrange: { cycle: 16, from: { choir: 4, double: 8 } },
-      mood: 'Vanguard family: hopeful, open, still driving',
-    },
-    {
-      // WARPATH: the march a fourth higher in G minor, Gm-Eb-Bb-F: darker and heavier, a horn melody that leaps
-      id: 'up-warpath', phase: 'uptrend', title: 'Warpath', bpm: 100, key: 'G minor', rotation: false,
-      chords: ['Gm', 'Eb', 'Bb', 'F'],
-      drums: 'epicToms', bass: 'celloDrive',
-      ostinato: null,
-      lead: { instrument: 'horn', bars: 4, gain: 0.2, melody: [
-        [5, 0, 3], [8, 3, 1], [10, 4, 2], [8, 6, 2],
-        [6, 8, 3], [8, 11, 1], [10, 12, 4],
-        [10, 16, 2], [12, 18, 2], [10, 20, 3], [7, 23, 1],
-        [7, 24, 3], [9, 27, 1], [11, 28, 4],
-      ] },
-      pads: 'strings', choir: 'o', swell: true, pickup: 2,
-      arrange: { cycle: 16, from: { choir: 4, double: 8 } },
-      mood: 'Vanguard family: darker, heavier, leaping',
     },
     // ---------------- uptrend, audition (2026-10-26): four anthems on Vanguard's skeleton ----------------
     // Vanguard's skeleton (accented cello 8ths, trailer toms, no 16th ostinato, a 4-bar melody, string pads, 2-beat
@@ -312,6 +331,55 @@
     // ---------------- downtrend, suspense: unbearable tension, a moderate beat, 80 BPM, NOT dramatic ----------------
     // The opposite of the uptrend cues: slower, held back, dark and unresolved, no fanfare, no crashes, no swells, a soft
     // pickup (a dark swell + heartbeat instead of a drum roll).
+    // ---------------- downtrend, audition (2026-10-26): four more in Siege's spirit (80 BPM, suspense, not dramatic) -----
+    {
+      // TREMOR: the ground shaking. A low pizzicato repeating on the root like a tremor, a pendulum tick-tock over the
+      // heartbeat, staccato bass 8ths, a low cello holding long notes; Dm-Dm(b9)-Bb(#11)-A
+      id: 'down-tremor', phase: 'downtrend', title: 'Tremor', bpm: 80, key: 'D minor', rotation: false,
+      chords: ['Dm', 'Dm(b9)', 'Bb(#11)', 'A'],
+      drums: 'pendulum', bass: 'pulse8',
+      ostinato: { instrument: 'pizz', perBeat: 4, octave: 3, gain: 0.14, figure: [1, 1, 1, 2] },
+      lead: { instrument: 'cello', bars: 4, gain: 0.32, octave: 4, melody: [[8, 0, 8], [6, 8, 6], [5, 14, 2], [6, 16, 8], [5, 24, 8]] },
+      pads: 'darkPad', softPickup: true, pickup: 2,
+      arrange: { cycle: 16, from: { lead: 4 } },
+      mood: 'a tremor: low, repeating, the ground about to give',
+    },
+    {
+      // SHADOW: something behind you. A pulsing spiccato that keeps falling back a step (8-8-7-8), closed hats ticking
+      // over the heartbeat, a sparse electric piano line, Dm-Gm(add9)-Dm-Eb (the Eb a step above D, unresolved)
+      id: 'down-shadow', phase: 'downtrend', title: 'Shadow', bpm: 80, key: 'D minor', rotation: false,
+      chords: ['Dm', 'Gm(add9)', 'Dm', 'Eb'],
+      drums: 'fallPulse', bass: 'pulse8',
+      ostinato: { instrument: 'spiccato', perBeat: 4, figure: [8, 8, 7, 8] },
+      lead: { instrument: 'epiano', bars: 4, gain: 0.26, octave: 5, melody: [[5, 0, 4], [4, 6, 2], [3, 8, 6], [2, 14, 2], [5, 16, 8], [6, 24, 8]] },
+      pads: 'darkPad', choir: 'u', softPickup: true, pickup: 2,
+      arrange: { cycle: 16, from: { choir: 8 } },
+      mood: 'a shadow: close behind, never seen',
+    },
+    {
+      // VERTIGO: losing footing. A syncopated pizzicato rocking a step up and back (3-3-3-3-2-2), rim clicks sweeping
+      // over the heartbeat, staccato bass, high violins sliding down D-C-Bb-A one bar each; Dm-Dm-Bb-Bb
+      id: 'down-vertigo', phase: 'downtrend', title: 'Vertigo', bpm: 80, key: 'D minor', rotation: false,
+      chords: ['Dm', 'Dm', 'Bb', 'Bb'],
+      drums: 'sonarPulse', bass: 'pulse8',
+      ostinato: { instrument: 'pizz', perBeat: 4, figure: [1, 2, 1, 3], mask: [1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0] },
+      lead: { instrument: 'stringsHigh', bars: 4, gain: 0.28, octave: 5, melody: [[8, 0, 8], [7, 8, 8], [6, 16, 8], [5, 24, 8]] },
+      pads: 'darkPad', softPickup: true, pickup: 2,
+      arrange: { cycle: 16, from: { lead: 4 } },
+      mood: 'vertigo: rocking, sliding down, nothing to hold',
+    },
+    {
+      // STANDOFF: two sides waiting. The wood-tick clock over the heartbeat, a soft marimba in 8ths, staccato bass, a
+      // low muted horn holding long notes; Dm-Bb-Dm-C, nothing moves, nothing resolves
+      id: 'down-standoff', phase: 'downtrend', title: 'Standoff', bpm: 80, key: 'D minor', rotation: false,
+      chords: ['Dm', 'Bb', 'Dm', 'C'],
+      drums: 'clockLight', bass: 'pulse8',
+      ostinato: { instrument: 'marimba', perBeat: 2, gain: 0.06, figure: [1, 5, 1, 8] },
+      lead: { instrument: 'horn', bars: 4, gain: 0.14, octave: 3, melody: [[5, 0, 8], [4, 8, 8], [5, 16, 8], [4, 24, 8]] },
+      pads: 'darkPad', softPickup: true, pickup: 2,
+      arrange: { cycle: 16, from: { lead: 4 } },
+      mood: 'a standoff: the clock, the wait, the held breath',
+    },
     {
       // UNDERTOW: dread, under water. Siege's pulse (heartbeat + staccato bass 8ths + 16th spiccato) in D phrygian: the
       // spiccato trills D-Eb a semitone apart, rim clicks sweep left/right like sonar, a low cello motif circles D-Eb
