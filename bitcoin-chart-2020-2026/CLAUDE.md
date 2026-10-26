@@ -1,4 +1,4 @@
-# CLAUDE.md — instructions for Claude (same as AGENTS.md)
+# CLAUDE.md — instructions for Claude (same rules as AGENTS.md, which ChatGPT / Codex reads; keep both in step)
 
 **PROJECT.md** is the approved spec and the working rules for this video; it is imported below, so it is always loaded.
 In short:
@@ -21,5 +21,13 @@ In short:
 - When the user says "render video final": ask 3 steps, one at a time — FPS (24 / 30 / 60), aspect ratio
   (16:9 / 1:1 / 9:16), resolution (Full HD / 2K / 4K); defaults 30 fps, 16:9, Full HD (PROJECT.md §1.6).
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.
+
+## Running here
+
+- A full render takes ~16 min at 1080p 30 fps (a 480p preview of 1–2 years ~1–2 min): run long commands in the
+  background; never leave a FROM/TO cut in place (restore with `node make-data.js && node song.js`).
+- `git pull` before starting, so work done meanwhile by another assistant (ChatGPT / Codex) is not overwritten.
+- `out/` is not committed (.gitignore): send the rendered files to the user directly.
+- When a rule changes, update PROJECT.md and keep CLAUDE.md and AGENTS.md saying the same thing.
 
 @PROJECT.md

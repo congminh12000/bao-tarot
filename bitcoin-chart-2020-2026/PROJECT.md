@@ -176,6 +176,10 @@ node engine/render.js video && node engine/render.js mux && node engine/render.j
 # đổi FPS: FPS=30 node … ; độ phân giải khác: --res 580 (cạnh ngắn, px)
 ```
 
+**Dùng với ChatGPT (Codex CLI) thay cho Claude:** Codex tự đọc `AGENTS.md` (ở gốc repo và trong thư mục này), cùng quy
+tắc với `CLAUDE.md`. Cài: `npm install -g @openai/codex`, mở terminal trong `bitcoin-chart-2020-2026/`, `git pull`, rồi chạy
+`codex` (đăng nhập bằng tài khoản ChatGPT). Cho phép Codex chạy Chrome, ghi `out/` và dùng mạng (git push).
+
 Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt `CHROME_PATH` tới một script bọc
 `exec /path/to/chrome --no-sandbox "$@"`. Trên máy cá nhân (Mac) không cần.
 

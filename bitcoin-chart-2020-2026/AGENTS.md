@@ -1,6 +1,8 @@
-# Instructions for any AI assistant working on this project
+# AGENTS.md — instructions for ChatGPT / Codex and any other AI assistant (same rules as CLAUDE.md)
 
-Read **PROJECT.md** first: it is the approved spec and the working rules for this video. In short:
+**Before doing anything in a session, open `PROJECT.md` and read it in full** (it is not loaded automatically): it is
+the approved spec and the working rules for this video — §1 how to work with the user, §2–§6 what the video must look
+and sound like, §8 the commands, §10 the current status and what is waiting for approval. In short:
 
 - Reply to the user in **Vietnamese**; all text inside the video is **English**.
 - After every change: render a **short, low-quality preview** (30 fps, 16:9, 480p: `FPS=30 … --res 480`, a short
@@ -20,3 +22,16 @@ Read **PROJECT.md** first: it is the approved spec and the working rules for thi
 - When the user says "render video final": ask 3 steps, one at a time — FPS (24 / 30 / 60), aspect ratio
   (16:9 / 1:1 / 9:16), resolution (Full HD / 2K / 4K); defaults 30 fps, 16:9, Full HD (PROJECT.md §1.6).
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.
+
+## Running here (Codex / ChatGPT)
+
+- Rendering is plain local tooling: Node 22+, ffmpeg and Google Chrome (headless, found in /Applications). The
+  assistant only runs the commands of PROJECT.md §8 in this folder. `npm install` once for `check-labels.js`.
+- Codex's sandbox must allow launching Chrome and writing `out/`, and needs network for `git pull` / `git push`
+  (run Codex with a mode that permits these, or approve them when asked).
+- A full render takes ~16 min at 1080p 30 fps (a 480p preview of 1–2 years ~1–2 min): run long commands in the
+  background and report when they finish; never leave a FROM/TO cut in place (restore with `node make-data.js && node song.js`).
+- `git pull` before starting, so work done meanwhile by another assistant (Claude) is not overwritten.
+- `out/` is not committed (.gitignore): send the rendered files to the user directly.
+- You cannot hear the music: report the measured numbers (LUFS, levels) and ask the user to listen.
+- When a rule changes, update PROJECT.md and keep AGENTS.md and CLAUDE.md saying the same thing.
