@@ -22,6 +22,12 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
 - Status and what is waiting for approval: PROJECT.md §10. Commands (incl. first-time setup on a Mac): PROJECT.md §8.
 - Previews and finals are ALWAYS 60 fps. When the user says "render video final": ask 2 steps, one at a time — aspect
   ratio (16:9 / 1:1 / 9:16), resolution (Full HD / 2K / 4K); defaults 16:9, Full HD (PROJECT.md §1.6).
+- ALWAYS keep every render (preview and final): `FPS=60 node keep-render.js save <name> [--res 480]`. For a small change
+  that does not touch the picture (music, mix…), reuse the kept frames (`keep-render.js check` → `restore` → `song.js` →
+  `mux` + `verify`) instead of rendering again; render again only for new data or a change that alters the picture.
+- NO cue may repeat in the film: approved cues of each type ≥ phases of that type (`make-data.js` warns "NOT ENOUGH
+  MUSIC"; `--strict` before a final). If short: make new cues in the approved style, send the user an audition, and
+  render only once enough are approved (PROJECT.md §1.7–1.8).
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.
 
 ## Running here (Codex / ChatGPT)

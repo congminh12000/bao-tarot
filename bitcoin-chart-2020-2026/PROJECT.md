@@ -26,6 +26,14 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
    Mặc định (in đậm): **16:9, Full HD**. Cách chạy: `FPS=60 node engine/render.js video --format <tỷ lệ>
    --res <1080|1440|2160>` (cạnh ngắn, px), rồi `mux` + `verify` với cùng các tham số. Layout `film.js` được thiết kế
    cho 16:9; với 1:1 / 9:16 phải render preview kiểm tra bố cục trước khi chạy bản cuối.
+7. **Luôn lưu lại bản render** (preview và bản cuối) để tái sử dụng: sau mỗi lần render chạy
+   `FPS=60 node keep-render.js save <tên> [--res 480]` (lưu khung hình câm + mp4 + dấu vân tay vào `out/renders/<tên>/`).
+   Khi chỉ chỉnh nhỏ không làm đổi hình (nhạc, mix, giai điệu…): `keep-render.js check` → `restore` → `node song.js` →
+   `render.js mux` + `verify`, **không render lại khung hình**. Chỉ render lại khi cập nhật dữ liệu hoặc thay đổi lớn ảnh
+   hưởng tới hình (nhãn, đồ thị, tempo/thứ tự bài, fps, độ phân giải) — `check` sẽ báo phần nào đã đổi.
+8. **Nhạc không được lặp lại** trong phim: số bài đã duyệt của mỗi loại phải ≥ số phase loại đó. `make-data.js` in
+   "⚠ NOT ENOUGH MUSIC" khi thiếu (`--strict` thì dừng hẳn, dùng trước bản cuối). Thiếu bài → **tự tạo bài mới đúng phong
+   cách đã duyệt, gửi người dùng nghe thử trước**, chỉ render khi đã đủ bài được duyệt.
 
 ## 2. Đặc tả video (đã duyệt)
 
@@ -154,6 +162,7 @@ bitcoin-chart-2020-2026/
   look.js            chọn phong cách (hologram)
   index.html         tải engine + data + score + film trong Chrome headless
   check-labels.js    kiểm tra cả phim: không có 2 nhãn nào đè nhau (cần `npm install` 1 lần: playwright-core)
+  keep-render.js     lưu / kiểm tra / dùng lại khung hình đã render (out/renders/)
   data/              events.csv, phases.csv, music.js, tradingview/, anchors.csv, README.md
   assets/            logo Bitcoin (gốc + âm bản)
   engine/            bộ công cụ render/âm thanh (không sửa theo từng phim)
@@ -182,9 +191,15 @@ FPS=60 node engine/render.js video --res 480 && FPS=60 node engine/render.js mux
 FPS=60 node engine/render.js verify --res 480   # kiểm tra khớp hình/tiếng ở các điểm hit → out/bitcoin-chart-2020-2026-480p.mp4
 node check-labels.js                       # kiểm tra cả phim: không có 2 nhãn nào đè nhau
 node make-data.js && node song.js          # LUÔN khôi phục dữ liệu đầy đủ sau khi render đoạn ngắn
+FPS=60 node keep-render.js save 2017-2018 --res 480   # LUÔN lưu bản render (tên tùy ý, ví dụ theo FROM–TO)
+# chỉnh nhỏ không đổi hình (nhạc…): dùng lại khung hình đã lưu thay vì render lại
+FPS=60 node keep-render.js check 2017-2018 --res 480    # ✓ dùng lại được / ✗ hình đã đổi (liệt kê phần đổi)
+FPS=60 node keep-render.js restore 2017-2018 --res 480 && node song.js && FPS=60 node engine/render.js mux --res 480
+node keep-render.js list                               # các bản đã lưu
 # bản cuối 1080p 60 fps (~9 phút 18 giây; khoảng 33.500 khung hình, render ~35 phút):
-node make-data.js && node song.js && node check-labels.js
+node make-data.js --strict && node song.js && node check-labels.js   # --strict: dừng nếu nhạc sẽ bị lặp
 FPS=60 node engine/render.js video && FPS=60 node engine/render.js mux && FPS=60 node engine/render.js verify
+FPS=60 node keep-render.js save final-<ngày>
 # → out/bitcoin-chart-2020-2026.mp4   (hoặc gọn: npm run build)
 # thư mục out/ (video, nhạc, preview) KHÔNG đưa lên git (.gitignore): gửi file cho người dùng trực tiếp
 # luôn FPS=60 (preview và bản cuối); độ phân giải khác: --res 1440 / 2160 (cạnh ngắn, px)

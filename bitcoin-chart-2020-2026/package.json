@@ -11,7 +11,7 @@
     "mux": "node engine/render.js mux",
     "check": "node engine/render.js check",
     "verify": "node engine/render.js verify",
-    "build": "node make-data.js && node song.js && node check-labels.js && node engine/render.js video && node engine/render.js mux && node engine/render.js check && node engine/render.js verify",
+    "build": "node make-data.js --strict && node song.js && node check-labels.js && FPS=60 node engine/render.js video && FPS=60 node engine/render.js mux && FPS=60 node engine/render.js check && FPS=60 node engine/render.js verify && FPS=60 node keep-render.js save final-$(date +%Y%m%d)",
     "labels": "node check-labels.js"
   },
   "devDependencies": {
