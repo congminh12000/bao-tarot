@@ -49,7 +49,7 @@ các quy tắc ở đây; chỉ thay đổi khi người dùng yêu cầu, và c
 | Bên phải chart | Không có bubble giá; chỉ có **đường chấm chấm** từ nến đang chạy tới trục giá |
 | Trục X / Y | 2 đường trục (đáy chart, trục giá) **luôn vẽ trên cùng**: không nhãn, sóng xung kích hay hiệu ứng nào đè lên |
 | Mở đầu | **Không có tiêu đề.** Hình **fade-in từ đen trong 1 s** (sau bloom/grain, `FADE_IN` trong `film.js`), nhạc bắt đầu ngay khung đầu và cũng fade-in 1 s (`FADE_IN` trong `song.js`). Nến chạy ngay từ khung đầu ở tốc độ phase đầu; 180 ngày **pre-run** lấp đầy màn hình phía sau (ngày chưa có dữ liệu: không nến, không giá) |
-| Kết thúc | Camera lùi ra toàn cảnh. Giữ lại nhãn **mức 2** (kể cả ATH/ATL) và **halving**, thu nhỏ quanh cây nến của chúng (giữ hình dạng lúc xuất hiện); nhãn mức 1 mờ đi. Trục giá: mốc thưa nhất (1, 1-3, 1-2-5…) mà vẫn ≥ 6 mốc. **Ô tổng kết** tinh gọn kiểu glow tech (kính sáng, viền neon đôi, góc trắng, vệt sáng quét 1 lần): hàng trên = năm (30px, sát phải); hàng dưới = giá đầu → giá cuối (chạy số) + chip % cùng hàng; tự giãn theo độ dài số, góc dưới phải chart |
+| Kết thúc | Camera lùi ra toàn cảnh. Giữ lại nhãn **mức 2** (kể cả ATH/ATL) và **halving**, thu nhỏ quanh cây nến của chúng (giữ hình dạng lúc xuất hiện); nhãn mức 1 mờ đi. Trục giá: mốc thưa nhất (1, 1-3, 1-2-5…) mà vẫn ≥ 6 mốc. **Ô tổng kết** ghép từ 2 khung nhãn: **dòng 1 = khung mức 2** (nền nhuộm màu, glow nhấp nháy): đồng coin Bitcoin cam bên trái, giá đầu → giá cuối (chạy số) bên phải, 48px; **dòng 2 = khung mức 1** (hộp xám, góc màu): tổng số năm bên trái (`16 YEARS`; < 2 năm thì 1 chữ số lẻ), % giá bên phải (`+163,294,184%`), 32px — dòng 1 to hơn 50%. Giá đầu mờ 52,5% (cùng cỡ), glow giá cuối 3,5, glow % giá 5,6. Xanh khi tăng, đỏ khi giảm; tự giãn theo độ dài số, góc dưới phải chart |
 | Ngôn ngữ trong video | Tiếng Anh |
 
 ## 3. Nhãn sự kiện (đã duyệt)
@@ -237,7 +237,7 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
-- Đã duyệt (26/10/2026): preview và bản cuối luôn 60 fps; bỏ tiêu đề, fade-in 1 s; 17 bài nhạc (uptrend: Vanguard, Titan,
+- Đã duyệt (26/10/2026): ô tổng kết mới (khung mức 2 + mức 1, logo, số năm, % giá); preview và bản cuối luôn 60 fps; bỏ tiêu đề, fade-in 1 s; 17 bài nhạc (uptrend: Vanguard, Titan,
   Crusade, Overdrive, Horizon, Warpath, Spartan, Last Stand, War Cry, Dominion / downtrend: Siege, Undertow, Collapse, Tremor, Shadow, Vertigo, Standoff); nhạc không
   giảm tốc ở ATH / ATL (đồ thị vẫn như cũ); nhạc không giảm âm lượng dưới SFX. Preview đã xem: 2010–2015 (480p, 30 fps).
 - Đang thử nghe, chưa duyệt (`rotation: false` trong `data/music.js`): uptrend — Ironclad, Legion, Valhalla, Conquest,

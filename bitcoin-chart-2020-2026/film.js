@@ -42,7 +42,7 @@
   const P0 = S.P0; // the first day of the film (the days before it are the pre-run under the title)
   const Y_DATA = S.dateOf(Math.min(0, Math.floor(S.dayAt(0)) - 120)).getUTCFullYear(); // the first year on screen (pre-run included), for the grid
   const Y_START = S.dateOf(P0).getUTCFullYear(), Y_END = S.dateOf(NDAYS - 1).getUTCFullYear();
-  let LOGO = null;
+  let LOGO = null, COIN = null; // the negative logo behind the chart; the orange coin on the closing card
   const yearOf = (d) => S.dateOf(clamp(d, 0, NDAYS - 1)).getUTCFullYear();
   const pad2 = (x) => String(x).padStart(2, '0');
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -553,69 +553,42 @@
     if (f > 0) { ctx.save(); ctx.globalAlpha = 1; ctx.fillStyle = `rgba(5,5,8,${f})`; ctx.fillRect(0, 0, W, H); ctx.restore(); }
   };
 
-  // the closing card, kept lean: the years on top, first price → last price (counting up) and the gain chip on one row, on a small bright
-  // glass HUD panel (tinted top, double neon border, corner brackets, fine inner grid); a light sweep crosses it once
+  // the closing card, built from the two event-label frames: row 1 in the hit-2 frame (coloured, tinted, pulsing glow):
+  // the Bitcoin coin on the left, first price → last price (counting up) on the right; row 2 under it in the hit-1 frame
+  // (quiet grey box, coloured brackets): the number of years on the left, the gain in % on the right. Row 1 is 50% bigger.
   function summaryCard(ctx, t) {
     const t0 = ZOOM1 - 0.6, age = t - t0;
     if (age <= 0) return;
     const a = sstep(age / 0.5), pop = 0.94 + 0.06 * ease.outCubic(clamp(age / 0.6));
     const p0 = DAYS[P0][0], p1 = DAYS[NDAYS - 1][3], mult = p1 / p0, up = p1 >= p0, col = up ? UP : DOWN;
-    const gain = mult >= 100 ? `×${Math.round(mult).toLocaleString('en-US')}` : `${up ? '+' : '−'}${Math.abs(Math.round((mult - 1) * 100))}%`;
+    const pct = `${up ? '+' : '−'}${Math.abs(Math.round((mult - 1) * 100)).toLocaleString('en-US')}%`;
+    const yrs = (NDAYS - P0) / 365.25, years = `${yrs >= 2 ? Math.round(yrs) : yrs.toFixed(1)} ${yrs >= 0.95 && yrs < 1.05 ? 'YEAR' : 'YEARS'}`;
     const pNow = Math.exp(lerp(Math.log(p0), Math.log(p1), ease.outCubic(clamp((age - 0.2) / 1.1)))); // the count-up
-    // as wide as the price row needs (first price, arrow, last price, gain chip), at least 500
-    const need = 24 + measure(ctx, fmt(p0), 28, 700, L.mono) + 54 + measure(ctx, fmt(p1), 42, 800, L.mono) + 18 + measure(ctx, gain, 24, 800, L.mono) + 28 + 24;
-    const w = Math.max(500, Math.ceil(need)), h = 140, x = PLOT_R - 36 - w, y = Y1 - 26 - h, r = 14;
+    const S1 = 48, S0 = S1, S2 = 32, PADX = 22, GAP = 10, H1 = 84, H2 = 56, ICON = 56; // S0: the first price (same size, dimmer)
+    const s0 = fmt(p0), s1 = fmt(pNow), arrow = '  →  ';
+    const w0 = measure(ctx, s0, S0, 700, L.mono), wA = measure(ctx, arrow, S1, 800), w1 = measure(ctx, fmt(p1), S1, 800, L.mono);
+    const w = Math.max(PADX * 2 + ICON + 24 + w0 + wA + w1, PADX * 2 + measure(ctx, years, S2, 800) + 60 + measure(ctx, pct, S2, 800, L.mono));
+    const h = H1 + GAP + H2, x = PLOT_R - 36 - w, y = Y1 - 26 - h, y2 = y + H1 + GAP;
     ctx.save();
     ctx.globalAlpha = a;
     ctx.translate(x + w / 2, y + h / 2); ctx.scale(pop, pop); ctx.translate(-(x + w / 2), -(y + h / 2));
-    const card = () => { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); };
-    // halo + glass
-    ctx.save(); ctx.shadowColor = L.accent; ctx.shadowBlur = 36; ctx.fillStyle = 'rgba(4,16,30,0.9)'; card(); ctx.fill(); ctx.restore();
-    const g = ctx.createLinearGradient(0, y, 0, y + h);
-    g.addColorStop(0, rgba(L.accent, 0.24)); g.addColorStop(0.4, rgba(L.accent, 0.07)); g.addColorStop(1, 'rgba(2,8,18,0)');
-    ctx.fillStyle = g; card(); ctx.fill();
-    // fine grid inside, and the light sweep (once)
-    ctx.save(); card(); ctx.clip();
-    ctx.strokeStyle = rgba(L.accent, 0.07); ctx.lineWidth = 1; ctx.beginPath();
-    for (let gx = x + 14; gx < x + w; gx += 22) { ctx.moveTo(gx + 0.5, y); ctx.lineTo(gx + 0.5, y + h); }
-    for (let gy = y + 11; gy < y + h; gy += 22) { ctx.moveTo(x, gy + 0.5); ctx.lineTo(x + w, gy + 0.5); }
-    ctx.stroke();
-    const sw = (age - 0.35) / 0.9;
-    if (sw > 0 && sw < 1) {
-      const sx = x - 150 + sw * (w + 300);
-      const lg = ctx.createLinearGradient(sx - 90, 0, sx + 90, 0);
-      lg.addColorStop(0, 'rgba(255,255,255,0)'); lg.addColorStop(0.5, 'rgba(200,250,255,0.16)'); lg.addColorStop(1, 'rgba(255,255,255,0)');
-      ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = lg;
-      ctx.beginPath(); ctx.moveTo(sx - 40, y); ctx.lineTo(sx + 90, y); ctx.lineTo(sx + 40, y + h); ctx.lineTo(sx - 90, y + h); ctx.fill();
+    // row 1: the hit-2 frame
+    const pulse = 0.6 + 0.4 * Math.sin(age * 6);
+    panel(ctx, x, y, w, H1, col, { fill: 'rgba(2,8,16,0.82)', corner: 16, glow: 30 * pulse });
+    ctx.save(); ctx.fillStyle = rgba(col, 0.2); ctx.fillRect(x, y, w, H1); ctx.restore();
+    if (COIN) {
+      ctx.save(); ctx.shadowColor = '#F7931A'; ctx.shadowBlur = 18;
+      ctx.drawImage(COIN, x + PADX, y + (H1 - ICON) / 2, ICON, ICON); ctx.restore();
     }
-    ctx.restore();
-    // double border + white-hot corner brackets
-    ctx.save();
-    ctx.strokeStyle = L.accent; ctx.lineWidth = 2; ctx.shadowColor = L.accent; ctx.shadowBlur = 16; card(); ctx.stroke();
-    ctx.shadowBlur = 0; ctx.strokeStyle = rgba(L.accent, 0.28); ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.roundRect(x + 6, y + 6, w - 12, h - 12, r - 5); ctx.stroke();
-    ctx.strokeStyle = '#E8FDFF'; ctx.lineWidth = 2.5; ctx.shadowColor = L.accent; ctx.shadowBlur = 12; ctx.lineCap = 'round';
-    ctx.beginPath();
-    for (const [cx, cy, sx, sy] of [[x, y, 1, 1], [x + w, y, -1, 1], [x, y + h, 1, -1], [x + w, y + h, -1, -1]]) {
-      ctx.moveTo(cx + sx * 3, cy + sy * 24); ctx.lineTo(cx + sx * 3, cy + sy * 3); ctx.lineTo(cx + sx * 24, cy + sy * 3);
-    }
-    ctx.stroke(); ctx.restore();
-    // the years, a little bigger, flush right on top; under them first price → last price (counting up) with the gain
-    // chip on the same row
-    txt(ctx, `${Y_START}  →  ${Y_END}`, x + w - 24, y + 46, { size: 30, w: 800, fam: L.mono, color: L.text, align: 'right', glow: 8, spacing: 3 });
-    const by = y + h - 30, s0 = fmt(p0), s1 = fmt(pNow), s1End = fmt(p1);
-    txt(ctx, s0, x + 24, by, { size: 28, w: 700, fam: L.mono, color: rgba(L.text, 0.75), glow: 4 });
-    const w0 = measure(ctx, s0, 28, 700, L.mono);
-    txt(ctx, '→', x + 24 + w0 + 14, by - 2, { size: 28, w: 800, color: L.accent, glow: 10 });
-    const x1 = x + 24 + w0 + 54;
-    txt(ctx, s1, x1, by + 2, { size: 42, w: 800, fam: L.mono, color: '#FFFFFF', glow: 6 });
-    const cs = 24, cw = measure(ctx, gain, cs, 800, L.mono) + 28, chx = Math.max(x1 + measure(ctx, s1End, 42, 800, L.mono) + 18, x + w - 24 - cw), chy = by - 30;
-    ctx.save();
-    ctx.fillStyle = 'rgba(2,10,16,0.85)'; ctx.strokeStyle = col; ctx.lineWidth = 2; ctx.shadowColor = col; ctx.shadowBlur = 14 * (0.75 + 0.25 * Math.sin(age * 5));
-    ctx.beginPath(); ctx.roundRect(chx, chy, cw, 38, 19); ctx.fill(); ctx.stroke();
-    ctx.shadowBlur = 0; ctx.fillStyle = rgba(col, 0.14); ctx.fill();
-    ctx.restore();
-    txt(ctx, gain, chx + cw / 2, chy + 27, { size: cs, w: 800, fam: L.mono, color: up ? '#D9FFEC' : '#FFE0E6', align: 'center', alpha: clamp((age - 0.9) / 0.4) });
+    const by = y + H1 / 2 + S1 * 0.35, xr = x + w - PADX;
+    txt(ctx, s1, xr, by, { size: S1, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 3.5 });
+    txt(ctx, arrow, xr - w1, by, { size: S1, w: 800, color: col, align: 'right', glow: 12 });
+    txt(ctx, s0, xr - w1 - wA, by, { size: S0, w: 700, fam: L.mono, color: rgba(L.text, 0.525), align: 'right', glow: 4 });
+    // row 2: the hit-1 frame
+    panel(ctx, x, y2, w, H2, col, { fill: 'rgba(2,8,16,0.6)', corner: 8, glow: 4, alpha: 0.85 });
+    const by2 = y2 + H2 / 2 + S2 * 0.35;
+    txt(ctx, years, x + PADX, by2, { size: S2, w: 800, color: rgba(L.text, 0.85), spacing: 2 });
+    txt(ctx, pct, xr, by2, { size: S2, w: 800, fam: L.mono, color: col, align: 'right', glow: 5.6, alpha: clamp((age - 0.9) / 0.4) });
     ctx.restore();
   }
 
@@ -698,7 +671,7 @@
       dust(ctx, t);
       scanlines(ctx, t);
     },
-    async init() { LOGO = await Studio.loadImage('assets/bitcoin-logo-negative.png'); },
+    async init() { LOGO = await Studio.loadImage('assets/bitcoin-logo-negative.png'); COIN = await Studio.loadImage('assets/bitcoin-logo.png'); },
     post: { paper: 0, vignette: 0.5, grain: 0.035, bloom: 1.1 },
     fadeOut: 1.2,
   });
