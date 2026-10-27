@@ -1,26 +1,32 @@
-# Ethereum — YouTube text draft
+# Ethereum — YouTube text
 
-## Title options (awaiting user selection)
+Written 2026-10-27 following the root `youtube.md` rules (title starts with the coin, no years; description with no
+years, prices or anything that changes) and the channel upload defaults (`../../../youtube-brand/channel.md`).
+Chapter times are the verified ones for the opening-immediate final (7:17); only the upgrade names were capitalised.
 
-1. Ethereum Price History: Every All-Time High & Crash, Animated
-2. Ethereum Price History: From the First Trades to The Merge and Beyond
-3. Ethereum Price Chart: The Story Behind Every Major Cycle
+## Title
+
+```
+Ethereum Price History: Every All-Time High & Crash, Animated in 7 Minutes
+```
 
 ## Description
 
-Ethereum's history, replayed one daily candle at a time: the DAO fork, market cycles, major protocol upgrades, The Merge and spot Ether ETFs.
+```
+Every all-time high. Every crash. Every upgrade. The whole story of Ethereum, told by its price chart.
 
-Uptrends and downtrends each have their own original score: heroic on the climbs, tense on the falls. Historical labels include major milestones and quieter market context.
+This animated chart replays Ethereum's history one daily candle at a time, from its first exchange trades to the latest close: the DAO hack and the fork that followed, the ICO boom and the crypto winter, DeFi and EIP-1559, The Merge to proof of stake, and the arrival of spot Ether ETFs.
 
-Chapters:
+The market moves in two kinds of phases: a bull run, from an all-time low to the next all-time high, and a bear market, from an all-time high to the next all-time low. Each phase has its own original score: heroic in the climbs, tense in the falls. Network upgrades are marked in gold along the way.
 
+⏱ CHAPTERS
 0:00 The first trades · ATH: the first exchange peak · ATL: the early trading drawdown
 0:19 ATH: the Homestead era · Homestead upgrade · ATL: after Homestead
 0:30 The DAO hack · ATH: the DAO era · The DAO fork
-0:43 Tangerine whistle · Spurious dragon · ATL: after the DAO fork
+0:43 Tangerine Whistle · Spurious Dragon · ATL: after the DAO fork
 1:16 Byzantium upgrade · ATH: before the crypto winter
 1:58 ATL: the crypto winter · Constantinople upgrade
-2:35 Istanbul upgrade · Muir glacier upgrade · COVID crash
+2:35 Istanbul upgrade · Muir Glacier upgrade · COVID crash
 3:10 The Beacon Chain launches
 3:24 Berlin upgrade · ATH: before London · China crypto ban
 3:36 ATL: the mid-cycle retreat · London introduces EIP-1559
@@ -34,13 +40,24 @@ Chapters:
 6:26 Fusaka upgrade
 6:51 ATL: after Fusaka
 
-Data: TradingView INDEX:ETHUSD daily candles. Missing daily observations are interpolated and marked as estimated in the project data.
-Events: Ethereum.org and Ethereum Foundation announcements; SEC and issuer filings; Uniswap history; selected shared-market events reconciled against the saved 99Bitcoins Bitcoin timeline. Detailed provenance: coins/ETH/data/SOURCES.md. This is a curated history, not a complete account of every market event.
+📊 DATA
+Daily candles: TradingView, INDEX:ETHUSD. All-time highs and lows from the same data.
+Events: ethereum.org and the Ethereum Foundation blog, SEC filings, the Uniswap blog, and shared market events from the 99Bitcoins historical timeline.
 
-Music and sound design: original, made for this video.
-For education and entertainment only. Not financial advice.
+🎵 Music and sound design: original, made for Data Lab Motion.
 
-#Ethereum #ETH #Crypto #EthereumPrice #EthereumHistory
+🔔 Subscribe for more animated price charts and Shorts.
+
+⚠️ For education and entertainment only. Not financial advice.
+
+#Ethereum #ETH #Crypto #EthereumPrice #EthereumHistory #Cryptocurrency
+```
+
+## Tags
+
+```
+Data Lab Motion, ethereum, eth, ether, ethereum price history, ethereum price, ethereum history, ethereum chart, eth price history, the merge, ethereum upgrades, eip-1559, the dao hack, ethereum etf, proof of stake, crypto, cryptocurrency, crypto price history, price chart animation, animated chart, candlestick chart, all-time high, crypto crash, bull market, bear market, data visualization
+```
 
 ## Validation status
 

@@ -68,5 +68,6 @@ Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit v
   the index data on that UTC day: https://www.tradingview.com/symbols/ETHUSD/?exchange=INDEX
 - Kraken's official post "Kraken Launches Ether Trading" is dated **2015-08-08** and says "Today Kraken launched with
   ether trading": https://blog.kraken.com/product/kraken-launches-ether-trading
-- Date conflict kept open, not overwritten: the label stays on 2015-08-07 (first traded candle) until the user decides.
+- Date conflict noted, not overwritten. The user decided on 2026-10-27 to keep the label on 2015-08-07 (first traded
+  candle); the Kraken post stays as a supporting source.
 
