@@ -33,8 +33,13 @@ Chỉ dựng một giai đoạn: `FROM=2020-01-01 node make-data.js` (thêm `TO=
 
 Mỗi dòng trong `events.csv` có dạng `ngày,kind,hit,tag,nội dung`:
 - `kind`: `up` (nhãn đặt trên đỉnh nến), `down` (dưới đáy), `info`
-- `hit`: `1` = quan trọng (nhãn nhỏ, không SFX), `2` = cột mốc / khủng hoảng (nhãn lớn + SFX + hiệu ứng). Không dùng mức 0.
+- `hit`: `1` = quan trọng (nhãn nhỏ, không SFX), `2` = cột mốc / khủng hoảng (nhãn lớn + SFX + hiệu ứng). `0` = sự kiện nghiên cứu bổ sung, lưu đầy đủ nhưng chưa hiển thị trong video.
 - `tag`: để trống, hoặc `halving` = sự kiện nội tại đặc biệt (nhãn màu vàng, còn hiện khi zoom-out cuối phim)
 - ALL-TIME HIGH / ALL-TIME LOW ở các điểm chuyển phase do `score.js` tự gắn (hoặc tự tạo), không cần ghi tay
 
 Thời lượng video và bản nhạc tự tính lại theo dữ liệu và các hit.
+
+## Đối chiếu nguồn bắt buộc
+
+Tuân thủ PROJECT.md §13. Chạy `python3 audit-99bitcoins.py --live` cho mọi coin trước khi báo đã cập nhật đủ nguồn.
+Snapshot và phạm vi: `source-audits/99bitcoins/README.md`; ánh xạ từng ID: `99bitcoins-coverage.json`.

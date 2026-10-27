@@ -65,3 +65,12 @@ Level-0 assignment is a provisional editorial research classification, not an ex
 Visible video input remains byte-for-byte identical after `COIN=XRP node make-data.js --strict`, because the existing
 generator filters hit 0. The already kept XRP previews remain valid; no picture or audio rerender is required for this
 research-only addition. Showing level 0 in the film requires a separate requested display change and preview.
+
+## 99Bitcoins completeness audit — 2026-10-27
+
+Supersedes the earlier guessed-URL-only search: canonical historical paths redirect to Bitcoin. The actual coin page
+contains price data but zero historical-event-table entries. Sitemap discovery and per-URL status evidence are saved
+in `../../../data/source-audits/99bitcoins/discovery.json`. Every one of the 234 BTC source entries has an explicit
+coin relevance decision in `99bitcoins-coverage.json`; applicable shared/coin-specific context is stored, missing
+entries added as level 0. Excluded BTC-only items remain in the shared snapshot. No claim of an exhaustive dedicated
+altcoin timeline or all news coverage. Source-date conflicts are explicitly flagged in the coverage file.

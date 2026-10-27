@@ -3,7 +3,7 @@
   "name": "BNB",
   "pair": "BNB / USD",
   "tradingview": "CRYPTO:BNBUSD",
-  "eventsSource": "BNB Chain official announcements and mainnet upgrade roadmap; shared market events from the verified 99Bitcoins Bitcoin timeline. See data/SOURCES.md.",
+  "eventsSource": "BNB Chain official announcements and mainnet upgrade roadmap; shared market events from the verified 99Bitcoins Bitcoin timeline. See data/SOURCES.md. Coverage audit: data/source-audits/99bitcoins/README.md; per-source-ID decisions in the coin data directory 99bitcoins-coverage.json. All research levels retained; see PROJECT.md §13 for source limits.",
   "logo": "coins/BNB/logo.png",
   "logoNegative": "coins/BNB/logo-negative.png",
   "logoGlow": "#F3BA2F",

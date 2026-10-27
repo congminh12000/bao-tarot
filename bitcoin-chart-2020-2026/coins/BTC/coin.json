@@ -3,7 +3,7 @@
   "name": "Bitcoin",
   "pair": "BTC / USD",
   "tradingview": "INDEX:BTCUSD",
-  "eventsSource": "99Bitcoins \"Bitcoin Historical Events\" (https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/)",
+  "eventsSource": "99Bitcoins \"Bitcoin Historical Events\" (https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/) Coverage audit: data/source-audits/99bitcoins/README.md; per-source-ID decisions in the coin data directory 99bitcoins-coverage.json. All research levels retained; see PROJECT.md §13 for source limits.",
   "dataDir": "data",
   "logo": "assets/bitcoin-logo.png",
   "logoNegative": "assets/bitcoin-logo-negative.png",

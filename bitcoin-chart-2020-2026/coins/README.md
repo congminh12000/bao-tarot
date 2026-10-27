@@ -54,3 +54,9 @@ ffmpeg -i coins/ETH/logo.png -vf "negate=negate_alpha=0" coins/ETH/logo-negative
 COIN=ETH node song.js && FPS=60 node engine/render.js video --res 480 && FPS=60 node engine/render.js mux eth-preview --res 480
 COIN=ETH node youtube-chapters.js
 ```
+
+## Đầy đủ sự kiện nguồn cho mọi coin
+
+Tuân thủ PROJECT.md §13: lưu đủ nghiên cứu 0/1/2; đối chiếu từng ID 99Bitcoins bằng `data/99bitcoins-coverage.json`
+(BTC: `data/` gốc). Chạy `python3 audit-99bitcoins.py --live` cho toàn bộ coin trước khi báo hoàn tất và trước final.
+Trang giá hoặc redirect sang BTC không phải timeline altcoin; luôn ghi rõ giới hạn nguồn.

@@ -27,3 +27,9 @@ COIN=ETH FPS=60 node check-labels.js
 ```
 
 Full ETH data and music are restored after the preview. Preserve the BTC exports and kept renders.
+
+## Source audit update — 2026-10-27
+
+Latest totals and source scope supersede earlier preparation counts above: see `../../data/source-audits/99bitcoins/README.md`.
+All 234 source IDs reviewed for this coin in `data/99bitcoins-coverage.json`, with stored targets or exclusion reasons.
+All previous official-source and level-1/2 events are preserved; new supplementary entries are level 0 and not rendered.

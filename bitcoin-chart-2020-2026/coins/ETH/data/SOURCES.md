@@ -32,3 +32,12 @@ Labels identify events, without asserting that an event caused a particular pric
 - Asset catalog: https://ethereum.org/assets/
 - Rasterize the original SVG to transparent 1024×1024 PNG; generate the negative with the documented ffmpeg command.
 - Indigo glow palette matches `coins/README.md`; awaits the user's preview approval.
+
+## 99Bitcoins completeness audit — 2026-10-27
+
+Supersedes the earlier guessed-URL-only search: canonical historical paths redirect to Bitcoin. The actual coin page
+contains price data but zero historical-event-table entries. Sitemap discovery and per-URL status evidence are saved
+in `../../../data/source-audits/99bitcoins/discovery.json`. Every one of the 234 BTC source entries has an explicit
+coin relevance decision in `99bitcoins-coverage.json`; applicable shared/coin-specific context is stored, missing
+entries added as level 0. Excluded BTC-only items remain in the shared snapshot. No claim of an exhaustive dedicated
+altcoin timeline or all news coverage. Source-date conflicts are explicitly flagged in the coverage file.

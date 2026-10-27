@@ -36,3 +36,9 @@ COIN=BNB node check-labels.js
 On this cloud host, use `CHROME_PATH` pointing to a Chromium wrapper with `--no-sandbox`.
 Cloud policy blocks `file://` navigation, so the full label checker was run unchanged over a temporary localhost HTTP
 server (only replacing its navigation URL); no renderer or validation logic was modified. No runtime helper is committed.
+
+## Source audit update — 2026-10-27
+
+Latest totals and source scope supersede earlier preparation counts above: see `../../data/source-audits/99bitcoins/README.md`.
+All 234 source IDs reviewed for this coin in `data/99bitcoins-coverage.json`, with stored targets or exclusion reasons.
+All previous official-source and level-1/2 events are preserved; new supplementary entries are level 0 and not rendered.

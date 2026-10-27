@@ -3,7 +3,7 @@
   "name": "Ethereum",
   "pair": "ETH / USD",
   "tradingview": "INDEX:ETHUSD",
-  "eventsSource": "Ethereum.org protocol timeline + Ethereum Foundation announcements; SEC Ether ETP approval and issuer launch announcement; Uniswap history; shared market events from the project's verified 99Bitcoins Bitcoin timeline. See data/SOURCES.md.",
+  "eventsSource": "Ethereum.org protocol timeline + Ethereum Foundation announcements; SEC Ether ETP approval and issuer launch announcement; Uniswap history; shared market events from the project's verified 99Bitcoins Bitcoin timeline. See data/SOURCES.md. Coverage audit: data/source-audits/99bitcoins/README.md; per-source-ID decisions in the coin data directory 99bitcoins-coverage.json. All research levels retained; see PROJECT.md §13 for source limits.",
   "logo": "coins/ETH/logo.png",
   "logoNegative": "coins/ETH/logo-negative.png",
   "logoGlow": "#627EEA",

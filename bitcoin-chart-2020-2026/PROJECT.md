@@ -106,10 +106,10 @@ nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn,
 
 - Nguồn: `data/events.csv` (`date,kind,hit,tag,text`) — 99Bitcoins (ATH theo TradingView), người dùng soạn/kiểm chứng.
   `tag`: để trống, hoặc `halving` = sự kiện nội tại đặc biệt → nhãn **màu vàng** (#FFC93C, cỡ mức 1), còn hiện khi zoom-out.
-  `kind`: up/down/info. **Chỉ dùng 2 mức**: `hit 1` = quan trọng, `hit 2` = rất quan trọng (cột mốc / khủng hoảng).
-  **Mặc định không thu thập mức 0**. Ngoại lệ XRP (27/10/2026): theo yêu cầu người dùng, thu thập và lưu cả mức 0
-  trong `coins/XRP/data/events.csv`, kèm nguồn từng dòng tại `level0-sources.json`. Đây là dữ liệu nghiên cứu bổ sung;
-  `make-data.js` vẫn lọc mức 0 khỏi video. Chỉ thay đổi cách hiển thị khi người dùng yêu cầu đưa mức 0 vào phim.
+  `kind`: up/down/info. **Hai mức hiển thị**: `hit 1` = quan trọng, `hit 2` = rất quan trọng (cột mốc / khủng hoảng).
+  **Thu thập và lưu đầy đủ cả mức 0/1/2 cho mọi coin** (yêu cầu 27/10/2026); không bỏ sự kiện nguồn vì mức 0.
+  Thu thập tách biệt hiển thị: `make-data.js` vẫn lọc mức 0 khỏi phim cho đến khi người dùng yêu cầu đổi hiển thị.
+  Đối chiếu bắt buộc §13; sự kiện BTC-only không được tự gán thành sự kiện riêng của altcoin.
 - Nội dung sự kiện **ngắn gọn hết mức** (≤ ~30 ký tự, tối đa 38), tiếng Anh, không bịa nguyên nhân.
 - Số tiền viết gọn: `$266`, `$1.2K`, `$19.8K`, `$109K`, `$41M`, `$1.5B` (1 chữ số lẻ khi < 100 đơn vị).
   `make-data.js` tự đổi mọi `$1,234,567` còn sót; nhãn ALL-TIME LOW tự tạo cũng dùng cùng định dạng.
@@ -296,6 +296,10 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- Audit 99Bitcoins (27/10/2026): đã đối chiếu 234/234 ID cho từng BTC/ETH/BNB/XRP, có lý do cho từng mục ngoài phạm vi
+  hoặc không áp dụng; khôi phục 119 mức 0 BTC, bổ sung ETH 48 / BNB 41 / XRP 55 mức 0. Tổng dữ liệu: BTC 238,
+  ETH 74, BNB 74, XRP 131. Mức 1/2 không đổi; hiển thị phim vẫn chỉ 1/2. Chi tiết/giới hạn: §13 và README audit.
+
 - XRP mức 0 (27/10/2026): đã bổ sung 56 sự kiện nghiên cứu có nguồn; tổng dữ liệu 76 dòng
   (56 mức 0, 6 mức 1, 14 mức 2), chưa tính 10 ATH/ATL tự tạo. Nhóm nâng cấp cùng ngày để tránh đếm phồng.
   Không phải danh sách đầy đủ mọi sự kiện; phạm vi và nguồn từng dòng ở `coins/XRP/data/level0-sources.json`.
@@ -343,8 +347,8 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
    sàn lớn bằng `node fetch-tradingview.js <mã> --print`, chọn mã có **lịch sử dài nhất**.
 2. **Giá**: `COIN=<SYMBOL> node fetch-tradingview.js` → `coins/<SYMBOL>/data/tradingview/`.
 3. **Sự kiện**: trang "historical price/events" của **99Bitcoins** cho đồng đó (mở bằng trình duyệt nếu WebFetch bị chặn);
-   nếu 99Bitcoins không có, dùng nguồn uy tín khác và **ghi rõ nguồn**. Cùng định dạng `date,kind,hit,tag,text`, mặc định mức
-   1/2 (ngoại lệ thu thập mức 0 cho XRP ở §3), chữ ngắn, tiếng Anh, không bịa nguyên nhân; `tag` cho sự kiện nội tại đặc biệt của giao thức (Bitcoin: `halving`,
+   nếu 99Bitcoins không có, dùng nguồn uy tín khác và **ghi rõ nguồn**. Cùng định dạng `date,kind,hit,tag,text`, cả mức
+   0/1/2 (lưu nghiên cứu đầy đủ theo §13, hiển thị vẫn chỉ 1/2), chữ ngắn, tiếng Anh, không bịa nguyên nhân; `tag` cho sự kiện nội tại đặc biệt của giao thức (Bitcoin: `halving`,
    ETH: nâng cấp mạng…). ATH/ATL do `score.js` tự gắn. Ghi nguồn vào `coin.json` (`eventsSource`).
 4. **Logo**: tự tìm trên Google, **phải chính xác** — logo chính thức (trang chủ / brand kit của dự án), nền trong suốt,
    kích thước ≥ 512 px → `coins/<SYMBOL>/logo.png`; tạo `logo-negative.png`
@@ -371,3 +375,26 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
 - **Preview**: 480p 60 fps, phải có **ít nhất 1 chỗ nối vòng lặp bên trong** (phát 2 lần, file `-loop2`). **Final**: 1080 × 1920
   60 fps, **1 vòng** (cuối nối thẳng vào đầu). Tên file `<coin>-short-<số phase>-<up|down>`; lưu bằng
   `keep-render.js … --format 9:16`; luôn khôi phục dữ liệu phim dài sau đó.
+
+
+## 13. Đầy đủ sự kiện từ 99Bitcoins — bắt buộc cho mọi coin (27/10/2026)
+
+- Trước khi kết luận cập nhật đầy đủ: tìm đúng trang lịch sử, kiểm tra sitemap, URL thực sau redirect và nội dung bảng
+  sự kiện. Trang giá không có bảng sự kiện, lỗi 404/410, WebFetch thất bại hoặc redirect sang BTC không phải bằng chứng
+  coin không có sự kiện. Nếu vẫn chưa tìm được timeline riêng: ghi rõ "chưa tìm thấy", bổ sung nguồn chính thức, không
+  tuyên bố đã lấy đầy đủ lịch sử altcoin từ 99Bitcoins.
+- Lưu **tất cả mục nguồn** trong snapshot có ID ổn định, ngày nguồn, tên ngắn, URL/anchor, ngày lấy và phạm vi thực tế.
+  Đối chiếu **từng ID** cho **mọi coin trong `coins/`**, không chỉ coin đang làm. Mỗi mục phải có quyết định: lưu (trỏ đúng
+  dòng CSV), ngoài phạm vi lịch sử coin, hoặc không áp dụng (kèm lý do). Không âm thầm bỏ mục; không gán halving, ATH,
+  lượng BTC nắm giữ hay tin riêng BTC thành sự kiện ETH/BNB/XRP.
+- Thu thập đủ 0/1/2; mức là phân loại biên tập, không phải độ tin cậy. Mục mới chưa duyệt lưu mức 0. Phân biệt XRP với
+  Ripple, protocol với công ty, ngày công bố với ngày kích hoạt. Giữ nhãn đã duyệt, nguồn chính thức bổ sung và giá
+  TradingView; xung đột ngày/tuyên bố phải ghi chú và kiểm chứng, không ghi đè ngầm.
+- Chạy `python3 audit-99bitcoins.py --live` trước khi báo hoàn tất và trước render final. Lệnh phải kiểm tra tất cả coin,
+  đủ ID nguồn, không trùng ID, không mất liên kết tới CSV và không có mục chưa phân loại. Nguồn thay đổi hoặc không
+  truy cập được thì không được chứng nhận hoàn tất kiểm tra live. Chưa đối chiếu đủ thì báo phần còn thiếu.
+- Báo số mục nguồn / đã đối chiếu / còn thiếu / loại trừ kèm lý do; đếm riêng mức 0/1/2 và ATH/ATL tự tạo. "Đủ" luôn
+  phải gắn với snapshot/phạm vi nguồn và ngày sự kiện mới nhất, không đồng nghĩa mọi sự kiện đến ngày hiện tại.
+- Audit đầu tiên: `data/source-audits/99bitcoins/README.md`, snapshot 234 mục; từng coin có `data/99bitcoins-coverage.json`
+  (BTC dùng `data/` gốc). Chỉ tìm thấy bảng lịch sử BTC, mục mới nhất 15/07/2025; không có bảng riêng ETH/BNB/XRP trong
+  các URL/sitemap đã kiểm tra. Đây là giới hạn nguồn, không phải bảo đảm lịch sử ba altcoin đã đầy đủ tuyệt đối.

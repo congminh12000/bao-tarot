@@ -14,9 +14,12 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
   MUSIC never slows down: each phase plays its cue at the cue's own tempo and the next cue starts at once with its ~1 s
   pickup; the CHART keeps its pace (it still brakes and eases back at the turn). A hit 2 never changes or ducks the
   music: its SFX play on top. Uptrend cues 100 BPM heroic; downtrend cues 80 BPM suspense, not dramatic (PROJECT.md §4–5).
-- XRP research exception (2026-10-27): collect hit-0 candidates in `coins/XRP/data/events.csv`, with per-event sources
-  in `level0-sources.json`; group same-day amendment activations. The renderer still excludes hit 0; collection alone
-  does not change the visible video. See PROJECT.md §3.
+- ALL coins: collect and retain research levels 0/1/2; never discard a source event just because it is level 0.
+  Follow PROJECT.md §13: reconcile every 99Bitcoins source ID for every configured coin, with a stored target or
+  explicit exclusion reason; record source discovery/redirects and snapshot coverage. Never substitute BTC events
+  for an altcoin-specific history or claim complete altcoin coverage from a price page/search failure.
+  Run `python3 audit-99bitcoins.py --live` before declaring source coverage complete and before a final render.
+  Report source limits and unresolved date conflicts. Collection does not enable level 0 in the visible video.
 - Events shown in the video: only hit 1 and hit 2 (never hit 0); text as short as possible; money as $1.2K / $19.8K / $41M / $1.5B.
   hit 1 = small grey label, no SFX, no effect; hit 2 = big label + SFX + strong visual effect. Check `node check-labels.js`.
 - One cue per phase of data/phases.csv, never a change inside a phase. Music mastered to -16 LUFS (no voice-over).

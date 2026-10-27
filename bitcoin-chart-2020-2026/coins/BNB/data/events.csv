@@ -1,20 +1,61 @@
 # date,kind,hit,tag,text
 2017-09-03,down,1,,China bans ICOs
 2017-09-15,down,1,,China shuts exchanges
+2017-12-28,info,0,,Korea exchange shutdown warning
+2018-01-08,info,0,,CMC removes Korean price feeds
+2018-01-26,info,0,,Coincheck hack; withdrawals halt
+2018-01-30,info,0,,Facebook bans crypto ads
+2018-03-07,info,0,,SEC exchange registration notice
+2018-03-14,info,0,,Google bans crypto ads
+2018-03-26,info,0,,Twitter bans crypto ads
+2018-05-11,info,0,,Upbit prosecutors raid
+2018-06-10,info,0,,Coinrail exchange hack
+2018-06-20,info,0,,Bithumb exchange hack
+2018-06-26,info,0,,Facebook eases crypto ad ban
+2018-07-16,info,0,,BlackRock explores crypto
+2018-09-05,info,0,,Goldman crypto desk report
+2018-09-18,info,0,,Zaif exchange hack
+2018-10-15,info,0,,Fidelity crypto platform
+2019-02-01,info,0,,QuadrigaCX bankruptcy
+2019-03-01,info,0,,Facebook crypto project report
+2019-03-22,info,0,,Fake trading volume study
 2019-04-18,up,2,mainnet,Binance Chain mainnet
+2019-04-26,info,0,,Bitfinex + Tether investigation
 2019-05-08,down,1,,Binance $41M hack
+2019-06-18,info,0,,Facebook Libra announced
+2019-08-07,info,0,,Binance KYC ransom demand
+2019-10-09,info,0,,UNICEF accepts crypto donations
+2019-10-28,info,0,,China endorses blockchain
+2019-12-23,info,0,,YouTube crypto video ban error
+2020-02-17,info,0,,FCoin exchange insolvency
+2020-03-04,info,0,,India lifts crypto banking ban
 2020-03-13,down,2,,COVID market crash
+2020-03-15,info,0,,Fed rate cuts + QE
+2020-03-23,info,0,,Fed expands QE
+2020-03-26,info,0,,Microsoft crypto patent
+2020-04-01,info,0,,Binance acquires CoinMarketCap
+2020-07-22,info,0,,US banks allowed crypto custody
 2020-09-01,up,2,mainnet,Smart Chain launches
+2020-09-25,info,0,,KuCoin exchange hack
+2020-10-01,info,0,,BitMEX executives charged
+2020-10-16,info,0,,OKEx suspends withdrawals
+2020-10-21,info,0,,PayPal crypto services
+2020-12-18,info,0,,Coinbase files for IPO
 2021-05-19,down,2,,China crypto ban
 2021-09-24,down,1,,China bans all crypto
 2021-11-30,up,1,upgrade,BEP-95 real-time burn
 2022-02-15,info,1,,BNB Chain rebrand
+2022-03-03,info,0,,US crypto order reported
 2022-05-07,down,2,,LUNA collapse
+2022-06-13,info,0,,Celsius halts withdrawals
 2022-06-22,up,1,upgrade,Euler upgrade
+2022-07-14,info,0,,Celsius files bankruptcy
 2022-10-06,down,2,,Token Hub exploit; chain halt
 2022-10-12,info,1,upgrade,Moran security fix
 2022-11-11,down,2,,FTX bankrupt
 2022-12-12,up,1,upgrade,Gibbs native staking
+2023-03-03,info,0,,Silvergate closure reported
+2023-03-19,info,0,,Crypto rally amid bank turmoil
 2023-04-12,up,1,upgrade,Planck upgrade
 2023-06-05,down,2,,SEC sues Binance
 2023-06-12,up,1,upgrade,Luban upgrade

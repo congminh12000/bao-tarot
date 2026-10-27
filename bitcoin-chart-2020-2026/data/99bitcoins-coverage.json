@@ -1,0 +1,3291 @@
+{
+  "coin": "BTC",
+  "checkedOn": "2026-10-27",
+  "snapshot": "data/source-audits/99bitcoins/snapshot.json",
+  "sourceCount": 234,
+  "processed": 234,
+  "unreviewed": 0,
+  "sourceTableCompleteness": "All 234 source IDs have an explicit disposition; not a claim of complete world or altcoin history.",
+  "separateCoinTimeline": "Found",
+  "entries": [
+    {
+      "sourceId": 1,
+      "sourceDate": "2009-01-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2009-01-03",
+          "text": "Genesis block",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 2,
+      "sourceDate": "2009-10-05",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2009-10-05",
+          "text": "First quoted BTC exchange rate",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 3,
+      "sourceDate": "2009-10-12",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2009-10-12",
+          "text": "Early BTC sale for fiat money",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 4,
+      "sourceDate": "2010-05-22",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2010-05-22",
+          "text": "Bitcoin Pizza Day",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 5,
+      "sourceDate": "2010-07-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2010-07-11",
+          "text": "Slashdot features Bitcoin",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 6,
+      "sourceDate": "2010-07-18",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2010-07-18",
+          "text": "Mt. Gox opens",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 7,
+      "sourceDate": "2010-08-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2010-08-15",
+          "text": "Overflow bug",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 8,
+      "sourceDate": "2010-12-10",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2010-12-10",
+          "text": "PC World publishes Bitcoin coverage",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 9,
+      "sourceDate": "2011-02-09",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2011-02-09",
+          "text": "BTC hits $1",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 10,
+      "sourceDate": "2011-03-27",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2011-03-27",
+          "text": "New exchanges add fiat trading pairs",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 11,
+      "sourceDate": "2011-06-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2011-06-01",
+          "text": "Gawker publishes Silk Road report",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 12,
+      "sourceDate": "2011-06-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2011-06-19",
+          "text": "Mt. Gox hacked",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 13,
+      "sourceDate": "2011-12-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2011-12-19",
+          "text": "The Good Wife Bitcoin episode",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 14,
+      "sourceDate": "2012-02-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2012-02-11",
+          "text": "Paxum & Tradehill drop BTC",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 15,
+      "sourceDate": "2012-03-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2012-03-01",
+          "text": "Linode BTC theft",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 16,
+      "sourceDate": "2012-08-17",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2012-08-17",
+          "text": "BTCST halts payouts",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 17,
+      "sourceDate": "2012-11-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2012-11-15",
+          "text": "WordPress takes BTC",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 18,
+      "sourceDate": "2012-11-28",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2012-11-28",
+          "text": "1st halving",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 19,
+      "sourceDate": "2013-03-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-03-11",
+          "text": "v0.8 chain split",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 20,
+      "sourceDate": "2013-03-25",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-03-25",
+          "text": "Cyprus bail-in",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 21,
+      "sourceDate": "2013-04-10",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-04-10",
+          "text": "ALL-TIME HIGH: $266",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 22,
+      "sourceDate": "2013-05-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-05-14",
+          "text": "DHS seizes Mt. Gox funds",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 23,
+      "sourceDate": "2013-08-30",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-08-30",
+          "text": "Tradehill suspends operations again",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 24,
+      "sourceDate": "2013-10-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-10-01",
+          "text": "Silk Road shut",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 25,
+      "sourceDate": "2013-11-18",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-11-18",
+          "text": "US Senate hearing",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 26,
+      "sourceDate": "2013-11-20",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-11-20",
+          "text": "PBoC comments on Bitcoin use",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 27,
+      "sourceDate": "2013-11-29",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-11-29",
+          "text": "ALL-TIME HIGH: $1.2K",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 28,
+      "sourceDate": "2013-12-05",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2013-12-05",
+          "text": "China bank ban",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 29,
+      "sourceDate": "2014-02-07",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-02-07",
+          "text": "Exchange DDoS",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 30,
+      "sourceDate": "2014-02-24",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-02-24",
+          "text": "Mt. Gox collapses",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 31,
+      "sourceDate": "2014-03-06",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-03-06",
+          "text": "Newsweek alleges Dorian is Satoshi",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 32,
+      "sourceDate": "2014-03-26",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-03-26",
+          "text": "IRS: BTC taxed as property",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 33,
+      "sourceDate": "2014-04-10",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-04-10",
+          "text": "China closes bank accounts",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 34,
+      "sourceDate": "2014-06-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-06-13",
+          "text": "GHash.io 51% scare",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 35,
+      "sourceDate": "2014-06-27",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-06-27",
+          "text": "US Marshals auction seized BTC",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 36,
+      "sourceDate": "2014-07-17",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-07-17",
+          "text": "BitLicense draft",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 37,
+      "sourceDate": "2014-07-18",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-07-18",
+          "text": "Dell introduces BTC payments",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 38,
+      "sourceDate": "2014-09-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-09-08",
+          "text": "Braintree plans BTC payments",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 39,
+      "sourceDate": "2014-10-06",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-10-06",
+          "text": "BearWhale absorbed",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 40,
+      "sourceDate": "2014-12-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-12-11",
+          "text": "Microsoft takes BTC",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 41,
+      "sourceDate": "2014-12-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2014-12-19",
+          "text": "Charlie Shrem sentenced",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 42,
+      "sourceDate": "2015-01-04",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-01-04",
+          "text": "Bitstamp hacked",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 43,
+      "sourceDate": "2015-01-26",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-01-26",
+          "text": "Coinbase exchange opens",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 44,
+      "sourceDate": "2015-05-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-05-19",
+          "text": "Ulbricht life-sentence milestone",
+          "hit": 0
+        }
+      ],
+      "factCheckNote": "Source sentencing date needs checking against court record."
+    },
+    {
+      "sourceId": 45,
+      "sourceDate": "2015-06-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-06-03",
+          "text": "BitLicense final",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 46,
+      "sourceDate": "2015-07-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-07-01",
+          "text": "Silk Road agents' theft pleas",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 47,
+      "sourceDate": "2015-08-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-08-01",
+          "text": "Japanese police arrest Mark Karpeles",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 48,
+      "sourceDate": "2015-08-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-08-15",
+          "text": "Bitcoin XT dispute",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 49,
+      "sourceDate": "2015-09-18",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-09-18",
+          "text": "CFTC: BTC is a commodity",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 50,
+      "sourceDate": "2015-10-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-10-08",
+          "text": "Gemini opens trading",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 51,
+      "sourceDate": "2015-10-22",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-10-22",
+          "text": "EU: no VAT on BTC",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 52,
+      "sourceDate": "2015-10-31",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-10-31",
+          "text": "Bitcoin on The Economist cover",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 53,
+      "sourceDate": "2015-11-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-11-03",
+          "text": "Unicode accepts Bitcoin symbol",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 54,
+      "sourceDate": "2015-12-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2015-12-08",
+          "text": "WIRED alleges Wright is Satoshi",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 55,
+      "sourceDate": "2016-01-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2016-01-14",
+          "text": "Mike Hearn quits",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 56,
+      "sourceDate": "2016-02-21",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2016-02-21",
+          "text": "Scaling roundtable",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 57,
+      "sourceDate": "2016-04-04",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2016-04-04",
+          "text": "OpenBazaar marketplace opens",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 58,
+      "sourceDate": "2016-04-27",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2016-04-27",
+          "text": "Steam adds BTC payment option",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 59,
+      "sourceDate": "2016-05-02",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2016-05-02",
+          "text": "Craig Wright claims Satoshi identity",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 60,
+      "sourceDate": "2016-07-09",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2016-07-09",
+          "text": "2nd halving",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 61,
+      "sourceDate": "2016-08-02",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2016-08-02",
+          "text": "Bitfinex hacked",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 62,
+      "sourceDate": "2016-11-09",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2016-11-09",
+          "text": "Markets react to Trump win",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 63,
+      "sourceDate": "2017-01-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-01-03",
+          "text": "Back above $1K",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 64,
+      "sourceDate": "2017-03-10",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-03-10",
+          "text": "SEC rejects Winklevoss ETF",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 65,
+      "sourceDate": "2017-03-28",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-03-28",
+          "text": "SEC rejects another BTC ETF",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 66,
+      "sourceDate": "2017-04-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-04-01",
+          "text": "Japan legalizes BTC",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 67,
+      "sourceDate": "2017-08-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-08-01",
+          "text": "Bitcoin Cash fork",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 68,
+      "sourceDate": "2017-09-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-09-03",
+          "text": "China bans ICOs",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 69,
+      "sourceDate": "2017-09-12",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-09-12",
+          "text": "Jamie Dimon calls Bitcoin fraudulent",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 70,
+      "sourceDate": "2017-09-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-09-15",
+          "text": "China shuts exchanges",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 71,
+      "sourceDate": "2017-10-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-10-13",
+          "text": "BTC > $5K",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 72,
+      "sourceDate": "2017-10-25",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-10-25",
+          "text": "Bitcoin Gold fork launches",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 73,
+      "sourceDate": "2017-10-31",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-10-31",
+          "text": "CME futures announced",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 74,
+      "sourceDate": "2017-11-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-11-08",
+          "text": "SegWit2x called off",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 75,
+      "sourceDate": "2017-11-28",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-11-28",
+          "text": "BTC > $10K",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 76,
+      "sourceDate": "2017-12-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-12-11",
+          "text": "Cboe futures launch",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 77,
+      "sourceDate": "2017-12-18",
+      "status": "stored",
+      "reason": "Source Dec 18; authored ATH label uses TradingView Dec 17. Both dates retained in audit.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-12-17",
+          "text": "ALL-TIME HIGH: $19.8K",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 78,
+      "sourceDate": "2017-12-28",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2017-12-28",
+          "text": "Korea crackdown",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 79,
+      "sourceDate": "2018-01-02",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-01-02",
+          "text": "Report: Thiel fund buys BTC",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 80,
+      "sourceDate": "2018-01-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-01-08",
+          "text": "CMC drops Korea prices",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 81,
+      "sourceDate": "2018-01-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-01-13",
+          "text": "80% of BTC supply mined",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 82,
+      "sourceDate": "2018-01-26",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-01-26",
+          "text": "Coincheck hacked",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 83,
+      "sourceDate": "2018-01-30",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-01-30",
+          "text": "Facebook bans crypto ads",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 84,
+      "sourceDate": "2018-03-07",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-03-07",
+          "text": "SEC: exchanges must register",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 85,
+      "sourceDate": "2018-03-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-03-14",
+          "text": "Google restricts crypto ads",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 86,
+      "sourceDate": "2018-03-26",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-03-26",
+          "text": "Twitter restricts crypto ads",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 87,
+      "sourceDate": "2018-04-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-04-13",
+          "text": "Coinsecure reports BTC theft",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 88,
+      "sourceDate": "2018-05-02",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-05-02",
+          "text": "Goldman plans BTC trading",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 89,
+      "sourceDate": "2018-05-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-05-11",
+          "text": "Prosecutors raid Korean exchange",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 90,
+      "sourceDate": "2018-05-24",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-05-24",
+          "text": "DOJ probes BTC manipulation",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 91,
+      "sourceDate": "2018-06-10",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-06-10",
+          "text": "Coinrail reports exchange hack",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 92,
+      "sourceDate": "2018-06-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-06-11",
+          "text": "US seeks exchange trading records",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 93,
+      "sourceDate": "2018-06-20",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-06-20",
+          "text": "Bithumb reports exchange theft",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 94,
+      "sourceDate": "2018-06-26",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-06-26",
+          "text": "Facebook eases crypto ad ban",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 95,
+      "sourceDate": "2018-07-16",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-07-16",
+          "text": "BlackRock studies crypto",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 96,
+      "sourceDate": "2018-07-26",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-07-26",
+          "text": "SEC rejects ETF again",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 97,
+      "sourceDate": "2018-08-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-08-03",
+          "text": "Bakkt announced",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 98,
+      "sourceDate": "2018-08-07",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-08-07",
+          "text": "SEC postpones Bitcoin ETF decision",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 99,
+      "sourceDate": "2018-09-05",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-09-05",
+          "text": "Report: Goldman delays crypto desk",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 100,
+      "sourceDate": "2018-09-18",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-09-18",
+          "text": "Zaif reports crypto exchange theft",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 101,
+      "sourceDate": "2018-10-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-10-15",
+          "text": "Fidelity custody",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 102,
+      "sourceDate": "2018-10-31",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-10-31",
+          "text": "Bitcoin whitepaper tenth anniversary",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 103,
+      "sourceDate": "2018-11-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-11-15",
+          "text": "BCH hash war",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 104,
+      "sourceDate": "2018-12-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-12-03",
+          "text": "BTC mining difficulty drops",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 105,
+      "sourceDate": "2018-12-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-12-13",
+          "text": "Bomb threats demand BTC ransom",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 106,
+      "sourceDate": "2018-12-29",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-12-29",
+          "text": "Electrum wallet phishing attack",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 107,
+      "sourceDate": "2018-12-31",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2018-12-31",
+          "text": "Bakkt announces $182M funding",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 108,
+      "sourceDate": "2019-01-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-01-03",
+          "text": "Proof of Keys self-custody campaign",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 109,
+      "sourceDate": "2019-01-10",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-01-10",
+          "text": "Bitwise submits BTC ETF application",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 110,
+      "sourceDate": "2019-01-18",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-01-18",
+          "text": "Coinstar adds BTC purchases",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 111,
+      "sourceDate": "2019-01-23",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-01-23",
+          "text": "Cboe withdraws VanEck ETF proposal",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 112,
+      "sourceDate": "2019-01-31",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-01-31",
+          "text": "Cboe refiles VanEck-SolidX ETF",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 113,
+      "sourceDate": "2019-02-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-02-01",
+          "text": "QuadrigaCX collapse",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 114,
+      "sourceDate": "2019-03-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-03-01",
+          "text": "Report: Facebook develops crypto",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 115,
+      "sourceDate": "2019-03-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-03-14",
+          "text": "Karpeles gets suspended sentence",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 116,
+      "sourceDate": "2019-03-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-03-15",
+          "text": "Cboe stops new BTC futures listings",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 117,
+      "sourceDate": "2019-03-22",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-03-22",
+          "text": "Bitwise reports fake BTC volume",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 118,
+      "sourceDate": "2019-03-29",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-03-29",
+          "text": "SEC delays Bitwise & VanEck ETFs",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 119,
+      "sourceDate": "2019-04-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-04-08",
+          "text": "China weighs BTC mining limits",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 120,
+      "sourceDate": "2019-04-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-04-15",
+          "text": "Exchanges delist Bitcoin SV",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 121,
+      "sourceDate": "2019-04-26",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-04-26",
+          "text": "Bitfinex/Tether probe",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 122,
+      "sourceDate": "2019-05-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-05-08",
+          "text": "Binance $41M hack",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 123,
+      "sourceDate": "2019-05-21",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-05-21",
+          "text": "Wright files BTC copyright claims",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 124,
+      "sourceDate": "2019-05-30",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-05-30",
+          "text": "Another BTC copyright claim",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 125,
+      "sourceDate": "2019-06-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-06-03",
+          "text": "Justin Sun wins Buffett lunch",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 126,
+      "sourceDate": "2019-06-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-06-13",
+          "text": "Bakkt announces futures testing date",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 127,
+      "sourceDate": "2019-06-18",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-06-18",
+          "text": "Facebook Libra",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 128,
+      "sourceDate": "2019-07-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-07-11",
+          "text": "Trump publicly comments on Bitcoin",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 129,
+      "sourceDate": "2019-08-07",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-08-07",
+          "text": "Binance faces KYC-data ransom demand",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 130,
+      "sourceDate": "2019-08-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-08-15",
+          "text": "Coinbase buys Xapo custody",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 131,
+      "sourceDate": "2019-08-28",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-08-28",
+          "text": "Wright faces BTC court order",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 132,
+      "sourceDate": "2019-09-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-09-03",
+          "text": "VanEck/SolidX BTC product",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 133,
+      "sourceDate": "2019-09-22",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-09-22",
+          "text": "Bakkt futures launch",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 134,
+      "sourceDate": "2019-10-09",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-10-09",
+          "text": "UNICEF accepts crypto donations",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 135,
+      "sourceDate": "2019-10-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-10-15",
+          "text": "Oxford dictionary adds satoshi",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 136,
+      "sourceDate": "2019-10-28",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-10-28",
+          "text": "China blockchain push",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 137,
+      "sourceDate": "2019-10-29",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-10-29",
+          "text": "Canaan files US IPO paperwork",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 138,
+      "sourceDate": "2019-11-04",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-11-04",
+          "text": "Study alleges 2017 BTC manipulation",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 139,
+      "sourceDate": "2019-11-09",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-11-09",
+          "text": "New York licenses Fidelity crypto",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 140,
+      "sourceDate": "2019-12-10",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-12-10",
+          "text": "BitClub operators face Ponzi charges",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 141,
+      "sourceDate": "2019-12-23",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2019-12-23",
+          "text": "YouTube removes crypto in error",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 142,
+      "sourceDate": "2020-01-06",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-01-06",
+          "text": "BTC rises during US-Iran tensions",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 143,
+      "sourceDate": "2020-01-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-01-13",
+          "text": "CME options launch",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 144,
+      "sourceDate": "2020-01-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-01-19",
+          "text": "Schiff reports lost wallet access",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 145,
+      "sourceDate": "2020-01-29",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-01-29",
+          "text": "Swiss town adds BTC tax payments",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 146,
+      "sourceDate": "2020-02-02",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-02-02",
+          "text": "Twitter introduces Bitcoin emoji",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 147,
+      "sourceDate": "2020-02-05",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-02-05",
+          "text": "Lightning Labs secures $10M funding",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 148,
+      "sourceDate": "2020-02-17",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-02-17",
+          "text": "FCoin shuts down: insolvent",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 149,
+      "sourceDate": "2020-03-04",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-03-04",
+          "text": "India lifts bank ban",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 150,
+      "sourceDate": "2020-03-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-03-13",
+          "text": "COVID crash: -50% in 2 days",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 151,
+      "sourceDate": "2020-03-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-03-15",
+          "text": "Fed: 0% rates + QE",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 152,
+      "sourceDate": "2020-03-23",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-03-23",
+          "text": "Rally on Fed QE",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 153,
+      "sourceDate": "2020-03-26",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-03-26",
+          "text": "Microsoft body-data crypto patent",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 154,
+      "sourceDate": "2020-04-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-04-01",
+          "text": "Report: Binance buys CoinMarketCap",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 155,
+      "sourceDate": "2020-04-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-04-08",
+          "text": "Bitcoin Cash reduces block subsidy",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 156,
+      "sourceDate": "2020-04-09",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-04-09",
+          "text": "BTC fund lists in Toronto",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 157,
+      "sourceDate": "2020-05-07",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-05-07",
+          "text": "Paul Tudor Jones buys",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 158,
+      "sourceDate": "2020-05-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-05-11",
+          "text": "3rd halving",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 159,
+      "sourceDate": "2020-05-25",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-05-25",
+          "text": "China orders miners to shut down",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 160,
+      "sourceDate": "2020-06-22",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-06-22",
+          "text": "NZ seizes exchange-linked funds",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 161,
+      "sourceDate": "2020-07-02",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-07-02",
+          "text": "Bitcoin wallet flaw disclosed",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 162,
+      "sourceDate": "2020-07-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-07-15",
+          "text": "Twitter hacked for BTC scam",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 163,
+      "sourceDate": "2020-07-22",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-07-22",
+          "text": "OCC: banks may hold crypto",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 164,
+      "sourceDate": "2020-08-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-08-11",
+          "text": "MicroStrategy buys BTC",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 165,
+      "sourceDate": "2020-08-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-08-14",
+          "text": "US seizes terror-linked crypto",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 166,
+      "sourceDate": "2020-08-31",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-08-31",
+          "text": "Electrum user reports update theft",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 167,
+      "sourceDate": "2020-09-25",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-09-25",
+          "text": "KuCoin hacked",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 168,
+      "sourceDate": "2020-10-01",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-10-01",
+          "text": "BitMEX charged",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 169,
+      "sourceDate": "2020-10-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-10-08",
+          "text": "Square buys $50M",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 170,
+      "sourceDate": "2020-10-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-10-13",
+          "text": "Stone Ridge reveals 10000 BTC",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 171,
+      "sourceDate": "2020-10-16",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-10-16",
+          "text": "OKEx freezes withdrawals",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 172,
+      "sourceDate": "2020-10-21",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-10-21",
+          "text": "PayPal adds crypto",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 173,
+      "sourceDate": "2020-11-05",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-11-05",
+          "text": "US seizes $1B in Silk Road BTC",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 174,
+      "sourceDate": "2020-11-16",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-11-16",
+          "text": "Citibank BTC forecast leaks",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 175,
+      "sourceDate": "2020-12-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-12-08",
+          "text": "MicroStrategy plans BTC debt raise",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 176,
+      "sourceDate": "2020-12-10",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-12-10",
+          "text": "MassMutual buys $100M",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 177,
+      "sourceDate": "2020-12-16",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-12-16",
+          "text": "BTC > $20K: 2017 peak broken",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 178,
+      "sourceDate": "2020-12-18",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-12-18",
+          "text": "Coinbase files confidential listing",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 179,
+      "sourceDate": "2020-12-23",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2020-12-23",
+          "text": "SEC sues Ripple",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 180,
+      "sourceDate": "2021-01-29",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-01-29",
+          "text": "Musk's Bitcoin bio",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 181,
+      "sourceDate": "2021-02-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-02-08",
+          "text": "Tesla buys $1.5B",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 182,
+      "sourceDate": "2021-02-12",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-02-12",
+          "text": "Canada BTC ETF",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 183,
+      "sourceDate": "2021-02-23",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-02-23",
+          "text": "Square buys $170M",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 184,
+      "sourceDate": "2021-03-17",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-03-17",
+          "text": "Morgan Stanley BTC funds",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 185,
+      "sourceDate": "2021-03-24",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-03-24",
+          "text": "Tesla takes BTC",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 186,
+      "sourceDate": "2021-04-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-04-13",
+          "text": "BTC > $63K",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 187,
+      "sourceDate": "2021-05-12",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-05-12",
+          "text": "Tesla drops BTC",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 188,
+      "sourceDate": "2021-05-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-05-19",
+          "text": "China crypto ban",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 189,
+      "sourceDate": "2021-06-04",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-06-04",
+          "text": "Musk's Bitcoin broken-heart tweet",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 190,
+      "sourceDate": "2021-06-06",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-06-06",
+          "text": "Bukele: BTC legal tender",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 191,
+      "sourceDate": "2021-06-07",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-06-07",
+          "text": "DOJ recovers roughly $2M in BTC",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 192,
+      "sourceDate": "2021-06-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-06-19",
+          "text": "China mining ban",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 193,
+      "sourceDate": "2021-07-09",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-07-09",
+          "text": "Square plans Bitcoin hardware wallet",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 194,
+      "sourceDate": "2021-07-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-07-15",
+          "text": "Square plans Bitcoin DeFi",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 195,
+      "sourceDate": "2021-07-26",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-07-26",
+          "text": "Amazon crypto-payment rumors",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 196,
+      "sourceDate": "2021-08-09",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-08-09",
+          "text": "AMC announces BTC payment plans",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 197,
+      "sourceDate": "2021-09-07",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-09-07",
+          "text": "El Salvador adopts BTC",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 198,
+      "sourceDate": "2021-09-17",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-09-17",
+          "text": "Satoshi statue unveiled",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 199,
+      "sourceDate": "2021-09-23",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-09-23",
+          "text": "Twitter adds BTC tips",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 200,
+      "sourceDate": "2021-09-24",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-09-24",
+          "text": "China bans all crypto",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 201,
+      "sourceDate": "2021-10-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-10-19",
+          "text": "US futures ETF launch",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 202,
+      "sourceDate": "2021-11-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-11-14",
+          "text": "Taproot activates",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 203,
+      "sourceDate": "2021-11-21",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2021-11-21",
+          "text": "El Salvador plans Bitcoin City bonds",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 204,
+      "sourceDate": "2022-02-08",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-02-08",
+          "text": "DOJ recovers Bitfinex-linked $3.6B",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 205,
+      "sourceDate": "2022-02-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-02-14",
+          "text": "Coinbase Super Bowl ad crashes site",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 206,
+      "sourceDate": "2022-02-28",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-02-28",
+          "text": "BTC/ruble trading jumps",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 207,
+      "sourceDate": "2022-03-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-03-03",
+          "text": "US crypto order",
+          "hit": 1
+        }
+      ],
+      "factCheckNote": "Source dates US crypto order March 3; executive order signing date needs independent check."
+    },
+    {
+      "sourceId": 208,
+      "sourceDate": "2022-04-27",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-04-27",
+          "text": "CAR adopts BTC",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 209,
+      "sourceDate": "2022-05-07",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-05-07",
+          "text": "LUNA collapse",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 210,
+      "sourceDate": "2022-06-13",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-06-13",
+          "text": "Celsius freezes",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 211,
+      "sourceDate": "2022-06-29",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-06-29",
+          "text": "MicroStrategy adds $10M in BTC",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 212,
+      "sourceDate": "2022-07-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-07-14",
+          "text": "Celsius bankrupt",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 213,
+      "sourceDate": "2022-07-20",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-07-20",
+          "text": "Tesla sells 75%",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 214,
+      "sourceDate": "2022-08-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-08-11",
+          "text": "BlackRock BTC trust",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 215,
+      "sourceDate": "2022-11-11",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-11-11",
+          "text": "FTX bankrupt",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 216,
+      "sourceDate": "2022-11-30",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-11-30",
+          "text": "ECB publishes criticism of Bitcoin",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 217,
+      "sourceDate": "2022-12-20",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-12-20",
+          "text": "Core Scientific bankrupt",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 218,
+      "sourceDate": "2022-12-29",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2022-12-29",
+          "text": "MicroStrategy reveals first BTC sale",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 219,
+      "sourceDate": "2023-01-21",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2023-01-21",
+          "text": "Ordinals launch",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 220,
+      "sourceDate": "2023-03-03",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2023-03-03",
+          "text": "Silvergate collapse",
+          "hit": 1
+        }
+      ],
+      "factCheckNote": "Source dates closure March 3; winding-down announcement date needs independent check."
+    },
+    {
+      "sourceId": 221,
+      "sourceDate": "2023-03-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2023-03-14",
+          "text": "US sells seized Silk Road BTC",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 222,
+      "sourceDate": "2023-03-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2023-03-19",
+          "text": "Rally on bank crisis",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 223,
+      "sourceDate": "2023-06-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2023-06-15",
+          "text": "BlackRock files ETF",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 224,
+      "sourceDate": "2023-06-21",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2023-06-21",
+          "text": "Managers refile spot BTC ETFs",
+          "hit": 0
+        }
+      ]
+    },
+    {
+      "sourceId": 225,
+      "sourceDate": "2024-01-10",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2024-01-10",
+          "text": "Spot ETFs approved",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 226,
+      "sourceDate": "2024-03-14",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2024-03-14",
+          "text": "ALL-TIME HIGH: $73.8K",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 227,
+      "sourceDate": "2024-04-19",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2024-04-19",
+          "text": "4th halving",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 228,
+      "sourceDate": "2024-05-05",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2024-05-05",
+          "text": "1B transactions",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 229,
+      "sourceDate": "2024-11-06",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2024-11-06",
+          "text": "Trump wins: new high",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 230,
+      "sourceDate": "2024-12-05",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2024-12-05",
+          "text": "BTC > $100K",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 231,
+      "sourceDate": "2025-01-20",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2025-01-20",
+          "text": "ALL-TIME HIGH: $109K | Inauguration",
+          "hit": 2
+        }
+      ]
+    },
+    {
+      "sourceId": 232,
+      "sourceDate": "2025-03-06",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2025-03-06",
+          "text": "US Bitcoin reserve",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 233,
+      "sourceDate": "2025-05-22",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2025-05-22",
+          "text": "BTC > $110K",
+          "hit": 1
+        }
+      ]
+    },
+    {
+      "sourceId": 234,
+      "sourceDate": "2025-07-15",
+      "status": "stored",
+      "reason": "Restored full original import; source date retained separately.",
+      "scope": "Bitcoin historical event",
+      "targets": [
+        {
+          "date": "2025-07-15",
+          "text": "BTC > $120K",
+          "hit": 1
+        }
+      ]
+    }
+  ]
+}

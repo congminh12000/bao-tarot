@@ -42,3 +42,12 @@ was available in search. Use these official sources instead, as permitted by PRO
 - Catalog explicitly permits the logomark as an expression for the BNB token. Rasterized the original SVG to transparent
   1024×1024 PNG; negative produced with `ffmpeg -vf negate=negate_alpha=0` as required by the project.
 - Amber glow palette uses the exact BNB row in `coins/README.md`; awaits user approval.
+
+## 99Bitcoins completeness audit — 2026-10-27
+
+Supersedes the earlier guessed-URL-only search: canonical historical paths redirect to Bitcoin. The actual coin page
+contains price data but zero historical-event-table entries. Sitemap discovery and per-URL status evidence are saved
+in `../../../data/source-audits/99bitcoins/discovery.json`. Every one of the 234 BTC source entries has an explicit
+coin relevance decision in `99bitcoins-coverage.json`; applicable shared/coin-specific context is stored, missing
+entries added as level 0. Excluded BTC-only items remain in the shared snapshot. No claim of an exhaustive dedicated
+altcoin timeline or all news coverage. Source-date conflicts are explicitly flagged in the coverage file.

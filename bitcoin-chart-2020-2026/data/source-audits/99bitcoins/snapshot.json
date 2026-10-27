@@ -1,0 +1,1414 @@
+{
+  "sourceUrl": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/",
+  "retrievedOn": "2026-10-27",
+  "sourceDocumentSha256": "d6755776bd0072ce11b1400c5ffced714c9c8bbff96923628d92f02eee31a1ad",
+  "count": 234,
+  "firstDate": "2009-01-03",
+  "lastDate": "2025-07-15",
+  "events": [
+    {
+      "id": 1,
+      "date": "2009-01-03",
+      "title": "Genesis Block Established",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#genesis-block-established"
+    },
+    {
+      "id": 2,
+      "date": "2009-10-05",
+      "title": "New Liberty Standard Publishes First Exchange Rate",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-liberty-standard-publishes-first-exchange-rate"
+    },
+    {
+      "id": 3,
+      "date": "2009-10-12",
+      "title": "The First Bitcoin-to-Fiat Exchange Occurs",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#the-first-bitcoin-to-fiat-exchange-occurs"
+    },
+    {
+      "id": 4,
+      "date": "2010-05-22",
+      "title": "Two Pizzas Are First Material Item Purchased Using Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#two-pizzas-are-first-material-item-purchased-using-bitcoin"
+    },
+    {
+      "id": 5,
+      "date": "2010-07-11",
+      "title": "Bitcoin Posted on Slashdot",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-posted-on-slashdot"
+    },
+    {
+      "id": 6,
+      "date": "2010-07-18",
+      "title": "Mt. Gox Opens For Business",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mt-gox-opens-for-business"
+    },
+    {
+      "id": 7,
+      "date": "2010-08-15",
+      "title": "Bitcoin Protocol Bug Causes Hard Fork",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-protocol-bug-causes-hard-fork"
+    },
+    {
+      "id": 8,
+      "date": "2010-12-10",
+      "title": "First mainstream article on Bitcoin in PC World",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#first-mainstream-article-on-bitcoin-in-pc-world"
+    },
+    {
+      "id": 9,
+      "date": "2011-02-09",
+      "title": "Bitcoin Price Hits $1.00 USD",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-hits-1-00-usd"
+    },
+    {
+      "id": 10,
+      "date": "2011-03-27",
+      "title": "Three New Exchanges Open Supporting More Fiat Currencies",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#three-new-exchanges-open-supporting-more-fiat-currencies"
+    },
+    {
+      "id": 11,
+      "date": "2011-06-01",
+      "title": "Gawker Publishes Article About The Silk Road",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#gawker-publishes-article-about-the-silk-road"
+    },
+    {
+      "id": 12,
+      "date": "2011-06-19",
+      "title": "Mt. Gox Hacked",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mt-gox-hacked"
+    },
+    {
+      "id": 13,
+      "date": "2011-12-19",
+      "title": "“The Good Wife” Airs “Bitcoin for Dummies” TV Episode",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#the-good-wife-airs-bitcoin-for-dummies-tv-episode"
+    },
+    {
+      "id": 14,
+      "date": "2012-02-11",
+      "title": "Paxum and Tradehill Drop Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paxum-and-tradehill-drop-bitcoin"
+    },
+    {
+      "id": 15,
+      "date": "2012-03-01",
+      "title": "Linode Hacked, Over 46,000 BTC Stolen",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#linode-hacked-over-46000-btc-stolen"
+    },
+    {
+      "id": 16,
+      "date": "2012-08-17",
+      "title": "Bitcoins Savings & Trust Halts Payments",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoins-savings-trust-halts-payments"
+    },
+    {
+      "id": 17,
+      "date": "2012-11-15",
+      "title": "WordPress Accepts Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#wordpress-accepts-bitcoin"
+    },
+    {
+      "id": 18,
+      "date": "2012-11-28",
+      "title": "Halving Day",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#halving-day"
+    },
+    {
+      "id": 19,
+      "date": "2013-03-11",
+      "title": "Bitcoin 0.8 Causes Brief Hard Fork",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-0-8-causes-brief-hard-fork"
+    },
+    {
+      "id": 20,
+      "date": "2013-03-25",
+      "title": "Cyprus Bail-In",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cyprus-bail-in"
+    },
+    {
+      "id": 21,
+      "date": "2013-04-10",
+      "title": "Increased Trading Volume Breaks Mt. Gox",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#increased-trading-volume-breaks-mt-gox"
+    },
+    {
+      "id": 22,
+      "date": "2013-05-14",
+      "title": "DHS Seizure Warrant Against Mt. Gox",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#dhs-seizure-warrant-against-mt-gox"
+    },
+    {
+      "id": 23,
+      "date": "2013-08-30",
+      "title": "Tradehill Shuts Down (Again)",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tradehill-shuts-down-again"
+    },
+    {
+      "id": 24,
+      "date": "2013-10-01",
+      "title": "Dread Pirate Roberts Arrested",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#dread-pirate-roberts-arrested"
+    },
+    {
+      "id": 25,
+      "date": "2013-11-18",
+      "title": "US Senate Holds Hearing On Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-senate-holds-hearing-on-bitcoin"
+    },
+    {
+      "id": 26,
+      "date": "2013-11-20",
+      "title": "People’s Bank of China OK’s Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#peoples-bank-of-china-oks-bitcoin"
+    },
+    {
+      "id": 27,
+      "date": "2013-11-29",
+      "title": "Exchange Rate Peaks at $1,242 on Mt. Gox",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#exchange-rate-peaks-at-1242-on-mt-gox"
+    },
+    {
+      "id": 28,
+      "date": "2013-12-05",
+      "title": "Chinese Government Bans Financial Institutions From Using Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinese-government-bans-financial-institutions-from-using-bitcoin"
+    },
+    {
+      "id": 29,
+      "date": "2014-02-07",
+      "title": "Major Exchanges Hit With DDoS Attacks",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#major-exchanges-hit-with-ddos-attacks"
+    },
+    {
+      "id": 30,
+      "date": "2014-02-24",
+      "title": "Mt. Gox Closes",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mt-gox-closes"
+    },
+    {
+      "id": 31,
+      "date": "2014-03-06",
+      "title": "Newsweek Claims Dorian Nakamoto is Bitcoin’s Creator",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#newsweek-claims-dorian-nakamoto-is-bitcoins-creator"
+    },
+    {
+      "id": 32,
+      "date": "2014-03-26",
+      "title": "IRS Declares Bitcoin To Be Taxed As Property",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#irs-declares-bitcoin-to-be-taxed-as-property"
+    },
+    {
+      "id": 33,
+      "date": "2014-04-10",
+      "title": "Chinese Exchanges’ Bank Accounts Closed",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinese-exchanges-bank-accounts-closed"
+    },
+    {
+      "id": 34,
+      "date": "2014-06-13",
+      "title": "Mining Pool GHash.io Reaches 51%",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mining-pool-ghash-io-reaches-51"
+    },
+    {
+      "id": 35,
+      "date": "2014-06-27",
+      "title": "US Marshals Service Auctions 29,656 Seized Bitcoins",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-marshals-service-auctions-29656-seized-bitcoins"
+    },
+    {
+      "id": 36,
+      "date": "2014-07-17",
+      "title": "New York DFS Releases Proposed “BitLicense”",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-york-dfs-releases-proposed-bitlicense"
+    },
+    {
+      "id": 37,
+      "date": "2014-07-18",
+      "title": "Dell Accepts Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#dell-accepts-bitcoin"
+    },
+    {
+      "id": 38,
+      "date": "2014-09-08",
+      "title": "Paypal Subsidiary Braintree to Accept Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paypal-subsidiary-braintree-to-accept-bitcoin"
+    },
+    {
+      "id": 39,
+      "date": "2014-10-06",
+      "title": "The Slaying of BearWhale",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#the-slaying-of-bearwhale"
+    },
+    {
+      "id": 40,
+      "date": "2014-12-11",
+      "title": "Microsoft Accepts Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microsoft-accepts-bitcoin"
+    },
+    {
+      "id": 41,
+      "date": "2014-12-19",
+      "title": "Charlie Shrem Sentenced to 2 Years in Prison",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#charlie-shrem-sentenced-to-2-years-in-prison"
+    },
+    {
+      "id": 42,
+      "date": "2015-01-04",
+      "title": "Bitstamp Hacked",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitstamp-hacked"
+    },
+    {
+      "id": 43,
+      "date": "2015-01-26",
+      "title": "Coinbase Launches US Licensed Exchange",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-launches-us-licensed-exchange"
+    },
+    {
+      "id": 44,
+      "date": "2015-05-19",
+      "title": "Ross Ulbricht Sentenced to Life in Prison",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ross-ulbricht-sentenced-to-life-in-prison"
+    },
+    {
+      "id": 45,
+      "date": "2015-06-03",
+      "title": "New York State Releases the BitLicense",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-york-state-releases-the-bitlicense"
+    },
+    {
+      "id": 46,
+      "date": "2015-07-01",
+      "title": "2 Federal Agents Plead Guilty to Silk Road Theft",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#2-federal-agents-plead-guilty-to-silk-road-theft"
+    },
+    {
+      "id": 47,
+      "date": "2015-08-01",
+      "title": "Mark Karpeles Arrested",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mark-karpeles-arrested"
+    },
+    {
+      "id": 48,
+      "date": "2015-08-15",
+      "title": "Bitcoin XT Fork Released",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-xt-fork-released"
+    },
+    {
+      "id": 49,
+      "date": "2015-09-18",
+      "title": "Bitcoin declared as a commodity by the US regulator",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-declared-as-a-commodity-by-the-us-regulator"
+    },
+    {
+      "id": 50,
+      "date": "2015-10-08",
+      "title": "Gemini Exchange Launched",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#gemini-exchange-launched"
+    },
+    {
+      "id": 51,
+      "date": "2015-10-22",
+      "title": "EU Declares No VAT on Bitcoin Trades",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#eu-declares-no-vat-on-bitcoin-trades"
+    },
+    {
+      "id": 52,
+      "date": "2015-10-31",
+      "title": "Bitcoin Featured on Front Page of The Economist",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-featured-on-front-page-of-the-economist"
+    },
+    {
+      "id": 53,
+      "date": "2015-11-03",
+      "title": "Bitcoin Sign Accepted into Unicode",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-sign-accepted-into-unicode"
+    },
+    {
+      "id": 54,
+      "date": "2015-12-08",
+      "title": "Gwern and WIRED Claim Craig Wright is Probably Satoshi Nakamoto",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#gwern-and-wired-claim-craig-wright-is-probably-satoshi-nakamoto"
+    },
+    {
+      "id": 55,
+      "date": "2016-01-14",
+      "title": "Mike Hearn Quits Bitcoin (a.k.a The Hearnia)",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mike-hearn-quits-bitcoin-a-k-a-the-hearnia"
+    },
+    {
+      "id": 56,
+      "date": "2016-02-21",
+      "title": "Bitcoin Roundtable Consensus",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-roundtable-consensus"
+    },
+    {
+      "id": 57,
+      "date": "2016-04-04",
+      "title": "OpenBazaar Launched",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#openbazaar-launched"
+    },
+    {
+      "id": 58,
+      "date": "2016-04-27",
+      "title": "Steam Accepts Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#steam-accepts-bitcoin"
+    },
+    {
+      "id": 59,
+      "date": "2016-05-02",
+      "title": "Craig Wright Claims to be Bitcoin’s Creator",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#craig-wright-claims-to-be-bitcoins-creator"
+    },
+    {
+      "id": 60,
+      "date": "2016-07-09",
+      "title": "Second Halving Day",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#second-halving-day"
+    },
+    {
+      "id": 61,
+      "date": "2016-08-02",
+      "title": "Bitfinex Hacked",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitfinex-hacked"
+    },
+    {
+      "id": 62,
+      "date": "2016-11-09",
+      "title": "Donald Trump Elected as President, Market Plummet",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#donald-trump-elected-as-president-market-plummet"
+    },
+    {
+      "id": 63,
+      "date": "2017-01-03",
+      "title": "Bitcoin price breaks $1000 for the first time in 3 years",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-breaks-1000-for-the-first-time-in-3-years"
+    },
+    {
+      "id": 64,
+      "date": "2017-03-10",
+      "title": "SEC denies Winkelvos ETF",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#sec-denies-winkelvos-etf"
+    },
+    {
+      "id": 65,
+      "date": "2017-03-28",
+      "title": "SEC denies second Bitcoin ETF application",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#sec-denies-second-bitcoin-etf-application"
+    },
+    {
+      "id": 66,
+      "date": "2017-04-01",
+      "title": "Japan Declares Bitcoin as Legel Tender",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japan-declares-bitcoin-as-legel-tender"
+    },
+    {
+      "id": 67,
+      "date": "2017-08-01",
+      "title": "Bitcoin “splits” into Bitcoin (BTC) and Bitcoin Cash (BCH)",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-splits-into-bitcoin-btc-and-bitcoin-cash-bch"
+    },
+    {
+      "id": 68,
+      "date": "2017-09-03",
+      "title": "China bans companies from raising money through ICOs",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-companies-from-raising-money-through-icos"
+    },
+    {
+      "id": 69,
+      "date": "2017-09-12",
+      "title": "Jamie Dimon, head of JP Morgan calls Bitcoin as fraud",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#jamie-dimon-head-of-jp-morgan-calls-bitcoin-as-fraud"
+    },
+    {
+      "id": 70,
+      "date": "2017-09-15",
+      "title": "China Is Shutting Down All Bitcoin and Cryptocurrency Exchanges",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-is-shutting-down-all-bitcoin-and-cryptocurrency-exchanges"
+    },
+    {
+      "id": 71,
+      "date": "2017-10-13",
+      "title": "Bitcoin price breaks $5,000 for the first time",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-breaks-5000-for-the-first-time"
+    },
+    {
+      "id": 72,
+      "date": "2017-10-25",
+      "title": "Bitcoin Hardfork: Bitcoin Gold goes live",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hardfork-bitcoin-gold-goes-live"
+    },
+    {
+      "id": 73,
+      "date": "2017-10-31",
+      "title": "CME announces to launch Bitcoin futures",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cme-announces-to-launch-bitcoin-futures"
+    },
+    {
+      "id": 74,
+      "date": "2017-11-08",
+      "title": "SegWit2X Cancelled",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#segwit2x-cancelled"
+    },
+    {
+      "id": 75,
+      "date": "2017-11-28",
+      "title": "Bitcoin price breaks $10,000 for the first time",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-breaks-10000-for-the-first-time"
+    },
+    {
+      "id": 76,
+      "date": "2017-12-11",
+      "title": "CBOE Bitcoin Futures are launched",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cboe-bitcoin-futures-are-launched"
+    },
+    {
+      "id": 77,
+      "date": "2017-12-18",
+      "title": "Bitcoin price hit all time high just below $20,000",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-hit-all-time-high-just-below-20000"
+    },
+    {
+      "id": 78,
+      "date": "2017-12-28",
+      "title": "South Korea threatens to shut down cryptocurrency exchanges",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korea-threatens-to-shut-down-cryptocurrency-exchanges"
+    },
+    {
+      "id": 79,
+      "date": "2018-01-02",
+      "title": "Report says early Facebook investor Peter Thiel is buying massive amounts",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#report-says-early-facebook-investor-peter-thiel-is-buying-massive-amounts"
+    },
+    {
+      "id": 80,
+      "date": "2018-01-08",
+      "title": "CoinMarketCap drops South Korea prices from cryptocurrency rates and regulator inspects cryptocurrency bank accounts.",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinmarketcap-drops-south-korea-prices-from-cryptocurrency-rates-and-regulator-inspects-cryptocurrency-bank-accounts"
+    },
+    {
+      "id": 81,
+      "date": "2018-01-13",
+      "title": "80% of the total Bitcoin supply has been mined",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#80-of-the-total-bitcoin-supply-has-been-mined"
+    },
+    {
+      "id": 82,
+      "date": "2018-01-26",
+      "title": "Japanese CoinCheck Exchange halts withdrawals after being hacked",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-coincheck-exchange-halts-withdrawals-after-being-hacked"
+    },
+    {
+      "id": 83,
+      "date": "2018-01-30",
+      "title": "Facebook bans all ads promoting cryptocurrency",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-bans-all-ads-promoting-cryptocurrency"
+    },
+    {
+      "id": 84,
+      "date": "2018-03-07",
+      "title": "US Regulator SEC says crypto exchanges must register with agency",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-sec-says-crypto-exchanges-must-register-with-agency"
+    },
+    {
+      "id": 85,
+      "date": "2018-03-14",
+      "title": "Google bans crypto advertisements",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#google-bans-crypto-advertisements"
+    },
+    {
+      "id": 86,
+      "date": "2018-03-26",
+      "title": "Twitter announces ban on cryptocurrency ads",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-announces-ban-on-cryptocurrency-ads"
+    },
+    {
+      "id": 87,
+      "date": "2018-04-13",
+      "title": "Indian Exchange Coinsecure Hit By $3.5 Million Bitcoin Theft",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#indian-exchange-coinsecure-hit-by-3-5-million-bitcoin-theft"
+    },
+    {
+      "id": 88,
+      "date": "2018-05-02",
+      "title": "Goldman Sachs announces to open a Bitcoin trading operation",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#goldman-sachs-announces-to-open-a-bitcoin-trading-operation"
+    },
+    {
+      "id": 89,
+      "date": "2018-05-11",
+      "title": "Prosecutors raid largest South Korean exchange",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#prosecutors-raid-largest-south-korean-exchange"
+    },
+    {
+      "id": 90,
+      "date": "2018-05-24",
+      "title": "U.S.Justice Department launches criminal probe into Bitcoin price manipulation",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-justice-department-launches-criminal-probe-into-bitcoin-price-manipulation"
+    },
+    {
+      "id": 91,
+      "date": "2018-06-10",
+      "title": "South Korean crypto exchange, CoinRail has been hacked",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korean-crypto-exchange-coinrail-has-been-hacked"
+    },
+    {
+      "id": 92,
+      "date": "2018-06-11",
+      "title": "U.S. regulator demands trading data from Bitcoin exchanges in manipulation probe",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-regulator-demands-trading-data-from-bitcoin-exchanges-in-manipulation-probe"
+    },
+    {
+      "id": 93,
+      "date": "2018-06-20",
+      "title": "South Korean cryptocurrency exchange, Bithumb was hacked",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korean-cryptocurrency-exchange-bithumb-was-hacked"
+    },
+    {
+      "id": 94,
+      "date": "2018-06-26",
+      "title": "Facebook is lifting ban on crypto ads",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-lifting-ban-on-crypto-ads"
+    },
+    {
+      "id": 95,
+      "date": "2018-07-16",
+      "title": "BlackRock looks into crypto and blockchain",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#blackrock-looks-into-crypto-and-blockchain"
+    },
+    {
+      "id": 96,
+      "date": "2018-07-26",
+      "title": "Winklevoss twins Bitcoin ETF is rejected by the SEC",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#winklevoss-twins-bitcoin-etf-is-rejected-by-the-sec"
+    },
+    {
+      "id": 97,
+      "date": "2018-08-03",
+      "title": "NYSE’s owner (ICE) announced the launch of Bakkt, a federal regulated market for Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#nyses-owner-ice-announced-the-launch-of-bakkt-a-federal-regulated-market-for-bitcoin"
+    },
+    {
+      "id": 98,
+      "date": "2018-08-07",
+      "title": "SEC delays decision on Bitcoin ETFs",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#sec-delays-decision-on-bitcoin-etfs"
+    },
+    {
+      "id": 99,
+      "date": "2018-09-05",
+      "title": "Goldman Sachs drops crypto trading plans",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#goldman-sachs-drops-crypto-trading-plans"
+    },
+    {
+      "id": 100,
+      "date": "2018-09-18",
+      "title": "Japanese Zaif exchange hacked loosing about $60M in crypto",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-zaif-exchange-hacked-loosing-about-60m-in-crypto"
+    },
+    {
+      "id": 101,
+      "date": "2018-10-15",
+      "title": "Fidelity launches institutional platform for cryptocurrencies",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fidelity-launches-institutional-platform-for-cryptocurrencies"
+    },
+    {
+      "id": 102,
+      "date": "2018-10-31",
+      "title": "Bitcoin turns 10 years old",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-turns-10-years-old"
+    },
+    {
+      "id": 103,
+      "date": "2018-11-15",
+      "title": "Bitcoin Cash hard fork",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-cash-hard-fork"
+    },
+    {
+      "id": 104,
+      "date": "2018-12-03",
+      "title": "Bitcoin mining difficulty dropped significantly",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-mining-difficulty-dropped-significantly"
+    },
+    {
+      "id": 105,
+      "date": "2018-12-13",
+      "title": "Fake Bomb Threats Across US Demanding Bitcoin Ransom",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fake-bomb-threats-across-us-demanding-bitcoin-ransom"
+    },
+    {
+      "id": 106,
+      "date": "2018-12-29",
+      "title": "Electrum Wallet Attack",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#electrum-wallet-attack"
+    },
+    {
+      "id": 107,
+      "date": "2018-12-31",
+      "title": "Institutional Crypto Exchange Bakkt Raised $182M Funding",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#institutional-crypto-exchange-bakkt-raised-182m-funding"
+    },
+    {
+      "id": 108,
+      "date": "2019-01-03",
+      "title": "“Proof of Keys” Movement",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#proof-of-keys-movement"
+    },
+    {
+      "id": 109,
+      "date": "2019-01-10",
+      "title": "Bitwise Files for New Bitcoin ETF With SEC",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitwise-files-for-new-bitcoin-etf-with-sec"
+    },
+    {
+      "id": 110,
+      "date": "2019-01-18",
+      "title": "Coinstar Machines Start Selling Bitcoin at Grocery Stores Across US",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinstar-machines-start-selling-bitcoin-at-grocery-stores-across-us"
+    },
+    {
+      "id": 111,
+      "date": "2019-01-23",
+      "title": "CBOE Withdraws VanEck Bitcoin ETF Application",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cboe-withdraws-vaneck-bitcoin-etf-application"
+    },
+    {
+      "id": 112,
+      "date": "2019-01-31",
+      "title": "CBOE Resubmits the VanEck/SolidX Bitcoin ETF Proposal for SEC Approval",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cboe-resubmits-the-vaneck-solidx-bitcoin-etf-proposal-for-sec-approval"
+    },
+    {
+      "id": 113,
+      "date": "2019-02-01",
+      "title": "Canadian Crypto Exchange QuadrigaCX Goes Bankrupt",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#canadian-crypto-exchange-quadrigacx-goes-bankrupt"
+    },
+    {
+      "id": 114,
+      "date": "2019-03-01",
+      "title": "Facebook is Working on its own Cryptocurrency",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-working-on-its-own-cryptocurrency"
+    },
+    {
+      "id": 115,
+      "date": "2019-03-14",
+      "title": "Mt.Gox founder gets suspended sentence",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mt-gox-founder-gets-suspended-sentence"
+    },
+    {
+      "id": 116,
+      "date": "2019-03-15",
+      "title": "CBOE stops listing Bitcoin futures contracts",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cboe-stops-listing-bitcoin-futures-contracts"
+    },
+    {
+      "id": 117,
+      "date": "2019-03-22",
+      "title": "Bitwise study finds majority of bitcoin trading volume is faked by unregulated exchanges",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitwise-study-finds-majority-of-bitcoin-trading-volume-is-faked-by-unregulated-exchanges"
+    },
+    {
+      "id": 118,
+      "date": "2019-03-29",
+      "title": "SEC Postpones Decision on Bitwise, VanEck Bitcoin ETF Proposals",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#sec-postpones-decision-on-bitwise-vaneck-bitcoin-etf-proposals"
+    },
+    {
+      "id": 119,
+      "date": "2019-04-08",
+      "title": "China wants to ban Bitcoin mining",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-wants-to-ban-bitcoin-mining"
+    },
+    {
+      "id": 120,
+      "date": "2019-04-15",
+      "title": "Major exchanges delists Bitcoin SV",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#major-exchanges-delists-bitcoin-sv"
+    },
+    {
+      "id": 121,
+      "date": "2019-04-26",
+      "title": "Bitfinex and Tether faces investigation over alleged $850M shortfall",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitfinex-and-tether-faces-investigation-over-alleged-850m-shortfall"
+    },
+    {
+      "id": 122,
+      "date": "2019-05-08",
+      "title": "Binance exchange hackers steals $41M worth of Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#binance-exchange-hackers-steals-41m-worth-of-bitcoin"
+    },
+    {
+      "id": 123,
+      "date": "2019-05-21",
+      "title": "Australian who says he invented Bitcoin files for copyright",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#australian-who-says-he-invented-bitcoin-files-for-copyright"
+    },
+    {
+      "id": 124,
+      "date": "2019-05-30",
+      "title": "Another applicant files for Bitcoin copyright",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#another-applicant-files-for-bitcoin-copyright"
+    },
+    {
+      "id": 125,
+      "date": "2019-06-03",
+      "title": "Crypto entrepreneur to pay $4.6 million for charity lunch with bitcoin skeptic Warren Buffett",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-entrepreneur-to-pay-4-6-million-for-charity-lunch-with-bitcoin-skeptic-warren-buffett"
+    },
+    {
+      "id": 126,
+      "date": "2019-06-13",
+      "title": "Bakkt names launch date for Bitcoin Futures Testing",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bakkt-names-launch-date-for-bitcoin-futures-testing"
+    },
+    {
+      "id": 127,
+      "date": "2019-06-18",
+      "title": "Bitcoin Price Trades Flat on Facebook Libra Blockchain Launch",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-trades-flat-on-facebook-libra-blockchain-launch"
+    },
+    {
+      "id": 128,
+      "date": "2019-07-11",
+      "title": "President Trump Comments on Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#president-trump-comments-on-bitcoin"
+    },
+    {
+      "id": 129,
+      "date": "2019-08-07",
+      "title": "Scammer Demands 300 Bitcoin From Binance in KYC Data Ransom",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#scammer-demands-300-bitcoin-from-binance-in-kyc-data-ransom"
+    },
+    {
+      "id": 130,
+      "date": "2019-08-15",
+      "title": "Coinbase Exchange Acquires Xapo Bitcoin Vault",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-exchange-acquires-xapo-bitcoin-vault"
+    },
+    {
+      "id": 131,
+      "date": "2019-08-28",
+      "title": "Self-proclaimed Bitcoin Inventor is Ordered to Pay Billions in Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#self-proclaimed-bitcoin-inventor-is-ordered-to-pay-billions-in-bitcoin"
+    },
+    {
+      "id": 132,
+      "date": "2019-09-03",
+      "title": "VanEck, SolidX to Offer Bitcoin ETF-Like Product to Institutions",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#vaneck-solidx-to-offer-bitcoin-etf-like-product-to-institutions"
+    },
+    {
+      "id": 133,
+      "date": "2019-09-22",
+      "title": "Long Awaited Bitcoin Futures Launched on Bakkt",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#long-awaited-bitcoin-futures-launched-on-bakkt"
+    },
+    {
+      "id": 134,
+      "date": "2019-10-09",
+      "title": "Unicef Accepts Crypto Donations",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#unicef-accepts-crypto-donations"
+    },
+    {
+      "id": 135,
+      "date": "2019-10-15",
+      "title": "‘Satoshi’ is Added to Oxford Dictionary",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#satoshi-is-added-to-oxford-dictionary"
+    },
+    {
+      "id": 136,
+      "date": "2019-10-28",
+      "title": "Bitcoin Flirts With $10,000 After China Endorses Blockchain",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-flirts-with-10000-after-china-endorses-blockchain"
+    },
+    {
+      "id": 137,
+      "date": "2019-10-29",
+      "title": "Chinese Bitcoin Mining Machine Maker Canaan Files for U.S. IPO",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinese-bitcoin-mining-machine-maker-canaan-files-for-u-s-ipo"
+    },
+    {
+      "id": 138,
+      "date": "2019-11-04",
+      "title": "Research Suggest Bitcoin Price Rally in 2017 December was Manipulated",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#research-suggest-bitcoin-price-rally-in-2017-december-was-manipulated"
+    },
+    {
+      "id": 139,
+      "date": "2019-11-09",
+      "title": "NY Regulator Licenses Fidelity for Bitcoin Trading and Custody",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ny-regulator-licenses-fidelity-for-bitcoin-trading-and-custody"
+    },
+    {
+      "id": 140,
+      "date": "2019-12-10",
+      "title": "BitClub Network Ponzi Scheme Busted",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitclub-network-ponzi-scheme-busted"
+    },
+    {
+      "id": 141,
+      "date": "2019-12-23",
+      "title": "Youtube Bans Crypto Videos by Mistake",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#youtube-bans-crypto-videos-by-mistake"
+    },
+    {
+      "id": 142,
+      "date": "2020-01-06",
+      "title": "Bitcoin Price Breakout Amid US-Iran Tensions",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-breakout-amid-us-iran-tensions"
+    },
+    {
+      "id": 143,
+      "date": "2020-01-13",
+      "title": "CME Group Launched Bitcoin Options",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cme-group-launched-bitcoin-options"
+    },
+    {
+      "id": 144,
+      "date": "2020-01-19",
+      "title": "Peter Schiff’s Bitcoin Wallet Vanishing Act Is the Most Boomer Thing Ever",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#peter-schiffs-bitcoin-wallet-vanishing-act-is-the-most-boomer-thing-ever"
+    },
+    {
+      "id": 145,
+      "date": "2020-01-29",
+      "title": "Second City in Switzerland Accepting Tax Payments in Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#second-city-in-switzerland-accepting-tax-payments-in-bitcoin"
+    },
+    {
+      "id": 146,
+      "date": "2020-02-02",
+      "title": "Twitter Adds Bitcoin Emoji",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-adds-bitcoin-emoji"
+    },
+    {
+      "id": 147,
+      "date": "2020-02-05",
+      "title": "Lightning Labs Raises $10M Series A Funding",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#lightning-labs-raises-10m-series-a-funding"
+    },
+    {
+      "id": 148,
+      "date": "2020-02-17",
+      "title": "FCoin Exchange Shuts Down After Becoming Insolvent",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fcoin-exchange-shuts-down-after-becoming-insolvent"
+    },
+    {
+      "id": 149,
+      "date": "2020-03-04",
+      "title": "Indian Supreme Court Lifts Ban on Bitcoin Trading",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#indian-supreme-court-lifts-ban-on-bitcoin-trading"
+    },
+    {
+      "id": 150,
+      "date": "2020-03-13",
+      "title": "Bitcoin Loses Half of Its Value in Two-Day Plunge",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-loses-half-of-its-value-in-two-day-plunge"
+    },
+    {
+      "id": 151,
+      "date": "2020-03-15",
+      "title": "Bitcoin Price Tops as FED Cuts Interest Rates to 0% and Restarts QE",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-tops-as-fed-cuts-interest-rates-to-0-and-restarts-qe"
+    },
+    {
+      "id": 152,
+      "date": "2020-03-23",
+      "title": "Bitcoin Rally on Fed’s QE ‘Bazooka’",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-rally-on-feds-qe-bazooka"
+    },
+    {
+      "id": 153,
+      "date": "2020-03-26",
+      "title": "Microsoft Patents New Cryptocurrency System Using Body Activity Data",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microsoft-patents-new-cryptocurrency-system-using-body-activity-data"
+    },
+    {
+      "id": 154,
+      "date": "2020-04-01",
+      "title": "Binance Acquired CoinMarketCap for $400M",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#binance-acquired-coinmarketcap-for-400m"
+    },
+    {
+      "id": 155,
+      "date": "2020-04-08",
+      "title": "Bitcoin Cash Undergoes ‘Halving’ Event",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-cash-undergoes-halving-event"
+    },
+    {
+      "id": 156,
+      "date": "2020-04-09",
+      "title": "First Public Bitcoin Fund Listed on Toronto Stock Exchange",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#first-public-bitcoin-fund-listed-on-toronto-stock-exchange"
+    },
+    {
+      "id": 157,
+      "date": "2020-05-07",
+      "title": "Billionaire Paul Tudor Jones Buys Bitcoin as a Hedge Against Inflation",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#billionaire-paul-tudor-jones-buys-bitcoin-as-a-hedge-against-inflation"
+    },
+    {
+      "id": 158,
+      "date": "2020-05-11",
+      "title": "Third Bitcoin Halving",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#third-bitcoin-halving"
+    },
+    {
+      "id": 159,
+      "date": "2020-05-25",
+      "title": "Bitcoin Miners in China Ordered to Shut Down in ‘Orderly Manner’",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-miners-in-china-ordered-to-shut-down-in-orderly-manner"
+    },
+    {
+      "id": 160,
+      "date": "2020-06-22",
+      "title": "New Zealand Police Seize $91 Million From Russian Bitcoin Exchange Operator",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-zealand-police-seize-91-million-from-russian-bitcoin-exchange-operator"
+    },
+    {
+      "id": 161,
+      "date": "2020-07-02",
+      "title": "Researchers Expose Flaw in Bitcoin Wallets",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#researchers-expose-flaw-in-bitcoin-wallets"
+    },
+    {
+      "id": 162,
+      "date": "2020-07-15",
+      "title": "Twitter Accounts Hacked by Bitcoin Thieves",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-accounts-hacked-by-bitcoin-thieves"
+    },
+    {
+      "id": 163,
+      "date": "2020-07-22",
+      "title": "US Regulator Green-Lights Banks for Cryptocurrency Custody Services",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-green-lights-banks-for-cryptocurrency-custody-services"
+    },
+    {
+      "id": 164,
+      "date": "2020-08-11",
+      "title": "NASDAQ-listed MicroStrategy Buy 21,453 Bitcoin as Primary Reserve Asset",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#nasdaq-listed-microstrategy-buy-21453-bitcoin-as-primary-reserve-asset"
+    },
+    {
+      "id": 165,
+      "date": "2020-08-14",
+      "title": "U.S. Seizes Bitcoin Said to Be Used to Finance Terrorist Groups",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-seizes-bitcoin-said-to-be-used-to-finance-terrorist-groups"
+    },
+    {
+      "id": 166,
+      "date": "2020-08-31",
+      "title": "Someone Lost $16M in Bitcoin by Using a Malicious Install of the Electrum Wallet",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#someone-lost-16m-in-bitcoin-by-using-a-malicious-install-of-the-electrum-wallet"
+    },
+    {
+      "id": 167,
+      "date": "2020-09-25",
+      "title": "Kucoin Exchange Hacked for $150 Million in Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#kucoin-exchange-hacked-for-150-million-in-bitcoin"
+    },
+    {
+      "id": 168,
+      "date": "2020-10-01",
+      "title": "Owners of BitMEX, a Leading Bitcoin Exchange, Face Criminal Charges",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#owners-of-bitmex-a-leading-bitcoin-exchange-face-criminal-charges"
+    },
+    {
+      "id": 169,
+      "date": "2020-10-08",
+      "title": "Square Buys $50 Million in Bitcoin Using 99Bitcoins’ Guide",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#square-buys-50-million-in-bitcoin-using-99bitcoins-guide"
+    },
+    {
+      "id": 170,
+      "date": "2020-10-13",
+      "title": "Asset Manager Stone Ridge Reveals 10,000 Bitcoin Purchase",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#asset-manager-stone-ridge-reveals-10000-bitcoin-purchase"
+    },
+    {
+      "id": 171,
+      "date": "2020-10-16",
+      "title": "OKEx Exchange Suspending Withdrawals As Private Key Holder is Out of Contact",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#okex-exchange-suspending-withdrawals-as-private-key-holder-is-out-of-contact"
+    },
+    {
+      "id": 172,
+      "date": "2020-10-21",
+      "title": "PayPal Allows Bitcoin and Crypto Spending",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paypal-allows-bitcoin-and-crypto-spending"
+    },
+    {
+      "id": 173,
+      "date": "2020-11-05",
+      "title": "US Government Seized $1 Billion in Bitcoin from Dark Web Marketplace Silk Road",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-government-seized-1-billion-in-bitcoin-from-dark-web-marketplace-silk-road"
+    },
+    {
+      "id": 174,
+      "date": "2020-11-16",
+      "title": "Leaked Citibank Report Reveals Bitcoin Could Rocket To $300,000 Price By End Of 2021",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#leaked-citibank-report-reveals-bitcoin-could-rocket-to-300000-price-by-end-of-2021"
+    },
+    {
+      "id": 175,
+      "date": "2020-12-08",
+      "title": "MicroStrategy Is Raising Money So It Can Buy More Crypto",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microstrategy-is-raising-money-so-it-can-buy-more-crypto"
+    },
+    {
+      "id": 176,
+      "date": "2020-12-10",
+      "title": "169-Year-Old MassMutual Invests $100 Million in Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#169-year-old-massmutual-invests-100-million-in-bitcoin"
+    },
+    {
+      "id": 177,
+      "date": "2020-12-16",
+      "title": "Bitcoin Passes $20k For The First Time, Leaving 2017’s All Time High Price Behind",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-passes-20k-for-the-first-time-leaving-2017s-all-time-high-price-behind"
+    },
+    {
+      "id": 178,
+      "date": "2020-12-18",
+      "title": "Coinbase Files for IPO",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-files-for-ipo"
+    },
+    {
+      "id": 179,
+      "date": "2020-12-23",
+      "title": "Ripple (XRP) Plunges as SEC Argues the Cryptocurrency Isn’t a Currency",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ripple-xrp-plunges-as-sec-argues-the-cryptocurrency-isnt-a-currency"
+    },
+    {
+      "id": 180,
+      "date": "2021-01-29",
+      "title": "Bitcoin spikes 20% after Elon Musk adds #bitcoin to his Twitter bio",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-spikes-20-after-elon-musk-adds-bitcoin-to-his-twitter-bio"
+    },
+    {
+      "id": 181,
+      "date": "2021-02-08",
+      "title": "Tesla Buys $1.5 billion in Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tesla-buys-1-5-billion-in-bitcoin"
+    },
+    {
+      "id": 182,
+      "date": "2021-02-12",
+      "title": "Canada Approves First Bitcoin ETF",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#canada-approves-first-bitcoin-etf"
+    },
+    {
+      "id": 183,
+      "date": "2021-02-23",
+      "title": "Square buys $170 million worth of bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#square-buys-170-million-worth-of-bitcoin"
+    },
+    {
+      "id": 184,
+      "date": "2021-03-17",
+      "title": "Morgan Stanley becomes the first big U.S. bank to offer its wealthy clients access to bitcoin funds",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#morgan-stanley-becomes-the-first-big-u-s-bank-to-offer-its-wealthy-clients-access-to-bitcoin-funds"
+    },
+    {
+      "id": 185,
+      "date": "2021-03-24",
+      "title": "Tesla Accept Bitcoin as Payment",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tesla-accept-bitcoin-as-payment"
+    },
+    {
+      "id": 186,
+      "date": "2021-04-13",
+      "title": "Bitcoin hits new all-time high above $63,000 ahead of Coinbase debut",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hits-new-all-time-high-above-63000-ahead-of-coinbase-debut"
+    },
+    {
+      "id": 187,
+      "date": "2021-05-12",
+      "title": "Tesla No Longer Accepts Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tesla-no-longer-accepts-bitcoin"
+    },
+    {
+      "id": 188,
+      "date": "2021-05-19",
+      "title": "China Bans Financial Institutions from Cryptocurrency Business",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-financial-institutions-from-cryptocurrency-business"
+    },
+    {
+      "id": 189,
+      "date": "2021-06-04",
+      "title": "Elon Musk Tweets Broken-Heart Emoji for Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#elon-musk-tweets-broken-heart-emoji-for-bitcoin"
+    },
+    {
+      "id": 190,
+      "date": "2021-06-06",
+      "title": "El Salvador’s President Proposes Using Bitcoin As Legal Tender",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#el-salvadors-president-proposes-using-bitcoin-as-legal-tender"
+    },
+    {
+      "id": 191,
+      "date": "2021-06-07",
+      "title": "U.S. Department of Justice Seizes $2Mln in Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-department-of-justice-seizes-2mln-in-bitcoin"
+    },
+    {
+      "id": 192,
+      "date": "2021-06-19",
+      "title": "China’s Crackdown on Cryptocurrency Mining",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinas-crackdown-on-cryptocurrency-mining"
+    },
+    {
+      "id": 193,
+      "date": "2021-07-09",
+      "title": "Square Plans to Make a Bitcoin Hardware Wallet",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#square-plans-to-make-a-bitcoin-hardware-wallet"
+    },
+    {
+      "id": 194,
+      "date": "2021-07-15",
+      "title": "Square Is Building Decentralized Finance Business Using Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#square-is-building-decentralized-finance-business-using-bitcoin"
+    },
+    {
+      "id": 195,
+      "date": "2021-07-26",
+      "title": "Amazon Rumours Tumble Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#amazon-rumours-tumble-bitcoin"
+    },
+    {
+      "id": 196,
+      "date": "2021-08-09",
+      "title": "AMC Will Accept Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#amc-will-accept-bitcoin"
+    },
+    {
+      "id": 197,
+      "date": "2021-09-07",
+      "title": "Bitcoin Becomes a Legal Tender in El Salvador",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-becomes-a-legal-tender-in-el-salvador"
+    },
+    {
+      "id": 198,
+      "date": "2021-09-17",
+      "title": "Bitcoin Fans Unveils Statue of Bitcoin Founder Satoshi Nakamoto",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-fans-unveils-statue-of-bitcoin-founder-satoshi-nakamoto"
+    },
+    {
+      "id": 199,
+      "date": "2021-09-23",
+      "title": "Twitter Enables Bitcoin Tipping",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-enables-bitcoin-tipping"
+    },
+    {
+      "id": 200,
+      "date": "2021-09-24",
+      "title": "China Bans All Cryptocurrency Transactions",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-all-cryptocurrency-transactions"
+    },
+    {
+      "id": 201,
+      "date": "2021-10-19",
+      "title": "First Bitcoin ETF Launches in the U.S.",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#first-bitcoin-etf-launches-in-the-u-s"
+    },
+    {
+      "id": 202,
+      "date": "2021-11-14",
+      "title": "Bitcoin’s Biggest Upgrade in 4 Years Goes Live",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoins-biggest-upgrade-in-4-years-goes-live"
+    },
+    {
+      "id": 203,
+      "date": "2021-11-21",
+      "title": "El Salvador Builds Bitcoin City from $1Bn Bitcoin Bonds",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#el-salvador-builds-bitcoin-city-from-1bn-bitcoin-bonds"
+    },
+    {
+      "id": 204,
+      "date": "2022-02-08",
+      "title": "DOJ Seized $3.6Bn Bitcoin from Bitfinex hack",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#doj-seized-3-6bn-bitcoin-from-bitfinex-hack"
+    },
+    {
+      "id": 205,
+      "date": "2022-02-14",
+      "title": "Coinbase ‘Free Bitcoin’ Super Bowl Ad Causes Site to Briefly Crash",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-free-bitcoin-super-bowl-ad-causes-site-to-briefly-crash"
+    },
+    {
+      "id": 206,
+      "date": "2022-02-28",
+      "title": "Bitcoin Trading Against the Ruble Surges as Russia’s Currency Crashes",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-trading-against-the-ruble-surges-as-russias-currency-crashes"
+    },
+    {
+      "id": 207,
+      "date": "2022-03-03",
+      "title": "U.S. Announced Crypto Executive Order",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-announced-crypto-executive-order"
+    },
+    {
+      "id": 208,
+      "date": "2022-04-27",
+      "title": "Central African Republic Becomes Second Country to Adopt Bitcoin as Legal Tender",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#central-african-republic-becomes-second-country-to-adopt-bitcoin-as-legal-tender"
+    },
+    {
+      "id": 209,
+      "date": "2022-05-07",
+      "title": "Luna and terraUSD Crashes Crypto Market",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#luna-and-terrausd-crashes-crypto-market"
+    },
+    {
+      "id": 210,
+      "date": "2022-06-13",
+      "title": "Crypto Lender Celsius Pauses Withdrawals",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-lender-celsius-pauses-withdrawals"
+    },
+    {
+      "id": 211,
+      "date": "2022-06-29",
+      "title": "MicroStrategy Buys $10M of Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microstrategy-buys-10m-of-bitcoin"
+    },
+    {
+      "id": 212,
+      "date": "2022-07-14",
+      "title": "Troubled Crypto Lender Celsius Files for Bankruptcy",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#troubled-crypto-lender-celsius-files-for-bankruptcy"
+    },
+    {
+      "id": 213,
+      "date": "2022-07-20",
+      "title": "Tesla Sold 75% of Its Bitcoin Holdings",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tesla-sold-75-of-its-bitcoin-holdings"
+    },
+    {
+      "id": 214,
+      "date": "2022-08-11",
+      "title": "BlackRock Launches Spot Bitcoin Private Trust",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#blackrock-launches-spot-bitcoin-private-trust"
+    },
+    {
+      "id": 215,
+      "date": "2022-11-11",
+      "title": "FTX Crypto Exchange Files for Bankruptcy",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ftx-crypto-exchange-files-for-bankruptcy"
+    },
+    {
+      "id": 216,
+      "date": "2022-11-30",
+      "title": "European Central Bank says Bitcoin is on the “road to irrelevance”",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#european-central-bank-says-bitcoin-is-on-the-road-to-irrelevance"
+    },
+    {
+      "id": 217,
+      "date": "2022-12-20",
+      "title": "US Crypto Miner Core Scientific Files for Bankcrupcy",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-crypto-miner-core-scientific-files-for-bankcrupcy"
+    },
+    {
+      "id": 218,
+      "date": "2022-12-29",
+      "title": "MicroStrategy Sells Bitcoin for the First Time",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microstrategy-sells-bitcoin-for-the-first-time"
+    },
+    {
+      "id": 219,
+      "date": "2023-01-21",
+      "title": "Ordinals Protocol Introduces Bitcoin NFTs",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ordinals-protocol-introduces-bitcoin-nfts"
+    },
+    {
+      "id": 220,
+      "date": "2023-03-03",
+      "title": "Crypto-friendly Silvergate Bank Voluntarily Closes",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-friendly-silvergate-bank-voluntarily-closes"
+    },
+    {
+      "id": 221,
+      "date": "2023-03-14",
+      "title": "U.S. Government Sells Bitcoin Seized From Silk Road",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-government-sells-bitcoin-seized-from-silk-road"
+    },
+    {
+      "id": 222,
+      "date": "2023-03-19",
+      "title": "Banking Crisis Rallies Bitcoin",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#banking-crisis-rallies-bitcoin"
+    },
+    {
+      "id": 223,
+      "date": "2023-06-15",
+      "title": "BlackRock Files for iShares Spot Bitcoin ETF",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#blackrock-files-for-ishares-spot-bitcoin-etf"
+    },
+    {
+      "id": 224,
+      "date": "2023-06-21",
+      "title": "Major Investment Firms Refile Application for Spot Bitcoin ETF",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#major-investment-firms-refile-application-for-spot-bitcoin-etf"
+    },
+    {
+      "id": 225,
+      "date": "2024-01-10",
+      "title": "Spot Bitcoin Application Approval in the United States",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#spot-bitcoin-application-approval-in-the-united-states"
+    },
+    {
+      "id": 226,
+      "date": "2024-03-14",
+      "title": "Bitcoin Hits New All Time High",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hits-new-all-time-high"
+    },
+    {
+      "id": 227,
+      "date": "2024-04-19",
+      "title": "Fourth Bitcoin Halving",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fourth-bitcoin-halving"
+    },
+    {
+      "id": 228,
+      "date": "2024-05-05",
+      "title": "Bitcoin Hits 1 Billion Transactions",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hits-1-billion-transactions"
+    },
+    {
+      "id": 229,
+      "date": "2024-11-06",
+      "title": "A new ATH for Bitcoin as Trump wins the presidential race",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#a-new-ath-for-bitcoin-as-trump-wins-the-presidential-race"
+    },
+    {
+      "id": 230,
+      "date": "2024-12-05",
+      "title": "Bitcoin Crosses 100k for the first time to reach a new ATH",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-crosses-100k-for-the-first-time-to-reach-a-new-ath"
+    },
+    {
+      "id": 231,
+      "date": "2025-01-20",
+      "title": "Bitcoin hits a new ATH over $109k on Trump inauguration day",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hits-a-new-ath-over-109k-on-trump-inauguration-day"
+    },
+    {
+      "id": 232,
+      "date": "2025-03-06",
+      "title": "U.S Establishes a Strategic Bitcoin Reserve",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-establishes-a-strategic-bitcoin-reserve"
+    },
+    {
+      "id": 233,
+      "date": "2025-05-22",
+      "title": "Bitcoin crosses $110k level for the first time",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-crosses-110k-level-for-the-first-time"
+    },
+    {
+      "id": 234,
+      "date": "2025-07-15",
+      "title": "Bitcoin Breaks $120k- July 14th, 2025",
+      "url": "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-breaks-120k-july-14th-2025"
+    }
+  ]
+}

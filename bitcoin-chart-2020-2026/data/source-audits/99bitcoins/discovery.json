@@ -1,0 +1,136 @@
+{
+  "checkedOn": "2026-10-27",
+  "sitemaps": [
+    {
+      "url": "https://99bitcoins.com/post-sitemap.xml",
+      "status": "200",
+      "urls": 869,
+      "candidates": []
+    },
+    {
+      "url": "https://99bitcoins.com/post-sitemap2.xml",
+      "status": "200",
+      "urls": 972,
+      "candidates": [
+        "https://99bitcoins.com/news/bitcoin-shakes-off-september-weakness-will-btc-explode-in-october-and-align-with-historical-performances/"
+      ]
+    },
+    {
+      "url": "https://99bitcoins.com/post-sitemap3.xml",
+      "status": "200",
+      "urls": 915,
+      "candidates": []
+    },
+    {
+      "url": "https://99bitcoins.com/post-sitemap4.xml",
+      "status": "200",
+      "urls": 994,
+      "candidates": [
+        "https://99bitcoins.com/news/pectra-live-on-testnet-but-will-ethereum-follow-historical-post-hard-fork-trends/"
+      ]
+    },
+    {
+      "url": "https://99bitcoins.com/post-sitemap5.xml",
+      "status": "200",
+      "urls": 1000,
+      "candidates": []
+    },
+    {
+      "url": "https://99bitcoins.com/post-sitemap6.xml",
+      "status": "200",
+      "urls": 1000,
+      "candidates": []
+    },
+    {
+      "url": "https://99bitcoins.com/post-sitemap7.xml",
+      "status": "200",
+      "urls": 1000,
+      "candidates": []
+    },
+    {
+      "url": "https://99bitcoins.com/post-sitemap8.xml",
+      "status": "200",
+      "urls": 1000,
+      "candidates": []
+    },
+    {
+      "url": "https://99bitcoins.com/post-sitemap9.xml",
+      "status": "200",
+      "urls": 1000,
+      "candidates": []
+    },
+    {
+      "url": "https://99bitcoins.com/post-sitemap10.xml",
+      "status": "200",
+      "urls": 12,
+      "candidates": []
+    },
+    {
+      "url": "https://99bitcoins.com/page-sitemap.xml",
+      "status": "200",
+      "urls": 408,
+      "candidates": [
+        "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/all-time-high/",
+        "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/volatility/",
+        "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/"
+      ]
+    },
+    {
+      "url": "https://99bitcoins.com/crypto-hub-sitemap.xml",
+      "status": "200",
+      "urls": 17,
+      "candidates": []
+    },
+    {
+      "url": "https://99bitcoins.com/crypto-coins-sitemap.xml",
+      "status": "200",
+      "urls": 100,
+      "candidates": []
+    }
+  ],
+  "urlProbes": [
+    {
+      "key": "eth_canonical",
+      "requestedUrl": "https://99bitcoins.com/cryptocurrency/ethereum/historical-price/",
+      "result": "200 https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/"
+    },
+    {
+      "key": "bnb_canonical",
+      "requestedUrl": "https://99bitcoins.com/cryptocurrency/bnb/historical-price/",
+      "result": "200 https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/"
+    },
+    {
+      "key": "xrp_canonical",
+      "requestedUrl": "https://99bitcoins.com/cryptocurrency/xrp/historical-price/",
+      "result": "200 https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/"
+    },
+    {
+      "key": "eth_coin",
+      "requestedUrl": "https://99bitcoins.com/coins/ethereum/",
+      "result": "200 https://99bitcoins.com/coins/ethereum/"
+    },
+    {
+      "key": "bnb_coin",
+      "requestedUrl": "https://99bitcoins.com/coins/bnb/",
+      "result": "404 https://99bitcoins.com/coins/bnb/"
+    },
+    {
+      "key": "xrp_coin",
+      "requestedUrl": "https://99bitcoins.com/coins/ripple/",
+      "result": "200 https://99bitcoins.com/coins/ripple/"
+    }
+  ],
+  "bnbResolvedCoinUrl": "https://99bitcoins.com/coins/binancecoin/",
+  "bnbResolvedCoinStatus": 200,
+  "coinPageEventTableCounts": {
+    "ETH": 0,
+    "BNB": 0,
+    "XRP": 0
+  },
+  "legacyUrlStatuses": {
+    "https://99bitcoins.com/ripple-historical-price-chart/": 410,
+    "https://99bitcoins.com/ethereum-historical-price-chart/": 404,
+    "https://99bitcoins.com/binance-coin-historical-price-chart/": 404
+  },
+  "conclusion": "Only the Bitcoin curated historical-event table was discovered. Canonical guessed altcoin historical paths redirect to Bitcoin. Altcoin price pages are not event timelines. No completeness claim about all altcoin history or all news articles."
+}

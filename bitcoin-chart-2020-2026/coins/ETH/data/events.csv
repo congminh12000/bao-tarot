@@ -1,24 +1,72 @@
 # date,kind,hit,tag,text
 2015-08-07,info,1,,First exchange trades
+2015-09-18,info,0,,CFTC Bitcoin commodity ruling
+2015-10-08,info,0,,Gemini exchange launches
+2015-10-22,info,0,,EU crypto VAT ruling
 2016-03-14,info,1,upgrade,Homestead upgrade
 2016-06-17,down,2,,The DAO hack
 2016-07-20,info,2,upgrade,DAO fork
+2016-08-02,info,0,,Bitfinex hack
 2016-10-18,info,1,upgrade,Tangerine Whistle
 2016-11-22,info,1,upgrade,Spurious Dragon
+2017-09-03,info,0,,China bans ICOs
+2017-09-15,info,0,,China shuts exchanges
 2017-10-16,info,1,upgrade,Byzantium upgrade
+2017-12-28,info,0,,Korea exchange shutdown warning
+2018-01-08,info,0,,CMC removes Korean price feeds
+2018-01-26,info,0,,Coincheck hack; withdrawals halt
+2018-01-30,info,0,,Facebook bans crypto ads
+2018-03-07,info,0,,SEC exchange registration notice
+2018-03-14,info,0,,Google bans crypto ads
+2018-03-26,info,0,,Twitter bans crypto ads
+2018-05-11,info,0,,Upbit prosecutors raid
+2018-06-10,info,0,,Coinrail exchange hack
+2018-06-20,info,0,,Bithumb exchange hack
+2018-06-26,info,0,,Facebook eases crypto ad ban
+2018-07-16,info,0,,BlackRock explores crypto
+2018-09-05,info,0,,Goldman crypto desk report
+2018-09-18,info,0,,Zaif exchange hack
+2018-10-15,info,0,,Fidelity crypto platform
 2018-11-02,info,1,,Uniswap launches
+2019-02-01,info,0,,QuadrigaCX bankruptcy
 2019-02-28,info,1,upgrade,Constantinople upgrade
+2019-03-01,info,0,,Facebook crypto project report
+2019-03-22,info,0,,Fake trading volume study
+2019-04-26,info,0,,Bitfinex + Tether investigation
+2019-05-08,info,0,,Binance exchange hack
+2019-06-18,info,0,,Facebook Libra announced
+2019-08-07,info,0,,Binance KYC ransom demand
+2019-10-09,info,0,,UNICEF accepts crypto donations
+2019-10-28,info,0,,China endorses blockchain
 2019-12-08,info,1,upgrade,Istanbul upgrade
+2019-12-23,info,0,,YouTube crypto video ban error
 2020-01-02,info,1,upgrade,Muir Glacier upgrade
+2020-02-17,info,0,,FCoin exchange insolvency
+2020-03-04,info,0,,India lifts crypto banking ban
 2020-03-13,down,2,,COVID crash
+2020-03-15,info,0,,Fed rate cuts + QE
+2020-03-23,info,0,,Fed expands QE
+2020-03-26,info,0,,Microsoft crypto patent
+2020-07-22,info,0,,US banks allowed crypto custody
+2020-09-25,info,0,,KuCoin exchange hack
+2020-10-01,info,0,,BitMEX executives charged
+2020-10-16,info,0,,OKEx suspends withdrawals
+2020-10-21,info,0,,PayPal crypto services
 2020-12-01,info,2,upgrade,Beacon Chain launches
+2020-12-18,info,0,,Coinbase files for IPO
 2021-04-15,info,1,upgrade,Berlin upgrade
 2021-05-19,down,2,,China crypto ban
 2021-08-05,info,2,upgrade,London: EIP-1559
+2021-09-24,info,0,,China bans all crypto
 2021-10-27,info,1,upgrade,Altair upgrade
+2022-03-03,info,0,,US crypto order reported
 2022-05-07,down,2,,LUNA collapse
+2022-06-13,info,0,,Celsius halts withdrawals
+2022-07-14,info,0,,Celsius files bankruptcy
 2022-09-15,info,2,upgrade,The Merge
 2022-11-11,down,2,,FTX bankruptcy
+2023-03-03,info,0,,Silvergate closure reported
+2023-03-19,info,0,,Crypto rally amid bank turmoil
 2023-04-12,info,2,upgrade,Shapella: withdrawals
 2024-03-13,info,2,upgrade,Dencun: blobs go live
 2024-05-23,up,2,,Spot ETH ETFs approved

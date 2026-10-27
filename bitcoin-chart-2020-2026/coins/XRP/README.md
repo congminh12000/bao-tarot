@@ -38,3 +38,9 @@ COIN=XRP node check-labels.js
 Cloud Chromium requires a `CHROME_PATH` wrapper adding `--no-sandbox`. Because cloud policy blocks file URLs,
 label validation used the existing checker over a temporary localhost HTTP server, replacing only the navigation URL.
 No rendering or validation logic was changed, and no cloud runtime helper is committed.
+
+## Source audit update — 2026-10-27
+
+Latest totals and source scope supersede earlier preparation counts above: see `../../data/source-audits/99bitcoins/README.md`.
+All 234 source IDs reviewed for this coin in `data/99bitcoins-coverage.json`, with stored targets or exclusion reasons.
+All previous official-source and level-1/2 events are preserved; new supplementary entries are level 0 and not rendered.

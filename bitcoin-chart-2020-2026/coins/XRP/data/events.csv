@@ -1,13 +1,27 @@
 # date,kind,hit,tag,text
+2013-08-30,info,0,,Tradehill shuts down
+2013-11-18,info,0,,US Senate crypto hearing
 2013-12-05,down,1,,China bank ban
+2014-02-07,info,0,,Exchanges hit by DDoS attacks
 2014-02-24,down,2,,Mt. Gox collapses
+2014-03-26,info,0,,IRS crypto tax guidance
+2014-04-10,info,0,,China closes exchange accounts
 2014-05-05,info,0,,Fidor adopts Ripple protocol
+2014-07-17,info,0,,BitLicense proposal
 2014-09-24,info,0,,First US banks join Ripple
+2015-01-04,info,0,,Bitstamp hack
+2015-01-26,info,0,,Coinbase exchange launches
 2015-05-05,down,0,,FinCEN $700K penalty
+2015-06-03,info,0,,BitLicense rules released
+2015-08-01,info,0,,Mt. Gox CEO arrested
+2015-09-18,info,0,,CFTC Bitcoin commodity ruling
+2015-10-08,info,0,,Gemini exchange launches
+2015-10-22,info,0,,EU crypto VAT ruling
 2016-01-28,info,0,,SBI venture announced
 2016-05-19,info,0,,FeeEscalation enabled
 2016-06-27,info,0,,MultiSign enabled
 2016-07-19,info,0,,TrustSetAuth enabled
+2016-08-02,info,0,,Bitfinex hack
 2016-10-21,info,0,,Flow enabled
 2017-01-03,info,0,,CryptoConditions enabled
 2017-02-21,info,0,,TickSize enabled
@@ -18,25 +32,61 @@
 2017-11-14,info,0,,SortedDirectories + 4 upgrades
 2017-11-16,info,0,,Amex joins RippleNet
 2017-12-08,info,2,,55B XRP locked in escrow
+2017-12-28,info,0,,Korea exchange shutdown warning
+2018-01-08,info,0,,CMC removes Korean price feeds
+2018-01-26,info,0,,Coincheck hack; withdrawals halt
+2018-01-30,info,0,,Facebook bans crypto ads
+2018-03-07,info,0,,SEC exchange registration notice
+2018-03-14,info,0,,Google bans crypto ads
+2018-03-26,info,0,,Twitter bans crypto ads
 2018-04-06,info,0,,DepositAuth + 1 upgrades
+2018-05-11,info,0,,Upbit prosecutors raid
+2018-06-10,info,0,,Coinrail exchange hack
 2018-06-19,info,0,,XRPL maintenance: 1 fix
 2018-06-20,info,0,,XRPL maintenance: 1 fix
 2018-06-21,info,0,,XRPL maintenance: 1 fix
+2018-06-26,info,0,,Facebook eases crypto ad ban
+2018-07-16,info,0,,BlackRock explores crypto
+2018-09-05,info,0,,Goldman crypto desk report
+2018-09-18,info,0,,Zaif exchange hack
 2018-10-01,up,2,,xRapid commercial launch
 2018-10-09,info,0,,DepositPreauth + 1 upgrades
+2018-10-15,info,0,,Fidelity crypto platform
+2019-02-01,info,0,,QuadrigaCX bankruptcy
+2019-03-01,info,0,,Facebook crypto project report
+2019-03-22,info,0,,Fake trading volume study
 2019-03-23,info,0,,XRPL maintenance: 1 fix
 2019-04-02,info,0,,XRPL maintenance: 1 fix
 2019-04-17,info,0,,MultiSignReserve enabled
+2019-04-26,info,0,,Bitfinex + Tether investigation
+2019-05-08,info,0,,Binance exchange hack
 2019-06-17,info,0,,MoneyGram partnership
+2019-06-18,info,0,,Facebook Libra announced
+2019-08-07,info,0,,Binance KYC ransom demand
 2019-10-02,info,0,,XRPL maintenance: 1 fix
+2019-10-09,info,0,,UNICEF accepts crypto donations
+2019-10-28,info,0,,China endorses blockchain
+2019-12-23,info,0,,YouTube crypto video ban error
+2020-02-17,info,0,,FCoin exchange insolvency
+2020-03-04,info,0,,India lifts crypto banking ban
 2020-03-13,down,2,,COVID market crash
+2020-03-15,info,0,,Fed rate cuts + QE
+2020-03-23,info,0,,Fed expands QE
+2020-03-26,info,0,,Microsoft crypto patent
 2020-05-01,info,0,,XRPL maintenance: 2 fixes
 2020-05-08,info,0,,DeletableAccounts enabled
 2020-06-18,info,0,,Checks enabled
 2020-07-03,info,0,,RequireFullyCanonicalSig enabled
 2020-07-09,info,0,,XRPL maintenance: 1 fix
+2020-07-22,info,0,,US banks allowed crypto custody
 2020-08-04,info,0,,FlowCross enabled
+2020-09-25,info,0,,KuCoin exchange hack
+2020-10-01,info,0,,BitMEX executives charged
+2020-10-16,info,0,,OKEx suspends withdrawals
+2020-10-21,info,0,,PayPal crypto services
+2020-12-18,info,0,,Coinbase files for IPO
 2020-12-22,down,2,,SEC sues Ripple
+2020-12-23,info,0,,XRP falls after SEC complaint
 2021-04-08,info,0,,HardenedValidations + 2 upgrades
 2021-05-19,down,2,,China crypto ban
 2021-07-28,info,0,,XRP remittances launch in Japan
@@ -44,12 +94,17 @@
 2021-11-11,info,0,,FlowSortStrands + 1 upgrades
 2021-11-18,info,0,,TicketBatch + 1 upgrades
 2021-11-21,info,0,,NegativeUNL enabled
+2022-03-03,info,0,,US crypto order reported
 2022-05-07,down,2,,LUNA collapse
+2022-06-13,info,0,,Celsius halts withdrawals
+2022-07-14,info,0,,Celsius files bankruptcy
 2022-10-13,info,0,,ExpandedSignerList enabled
 2022-10-27,info,0,,XRPL maintenance: 1 fix
 2022-10-31,up,2,upgrade,XLS-20 NFTs go live
 2022-11-11,down,2,,FTX bankrupt
 2023-01-23,info,0,,CheckCashMakesTrustLine enabled
+2023-03-03,info,0,,Silvergate closure reported
+2023-03-19,info,0,,Crypto rally amid bank turmoil
 2023-05-17,info,0,,Ripple acquires Metaco
 2023-07-13,up,2,,Ripple mixed court ruling
 2023-08-21,info,0,,DisallowIncoming + 4 upgrades
