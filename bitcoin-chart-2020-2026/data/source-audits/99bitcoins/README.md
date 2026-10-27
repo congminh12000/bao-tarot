@@ -15,11 +15,11 @@ This is a coverage audit of a named source, not certification of every event in 
   are not asserted to be ETH/BNB/XRP events. Shared context does not prove price causation.
 - `summary.json`: research dataset totals and disposition counts.
 
-| Coin | Added level 0 | Total historical rows | Level 0 / 1 / 2 | Reviewed source IDs |
+| Coin | Additions after initial preparation | Total historical rows | Level 0 / 1 / 2 | Reviewed source IDs |
 | --- | ---: | ---: | --- | --- |
 | BTC | 119 | 238 | 119 / 102 / 17 | 234/234 |
 | ETH | 48 + 5 official milestones | 79 | 53 / 12 / 14 | 234/234 |
-| BNB | 41 | 74 | 41 / 20 / 13 | 234/234 |
+| BNB | 41 + 18 sourced milestones; levels reviewed | 92 | 56 / 24 / 12 | 234/234 |
 | XRP | 55 | 131 | 111 / 6 / 14 | 234/234 |
 
 BTC's original 238-row import is in git commit `c3d3e43b`: 234 source events plus four additional authored ATH rows.
@@ -54,3 +54,6 @@ Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit v
 
 ETH follow-up: five official milestones added, source #207 and #220 dates corrected with primary sources. Original
 source dates remain in the snapshot and correction records. Other coins retain their existing review flags.
+
+BNB follow-up: 18 sourced milestones and the approved level review bring the dataset to 92 rows (56 / 24 / 12).
+The archived 234-entry source snapshot and its coverage dispositions are unchanged.

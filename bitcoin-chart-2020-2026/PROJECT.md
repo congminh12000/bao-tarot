@@ -306,6 +306,19 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **BNB final — hoàn tất 27/10/2026:** theo lựa chọn BNB / 16:9 / Full HD, luôn 60 fps. Render từ `36cba8b0`
+  với dữ liệu đầy đủ BNB: 92 sự kiện (56 mức 0 / 24 mức 1 / 12 mức 2) + 8 ATH/ATL, 100 nhãn; 9 phase / 9 cue không lặp.
+  1920×1080, 364,716667 s (khoảng 6:05), 21.883 khung hình, giải mã đủ và timestamp liên tục ✓.
+  Kiểm tra nhãn toàn phim ✓ (1 nhãn cũ rời sớm theo fallback đã duyệt); nguồn 92/92, 99Bitcoins live audit 234/234 mỗi coin ✓.
+  `check` ✓, `verify` cả 21 mốc ✓ (hình 0 frame / tiếng làm tròn 0 ms), AAC −16,0 LUFS / true peak −1,3 dBTP / LRA 4,5 LU.
+  File `out/bnb-final-20261027-16x9-1080p.mp4` (577.417.026 byte); lưu `out/renders/bnb-final-20261027-1080p60/`,
+  fingerprint `ecab9dc51721f82c`. Giữ nguyên hình CRF 14, ghép AAC 256 kb/s bằng video stream copy, không cắt mất khung cuối.
+  Phiên cloud ngắt giữa chừng: khôi phục 12.987 khung mã hóa, render tiếp 8.896 khung; 6 mẫu + 6 khung hai phía 3 điểm nối
+  khớp renderer gốc, không lệch frame. Không sửa hình, sự kiện hay nhạc để khôi phục. Hướng dẫn/evidence ở `out/bnb-recovery/`.
+  Đã đối chiếu 21 chương / đủ 40 mốc bằng 61 ảnh trích từ video; `coins/BNB/youtube.md` chứa tiêu đề dự thảo, mô tả và chương.
+  Chưa đăng YouTube; âm thanh mới đánh giá bằng số đo, chưa nghe. Media trong `out/` không commit, cần gửi file riêng.
+
+
 - ETH đã ghép mở đầu (27/10/2026): người dùng duyệt và yêu cầu bắt buộc nối, không render lại full. Frame 146 là
   keyframe nên tách/nối hai đoạn video bằng FFmpeg concat với `-auto_convert 0`, `-c copy`; ánh xạ AAC gốc một lần.
   Không render hay mã hóa lại bất kỳ đoạn hình/tiếng nào. Toàn bộ 26.236 gói hình và 20.498 gói AAC khớp hash với
@@ -364,7 +377,7 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
   33 sự kiện có nguồn, 9 phase / 9 bài đã duyệt không lặp; `--strict` và kiểm tra nhãn toàn timeline ✓.
   Logo chính thức, màu hổ phách theo bảng; preview Token Hub 01/09–30/11/2022, 16:9 480p 60 fps, 17,38 s,
   `verify` ✓, −15,91 LUFS / −1,48 dBTP; lưu `out/renders/bnb-preview-tokenhub-2022-480p60/`.
-  Chờ duyệt logo, màu và bố cục; chưa render final. Nguồn và chi tiết: `coins/BNB/README.md`, `coins/BNB/data/SOURCES.md`.
+  Preview cũ đã được thay bằng yêu cầu render final BNB ở đầu mục này. Nguồn và chi tiết: `coins/BNB/README.md`, `coins/BNB/data/SOURCES.md`.
 - BNB sự kiện (27/10/2026, đã duyệt): rà soát đầy đủ, thêm 18 sự kiện có nguồn (Binance mở cửa, DEX + swap BNB, FTX,
   BUSD, CFTC, Greenfield, CZ bị kết án / thả / ân xá, Beacon Chain sunset, MGX, VanEck ETF, SEC rút kiện, BNB > $1K,
   thanh lý kỷ lục 10/10/2025); duyệt lại mức: tổng 92 = 12 mức 2 / 24 mức 1 / 56 mức 0. Nhãn ✓ (1 nhãn cũ rời sớm),

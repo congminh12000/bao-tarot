@@ -35,17 +35,19 @@
     },
     "BNB": {
       "added": 41,
-      "total": 74,
+      "total": 92,
       "byLevel": {
-        "1": 20,
-        "2": 13,
-        "0": 41
+        "0": 56,
+        "1": 24,
+        "2": 12
       },
       "coverage": {
         "outside_coin_history": 66,
         "not_applicable": 119,
         "stored": 49
-      }
+      },
+      "subsequentSourcedAdditions": 18,
+      "levelReviewApprovedOn": "2026-10-27"
     },
     "XRP": {
       "added": 55,
