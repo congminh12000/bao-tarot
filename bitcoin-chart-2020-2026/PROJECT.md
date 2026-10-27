@@ -102,6 +102,12 @@ nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn,
 | Overlay uptrend / downtrend | **Tắt** (`PHASE_OVERLAY = 'none'` trong `look.js`). Đã thử 10 phương án (area, bands, ribbon, tint, background, trend, timeline, ema, watermark, gauge — code trong `film.js`, bật bằng `look.js`) và người dùng chọn không dùng |
 | Ngôn ngữ trong video | Tiếng Anh |
 
+**Ngoại lệ mở đầu (yêu cầu 27/10/2026):** nếu giá khởi đầu đã ở ATH, hoặc không có dữ liệu giá trước đó để chạy lấy đà
+(như ETH), vào video là chạm mốc ngay; không chờ qua một đoạn lấy đà nhân tạo. Trường hợp này không áp dụng fade-in
+đen 1 s ở đầu bản xuất. Giữ nguyên final gốc và khung hình đã lưu, gửi preview 10 s đầu và chờ duyệt trước khi ghép.
+Có thể tái sử dụng hình/tiếng của final đã lưu; không tự đổi phase, dữ liệu hay tempo để lấp đoạn trống. Nếu cắt bỏ đoạn
+đầu, ghi lại offset theo frame, ghép phần đuôi từ mốc tương ứng của bản gốc và cập nhật chương YouTube khi xuất bản mới.
+
 ## 3. Nhãn sự kiện (đã duyệt)
 
 - Nguồn: `data/events.csv` (`date,kind,hit,tag,text`) — 99Bitcoins (ATH theo TradingView), người dùng soạn/kiểm chứng.
@@ -299,6 +305,14 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 | Mix từng nhóm | `GAIN` trong `song.js` |
 
 ## 10. Trạng thái hiện tại (26/10/2026)
+
+- ETH mở đầu chạm ngay (27/10/2026): preview 10 s / 600 frame, 16:9 480p 60 fps, tái sử dụng final đã lưu từ frame 146
+  (2,433333 s), tức frame đầu chạm ATH. Chỉ tạo preview riêng ở
+  `out/previews/eth-opening-immediate-10s/eth-opening-immediate-10s-480p60.mp4`; chưa ghép hay thay final.
+  Final gốc và bản lưu đều giữ nguyên checksum SHA-256 `268f8492ba89ee11af47130cc5d5bc99a922f235ea826b2f1870ee4374918f1e`.
+  Nếu duyệt bản cắt này: đuôi sau preview 10 s bắt đầu tại frame 746 (12,433333 s) của final gốc; toàn phim ngắn hơn
+  146 frame và cần dịch chương tương ứng. Thông tin cắt lưu ở `out/previews/eth-opening-immediate-10s/edit.json`.
+  Chờ người dùng duyệt preview; dữ liệu/nhạc phim đầy đủ và timeline nội bộ chưa thay đổi.
 
 - ETH final (27/10/2026): theo yêu cầu người dùng, đã render toàn bộ dữ liệu 16:9 Full HD 1920×1080, 60 fps;
   439,70 s / 26.382 khung hình / 368.808.859 byte, đủ 79 sự kiện + 14 ATH/ATL và 15 bài không lặp. Kiểm tra nhãn,

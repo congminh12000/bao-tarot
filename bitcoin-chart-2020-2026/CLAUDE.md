@@ -30,6 +30,9 @@ In short:
   (`date,source,url,text`); primary/official sources first. No source, no event: never write events, dates or numbers
   from memory or guesswork (PROJECT.md §15). Check with `node check-event-sources.js --all`.
 - After a FROM/TO preview always restore the full data: `node make-data.js && node song.js`.
+- Opening exception (PROJECT.md §2): if the opening price is already at an ATH, or there is no earlier price history
+  for a run-up (e.g. ETH), enter directly on the opening hit, without waiting through an artificial lead-in. Preserve
+  the original final and kept frames; preview the first 10 s and wait for approval before splicing. Record any trim offset.
 - Status and what is waiting for approval: PROJECT.md §10. Commands (incl. first-time setup on a Mac): PROJECT.md §8.
 - Previews and finals are ALWAYS 60 fps. When the user says "render video final": ask one step at a time — 1. coin (those in
   `coins/`, default the current one / BTC, or another coin via §11), 2. aspect ratio (16:9 / 1:1 / 9:16; 9:16 = Shorts),
