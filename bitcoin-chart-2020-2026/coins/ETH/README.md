@@ -1,4 +1,4 @@
-# Ethereum film — preview awaiting approval
+# Ethereum film — final rendered
 
 Prepared 2026-10-27 following PROJECT.md §11 and the palette in `coins/README.md`.
 
@@ -8,7 +8,7 @@ Prepared 2026-10-27 following PROJECT.md §11 and the palette in `coins/README.m
   is in `data/corrections-20261027.json`; original 99Bitcoins dates remain archived in `data/99bitcoins-coverage.json`.
 - Phases: 15 (8 uptrends, 7 downtrends), generated with the existing detector and its unchanged thresholds.
 - Music: 15 distinct approved cues, deterministically shuffled for ETH; strict no-repeat validation passes.
-- Full film timeline: 439.706 seconds, approximately 7:20. No full film has been rendered.
+- Full film timeline: 439.706 seconds, approximately 7:20. Final rendered on 2026-10-27; details below.
 - Latest full-history label check after corrections: no overlaps, no earlier labels forced out.
 - Official transparent logo: `logo.svg` from ethereum.org, rasterized to `logo.png` (1024×1024); negative generated with ffmpeg.
 - Proposed colors: indigo #8A92FF / pale violet #C3C8FF, dark violet background, green/red candles, gold upgrade labels.
@@ -46,4 +46,20 @@ Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit v
 2022-02-01–2022-10-15, 38.92 seconds, 16:9, 480p, 60 fps. Shows the corrected US executive-order date,
 Gray Glacier, Bellatrix, and The Merge. Picture/audio sync verified at every marker.
 Video: `out/eth-preview-corrected-events-480p.mp4`; kept frames and metadata:
-`out/renders/eth-preview-corrected-events-480p60/`. Full ETH data/music restored afterwards. Awaiting preview approval.
+`out/renders/eth-preview-corrected-events-480p60/`. Full ETH data/music restored afterwards. Superseded by the authorized final below.
+
+## Final — 2026-10-27
+
+Authorized settings: full ETH dataset, 16:9, Full HD 1920×1080, 60 fps.
+
+- File: `out/eth-final-20261027-16x9-1080p.mp4`, 439.700 seconds, 26,382 frames, 368,808,859 bytes.
+- Kept render: `out/renders/eth-final-20261027-1080p60/`; fingerprint `7c2f68eedba542a1`.
+- Includes all 79 historical entries (0/1/2) plus 14 generated ATH/ATL labels. All 15 approved cues are distinct.
+- Strict music validation and full label check pass; no overlapping labels and no forced early label exits.
+- Every sync marker passes picture/audio verification. Final AAC: −16.0 LUFS, peak −1.3 dBTP, LRA 4.5 LU.
+- Full ETH data/music remain in place. Original BTC data and kept renders are preserved.
+- Source audit: saved-snapshot reconciliation passes for all four configured coins, 234/234 source IDs each.
+  Live audit was attempted twice; 99Bitcoins returned HTTP 403. This render does not certify current live source
+  coverage or the completeness of all Ethereum/world history. Five early daily candles remain marked estimated.
+- YouTube draft and chapter times: `youtube.md`; title options await the user's choice. Chapter frame pairs and
+  verification metadata are retained in `out/eth-final-20261027/`.

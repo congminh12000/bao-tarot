@@ -298,6 +298,13 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- ETH final (27/10/2026): theo yêu cầu người dùng, đã render toàn bộ dữ liệu 16:9 Full HD 1920×1080, 60 fps;
+  439,70 s / 26.382 khung hình / 368.808.859 byte, đủ 79 sự kiện + 14 ATH/ATL và 15 bài không lặp. Kiểm tra nhãn,
+  `--strict`, `check`, `verify` ✓; −16,0 LUFS, peak AAC −1,3 dBTP. Lưu `out/renders/eth-final-20261027-1080p60/`;
+  file gửi `out/eth-final-20261027-16x9-1080p.mp4`. Chương được tạo lại, đối chiếu khung trước/sau với video final;
+  nháp YouTube ở `coins/ETH/youtube.md`, tiêu đề chờ chọn. Audit snapshot 234/234 mỗi coin ✓; audit live đã chạy
+  nhưng nguồn trả HTTP 403, không chứng nhận đã kiểm tra nguồn live. Dữ liệu/nhạc ETH đầy đủ được giữ nguyên.
+
 - ETH sửa dữ liệu (27/10/2026): thêm 5 mốc chính thức còn thiếu (Frontier Thawing, hợp đồng staking, Arrow Glacier,
   Gray Glacier, Bellatrix); sửa ngày sắc lệnh Mỹ thành 09/03/2022 và Silvergate thanh lý thành 08/03/2023.
   Giữ ngày nguồn 99Bitcoins trong snapshot, ghi ánh xạ/nguyên nhân sửa riêng. Tổng ETH 79 sự kiện (53/12/14 mức 0/1/2),
