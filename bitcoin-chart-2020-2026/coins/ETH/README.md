@@ -3,7 +3,7 @@
 ## Approved opening splice — 2026-10-27
 
 Latest output: `out/eth-final-20261027-opening-immediate-16x9-1080p.mp4`, 1920×1080 at 60 fps,
-437.266667 seconds, 26,236 frames, 367,640,445 bytes. The original final below remains intact.
+437.266667 seconds, 26,236 frames, 367,635,725 bytes. The original final below remains intact.
 
 The approved edit starts at source keyframe 146 (2.433333 s). FFmpeg actually concatenated the 500-frame head
 with the tail beginning at source keyframe 646; AAC was copied once from the matching original start.
