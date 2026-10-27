@@ -61,3 +61,12 @@ Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit v
   target dates are explicitly linked in `99bitcoins-coverage.json`. Other coin datasets were not changed.
 - ETH now has 79 historical entries (53 level 0, 12 level 1, 14 level 2), plus 14 generated ATH/ATL labels.
   This corrects the seven identified findings, not a claim that every remaining historical fact was independently checked.
+
+## First exchange trades (2015-08-07) — sources checked 2026-10-27
+
+- TradingView `INDEX:ETHUSD`: the first daily candle is 2015-08-07 (open/close $3, volume ~124 ETH), so trades are in
+  the index data on that UTC day: https://www.tradingview.com/symbols/ETHUSD/?exchange=INDEX
+- Kraken's official post "Kraken Launches Ether Trading" is dated **2015-08-08** and says "Today Kraken launched with
+  ether trading": https://blog.kraken.com/product/kraken-launches-ether-trading
+- Date conflict kept open, not overwritten: the label stays on 2015-08-07 (first traded candle) until the user decides.
+

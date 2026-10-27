@@ -1,4 +1,6 @@
 # date,source,url,text   (PROJECT.md §15: one row per source of each events.csv row; date + text match it)
+2015-08-07,TradingView INDEX:ETHUSD,https://www.tradingview.com/symbols/ETHUSD/?exchange=INDEX,First exchange trades
+2015-08-07,Kraken blog,https://blog.kraken.com/product/kraken-launches-ether-trading,First exchange trades
 2015-09-07,ethereum.org,https://ethereum.org/ethereum-forks,Frontier Thawing upgrade
 2015-09-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-declared-as-a-commodity-by-the-us-regulator,CFTC Bitcoin commodity ruling
 2015-10-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#gemini-exchange-launched,Gemini exchange launches
