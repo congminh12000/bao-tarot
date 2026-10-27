@@ -113,6 +113,8 @@ nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn,
   Áp dụng cả phim dài, preview và Shorts; mức 0 tham gia xếp nhãn/chống chồng lấn, không thêm SFX, không đổi phase/nhạc.
   Đối chiếu bắt buộc §13; sự kiện BTC-only không được tự gán thành sự kiện riêng của altcoin.
 - Nội dung sự kiện **ngắn gọn hết mức** (≤ ~30 ký tự, tối đa 38), tiếng Anh, không bịa nguyên nhân.
+- **Mỗi sự kiện phải có nguồn** (tên nguồn + link) trong `event-sources.csv` cạnh `events.csv`; không có nguồn đáng tin
+  thì không thêm (§15).
 - Số tiền viết gọn: `$266`, `$1.2K`, `$19.8K`, `$109K`, `$41M`, `$1.5B` (1 chữ số lẻ khi < 100 đơn vị).
   `make-data.js` tự đổi mọi `$1,234,567` còn sót; nhãn ALL-TIME LOW tự tạo cũng dùng cùng định dạng.
 - Nhãn **up** (và info) đặt **phía trên** nến; nhãn **down** đặt **phía dưới** nến. **Không bao giờ đè lên nến**
@@ -372,7 +374,8 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
 3. **Sự kiện**: trang "historical price/events" của **99Bitcoins** cho đồng đó (mở bằng trình duyệt nếu WebFetch bị chặn);
    nếu 99Bitcoins không có, dùng nguồn uy tín khác và **ghi rõ nguồn**. Cùng định dạng `date,kind,hit,tag,text`, cả mức
    0/1/2 (lưu đầy đủ theo §13; BTC hiển thị 1/2, altcoin hiển thị 0/1/2), chữ ngắn, tiếng Anh, không bịa nguyên nhân; `tag` cho sự kiện nội tại đặc biệt của giao thức (Bitcoin: `halving`,
-   ETH: nâng cấp mạng…). ATH/ATL do `score.js` tự gắn. Ghi nguồn vào `coin.json` (`eventsSource`).
+   ETH: nâng cấp mạng…). ATH/ATL do `score.js` tự gắn. Ghi nguồn chung vào `coin.json` (`eventsSource`) và
+   **nguồn từng sự kiện** (tên + link) vào `coins/<SYMBOL>/data/event-sources.csv` (§15).
 4. **Logo**: tự tìm trên Google, **phải chính xác** — logo chính thức (trang chủ / brand kit của dự án), nền trong suốt,
    kích thước ≥ 512 px → `coins/<SYMBOL>/logo.png`; tạo `logo-negative.png`
    (`ffmpeg -i logo.png -vf "negate=negate_alpha=0" logo-negative.png`). Gửi người dùng xem logo.
@@ -433,3 +436,24 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
 - Không tự thay mức dữ liệu, phase, tempo hay thứ tự nhạc. ATH/ATL tự tạo vẫn là mức 2. Các quy tắc kết phim và
   bỏ nhãn điểm chuyển đầu Shorts vẫn áp dụng như trước; không phải giữ mọi nhãn trên màn hình mãi mãi.
 - §14 thay thế mọi ghi chú cũ "mức 0 chưa hiển thị" trong tài liệu bàn giao trước thời điểm thay đổi này.
+
+
+## 15. Nguồn của từng sự kiện — bắt buộc (yêu cầu 27/10/2026)
+
+Sự kiện là dữ liệu quan trọng: **mỗi dòng trong `events.csv` phải có nguồn đáng tin, chính xác, tra soát được**.
+Không viết sự kiện, ngày hay con số từ trí nhớ hoặc suy đoán.
+
+- Khi thêm hoặc sửa sự kiện của bất kỳ coin nào: lưu nguồn vào `event-sources.csv` cùng thư mục với `events.csv`
+  (BTC: `data/event-sources.csv`; coin khác: `coins/<SYMBOL>/data/event-sources.csv`), định dạng:
+  `# date,source,url,text` — `date` và `text` giống hệt dòng trong `events.csv` (để ghép đúng dòng), `source` = tên nguồn
+  ngắn không có dấu phẩy (`99Bitcoins`, `ethereum.org`, `SEC`, `Federal Register`…), `url` = link trực tiếp tới trang
+  (hoặc anchor) xác nhận đúng sự kiện và đúng ngày. Một sự kiện nhiều nguồn: mỗi nguồn một dòng.
+- Nguồn đáng tin, theo thứ tự ưu tiên: **nguồn gốc / chính thức** (blog, trang chủ, tài liệu dự án; cơ quan nhà nước:
+  SEC, Federal Register…; thông cáo của công ty liên quan) → báo chí lớn uy tín (Reuters, Bloomberg, CoinDesk…) →
+  timeline tổng hợp như 99Bitcoins. Không dùng mạng xã hội, diễn đàn, nội dung AI hay trang không rõ tác giả làm nguồn duy nhất.
+- Link phải mở được và nói đúng điều ghi trên nhãn: kiểm tra ngày (ngày công bố ≠ ngày có hiệu lực), con số, tên.
+  Nguồn mâu thuẫn: ghi cả hai nguồn, chọn ngày có nguồn gốc mạnh hơn và ghi chú lý do (như `corrections-*.json`).
+- **Không tìm được nguồn đáng tin thì không thêm sự kiện** (hoặc báo người dùng). Không đoán ngày, không tự đặt nguyên nhân
+  cho biến động giá. ATH/ATL tự tạo không cần dòng nguồn: nguồn là dữ liệu TradingView của coin đó.
+- Khi báo hoàn tất cập nhật sự kiện: báo số sự kiện đã có nguồn / còn thiếu nguồn. Sự kiện cũ chưa có dòng nguồn phải
+  được bổ sung khi chạm tới (sửa, duyệt lại, hoặc trước render final của coin đó).

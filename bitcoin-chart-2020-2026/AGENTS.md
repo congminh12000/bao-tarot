@@ -27,6 +27,9 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
 - One cue per phase of data/phases.csv, never a change inside a phase. Music mastered to -16 LUFS (no voice-over).
 - Keep the phase badge beside the live price (`PHASE_BADGE = 'price'` in `look.js`), independent of the disabled chart overlay (`PHASE_OVERLAY = 'none'`).
 - Prices on labels come from the TradingView data in `data/tradingview/`, never from memory; do not invent event causes.
+- Every event needs a reliable, exact source (name + link) saved in `event-sources.csv` next to `events.csv`
+  (`date,source,url,text`); primary/official sources first. No source, no event: never write events, dates or numbers
+  from memory or guesswork (PROJECT.md §15).
 - After a FROM/TO preview always restore the full data: `node make-data.js && node song.js`.
 - Status and what is waiting for approval: PROJECT.md §10. Commands (incl. first-time setup on a Mac): PROJECT.md §8.
 - Previews and finals are ALWAYS 60 fps. When the user says "render video final": ask one step at a time — 1. coin (those in

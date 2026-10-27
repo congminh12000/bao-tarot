@@ -5,7 +5,7 @@ Mỗi đồng là một thư mục `coins/<SYMBOL>/`. Chọn đồng bằng bi�
 ```
 coins/<SYMBOL>/
   coin.json            tên, cặp ("ETH / USD"), mã TradingView, logo, màu, xáo nhạc
-  data/                tradingview/*.csv, events.csv, phases.csv (anchors.csv tùy chọn)   — Bitcoin giữ ở ./data
+  data/                tradingview/*.csv, events.csv, event-sources.csv, phases.csv (anchors.csv tùy chọn) — Bitcoin giữ ở ./data
   logo.png             logo chính thức (nền trong suốt)                                 — Bitcoin: assets/bitcoin-logo.png
   logo-negative.png    logo đảo màu (nền giữa chart)                                    — Bitcoin: assets/bitcoin-logo-negative.png
   chapter-names.json   tên chương YouTube theo ngày sự kiện
@@ -27,6 +27,8 @@ coins/<SYMBOL>/
 - `colors` ghi đè màu của look `hologram` (`film.js`): vẫn phong cách glow tech, chỉ đổi tông. Nến tăng/giảm luôn
   xanh/đỏ (quy ước thị trường) cho mọi đồng.
 - `special`: màu nhãn sự kiện có `tag` (Bitcoin: halving; ETH: nâng cấp mạng…), mặc định vàng `#FFC93C`.
+- `event-sources.csv` (`date,source,url,text`): tên nguồn + link cho **từng** sự kiện trong `events.csv`; bắt buộc,
+  không có nguồn đáng tin thì không thêm sự kiện (PROJECT.md §15).
 - `musicShuffle`: mặc định xáo thứ tự các bài đã duyệt theo mã đồng (cố định giữa các lần chạy). Bitcoin = `false`.
 
 ## Bảng màu đề xuất (glow tech — chờ người dùng duyệt từng đồng khi làm)
