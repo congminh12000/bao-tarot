@@ -1,0 +1,20 @@
+{
+  "symbol": "XRP",
+  "name": "XRP",
+  "pair": "XRP / USD",
+  "tradingview": "CRYPTO:XRPUSD",
+  "eventsSource": "XRPL.org and Ripple official announcements, SEC litigation releases and court orders; shared market events from the verified 99Bitcoins Bitcoin timeline. See data/SOURCES.md.",
+  "logo": "coins/XRP/logo.png",
+  "logoNegative": "coins/XRP/logo-negative.png",
+  "logoGlow": "#9FB8D6",
+  "colors": {
+    "accent": "#9FB8D6",
+    "accent2": "#E6EEF8",
+    "bg1": "#0B1220",
+    "bg0": "#03060C",
+    "grid": "rgba(159,184,214,0.09)",
+    "gridMajor": "rgba(159,184,214,0.32)"
+  },
+  "special": "#FFC93C",
+  "musicShuffle": true
+}

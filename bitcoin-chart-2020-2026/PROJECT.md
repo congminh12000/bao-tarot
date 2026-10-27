@@ -294,6 +294,13 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- XRP (27/10/2026): đã tạo `coins/XRP/` theo §11; TradingView 04/08/2013–26/10/2026, 4.805 nến thật,
+  27 ngày thiếu được nối và đánh dấu ước tính; 20 sự kiện có nguồn, 11 phase / 11 bài đã duyệt không lặp.
+  `--strict` và kiểm tra nhãn toàn timeline ✓. Logo XRP chính thức, màu xám thép theo bảng; preview phán quyết
+  01/06–31/08/2023, 16:9 480p 60 fps, 17,38 s, `verify` ✓, −15,95 LUFS / −1,47 dBTP;
+  lưu `out/renders/xrp-preview-ruling-2023-480p60/`. Chờ duyệt logo, màu và bố cục; chưa render final.
+  Chi tiết và nguồn: `coins/XRP/README.md`, `coins/XRP/data/SOURCES.md`.
+
 - BNB (27/10/2026): đã tạo `coins/BNB/` theo §11; TradingView 14/07/2017–26/10/2026, 3.392 nến thật,
   33 sự kiện có nguồn, 9 phase / 9 bài đã duyệt không lặp; `--strict` và kiểm tra nhãn toàn timeline ✓.
   Logo chính thức, màu hổ phách theo bảng; preview Token Hub 01/09–30/11/2022, 16:9 480p 60 fps, 17,38 s,
