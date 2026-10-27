@@ -1,0 +1,913 @@
+{
+  "collectedOn": "2026-10-27",
+  "grading": "Supplementary research candidates assigned hit 0; editorial classification, not a measured impact score.",
+  "coverage": "Selected official announcements plus grouped mainnet amendment activations through 2025-05-15 from a pinned documentation snapshot. Not an exhaustive history through 2026.",
+  "events": [
+    {
+      "date": "2014-05-05",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Fidor adopts Ripple protocol",
+      "scope": "Ripple company / adoption",
+      "sources": [
+        "https://ripple.com/ripple-press/ripple-labs-announces-fidor-bank-ag-as-first-bank-to-use-the-ripple-protocol/"
+      ],
+      "notes": "Ripple network adoption; does not establish XRP usage."
+    },
+    {
+      "date": "2014-09-24",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "First US banks join Ripple",
+      "scope": "Ripple company / adoption",
+      "sources": [
+        "https://ripple.com/insights/ripple-labs-signs-first-two-us-banks/"
+      ],
+      "notes": "Cross River and CBW; network adoption, not proof of XRP usage."
+    },
+    {
+      "date": "2015-05-05",
+      "kind": "down",
+      "hit": 0,
+      "tag": "",
+      "text": "FinCEN $700K penalty",
+      "scope": "Ripple company / adoption",
+      "sources": [
+        "https://www.fincen.gov/news/news-releases/fincen-fines-ripple-labs-inc-first-civil-enforcement-action-against-virtual"
+      ],
+      "notes": "Enforcement against Ripple Labs and XRP II; not an XRPL protocol penalty."
+    },
+    {
+      "date": "2016-01-28",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "SBI venture announced",
+      "scope": "Ripple company / adoption",
+      "sources": [
+        "https://ripple.com/ripple-press/ripple-strikes-multi-national-deal-with-sbi-holdings-to-meet-growing-demand-for-ripple-solutions-across-asia/"
+      ],
+      "notes": "Announcement date in Ripple release; not the later incorporation date."
+    },
+    {
+      "date": "2016-05-19",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "FeeEscalation enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/5B1F1E8E791A9C243DD728680F108FEF1F28F21BA3B202B8F66E7833CA71D3C3"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "FeeEscalation"
+      ]
+    },
+    {
+      "date": "2016-06-27",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "MultiSign enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/168F8B15F643395E59B9977FC99D6310E8708111C85659A9BAF8B9222EEAC5A7"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "MultiSign"
+      ]
+    },
+    {
+      "date": "2016-07-19",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "TrustSetAuth enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/0E589DE43C38AED63B64FF3DA87D349A038F1821212D370E403EB304C76D70DF"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "TrustSetAuth"
+      ]
+    },
+    {
+      "date": "2016-10-21",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Flow enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/C06CE3CABA3907389E4DD296C5F31C73B1548CC20BD7B83416C78CD7D4CD38FC"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "Flow"
+      ]
+    },
+    {
+      "date": "2017-01-03",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "CryptoConditions enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/8EB00131E1C3DB35EDFF45C155D941E18C3E86BC1934FF987D2DA204F4065F15"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "CryptoConditions"
+      ]
+    },
+    {
+      "date": "2017-02-21",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "TickSize enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/A12430E470BE5C846759EAE3C442FF03374D5D73ECE5815CF4906894B769565E"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "TickSize"
+      ]
+    },
+    {
+      "date": "2017-07-07",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "EnforceInvariants + 1 upgrades",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/17593B03F7D3283966F3C0ACAF4984F26E9D884C9A202097DAED0523908E76C6",
+        "https://livenet.xrpl.org/transactions/7EBA3852D111EA19D03469F6870FAAEBF84C64F1B9BAC13B041DDD26E28CA399"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "EnforceInvariants",
+        "fix1373"
+      ]
+    },
+    {
+      "date": "2017-11-14",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "SortedDirectories + 4 upgrades",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/B1157116DDDDA9D9B1C4A95C029AC335E05DB052CECCC5CA90118A4D46C77C5E",
+        "https://livenet.xrpl.org/transactions/63F69F59BEFDC1D79DBF1E4060601E05960683AA784926FB74BC55074C4F6647",
+        "https://livenet.xrpl.org/transactions/97FD0E35654F4B6714010D3CBBAC4038F60D64AD0292693C28A1DF4B796D8469",
+        "https://livenet.xrpl.org/transactions/27AEE02DA4FE22B6BB479F850FBBC873FDC7A09A8594753A91B53098D726397E",
+        "https://livenet.xrpl.org/transactions/6E2309C156EBF94D03B83D282A3914671BF9168FB26463CFECD068C63FFFAB29"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fix1201",
+        "fix1512",
+        "fix1523",
+        "fix1528",
+        "SortedDirectories"
+      ]
+    },
+    {
+      "date": "2017-11-16",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Amex joins RippleNet",
+      "scope": "Ripple company / adoption",
+      "sources": [
+        "https://ripple.com/insights/american-express-joins-ripplenet-giving-visibility-and-speed-to-global-commercial-payments/"
+      ],
+      "notes": "Dated Ripple article; RippleNet does not imply XRP settlement."
+    },
+    {
+      "date": "2018-04-06",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "DepositAuth + 1 upgrades",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/902C51270B918B40CD23A622E18D48B4ABB86F0FF4E84D72D9E1907BF3BD4B25",
+        "https://livenet.xrpl.org/transactions/57FE540B8B8E2F26CE8B53D1282FEC55E605257E29F5B9EB49E15EA3989FCF6B"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "DepositAuth",
+        "fix1513"
+      ]
+    },
+    {
+      "date": "2018-06-19",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/920AA493E57D991414B614FB3C1D1E2F863211B48129D09BC8CB74C9813C38FC"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fix1571"
+      ]
+    },
+    {
+      "date": "2018-06-20",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/4D218D86A2B33E29F17AA9C25D8DFFEE5D2559F75F7C0B1D016D3F2C2220D3EB"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fix1623"
+      ]
+    },
+    {
+      "date": "2018-06-21",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/EA6054C9D256657014052F1447216CEA75FFDB1C9342D45EB0F9E372C0F879E6"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fix1543"
+      ]
+    },
+    {
+      "date": "2018-10-09",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "DepositPreauth + 1 upgrades",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/AD27403CB840AE67CADDB084BC54249D7BD1B403885819B39CCF723DC671F927",
+        "https://livenet.xrpl.org/transactions/6DF60D9EC8AF3C39B173840F4D1C57F8A8AB51E7C6571483B4A5F1AA0A9AAEBF"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "DepositPreauth",
+        "fix1515"
+      ]
+    },
+    {
+      "date": "2019-03-23",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/7A80C87F59BCE6973CBDCA91E4DBDB0FC5461D3599A8BC8EAD02FA590A50005D"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fix1578"
+      ]
+    },
+    {
+      "date": "2019-04-02",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/C42335E95F1BD2009A2C090EA57BD7FB026AD285B4B85BE15F669BA4F70D11AF"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixTakerDryOfferRemoval"
+      ]
+    },
+    {
+      "date": "2019-04-17",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "MultiSignReserve enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/C421E1D08EFD78E6B8D06B085F52A34A681D0B51AE62A018527E1B8F54C108FB"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "MultiSignReserve"
+      ]
+    },
+    {
+      "date": "2019-06-17",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "MoneyGram partnership",
+      "scope": "Ripple company / adoption",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1273931/000119312519174813/d766773d8k.htm"
+      ],
+      "notes": "Agreement date in issuer SEC filing."
+    },
+    {
+      "date": "2019-10-02",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/61096F8B5AFDD8F5BAF7FC7221BA4D1849C4E21B1BA79733E44B12FC8DA6EA20"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixMasterKeyAsRegularKey"
+      ]
+    },
+    {
+      "date": "2020-05-01",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 2 fixes",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/74AFEA8C17D25CA883D40F998757CA3B0DB1AC86794335BAA25FF20E00C2C30A",
+        "https://livenet.xrpl.org/transactions/D2F8E457D08ACB185CDE3BB9BB1989A9052344678566785BACFB9DFDBDEDCF09"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixCheckThreading",
+        "fixPayChanRecipientOwnerDir"
+      ]
+    },
+    {
+      "date": "2020-05-08",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "DeletableAccounts enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/47B90519D31E0CB376B5FEE5D9359FA65EEEB2289F1952F2A3EB71D623B945DE"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "DeletableAccounts"
+      ]
+    },
+    {
+      "date": "2020-06-18",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Checks enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/D88F2DCDFB10023F9F6CBA8DF34C18E321D655CAC8FDB962387A5DB1540242A6"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "Checks"
+      ]
+    },
+    {
+      "date": "2020-07-03",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "RequireFullyCanonicalSig enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/94D8B158E948148B949CC3C35DD5DC4791D799E1FD5D3CE0E570160EDEF947D3"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "RequireFullyCanonicalSig"
+      ]
+    },
+    {
+      "date": "2020-07-09",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/5F8E9E9B175BB7B95F529BEFE3C84253E78DAF6076078EC450A480C861F6889E"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixQualityUpperBound"
+      ]
+    },
+    {
+      "date": "2020-08-04",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "FlowCross enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/44C4B040448D89B6C5A5DEC97C17FEDC2E590BA094BC7DB63B7FDC888B9ED78F"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "FlowCross"
+      ]
+    },
+    {
+      "date": "2021-04-08",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "HardenedValidations + 2 upgrades",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/DA59F10201D651B544F65896330AFACA8CA4198904265AD279D56781F655FAFB",
+        "https://livenet.xrpl.org/transactions/5B3ACE6CAC9C56D2008410F1B0881A0A4A8866FB99D2C2B2261C86C760DC95EF",
+        "https://livenet.xrpl.org/transactions/3A45DCF055B68DCBBFE034240F9359FB22E8A64B1BF7113304535BF5BB8144BF"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fix1781",
+        "fixAmendmentMajorityCalc",
+        "HardenedValidations"
+      ]
+    },
+    {
+      "date": "2021-07-28",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRP remittances launch in Japan",
+      "scope": "Ripple company / adoption",
+      "sources": [
+        "https://ripple.com/insights/first-live-on-demand-liquidity-offering-in-japan/"
+      ],
+      "notes": "SBI Remit Japan-to-Philippines ODL service explicitly uses XRP."
+    },
+    {
+      "date": "2021-11-11",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "FlowSortStrands + 1 upgrades",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/AFF17321A012C756B64FCC3BA0FDF79109F28E244D838A28D5AE8A0384C7C532",
+        "https://livenet.xrpl.org/transactions/1C3D3BD2AFDAF326EBFEA54579A89B024856609DB4310F7140086AAB262D09A1"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixSTAmountCanonicalize",
+        "FlowSortStrands"
+      ]
+    },
+    {
+      "date": "2021-11-18",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "TicketBatch + 1 upgrades",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/1F37BA0502576DD7B5464F47641FA95DEB55735EC2663269DFD47810505478E7",
+        "https://livenet.xrpl.org/transactions/111B32EDADDE916206E7315FBEE2DA1521B229F207F65DD314829F13C8D9CA36"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixRmSmallIncreasedQOffers",
+        "TicketBatch"
+      ]
+    },
+    {
+      "date": "2021-11-21",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "NegativeUNL enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/1500FADB73E7148191216C53040990E829C7110788B26E7F3246CB3660769EBA"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "NegativeUNL"
+      ]
+    },
+    {
+      "date": "2022-10-13",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "ExpandedSignerList enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/802E2446547BB86397217E32A78CB9857F21B048B91C81BCC6EF837BE9C72C87"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "ExpandedSignerList"
+      ]
+    },
+    {
+      "date": "2022-10-27",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/2A67DB4AC65D688281B76334C4B52038FD56931694A6DD873B5CCD9B970AD57C"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixRemoveNFTokenAutoTrustLine"
+      ]
+    },
+    {
+      "date": "2023-01-23",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "CheckCashMakesTrustLine enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/4C8546305583F72E056120B136EB251E7F45E8DFAAE65FDA33B22181A9CA4557"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "CheckCashMakesTrustLine"
+      ]
+    },
+    {
+      "date": "2023-05-17",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Ripple acquires Metaco",
+      "scope": "Ripple company / adoption",
+      "sources": [
+        "https://ripple.com/ripple-press/leading-enterprise-crypto-company-ripple-acquires-custody-provider-metaco-for-250m/"
+      ],
+      "notes": "Corporate custody acquisition; not an XRPL protocol change."
+    },
+    {
+      "date": "2023-08-21",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "DisallowIncoming + 4 upgrades",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/8747EF67D8CC1CA72A88817FBDF454507C3D9E8F0702D8E2B614958AE27A1D4E",
+        "https://livenet.xrpl.org/transactions/3AB0892CAB29F049B9D9E5D522701FD01469D0B97080626F8DD4B489D0B8784E",
+        "https://livenet.xrpl.org/transactions/4F4C05142CA1DE257CD86513086F0C99FAF06D80932377C6B6C02B3D09623A43",
+        "https://livenet.xrpl.org/transactions/EFE82B7155CE5B766AF343D98DAE6662C2713C99E760D610370D02338881B2F3",
+        "https://livenet.xrpl.org/transactions/65B8A4068B20696A866A07E5668B2AEB0451564E13B79421356FB962EC9A536B"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "DisallowIncoming",
+        "fixNonFungibleTokensV1_2",
+        "fixTrustLinesToSelf",
+        "fixUniversalNumber",
+        "ImmediateOfferKilled"
+      ]
+    },
+    {
+      "date": "2023-09-06",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "SBI expands XRP remittances",
+      "scope": "Ripple company / adoption",
+      "sources": [
+        "https://www.remit.co.jp/en/kaigaisoukin/information/release20230906/"
+      ],
+      "notes": "Announcement of gradual rollout that month; not an exact service activation day."
+    },
+    {
+      "date": "2023-11-24",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/87723D9D01AFAD8E55C944D7D1598969A8FBD852FCACAE361A40CBF5D4CB3BB1"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixReducedOffersV1"
+      ]
+    },
+    {
+      "date": "2023-11-27",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/CA4562711E4679FE9317DD767871E90A404C7A8B84FAFD35EC2CF0231F1F6DAF"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixNFTokenRemint"
+      ]
+    },
+    {
+      "date": "2024-02-08",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Clawback enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/C6BCCE60DFA4430A1F9097D774EA49E6FEFB1B535BA0EF9170DA0F2D08CDDB11"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "Clawback"
+      ]
+    },
+    {
+      "date": "2024-03-25",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPFees enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/4B6047F84B959B64FDD10E22D9E7CCC1EA0D228387462E8FF975B17F7C779021"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "XRPFees"
+      ]
+    },
+    {
+      "date": "2024-04-08",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/EC67D9DF8D06067A76E8F8F43BC036B5E0267568F8D92624A658AC01A8186235"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixInnerObjTemplate"
+      ]
+    },
+    {
+      "date": "2024-04-11",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 3 fixes",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/64144409D991726D108B89D79F9305438D61928A322EF1CD14DC3A5F24CE64BC",
+        "https://livenet.xrpl.org/transactions/50286B4B9C95331A48D3AD517E1FD3299308C6B696C85E096A73A445E9EB1BFB",
+        "https://livenet.xrpl.org/transactions/3209D6B66D375C23EEBE7C3DD3058B361427148D80C570B8E791D4C76555FA7B"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixAMMOverflowOffer",
+        "fixDisallowIncomingV1",
+        "fixFillOrKill"
+      ]
+    },
+    {
+      "date": "2024-04-12",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/D708CF1799A27CB982F16FCE4762DD12738737A61E5850480BA51400280E06C4"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixNFTokenReserve"
+      ]
+    },
+    {
+      "date": "2024-09-24",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 1 fix",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/8C8F5566464097BF1BAF7C645BB9E1762986844A052BBA3B9769F6564EEFAB71"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixAMMv1_1"
+      ]
+    },
+    {
+      "date": "2024-09-27",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 2 fixes",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/A858AE8832981D77A4C5038D633CC9CBD54C9764BD2A3F8CA174E02D1736F472",
+        "https://livenet.xrpl.org/transactions/C7A9804E1F499ABBF38D791BAD25B1479DB1CEA4E9B6C5C08D6D4EF13F41E171"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixEmptyDID",
+        "fixPreviousTxnID"
+      ]
+    },
+    {
+      "date": "2024-10-30",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "DID enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/7239CF04E6E1EEC606269135DA3C916B82D4B010F5315E7AEB3D5A3B6B5B343D"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "DID"
+      ]
+    },
+    {
+      "date": "2024-11-02",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "PriceOracle enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/05D03F7BF08BF4A915483F7B10EAC7016034656A54A8A6AD4A49A9AD362764A1"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "PriceOracle"
+      ]
+    },
+    {
+      "date": "2025-01-30",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "AMMClawback + 5 upgrades",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/8672DFD11FCF79F8E8F92E300187E8E533899ED8C8CF5AFB1A9C518195C16261",
+        "https://livenet.xrpl.org/transactions/71D5031A5BD927BDFE424E51699E69F2784097D615D0852BF20C168BA9B5EA76",
+        "https://livenet.xrpl.org/transactions/606FA84C4BA30F67582C11A39BBFC11A9D994E114CD515E9F63FC7D8701A8ED9",
+        "https://livenet.xrpl.org/transactions/426314C8BC64BA339E97E53B278602ADC44F115056274BF7971F694C9A8AF946",
+        "https://livenet.xrpl.org/transactions/2D9A29768A7FA4BAC01DF1941380077E304785279E5E49267EC269F53ABADF5A",
+        "https://livenet.xrpl.org/transactions/6D325D5EFF8230F1FECA3EE6418C9678637F3F56B0CA247013F70B3BDCFE75C8"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "AMMClawback",
+        "fixAMMv1_2",
+        "fixEnforceNFTokenTrustline",
+        "fixInnerObjTemplate2",
+        "fixNFTokenPageLinks",
+        "fixReducedOffersV2"
+      ]
+    },
+    {
+      "date": "2025-02-15",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "NFTokenMintOffer enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/E74C0196A9D4F193DD2A1DB5CCC5E37D3D43A21E2CB6185F6797E9BF2EDBE36C"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "NFTokenMintOffer"
+      ]
+    },
+    {
+      "date": "2025-05-04",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "DeepFreeze enabled",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/976281D793337FF5377A36409F2A1432DADAB64DB5064E12E71B1AC491EA3021"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "DeepFreeze"
+      ]
+    },
+    {
+      "date": "2025-05-15",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "XRPL maintenance: 2 fixes",
+      "scope": "XRPL protocol",
+      "sources": [
+        "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
+        "https://livenet.xrpl.org/transactions/34F11D09E15EC3FE78FFB238EB33030A9E2F2B6233716712A4B7A9D13C55C89A",
+        "https://livenet.xrpl.org/transactions/D53E906A53C46A9AACFEB0093DF26EFD8634C3DAF50A18930D7910C51FFE3E9D"
+      ],
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "amendments": [
+        "fixFrozenLPTokenTransfer",
+        "fixInvalidTxFlags"
+      ]
+    },
+    {
+      "date": "2025-06-12",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Native USDC launches on XRPL",
+      "scope": "XRPL ecosystem",
+      "sources": [
+        "https://www.circle.com/blog/now-available-usdc-on-the-xrpl"
+      ],
+      "notes": "Native USDC availability confirmed by issuer."
+    }
+  ]
+}

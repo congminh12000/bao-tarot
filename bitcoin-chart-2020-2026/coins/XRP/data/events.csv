@@ -1,21 +1,77 @@
 # date,kind,hit,tag,text
 2013-12-05,down,1,,China bank ban
 2014-02-24,down,2,,Mt. Gox collapses
+2014-05-05,info,0,,Fidor adopts Ripple protocol
+2014-09-24,info,0,,First US banks join Ripple
+2015-05-05,down,0,,FinCEN $700K penalty
+2016-01-28,info,0,,SBI venture announced
+2016-05-19,info,0,,FeeEscalation enabled
+2016-06-27,info,0,,MultiSign enabled
+2016-07-19,info,0,,TrustSetAuth enabled
+2016-10-21,info,0,,Flow enabled
+2017-01-03,info,0,,CryptoConditions enabled
+2017-02-21,info,0,,TickSize enabled
 2017-03-31,up,1,upgrade,Escrow + payment channels
+2017-07-07,info,0,,EnforceInvariants + 1 upgrades
 2017-09-03,down,1,,China bans ICOs
 2017-09-15,down,1,,China shuts exchanges
+2017-11-14,info,0,,SortedDirectories + 4 upgrades
+2017-11-16,info,0,,Amex joins RippleNet
 2017-12-08,info,2,,55B XRP locked in escrow
+2018-04-06,info,0,,DepositAuth + 1 upgrades
+2018-06-19,info,0,,XRPL maintenance: 1 fix
+2018-06-20,info,0,,XRPL maintenance: 1 fix
+2018-06-21,info,0,,XRPL maintenance: 1 fix
 2018-10-01,up,2,,xRapid commercial launch
+2018-10-09,info,0,,DepositPreauth + 1 upgrades
+2019-03-23,info,0,,XRPL maintenance: 1 fix
+2019-04-02,info,0,,XRPL maintenance: 1 fix
+2019-04-17,info,0,,MultiSignReserve enabled
+2019-06-17,info,0,,MoneyGram partnership
+2019-10-02,info,0,,XRPL maintenance: 1 fix
 2020-03-13,down,2,,COVID market crash
+2020-05-01,info,0,,XRPL maintenance: 2 fixes
+2020-05-08,info,0,,DeletableAccounts enabled
+2020-06-18,info,0,,Checks enabled
+2020-07-03,info,0,,RequireFullyCanonicalSig enabled
+2020-07-09,info,0,,XRPL maintenance: 1 fix
+2020-08-04,info,0,,FlowCross enabled
 2020-12-22,down,2,,SEC sues Ripple
+2021-04-08,info,0,,HardenedValidations + 2 upgrades
 2021-05-19,down,2,,China crypto ban
+2021-07-28,info,0,,XRP remittances launch in Japan
 2021-09-24,down,1,,China bans all crypto
+2021-11-11,info,0,,FlowSortStrands + 1 upgrades
+2021-11-18,info,0,,TicketBatch + 1 upgrades
+2021-11-21,info,0,,NegativeUNL enabled
 2022-05-07,down,2,,LUNA collapse
+2022-10-13,info,0,,ExpandedSignerList enabled
+2022-10-27,info,0,,XRPL maintenance: 1 fix
 2022-10-31,up,2,upgrade,XLS-20 NFTs go live
 2022-11-11,down,2,,FTX bankrupt
+2023-01-23,info,0,,CheckCashMakesTrustLine enabled
+2023-05-17,info,0,,Ripple acquires Metaco
 2023-07-13,up,2,,Ripple mixed court ruling
+2023-08-21,info,0,,DisallowIncoming + 4 upgrades
+2023-09-06,info,0,,SBI expands XRP remittances
+2023-11-24,info,0,,XRPL maintenance: 1 fix
+2023-11-27,info,0,,XRPL maintenance: 1 fix
+2024-02-08,info,0,,Clawback enabled
 2024-03-22,up,2,upgrade,XRPL AMM goes live
+2024-03-25,info,0,,XRPFees enabled
+2024-04-08,info,0,,XRPL maintenance: 1 fix
+2024-04-11,info,0,,XRPL maintenance: 3 fixes
+2024-04-12,info,0,,XRPL maintenance: 1 fix
 2024-08-07,down,2,,Ripple fined $125M
+2024-09-24,info,0,,XRPL maintenance: 1 fix
+2024-09-27,info,0,,XRPL maintenance: 2 fixes
 2024-10-02,down,1,,SEC files appeal
+2024-10-30,info,0,,DID enabled
+2024-11-02,info,0,,PriceOracle enabled
 2024-12-17,up,2,,Ripple USD launches
+2025-01-30,info,0,,AMMClawback + 5 upgrades
+2025-02-15,info,0,,NFTokenMintOffer enabled
+2025-05-04,info,0,,DeepFreeze enabled
+2025-05-15,info,0,,XRPL maintenance: 2 fixes
+2025-06-12,info,0,,Native USDC launches on XRPL
 2025-08-07,info,2,,SEC + Ripple dismiss appeals

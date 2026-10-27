@@ -13,7 +13,10 @@ In short:
   MUSIC never slows down: each phase plays its cue at the cue's own tempo and the next cue starts at once with its ~1 s
   pickup; the CHART keeps its pace (it still brakes and eases back at the turn). A hit 2 never changes or ducks the
   music: its SFX play on top. Uptrend cues 100 BPM heroic; downtrend cues 80 BPM suspense, not dramatic (PROJECT.md §4–5).
-- Events: only hit 1 and hit 2 (never hit 0); text as short as possible; money as $1.2K / $19.8K / $41M / $1.5B.
+- XRP research exception (2026-10-27): collect hit-0 candidates in `coins/XRP/data/events.csv`, with per-event sources
+  in `level0-sources.json`; group same-day amendment activations. The renderer still excludes hit 0; collection alone
+  does not change the visible video. See PROJECT.md §3.
+- Events shown in the video: only hit 1 and hit 2 (never hit 0); text as short as possible; money as $1.2K / $19.8K / $41M / $1.5B.
   hit 1 = small grey label, no SFX, no effect; hit 2 = big label + SFX + strong visual effect. Check `node check-labels.js`.
 - One cue per phase of data/phases.csv, never a change inside a phase. Music mastered to -16 LUFS (no voice-over).
 - Keep the phase badge beside the live price (`PHASE_BADGE = 'price'` in `look.js`), independent of the disabled chart overlay (`PHASE_OVERLAY = 'none'`).

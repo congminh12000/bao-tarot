@@ -48,3 +48,20 @@ https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/. COVID label omi
 Missing input dates (filled and marked estimated):
 
 2016-12-17, 2016-12-18, 2016-12-20, 2016-12-21, 2016-12-23, 2016-12-24, 2016-12-25, 2016-12-26, 2016-12-27, 2016-12-28, 2016-12-29, 2016-12-30, 2016-12-31, 2017-01-01, 2017-01-02, 2017-01-04, 2017-01-05, 2017-01-06, 2017-01-07, 2017-01-08, 2017-01-10, 2017-01-11, 2017-01-12, 2017-01-13, 2017-01-14, 2017-01-15, 2017-01-16.
+
+## Supplemental level-0 collection (requested 2026-10-27)
+
+56 new entries are saved in `events.csv`; each has a matching record in `level0-sources.json` with sources, scope,
+notes, and (where applicable) underlying amendment names and mainnet activation transaction links.
+46 entries group amendment activations on the same date, from the official XRPL documentation snapshot pinned at
+commit `841327bca5e5cc20de9813541fcbbbcc6a2914ca`. Dates already covered by the existing Escrow, NFT and AMM labels
+are excluded. Ten further entries cover official adoption/corporate announcements, FinCEN enforcement, and native USDC.
+
+The pinned amendment source ends at 2025-05-15; this is not a claim of exhaustive minor-event coverage through 2026.
+No missing dates are invented. Announcement dates are distinguished from incorporation or actual service rollout.
+Ripple corporate partnerships do not automatically imply XRP use; records explicitly note that distinction.
+Level-0 assignment is a provisional editorial research classification, not an externally verified impact measure.
+
+Visible video input remains byte-for-byte identical after `COIN=XRP node make-data.js --strict`, because the existing
+generator filters hit 0. The already kept XRP previews remain valid; no picture or audio rerender is required for this
+research-only addition. Showing level 0 in the film requires a separate requested display change and preview.

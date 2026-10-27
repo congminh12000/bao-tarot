@@ -107,7 +107,9 @@ nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn,
 - Nguồn: `data/events.csv` (`date,kind,hit,tag,text`) — 99Bitcoins (ATH theo TradingView), người dùng soạn/kiểm chứng.
   `tag`: để trống, hoặc `halving` = sự kiện nội tại đặc biệt → nhãn **màu vàng** (#FFC93C, cỡ mức 1), còn hiện khi zoom-out.
   `kind`: up/down/info. **Chỉ dùng 2 mức**: `hit 1` = quan trọng, `hit 2` = rất quan trọng (cột mốc / khủng hoảng).
-  **Không lấy dữ liệu mức 0**: không ghi vào file; nếu có, `make-data.js` tự bỏ.
+  **Mặc định không thu thập mức 0**. Ngoại lệ XRP (27/10/2026): theo yêu cầu người dùng, thu thập và lưu cả mức 0
+  trong `coins/XRP/data/events.csv`, kèm nguồn từng dòng tại `level0-sources.json`. Đây là dữ liệu nghiên cứu bổ sung;
+  `make-data.js` vẫn lọc mức 0 khỏi video. Chỉ thay đổi cách hiển thị khi người dùng yêu cầu đưa mức 0 vào phim.
 - Nội dung sự kiện **ngắn gọn hết mức** (≤ ~30 ký tự, tối đa 38), tiếng Anh, không bịa nguyên nhân.
 - Số tiền viết gọn: `$266`, `$1.2K`, `$19.8K`, `$109K`, `$41M`, `$1.5B` (1 chữ số lẻ khi < 100 đơn vị).
   `make-data.js` tự đổi mọi `$1,234,567` còn sót; nhãn ALL-TIME LOW tự tạo cũng dùng cùng định dạng.
@@ -294,6 +296,11 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- XRP mức 0 (27/10/2026): đã bổ sung 56 sự kiện nghiên cứu có nguồn; tổng dữ liệu 76 dòng
+  (56 mức 0, 6 mức 1, 14 mức 2), chưa tính 10 ATH/ATL tự tạo. Nhóm nâng cấp cùng ngày để tránh đếm phồng.
+  Không phải danh sách đầy đủ mọi sự kiện; phạm vi và nguồn từng dòng ở `coins/XRP/data/level0-sources.json`.
+  Dữ liệu tạo cho video không đổi (SHA-256 khớp trước/sau), nên preview đã lưu vẫn dùng được; mức 0 chưa hiển thị.
+
 - XRP (27/10/2026): đã tạo `coins/XRP/` theo §11; TradingView 04/08/2013–26/10/2026, 4.805 nến thật,
   27 ngày thiếu được nối và đánh dấu ước tính; 20 sự kiện có nguồn, 11 phase / 11 bài đã duyệt không lặp.
   `--strict` và kiểm tra nhãn toàn timeline ✓. Logo XRP chính thức, màu xám thép theo bảng; preview phán quyết
@@ -336,8 +343,8 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
    sàn lớn bằng `node fetch-tradingview.js <mã> --print`, chọn mã có **lịch sử dài nhất**.
 2. **Giá**: `COIN=<SYMBOL> node fetch-tradingview.js` → `coins/<SYMBOL>/data/tradingview/`.
 3. **Sự kiện**: trang "historical price/events" của **99Bitcoins** cho đồng đó (mở bằng trình duyệt nếu WebFetch bị chặn);
-   nếu 99Bitcoins không có, dùng nguồn uy tín khác và **ghi rõ nguồn**. Cùng định dạng `date,kind,hit,tag,text`, chỉ mức
-   1/2, chữ ngắn, tiếng Anh, không bịa nguyên nhân; `tag` cho sự kiện nội tại đặc biệt của giao thức (Bitcoin: `halving`,
+   nếu 99Bitcoins không có, dùng nguồn uy tín khác và **ghi rõ nguồn**. Cùng định dạng `date,kind,hit,tag,text`, mặc định mức
+   1/2 (ngoại lệ thu thập mức 0 cho XRP ở §3), chữ ngắn, tiếng Anh, không bịa nguyên nhân; `tag` cho sự kiện nội tại đặc biệt của giao thức (Bitcoin: `halving`,
    ETH: nâng cấp mạng…). ATH/ATL do `score.js` tự gắn. Ghi nguồn vào `coin.json` (`eventsSource`).
 4. **Logo**: tự tìm trên Google, **phải chính xác** — logo chính thức (trang chủ / brand kit của dự án), nền trong suốt,
    kích thước ≥ 512 px → `coins/<SYMBOL>/logo.png`; tạo `logo-negative.png`
