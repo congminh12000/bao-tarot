@@ -1,0 +1,27 @@
+# date,kind,hit,tag,text
+2015-08-07,info,1,,First exchange trades
+2016-03-14,info,1,upgrade,Homestead upgrade
+2016-06-17,down,2,,The DAO hack
+2016-07-20,info,2,upgrade,DAO fork
+2016-10-18,info,1,upgrade,Tangerine Whistle
+2016-11-22,info,1,upgrade,Spurious Dragon
+2017-10-16,info,1,upgrade,Byzantium upgrade
+2018-11-02,info,1,,Uniswap launches
+2019-02-28,info,1,upgrade,Constantinople upgrade
+2019-12-08,info,1,upgrade,Istanbul upgrade
+2020-01-02,info,1,upgrade,Muir Glacier upgrade
+2020-03-13,down,2,,COVID crash
+2020-12-01,info,2,upgrade,Beacon Chain launches
+2021-04-15,info,1,upgrade,Berlin upgrade
+2021-05-19,down,2,,China crypto ban
+2021-08-05,info,2,upgrade,London: EIP-1559
+2021-10-27,info,1,upgrade,Altair upgrade
+2022-05-07,down,2,,LUNA collapse
+2022-09-15,info,2,upgrade,The Merge
+2022-11-11,down,2,,FTX bankruptcy
+2023-04-12,info,2,upgrade,Shapella: withdrawals
+2024-03-13,info,2,upgrade,Dencun: blobs go live
+2024-05-23,up,2,,Spot ETH ETFs approved
+2024-07-23,up,1,,Spot ETH ETFs trade
+2025-05-07,info,2,upgrade,Pectra upgrade
+2025-12-03,info,2,upgrade,Fusaka upgrade

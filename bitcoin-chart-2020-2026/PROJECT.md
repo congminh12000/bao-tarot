@@ -294,6 +294,11 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- ETH (27/10/2026): đã tạo `coins/ETH/` theo §11; dữ liệu TradingView 07/08/2015–26/10/2026, 15 phase,
+  15 bài đã duyệt không lặp, 26 sự kiện có nguồn, logo chính thức và tông tím chàm theo bảng màu. `--strict` và
+  kiểm tra nhãn toàn timeline ✓. Preview DAO 01/05–15/08/2016, 16:9 480p 60 fps, 19,18 s, `verify` ✓,
+  −16,0 LUFS / −1,4 dBTP; lưu `out/renders/eth-preview-dao-2016-480p60/`. Chờ duyệt logo, màu và bố cục;
+  chưa render final ETH. Chi tiết và nguồn: `coins/ETH/README.md`, `coins/ETH/data/SOURCES.md`.
 - Đã tách nhãn phase khỏi overlay và bật lại nhãn cạnh giá theo yêu cầu; preview 01/12/2017–31/01/2018 (60 fps, 480p) có cả UPTREND và DOWNTREND, `verify` ✓; `check-labels` ✓ cả phim. Chờ người dùng duyệt preview.
 - Đã duyệt (26/10/2026): không dùng overlay uptrend/downtrend; ô tổng kết ghi số năm nguyên ("2 YEARS"); ô tổng kết mới (khung mức 2 + mức 1, logo, số năm, % giá); preview và bản cuối luôn 60 fps; bỏ tiêu đề, fade-in 1 s; 17 bài nhạc (uptrend: Vanguard, Titan,
   Crusade, Overdrive, Horizon, Warpath, Spartan, Last Stand, War Cry, Dominion / downtrend: Siege, Undertow, Collapse, Tremor, Shadow, Vertigo, Standoff); nhạc không
