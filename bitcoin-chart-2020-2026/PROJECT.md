@@ -294,6 +294,12 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- BNB (27/10/2026): đã tạo `coins/BNB/` theo §11; TradingView 14/07/2017–26/10/2026, 3.392 nến thật,
+  33 sự kiện có nguồn, 9 phase / 9 bài đã duyệt không lặp; `--strict` và kiểm tra nhãn toàn timeline ✓.
+  Logo chính thức, màu hổ phách theo bảng; preview Token Hub 01/09–30/11/2022, 16:9 480p 60 fps, 17,38 s,
+  `verify` ✓, −15,91 LUFS / −1,48 dBTP; lưu `out/renders/bnb-preview-tokenhub-2022-480p60/`.
+  Chờ duyệt logo, màu và bố cục; chưa render final. Nguồn và chi tiết: `coins/BNB/README.md`, `coins/BNB/data/SOURCES.md`.
+
 - ETH (27/10/2026): đã tạo `coins/ETH/` theo §11; dữ liệu TradingView 07/08/2015–26/10/2026, 15 phase,
   15 bài đã duyệt không lặp, 26 sự kiện có nguồn, logo chính thức và tông tím chàm theo bảng màu. `--strict` và
   kiểm tra nhãn toàn timeline ✓. Preview DAO 01/05–15/08/2016, 16:9 480p 60 fps, 19,18 s, `verify` ✓,

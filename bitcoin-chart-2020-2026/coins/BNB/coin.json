@@ -1,0 +1,20 @@
+{
+  "symbol": "BNB",
+  "name": "BNB",
+  "pair": "BNB / USD",
+  "tradingview": "CRYPTO:BNBUSD",
+  "eventsSource": "BNB Chain official announcements and mainnet upgrade roadmap; shared market events from the verified 99Bitcoins Bitcoin timeline. See data/SOURCES.md.",
+  "logo": "coins/BNB/logo.png",
+  "logoNegative": "coins/BNB/logo-negative.png",
+  "logoGlow": "#F3BA2F",
+  "colors": {
+    "accent": "#F3BA2F",
+    "accent2": "#FFE08A",
+    "bg1": "#1C1505",
+    "bg0": "#080602",
+    "grid": "rgba(243,186,47,0.09)",
+    "gridMajor": "rgba(243,186,47,0.32)"
+  },
+  "special": "#00E5FF",
+  "musicShuffle": true
+}
