@@ -1,4 +1,5 @@
 # date,kind,hit,tag,text
+2017-07-14,up,1,,Binance opens; BNB trades
 2017-09-03,down,1,,China bans ICOs
 2017-09-15,down,1,,China shuts exchanges
 2017-12-28,info,0,,Korea exchange shutdown warning
@@ -16,10 +17,12 @@
 2018-09-05,info,0,,Goldman crypto desk report
 2018-09-18,info,0,,Zaif exchange hack
 2018-10-15,info,0,,Fidelity crypto platform
+2019-01-28,up,0,,Launchpad BTT sells out
 2019-02-01,info,0,,QuadrigaCX bankruptcy
 2019-03-01,info,0,,Facebook crypto project report
 2019-03-22,info,0,,Fake trading volume study
 2019-04-18,up,2,mainnet,Binance Chain mainnet
+2019-04-23,up,1,mainnet,Binance DEX + BNB swap
 2019-04-26,info,0,,Bitfinex + Tether investigation
 2019-05-08,down,1,,Binance $41M hack
 2019-06-18,info,0,,Facebook Libra announced
@@ -42,34 +45,49 @@
 2020-10-21,info,0,,PayPal crypto services
 2020-12-18,info,0,,Coinbase files for IPO
 2021-05-19,down,2,,China crypto ban
+2021-06-26,down,0,,UK FCA restricts Binance
 2021-09-24,down,1,,China bans all crypto
 2021-11-30,up,1,upgrade,BEP-95 real-time burn
-2022-02-15,info,1,,BNB Chain rebrand
+2022-02-15,info,0,,BNB Chain rebrand
 2022-03-03,info,0,,US crypto order reported
 2022-05-07,down,2,,LUNA collapse
 2022-06-13,info,0,,Celsius halts withdrawals
-2022-06-22,up,1,upgrade,Euler upgrade
+2022-06-22,up,0,upgrade,Euler upgrade
 2022-07-14,info,0,,Celsius files bankruptcy
 2022-10-06,down,2,,Token Hub exploit; chain halt
 2022-10-12,info,1,upgrade,Moran security fix
+2022-11-08,up,0,,Binance LOI to buy FTX
+2022-11-09,down,1,,Binance drops FTX deal
 2022-11-11,down,2,,FTX bankrupt
 2022-12-12,up,1,upgrade,Gibbs native staking
+2023-02-13,down,1,,BUSD minting halted
 2023-03-03,info,0,,Silvergate closure reported
 2023-03-19,info,0,,Crypto rally amid bank turmoil
-2023-04-12,up,1,upgrade,Planck upgrade
+2023-03-27,down,1,,CFTC sues Binance
+2023-04-12,up,0,upgrade,Planck upgrade
 2023-06-05,down,2,,SEC sues Binance
-2023-06-12,up,1,upgrade,Luban upgrade
+2023-06-12,up,0,upgrade,Luban upgrade
 2023-08-10,up,1,upgrade,Plato fast finality
-2023-08-30,up,1,upgrade,Hertz upgrade
+2023-08-30,up,0,upgrade,Hertz upgrade
 2023-09-13,up,2,mainnet,opBNB public mainnet
+2023-10-17,up,1,mainnet,Greenfield mainnet
 2023-11-21,down,2,,Binance guilty plea; CZ resigns
-2024-01-23,up,1,upgrade,Kepler upgrade
+2024-01-23,up,0,upgrade,Kepler upgrade
 2024-04-18,up,2,upgrade,Feynman: Chain Fusion
+2024-04-30,down,1,,CZ sentenced: 4 months
 2024-06-20,up,1,upgrade,Tycho + Haber upgrades
-2024-09-26,up,1,upgrade,Bohr upgrade
-2025-03-20,up,1,upgrade,Pascal upgrade
+2024-09-26,up,0,upgrade,Bohr upgrade
+2024-09-27,info,0,,CZ released
+2024-11-19,info,1,upgrade,Beacon Chain sunset
+2025-03-12,up,1,,MGX invests $2B in Binance
+2025-03-20,up,0,upgrade,Pascal upgrade
 2025-04-29,up,1,upgrade,Lorentz: 1.5s blocks
-2025-06-30,up,2,upgrade,Maxwell: 0.75s blocks
-2026-01-14,up,2,upgrade,Fermi: 0.45s blocks
-2026-04-28,up,1,upgrade,Mendel upgrade
-2026-08-25,up,1,upgrade,Pasteur upgrade
+2025-05-02,up,0,,VanEck files BNB ETF
+2025-05-29,up,1,,SEC drops Binance case
+2025-06-30,up,1,upgrade,Maxwell: 0.75s blocks
+2025-09-18,up,2,,BNB > $1K
+2025-10-10,down,1,,Record crypto liquidations
+2025-10-23,up,1,,CZ pardon announced
+2026-01-14,up,1,upgrade,Fermi: 0.45s blocks
+2026-04-28,up,0,upgrade,Mendel upgrade
+2026-08-25,up,0,upgrade,Pasteur upgrade

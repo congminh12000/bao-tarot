@@ -3,7 +3,8 @@
 Prepared 2026-10-27 following PROJECT.md §11 and `coins/README.md`.
 
 - TradingView `CRYPTO:BNBUSD`: 3,392 actual daily candles, 2017-07-14–2026-10-26; no gaps or synthetic anchors.
-- 33 curated events, with provenance in `data/SOURCES.md`; labels describe events without asserting price causation.
+- 92 events after the 2026-10-27 completeness review (12 level 2 / 24 level 1 / 56 level 0), with provenance in
+  `data/SOURCES.md` and per-event links in `data/event-sources.csv`; labels describe events without asserting price causation.
 - 9 phases (5 uptrend, 4 downtrend); unchanged phase detector and thresholds.
 - 9 distinct approved cues, deterministically shuffled for BNB; strict no-repeat validation passes.
 - Full timeline: 364.714 seconds, approximately 6:05. No full video has been rendered.

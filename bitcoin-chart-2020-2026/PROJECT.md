@@ -365,6 +365,10 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
   Logo chính thức, màu hổ phách theo bảng; preview Token Hub 01/09–30/11/2022, 16:9 480p 60 fps, 17,38 s,
   `verify` ✓, −15,91 LUFS / −1,48 dBTP; lưu `out/renders/bnb-preview-tokenhub-2022-480p60/`.
   Chờ duyệt logo, màu và bố cục; chưa render final. Nguồn và chi tiết: `coins/BNB/README.md`, `coins/BNB/data/SOURCES.md`.
+- BNB sự kiện (27/10/2026, đã duyệt): rà soát đầy đủ, thêm 18 sự kiện có nguồn (Binance mở cửa, DEX + swap BNB, FTX,
+  BUSD, CFTC, Greenfield, CZ bị kết án / thả / ân xá, Beacon Chain sunset, MGX, VanEck ETF, SEC rút kiện, BNB > $1K,
+  thanh lý kỷ lục 10/10/2025); duyệt lại mức: tổng 92 = 12 mức 2 / 24 mức 1 / 56 mức 0. Nhãn ✓ (1 nhãn cũ rời sớm),
+  nguồn ✓, audit ✓. Preview `out/renders/bnb-preview-new-events-480p/`, `bnb-preview-levels-2025-480p/`.
 
 - ETH (27/10/2026): đã tạo `coins/ETH/` theo §11; dữ liệu TradingView 07/08/2015–26/10/2026, 15 phase,
   15 bài đã duyệt không lặp, 26 sự kiện có nguồn, logo chính thức và tông tím chàm theo bảng màu. `--strict` và

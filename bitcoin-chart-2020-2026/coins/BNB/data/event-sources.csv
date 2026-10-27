@@ -1,4 +1,6 @@
 # date,source,url,text   (PROJECT.md §15: one row per source of each events.csv row; date + text match it)
+2017-07-14,ForkLog,https://forklog.com/en/binance-chief-outlines-plans-to-mark-the-exchanges-sixth-anniversary/,Binance opens; BNB trades
+2017-07-14,TradingView CRYPTO:BNBUSD,https://www.tradingview.com/symbols/BNBUSD/?exchange=CRYPTO,Binance opens; BNB trades
 2017-09-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-companies-from-raising-money-through-icos,China bans ICOs
 2017-09-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-is-shutting-down-all-bitcoin-and-cryptocurrency-exchanges,China shuts exchanges
 2017-12-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korea-threatens-to-shut-down-cryptocurrency-exchanges,Korea exchange shutdown warning
@@ -16,10 +18,12 @@
 2018-09-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#goldman-sachs-drops-crypto-trading-plans,Goldman crypto desk report
 2018-09-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-zaif-exchange-hacked-loosing-about-60m-in-crypto,Zaif exchange hack
 2018-10-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fidelity-launches-institutional-platform-for-cryptocurrencies,Fidelity crypto platform
+2019-01-28,The Block,https://www.theblock.co/post/9195/bittorrent-token-public-offering-sells-out-in-minutes-would-have-been-seconds-if-not-for-technical-issues,Launchpad BTT sells out
 2019-02-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#canadian-crypto-exchange-quadrigacx-goes-bankrupt,QuadrigaCX bankruptcy
 2019-03-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-working-on-its-own-cryptocurrency,Facebook crypto project report
 2019-03-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitwise-study-finds-majority-of-bitcoin-trading-volume-is-faked-by-unregulated-exchanges,Fake trading volume study
 2019-04-18,Binance,https://www.binance.com/en/blog/all/327036304672833536,Binance Chain mainnet
+2019-04-23,crypto.news,https://crypto.news/binance-completes-bnb-mainnet-swap-launches-dex/,Binance DEX + BNB swap
 2019-04-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitfinex-and-tether-faces-investigation-over-alleged-850m-shortfall,Bitfinex + Tether investigation
 2019-05-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#binance-exchange-hackers-steals-41m-worth-of-bitcoin,Binance $41M hack
 2019-06-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-trades-flat-on-facebook-libra-blockchain-launch,Facebook Libra announced
@@ -42,6 +46,7 @@
 2020-10-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paypal-allows-bitcoin-and-crypto-spending,PayPal crypto services
 2020-12-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-files-for-ipo,Coinbase files for IPO
 2021-05-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-financial-institutions-from-cryptocurrency-business,China crypto ban
+2021-06-26,FCA,https://www.fca.org.uk/news/news-stories/consumer-warning-binance-markets-limited-and-binance-group,UK FCA restricts Binance
 2021-09-24,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-all-cryptocurrency-transactions,China bans all crypto
 2021-11-30,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,BEP-95 real-time burn
 2022-02-15,BNB Chain,https://www.bnbchain.org/en/blog/bsc-is-now-bnb-chain-the-infrastructure-for-the-metafi-universe,BNB Chain rebrand
@@ -53,25 +58,41 @@
 2022-10-06,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Token Hub exploit; chain halt
 2022-10-06,BNB Chain,https://www.bnbchain.org/en/blog/bnb-chain-ecosystem-update,Token Hub exploit; chain halt
 2022-10-12,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Moran security fix
+2022-11-08,TechCrunch,https://techcrunch.com/2022/11/08/binance-signs-letter-of-intent-to-acquire-ftx/,Binance LOI to buy FTX
+2022-11-09,The Block,https://www.theblock.co/post/184636/binance-backs-out-of-ftx-acquisition-deal,Binance drops FTX deal
 2022-11-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ftx-crypto-exchange-files-for-bankruptcy,FTX bankrupt
 2022-12-12,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Gibbs native staking
+2023-02-13,Paxos,https://www.paxos.com/newsroom/paxos-will-halt-minting-new-busd-tokens,BUSD minting halted
+2023-02-13,NYDFS,https://www.dfs.ny.gov/consumers/alerts/Paxos_and_Binance,BUSD minting halted
 2023-03-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-friendly-silvergate-bank-voluntarily-closes,Silvergate closure reported
 2023-03-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#banking-crisis-rallies-bitcoin,Crypto rally amid bank turmoil
+2023-03-27,CFTC,https://www.cftc.gov/PressRoom/PressReleases/8680-23,CFTC sues Binance
 2023-04-12,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Planck upgrade
 2023-06-05,SEC,https://www.sec.gov/newsroom/press-releases/2023-101-sec-files-13-charges-against-binance-entities-founder-changpeng-zhao,SEC sues Binance
 2023-06-12,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Luban upgrade
 2023-08-10,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Plato fast finality
 2023-08-30,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Hertz upgrade
 2023-09-13,BNB Chain,https://www.bnbchain.org/en/blog/opbnb-mainnet-is-live,opBNB public mainnet
+2023-10-17,BNB Chain,https://www.bnbchain.org/en/blog/bnb-chains-greenfield-mainnet-launch-marks-new-era-for-web3-data,Greenfield mainnet
 2023-11-21,US Department of Justice,https://www.justice.gov/criminal/case/united-states-v-binance-holdings-limited-dba-binancecom,Binance guilty plea; CZ resigns
 2023-11-21,US Department of Justice,https://www.justice.gov/archives/opa/pr/binance-and-ceo-plead-guilty-federal-charges-4b-resolution,Binance guilty plea; CZ resigns
 2024-01-23,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Kepler upgrade
 2024-04-18,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Feynman: Chain Fusion
+2024-04-30,CNBC,https://www.cnbc.com/2024/04/30/binance-founder-changpeng-zhao-cz-sentenced-to-four-months-in-prison-.html,CZ sentenced: 4 months
 2024-06-20,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Tycho + Haber upgrades
 2024-09-26,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Bohr upgrade
+2024-09-27,The Block,https://www.theblock.co/post/318471/former-binance-ceo-changpeng-zhao-released-from-custody-on-friday-bloomberg,CZ released
+2024-11-19,BNB Chain,https://www.bnbchain.org/en/blog/final-sunset-plan-of-bnb-beacon-chain,Beacon Chain sunset
+2025-03-12,The Block,https://www.theblock.co/post/345932/binance-secures-2-billion-investment-from-abu-dhabis-mgx-in-landmark-crypto-deal,MGX invests $2B in Binance
 2025-03-20,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Pascal upgrade
 2025-04-29,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Lorentz: 1.5s blocks
+2025-05-02,SEC (EDGAR S-1),https://www.sec.gov/Archives/edgar/data/2066824/000206682425000002/vaneckbnbetfs-1.htm,VanEck files BNB ETF
+2025-05-29,SEC,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26316,SEC drops Binance case
 2025-06-30,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Maxwell: 0.75s blocks
+2025-09-18,TradingView CRYPTO:BNBUSD,https://www.tradingview.com/symbols/BNBUSD/?exchange=CRYPTO,BNB > $1K
+2025-10-10,The Block,https://www.theblock.co/post/374266/crypto-liquidations-near-10-billion-in-historic-drawdown-following-trumps-100-tariffs-on-china,Record crypto liquidations
+2025-10-23,Reuters (via Yahoo),https://www.yahoo.com/news/articles/trump-pardons-convicted-binance-founder-152257138.html,CZ pardon announced
+2025-10-23,US DOJ pardon,https://justice.gov/pardon/media/1416576/dl?inline=,CZ pardon announced
 2026-01-14,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Fermi: 0.45s blocks
 2026-04-28,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Mendel upgrade
 2026-08-25,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Pasteur upgrade
