@@ -3,11 +3,13 @@
 Prepared 2026-10-27 following PROJECT.md §11 and the palette in `coins/README.md`.
 
 - Input: TradingView `INDEX:ETHUSD`, 2015-08-07 through 2026-10-26; 4,094 actual candles and five explicitly marked gap fills.
-- Events: 26 curated entries; primary-source provenance and the unavailable 99Bitcoins ETH timeline are documented in `data/SOURCES.md`.
+- Events: 79 entries (53 level 0, 12 level 1, 14 level 2), all visible under the altcoin rule; 14 additional generated ATH/ATL labels.
+- Five missing official ETH milestones added; US crypto order and Silvergate liquidation dates corrected. Primary evidence
+  is in `data/corrections-20261027.json`; original 99Bitcoins dates remain archived in `data/99bitcoins-coverage.json`.
 - Phases: 15 (8 uptrends, 7 downtrends), generated with the existing detector and its unchanged thresholds.
 - Music: 15 distinct approved cues, deterministically shuffled for ETH; strict no-repeat validation passes.
 - Full film timeline: 439.706 seconds, approximately 7:20. No full film has been rendered.
-- Full-history label check: no overlaps, no earlier labels forced out.
+- Latest full-history label check after corrections: no overlaps, no earlier labels forced out.
 - Official transparent logo: `logo.svg` from ethereum.org, rasterized to `logo.png` (1024×1024); negative generated with ffmpeg.
 - Proposed colors: indigo #8A92FF / pale violet #C3C8FF, dark violet background, green/red candles, gold upgrade labels.
 
@@ -38,3 +40,10 @@ All previous official-source and level-1/2 events are preserved; supplementary l
 
 PROJECT.md §14 thay thế ghi chú hiển thị cũ: thu thập đủ 0/1/2 cho mọi coin; BTC ẩn 0, mọi altcoin hiện đủ 0/1/2.
 Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit và các nguồn dữ liệu vẫn được giữ nguyên.
+
+## Corrected-data preview — 2026-10-27
+
+2022-02-01–2022-10-15, 38.92 seconds, 16:9, 480p, 60 fps. Shows the corrected US executive-order date,
+Gray Glacier, Bellatrix, and The Merge. Picture/audio sync verified at every marker.
+Video: `out/eth-preview-corrected-events-480p.mp4`; kept frames and metadata:
+`out/renders/eth-preview-corrected-events-480p60/`. Full ETH data/music restored afterwards. Awaiting preview approval.

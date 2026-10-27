@@ -1609,16 +1609,27 @@
       "sourceId": 207,
       "sourceDate": "2022-03-03",
       "status": "stored",
-      "reason": "Context from Bitcoin source; not evidence of a coin-specific protocol event or price causation.",
+      "reason": "Context from Bitcoin source; not evidence of a coin-specific protocol event or price causation. Source date independently corrected for ETH; original source entry retained in snapshot.",
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2022-03-03",
-          "text": "US crypto order reported",
+          "date": "2022-03-09",
+          "text": "US crypto executive order",
           "hit": 0
         }
       ],
-      "factCheckNote": "Source dates US crypto order March 3; executive order signing date needs independent check."
+      "dateCorrection": {
+        "checkedOn": "2026-10-27",
+        "originalSourceDate": "2022-03-03",
+        "previousTarget": {
+          "date": "2022-03-03",
+          "text": "US crypto order reported",
+          "hit": 0
+        },
+        "verifiedDate": "2022-03-09",
+        "primarySource": "https://www.federalregister.gov/documents/2022/03/14/2022-05471/ensuring-responsible-development-of-digital-assets",
+        "explanation": "Executive Order 14067 was signed March 9, not March 3."
+      }
     },
     {
       "sourceId": 208,
@@ -1728,16 +1739,27 @@
       "sourceId": 220,
       "sourceDate": "2023-03-03",
       "status": "stored",
-      "reason": "Context from Bitcoin source; not evidence of a coin-specific protocol event or price causation.",
+      "reason": "Context from Bitcoin source; not evidence of a coin-specific protocol event or price causation. Source date independently corrected for ETH; original source entry retained in snapshot.",
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2023-03-03",
-          "text": "Silvergate closure reported",
+          "date": "2023-03-08",
+          "text": "Silvergate liquidation announced",
           "hit": 0
         }
       ],
-      "factCheckNote": "Source dates closure March 3; winding-down announcement date needs independent check."
+      "dateCorrection": {
+        "checkedOn": "2026-10-27",
+        "originalSourceDate": "2023-03-03",
+        "previousTarget": {
+          "date": "2023-03-03",
+          "text": "Silvergate closure reported",
+          "hit": 0
+        },
+        "verifiedDate": "2023-03-08",
+        "primarySource": "https://www.sec.gov/Archives/edgar/data/1312109/000131210923000058/ex991sipressrelease3x8x23.htm",
+        "explanation": "March 3 was the SEN discontinuation announcement; liquidation was announced March 8."
+      }
     },
     {
       "sourceId": 221,

@@ -46,3 +46,18 @@ altcoin timeline or all news coverage. Source-date conflicts are explicitly flag
 
 PROJECT.md §14 thay thế ghi chú hiển thị cũ: thu thập đủ 0/1/2 cho mọi coin; BTC ẩn 0, mọi altcoin hiện đủ 0/1/2.
 Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit và các nguồn dữ liệu vẫn được giữ nguyên.
+
+## Corrections verified 2026-10-27
+
+- Added Frontier Thawing (2015-09-07), staking deposit contract deployment (2020-10-14), Arrow Glacier (2021-12-09),
+  Gray Glacier (2022-06-30), and Bellatrix (2022-09-06), per https://ethereum.org/ethereum-forks .
+  These new entries remain quiet level 0; they are visible under the altcoin rule. No new SFX or chapter is implied.
+- Executive Order 14067 signing date corrected from 2022-03-03 to 2022-03-09:
+  https://www.federalregister.gov/documents/2022/03/14/2022-05471/ensuring-responsible-development-of-digital-assets .
+- Silvergate liquidation announcement corrected from 2023-03-03 to 2023-03-08:
+  https://www.sec.gov/Archives/edgar/data/1312109/000131210923000058/ex991sipressrelease3x8x23.htm .
+  March 3 instead identifies the SEN discontinuation; do not label that as liquidation.
+- Per-event evidence: `corrections-20261027.json`. Both original 99Bitcoins source dates remain archived; corrected
+  target dates are explicitly linked in `99bitcoins-coverage.json`. Other coin datasets were not changed.
+- ETH now has 79 historical entries (53 level 0, 12 level 1, 14 level 2), plus 14 generated ATH/ATL labels.
+  This corrects the seven identified findings, not a claim that every remaining historical fact was independently checked.

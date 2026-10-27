@@ -1,5 +1,6 @@
 # date,kind,hit,tag,text
 2015-08-07,info,1,,First exchange trades
+2015-09-07,info,0,,Frontier Thawing upgrade
 2015-09-18,info,0,,CFTC Bitcoin commodity ruling
 2015-10-08,info,0,,Gemini exchange launches
 2015-10-22,info,0,,EU crypto VAT ruling
@@ -50,6 +51,7 @@
 2020-07-22,info,0,,US banks allowed crypto custody
 2020-09-25,info,0,,KuCoin exchange hack
 2020-10-01,info,0,,BitMEX executives charged
+2020-10-14,info,0,,Staking deposit contract
 2020-10-16,info,0,,OKEx suspends withdrawals
 2020-10-21,info,0,,PayPal crypto services
 2020-12-01,info,2,upgrade,Beacon Chain launches
@@ -59,13 +61,16 @@
 2021-08-05,info,2,upgrade,London: EIP-1559
 2021-09-24,info,0,,China bans all crypto
 2021-10-27,info,1,upgrade,Altair upgrade
-2022-03-03,info,0,,US crypto order reported
+2021-12-09,info,0,,Arrow Glacier upgrade
+2022-03-09,info,0,,US crypto executive order
 2022-05-07,down,2,,LUNA collapse
 2022-06-13,info,0,,Celsius halts withdrawals
+2022-06-30,info,0,,Gray Glacier upgrade
 2022-07-14,info,0,,Celsius files bankruptcy
+2022-09-06,info,0,,Bellatrix upgrade
 2022-09-15,info,2,upgrade,The Merge
 2022-11-11,down,2,,FTX bankruptcy
-2023-03-03,info,0,,Silvergate closure reported
+2023-03-08,info,0,,Silvergate liquidation announced
 2023-03-19,info,0,,Crypto rally amid bank turmoil
 2023-04-12,info,2,upgrade,Shapella: withdrawals
 2024-03-13,info,2,upgrade,Dencun: blobs go live

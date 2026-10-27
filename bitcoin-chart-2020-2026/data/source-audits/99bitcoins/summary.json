@@ -16,17 +16,22 @@
     },
     "ETH": {
       "added": 48,
-      "total": 74,
+      "total": 79,
       "byLevel": {
         "1": 12,
-        "2": 14,
-        "0": 48
+        "0": 53,
+        "2": 14
       },
       "coverage": {
         "outside_coin_history": 47,
         "not_applicable": 135,
         "stored": 52
-      }
+      },
+      "subsequentOfficialSourceAdditions": 5,
+      "independentlyCorrectedSourceDates": [
+        207,
+        220
+      ]
     },
     "BNB": {
       "added": 41,

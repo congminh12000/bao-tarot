@@ -18,7 +18,7 @@ This is a coverage audit of a named source, not certification of every event in 
 | Coin | Added level 0 | Total historical rows | Level 0 / 1 / 2 | Reviewed source IDs |
 | --- | ---: | ---: | --- | --- |
 | BTC | 119 | 238 | 119 / 102 / 17 | 234/234 |
-| ETH | 48 | 74 | 48 / 12 / 14 | 234/234 |
+| ETH | 48 + 5 official milestones | 79 | 53 / 12 / 14 | 234/234 |
 | BNB | 41 | 74 | 41 / 20 / 13 | 234/234 |
 | XRP | 55 | 131 | 111 / 6 / 14 | 234/234 |
 
@@ -51,3 +51,6 @@ film displays levels 1/2 for BTC and levels 0/1/2 for every altcoin (PROJECT.md 
 
 PROJECT.md §14 thay thế ghi chú hiển thị cũ: thu thập đủ 0/1/2 cho mọi coin; BTC ẩn 0, mọi altcoin hiện đủ 0/1/2.
 Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit và các nguồn dữ liệu vẫn được giữ nguyên.
+
+ETH follow-up: five official milestones added, source #207 and #220 dates corrected with primary sources. Original
+source dates remain in the snapshot and correction records. Other coins retain their existing review flags.

@@ -298,6 +298,14 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- ETH sửa dữ liệu (27/10/2026): thêm 5 mốc chính thức còn thiếu (Frontier Thawing, hợp đồng staking, Arrow Glacier,
+  Gray Glacier, Bellatrix); sửa ngày sắc lệnh Mỹ thành 09/03/2022 và Silvergate thanh lý thành 08/03/2023.
+  Giữ ngày nguồn 99Bitcoins trong snapshot, ghi ánh xạ/nguyên nhân sửa riêng. Tổng ETH 79 sự kiện (53/12/14 mức 0/1/2),
+  93 nhãn kể cả ATH/ATL. `--strict`, audit live và kiểm tra nhãn toàn timeline ✓, không nhãn rời sớm.
+  Preview 01/02–15/10/2022, 16:9 480p 60 fps, 38,92 s, `verify` ✓; lưu
+  `out/renders/eth-preview-corrected-events-480p60/`. Chờ duyệt preview, chưa render final.
+  Nguồn từng chỉnh sửa: `coins/ETH/data/corrections-20261027.json`.
+
 - Hiển thị altcoin (27/10/2026): đã áp dụng §14 trong `make-data.js`, thêm mức 0 vào xếp nhãn tương lai `film.js`.
   BTC vẫn ẩn mức 0; ETH/BNB/XRP hiển thị toàn bộ sự kiện (74/74/131). Kiểm tra nhãn toàn timeline 3 altcoin ✓;
   ETH/BNB mỗi coin có 1 nhãn cũ rời sớm theo phương án cuối cùng đã duyệt, XRP không có. Nhạc/phase không đổi.

@@ -1,0 +1,77 @@
+{
+  "checkedOn": "2026-10-27",
+  "scope": "Five missing ETH milestones and two previously identified incorrect shared-event dates; not a complete independent fact-check of every event.",
+  "events": [
+    {
+      "date": "2015-09-07",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Frontier Thawing upgrade",
+      "sources": [
+        "https://ethereum.org/ethereum-forks"
+      ],
+      "notes": "Mainnet milestone UTC date verified against the official Ethereum timeline; provisional quiet level 0."
+    },
+    {
+      "date": "2020-10-14",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Staking deposit contract",
+      "sources": [
+        "https://ethereum.org/ethereum-forks"
+      ],
+      "notes": "Mainnet milestone UTC date verified against the official Ethereum timeline; provisional quiet level 0."
+    },
+    {
+      "date": "2021-12-09",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Arrow Glacier upgrade",
+      "sources": [
+        "https://ethereum.org/ethereum-forks"
+      ],
+      "notes": "Mainnet milestone UTC date verified against the official Ethereum timeline; provisional quiet level 0."
+    },
+    {
+      "date": "2022-06-30",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Gray Glacier upgrade",
+      "sources": [
+        "https://ethereum.org/ethereum-forks"
+      ],
+      "notes": "Mainnet milestone UTC date verified against the official Ethereum timeline; provisional quiet level 0."
+    },
+    {
+      "date": "2022-09-06",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Bellatrix upgrade",
+      "sources": [
+        "https://ethereum.org/ethereum-forks"
+      ],
+      "notes": "Mainnet milestone UTC date verified against the official Ethereum timeline; provisional quiet level 0."
+    },
+    {
+      "date": "2022-03-09",
+      "text": "US crypto executive order",
+      "sources": [
+        "https://www.federalregister.gov/documents/2022/03/14/2022-05471/ensuring-responsible-development-of-digital-assets"
+      ],
+      "notes": "Corrected date; original 99Bitcoins source date and mapping retained in 99bitcoins-coverage.json."
+    },
+    {
+      "date": "2023-03-08",
+      "text": "Silvergate liquidation announced",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1312109/000131210923000058/ex991sipressrelease3x8x23.htm"
+      ],
+      "notes": "Corrected date; original 99Bitcoins source date and mapping retained in 99bitcoins-coverage.json."
+    }
+  ]
+}
