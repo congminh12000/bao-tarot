@@ -32,4 +32,9 @@ Full ETH data and music are restored after the preview. Preserve the BTC exports
 
 Latest totals and source scope supersede earlier preparation counts above: see `../../data/source-audits/99bitcoins/README.md`.
 All 234 source IDs reviewed for this coin in `data/99bitcoins-coverage.json`, with stored targets or exclusion reasons.
-All previous official-source and level-1/2 events are preserved; new supplementary entries are level 0 and not rendered.
+All previous official-source and level-1/2 events are preserved; supplementary level-0 entries are now rendered for this altcoin under PROJECT.md §14.
+
+## Quy tắc hiển thị mới — 27/10/2026
+
+PROJECT.md §14 thay thế ghi chú hiển thị cũ: thu thập đủ 0/1/2 cho mọi coin; BTC ẩn 0, mọi altcoin hiện đủ 0/1/2.
+Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit và các nguồn dữ liệu vẫn được giữ nguyên.

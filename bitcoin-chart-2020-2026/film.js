@@ -297,7 +297,7 @@
   const PLACE = [];
   // a short's day past the end is the first days again, ÷LOOPK (the loop runs on): a label near the end keeps clear of them
   const dayHL = (d) => (d < NDAYS ? DAYS[d] : DAYS[d - S.LOOPLEN].map((v) => v / S.LOOPK));
-  const sizeOf = (e) => (SHORT ? (e.big ? 40 : 28) : e.big ? 34 : 22); // hit 2 (milestone / crisis) ~50% bigger than hit 1
+  const sizeOf = (e) => (SHORT ? (e.big ? 40 : 28) : e.big ? 34 : 22); // hit 2 (milestone / crisis) ~50% bigger than quiet levels 0/1
   const dhOf = (e) => (e.big ? (SHORT ? 38 : 32) : 0); // hit 2 carries its date under the box: the room it takes
   const CAMS = new Map();
   const camAt = (t) => { const key = Math.round(t * 1000); if (CAMS.has(key)) return CAMS.get(key); const c = camera(t); return { X: (d) => d * c.ppd - c.off, Y: (p) => Y1 - ((Math.log(p) - c.lo) / (c.hi - c.lo)) * (Y1 - Y0), c }; }; // eslint-disable-line
@@ -366,7 +366,7 @@
     const others = [];
     for (let m = 0; m < n; m++) { const o = EVENTS[m]; if (o.t <= e.t && placeLabel(m).exit > e.t) others.push(m); }
     // (a turn label does not give way to them: the labels still to come find room around it instead)
-    const coming = EVENTS.map((o, m) => ({ o, m })).filter(({ o, m }) => !turn && m > n && o.hit > 0 && o.t > e.t && o.t < e.t + 20)
+    const coming = EVENTS.map((o, m) => ({ o, m })).filter(({ o, m }) => !turn && m > n && o.t > e.t && o.t < e.t + 20)
       .map(({ o }) => ({ o, h: sizeOf(o) * 1.3 + dhOf(o), bw: measure(MEASURE, o.text.toUpperCase(), sizeOf(o), 800) + PAD * 2, up: o.kind !== 'down' }));
     const samples = [];
     for (let ts = gridFrom(e.t); ts < DUR_END; ts += GRID) {

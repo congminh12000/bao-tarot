@@ -33,7 +33,7 @@ Sitemap discovery cannot prove that no unindexed, removed, future or differently
 search failure, 404, redirect or plain price chart with an empty historical event list. Refresh and investigate as needed.
 Source titles/dates are source claims, not independent fact checks. In particular source #44 (sentencing), #207 (US order)
 and #220 (Silvergate) need primary-source date review; the coverage files flag these rather than silently rewriting source dates.
-New imports are research level 0 pending editorial/factual review; none are automatically promoted to visible labels.
+New imports retain level 0 and their factual-review notes; under PROJECT.md §14 they are visible on altcoins, hidden on BTC.
 
 ## Verify / refresh workflow
 
@@ -45,4 +45,9 @@ python3 audit-99bitcoins.py --live   # additionally fail if live source IDs, dat
 On source changes, update the snapshot and reconcile **every** new/changed ID for **every** configured coin; retain
 excluded/out-of-range items with reasons. Record retrieval and actual latest source-event dates. Never overwrite an
 approved correction or TradingView price with an unchecked article claim. Keep all research levels 0/1/2; the visible
-film continues to use levels 1/2 only until a display change is requested.
+film displays levels 1/2 for BTC and levels 0/1/2 for every altcoin (PROJECT.md §14).
+
+## Quy tắc hiển thị mới — 27/10/2026
+
+PROJECT.md §14 thay thế ghi chú hiển thị cũ: thu thập đủ 0/1/2 cho mọi coin; BTC ẩn 0, mọi altcoin hiện đủ 0/1/2.
+Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit và các nguồn dữ liệu vẫn được giữ nguyên.

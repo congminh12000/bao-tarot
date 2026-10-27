@@ -106,9 +106,11 @@ nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn,
 
 - Nguồn: `data/events.csv` (`date,kind,hit,tag,text`) — 99Bitcoins (ATH theo TradingView), người dùng soạn/kiểm chứng.
   `tag`: để trống, hoặc `halving` = sự kiện nội tại đặc biệt → nhãn **màu vàng** (#FFC93C, cỡ mức 1), còn hiện khi zoom-out.
-  `kind`: up/down/info. **Hai mức hiển thị**: `hit 1` = quan trọng, `hit 2` = rất quan trọng (cột mốc / khủng hoảng).
+  `kind`: up/down/info. **Hiển thị theo coin**: BTC chỉ mức 1/2; mọi altcoin hiện đủ mức 0/1/2.
+  `hit 0` = bổ sung (nhãn xám nhỏ, không SFX/hiệu ứng như mức 1), `hit 1` = quan trọng, `hit 2` = cột mốc / khủng hoảng.
   **Thu thập và lưu đầy đủ cả mức 0/1/2 cho mọi coin** (yêu cầu 27/10/2026); không bỏ sự kiện nguồn vì mức 0.
-  Thu thập tách biệt hiển thị: `make-data.js` vẫn lọc mức 0 khỏi phim cho đến khi người dùng yêu cầu đổi hiển thị.
+  Quy tắc hiển thị mới (27/10/2026): `make-data.js` chỉ lọc mức 0 khi `COIN=BTC`; mọi altcoin hiện đủ 0/1/2.
+  Áp dụng cả phim dài, preview và Shorts; mức 0 tham gia xếp nhãn/chống chồng lấn, không thêm SFX, không đổi phase/nhạc.
   Đối chiếu bắt buộc §13; sự kiện BTC-only không được tự gán thành sự kiện riêng của altcoin.
 - Nội dung sự kiện **ngắn gọn hết mức** (≤ ~30 ký tự, tối đa 38), tiếng Anh, không bịa nguyên nhân.
 - Số tiền viết gọn: `$266`, `$1.2K`, `$19.8K`, `$109K`, `$41M`, `$1.5B` (1 chữ số lẻ khi < 100 đơn vị).
@@ -296,14 +298,20 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- Hiển thị altcoin (27/10/2026): đã áp dụng §14 trong `make-data.js`, thêm mức 0 vào xếp nhãn tương lai `film.js`.
+  BTC vẫn ẩn mức 0; ETH/BNB/XRP hiển thị toàn bộ sự kiện (74/74/131). Kiểm tra nhãn toàn timeline 3 altcoin ✓;
+  ETH/BNB mỗi coin có 1 nhãn cũ rời sớm theo phương án cuối cùng đã duyệt, XRP không có. Nhạc/phase không đổi.
+  Preview XRP 01/09/2024–28/02/2025, 480p 60 fps, 27,91 s, 6 mức 0 + 1 mức 1 + 1 mức 2 lịch sử và ATH tự tạo;
+  `verify` ✓, lưu `out/renders/xrp-preview-all-levels-480p60/`. Chờ người dùng xem preview; chưa render final.
+
 - Audit 99Bitcoins (27/10/2026): đã đối chiếu 234/234 ID cho từng BTC/ETH/BNB/XRP, có lý do cho từng mục ngoài phạm vi
   hoặc không áp dụng; khôi phục 119 mức 0 BTC, bổ sung ETH 48 / BNB 41 / XRP 55 mức 0. Tổng dữ liệu: BTC 238,
-  ETH 74, BNB 74, XRP 131. Mức 1/2 không đổi; hiển thị phim vẫn chỉ 1/2. Chi tiết/giới hạn: §13 và README audit.
+  ETH 74, BNB 74, XRP 131. Mức 1/2 không đổi; quy tắc hiển thị sau đó đã cập nhật: BTC 1/2, altcoin 0/1/2. Chi tiết/giới hạn: §13 và README audit.
 
 - XRP mức 0 (27/10/2026): đã bổ sung 56 sự kiện nghiên cứu có nguồn; tổng dữ liệu 76 dòng
   (56 mức 0, 6 mức 1, 14 mức 2), chưa tính 10 ATH/ATL tự tạo. Nhóm nâng cấp cùng ngày để tránh đếm phồng.
   Không phải danh sách đầy đủ mọi sự kiện; phạm vi và nguồn từng dòng ở `coins/XRP/data/level0-sources.json`.
-  Dữ liệu tạo cho video không đổi (SHA-256 khớp trước/sau), nên preview đã lưu vẫn dùng được; mức 0 chưa hiển thị.
+  Tại thời điểm thu thập, dữ liệu phim không đổi. Đã được thay thế bởi quy tắc mới: altcoin hiện cả mức 0; cần preview mới.
 
 - XRP (27/10/2026): đã tạo `coins/XRP/` theo §11; TradingView 04/08/2013–26/10/2026, 4.805 nến thật,
   27 ngày thiếu được nối và đánh dấu ước tính; 20 sự kiện có nguồn, 11 phase / 11 bài đã duyệt không lặp.
@@ -348,7 +356,7 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
 2. **Giá**: `COIN=<SYMBOL> node fetch-tradingview.js` → `coins/<SYMBOL>/data/tradingview/`.
 3. **Sự kiện**: trang "historical price/events" của **99Bitcoins** cho đồng đó (mở bằng trình duyệt nếu WebFetch bị chặn);
    nếu 99Bitcoins không có, dùng nguồn uy tín khác và **ghi rõ nguồn**. Cùng định dạng `date,kind,hit,tag,text`, cả mức
-   0/1/2 (lưu nghiên cứu đầy đủ theo §13, hiển thị vẫn chỉ 1/2), chữ ngắn, tiếng Anh, không bịa nguyên nhân; `tag` cho sự kiện nội tại đặc biệt của giao thức (Bitcoin: `halving`,
+   0/1/2 (lưu đầy đủ theo §13; BTC hiển thị 1/2, altcoin hiển thị 0/1/2), chữ ngắn, tiếng Anh, không bịa nguyên nhân; `tag` cho sự kiện nội tại đặc biệt của giao thức (Bitcoin: `halving`,
    ETH: nâng cấp mạng…). ATH/ATL do `score.js` tự gắn. Ghi nguồn vào `coin.json` (`eventsSource`).
 4. **Logo**: tự tìm trên Google, **phải chính xác** — logo chính thức (trang chủ / brand kit của dự án), nền trong suốt,
    kích thước ≥ 512 px → `coins/<SYMBOL>/logo.png`; tạo `logo-negative.png`
@@ -398,3 +406,15 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
 - Audit đầu tiên: `data/source-audits/99bitcoins/README.md`, snapshot 234 mục; từng coin có `data/99bitcoins-coverage.json`
   (BTC dùng `data/` gốc). Chỉ tìm thấy bảng lịch sử BTC, mục mới nhất 15/07/2025; không có bảng riêng ETH/BNB/XRP trong
   các URL/sitemap đã kiểm tra. Đây là giới hạn nguồn, không phải bảo đảm lịch sử ba altcoin đã đầy đủ tuyệt đối.
+
+
+## 14. Hiển thị sự kiện theo coin — đã yêu cầu 27/10/2026
+
+- Mọi coin vẫn thu thập đầy đủ sự kiện nguồn mức 0/1/2 và giữ audit §13.
+- Riêng **Bitcoin/BTC ẩn mức 0**, chỉ vẽ mức 1/2. **Tất cả altcoin** (ETH, BNB, XRP và coin thêm sau này)
+  **hiển thị toàn bộ mức 0/1/2** trong phạm vi dữ liệu phim; áp dụng phim dài, preview và Shorts.
+- Mức 0 = nhãn xám nhỏ như mức 1, không SFX/flash/shake. Chỉ mức 2 có hiệu ứng như cũ. Mức 0 tham gia đầy đủ
+  xếp nhãn, chừa chỗ cho nhãn sắp tới và kiểm tra chồng lấn. Không bỏ nhãn vì mức thấp.
+- Không tự thay mức dữ liệu, phase, tempo hay thứ tự nhạc. ATH/ATL tự tạo vẫn là mức 2. Các quy tắc kết phim và
+  bỏ nhãn điểm chuyển đầu Shorts vẫn áp dụng như trước; không phải giữ mọi nhãn trên màn hình mãi mãi.
+- §14 thay thế mọi ghi chú cũ "mức 0 chưa hiển thị" trong tài liệu bàn giao trước thời điểm thay đổi này.

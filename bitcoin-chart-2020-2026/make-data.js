@@ -139,12 +139,12 @@ const money = (v) => {
 };
 const shortMoney = (t) => t.replace(/\$(\d{1,3}(?:,\d{3})+)(?![\d.,]*[KMB])/g, (_, n) => money(+n.replace(/,/g, '')));
 
-// only hit 1 (important) and hit 2 (milestone / crisis) are shown; hit 0 rows are dropped
+// BTC shows levels 1/2 only; altcoins show every stored level (0/1/2). Collection keeps all levels.
 const events = csvRows(path.join(DIR, 'events.csv')).map((l) => {
   const p = l.split(','); // date,kind,hit,tag,text (tag: empty, or a special event such as halving)
   const tag = p[3].trim();
   return { date: p[0].trim(), kind: p[1].trim(), hit: +p[2], ...(tag ? { tag } : {}), text: shortMoney(p.slice(4).join(',').trim()) };
-}).filter((e) => e.hit >= 1 && e.date >= FROM && e.date <= TO);
+}).filter((e) => e.hit >= (COIN.symbol === 'BTC' ? 1 : 0) && e.date >= FROM && e.date <= TO);
 
 // market phases (data/phases.csv, from detect-phases.js): clipped to this range, with the cue each one plays
 const LIB = require('./data/music');

@@ -60,3 +60,5 @@ COIN=ETH node youtube-chapters.js
 Tuân thủ PROJECT.md §13: lưu đủ nghiên cứu 0/1/2; đối chiếu từng ID 99Bitcoins bằng `data/99bitcoins-coverage.json`
 (BTC: `data/` gốc). Chạy `python3 audit-99bitcoins.py --live` cho toàn bộ coin trước khi báo hoàn tất và trước final.
 Trang giá hoặc redirect sang BTC không phải timeline altcoin; luôn ghi rõ giới hạn nguồn.
+
+Hiển thị theo PROJECT.md §14: BTC chỉ 1/2; **mọi altcoin hiện đủ 0/1/2**, gồm cả Shorts. Mức 0 nhỏ/xám, không SFX.

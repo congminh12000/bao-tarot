@@ -41,3 +41,8 @@ in `../../../data/source-audits/99bitcoins/discovery.json`. Every one of the 234
 coin relevance decision in `99bitcoins-coverage.json`; applicable shared/coin-specific context is stored, missing
 entries added as level 0. Excluded BTC-only items remain in the shared snapshot. No claim of an exhaustive dedicated
 altcoin timeline or all news coverage. Source-date conflicts are explicitly flagged in the coverage file.
+
+## Quy tắc hiển thị mới — 27/10/2026
+
+PROJECT.md §14 thay thế ghi chú hiển thị cũ: thu thập đủ 0/1/2 cho mọi coin; BTC ẩn 0, mọi altcoin hiện đủ 0/1/2.
+Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit và các nguồn dữ liệu vẫn được giữ nguyên.

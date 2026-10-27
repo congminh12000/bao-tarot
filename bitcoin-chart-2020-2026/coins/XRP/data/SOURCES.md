@@ -62,9 +62,9 @@ No missing dates are invented. Announcement dates are distinguished from incorpo
 Ripple corporate partnerships do not automatically imply XRP use; records explicitly note that distinction.
 Level-0 assignment is a provisional editorial research classification, not an externally verified impact measure.
 
-Visible video input remains byte-for-byte identical after `COIN=XRP node make-data.js --strict`, because the existing
-generator filters hit 0. The already kept XRP previews remain valid; no picture or audio rerender is required for this
-research-only addition. Showing level 0 in the film requires a separate requested display change and preview.
+At the original collection step, video input was byte-for-byte identical because the old generator filtered hit 0.
+The user subsequently requested the display change in PROJECT.md §14: XRP now shows level 0 as well, and needs a new
+preview. Older previews show only their original selected events and do not validate the new complete label layout.
 
 ## 99Bitcoins completeness audit — 2026-10-27
 
@@ -74,3 +74,8 @@ in `../../../data/source-audits/99bitcoins/discovery.json`. Every one of the 234
 coin relevance decision in `99bitcoins-coverage.json`; applicable shared/coin-specific context is stored, missing
 entries added as level 0. Excluded BTC-only items remain in the shared snapshot. No claim of an exhaustive dedicated
 altcoin timeline or all news coverage. Source-date conflicts are explicitly flagged in the coverage file.
+
+## Quy tắc hiển thị mới — 27/10/2026
+
+PROJECT.md §14 thay thế ghi chú hiển thị cũ: thu thập đủ 0/1/2 cho mọi coin; BTC ẩn 0, mọi altcoin hiện đủ 0/1/2.
+Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit và các nguồn dữ liệu vẫn được giữ nguyên.

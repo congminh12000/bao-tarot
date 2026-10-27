@@ -19,8 +19,10 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
   explicit exclusion reason; record source discovery/redirects and snapshot coverage. Never substitute BTC events
   for an altcoin-specific history or claim complete altcoin coverage from a price page/search failure.
   Run `python3 audit-99bitcoins.py --live` before declaring source coverage complete and before a final render.
-  Report source limits and unresolved date conflicts. Collection does not enable level 0 in the visible video.
-- Events shown in the video: only hit 1 and hit 2 (never hit 0); text as short as possible; money as $1.2K / $19.8K / $41M / $1.5B.
+  Report source limits and unresolved date conflicts. BTC displays levels 1/2; ALL altcoins display levels 0/1/2.
+- Video visibility: BTC hides hit 0; ALL altcoins show hit 0, hit 1 and hit 2. Hit 0 uses the quiet small grey label,
+  with no SFX or visual effect (same treatment as hit 1); include it in collision avoidance and never omit labels.
+- Events: text as short as possible; money as $1.2K / $19.8K / $41M / $1.5B.
   hit 1 = small grey label, no SFX, no effect; hit 2 = big label + SFX + strong visual effect. Check `node check-labels.js`.
 - One cue per phase of data/phases.csv, never a change inside a phase. Music mastered to -16 LUFS (no voice-over).
 - Keep the phase badge beside the live price (`PHASE_BADGE = 'price'` in `look.js`), independent of the disabled chart overlay (`PHASE_OVERLAY = 'none'`).

@@ -3,7 +3,7 @@
 // - The chart rides a tempo map: inside a phase a bar always shows the same number of days at the cue's tempo; at every
 //   ALL-TIME HIGH / LOW the CHART slows down for ~3 s, then picks up again. (The music itself keeps its cue's steady
 //   tempo and only changes cue at the turn: song.js plays each phase on its own clock from TB(phase start).)
-// - Every event with hit ≥ 1 in data/events.csv is a hit in the music and a flash on screen, on the same frame.
+// - Visible levels 0/1 are quiet labels; only level 2 triggers synchronized music/SFX and visual effects.
 // Add data, phases or events, run `node make-data.js`, and the whole film re-times itself.
 (function () {
   const node = typeof require !== 'undefined';
