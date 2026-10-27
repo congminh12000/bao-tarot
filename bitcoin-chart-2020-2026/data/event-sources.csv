@@ -1,0 +1,239 @@
+# date,source,url,text   (PROJECT.md §15: one row per source of each events.csv row; date + text match it)
+2009-01-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#genesis-block-established,Genesis block
+2009-10-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-liberty-standard-publishes-first-exchange-rate,First quoted BTC exchange rate
+2009-10-12,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#the-first-bitcoin-to-fiat-exchange-occurs,Early BTC sale for fiat money
+2010-05-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#two-pizzas-are-first-material-item-purchased-using-bitcoin,Bitcoin Pizza Day
+2010-07-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-posted-on-slashdot,Slashdot features Bitcoin
+2010-07-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mt-gox-opens-for-business,Mt. Gox opens
+2010-08-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-protocol-bug-causes-hard-fork,Overflow bug
+2010-12-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#first-mainstream-article-on-bitcoin-in-pc-world,PC World publishes Bitcoin coverage
+2011-02-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-hits-1-00-usd,BTC hits $1
+2011-03-27,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#three-new-exchanges-open-supporting-more-fiat-currencies,New exchanges add fiat trading pairs
+2011-06-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#gawker-publishes-article-about-the-silk-road,Gawker publishes Silk Road report
+2011-06-08,TradingView INDEX:BTCUSD,https://www.tradingview.com/symbols/BTCUSD/?exchange=INDEX,ALL-TIME HIGH: $32
+2011-06-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mt-gox-hacked,Mt. Gox hacked
+2011-12-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#the-good-wife-airs-bitcoin-for-dummies-tv-episode,The Good Wife Bitcoin episode
+2012-02-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paxum-and-tradehill-drop-bitcoin,Paxum & Tradehill drop BTC
+2012-03-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#linode-hacked-over-46000-btc-stolen,Linode BTC theft
+2012-08-17,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoins-savings-trust-halts-payments,BTCST halts payouts
+2012-11-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#wordpress-accepts-bitcoin,WordPress takes BTC
+2012-11-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#halving-day,1st halving
+2013-03-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-0-8-causes-brief-hard-fork,v0.8 chain split
+2013-03-25,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cyprus-bail-in,Cyprus bail-in
+2013-04-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#increased-trading-volume-breaks-mt-gox,ALL-TIME HIGH: $266
+2013-05-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#dhs-seizure-warrant-against-mt-gox,DHS seizes Mt. Gox funds
+2013-08-30,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tradehill-shuts-down-again,Tradehill suspends operations again
+2013-10-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#dread-pirate-roberts-arrested,Silk Road shut
+2013-11-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-senate-holds-hearing-on-bitcoin,US Senate hearing
+2013-11-20,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#peoples-bank-of-china-oks-bitcoin,PBoC comments on Bitcoin use
+2013-11-29,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#exchange-rate-peaks-at-1242-on-mt-gox,ALL-TIME HIGH: $1.2K
+2013-12-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinese-government-bans-financial-institutions-from-using-bitcoin,China bank ban
+2014-02-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#major-exchanges-hit-with-ddos-attacks,Exchange DDoS
+2014-02-24,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mt-gox-closes,Mt. Gox collapses
+2014-03-06,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#newsweek-claims-dorian-nakamoto-is-bitcoins-creator,Newsweek alleges Dorian is Satoshi
+2014-03-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#irs-declares-bitcoin-to-be-taxed-as-property,IRS: BTC taxed as property
+2014-04-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinese-exchanges-bank-accounts-closed,China closes bank accounts
+2014-06-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mining-pool-ghash-io-reaches-51,GHash.io 51% scare
+2014-06-27,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-marshals-service-auctions-29656-seized-bitcoins,US Marshals auction seized BTC
+2014-07-17,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-york-dfs-releases-proposed-bitlicense,BitLicense draft
+2014-07-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#dell-accepts-bitcoin,Dell introduces BTC payments
+2014-09-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paypal-subsidiary-braintree-to-accept-bitcoin,Braintree plans BTC payments
+2014-10-06,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#the-slaying-of-bearwhale,BearWhale absorbed
+2014-12-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microsoft-accepts-bitcoin,Microsoft takes BTC
+2014-12-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#charlie-shrem-sentenced-to-2-years-in-prison,Charlie Shrem sentenced
+2015-01-04,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitstamp-hacked,Bitstamp hacked
+2015-01-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-launches-us-licensed-exchange,Coinbase exchange opens
+2015-05-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ross-ulbricht-sentenced-to-life-in-prison,Ulbricht life-sentence milestone
+2015-06-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-york-state-releases-the-bitlicense,BitLicense final
+2015-07-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#2-federal-agents-plead-guilty-to-silk-road-theft,Silk Road agents' theft pleas
+2015-08-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mark-karpeles-arrested,Japanese police arrest Mark Karpeles
+2015-08-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-xt-fork-released,Bitcoin XT dispute
+2015-09-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-declared-as-a-commodity-by-the-us-regulator,CFTC: BTC is a commodity
+2015-10-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#gemini-exchange-launched,Gemini opens trading
+2015-10-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#eu-declares-no-vat-on-bitcoin-trades,EU: no VAT on BTC
+2015-10-31,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-featured-on-front-page-of-the-economist,Bitcoin on The Economist cover
+2015-11-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-sign-accepted-into-unicode,Unicode accepts Bitcoin symbol
+2015-12-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#gwern-and-wired-claim-craig-wright-is-probably-satoshi-nakamoto,WIRED alleges Wright is Satoshi
+2016-01-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mike-hearn-quits-bitcoin-a-k-a-the-hearnia,Mike Hearn quits
+2016-02-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-roundtable-consensus,Scaling roundtable
+2016-04-04,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#openbazaar-launched,OpenBazaar marketplace opens
+2016-04-27,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#steam-accepts-bitcoin,Steam adds BTC payment option
+2016-05-02,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#craig-wright-claims-to-be-bitcoins-creator,Craig Wright claims Satoshi identity
+2016-07-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#second-halving-day,2nd halving
+2016-08-02,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitfinex-hacked,Bitfinex hacked
+2016-11-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#donald-trump-elected-as-president-market-plummet,Markets react to Trump win
+2017-01-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-breaks-1000-for-the-first-time-in-3-years,Back above $1K
+2017-03-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#sec-denies-winkelvos-etf,SEC rejects Winklevoss ETF
+2017-03-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#sec-denies-second-bitcoin-etf-application,SEC rejects another BTC ETF
+2017-04-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japan-declares-bitcoin-as-legel-tender,Japan legalizes BTC
+2017-08-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-splits-into-bitcoin-btc-and-bitcoin-cash-bch,Bitcoin Cash fork
+2017-09-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-companies-from-raising-money-through-icos,China bans ICOs
+2017-09-12,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#jamie-dimon-head-of-jp-morgan-calls-bitcoin-as-fraud,Jamie Dimon calls Bitcoin fraudulent
+2017-09-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-is-shutting-down-all-bitcoin-and-cryptocurrency-exchanges,China shuts exchanges
+2017-10-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-breaks-5000-for-the-first-time,BTC > $5K
+2017-10-25,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hardfork-bitcoin-gold-goes-live,Bitcoin Gold fork launches
+2017-10-31,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cme-announces-to-launch-bitcoin-futures,CME futures announced
+2017-11-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#segwit2x-cancelled,SegWit2x called off
+2017-11-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-breaks-10000-for-the-first-time,BTC > $10K
+2017-12-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cboe-bitcoin-futures-are-launched,Cboe futures launch
+2017-12-17,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-hit-all-time-high-just-below-20000,ALL-TIME HIGH: $19.8K
+2017-12-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korea-threatens-to-shut-down-cryptocurrency-exchanges,Korea crackdown
+2018-01-02,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#report-says-early-facebook-investor-peter-thiel-is-buying-massive-amounts,Report: Thiel fund buys BTC
+2018-01-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinmarketcap-drops-south-korea-prices-from-cryptocurrency-rates-and-regulator-inspects-cryptocurrency-bank-accounts,CMC drops Korea prices
+2018-01-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#80-of-the-total-bitcoin-supply-has-been-mined,80% of BTC supply mined
+2018-01-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-coincheck-exchange-halts-withdrawals-after-being-hacked,Coincheck hacked
+2018-01-30,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-bans-all-ads-promoting-cryptocurrency,Facebook bans crypto ads
+2018-03-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-sec-says-crypto-exchanges-must-register-with-agency,SEC: exchanges must register
+2018-03-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#google-bans-crypto-advertisements,Google restricts crypto ads
+2018-03-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-announces-ban-on-cryptocurrency-ads,Twitter restricts crypto ads
+2018-04-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#indian-exchange-coinsecure-hit-by-3-5-million-bitcoin-theft,Coinsecure reports BTC theft
+2018-05-02,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#goldman-sachs-announces-to-open-a-bitcoin-trading-operation,Goldman plans BTC trading
+2018-05-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#prosecutors-raid-largest-south-korean-exchange,Prosecutors raid Korean exchange
+2018-05-24,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-justice-department-launches-criminal-probe-into-bitcoin-price-manipulation,DOJ probes BTC manipulation
+2018-06-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korean-crypto-exchange-coinrail-has-been-hacked,Coinrail reports exchange hack
+2018-06-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-regulator-demands-trading-data-from-bitcoin-exchanges-in-manipulation-probe,US seeks exchange trading records
+2018-06-20,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korean-cryptocurrency-exchange-bithumb-was-hacked,Bithumb reports exchange theft
+2018-06-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-lifting-ban-on-crypto-ads,Facebook eases crypto ad ban
+2018-07-16,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#blackrock-looks-into-crypto-and-blockchain,BlackRock studies crypto
+2018-07-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#winklevoss-twins-bitcoin-etf-is-rejected-by-the-sec,SEC rejects ETF again
+2018-08-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#nyses-owner-ice-announced-the-launch-of-bakkt-a-federal-regulated-market-for-bitcoin,Bakkt announced
+2018-08-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#sec-delays-decision-on-bitcoin-etfs,SEC postpones Bitcoin ETF decision
+2018-09-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#goldman-sachs-drops-crypto-trading-plans,Report: Goldman delays crypto desk
+2018-09-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-zaif-exchange-hacked-loosing-about-60m-in-crypto,Zaif reports crypto exchange theft
+2018-10-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fidelity-launches-institutional-platform-for-cryptocurrencies,Fidelity custody
+2018-10-31,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-turns-10-years-old,Bitcoin whitepaper tenth anniversary
+2018-11-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-cash-hard-fork,BCH hash war
+2018-12-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-mining-difficulty-dropped-significantly,BTC mining difficulty drops
+2018-12-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fake-bomb-threats-across-us-demanding-bitcoin-ransom,Bomb threats demand BTC ransom
+2018-12-29,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#electrum-wallet-attack,Electrum wallet phishing attack
+2018-12-31,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#institutional-crypto-exchange-bakkt-raised-182m-funding,Bakkt announces $182M funding
+2019-01-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#proof-of-keys-movement,Proof of Keys self-custody campaign
+2019-01-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitwise-files-for-new-bitcoin-etf-with-sec,Bitwise submits BTC ETF application
+2019-01-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinstar-machines-start-selling-bitcoin-at-grocery-stores-across-us,Coinstar adds BTC purchases
+2019-01-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cboe-withdraws-vaneck-bitcoin-etf-application,Cboe withdraws VanEck ETF proposal
+2019-01-31,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cboe-resubmits-the-vaneck-solidx-bitcoin-etf-proposal-for-sec-approval,Cboe refiles VanEck-SolidX ETF
+2019-02-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#canadian-crypto-exchange-quadrigacx-goes-bankrupt,QuadrigaCX collapse
+2019-03-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-working-on-its-own-cryptocurrency,Report: Facebook develops crypto
+2019-03-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mt-gox-founder-gets-suspended-sentence,Karpeles gets suspended sentence
+2019-03-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cboe-stops-listing-bitcoin-futures-contracts,Cboe stops new BTC futures listings
+2019-03-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitwise-study-finds-majority-of-bitcoin-trading-volume-is-faked-by-unregulated-exchanges,Bitwise reports fake BTC volume
+2019-03-29,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#sec-postpones-decision-on-bitwise-vaneck-bitcoin-etf-proposals,SEC delays Bitwise & VanEck ETFs
+2019-04-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-wants-to-ban-bitcoin-mining,China weighs BTC mining limits
+2019-04-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#major-exchanges-delists-bitcoin-sv,Exchanges delist Bitcoin SV
+2019-04-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitfinex-and-tether-faces-investigation-over-alleged-850m-shortfall,Bitfinex/Tether probe
+2019-05-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#binance-exchange-hackers-steals-41m-worth-of-bitcoin,Binance $41M hack
+2019-05-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#australian-who-says-he-invented-bitcoin-files-for-copyright,Wright files BTC copyright claims
+2019-05-30,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#another-applicant-files-for-bitcoin-copyright,Another BTC copyright claim
+2019-06-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-entrepreneur-to-pay-4-6-million-for-charity-lunch-with-bitcoin-skeptic-warren-buffett,Justin Sun wins Buffett lunch
+2019-06-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bakkt-names-launch-date-for-bitcoin-futures-testing,Bakkt announces futures testing date
+2019-06-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-trades-flat-on-facebook-libra-blockchain-launch,Facebook Libra
+2019-07-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#president-trump-comments-on-bitcoin,Trump publicly comments on Bitcoin
+2019-08-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#scammer-demands-300-bitcoin-from-binance-in-kyc-data-ransom,Binance faces KYC-data ransom demand
+2019-08-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-exchange-acquires-xapo-bitcoin-vault,Coinbase buys Xapo custody
+2019-08-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#self-proclaimed-bitcoin-inventor-is-ordered-to-pay-billions-in-bitcoin,Wright faces BTC court order
+2019-09-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#vaneck-solidx-to-offer-bitcoin-etf-like-product-to-institutions,VanEck/SolidX BTC product
+2019-09-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#long-awaited-bitcoin-futures-launched-on-bakkt,Bakkt futures launch
+2019-10-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#unicef-accepts-crypto-donations,UNICEF accepts crypto donations
+2019-10-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#satoshi-is-added-to-oxford-dictionary,Oxford dictionary adds satoshi
+2019-10-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-flirts-with-10000-after-china-endorses-blockchain,China blockchain push
+2019-10-29,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinese-bitcoin-mining-machine-maker-canaan-files-for-u-s-ipo,Canaan files US IPO paperwork
+2019-11-04,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#research-suggest-bitcoin-price-rally-in-2017-december-was-manipulated,Study alleges 2017 BTC manipulation
+2019-11-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ny-regulator-licenses-fidelity-for-bitcoin-trading-and-custody,New York licenses Fidelity crypto
+2019-12-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitclub-network-ponzi-scheme-busted,BitClub operators face Ponzi charges
+2019-12-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#youtube-bans-crypto-videos-by-mistake,YouTube removes crypto in error
+2020-01-06,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-breakout-amid-us-iran-tensions,BTC rises during US-Iran tensions
+2020-01-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#cme-group-launched-bitcoin-options,CME options launch
+2020-01-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#peter-schiffs-bitcoin-wallet-vanishing-act-is-the-most-boomer-thing-ever,Schiff reports lost wallet access
+2020-01-29,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#second-city-in-switzerland-accepting-tax-payments-in-bitcoin,Swiss town adds BTC tax payments
+2020-02-02,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-adds-bitcoin-emoji,Twitter introduces Bitcoin emoji
+2020-02-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#lightning-labs-raises-10m-series-a-funding,Lightning Labs secures $10M funding
+2020-02-17,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fcoin-exchange-shuts-down-after-becoming-insolvent,FCoin shuts down: insolvent
+2020-03-04,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#indian-supreme-court-lifts-ban-on-bitcoin-trading,India lifts bank ban
+2020-03-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-loses-half-of-its-value-in-two-day-plunge,COVID crash: -50% in 2 days
+2020-03-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-tops-as-fed-cuts-interest-rates-to-0-and-restarts-qe,Fed: 0% rates + QE
+2020-03-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-rally-on-feds-qe-bazooka,Rally on Fed QE
+2020-03-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microsoft-patents-new-cryptocurrency-system-using-body-activity-data,Microsoft body-data crypto patent
+2020-04-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#binance-acquired-coinmarketcap-for-400m,Report: Binance buys CoinMarketCap
+2020-04-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-cash-undergoes-halving-event,Bitcoin Cash reduces block subsidy
+2020-04-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#first-public-bitcoin-fund-listed-on-toronto-stock-exchange,BTC fund lists in Toronto
+2020-05-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#billionaire-paul-tudor-jones-buys-bitcoin-as-a-hedge-against-inflation,Paul Tudor Jones buys
+2020-05-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#third-bitcoin-halving,3rd halving
+2020-05-25,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-miners-in-china-ordered-to-shut-down-in-orderly-manner,China orders miners to shut down
+2020-06-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-zealand-police-seize-91-million-from-russian-bitcoin-exchange-operator,NZ seizes exchange-linked funds
+2020-07-02,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#researchers-expose-flaw-in-bitcoin-wallets,Bitcoin wallet flaw disclosed
+2020-07-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-accounts-hacked-by-bitcoin-thieves,Twitter hacked for BTC scam
+2020-07-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-green-lights-banks-for-cryptocurrency-custody-services,OCC: banks may hold crypto
+2020-08-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#nasdaq-listed-microstrategy-buy-21453-bitcoin-as-primary-reserve-asset,MicroStrategy buys BTC
+2020-08-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-seizes-bitcoin-said-to-be-used-to-finance-terrorist-groups,US seizes terror-linked crypto
+2020-08-31,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#someone-lost-16m-in-bitcoin-by-using-a-malicious-install-of-the-electrum-wallet,Electrum user reports update theft
+2020-09-25,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#kucoin-exchange-hacked-for-150-million-in-bitcoin,KuCoin hacked
+2020-10-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#owners-of-bitmex-a-leading-bitcoin-exchange-face-criminal-charges,BitMEX charged
+2020-10-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#square-buys-50-million-in-bitcoin-using-99bitcoins-guide,Square buys $50M
+2020-10-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#asset-manager-stone-ridge-reveals-10000-bitcoin-purchase,Stone Ridge reveals 10000 BTC
+2020-10-16,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#okex-exchange-suspending-withdrawals-as-private-key-holder-is-out-of-contact,OKEx freezes withdrawals
+2020-10-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paypal-allows-bitcoin-and-crypto-spending,PayPal adds crypto
+2020-11-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-government-seized-1-billion-in-bitcoin-from-dark-web-marketplace-silk-road,US seizes $1B in Silk Road BTC
+2020-11-16,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#leaked-citibank-report-reveals-bitcoin-could-rocket-to-300000-price-by-end-of-2021,Citibank BTC forecast leaks
+2020-12-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microstrategy-is-raising-money-so-it-can-buy-more-crypto,MicroStrategy plans BTC debt raise
+2020-12-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#169-year-old-massmutual-invests-100-million-in-bitcoin,MassMutual buys $100M
+2020-12-16,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-passes-20k-for-the-first-time-leaving-2017s-all-time-high-price-behind,BTC > $20K: 2017 peak broken
+2020-12-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-files-for-ipo,Coinbase files confidential listing
+2020-12-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ripple-xrp-plunges-as-sec-argues-the-cryptocurrency-isnt-a-currency,SEC sues Ripple
+2021-01-29,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-spikes-20-after-elon-musk-adds-bitcoin-to-his-twitter-bio,Musk's Bitcoin bio
+2021-02-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tesla-buys-1-5-billion-in-bitcoin,Tesla buys $1.5B
+2021-02-12,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#canada-approves-first-bitcoin-etf,Canada BTC ETF
+2021-02-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#square-buys-170-million-worth-of-bitcoin,Square buys $170M
+2021-03-17,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#morgan-stanley-becomes-the-first-big-u-s-bank-to-offer-its-wealthy-clients-access-to-bitcoin-funds,Morgan Stanley BTC funds
+2021-03-24,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tesla-accept-bitcoin-as-payment,Tesla takes BTC
+2021-04-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hits-new-all-time-high-above-63000-ahead-of-coinbase-debut,BTC > $63K
+2021-04-14,TradingView INDEX:BTCUSD,https://www.tradingview.com/symbols/BTCUSD/?exchange=INDEX,ALL-TIME HIGH: $64.9K | Coinbase lists
+2021-05-12,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tesla-no-longer-accepts-bitcoin,Tesla drops BTC
+2021-05-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-financial-institutions-from-cryptocurrency-business,China crypto ban
+2021-06-04,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#elon-musk-tweets-broken-heart-emoji-for-bitcoin,Musk's Bitcoin broken-heart tweet
+2021-06-06,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#el-salvadors-president-proposes-using-bitcoin-as-legal-tender,Bukele: BTC legal tender
+2021-06-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-department-of-justice-seizes-2mln-in-bitcoin,DOJ recovers roughly $2M in BTC
+2021-06-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinas-crackdown-on-cryptocurrency-mining,China mining ban
+2021-07-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#square-plans-to-make-a-bitcoin-hardware-wallet,Square plans Bitcoin hardware wallet
+2021-07-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#square-is-building-decentralized-finance-business-using-bitcoin,Square plans Bitcoin DeFi
+2021-07-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#amazon-rumours-tumble-bitcoin,Amazon crypto-payment rumors
+2021-08-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#amc-will-accept-bitcoin,AMC announces BTC payment plans
+2021-09-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-becomes-a-legal-tender-in-el-salvador,El Salvador adopts BTC
+2021-09-17,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-fans-unveils-statue-of-bitcoin-founder-satoshi-nakamoto,Satoshi statue unveiled
+2021-09-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-enables-bitcoin-tipping,Twitter adds BTC tips
+2021-09-24,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-all-cryptocurrency-transactions,China bans all crypto
+2021-10-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#first-bitcoin-etf-launches-in-the-u-s,US futures ETF launch
+2021-11-10,TradingView INDEX:BTCUSD,https://www.tradingview.com/symbols/BTCUSD/?exchange=INDEX,ALL-TIME HIGH: $69K
+2021-11-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoins-biggest-upgrade-in-4-years-goes-live,Taproot activates
+2021-11-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#el-salvador-builds-bitcoin-city-from-1bn-bitcoin-bonds,El Salvador plans Bitcoin City bonds
+2022-02-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#doj-seized-3-6bn-bitcoin-from-bitfinex-hack,DOJ recovers Bitfinex-linked $3.6B
+2022-02-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-free-bitcoin-super-bowl-ad-causes-site-to-briefly-crash,Coinbase Super Bowl ad crashes site
+2022-02-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-trading-against-the-ruble-surges-as-russias-currency-crashes,BTC/ruble trading jumps
+2022-03-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-announced-crypto-executive-order,US crypto order
+2022-04-27,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#central-african-republic-becomes-second-country-to-adopt-bitcoin-as-legal-tender,CAR adopts BTC
+2022-05-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#luna-and-terrausd-crashes-crypto-market,LUNA collapse
+2022-06-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-lender-celsius-pauses-withdrawals,Celsius freezes
+2022-06-29,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microstrategy-buys-10m-of-bitcoin,MicroStrategy adds $10M in BTC
+2022-07-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#troubled-crypto-lender-celsius-files-for-bankruptcy,Celsius bankrupt
+2022-07-20,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tesla-sold-75-of-its-bitcoin-holdings,Tesla sells 75%
+2022-08-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#blackrock-launches-spot-bitcoin-private-trust,BlackRock BTC trust
+2022-11-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ftx-crypto-exchange-files-for-bankruptcy,FTX bankrupt
+2022-11-30,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#european-central-bank-says-bitcoin-is-on-the-road-to-irrelevance,ECB publishes criticism of Bitcoin
+2022-12-20,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-crypto-miner-core-scientific-files-for-bankcrupcy,Core Scientific bankrupt
+2022-12-29,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microstrategy-sells-bitcoin-for-the-first-time,MicroStrategy reveals first BTC sale
+2023-01-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ordinals-protocol-introduces-bitcoin-nfts,Ordinals launch
+2023-03-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-friendly-silvergate-bank-voluntarily-closes,Silvergate collapse
+2023-03-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-government-sells-bitcoin-seized-from-silk-road,US sells seized Silk Road BTC
+2023-03-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#banking-crisis-rallies-bitcoin,Rally on bank crisis
+2023-06-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#blackrock-files-for-ishares-spot-bitcoin-etf,BlackRock files ETF
+2023-06-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#major-investment-firms-refile-application-for-spot-bitcoin-etf,Managers refile spot BTC ETFs
+2024-01-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#spot-bitcoin-application-approval-in-the-united-states,Spot ETFs approved
+2024-03-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hits-new-all-time-high,ALL-TIME HIGH: $73.8K
+2024-04-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fourth-bitcoin-halving,4th halving
+2024-05-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hits-1-billion-transactions,1B transactions
+2024-11-06,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#a-new-ath-for-bitcoin-as-trump-wins-the-presidential-race,Trump wins: new high
+2024-12-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-crosses-100k-for-the-first-time-to-reach-a-new-ath,BTC > $100K
+2025-01-20,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-hits-a-new-ath-over-109k-on-trump-inauguration-day,ALL-TIME HIGH: $109K | Inauguration
+2025-03-06,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-establishes-a-strategic-bitcoin-reserve,US Bitcoin reserve
+2025-05-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-crosses-110k-level-for-the-first-time,BTC > $110K
+2025-07-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-breaks-120k-july-14th-2025,BTC > $120K
+2025-10-06,TradingView INDEX:BTCUSD,https://www.tradingview.com/symbols/BTCUSD/?exchange=INDEX,ALL-TIME HIGH: $126K

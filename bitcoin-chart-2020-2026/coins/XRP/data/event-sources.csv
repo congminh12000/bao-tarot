@@ -1,0 +1,205 @@
+# date,source,url,text   (PROJECT.md §15: one row per source of each events.csv row; date + text match it)
+2013-08-30,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tradehill-shuts-down-again,Tradehill shuts down
+2013-11-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-senate-holds-hearing-on-bitcoin,US Senate crypto hearing
+2013-12-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinese-government-bans-financial-institutions-from-using-bitcoin,China bank ban
+2014-02-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#major-exchanges-hit-with-ddos-attacks,Exchanges hit by DDoS attacks
+2014-02-24,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mt-gox-closes,Mt. Gox collapses
+2014-03-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#irs-declares-bitcoin-to-be-taxed-as-property,IRS crypto tax guidance
+2014-04-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#chinese-exchanges-bank-accounts-closed,China closes exchange accounts
+2014-05-05,Ripple,https://ripple.com/ripple-press/ripple-labs-announces-fidor-bank-ag-as-first-bank-to-use-the-ripple-protocol/,Fidor adopts Ripple protocol
+2014-07-17,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-york-dfs-releases-proposed-bitlicense,BitLicense proposal
+2014-09-24,Ripple,https://ripple.com/insights/ripple-labs-signs-first-two-us-banks/,First US banks join Ripple
+2015-01-04,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitstamp-hacked,Bitstamp hack
+2015-01-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-launches-us-licensed-exchange,Coinbase exchange launches
+2015-05-05,FinCEN,https://www.fincen.gov/news/news-releases/fincen-fines-ripple-labs-inc-first-civil-enforcement-action-against-virtual,FinCEN $700K penalty
+2015-06-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-york-state-releases-the-bitlicense,BitLicense rules released
+2015-08-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mark-karpeles-arrested,Mt. Gox CEO arrested
+2015-09-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-declared-as-a-commodity-by-the-us-regulator,CFTC Bitcoin commodity ruling
+2015-10-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#gemini-exchange-launched,Gemini exchange launches
+2015-10-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#eu-declares-no-vat-on-bitcoin-trades,EU crypto VAT ruling
+2016-01-28,Ripple,https://ripple.com/ripple-press/ripple-strikes-multi-national-deal-with-sbi-holdings-to-meet-growing-demand-for-ripple-solutions-across-asia/,SBI venture announced
+2016-05-19,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,FeeEscalation enabled
+2016-05-19,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/5B1F1E8E791A9C243DD728680F108FEF1F28F21BA3B202B8F66E7833CA71D3C3,FeeEscalation enabled
+2016-06-27,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,MultiSign enabled
+2016-06-27,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/168F8B15F643395E59B9977FC99D6310E8708111C85659A9BAF8B9222EEAC5A7,MultiSign enabled
+2016-07-19,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,TrustSetAuth enabled
+2016-07-19,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/0E589DE43C38AED63B64FF3DA87D349A038F1821212D370E403EB304C76D70DF,TrustSetAuth enabled
+2016-08-02,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitfinex-hacked,Bitfinex hack
+2016-10-21,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,Flow enabled
+2016-10-21,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/C06CE3CABA3907389E4DD296C5F31C73B1548CC20BD7B83416C78CD7D4CD38FC,Flow enabled
+2017-01-03,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,CryptoConditions enabled
+2017-01-03,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/8EB00131E1C3DB35EDFF45C155D941E18C3E86BC1934FF987D2DA204F4065F15,CryptoConditions enabled
+2017-02-21,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,TickSize enabled
+2017-02-21,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/A12430E470BE5C846759EAE3C442FF03374D5D73ECE5815CF4906894B769565E,TickSize enabled
+2017-03-31,XRPL Standards,https://xls.xrpl.org/xls/XLS-0011-retiring-amendments.html,Escrow + payment channels
+2017-07-07,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,EnforceInvariants + 1 upgrades
+2017-07-07,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/17593B03F7D3283966F3C0ACAF4984F26E9D884C9A202097DAED0523908E76C6,EnforceInvariants + 1 upgrades
+2017-07-07,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/7EBA3852D111EA19D03469F6870FAAEBF84C64F1B9BAC13B041DDD26E28CA399,EnforceInvariants + 1 upgrades
+2017-09-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-companies-from-raising-money-through-icos,China bans ICOs
+2017-09-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-is-shutting-down-all-bitcoin-and-cryptocurrency-exchanges,China shuts exchanges
+2017-11-14,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,SortedDirectories + 4 upgrades
+2017-11-14,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/B1157116DDDDA9D9B1C4A95C029AC335E05DB052CECCC5CA90118A4D46C77C5E,SortedDirectories + 4 upgrades
+2017-11-14,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/63F69F59BEFDC1D79DBF1E4060601E05960683AA784926FB74BC55074C4F6647,SortedDirectories + 4 upgrades
+2017-11-14,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/97FD0E35654F4B6714010D3CBBAC4038F60D64AD0292693C28A1DF4B796D8469,SortedDirectories + 4 upgrades
+2017-11-14,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/27AEE02DA4FE22B6BB479F850FBBC873FDC7A09A8594753A91B53098D726397E,SortedDirectories + 4 upgrades
+2017-11-14,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/6E2309C156EBF94D03B83D282A3914671BF9168FB26463CFECD068C63FFFAB29,SortedDirectories + 4 upgrades
+2017-11-16,Ripple,https://ripple.com/insights/american-express-joins-ripplenet-giving-visibility-and-speed-to-global-commercial-payments/,Amex joins RippleNet
+2017-12-08,Ripple,https://ripple.com/insights/ripple-escrows-55-billion-xrp-for-supply-predictability/,55B XRP locked in escrow
+2017-12-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korea-threatens-to-shut-down-cryptocurrency-exchanges,Korea exchange shutdown warning
+2018-01-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinmarketcap-drops-south-korea-prices-from-cryptocurrency-rates-and-regulator-inspects-cryptocurrency-bank-accounts,CMC removes Korean price feeds
+2018-01-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-coincheck-exchange-halts-withdrawals-after-being-hacked,Coincheck hack; withdrawals halt
+2018-01-30,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-bans-all-ads-promoting-cryptocurrency,Facebook bans crypto ads
+2018-03-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-sec-says-crypto-exchanges-must-register-with-agency,SEC exchange registration notice
+2018-03-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#google-bans-crypto-advertisements,Google bans crypto ads
+2018-03-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-announces-ban-on-cryptocurrency-ads,Twitter bans crypto ads
+2018-04-06,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,DepositAuth + 1 upgrades
+2018-04-06,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/902C51270B918B40CD23A622E18D48B4ABB86F0FF4E84D72D9E1907BF3BD4B25,DepositAuth + 1 upgrades
+2018-04-06,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/57FE540B8B8E2F26CE8B53D1282FEC55E605257E29F5B9EB49E15EA3989FCF6B,DepositAuth + 1 upgrades
+2018-05-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#prosecutors-raid-largest-south-korean-exchange,Upbit prosecutors raid
+2018-06-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korean-crypto-exchange-coinrail-has-been-hacked,Coinrail exchange hack
+2018-06-19,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2018-06-19,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/920AA493E57D991414B614FB3C1D1E2F863211B48129D09BC8CB74C9813C38FC,XRPL maintenance: 1 fix
+2018-06-20,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korean-cryptocurrency-exchange-bithumb-was-hacked,XRPL maintenance: 1 fix
+2018-06-20,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2018-06-20,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/4D218D86A2B33E29F17AA9C25D8DFFEE5D2559F75F7C0B1D016D3F2C2220D3EB,XRPL maintenance: 1 fix
+2018-06-21,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2018-06-21,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/EA6054C9D256657014052F1447216CEA75FFDB1C9342D45EB0F9E372C0F879E6,XRPL maintenance: 1 fix
+2018-06-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-lifting-ban-on-crypto-ads,Facebook eases crypto ad ban
+2018-07-16,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#blackrock-looks-into-crypto-and-blockchain,BlackRock explores crypto
+2018-09-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#goldman-sachs-drops-crypto-trading-plans,Goldman crypto desk report
+2018-09-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-zaif-exchange-hacked-loosing-about-60m-in-crypto,Zaif exchange hack
+2018-10-01,Justia (court filing),https://docs.justia.com/cases/federal/district-courts/new-york/nysdce/1%3A2020cv10832/551082/51,xRapid commercial launch
+2018-10-09,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,DepositPreauth + 1 upgrades
+2018-10-09,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/AD27403CB840AE67CADDB084BC54249D7BD1B403885819B39CCF723DC671F927,DepositPreauth + 1 upgrades
+2018-10-09,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/6DF60D9EC8AF3C39B173840F4D1C57F8A8AB51E7C6571483B4A5F1AA0A9AAEBF,DepositPreauth + 1 upgrades
+2018-10-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fidelity-launches-institutional-platform-for-cryptocurrencies,Fidelity crypto platform
+2019-02-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#canadian-crypto-exchange-quadrigacx-goes-bankrupt,QuadrigaCX bankruptcy
+2019-03-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-working-on-its-own-cryptocurrency,Facebook crypto project report
+2019-03-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitwise-study-finds-majority-of-bitcoin-trading-volume-is-faked-by-unregulated-exchanges,Fake trading volume study
+2019-03-23,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2019-03-23,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/7A80C87F59BCE6973CBDCA91E4DBDB0FC5461D3599A8BC8EAD02FA590A50005D,XRPL maintenance: 1 fix
+2019-04-02,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2019-04-02,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/C42335E95F1BD2009A2C090EA57BD7FB026AD285B4B85BE15F669BA4F70D11AF,XRPL maintenance: 1 fix
+2019-04-17,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,MultiSignReserve enabled
+2019-04-17,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/C421E1D08EFD78E6B8D06B085F52A34A681D0B51AE62A018527E1B8F54C108FB,MultiSignReserve enabled
+2019-04-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitfinex-and-tether-faces-investigation-over-alleged-850m-shortfall,Bitfinex + Tether investigation
+2019-05-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#binance-exchange-hackers-steals-41m-worth-of-bitcoin,Binance exchange hack
+2019-06-17,SEC,https://www.sec.gov/Archives/edgar/data/1273931/000119312519174813/d766773d8k.htm,MoneyGram partnership
+2019-06-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-trades-flat-on-facebook-libra-blockchain-launch,Facebook Libra announced
+2019-08-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#scammer-demands-300-bitcoin-from-binance-in-kyc-data-ransom,Binance KYC ransom demand
+2019-10-02,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2019-10-02,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/61096F8B5AFDD8F5BAF7FC7221BA4D1849C4E21B1BA79733E44B12FC8DA6EA20,XRPL maintenance: 1 fix
+2019-10-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#unicef-accepts-crypto-donations,UNICEF accepts crypto donations
+2019-10-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-flirts-with-10000-after-china-endorses-blockchain,China endorses blockchain
+2019-12-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#youtube-bans-crypto-videos-by-mistake,YouTube crypto video ban error
+2020-02-17,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fcoin-exchange-shuts-down-after-becoming-insolvent,FCoin exchange insolvency
+2020-03-04,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#indian-supreme-court-lifts-ban-on-bitcoin-trading,India lifts crypto banking ban
+2020-03-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-loses-half-of-its-value-in-two-day-plunge,COVID market crash
+2020-03-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-tops-as-fed-cuts-interest-rates-to-0-and-restarts-qe,Fed rate cuts + QE
+2020-03-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-rally-on-feds-qe-bazooka,Fed expands QE
+2020-03-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microsoft-patents-new-cryptocurrency-system-using-body-activity-data,Microsoft crypto patent
+2020-05-01,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 2 fixes
+2020-05-01,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/74AFEA8C17D25CA883D40F998757CA3B0DB1AC86794335BAA25FF20E00C2C30A,XRPL maintenance: 2 fixes
+2020-05-01,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/D2F8E457D08ACB185CDE3BB9BB1989A9052344678566785BACFB9DFDBDEDCF09,XRPL maintenance: 2 fixes
+2020-05-08,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,DeletableAccounts enabled
+2020-05-08,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/47B90519D31E0CB376B5FEE5D9359FA65EEEB2289F1952F2A3EB71D623B945DE,DeletableAccounts enabled
+2020-06-18,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,Checks enabled
+2020-06-18,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/D88F2DCDFB10023F9F6CBA8DF34C18E321D655CAC8FDB962387A5DB1540242A6,Checks enabled
+2020-07-03,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,RequireFullyCanonicalSig enabled
+2020-07-03,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/94D8B158E948148B949CC3C35DD5DC4791D799E1FD5D3CE0E570160EDEF947D3,RequireFullyCanonicalSig enabled
+2020-07-09,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2020-07-09,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/5F8E9E9B175BB7B95F529BEFE3C84253E78DAF6076078EC450A480C861F6889E,XRPL maintenance: 1 fix
+2020-07-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-green-lights-banks-for-cryptocurrency-custody-services,US banks allowed crypto custody
+2020-08-04,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,FlowCross enabled
+2020-08-04,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/44C4B040448D89B6C5A5DEC97C17FEDC2E590BA094BC7DB63B7FDC888B9ED78F,FlowCross enabled
+2020-09-25,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#kucoin-exchange-hacked-for-150-million-in-bitcoin,KuCoin exchange hack
+2020-10-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#owners-of-bitmex-a-leading-bitcoin-exchange-face-criminal-charges,BitMEX executives charged
+2020-10-16,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#okex-exchange-suspending-withdrawals-as-private-key-holder-is-out-of-contact,OKEx suspends withdrawals
+2020-10-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paypal-allows-bitcoin-and-crypto-spending,PayPal crypto services
+2020-12-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-files-for-ipo,Coinbase files for IPO
+2020-12-22,SEC,https://www.sec.gov/newsroom/press-releases/2020-338,SEC sues Ripple
+2020-12-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ripple-xrp-plunges-as-sec-argues-the-cryptocurrency-isnt-a-currency,XRP falls after SEC complaint
+2021-04-08,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,HardenedValidations + 2 upgrades
+2021-04-08,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/DA59F10201D651B544F65896330AFACA8CA4198904265AD279D56781F655FAFB,HardenedValidations + 2 upgrades
+2021-04-08,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/5B3ACE6CAC9C56D2008410F1B0881A0A4A8866FB99D2C2B2261C86C760DC95EF,HardenedValidations + 2 upgrades
+2021-04-08,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/3A45DCF055B68DCBBFE034240F9359FB22E8A64B1BF7113304535BF5BB8144BF,HardenedValidations + 2 upgrades
+2021-05-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-financial-institutions-from-cryptocurrency-business,China crypto ban
+2021-07-28,Ripple,https://ripple.com/insights/first-live-on-demand-liquidity-offering-in-japan/,XRP remittances launch in Japan
+2021-09-24,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-all-cryptocurrency-transactions,China bans all crypto
+2021-11-11,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,FlowSortStrands + 1 upgrades
+2021-11-11,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/AFF17321A012C756B64FCC3BA0FDF79109F28E244D838A28D5AE8A0384C7C532,FlowSortStrands + 1 upgrades
+2021-11-11,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/1C3D3BD2AFDAF326EBFEA54579A89B024856609DB4310F7140086AAB262D09A1,FlowSortStrands + 1 upgrades
+2021-11-18,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,TicketBatch + 1 upgrades
+2021-11-18,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/1F37BA0502576DD7B5464F47641FA95DEB55735EC2663269DFD47810505478E7,TicketBatch + 1 upgrades
+2021-11-18,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/111B32EDADDE916206E7315FBEE2DA1521B229F207F65DD314829F13C8D9CA36,TicketBatch + 1 upgrades
+2021-11-21,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,NegativeUNL enabled
+2021-11-21,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/1500FADB73E7148191216C53040990E829C7110788B26E7F3246CB3660769EBA,NegativeUNL enabled
+2022-03-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-announced-crypto-executive-order,US crypto order reported
+2022-05-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#luna-and-terrausd-crashes-crypto-market,LUNA collapse
+2022-06-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-lender-celsius-pauses-withdrawals,Celsius halts withdrawals
+2022-07-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#troubled-crypto-lender-celsius-files-for-bankruptcy,Celsius files bankruptcy
+2022-10-13,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,ExpandedSignerList enabled
+2022-10-13,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/802E2446547BB86397217E32A78CB9857F21B048B91C81BCC6EF837BE9C72C87,ExpandedSignerList enabled
+2022-10-27,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2022-10-27,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/2A67DB4AC65D688281B76334C4B52038FD56931694A6DD873B5CCD9B970AD57C,XRPL maintenance: 1 fix
+2022-10-31,XRPL.org,https://xrpl.org/blog/2022/non-fungible-tokens-are-now-available,XLS-20 NFTs go live
+2022-11-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ftx-crypto-exchange-files-for-bankruptcy,FTX bankrupt
+2023-01-23,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,CheckCashMakesTrustLine enabled
+2023-01-23,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/4C8546305583F72E056120B136EB251E7F45E8DFAAE65FDA33B22181A9CA4557,CheckCashMakesTrustLine enabled
+2023-03-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-friendly-silvergate-bank-voluntarily-closes,Silvergate closure reported
+2023-03-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#banking-crisis-rallies-bitcoin,Crypto rally amid bank turmoil
+2023-05-17,Ripple,https://ripple.com/ripple-press/leading-enterprise-crypto-company-ripple-acquires-custody-provider-metaco-for-250m/,Ripple acquires Metaco
+2023-07-13,SEC,https://www.sec.gov/files/litigation/litreleases/2025/settlement-agreement-26306.pdf,Ripple mixed court ruling
+2023-07-13,Justia (court filing),https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1%3A2020cv10832/551082/973/,Ripple mixed court ruling
+2023-08-21,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,DisallowIncoming + 4 upgrades
+2023-08-21,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/8747EF67D8CC1CA72A88817FBDF454507C3D9E8F0702D8E2B614958AE27A1D4E,DisallowIncoming + 4 upgrades
+2023-08-21,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/3AB0892CAB29F049B9D9E5D522701FD01469D0B97080626F8DD4B489D0B8784E,DisallowIncoming + 4 upgrades
+2023-08-21,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/4F4C05142CA1DE257CD86513086F0C99FAF06D80932377C6B6C02B3D09623A43,DisallowIncoming + 4 upgrades
+2023-08-21,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/EFE82B7155CE5B766AF343D98DAE6662C2713C99E760D610370D02338881B2F3,DisallowIncoming + 4 upgrades
+2023-08-21,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/65B8A4068B20696A866A07E5668B2AEB0451564E13B79421356FB962EC9A536B,DisallowIncoming + 4 upgrades
+2023-09-06,SBI Remit,https://www.remit.co.jp/en/kaigaisoukin/information/release20230906/,SBI expands XRP remittances
+2023-11-24,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2023-11-24,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/87723D9D01AFAD8E55C944D7D1598969A8FBD852FCACAE361A40CBF5D4CB3BB1,XRPL maintenance: 1 fix
+2023-11-27,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2023-11-27,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/CA4562711E4679FE9317DD767871E90A404C7A8B84FAFD35EC2CF0231F1F6DAF,XRPL maintenance: 1 fix
+2024-02-08,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,Clawback enabled
+2024-02-08,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/C6BCCE60DFA4430A1F9097D774EA49E6FEFB1B535BA0EF9170DA0F2D08CDDB11,Clawback enabled
+2024-03-22,XRPL.org,https://xrpl.org/blog/2024/amm-status-update,XRPL AMM goes live
+2024-03-25,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPFees enabled
+2024-03-25,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/4B6047F84B959B64FDD10E22D9E7CCC1EA0D228387462E8FF975B17F7C779021,XRPFees enabled
+2024-04-08,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2024-04-08,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/EC67D9DF8D06067A76E8F8F43BC036B5E0267568F8D92624A658AC01A8186235,XRPL maintenance: 1 fix
+2024-04-11,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 3 fixes
+2024-04-11,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/64144409D991726D108B89D79F9305438D61928A322EF1CD14DC3A5F24CE64BC,XRPL maintenance: 3 fixes
+2024-04-11,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/50286B4B9C95331A48D3AD517E1FD3299308C6B696C85E096A73A445E9EB1BFB,XRPL maintenance: 3 fixes
+2024-04-11,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/3209D6B66D375C23EEBE7C3DD3058B361427148D80C570B8E791D4C76555FA7B,XRPL maintenance: 3 fixes
+2024-04-12,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2024-04-12,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/D708CF1799A27CB982F16FCE4762DD12738737A61E5850480BA51400280E06C4,XRPL maintenance: 1 fix
+2024-08-07,Justia (court filing),https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1%3A2020cv10832/551082/973/,Ripple fined $125M
+2024-09-24,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 1 fix
+2024-09-24,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/8C8F5566464097BF1BAF7C645BB9E1762986844A052BBA3B9769F6564EEFAB71,XRPL maintenance: 1 fix
+2024-09-27,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 2 fixes
+2024-09-27,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/A858AE8832981D77A4C5038D633CC9CBD54C9764BD2A3F8CA174E02D1736F472,XRPL maintenance: 2 fixes
+2024-09-27,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/C7A9804E1F499ABBF38D791BAD25B1479DB1CEA4E9B6C5C08D6D4EF13F41E171,XRPL maintenance: 2 fixes
+2024-10-02,Reuters,https://www.reuters.com/technology/sec-appeals-decision-that-restricted-its-crypto-oversight-2024-10-02/,SEC files appeal
+2024-10-30,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,DID enabled
+2024-10-30,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/7239CF04E6E1EEC606269135DA3C916B82D4B010F5315E7AEB3D5A3B6B5B343D,DID enabled
+2024-11-02,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,PriceOracle enabled
+2024-11-02,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/05D03F7BF08BF4A915483F7B10EAC7016034656A54A8A6AD4A49A9AD362764A1,PriceOracle enabled
+2024-12-17,Ripple,https://ripple.com/ripple-press/raising-the-standard-for-stablecoins-ripple-usd-launches-globally/,Ripple USD launches
+2025-01-30,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,AMMClawback + 5 upgrades
+2025-01-30,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/8672DFD11FCF79F8E8F92E300187E8E533899ED8C8CF5AFB1A9C518195C16261,AMMClawback + 5 upgrades
+2025-01-30,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/71D5031A5BD927BDFE424E51699E69F2784097D615D0852BF20C168BA9B5EA76,AMMClawback + 5 upgrades
+2025-01-30,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/606FA84C4BA30F67582C11A39BBFC11A9D994E114CD515E9F63FC7D8701A8ED9,AMMClawback + 5 upgrades
+2025-01-30,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/426314C8BC64BA339E97E53B278602ADC44F115056274BF7971F694C9A8AF946,AMMClawback + 5 upgrades
+2025-01-30,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/2D9A29768A7FA4BAC01DF1941380077E304785279E5E49267EC269F53ABADF5A,AMMClawback + 5 upgrades
+2025-01-30,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/6D325D5EFF8230F1FECA3EE6418C9678637F3F56B0CA247013F70B3BDCFE75C8,AMMClawback + 5 upgrades
+2025-02-15,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,NFTokenMintOffer enabled
+2025-02-15,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/E74C0196A9D4F193DD2A1DB5CCC5E37D3D43A21E2CB6185F6797E9BF2EDBE36C,NFTokenMintOffer enabled
+2025-05-04,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,DeepFreeze enabled
+2025-05-04,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/976281D793337FF5377A36409F2A1432DADAB64DB5064E12E71B1AC491EA3021,DeepFreeze enabled
+2025-05-15,XRPL docs (GitHub),https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md,XRPL maintenance: 2 fixes
+2025-05-15,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/34F11D09E15EC3FE78FFB238EB33030A9E2F2B6233716712A4B7A9D13C55C89A,XRPL maintenance: 2 fixes
+2025-05-15,XRPL Explorer (livenet),https://livenet.xrpl.org/transactions/D53E906A53C46A9AACFEB0093DF26EFD8634C3DAF50A18930D7910C51FFE3E9D,XRPL maintenance: 2 fixes
+2025-06-12,Circle,https://www.circle.com/blog/now-available-usdc-on-the-xrpl,Native USDC launches on XRPL
+2025-08-07,SEC,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26369,SEC + Ripple dismiss appeals

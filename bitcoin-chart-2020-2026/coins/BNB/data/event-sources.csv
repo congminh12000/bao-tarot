@@ -1,0 +1,77 @@
+# date,source,url,text   (PROJECT.md §15: one row per source of each events.csv row; date + text match it)
+2017-09-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-companies-from-raising-money-through-icos,China bans ICOs
+2017-09-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-is-shutting-down-all-bitcoin-and-cryptocurrency-exchanges,China shuts exchanges
+2017-12-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korea-threatens-to-shut-down-cryptocurrency-exchanges,Korea exchange shutdown warning
+2018-01-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinmarketcap-drops-south-korea-prices-from-cryptocurrency-rates-and-regulator-inspects-cryptocurrency-bank-accounts,CMC removes Korean price feeds
+2018-01-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-coincheck-exchange-halts-withdrawals-after-being-hacked,Coincheck hack; withdrawals halt
+2018-01-30,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-bans-all-ads-promoting-cryptocurrency,Facebook bans crypto ads
+2018-03-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-sec-says-crypto-exchanges-must-register-with-agency,SEC exchange registration notice
+2018-03-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#google-bans-crypto-advertisements,Google bans crypto ads
+2018-03-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-announces-ban-on-cryptocurrency-ads,Twitter bans crypto ads
+2018-05-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#prosecutors-raid-largest-south-korean-exchange,Upbit prosecutors raid
+2018-06-10,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korean-crypto-exchange-coinrail-has-been-hacked,Coinrail exchange hack
+2018-06-20,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korean-cryptocurrency-exchange-bithumb-was-hacked,Bithumb exchange hack
+2018-06-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-lifting-ban-on-crypto-ads,Facebook eases crypto ad ban
+2018-07-16,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#blackrock-looks-into-crypto-and-blockchain,BlackRock explores crypto
+2018-09-05,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#goldman-sachs-drops-crypto-trading-plans,Goldman crypto desk report
+2018-09-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-zaif-exchange-hacked-loosing-about-60m-in-crypto,Zaif exchange hack
+2018-10-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fidelity-launches-institutional-platform-for-cryptocurrencies,Fidelity crypto platform
+2019-02-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#canadian-crypto-exchange-quadrigacx-goes-bankrupt,QuadrigaCX bankruptcy
+2019-03-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-working-on-its-own-cryptocurrency,Facebook crypto project report
+2019-03-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitwise-study-finds-majority-of-bitcoin-trading-volume-is-faked-by-unregulated-exchanges,Fake trading volume study
+2019-04-18,Binance,https://www.binance.com/en/blog/all/327036304672833536,Binance Chain mainnet
+2019-04-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitfinex-and-tether-faces-investigation-over-alleged-850m-shortfall,Bitfinex + Tether investigation
+2019-05-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#binance-exchange-hackers-steals-41m-worth-of-bitcoin,Binance $41M hack
+2019-06-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-trades-flat-on-facebook-libra-blockchain-launch,Facebook Libra announced
+2019-08-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#scammer-demands-300-bitcoin-from-binance-in-kyc-data-ransom,Binance KYC ransom demand
+2019-10-09,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#unicef-accepts-crypto-donations,UNICEF accepts crypto donations
+2019-10-28,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-flirts-with-10000-after-china-endorses-blockchain,China endorses blockchain
+2019-12-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#youtube-bans-crypto-videos-by-mistake,YouTube crypto video ban error
+2020-02-17,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fcoin-exchange-shuts-down-after-becoming-insolvent,FCoin exchange insolvency
+2020-03-04,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#indian-supreme-court-lifts-ban-on-bitcoin-trading,India lifts crypto banking ban
+2020-03-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-loses-half-of-its-value-in-two-day-plunge,COVID market crash
+2020-03-15,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-price-tops-as-fed-cuts-interest-rates-to-0-and-restarts-qe,Fed rate cuts + QE
+2020-03-23,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-rally-on-feds-qe-bazooka,Fed expands QE
+2020-03-26,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microsoft-patents-new-cryptocurrency-system-using-body-activity-data,Microsoft crypto patent
+2020-04-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#binance-acquired-coinmarketcap-for-400m,Binance acquires CoinMarketCap
+2020-07-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-green-lights-banks-for-cryptocurrency-custody-services,US banks allowed crypto custody
+2020-09-01,BNB Chain,https://www.bnbchain.org/en/blog/binance-smart-chain-2020-recap-building-the-defi-infrastructure,Smart Chain launches
+2020-09-25,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#kucoin-exchange-hacked-for-150-million-in-bitcoin,KuCoin exchange hack
+2020-10-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#owners-of-bitmex-a-leading-bitcoin-exchange-face-criminal-charges,BitMEX executives charged
+2020-10-16,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#okex-exchange-suspending-withdrawals-as-private-key-holder-is-out-of-contact,OKEx suspends withdrawals
+2020-10-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paypal-allows-bitcoin-and-crypto-spending,PayPal crypto services
+2020-12-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-files-for-ipo,Coinbase files for IPO
+2021-05-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-financial-institutions-from-cryptocurrency-business,China crypto ban
+2021-09-24,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-all-cryptocurrency-transactions,China bans all crypto
+2021-11-30,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,BEP-95 real-time burn
+2022-02-15,BNB Chain,https://www.bnbchain.org/en/blog/bsc-is-now-bnb-chain-the-infrastructure-for-the-metafi-universe,BNB Chain rebrand
+2022-03-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#u-s-announced-crypto-executive-order,US crypto order reported
+2022-05-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#luna-and-terrausd-crashes-crypto-market,LUNA collapse
+2022-06-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-lender-celsius-pauses-withdrawals,Celsius halts withdrawals
+2022-06-22,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Euler upgrade
+2022-07-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#troubled-crypto-lender-celsius-files-for-bankruptcy,Celsius files bankruptcy
+2022-10-06,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Token Hub exploit; chain halt
+2022-10-06,BNB Chain,https://www.bnbchain.org/en/blog/bnb-chain-ecosystem-update,Token Hub exploit; chain halt
+2022-10-12,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Moran security fix
+2022-11-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ftx-crypto-exchange-files-for-bankruptcy,FTX bankrupt
+2022-12-12,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Gibbs native staking
+2023-03-03,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-friendly-silvergate-bank-voluntarily-closes,Silvergate closure reported
+2023-03-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#banking-crisis-rallies-bitcoin,Crypto rally amid bank turmoil
+2023-04-12,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Planck upgrade
+2023-06-05,SEC,https://www.sec.gov/newsroom/press-releases/2023-101-sec-files-13-charges-against-binance-entities-founder-changpeng-zhao,SEC sues Binance
+2023-06-12,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Luban upgrade
+2023-08-10,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Plato fast finality
+2023-08-30,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Hertz upgrade
+2023-09-13,BNB Chain,https://www.bnbchain.org/en/blog/opbnb-mainnet-is-live,opBNB public mainnet
+2023-11-21,US Department of Justice,https://www.justice.gov/criminal/case/united-states-v-binance-holdings-limited-dba-binancecom,Binance guilty plea; CZ resigns
+2023-11-21,US Department of Justice,https://www.justice.gov/archives/opa/pr/binance-and-ceo-plead-guilty-federal-charges-4b-resolution,Binance guilty plea; CZ resigns
+2024-01-23,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Kepler upgrade
+2024-04-18,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Feynman: Chain Fusion
+2024-06-20,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Tycho + Haber upgrades
+2024-09-26,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Bohr upgrade
+2025-03-20,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Pascal upgrade
+2025-04-29,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Lorentz: 1.5s blocks
+2025-06-30,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Maxwell: 0.75s blocks
+2026-01-14,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Fermi: 0.45s blocks
+2026-04-28,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Mendel upgrade
+2026-08-25,BNB Chain forum,https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936,Pasteur upgrade

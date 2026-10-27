@@ -455,5 +455,7 @@ Không viết sự kiện, ngày hay con số từ trí nhớ hoặc suy đoán.
   Nguồn mâu thuẫn: ghi cả hai nguồn, chọn ngày có nguồn gốc mạnh hơn và ghi chú lý do (như `corrections-*.json`).
 - **Không tìm được nguồn đáng tin thì không thêm sự kiện** (hoặc báo người dùng). Không đoán ngày, không tự đặt nguyên nhân
   cho biến động giá. ATH/ATL tự tạo không cần dòng nguồn: nguồn là dữ liệu TradingView của coin đó.
+- Kiểm tra: `node check-event-sources.js` (coin hiện tại, `COIN=<SYMBOL>`) hoặc `--all` / `npm run audit:sources` (mọi coin):
+  báo sự kiện thiếu nguồn, dòng nguồn hỏng và dòng nguồn không khớp sự kiện nào; `npm run build` chạy lệnh này trước render final.
 - Khi báo hoàn tất cập nhật sự kiện: báo số sự kiện đã có nguồn / còn thiếu nguồn. Sự kiện cũ chưa có dòng nguồn phải
   được bổ sung khi chạm tới (sửa, duyệt lại, hoặc trước render final của coin đó).
