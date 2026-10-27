@@ -15,26 +15,24 @@ Uptrends and downtrends each have their own original score: heroic on the climbs
 Chapters:
 
 0:00 The first trades · ATH: the first exchange peak · ATL: the early trading drawdown
-0:21 ATH: the Homestead era · Homestead upgrade · ATL: after Homestead
-0:32 The DAO hack · ATH: the DAO era · The DAO fork
-0:46 Tangerine whistle · Spurious dragon · ATL: after the DAO fork
-1:18 Byzantium upgrade · ATH: before the crypto winter
-2:00 ATL: the crypto winter
-2:10 Constantinople upgrade
-2:37 Istanbul upgrade · Muir glacier upgrade
-2:47 COVID crash
-3:13 The Beacon Chain launches
-3:26 Berlin upgrade · ATH: before London · China crypto ban
-3:38 ATL: the mid-cycle retreat · London introduces EIP-1559
-3:50 Altair upgrade · ATH: the proof-of-work peak
-4:14 LUNA collapse · ATL: before The Merge
-4:30 The Merge · FTX bankruptcy
-4:50 Shapella enables withdrawals
-5:23 Dencun introduces blobs · Spot Ether ETFs approved
-6:04 Pectra upgrade
-6:15 ATH: after Pectra
-6:29 Fusaka upgrade
-6:54 ATL: after Fusaka
+0:19 ATH: the Homestead era · Homestead upgrade · ATL: after Homestead
+0:30 The DAO hack · ATH: the DAO era · The DAO fork
+0:43 Tangerine whistle · Spurious dragon · ATL: after the DAO fork
+1:16 Byzantium upgrade · ATH: before the crypto winter
+1:58 ATL: the crypto winter · Constantinople upgrade
+2:35 Istanbul upgrade · Muir glacier upgrade · COVID crash
+3:10 The Beacon Chain launches
+3:24 Berlin upgrade · ATH: before London · China crypto ban
+3:36 ATL: the mid-cycle retreat · London introduces EIP-1559
+3:47 Altair upgrade · ATH: the proof-of-work peak
+4:11 LUNA collapse · ATL: before The Merge
+4:27 The Merge · FTX bankruptcy
+4:48 Shapella enables withdrawals
+5:21 Dencun introduces blobs · Spot Ether ETFs approved
+6:02 Pectra upgrade
+6:13 ATH: after Pectra
+6:26 Fusaka upgrade
+6:51 ATL: after Fusaka
 
 Data: TradingView INDEX:ETHUSD daily candles. Missing daily observations are interpolated and marked as estimated in the project data.
 Events: Ethereum.org and Ethereum Foundation announcements; SEC and issuer filings; Uniswap history; selected shared-market events reconciled against the saved 99Bitcoins Bitcoin timeline. Detailed provenance: coins/ETH/data/SOURCES.md. This is a curated history, not a complete account of every market event.
@@ -46,4 +44,6 @@ For education and entertainment only. Not financial advice.
 
 ## Validation status
 
-Chapter positions generated from the full final timeline. Repeated text for the simultaneous DAO hack / cycle high was removed without changing chapter times. Inspected frame pairs from the encoded final at each chapter start and one second after its first event (21 groups); chapter 0 starts at the film fade-in. Final duration 439.700 s; all AV sync markers passed. Live source audit is unavailable because 99Bitcoins returned HTTP 403; saved-snapshot reconciliation passed for all configured coins.
+Latest file: out/eth-final-20261027-opening-immediate-16x9-1080p.mp4, 437.266667 s. Opening splice approved by the user; 146 source frames removed. Chapter groups regenerated from event times shifted by 146/60 s, with the original minimum spacing/lead rules reapplied (19 groups). Duplicate DAO wording removed without dropping a chapter subject. Every encoded video/AAC packet matches its source exactly and timestamps are continuous, so the previously inspected source frames map directly by the recorded offset. All remaining AV sync markers passed on the spliced file. The original final remains intact.
+
+Live source audit remains unavailable because 99Bitcoins returned HTTP 403; saved-snapshot reconciliation passed for all configured coins.

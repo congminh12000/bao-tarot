@@ -1,5 +1,21 @@
 # Ethereum film — final rendered
 
+## Approved opening splice — 2026-10-27
+
+Latest output: `out/eth-final-20261027-opening-immediate-16x9-1080p.mp4`, 1920×1080 at 60 fps,
+437.266667 seconds, 26,236 frames, 367,640,445 bytes. The original final below remains intact.
+
+The approved edit starts at source keyframe 146 (2.433333 s). FFmpeg actually concatenated the 500-frame head
+with the tail beginning at source keyframe 646; AAC was copied once from the matching original start.
+No frame or audio was rendered or encoded again. Every resulting compressed video packet and AAC packet is
+bit-identical to its original; PTS checks show no missing/repeated video frames or AV timestamp drift.
+Shifted sync markers all pass. Audio: −16.0 LUFS, true peak −1.3 dBTP.
+
+Archived separately in `out/renders/eth-final-20261027-opening-immediate-1080p60/` with derived-edit metadata;
+the edit-aware archive is distinct from the original timeline and must not be restored as an untrimmed render.
+Validation: `out/eth-opening-splice-20261027/validation.json`, `sync-check.log`, `audio-check.log` and join images.
+YouTube chapters below use the shortened timeline; no 480p preview frames were used in this Full HD output.
+
 Prepared 2026-10-27 following PROJECT.md §11 and the palette in `coins/README.md`.
 
 - Input: TradingView `INDEX:ETHUSD`, 2015-08-07 through 2026-10-26; 4,094 actual candles and five explicitly marked gap fills.

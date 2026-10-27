@@ -306,6 +306,15 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- ETH đã ghép mở đầu (27/10/2026): người dùng duyệt và yêu cầu bắt buộc nối, không render lại full. Frame 146 là
+  keyframe nên tách/nối hai đoạn video bằng FFmpeg concat với `-auto_convert 0`, `-c copy`; ánh xạ AAC gốc một lần.
+  Không render hay mã hóa lại bất kỳ đoạn hình/tiếng nào. Toàn bộ 26.236 gói hình và 20.498 gói AAC khớp hash với
+  phần tương ứng của final gốc; PTS liên tục, không mất/lặp frame; kiểm tra sync sau dịch offset ✓, −16,0 LUFS /
+  −1,3 dBTP. Bản mới `out/eth-final-20261027-opening-immediate-16x9-1080p.mp4`: 437,266667 s, Full HD 60 fps,
+  367.640.445 byte. Lưu riêng ở `out/renders/eth-final-20261027-opening-immediate-1080p60/`; final gốc giữ nguyên.
+  Chương được tạo lại từ sự kiện sau offset, cập nhật `coins/ETH/youtube.md`. Bằng chứng nối và hash:
+  `out/eth-opening-splice-20261027/validation.json`. Không dùng preview 480p trong bản Full HD.
+
 - ETH mở đầu chạm ngay (27/10/2026): preview 10 s / 600 frame, 16:9 480p 60 fps, tái sử dụng final đã lưu từ frame 146
   (2,433333 s), tức frame đầu chạm ATH. Chỉ tạo preview riêng ở
   `out/previews/eth-opening-immediate-10s/eth-opening-immediate-10s-480p60.mp4`; chưa ghép hay thay final.
