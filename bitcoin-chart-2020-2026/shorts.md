@@ -55,6 +55,8 @@ Các nền tảng che: **trên ~250 px**, **dưới ~420 px**, **cột phải ~1
 
 ## 7. Render và đăng
 
+- Câu hỏi khi "render video final" (PROJECT.md §1.6): đồng coin → tỷ lệ (9:16 = Shorts) → **xuất tất cả 1 lượt hay chọn
+  phần lẻ** (liệt kê phase: số, up/down, ngày) → độ phân giải.
 - 1080 × 1920, **60 fps**, mỗi short một file `<coin>-short-<số phase>-<up|down>`; lưu bằng `keep-render.js … --format 9:16`.
 - **Preview**: video gửi duyệt phải có **ít nhất 1 chỗ nối vòng lặp bên trong** (phát short 2 lần liền, file `-loop2`).
   **Final**: chỉ 1 vòng — cuối video nối thẳng vào đầu video (nền tảng tự phát lặp).

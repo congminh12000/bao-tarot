@@ -20,8 +20,10 @@ In short:
 - Prices on labels come from the TradingView data in `data/tradingview/`, never from memory; do not invent event causes.
 - After a FROM/TO preview always restore the full data: `node make-data.js && node song.js`.
 - Status and what is waiting for approval: PROJECT.md §10. Commands (incl. first-time setup on a Mac): PROJECT.md §8.
-- Previews and finals are ALWAYS 60 fps. When the user says "render video final": ask 2 steps, one at a time — aspect
-  ratio (16:9 / 1:1 / 9:16), resolution (Full HD / 2K / 4K); defaults 16:9, Full HD (PROJECT.md §1.6).
+- Previews and finals are ALWAYS 60 fps. When the user says "render video final": ask one step at a time — 1. coin (those in
+  `coins/`, default the current one / BTC, or another coin via §11), 2. aspect ratio (16:9 / 1:1 / 9:16; 9:16 = Shorts),
+  3. ONLY for 9:16: all shorts in one go, or pick single ones (list the phases: number, up/down, dates), 4. resolution
+  (Full HD / 2K / 4K); defaults current coin / BTC, 16:9, all shorts, Full HD (PROJECT.md §1.6).
 - ALWAYS keep every render (preview and final): `FPS=60 node keep-render.js save <name> [--res 480]`. For a small change
   that does not touch the picture (music, mix…), reuse the kept frames (`keep-render.js check` → `restore` → `song.js` →
   `mux` + `verify`) instead of rendering again; render again only for new data or a change that alters the picture.
@@ -36,7 +38,7 @@ In short:
   film (PROJECT.md §1.10, §11, `coins/README.md`): TradingView prices (`fetch-tradingview.js`) + 99Bitcoins events, saved
   like Bitcoin's; its own glow-tech colours (palette in `coins/README.md`, user approves); its exact official logo found
   on Google; the approved music in a shuffled order (automatic per coin; still no repeats). Run everything with
-  `COIN=<SYMBOL>`. Before a preview/final render, ask which coin unless already working on one (§1.11).
+  `COIN=<SYMBOL>`. Before a preview render, ask which coin unless already working on one (§1.11); a final always asks (step 1).
 - Shorts 9:16 (PROJECT.md §12, `shorts.md`): `SHORT=<phase> node make-data.js`, one phase per short, 20–45 s in 4-bar
   blocks, no axes, 2-row header, all event levels but NOT the opening turn label (downtrend: no ATH, uptrend: no ATL), loops by
   running on into the first candle (no zoom-out). Preview 480p 60 fps with at least one loop seam inside (play it twice,

@@ -34,13 +34,19 @@ nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn,
    `congminh12000/bao-tarot`). Không tạo Pull Request nếu không được yêu cầu.
 5. Thông tin sự kiện (tên, ngày) **phải trung thực**: không bịa nguyên nhân; chỗ không chắc thì nói rõ.
    Giá trên nhãn lấy từ dữ liệu TradingView, không lấy từ trí nhớ.
-6. Khi người dùng nói **"render video final"** (bản cuối, phim đầy đủ): **luôn 60 fps** (không hỏi). Hỏi **2 bước, lần lượt
-   từng bước**, mỗi bước một câu hỏi có lựa chọn, rồi mới render:
-   1. **Tỷ lệ khung hình**: **16:9** · 1:1 · 9:16
-   2. **Độ phân giải**: **Full HD** · 2K · 4K
-   Mặc định (in đậm): **16:9, Full HD**. Cách chạy: `FPS=60 node engine/render.js video --format <tỷ lệ>
+6. Khi người dùng nói **"render video final"** (bản cuối): **luôn 60 fps** (không hỏi). Hỏi **lần lượt từng bước**, mỗi
+   bước một câu hỏi có lựa chọn, rồi mới render (cập nhật 27/10/2026):
+   1. **Đồng coin**: các đồng có trong `coins/` (mặc định: đồng đang làm, nếu không thì **BTC**) · đồng khác (làm theo §11)
+   2. **Tỷ lệ khung hình**: **16:9** · 1:1 · 9:16 — **9:16 = Shorts** (§12)
+   3. **Chỉ khi chọn 9:16 — xuất Shorts**: **tất cả 1 lượt** (mỗi phase của đồng đó một short, render lần lượt) · **chọn phần
+      lẻ** (liệt kê các phase: số, uptrend/downtrend, ngày đầu → cuối; người dùng chọn một hoặc nhiều số)
+   4. **Độ phân giải**: **Full HD** · 2K · 4K
+   Mặc định (in đậm): **đồng đang làm / BTC, 16:9, Full HD**; Shorts: tất cả. Cách chạy: `FPS=60 node engine/render.js video --format <tỷ lệ>
    --res <1080|1440|2160>` (cạnh ngắn, px), rồi `mux` + `verify` với cùng các tham số. Layout `film.js` được thiết kế
    cho 16:9; với 1:1 / 9:16 phải render preview kiểm tra bố cục trước khi chạy bản cuối.
+   Shorts: mỗi short một lượt `COIN=<SYMBOL> SHORT=<số phase> node make-data.js && node song.js` → `video` / `mux` / `verify`
+   với `--format 9:16` → `keep-render.js save <coin>-short-<số>-<up|down> --format 9:16`; final 1 vòng (không ghép
+   `-loop2`); xong hết thì khôi phục dữ liệu phim dài (`node make-data.js && node song.js`).
 7. **Luôn lưu lại bản render** (preview và bản cuối) để tái sử dụng: sau mỗi lần render chạy
    `FPS=60 node keep-render.js save <tên> [--res 480]` (lưu khung hình câm + mp4 + dấu vân tay vào `out/renders/<tên>/`).
    Khi chỉ chỉnh nhỏ không làm đổi hình (nhạc, mix, giai điệu…): `keep-render.js check` → `restore` → `node song.js` →
@@ -74,7 +80,7 @@ nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn,
     (vẫn glow tech — bảng đề xuất trong `coins/README.md`, người dùng duyệt); **logo/icon tự tìm trên Google nhưng phải
     chính xác** (logo chính thức); **nhạc dùng các bài đã duyệt của Bitcoin nhưng xáo thứ tự phát ngẫu nhiên** (tự động,
     theo mã đồng) — vẫn không được lặp (§1.8).
-11. **Khi render preview hay final**: nếu chưa rõ đang làm đồng nào thì **hỏi render đồng nào**; nếu đang trong flow làm
+11. **Khi render preview**: nếu chưa rõ đang làm đồng nào thì **hỏi render đồng nào**; render final luôn hỏi đồng ở bước 1 (§1.6); nếu đang trong flow làm
     một đồng thì không hỏi, cứ làm đồng đó. Luôn chạy với `COIN=<SYMBOL>` và đặt tên file theo mã đồng
     (`mux eth-preview…`, `keep-render.js save eth-…`).
 
