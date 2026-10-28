@@ -3,7 +3,7 @@
   "name": "XRP",
   "pair": "XRP / USD",
   "tradingview": "CRYPTO:XRPUSD",
-  "eventsSource": "XRPL.org and Ripple official announcements, SEC litigation releases and court orders; shared market events from the verified 99Bitcoins Bitcoin timeline. See data/SOURCES.md. Coverage audit: data/source-audits/99bitcoins/README.md; per-source-ID decisions in the coin data directory 99bitcoins-coverage.json. All research levels retained; see PROJECT.md §13 for source limits.",
+  "eventsSource": "Official XRPL ledger activation records and blog; Ripple and counterpart announcements; SEC/OCC/court documents and established financial reporting. 2026-10-28 multi-source audit, per-event citations and explicit limits: data/SOURCES.md, review-20261028.json and source-inventory-20261028.json. 99Bitcoins 234-ID reconciliation retained. Corporate announcements do not automatically imply XRP use.",
   "logo": "coins/XRP/logo.png",
   "logoNegative": "coins/XRP/logo-negative.png",
   "logoGlow": "#9FB8D6",

@@ -1,5 +1,5 @@
 {
-  "checkedOn": "2026-10-27",
+  "checkedOn": "2026-10-28",
   "scope": "All configured coins: BTC, ETH, BNB, XRP; all 234 curated Bitcoin source events. Not all 99Bitcoins news articles.",
   "results": {
     "BTC": {
@@ -51,17 +51,47 @@
     },
     "XRP": {
       "added": 55,
-      "total": 131,
+      "total": 484,
       "byLevel": {
-        "1": 6,
-        "2": 14,
-        "0": 111
+        "0": 354,
+        "1": 114,
+        "2": 16
       },
       "coverage": {
         "outside_coin_history": 22,
         "stored": 65,
         "not_applicable": 147
-      }
+      },
+      "subsequentSourcedAdditions": 353,
+      "levelReviewAuthorizedOn": "2026-10-28",
+      "independentlyCorrectedSourceDates": [
+        32,
+        49,
+        68,
+        100,
+        113,
+        122,
+        150,
+        178,
+        207,
+        220
+      ],
+      "independentlyClarifiedSourceClaims": [
+        32,
+        49,
+        68,
+        70,
+        85,
+        86,
+        100,
+        113,
+        122,
+        150,
+        178,
+        188,
+        207,
+        220
+      ]
     }
   }
 }

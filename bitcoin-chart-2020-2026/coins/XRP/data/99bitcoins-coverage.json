@@ -1,6 +1,6 @@
 {
   "coin": "XRP",
-  "checkedOn": "2026-10-27",
+  "checkedOn": "2026-10-28",
   "snapshot": "data/source-audits/99bitcoins/snapshot.json",
   "sourceCount": 234,
   "processed": 234,
@@ -242,11 +242,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2014-03-26",
+          "date": "2014-03-25",
           "text": "IRS crypto tax guidance",
           "hit": 0
         }
-      ]
+      ],
+      "factCheckNote": "IRS IR-2014-36 and Notice 2014-21 were released March 25, not the source table March 26.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 33,
@@ -401,11 +403,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2015-09-18",
+          "date": "2015-09-17",
           "text": "CFTC Bitcoin commodity ruling",
           "hit": 0
         }
-      ]
+      ],
+      "factCheckNote": "CFTC release 7231-15 and agency history both date the Coinflip order September 17. It does not classify XRP individually.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 50,
@@ -547,11 +551,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2017-09-03",
+          "date": "2017-09-04",
           "text": "China bans ICOs",
           "hit": 1
         }
-      ]
+      ],
+      "factCheckNote": "Seven-agency ICO announcement issued September 4; source-table September 3 is not the official announcement date.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 69,
@@ -568,10 +574,12 @@
       "targets": [
         {
           "date": "2017-09-15",
-          "text": "China shuts exchanges",
+          "text": "Beijing orders exchange closures",
           "hit": 1
         }
-      ]
+      ],
+      "factCheckNote": "September 15 closure orders/notifications, not a claim that every Chinese exchange ceased operating that day.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 71,
@@ -706,10 +714,12 @@
       "targets": [
         {
           "date": "2018-03-14",
-          "text": "Google bans crypto ads",
+          "text": "Google crypto ad ban announced",
           "hit": 0
         }
-      ]
+      ],
+      "factCheckNote": "March 14 announcement; advertising-policy restriction took effect in June.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 86,
@@ -720,10 +730,12 @@
       "targets": [
         {
           "date": "2018-03-26",
-          "text": "Twitter bans crypto ads",
+          "text": "Twitter crypto ad ban announced",
           "hit": 0
         }
-      ]
+      ],
+      "factCheckNote": "March 26 announcement; staged rollout started March 27.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 87,
@@ -859,11 +871,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2018-09-18",
+          "date": "2018-09-14",
           "text": "Zaif exchange hack",
           "hit": 0
         }
-      ]
+      ],
+      "factCheckNote": "Theft September 14, internal confirmation September 18, public disclosure September 20. Source-table September 18 is not the theft date.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 101,
@@ -953,11 +967,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2019-02-01",
-          "text": "QuadrigaCX bankruptcy",
+          "date": "2019-01-31",
+          "text": "Quadriga seeks creditor protection",
           "hit": 0
         }
-      ]
+      ],
+      "factCheckNote": "CCAA application January 31; protection granted February 5. Do not label this as the separate later bankruptcy.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 114,
@@ -1039,11 +1055,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2019-05-08",
+          "date": "2019-05-07",
           "text": "Binance exchange hack",
           "hit": 0
         }
-      ]
+      ],
+      "factCheckNote": "Binance incident and initial security notice were May 7; source-table May 8 is the following reporting day.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 123,
@@ -1271,11 +1289,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2020-03-13",
-          "text": "COVID market crash",
+          "date": "2020-03-12",
+          "text": "COVID crypto-market crash",
           "hit": 2
         }
-      ]
+      ],
+      "factCheckNote": "Black Thursday began March 12; selling continued March 13. Keep the independently price-derived XRP ATL on March 13, rather than moving a real price extreme to match news.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 151,
@@ -1511,11 +1531,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2020-12-18",
-          "text": "Coinbase files for IPO",
+          "date": "2020-12-17",
+          "text": "Coinbase draft S-1 filing announced",
           "hit": 0
         }
-      ]
+      ],
+      "factCheckNote": "December 17 confidential draft S-1 announcement, not the later public filing or direct listing.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 179,
@@ -1588,10 +1610,12 @@
       "targets": [
         {
           "date": "2021-05-19",
-          "text": "China crypto ban",
+          "text": "Crypto market sell-off",
           "hit": 2
         }
-      ]
+      ],
+      "factCheckNote": "May 19 sell-off is distinct from the industry-association warning announced May 18. Keep the market-shock marker on the sell-off date without misdating the warning.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 189,
@@ -1717,12 +1741,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2022-03-03",
-          "text": "US crypto order reported",
+          "date": "2022-03-09",
+          "text": "US crypto executive order",
           "hit": 0
         }
       ],
-      "factCheckNote": "Source dates US crypto order March 3; executive order signing date needs independent check."
+      "factCheckNote": "Signing date March 9, not source-table March 3 or Federal Register publication March 14.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 208,
@@ -1836,12 +1861,13 @@
       "scope": "shared market context",
       "targets": [
         {
-          "date": "2023-03-03",
-          "text": "Silvergate closure reported",
+          "date": "2023-03-08",
+          "text": "Silvergate announces wind-down",
           "hit": 0
         }
       ],
-      "factCheckNote": "Source dates closure March 3; winding-down announcement date needs independent check."
+      "factCheckNote": "March 3 concerned SEN discontinuation; voluntary bank wind-down was announced March 8. Preserve both distinct events.",
+      "independentlyCorrected": true
     },
     {
       "sourceId": 221,

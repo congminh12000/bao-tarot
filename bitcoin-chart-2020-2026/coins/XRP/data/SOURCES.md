@@ -3,7 +3,30 @@
 Prepared 2026-10-27. Event labels describe historical happenings without assigning price causation.
 XRP the asset is distinct from Ripple the company. The logo is XRP's X symbol, not Ripple's corporate mark.
 
-## Prices
+## Current audit — 2026-10-28 (supersedes preparation counts below)
+
+- 484 historical events: 354 level 0 / 114 level 1 / 16 level 2; 1,013 exact source rows, no event missing a citation.
+  Automatic editorial grading was requested by the user; levels measure relevance, not proven price impact or certainty.
+- `review-20261028.json`: additions, 14 old label/date corrections, 23 old grade changes, qualifications and grading policy.
+- `source-inventory-20261028.json`: 232 discovered Ripple archive titles (187 selected full articles), 272 official blog
+  documents, selection/duplicate decisions and limits. Archive page 26 remains inaccessible; no claim of exhaustive news.
+- `amendment-activations-20261028.json`: 97 dated mainnet activations through 2026-10-09; 96 independently agree with
+  XRPSCAN. CryptoConditions is resolved by actual validated majority vs activation transactions: activation 2017-01-03.
+- `software-releases-20261028.json`: 133 reviewed stable-version records, including research-only legacy imports.
+  Release notices, GitHub publication, voting majority and mainnet activation are distinct dates.
+- TradingView `CRYPTO:XRPUSD`: 4,806 actual daily OHLC candles, 2013-08-04–2026-10-27. All prior 4,805 candles unchanged.
+  Unfinished October 28 candle excluded. BITSTAMP has the same 27 historical gaps; KRAKEN begins too late to fill them.
+  `price-audit-20261028.json` preserves checks, missing dates and raw-file digest. Generated timeline has 4,833 days,
+  of which **27 are estimates**, explicitly marked `est`; these are not verified historical prices. No venue mixing.
+- One 2013-04-11 funding event precedes the price series and remains research-only for this film; no invented 2012 price.
+- Corporate/private-ledger/RLUSD announcements do not necessarily use XRP. Planned deals and cancelled deals are
+  distinguished (including cancelled Fortress acquisition). Pre-activation security fixes are not mainnet attacks.
+- October 26 2026 final OCC claim is labeled **Ripple reports final OCC approval**, level 0: issuer announcement and
+  reporting corroborate the announcement, but direct OCC evidence obtained only establishes the earlier conditional decision.
+- Court/ETF/security milestones have primary/counterpart/reporting checks where available. Not every minor issuer
+  announcement has two independent publishers; source-count coverage is not a guarantee of independent confirmation.
+
+## Original preparation — prices (2026-10-27)
 
 Compared TradingView `INDEX:XRPUSD` (invalid), `CRYPTO:XRPUSD` and `BITSTAMP:XRPUSD` (both 4,806 candles beginning
 2013-08-04). Selected `CRYPTO:XRPUSD` for the full USD history. Excluded the unfinished 2026-10-27 UTC candle.
@@ -33,9 +56,9 @@ the web tool. Use these primary sources and the project's already verified share
 The July ruling was mixed, not a blanket ruling on every XRP sale. The appeals dismissal left the final judgment
 and penalty intact. The short labels preserve those distinctions and do not claim the penalty was cancelled.
 
-Shared market events (China bank/ICO/exchange restrictions, Mt. Gox, COVID, China crypto restrictions, LUNA, FTX)
-retain the dates from the project's verified `data/events.csv`, sourced from
-https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/. COVID label omits the Bitcoin-specific price change.
+Shared market events initially came from the 99Bitcoins timeline. The 2026-10-28 XRP review independently
+corrects fourteen date/wording claims; see `review-20261028.json`. Source-table dates are preserved in the coverage
+record and are not automatically treated as occurrence dates. COVID retains no Bitcoin-specific price claim.
 
 ## Logo and proposed palette
 

@@ -1,4 +1,17 @@
-# XRP film — preview awaiting approval
+# XRP film — data audit updated; preview awaiting approval
+
+Latest audit 2026-10-28: **484 events (354 / 114 / 16 at levels 0 / 1 / 2)**, all with citations (1,013 source rows).
+353 net additional events; fourteen prior date/wording corrections; automatic grading explicitly requested.
+97 actual amendment activations reviewed against official and independent on-chain records. See `data/SOURCES.md`,
+`data/review-20261028.json` and `data/source-inventory-20261028.json` for decisions and source limits.
+
+TradingView `CRYPTO:XRPUSD` now has **4,806 real daily candles through 2026-10-27**; 27 source gaps remain estimates
+in the generated 4,833-day series. All 4,805 previous actual candles were unchanged. Not 100% real-price daily coverage.
+The unchanged phase detector yields 11 phases and 11 unique approved cues. Full label validation passes with 114
+older labels fading early under the approved fallback; no overlap. One stored 2013-04-11 event precedes the price
+series: 483 historical events appear in full data, plus 10 generated ATH/ATL labels. No full video rendered.
+
+## Original preparation (historical notes)
 
 Prepared 2026-10-27 under PROJECT.md §11 and the palette in `coins/README.md`.
 
@@ -49,3 +62,13 @@ All previous official-source and level-1/2 events are preserved; supplementary l
 
 PROJECT.md §14 thay thế ghi chú hiển thị cũ: thu thập đủ 0/1/2 cho mọi coin; BTC ẩn 0, mọi altcoin hiện đủ 0/1/2.
 Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit và các nguồn dữ liệu vẫn được giữ nguyên.
+
+## Audit preview — 2026-10-28
+
+2026-01-01–2026-10-27, 16:9, 854×480, 60 fps, 45.37 seconds. Both sync markers pass
+(picture 0 frames / sound 0 ms); decoded AAC measures −16.0 LUFS, peak −1.4 dBFS, LRA 4.4 LU.
+Contact sheet visually inspected. Audio quality assessed by measurement, not listening.
+Kept: `out/renders/xrp-preview-audit-20261028-480p60/`.
+MP4: `out/xrp-preview-audit-20261028-16x9-480p.mp4`. No full render. Full data and full music restored.
+Preview awaits user review. Google Drive delivery was blocked by automatic approval review pending explicit
+permission to upload this XRP preview to the connected account; the local video is preserved.

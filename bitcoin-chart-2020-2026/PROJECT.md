@@ -306,6 +306,20 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- XRP audit (28/10/2026, thay thế số cũ bên dưới): người dùng yêu cầu tự phân mức; **484 sự kiện = 354 mức 0 /
+  114 mức 1 / 16 mức 2**, 1.013 dòng nguồn, không thiếu nguồn; tăng ròng 353, sửa 14 ngày/nhãn cũ và 23 phân mức cũ.
+  97 kích hoạt amendment đã đối chiếu; 96 khớp explorer, CryptoConditions giải quyết bằng giao dịch validated.
+  232 tiêu đề press / 272 tài liệu blog đã rà; page 26 press chưa truy cập tin cậy. Không tuyên bố đủ mọi tin trên thế giới
+  hoặc mọi mục có hai nguồn độc lập. Nguồn/giới hạn ở `coins/XRP/data/SOURCES.md` và các audit JSON ngày 20261028.
+  TradingView có 4.806 nến thật đến 27/10/2026 UTC; 27 ngày nguồn thiếu vẫn đánh dấu `est`, chưa đủ 100% giá thật.
+  4.805 nến cũ không đổi; loại nến 28/10 đang chạy. 11 phase / 11 cue không đổi; nhãn toàn lịch sử không chồng lấn,
+  114 nhãn cũ mờ sớm theo fallback đã duyệt. Một sự kiện trước ngày có giá được lưu nhưng không vẽ. Chưa render final.
+  Preview 01/01–27/10/2026, 16:9 480p60, 45,37 s, 2 mốc sync ✓, −16,0 LUFS / peak −1,4 dBFS / LRA 4,4 LU;
+  lưu `out/renders/xrp-preview-audit-20261028-480p60/`. Dữ liệu/nhạc đầy đủ đã khôi phục. Chờ duyệt preview.
+  Upload preview XRP lên Drive bị automatic approval review chặn, cần xác nhận riêng payload XRP; file local vẫn giữ.
+
+
+
 - **BNB final — hoàn tất 27/10/2026:** theo lựa chọn BNB / 16:9 / Full HD, luôn 60 fps. Render từ `36cba8b0`
   với dữ liệu đầy đủ BNB: 92 sự kiện (56 mức 0 / 24 mức 1 / 12 mức 2) + 8 ATH/ATL, 100 nhãn; 9 phase / 9 cue không lặp.
   1920×1080, 364,716667 s (khoảng 6:05), 21.883 khung hình, giải mã đủ và timestamp liên tục ✓.

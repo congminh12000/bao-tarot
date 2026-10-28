@@ -124,9 +124,9 @@
       "scope": "XRPL protocol",
       "sources": [
         "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md",
-        "https://livenet.xrpl.org/transactions/8EB00131E1C3DB35EDFF45C155D941E18C3E86BC1934FF987D2DA204F4065F15"
+        "https://livenet.xrpl.org/transactions/2ADDE791F38385F165EB656228BB117F20D9E8215C31CC9A6589936C1581A207"
       ],
-      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim.",
+      "notes": "Actual mainnet activation date; same-day amendments grouped. Not a price-causation claim. Corrected 2026-10-28: original transaction was the December 20 voting-majority pseudo-transaction; January 3 actual activation verified via JSON-RPC.",
       "amendments": [
         "CryptoConditions"
       ]

@@ -1,0 +1,1507 @@
+{
+  "checkedOn": "2026-10-28",
+  "scope": "Production software notices/publications, not mainnet amendment activation",
+  "releases": [
+    {
+      "family": "rippled",
+      "version": "0.30.1",
+      "date": "2016-02-10",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2016-05-02T19:17:54Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2016-02-10",
+        "text": "rippled 0.30.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2016/rippled-0.30.1"
+    },
+    {
+      "family": "rippled",
+      "version": "0.31.2",
+      "date": "2016-06-10",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2016-06-10T21:50:01Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2016-06-10",
+        "text": "rippled 0.31.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2016/rippled-0.31.2-updates"
+    },
+    {
+      "family": "rippled",
+      "version": "0.32.0",
+      "date": "2016-06-27",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2016-06-27T20:55:31Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2016-06-27",
+        "text": "rippled 0.32.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2016/rippled-0.32.0"
+    },
+    {
+      "family": "rippled",
+      "version": "0.32.1",
+      "date": "2016-07-29",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2016-08-19T19:47:51Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2016-07-29",
+        "text": "rippled 0.32.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2016/rippled-0.32.1"
+    },
+    {
+      "family": "rippled",
+      "version": "0.33.0",
+      "date": "2016-09-29",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2016-09-29T21:41:55Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2016-09-29",
+        "text": "rippled 0.33.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2016/rippled-0.33.0"
+    },
+    {
+      "family": "rippled",
+      "version": "0.33.0-hf1",
+      "date": "2016-10-16",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-01-26T01:39:14Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2016-10-16",
+        "text": "rippled 0.33.0-hf1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2016/rippled-0.33.0-hf1"
+    },
+    {
+      "family": "rippled",
+      "version": "0.40.0",
+      "date": "2016-12-20",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-01-26T01:36:33Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2016-12-20",
+        "text": "rippled 0.40.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2016/rippled-0.40.0"
+    },
+    {
+      "family": "rippled",
+      "version": "0.40.1",
+      "date": "2017-01-11",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-01-26T01:38:06Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2017-01-11",
+        "text": "rippled 0.40.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.40.1"
+    },
+    {
+      "family": "rippled",
+      "version": "0.50.0",
+      "date": "2017-01-27",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-01-27T18:15:48Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2017-01-27",
+        "text": "rippled 0.50.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.50.0"
+    },
+    {
+      "family": "rippled",
+      "version": "0.50.2",
+      "date": "2017-01-30",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": null,
+      "datesDiffer": false,
+      "target": {
+        "date": "2017-01-30",
+        "text": "rippled 0.50.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.50.2"
+    },
+    {
+      "family": "rippled",
+      "version": "0.50.3",
+      "date": "2017-03-14",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": null,
+      "datesDiffer": false,
+      "target": {
+        "date": "2017-03-14",
+        "text": "rippled 0.50.3 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.50.3"
+    },
+    {
+      "family": "rippled",
+      "version": "0.60.0",
+      "date": "2017-03-17",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-03-17T23:54:37Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2017-03-17",
+        "text": "rippled 0.60.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.60.0"
+    },
+    {
+      "family": "rippled",
+      "version": "0.60.1",
+      "date": "2017-03-29",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-04-11T23:39:30Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2017-03-29",
+        "text": "rippled 0.60.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.60.1"
+    },
+    {
+      "family": "rippled",
+      "version": "0.60.2",
+      "date": "2017-03-30",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-10-20T22:35:45Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2017-03-30",
+        "text": "rippled 0.60.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.60.2"
+    },
+    {
+      "family": "rippled",
+      "version": "0.60.3",
+      "date": "2017-05-11",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-10-20T22:36:23Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2017-05-11",
+        "text": "rippled 0.60.3 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.60.3"
+    },
+    {
+      "family": "rippled",
+      "version": "0.70.0",
+      "date": "2017-06-15",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-10-20T22:37:12Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2017-06-15",
+        "text": "rippled 0.70.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.70.0"
+    },
+    {
+      "family": "rippled",
+      "version": "0.70.1",
+      "date": "2017-07-10",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-10-20T22:38:53Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2017-07-10",
+        "text": "rippled 0.70.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.70.1"
+    },
+    {
+      "family": "rippled",
+      "version": "0.70.2",
+      "date": "2017-09-21",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-10-20T22:39:25Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2017-09-21",
+        "text": "rippled 0.70.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.70.2"
+    },
+    {
+      "family": "rippled",
+      "version": "0.80.0",
+      "date": "2017-10-23",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-10-20T22:23:59Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2017-10-23",
+        "text": "rippled 0.80.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.80.0"
+    },
+    {
+      "family": "rippled",
+      "version": "0.80.2",
+      "date": "2017-12-15",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2017-12-15T18:41:50Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2017-12-15",
+        "text": "rippled 0.80.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2017/rippled-0.80.2"
+    },
+    {
+      "family": "rippled",
+      "version": "0.81.0",
+      "date": "2018-01-08",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2018-02-02T20:51:41Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2018-01-08",
+        "text": "rippled 0.81.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2018/rippled-0.81.0"
+    },
+    {
+      "family": "rippled",
+      "version": "0.90.0",
+      "date": "2018-02-21",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2018-02-21T00:16:58Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2018-02-21",
+        "text": "rippled 0.90.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2018/rippled-0.90.0"
+    },
+    {
+      "family": "rippled",
+      "version": "0.90.1",
+      "date": "2018-03-22",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2018-03-27T20:53:20Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2018-03-22",
+        "text": "rippled 0.90.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2018/rippled-0.90.1"
+    },
+    {
+      "family": "rippled",
+      "version": "1.0.0",
+      "date": "2018-05-31",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2018-05-15T13:46:42Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2018-05-31",
+        "text": "rippled 1.0.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2018/rippled-1.0.0"
+    },
+    {
+      "family": "rippled",
+      "version": "1.0.1",
+      "date": "2018-06-14",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": null,
+      "datesDiffer": false,
+      "target": {
+        "date": "2018-06-14",
+        "text": "rippled 1.0.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2018/rippled-1.0.1"
+    },
+    {
+      "family": "rippled",
+      "version": "1.1.1",
+      "date": "2018-10-23",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2018-11-26T19:24:20Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2018-10-23",
+        "text": "rippled 1.1.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2018/rippled-1.1.1"
+    },
+    {
+      "family": "rippled",
+      "version": "1.4.0",
+      "date": "2019-12-02",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2020-01-04T00:48:43Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2019-12-02",
+        "text": "rippled 1.4.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2019/rippled-1.4.0"
+    },
+    {
+      "family": "rippled",
+      "version": "1.5.0",
+      "date": "2020-04-10",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2020-03-31T21:24:46Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2020-04-10",
+        "text": "rippled 1.5.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2020/rippled-1.5.0"
+    },
+    {
+      "family": "rippled",
+      "version": "1.6.0",
+      "date": "2020-08-19",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2020-08-19T17:26:07Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2020-08-19",
+        "text": "rippled 1.6.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2020/rippled-1.6.0"
+    },
+    {
+      "family": "rippled",
+      "version": "1.7.0",
+      "date": "2021-02-24",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2021-02-24T16:31:44Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2021-02-24",
+        "text": "rippled 1.7.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2021/rippled-1.7.0"
+    },
+    {
+      "family": "rippled",
+      "version": "1.7.2",
+      "date": "2021-05-24",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2021-05-24T22:45:54Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2021-05-24",
+        "text": "rippled 1.7.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2021/rippled-1.7.2"
+    },
+    {
+      "family": "rippled",
+      "version": "1.7.3",
+      "date": "2021-08-27",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2021-08-27T21:29:32Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2021-08-27",
+        "text": "rippled 1.7.3 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2021/rippled-1.7.3"
+    },
+    {
+      "family": "rippled",
+      "version": "1.8.1",
+      "date": "2021-12-02",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2021-11-25T00:32:26Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2021-12-02",
+        "text": "rippled 1.8.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2021/rippled-1.8.1"
+    },
+    {
+      "family": "rippled",
+      "version": "1.8.2",
+      "date": "2021-12-20",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2021-12-21T00:03:32Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2021-12-20",
+        "text": "rippled 1.8.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2021/rippled-1.8.2"
+    },
+    {
+      "family": "rippled",
+      "version": "1.8.4",
+      "date": "2022-01-13",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2022-01-31T20:48:34Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2022-01-13",
+        "text": "rippled 1.8.4 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2022/rippled-1.8.4"
+    },
+    {
+      "family": "rippled",
+      "version": "1.8.5",
+      "date": "2022-02-08",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2022-02-08T03:25:30Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2022-02-08",
+        "text": "rippled 1.8.5 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2022/rippled-1.8.5"
+    },
+    {
+      "family": "rippled",
+      "version": "1.9.0",
+      "date": "2022-04-07",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2022-04-07T17:32:09Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2022-04-07",
+        "text": "rippled 1.9.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2022/rippled-1.9.0"
+    },
+    {
+      "family": "rippled",
+      "version": "1.9.1",
+      "date": "2022-05-23",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2022-05-23T21:58:48Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2022-05-23",
+        "text": "rippled 1.9.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2022/rippled-1.9.1"
+    },
+    {
+      "family": "Clio",
+      "version": "1.0.0",
+      "date": "2022-06-29",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2022-06-29T22:56:01Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2022-06-29",
+        "text": "Clio 1.0.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2022/clio-1.0.0"
+    },
+    {
+      "family": "rippled",
+      "version": "1.9.2",
+      "date": "2022-07-26",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2022-07-26T20:19:11Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2022-07-26",
+        "text": "rippled 1.9.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2022/rippled-1.9.2"
+    },
+    {
+      "family": "rippled",
+      "version": "1.9.3",
+      "date": "2022-08-26",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2022-08-26T19:52:45Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2022-08-26",
+        "text": "rippled 1.9.3 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2022/rippled-1.9.3"
+    },
+    {
+      "family": "rippled",
+      "version": "1.9.4",
+      "date": "2022-09-20",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2022-09-21T19:31:46Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2022-09-20",
+        "text": "rippled 1.9.4 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2022/rippled-1.9.4"
+    },
+    {
+      "family": "rippled",
+      "version": "1.10.0",
+      "date": "2023-03-14",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2023-03-14T18:20:01Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2023-03-14",
+        "text": "rippled 1.10.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2023/rippled-1.10.0"
+    },
+    {
+      "family": "rippled",
+      "version": "1.11.0",
+      "date": "2023-06-21",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2023-06-21T00:03:50Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2023-06-21",
+        "text": "rippled 1.11.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2023/rippled-1.11.0"
+    },
+    {
+      "family": "rippled",
+      "version": "1.12.0",
+      "date": "2023-09-06",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2023-09-06T21:51:33Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2023-09-06",
+        "text": "rippled 1.12.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2023/rippled-1.12.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.0.0",
+      "date": "2023-10-31",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2023-10-16T21:09:21Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2023-10-31",
+        "text": "Clio 2.0.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2023/clio-2.0.0"
+    },
+    {
+      "family": "rippled",
+      "version": "2.0.0",
+      "date": "2024-01-09",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-01-09T15:05:15Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2024-01-09",
+        "text": "rippled 2.0.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/rippled-2.0.0"
+    },
+    {
+      "family": "rippled",
+      "version": "2.0.1",
+      "date": "2024-01-29",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-01-30T02:55:31Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2024-01-29",
+        "text": "rippled 2.0.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/rippled-2.0.1"
+    },
+    {
+      "family": "Clio",
+      "version": "2.1.0",
+      "date": "2024-02-14",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-02-14T18:53:14Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2024-02-14",
+        "text": "Clio 2.1.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/clio-2.1.0"
+    },
+    {
+      "family": "rippled",
+      "version": "2.1.0",
+      "date": "2024-02-20",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-02-21T19:57:23Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2024-02-20",
+        "text": "rippled 2.1.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/rippled-2.1.0"
+    },
+    {
+      "family": "rippled",
+      "version": "2.1.1",
+      "date": "2024-03-27",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-03-27T13:37:41Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2024-03-27",
+        "text": "rippled 2.1.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/rippled-2.1.1"
+    },
+    {
+      "family": "rippled",
+      "version": "2.2.0",
+      "date": "2024-06-04",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-06-04T23:09:54Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2024-06-04",
+        "text": "rippled 2.2.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/rippled-2.2.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.1.2",
+      "date": "2024-06-05",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-06-05T16:29:40Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2024-06-05",
+        "text": "Clio 2.1.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/clio-2.1.2"
+    },
+    {
+      "family": "Clio",
+      "version": "2.2.0",
+      "date": "2024-06-26",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-06-27T05:05:52Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2024-06-26",
+        "text": "Clio 2.2.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/clio-2.2.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.2.1",
+      "date": "2024-07-08",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-07-09T00:13:48Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2024-07-08",
+        "text": "Clio 2.2.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/clio-2.2.1"
+    },
+    {
+      "family": "Clio",
+      "version": "2.2.2",
+      "date": "2024-07-22",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-07-22T04:02:55Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2024-07-22",
+        "text": "Clio 2.2.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/clio-2.2.2"
+    },
+    {
+      "family": "rippled",
+      "version": "2.2.1",
+      "date": "2024-07-30",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-07-29T19:37:30Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2024-07-30",
+        "text": "rippled 2.2.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/rippled-2.2.1"
+    },
+    {
+      "family": "rippled",
+      "version": "2.2.2",
+      "date": "2024-09-03",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-09-03T18:10:30Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2024-09-03",
+        "text": "rippled 2.2.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/rippled-2.2.2"
+    },
+    {
+      "family": "rippled",
+      "version": "2.2.3",
+      "date": "2024-09-14",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-09-15T14:32:19Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2024-09-14",
+        "text": "rippled 2.2.3 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/rippled-2.2.3"
+    },
+    {
+      "family": "rippled",
+      "version": "2.3.0",
+      "date": "2024-11-25",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-11-26T00:17:49Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2024-11-25",
+        "text": "rippled 2.3.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/rippled-2.3.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.3.0",
+      "date": "2024-12-12",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2024-12-12T14:58:27Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2024-12-12",
+        "text": "Clio 2.3.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2024/clio-2.3.0"
+    },
+    {
+      "family": "rippled",
+      "version": "2.3.1",
+      "date": "2025-01-30",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-01-29T23:02:07Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2025-01-30",
+        "text": "rippled 2.3.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/rippled-2.3.1"
+    },
+    {
+      "family": "Clio",
+      "version": "2.3.1",
+      "date": "2025-02-12",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-02-12T12:02:21Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2025-02-12",
+        "text": "Clio 2.3.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/clio-2.3.1"
+    },
+    {
+      "family": "rippled",
+      "version": "2.4.0",
+      "date": "2025-03-06",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-03-04T19:00:43Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2025-03-06",
+        "text": "rippled 2.4.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/rippled-2.4.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.4.0",
+      "date": "2025-03-18",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-03-18T13:12:04Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2025-03-18",
+        "text": "Clio 2.4.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/clio-2.4.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.4.1",
+      "date": "2025-05-27",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-05-27T11:28:54Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2025-05-27",
+        "text": "Clio 2.4.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/clio-2.4.1"
+    },
+    {
+      "family": "rippled",
+      "version": "2.5.0",
+      "date": "2025-06-24",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-06-24T18:19:49Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2025-06-24",
+        "text": "rippled 2.5.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/rippled-2.5.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.5.0",
+      "date": "2025-07-24",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-07-24T22:13:08Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2025-07-24",
+        "text": "Clio 2.5.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/clio-2.5.0"
+    },
+    {
+      "family": "rippled",
+      "version": "2.6.0",
+      "date": "2025-08-27",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-08-27T20:37:19Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2025-08-27",
+        "text": "rippled 2.6.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/rippled-2.6.0"
+    },
+    {
+      "family": "rippled",
+      "version": "2.5.1",
+      "date": "2025-09-08",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-09-17T16:08:49Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2025-09-08",
+        "text": "rippled 2.5.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/rippled-2.5.1"
+    },
+    {
+      "family": "rippled",
+      "version": "2.6.1",
+      "date": "2025-10-06",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-09-30T22:55:54Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2025-10-06",
+        "text": "rippled 2.6.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/rippled-2.6.1"
+    },
+    {
+      "family": "rippled",
+      "version": "2.6.2",
+      "date": "2025-11-19",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-11-19T22:13:42Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2025-11-19",
+        "text": "rippled 2.6.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/rippled-2.6.2"
+    },
+    {
+      "family": "rippled",
+      "version": "3.0.0",
+      "date": "2025-12-09",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2025-12-09T18:31:40Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2025-12-09",
+        "text": "rippled 3.0.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2025/rippled-3.0.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.7.0",
+      "date": "2026-01-27",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-01-15T19:33:35Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2026-01-27",
+        "text": "Clio 2.7.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/clio-2.7.0"
+    },
+    {
+      "family": "rippled",
+      "version": "3.1.0",
+      "date": "2026-01-28",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-01-28T01:16:54Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2026-01-28",
+        "text": "rippled 3.1.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/rippled-3.1.0"
+    },
+    {
+      "family": "rippled",
+      "version": "3.1.1",
+      "date": "2026-02-23",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-02-23T20:59:02Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2026-02-23",
+        "text": "rippled 3.1.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/rippled-3.1.1"
+    },
+    {
+      "family": "rippled",
+      "version": "3.1.2",
+      "date": "2026-03-12",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-03-12T20:24:59Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2026-03-12",
+        "text": "rippled 3.1.2 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/rippled-3.1.2"
+    },
+    {
+      "family": "rippled",
+      "version": "3.1.3",
+      "date": "2026-05-14",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-05-08T21:00:55Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2026-05-14",
+        "text": "rippled 3.1.3 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/rippled-3.1.3"
+    },
+    {
+      "family": "rippled",
+      "version": "3.2.0",
+      "date": "2026-06-15",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-06-16T00:36:47Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2026-06-15",
+        "text": "rippled 3.2.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/xrpld-3.2.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.7.1",
+      "date": "2026-07-20",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-07-20T10:54:22Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2026-07-20",
+        "text": "Clio 2.7.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/clio-2.7.1"
+    },
+    {
+      "family": "rippled",
+      "version": "3.2.1",
+      "date": "2026-07-31",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-08-01T01:39:54Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2026-07-31",
+        "text": "rippled 3.2.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/xrpld-3.2.1"
+    },
+    {
+      "family": "rippled",
+      "version": "3.3.0",
+      "date": "2026-08-06",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-08-06T21:48:59Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2026-08-06",
+        "text": "rippled 3.3.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/xrpld-3.3.0"
+    },
+    {
+      "family": "Clio",
+      "version": "2.8.0",
+      "date": "2026-08-20",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-08-20T15:52:28Z",
+      "datesDiffer": false,
+      "target": {
+        "date": "2026-08-20",
+        "text": "Clio 2.8.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/clio-2.8.0"
+    },
+    {
+      "family": "rippled",
+      "version": "3.4.0",
+      "date": "2026-09-16",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-09-17T16:58:43Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2026-09-16",
+        "text": "rippled 3.4.0 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/xrpld-3.4.0"
+    },
+    {
+      "family": "rippled",
+      "version": "3.4.1",
+      "date": "2026-09-25",
+      "dateBasis": "XRPL official blog publication/notice, not claimed first binary availability or mainnet activation",
+      "githubPublishedAt": "2026-10-10T00:04:48Z",
+      "datesDiffer": true,
+      "target": {
+        "date": "2026-09-25",
+        "text": "rippled 3.4.1 release notice"
+      },
+      "sourceBlog": "https://xrpl.org/blog/2026/xrpld-3.4.1"
+    },
+    {
+      "family": "rippled",
+      "version": "0.31.0",
+      "githubPublishedAt": "2016-05-02T18:58:42Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.30.0",
+      "githubPublishedAt": "2016-05-02T19:19:20Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.29.0",
+      "githubPublishedAt": "2016-05-02T19:20:07Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.28.2",
+      "githubPublishedAt": "2016-05-02T19:21:12Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.28.1",
+      "githubPublishedAt": "2016-05-02T19:22:42Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.28.0",
+      "githubPublishedAt": "2016-05-02T19:24:19Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.27.4",
+      "githubPublishedAt": "2016-05-02T19:25:15Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.27.3",
+      "githubPublishedAt": "2016-05-23T23:34:37Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.27.2",
+      "githubPublishedAt": "2016-05-23T23:35:24Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.27.1",
+      "githubPublishedAt": "2016-05-23T23:36:42Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.27.0",
+      "githubPublishedAt": "2016-05-23T23:39:04Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.26.4",
+      "githubPublishedAt": "2016-05-23T23:40:18Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.26.2",
+      "githubPublishedAt": "2016-05-23T23:41:37Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.26.1",
+      "githubPublishedAt": "2016-05-23T23:42:05Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.26.0",
+      "githubPublishedAt": "2016-05-23T23:43:40Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.25.2",
+      "githubPublishedAt": "2016-05-23T23:44:12Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.25.1",
+      "githubPublishedAt": "2016-05-23T23:44:51Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.25.0",
+      "githubPublishedAt": "2016-05-23T23:45:21Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.24.0",
+      "githubPublishedAt": "2016-05-23T23:45:54Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.23.0",
+      "githubPublishedAt": "2016-05-23T23:46:23Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.22.0",
+      "githubPublishedAt": "2016-05-23T23:48:48Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.21.0",
+      "githubPublishedAt": "2016-05-23T23:49:35Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.20.1",
+      "githubPublishedAt": "2016-05-23T23:50:32Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.19.0",
+      "githubPublishedAt": "2016-05-23T23:51:16Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.16.0",
+      "githubPublishedAt": "2016-05-23T23:51:57Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.14.0",
+      "githubPublishedAt": "2016-05-23T23:52:24Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.12.0",
+      "githubPublishedAt": "2016-05-23T23:53:08Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "0.80.1",
+      "githubPublishedAt": "2017-12-01T14:01:36Z",
+      "decision": "research_only",
+      "reason": "Legacy GitHub release metadata may be a retrospective import; no contemporaneous blog notice verified. Do not manufacture a historical release event from a backfilled publication timestamp."
+    },
+    {
+      "family": "rippled",
+      "version": "1.1.0",
+      "date": "2018-09-14",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2018-09-14",
+        "text": "rippled 1.1.0 release published"
+      }
+    },
+    {
+      "family": "rippled",
+      "version": "1.1.2",
+      "date": "2018-12-11",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2018-12-11",
+        "text": "rippled 1.1.2 release published"
+      }
+    },
+    {
+      "family": "rippled",
+      "version": "1.2.0",
+      "date": "2019-02-13",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2019-02-13",
+        "text": "rippled 1.2.0 release published"
+      }
+    },
+    {
+      "family": "rippled",
+      "version": "1.2.1",
+      "date": "2019-02-26",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2019-02-26",
+        "text": "rippled 1.2.1 release published"
+      }
+    },
+    {
+      "family": "rippled",
+      "version": "1.2.2",
+      "date": "2019-03-06",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2019-03-06",
+        "text": "rippled 1.2.2 release published"
+      }
+    },
+    {
+      "family": "rippled",
+      "version": "1.2.3",
+      "date": "2019-04-02",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2019-04-02",
+        "text": "rippled 1.2.3 release published"
+      }
+    },
+    {
+      "family": "rippled",
+      "version": "1.2.4",
+      "date": "2019-04-17",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2019-04-17",
+        "text": "rippled 1.2.4 release published"
+      }
+    },
+    {
+      "family": "rippled",
+      "version": "1.3.1",
+      "date": "2019-07-25",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2019-07-25",
+        "text": "rippled 1.3.1 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "0.1.0",
+      "date": "2022-03-23",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2022-03-23",
+        "text": "Clio 0.1.0 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "0.2.0",
+      "date": "2022-05-25",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2022-05-25",
+        "text": "Clio 0.2.0 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "1.0.1",
+      "date": "2022-07-13",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2022-07-13",
+        "text": "Clio 1.0.1 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "1.0.2",
+      "date": "2022-08-11",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2022-08-11",
+        "text": "Clio 1.0.2 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "1.0.3",
+      "date": "2022-11-17",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2022-11-17",
+        "text": "Clio 1.0.3 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "1.0.4",
+      "date": "2023-02-02",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2023-02-02",
+        "text": "Clio 1.0.4 release published"
+      }
+    },
+    {
+      "family": "rippled",
+      "version": "1.10.1",
+      "date": "2023-03-22",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2023-03-22",
+        "text": "rippled 1.10.1 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "2.1.1",
+      "date": "2024-03-23",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2024-03-23",
+        "text": "Clio 2.1.1 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "2.2.3",
+      "date": "2024-09-19",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2024-09-19",
+        "text": "Clio 2.2.3 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "2.2.4",
+      "date": "2024-10-07",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2024-10-07",
+        "text": "Clio 2.2.4 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "2.2.5",
+      "date": "2024-10-21",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2024-10-21",
+        "text": "Clio 2.2.5 release published"
+      }
+    },
+    {
+      "family": "Clio",
+      "version": "2.6.0",
+      "date": "2025-10-22",
+      "dateBasis": "Stable GitHub release publication; no matching blog notice found",
+      "target": {
+        "date": "2025-10-22",
+        "text": "Clio 2.6.0 release published"
+      }
+    }
+  ]
+}

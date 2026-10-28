@@ -1,0 +1,1465 @@
+{
+  "checkedOn": "2026-10-28",
+  "sources": [
+    "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/",
+    "https://api.xrpscan.com/api/v1/amendments"
+  ],
+  "count": 97,
+  "activations": [
+    {
+      "id": "42426C4D4F1009EE67080A9B7965B44656D7714D104A72F9B4369F97ABF044EE",
+      "name": "FeeEscalation",
+      "date": "2016-05-19T16:44:51.000Z",
+      "ledger_index": 21225473,
+      "tx_hash": "5B1F1E8E791A9C243DD728680F108FEF1F28F21BA3B202B8F66E7833CA71D3C3",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2016-05-19",
+        "text": "FeeEscalation enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "4C97EBA926031A7CF7D7B36FDE3ED66DDA5421192D63DE53FFB46E43B9DC8373",
+      "name": "MultiSign",
+      "date": "2016-06-27T23:34:41.000Z",
+      "ledger_index": 22178817,
+      "tx_hash": "168F8B15F643395E59B9977FC99D6310E8708111C85659A9BAF8B9222EEAC5A7",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2016-06-27",
+        "text": "MultiSign enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "6781F8368C4771B83E8B821D88F580202BCB4228075297B19E4FDC5233F1EFDC",
+      "name": "TrustSetAuth",
+      "date": "2016-07-19T22:10:32.000Z",
+      "ledger_index": 22721281,
+      "tx_hash": "0E589DE43C38AED63B64FF3DA87D349A038F1821212D370E403EB304C76D70DF",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2016-07-19",
+        "text": "TrustSetAuth enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "740352F2412A9909880C23A559FCECEDA3BE2126FED62FC7660D628A06927F11",
+      "name": "Flow",
+      "date": "2016-10-21T19:47:22.000Z",
+      "ledger_index": 24970753,
+      "tx_hash": "C06CE3CABA3907389E4DD296C5F31C73B1548CC20BD7B83416C78CD7D4CD38FC",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2016-10-21",
+        "text": "Flow enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "1562511F573A19AE9BD103B5D6B9E01B3B46805AEC5D3C4805C902B514399146",
+      "name": "CryptoConditions",
+      "date": "2017-01-03T22:47:40.000Z",
+      "ledger_index": 26718721,
+      "tx_hash": "2ADDE791F38385F165EB656228BB117F20D9E8215C31CC9A6589936C1581A207",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-01-03",
+        "text": "CryptoConditions enabled"
+      },
+      "independentExplorerAgrees": false,
+      "conflictResolved": "XRPSCAN points at the December 20 majority transaction (Flags 65536); JSON-RPC verifies January 3 activation transaction (no majority flag)."
+    },
+    {
+      "id": "532651B4FD58DF8922A49BA101AB3E996E5BFBF95A913B3E392504863E63B164",
+      "name": "TickSize",
+      "date": "2017-02-21T23:02:52.000Z",
+      "ledger_index": 27841793,
+      "tx_hash": "A12430E470BE5C846759EAE3C442FF03374D5D73ECE5815CF4906894B769565E",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-02-21",
+        "text": "TickSize enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "07D43DCE529B15A10827E5E04943B496762F9A88E3268269D69C44BE49E21104",
+      "name": "Escrow",
+      "date": "2017-03-31T06:27:20.000Z",
+      "ledger_index": 28685313,
+      "tx_hash": "C581E0A3F3832FFFEEB13C497658F475566BD7695B0BBA531A774E6739801515",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-03-31",
+        "text": "Escrow + payment channels"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "08DE7D96082187F6E6578530258C77FAABABE4C20474BDB82F04B021F1A68647",
+      "name": "PayChan",
+      "date": "2017-03-31T06:27:20.000Z",
+      "ledger_index": 28685313,
+      "tx_hash": "16135C0B4AB2419B89D4FB4569B8C37FF76B9EF9CE0DD99CCACB5734445AFD7E",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-03-31",
+        "text": "Escrow + payment channels"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "E2E6F2866106419B88C50045ACE96368558C345566AC8F2BDF5A5B5587F0E6FA",
+      "name": "fix1368",
+      "date": "2017-03-31T06:27:20.000Z",
+      "ledger_index": 28685313,
+      "tx_hash": "3D20DE5CD19D5966865A7D0405FAC7902A6F623659667D6CB872DF7A94B6EF3F",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-03-31",
+        "text": "Escrow + payment channels"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "DC9CA96AEA1DCF83E527D1AFC916EFAF5D27388ECA4060A88817C1238CAEE0BF",
+      "name": "EnforceInvariants",
+      "date": "2017-07-07T05:42:12.000Z",
+      "ledger_index": 31054081,
+      "tx_hash": "17593B03F7D3283966F3C0ACAF4984F26E9D884C9A202097DAED0523908E76C6",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-07-07",
+        "text": "EnforceInvariants + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "42EEA5E28A97824821D4EF97081FE36A54E9593C6E4F20CBAE098C69D2E072DC",
+      "name": "fix1373",
+      "date": "2017-07-07T05:28:10.000Z",
+      "ledger_index": 31053825,
+      "tx_hash": "7EBA3852D111EA19D03469F6870FAAEBF84C64F1B9BAC13B041DDD26E28CA399",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-07-07",
+        "text": "EnforceInvariants + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "CC5ABAE4F3EC92E94A59B1908C2BE82D2228B6485C00AFF8F22DF930D89C194E",
+      "name": "SortedDirectories",
+      "date": "2017-11-14T21:31:02.000Z",
+      "ledger_index": 34256897,
+      "tx_hash": "6E2309C156EBF94D03B83D282A3914671BF9168FB26463CFECD068C63FFFAB29",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-11-14",
+        "text": "SortedDirectories + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "B4D44CC3111ADD964E846FC57760C8B50FFCD5A82C86A72756F6B058DDDF96AD",
+      "name": "fix1201",
+      "date": "2017-11-14T21:31:02.000Z",
+      "ledger_index": 34256897,
+      "tx_hash": "B1157116DDDDA9D9B1C4A95C029AC335E05DB052CECCC5CA90118A4D46C77C5E",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-11-14",
+        "text": "SortedDirectories + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "6C92211186613F9647A89DFFBAB8F94C99D4C7E956D495270789128569177DA1",
+      "name": "fix1512",
+      "date": "2017-11-14T21:31:02.000Z",
+      "ledger_index": 34256897,
+      "tx_hash": "63F69F59BEFDC1D79DBF1E4060601E05960683AA784926FB74BC55074C4F6647",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-11-14",
+        "text": "SortedDirectories + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "B9E739B8296B4A1BB29BE990B17D66E21B62A300A909F25AC55C22D6C72E1F9D",
+      "name": "fix1523",
+      "date": "2017-11-14T21:31:02.000Z",
+      "ledger_index": 34256897,
+      "tx_hash": "97FD0E35654F4B6714010D3CBBAC4038F60D64AD0292693C28A1DF4B796D8469",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-11-14",
+        "text": "SortedDirectories + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "1D3463A5891F9E589C5AE839FFAC4A917CE96197098A1EF22304E1BC5B98A454",
+      "name": "fix1528",
+      "date": "2017-11-14T21:31:02.000Z",
+      "ledger_index": 34256897,
+      "tx_hash": "27AEE02DA4FE22B6BB479F850FBBC873FDC7A09A8594753A91B53098D726397E",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2017-11-14",
+        "text": "SortedDirectories + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "F64E1EABBE79D55B3BB82020516CEC2C582A98A6BFE20FBE9BB6A0D233418064",
+      "name": "DepositAuth",
+      "date": "2018-04-06T01:44:42.000Z",
+      "ledger_index": 37753345,
+      "tx_hash": "902C51270B918B40CD23A622E18D48B4ABB86F0FF4E84D72D9E1907BF3BD4B25",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2018-04-06",
+        "text": "DepositAuth + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "67A34F2CF55BFC0F93AACD5B281413176FEE195269FA6D95219A2DF738671172",
+      "name": "fix1513",
+      "date": "2018-04-06T01:44:42.000Z",
+      "ledger_index": 37753345,
+      "tx_hash": "57FE540B8B8E2F26CE8B53D1282FEC55E605257E29F5B9EB49E15EA3989FCF6B",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2018-04-06",
+        "text": "DepositAuth + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "7117E2EC2DBF119CA55181D69819F1999ECEE1A0225A7FD2B9ED47940968479C",
+      "name": "fix1571",
+      "date": "2018-06-19T19:14:41.000Z",
+      "ledger_index": 39498497,
+      "tx_hash": "920AA493E57D991414B614FB3C1D1E2F863211B48129D09BC8CB74C9813C38FC",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2018-06-19",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "58BE9B5968C4DA7C59BA900961828B113E5490699B21877DEF9A31E9D0FE5D5F",
+      "name": "fix1623",
+      "date": "2018-06-20T22:20:20.000Z",
+      "ledger_index": 39525377,
+      "tx_hash": "4D218D86A2B33E29F17AA9C25D8DFFEE5D2559F75F7C0B1D016D3F2C2220D3EB",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2018-06-20",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "CA7C02118BA27599528543DFE77BA6838D1B0F43B447D4D7F53523CE6A0E9AC2",
+      "name": "fix1543",
+      "date": "2018-06-21T17:37:11.000Z",
+      "ledger_index": 39544065,
+      "tx_hash": "EA6054C9D256657014052F1447216CEA75FFDB1C9342D45EB0F9E372C0F879E6",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2018-06-21",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "3CBC5C4E630A1B82380295CDA84B32B49DD066602E74E39B85EF64137FA65194",
+      "name": "DepositPreauth",
+      "date": "2018-10-09T20:01:11.000Z",
+      "ledger_index": 42114049,
+      "tx_hash": "AD27403CB840AE67CADDB084BC54249D7BD1B403885819B39CCF723DC671F927",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2018-10-09",
+        "text": "DepositPreauth + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "5D08145F0A4983F23AFFFF514E83FAD355C5ABFBB6CAB76FB5BC8519FF5F33BE",
+      "name": "fix1515",
+      "date": "2018-10-09T20:01:11.000Z",
+      "ledger_index": 42114049,
+      "tx_hash": "6DF60D9EC8AF3C39B173840F4D1C57F8A8AB51E7C6571483B4A5F1AA0A9AAEBF",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2018-10-09",
+        "text": "DepositPreauth + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "FBD513F1B893AC765B78F250E6FFA6A11B573209D1842ADC787C850696741288",
+      "name": "fix1578",
+      "date": "2019-03-23T02:27:01.000Z",
+      "ledger_index": 46000641,
+      "tx_hash": "7A80C87F59BCE6973CBDCA91E4DBDB0FC5461D3599A8BC8EAD02FA590A50005D",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2019-03-23",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "2CD5286D8D687E98B41102BDD797198E81EA41DF7BD104E6561FEB104EFF2561",
+      "name": "fixTakerDryOfferRemoval",
+      "date": "2019-04-02T21:17:41.000Z",
+      "ledger_index": 46257665,
+      "tx_hash": "C42335E95F1BD2009A2C090EA57BD7FB026AD285B4B85BE15F669BA4F70D11AF",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2019-04-02",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "586480873651E106F1D6339B0C4A8945BA705A777F3F4524626FF1FC07EFE41D",
+      "name": "MultiSignReserve",
+      "date": "2019-04-17T10:09:00.000Z",
+      "ledger_index": 46599937,
+      "tx_hash": "C421E1D08EFD78E6B8D06B085F52A34A681D0B51AE62A018527E1B8F54C108FB",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2019-04-17",
+        "text": "MultiSignReserve enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "C4483A1896170C66C098DEA5B0E024309C60DC960DE5F01CD7AF986AA3D9AD37",
+      "name": "fixMasterKeyAsRegularKey",
+      "date": "2019-10-02T07:37:50.000Z",
+      "ledger_index": 50428929,
+      "tx_hash": "61096F8B5AFDD8F5BAF7FC7221BA4D1849C4E21B1BA79733E44B12FC8DA6EA20",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2019-10-02",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "8F81B066ED20DAECA20DF57187767685EEF3980B228E0667A650BAF24426D3B4",
+      "name": "fixCheckThreading",
+      "date": "2020-05-01T08:51:01.000Z",
+      "ledger_index": 55161089,
+      "tx_hash": "74AFEA8C17D25CA883D40F998757CA3B0DB1AC86794335BAA25FF20E00C2C30A",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2020-05-01",
+        "text": "XRPL maintenance: 2 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "621A0B264970359869E3C0363A899909AAB7A887C8B73519E4ECF952D33258A8",
+      "name": "fixPayChanRecipientOwnerDir",
+      "date": "2020-05-01T08:51:01.000Z",
+      "ledger_index": 55161089,
+      "tx_hash": "D2F8E457D08ACB185CDE3BB9BB1989A9052344678566785BACFB9DFDBDEDCF09",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2020-05-01",
+        "text": "XRPL maintenance: 2 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "30CD365592B8EE40489BA01AE2F7555CAC9C983145871DC82A42A31CF5BAE7D9",
+      "name": "DeletableAccounts",
+      "date": "2020-05-08T04:29:30.000Z",
+      "ledger_index": 55313921,
+      "tx_hash": "47B90519D31E0CB376B5FEE5D9359FA65EEEB2289F1952F2A3EB71D623B945DE",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2020-05-08",
+        "text": "DeletableAccounts enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "157D2D480E006395B76F948E3E07A45A05FE10230D88A7993C71F97AE4B1F2D1",
+      "name": "Checks",
+      "date": "2020-06-18T00:23:20.000Z",
+      "ledger_index": 56219905,
+      "tx_hash": "D88F2DCDFB10023F9F6CBA8DF34C18E321D655CAC8FDB962387A5DB1540242A6",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2020-06-18",
+        "text": "Checks enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "00C1FC4A53E60AB02C864641002B3172F38677E29C26C5406685179B37E1EDAC",
+      "name": "RequireFullyCanonicalSig",
+      "date": "2020-07-03T14:58:01.000Z",
+      "ledger_index": 56564737,
+      "tx_hash": "94D8B158E948148B949CC3C35DD5DC4791D799E1FD5D3CE0E570160EDEF947D3",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2020-07-03",
+        "text": "RequireFullyCanonicalSig enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "89308AF3B8B10B7192C4E613E1D2E4D9BA64B2EE2D5232402AE82A6A7220D953",
+      "name": "fixQualityUpperBound",
+      "date": "2020-07-09T05:12:40.000Z",
+      "ledger_index": 56691969,
+      "tx_hash": "5F8E9E9B175BB7B95F529BEFE3C84253E78DAF6076078EC450A480C861F6889E",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2020-07-09",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "3012E8230864E95A58C60FD61430D7E1B4D3353195F2981DC12B0C7C0950FFAC",
+      "name": "FlowCross",
+      "date": "2020-08-04T16:50:01.000Z",
+      "ledger_index": 57286657,
+      "tx_hash": "44C4B040448D89B6C5A5DEC97C17FEDC2E590BA094BC7DB63B7FDC888B9ED78F",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2020-08-04",
+        "text": "FlowCross enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "1F4AFA8FA1BC8827AD4C0F682C03A8B671DCDF6B5C4DE36D44243A684103EF88",
+      "name": "HardenedValidations",
+      "date": "2021-04-08T12:46:31.000Z",
+      "ledger_index": 62759681,
+      "tx_hash": "3A45DCF055B68DCBBFE034240F9359FB22E8A64B1BF7113304535BF5BB8144BF",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2021-04-08",
+        "text": "HardenedValidations + 2 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "25BA44241B3BD880770BFA4DA21C7180576831855368CBEC6A3154FDE4A7676E",
+      "name": "fix1781",
+      "date": "2021-04-08T12:46:31.000Z",
+      "ledger_index": 62759681,
+      "tx_hash": "DA59F10201D651B544F65896330AFACA8CA4198904265AD279D56781F655FAFB",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2021-04-08",
+        "text": "HardenedValidations + 2 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "4F46DF03559967AC60F2EB272FEFE3928A7594A45FF774B87A7E540DB0F8F068",
+      "name": "fixAmendmentMajorityCalc",
+      "date": "2021-04-08T12:46:31.000Z",
+      "ledger_index": 62759681,
+      "tx_hash": "5B3ACE6CAC9C56D2008410F1B0881A0A4A8866FB99D2C2B2261C86C760DC95EF",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2021-04-08",
+        "text": "HardenedValidations + 2 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "AF8DF7465C338AE64B1E937D6C8DA138C0D63AD5134A68792BBBE1F63356C422",
+      "name": "FlowSortStrands",
+      "date": "2021-11-11T23:25:10.000Z",
+      "ledger_index": 67639809,
+      "tx_hash": "1C3D3BD2AFDAF326EBFEA54579A89B024856609DB4310F7140086AAB262D09A1",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2021-11-11",
+        "text": "FlowSortStrands + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "452F5906C46D46F407883344BFDD90E672B672C5E9943DB4891E3A34FEEEB9DB",
+      "name": "fixSTAmountCanonicalize",
+      "date": "2021-11-11T23:08:00.000Z",
+      "ledger_index": 67639553,
+      "tx_hash": "AFF17321A012C756B64FCC3BA0FDF79109F28E244D838A28D5AE8A0384C7C532",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2021-11-11",
+        "text": "FlowSortStrands + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "955DF3FA5891195A9DAEFA1DDC6BB244B545DDE1BAA84CBB25D5F12A8DA68A0C",
+      "name": "TicketBatch",
+      "date": "2021-11-18T19:30:22.000Z",
+      "ledger_index": 67785985,
+      "tx_hash": "111B32EDADDE916206E7315FBEE2DA1521B229F207F65DD314829F13C8D9CA36",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2021-11-18",
+        "text": "TicketBatch + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "B6B3EEDC0267AB50491FDC450A398AF30DBCD977CECED8BEF2499CAB5DAC19E2",
+      "name": "fixRmSmallIncreasedQOffers",
+      "date": "2021-11-18T17:31:01.000Z",
+      "ledger_index": 67784193,
+      "tx_hash": "1F37BA0502576DD7B5464F47641FA95DEB55735EC2663269DFD47810505478E7",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2021-11-18",
+        "text": "TicketBatch + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "B4E4F5D2D6FB84DF7399960A732309C9FD530EAE5941838160042833625A6076",
+      "name": "NegativeUNL",
+      "date": "2021-11-21T18:38:51.000Z",
+      "ledger_index": 67849217,
+      "tx_hash": "1500FADB73E7148191216C53040990E829C7110788B26E7F3246CB3660769EBA",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2021-11-21",
+        "text": "NegativeUNL enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "B2A4DB846F0891BF2C76AB2F2ACC8F5B4EC64437135C6E56F3F859DE5FFD5856",
+      "name": "ExpandedSignerList",
+      "date": "2022-10-13T15:34:42.000Z",
+      "ledger_index": 75035393,
+      "tx_hash": "802E2446547BB86397217E32A78CB9857F21B048B91C81BCC6EF837BE9C72C87",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2022-10-13",
+        "text": "ExpandedSignerList enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "DF8B4536989BDACE3F934F29423848B9F1D76D09BE6A1FCFE7E7F06AA26ABEAD",
+      "name": "fixRemoveNFTokenAutoTrustLine",
+      "date": "2022-10-27T16:09:30.000Z",
+      "ledger_index": 75348737,
+      "tx_hash": "2A67DB4AC65D688281B76334C4B52038FD56931694A6DD873B5CCD9B970AD57C",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2022-10-27",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "32A122F1352A4C7B3A6D790362CC34749C5E57FCE896377BFDC6CCD14F6CD627",
+      "name": "NonFungibleTokensV1_1",
+      "date": "2022-10-31T20:50:50.000Z",
+      "ledger_index": 75443457,
+      "tx_hash": "251242639A640CD9287A14A476E7F7C20BA009FDE410570926BAAF29AA05CEDE",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2022-10-31",
+        "text": "XLS-20 NFTs go live"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "98DECF327BF79997AEC178323AD51A830E457BFC6D454DAF3E46E5EC42DC619F",
+      "name": "CheckCashMakesTrustLine",
+      "date": "2023-01-23T13:09:40.000Z",
+      "ledger_index": 77310209,
+      "tx_hash": "4C8546305583F72E056120B136EB251E7F45E8DFAAE65FDA33B22181A9CA4557",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2023-01-23",
+        "text": "CheckCashMakesTrustLine enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "47C3002ABA31628447E8E9A8B315FAA935CE30183F9A9B86845E469CA2CDC3DF",
+      "name": "DisallowIncoming",
+      "date": "2023-08-21T05:59:11.000Z",
+      "ledger_index": 81986305,
+      "tx_hash": "8747EF67D8CC1CA72A88817FBDF454507C3D9E8F0702D8E2B614958AE27A1D4E",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2023-08-21",
+        "text": "DisallowIncoming + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "75A7E01C505DD5A179DFE3E000A9B6F1EDDEB55A12F95579A23E15B15DC8BE5A",
+      "name": "ImmediateOfferKilled",
+      "date": "2023-08-21T05:59:11.000Z",
+      "ledger_index": 81986305,
+      "tx_hash": "65B8A4068B20696A866A07E5668B2AEB0451564E13B79421356FB962EC9A536B",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2023-08-21",
+        "text": "DisallowIncoming + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "73761231F7F3D94EC3D8C63D91BDD0D89045C6F71B917D1925C01253515A6669",
+      "name": "fixNonFungibleTokensV1_2",
+      "date": "2023-08-21T05:59:11.000Z",
+      "ledger_index": 81986305,
+      "tx_hash": "3AB0892CAB29F049B9D9E5D522701FD01469D0B97080626F8DD4B489D0B8784E",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2023-08-21",
+        "text": "DisallowIncoming + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "F1ED6B4A411D8B872E65B9DCB4C8B100375B0DD3D62D07192E011D6D7F339013",
+      "name": "fixTrustLinesToSelf",
+      "date": "2023-08-21T05:59:11.000Z",
+      "ledger_index": 81986305,
+      "tx_hash": "4F4C05142CA1DE257CD86513086F0C99FAF06D80932377C6B6C02B3D09623A43",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2023-08-21",
+        "text": "DisallowIncoming + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "2E2FB9CF8A44EB80F4694D38AADAE9B8B7ADAFD2F092E10068E61C98C4F092B0",
+      "name": "fixUniversalNumber",
+      "date": "2023-08-21T05:59:11.000Z",
+      "ledger_index": 81986305,
+      "tx_hash": "EFE82B7155CE5B766AF343D98DAE6662C2713C99E760D610370D02338881B2F3",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2023-08-21",
+        "text": "DisallowIncoming + 4 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "27CD95EE8E1E5A537FF2F89B6CEB7C622E78E9374EBD7DCBEDFAE21CD6F16E0A",
+      "name": "fixReducedOffersV1",
+      "date": "2023-11-24T22:24:21.000Z",
+      "ledger_index": 84145409,
+      "tx_hash": "87723D9D01AFAD8E55C944D7D1598969A8FBD852FCACAE361A40CBF5D4CB3BB1",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2023-11-24",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "AE35ABDEFBDE520372B31C957020B34A7A4A9DC3115A69803A44016477C84D6E",
+      "name": "fixNFTokenRemint",
+      "date": "2023-11-27T14:44:30.000Z",
+      "ledger_index": 84206081,
+      "tx_hash": "CA4562711E4679FE9317DD767871E90A404C7A8B84FAFD35EC2CF0231F1F6DAF",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2023-11-27",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "56B241D7A43D40354D02A9DC4C8DF5C7A1F930D92A9035C4E12291B3CA3E1C2B",
+      "name": "Clawback",
+      "date": "2024-02-08T14:38:01.000Z",
+      "ledger_index": 85829633,
+      "tx_hash": "C6BCCE60DFA4430A1F9097D774EA49E6FEFB1B535BA0EF9170DA0F2D08CDDB11",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2024-02-08",
+        "text": "Clawback enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "8CC0774A3BF66D1D22E76BBDA8E8A232E6B6313834301B3B23E8601196AE6455",
+      "name": "AMM",
+      "date": "2024-03-22T20:11:41.000Z",
+      "ledger_index": 86795265,
+      "tx_hash": "75F52BB86416717288999523063D54E24290EFEA2E99DF78E80A12BD1C8FAC99",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2024-03-22",
+        "text": "XRPL AMM goes live"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "93E516234E35E08CA689FA33A6D38E103881F8DCB53023F728C307AA89D515A7",
+      "name": "XRPFees",
+      "date": "2024-03-25T17:51:32.000Z",
+      "ledger_index": 86860289,
+      "tx_hash": "4B6047F84B959B64FDD10E22D9E7CCC1EA0D228387462E8FF975B17F7C779021",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2024-03-25",
+        "text": "XRPFees enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "C393B3AEEBF575E475F0C60D5E4241B2070CC4D0EB6C4846B1A07508FAEFC485",
+      "name": "fixInnerObjTemplate",
+      "date": "2024-04-08T15:27:52.000Z",
+      "ledger_index": 87172097,
+      "tx_hash": "EC67D9DF8D06067A76E8F8F43BC036B5E0267568F8D92624A658AC01A8186235",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2024-04-08",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "12523DF04B553A0B1AD74F42DDB741DE8DC06A03FC089A0EF197E2A87F1D8107",
+      "name": "fixAMMOverflowOffer",
+      "date": "2024-04-11T07:41:50.000Z",
+      "ledger_index": 87232257,
+      "tx_hash": "64144409D991726D108B89D79F9305438D61928A322EF1CD14DC3A5F24CE64BC",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2024-04-11",
+        "text": "XRPL maintenance: 3 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "15D61F0C6DB6A2F86BCF96F1E2444FEC54E705923339EC175BD3E517C8B3FF91",
+      "name": "fixDisallowIncomingV1",
+      "date": "2024-04-11T12:19:50.000Z",
+      "ledger_index": 87236609,
+      "tx_hash": "50286B4B9C95331A48D3AD517E1FD3299308C6B696C85E096A73A445E9EB1BFB",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2024-04-11",
+        "text": "XRPL maintenance: 3 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "3318EA0CF0755AF15DAC19F2B5C5BCBFF4B78BDD57609ACCAABE2C41309B051A",
+      "name": "fixFillOrKill",
+      "date": "2024-04-11T12:19:50.000Z",
+      "ledger_index": 87236609,
+      "tx_hash": "3209D6B66D375C23EEBE7C3DD3058B361427148D80C570B8E791D4C76555FA7B",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2024-04-11",
+        "text": "XRPL maintenance: 3 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "03BDC0099C4E14163ADA272C1B6F6FABB448CC3E51F522F978041E4B57D9158C",
+      "name": "fixNFTokenReserve",
+      "date": "2024-04-12T12:21:20.000Z",
+      "ledger_index": 87259137,
+      "tx_hash": "D708CF1799A27CB982F16FCE4762DD12738737A61E5850480BA51400280E06C4",
+      "retired": true,
+      "obsolete": false,
+      "target": {
+        "date": "2024-04-12",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "35291ADD2D79EB6991343BDA0912269C817D0F094B02226C1C14AD2858962ED4",
+      "name": "fixAMMv1_1",
+      "date": "2024-09-24T12:18:31.000Z",
+      "ledger_index": 90967553,
+      "tx_hash": "8C8F5566464097BF1BAF7C645BB9E1762986844A052BBA3B9769F6564EEFAB71",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2024-09-24",
+        "text": "XRPL maintenance: 1 fix"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "755C971C29971C9F20C6F080F2ED96F87884E40AD19554A5EBECDCEC8A1F77FE",
+      "name": "fixEmptyDID",
+      "date": "2024-09-27T16:58:32.000Z",
+      "ledger_index": 91038721,
+      "tx_hash": "A858AE8832981D77A4C5038D633CC9CBD54C9764BD2A3F8CA174E02D1736F472",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2024-09-27",
+        "text": "XRPL maintenance: 2 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "7BB62DC13EC72B775091E9C71BF8CF97E122647693B50C5E87A80DFD6FCFAC50",
+      "name": "fixPreviousTxnID",
+      "date": "2024-09-27T16:58:32.000Z",
+      "ledger_index": 91038721,
+      "tx_hash": "C7A9804E1F499ABBF38D791BAD25B1479DB1CEA4E9B6C5C08D6D4EF13F41E171",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2024-09-27",
+        "text": "XRPL maintenance: 2 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "DB432C3A09D9D5DFC7859F39AE5FF767ABC59AED0A9FB441E83B814D8946C109",
+      "name": "DID",
+      "date": "2024-10-30T19:57:10.000Z",
+      "ledger_index": 91778561,
+      "tx_hash": "7239CF04E6E1EEC606269135DA3C916B82D4B010F5315E7AEB3D5A3B6B5B343D",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2024-10-30",
+        "text": "DID enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "96FD2F293A519AE1DB6F8BED23E4AD9119342DA7CB6BAFD00953D16C54205D8B",
+      "name": "PriceOracle",
+      "date": "2024-11-02T04:59:10.000Z",
+      "ledger_index": 91831297,
+      "tx_hash": "05D03F7BF08BF4A915483F7B10EAC7016034656A54A8A6AD4A49A9AD362764A1",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2024-11-02",
+        "text": "PriceOracle enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "726F944886BCDF7433203787E93DD9AA87FAB74DFE3AF4785BA03BEFC97ADA1F",
+      "name": "AMMClawback",
+      "date": "2025-01-30T19:53:12.000Z",
+      "ledger_index": 93814273,
+      "tx_hash": "8672DFD11FCF79F8E8F92E300187E8E533899ED8C8CF5AFB1A9C518195C16261",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-01-30",
+        "text": "AMMClawback + 5 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "1E7ED950F2F13C4F8E2A54103B74D57D5D298FFDBD005936164EE9E6484C438C",
+      "name": "fixAMMv1_2",
+      "date": "2025-01-30T21:31:41.000Z",
+      "ledger_index": 93815809,
+      "tx_hash": "71D5031A5BD927BDFE424E51699E69F2784097D615D0852BF20C168BA9B5EA76",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-01-30",
+        "text": "AMMClawback + 5 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "763C37B352BE8C7A04E810F8E462644C45AFEAD624BF3894A08E5C917CF9FF39",
+      "name": "fixEnforceNFTokenTrustline",
+      "date": "2025-01-30T20:09:41.000Z",
+      "ledger_index": 93814529,
+      "tx_hash": "606FA84C4BA30F67582C11A39BBFC11A9D994E114CD515E9F63FC7D8701A8ED9",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-01-30",
+        "text": "AMMClawback + 5 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "9196110C23EA879B4229E51C286180C7D02166DA712559F634372F5264D0EC59",
+      "name": "fixInnerObjTemplate2",
+      "date": "2025-01-30T20:09:41.000Z",
+      "ledger_index": 93814529,
+      "tx_hash": "426314C8BC64BA339E97E53B278602ADC44F115056274BF7971F694C9A8AF946",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-01-30",
+        "text": "AMMClawback + 5 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "C7981B764EC4439123A86CC7CCBA436E9B3FF73B3F10A0AE51882E404522FC41",
+      "name": "fixNFTokenPageLinks",
+      "date": "2025-01-30T20:09:41.000Z",
+      "ledger_index": 93814529,
+      "tx_hash": "2D9A29768A7FA4BAC01DF1941380077E304785279E5E49267EC269F53ABADF5A",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-01-30",
+        "text": "AMMClawback + 5 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "31E0DA76FB8FB527CADCDF0E61CB9C94120966328EFA9DCA202135BAF319C0BA",
+      "name": "fixReducedOffersV2",
+      "date": "2025-01-30T21:31:41.000Z",
+      "ledger_index": 93815809,
+      "tx_hash": "6D325D5EFF8230F1FECA3EE6418C9678637F3F56B0CA247013F70B3BDCFE75C8",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-01-30",
+        "text": "AMMClawback + 5 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "EE3CF852F0506782D05E65D49E5DCC3D16D50898CD1B646BAE274863401CC3CE",
+      "name": "NFTokenMintOffer",
+      "date": "2025-02-15T16:33:20.000Z",
+      "ledger_index": 94166785,
+      "tx_hash": "E74C0196A9D4F193DD2A1DB5CCC5E37D3D43A21E2CB6185F6797E9BF2EDBE36C",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-02-15",
+        "text": "NFTokenMintOffer enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "DAF3A6EB04FA5DC51E8E4F23E9B7022B693EFA636F23F22664746C77B5786B23",
+      "name": "DeepFreeze",
+      "date": "2025-05-04T12:09:01.000Z",
+      "ledger_index": 95893505,
+      "tx_hash": "976281D793337FF5377A36409F2A1432DADAB64DB5064E12E71B1AC491EA3021",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-05-04",
+        "text": "DeepFreeze enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "83FD6594FF83C1D105BD2B41D7E242D86ECB4A8220BD9AF4DA35CB0F69E39B2A",
+      "name": "fixFrozenLPTokenTransfer",
+      "date": "2025-05-15T01:03:50.000Z",
+      "ledger_index": 96126977,
+      "tx_hash": "34F11D09E15EC3FE78FFB238EB33030A9E2F2B6233716712A4B7A9D13C55C89A",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-05-15",
+        "text": "XRPL maintenance: 2 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "8EC4304A06AF03BE953EA6EDA494864F6F3F30AA002BABA35869FBB8C6AE5D52",
+      "name": "fixInvalidTxFlags",
+      "date": "2025-05-15T01:03:50.000Z",
+      "ledger_index": 96126977,
+      "tx_hash": "D53E906A53C46A9AACFEB0093DF26EFD8634C3DAF50A18930D7910C51FFE3E9D",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-05-15",
+        "text": "XRPL maintenance: 2 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "C1CE18F2A268E6A849C27B3DE485006771B4C01B2FCEC4F18356FE92ECD6BB74",
+      "name": "DynamicNFT",
+      "date": "2025-06-11T00:13:50.000Z",
+      "ledger_index": 96724737,
+      "tx_hash": "CB5D27363B103D74F4018B5099EF9AD818AEB3634E8692D67F9FDF3CBBA778F5",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-06-11",
+        "text": "DynamicNFT enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "7CA70A7674A26FA517412858659EBC7EDEEF7D2D608824464E6FDEFD06854E14",
+      "name": "fixAMMv1_3",
+      "date": "2025-08-29T14:50:31.000Z",
+      "ledger_index": 98491905,
+      "tx_hash": "A695CB5E52B1998193AF044CEDB05C1A68EB7F4F811482C85442E8E63EDA4026",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-08-29",
+        "text": "XRPL maintenance: 3 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "B32752F7DCC41FB86534118FC4EEC8F56E7BD0A7DB60FD73F93F257233C08E3A",
+      "name": "fixEnforceNFTokenTrustlineV2",
+      "date": "2025-08-29T14:50:31.000Z",
+      "ledger_index": 98491905,
+      "tx_hash": "2532DC0E750FAA51CC11F58F742A1FB0CDC0F469DEA63EF903EC15D1E39667BE",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-08-29",
+        "text": "XRPL maintenance: 3 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "D3456A862DC07E382827981CA02E21946E641877F19B8889031CC57FDCAC83E2",
+      "name": "fixPayChanCancelAfter",
+      "date": "2025-08-29T14:50:31.000Z",
+      "ledger_index": 98491905,
+      "tx_hash": "21842CFFCD51428997C78056F2EB9B707E2CED45FEFD302084B08C35965D7DB8",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-08-29",
+        "text": "XRPL maintenance: 3 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "1CB67D082CF7D9102412D34258CEDB400E659352D3B207348889297A6D90F5EF",
+      "name": "Credentials",
+      "date": "2025-09-04T03:55:30.000Z",
+      "ledger_index": 98615297,
+      "tx_hash": "182C9331AB917370E9799C9A2946DE15F3E41D81522FBB55A1508829F8933A16",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-09-04",
+        "text": "Credentials enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "950AE2EA4654E47F04AA8739C0B214E242097E802FD372D24047A89AB1F5EC38",
+      "name": "MPTokensV1",
+      "date": "2025-10-01T13:13:10.000Z",
+      "ledger_index": 99226369,
+      "tx_hash": "14853FF2D09D198B576A531C50883C59D71474BA9072C1F5C0ED1DD57882B922",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-10-01",
+        "text": "MPTokensV1 enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "41765F664A8D67FF03DDB1C1A893DE6273690BA340A6C2B07C8D29D0DD013D3A",
+      "name": "fixDirectoryLimit",
+      "date": "2025-12-18T15:08:32.000Z",
+      "ledger_index": 100961281,
+      "tx_hash": "602A29FE77442A18F56B6A63A5C25FFD1CBB6930BA37FAC712CE2561CA6EAF8E",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2025-12-18",
+        "text": "XRPL maintenance: 1 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "5E9586DB3D765B4C5794658FB6BB385071E9838DF4016027E6E26820C8526724",
+      "name": "fixAMMClawbackRounding",
+      "date": "2026-01-27T22:20:10.000Z",
+      "ledger_index": 101852417,
+      "tx_hash": "BF67E97DE11F775E9AEEBF3C7D1D20E5D16A35A0F27C2F4CBAF89C4AF2F9FB76",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-01-27",
+        "text": "XRPL maintenance: 5 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "6143A27B71F7DAF9330ECA7C5EC3D54C8083A4FDEF7016737EEC06AB61E82EE0",
+      "name": "fixIncludeKeyletFields",
+      "date": "2026-01-27T22:20:10.000Z",
+      "ledger_index": 101852417,
+      "tx_hash": "6D78BF96B28F2A16FF229227A0F0FD555AE25791C64EAAEF6DA0B1AB3D0BA1ED",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-01-27",
+        "text": "XRPL maintenance: 5 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "AB8D932A5F338903FE5BCBD80B611FFED70839ABA3170E9CE01D947C0EDEDCF2",
+      "name": "fixMPTDeliveredAmount",
+      "date": "2026-01-27T22:20:10.000Z",
+      "ledger_index": 101852417,
+      "tx_hash": "56B9F029DD5D65888DD9997D690ED1E2AF46B80B7C9B41FE87CE6AFD9B0E6D08",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-01-27",
+        "text": "XRPL maintenance: 5 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "FF2D1E13CF6D22427111B967BD504917F63A900CECD320D6FD3AC9FA90344631",
+      "name": "fixPriceOracleOrder",
+      "date": "2026-01-27T22:20:10.000Z",
+      "ledger_index": 101852417,
+      "tx_hash": "5BC2395E779502F3D0D90C26FA3D8AF52BE10BB203BD11830951B893B6C928A0",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-01-27",
+        "text": "XRPL maintenance: 5 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "32B8614321F7E070419115ABEAB1742EA20F3E3AF34432B5E2F474F8083260DC",
+      "name": "fixTokenEscrowV1",
+      "date": "2026-01-27T22:20:10.000Z",
+      "ledger_index": 101852417,
+      "tx_hash": "E3B633906B8A9CA2BC9CB9DD832326001BDA02E5B336A640574E01ADD47058E3",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-01-27",
+        "text": "XRPL maintenance: 5 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "A730EB18A9D4BB52502C898589558B4CCEB4BE10044500EE5581137A2E80E849",
+      "name": "PermissionedDomains",
+      "date": "2026-02-04T10:06:41.000Z",
+      "ledger_index": 102017793,
+      "tx_hash": "CC30BAB4CDE71E2B07E73AC980D3464F2515E9FBA51489E0B2C89C39D1A51416",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-02-04",
+        "text": "PermissionedDomains enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "138B968F25822EFBF54C00F97031221C47B1EAB8321D93C7C2AEAF85F04EC5DF",
+      "name": "TokenEscrow",
+      "date": "2026-02-12T21:24:40.000Z",
+      "ledger_index": 102204929,
+      "tx_hash": "90A1297408C5F76769626A94242BCBD671E3CCD02ABEF80D92D8C7D7623840D5",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-02-12",
+        "text": "TokenEscrow enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "677E401A423E3708363A36BA8B3A7D019D21AC5ABD00387BDBEA6BDE4C91247E",
+      "name": "PermissionedDEX",
+      "date": "2026-02-18T10:58:10.000Z",
+      "ledger_index": 102328065,
+      "tx_hash": "AE56481023FBF05BE5E6272F5D1E1D7BC5239D0A913B981FBE2E302C389A8002",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-02-18",
+        "text": "PermissionedDEX enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "303ACB16CF8DBD3B5C34F131A9D19A7DE01AE05F480A8A682B869D1B4AAC8CFC",
+      "name": "fixCleanup3_1_3",
+      "date": "2026-05-27T03:51:20.000Z",
+      "ledger_index": 104507137,
+      "tx_hash": "C8ADF2BC866F9C81C3ED020F51D437CD4FC8E2588EC815AD44C870AD77DD6227",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-05-27",
+        "text": "XRPL maintenance: 1 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "21B8D2F76F68E11E9C077A43BBBC394136E9987E99DDB73966DD68419467E431",
+      "name": "fixCleanup3_2_0",
+      "date": "2026-07-29T10:01:40.000Z",
+      "ledger_index": 105928705,
+      "tx_hash": "350286C2517CBCA2D66FE785B115462ABCF947F8A3C69AB47EC7BF1E6CDFF862",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-07-29",
+        "text": "XRPL maintenance: 1 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "3298D47E1F3A8A24FECAA30F699B8FE1DD234E072834BA099AD8180FFCE0FEC4",
+      "name": "fixCleanup3_3_0",
+      "date": "2026-09-11T11:29:00.000Z",
+      "ledger_index": 106911489,
+      "tx_hash": "5749CFD26F6D2C4BE73E14543615F75717EA1D09A2B5865E5EAAE534EFBA0FD0",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-09-11",
+        "text": "XRPL maintenance: 1 fixes"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "0F48FF561C709540328F31F1C97FD512ACC8B4E42138A161CB0E21ECA292540B",
+      "name": "PermissionDelegationV1_1",
+      "date": "2026-10-08T21:29:50.000Z",
+      "ledger_index": 107524865,
+      "tx_hash": "478284066BA0B83CC35CA1174F667F43D9577782F221440AFCC5541788F25A77",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-10-08",
+        "text": "PermissionDelegationV1_1 enabled"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "9F287AED3CDB50A7BD1ACEC24296A30C9B5230CCD136219317AC790E3B884377",
+      "name": "BatchV1_1",
+      "date": "2026-10-09T14:47:52.000Z",
+      "ledger_index": 107540993,
+      "tx_hash": "1717BD8BE3FED93C142C8CD38DA5AD1208A0E9AE4E24F0F7ED545FC750BCA20A",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-10-09",
+        "text": "BatchV1_1 + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    },
+    {
+      "id": "14A2B45E48A4A124D1BBA657AC7B0DC3D5EA8C256C89E8F0D8142D32960A7944",
+      "name": "fixBatchV1_2",
+      "date": "2026-10-09T14:15:21.000Z",
+      "ledger_index": 107540481,
+      "tx_hash": "4A3B7683B30BE4E62FA6D8D92BFE9C5CC08627190286360DB42AC6CCDC7D3CD7",
+      "retired": false,
+      "obsolete": false,
+      "target": {
+        "date": "2026-10-09",
+        "text": "BatchV1_1 + 1 upgrades"
+      },
+      "independentExplorerAgrees": true,
+      "conflictResolved": null
+    }
+  ]
+}

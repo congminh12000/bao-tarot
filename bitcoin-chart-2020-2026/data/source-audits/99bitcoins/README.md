@@ -20,7 +20,7 @@ This is a coverage audit of a named source, not certification of every event in 
 | BTC | 119 | 238 | 119 / 102 / 17 | 234/234 |
 | ETH | 48 + 5 official milestones | 79 | 53 / 12 / 14 | 234/234 |
 | BNB | 41 + 18 sourced milestones; levels reviewed | 92 | 56 / 24 / 12 | 234/234 |
-| XRP | 55 | 131 | 111 / 6 / 14 | 234/234 |
+| XRP | 55 + 353 multi-source additions; levels reviewed | 484 | 354 / 114 / 16 | 234/234 |
 
 BTC's original 238-row import is in git commit `c3d3e43b`: 234 source events plus four additional authored ATH rows.
 Restore all 119 filtered level-0 entries without replacing approved level-1/2 labels or price-derived ATHs.
@@ -57,3 +57,9 @@ source dates remain in the snapshot and correction records. Other coins retain t
 
 BNB follow-up: 18 sourced milestones and the approved level review bring the dataset to 92 rows (56 / 24 / 12).
 The archived 234-entry source snapshot and its coverage dispositions are unchanged.
+
+XRP follow-up (2026-10-28): 484 sourced events; fourteen prior labels/dates clarified against primary sources.
+Automatic editorial grading was explicitly requested. Original source dates remain in the snapshot; corrected
+targets and explanations are retained in XRP coverage and `review-20261028.json`. All 97 dated mainnet amendment
+activations are reconciled, including one explorer majority/activation conflict resolved by validated transactions.
+See the XRP source inventory for archive gaps and issuer-only claims; this is not exhaustive world-news coverage.
