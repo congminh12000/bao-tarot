@@ -24,7 +24,7 @@ Every all-time high. Every crash. The story of BNB, told by its price chart.
 
 This animated chart replays BNB's history one daily candle at a time: its first exchange trades, the launch of Binance Chain and Smart Chain, network upgrades, the Token Hub exploit, and major market and regulatory milestones.
 
-Bull runs and bear markets each have their own original score: heroic in the climbs, tense in the falls. Protocol milestones are marked in cyan along the way.
+The market moves in two kinds of phases: a bull run, from an all-time low to the next all-time high, and a bear market, from an all-time high to the next all-time low. Each phase has its own original score: heroic in the climbs, tense in the falls. Protocol milestones are marked in cyan along the way.
 
 ⏱ CHAPTERS
 0:00 The first trades
