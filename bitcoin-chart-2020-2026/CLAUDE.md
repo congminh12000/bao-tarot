@@ -7,6 +7,7 @@ In short:
 - After every change: render a **short, low-quality preview** (always 60 fps, 16:9, 480p: `FPS=60 … --res 480`, a short
   FROM/TO range), send it, and
   **wait for the user's OK** before doing anything else. Never render the full film unless asked.
+- Deliver previews directly in chat; upload only final videos to Google Drive (user request 2026-10-28).
 - Never drop an event label, never let labels overlap each other or cover candles; up labels above, down below,
   right of the candle or centred first, left only when needed (details in PROJECT.md §3).
 - Phases change ONLY at an ALL-TIME HIGH or ALL-TIME LOW (no minor tops/bottoms, no TOP/BOTTOM labels). At a turn the

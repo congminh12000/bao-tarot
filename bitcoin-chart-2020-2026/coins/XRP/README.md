@@ -70,5 +70,5 @@ Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit v
 Contact sheet visually inspected. Audio quality assessed by measurement, not listening.
 Kept: `out/renders/xrp-preview-audit-20261028-480p60/`.
 MP4: `out/xrp-preview-audit-20261028-16x9-480p.mp4`. No full render. Full data and full music restored.
-Preview awaits user review. Google Drive delivery was blocked by automatic approval review pending explicit
-permission to upload this XRP preview to the connected account; the local video is preserved.
+Preview awaits user review. Delivery preference confirmed: previews directly in chat; only finals on Google Drive.
+The local preview is preserved.

@@ -28,6 +28,7 @@ nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn,
 1. Người dùng giao tiếp bằng **tiếng Việt** → trả lời bằng tiếng Việt. Chữ hiển thị TRONG video là **tiếng Anh**.
 2. Sau mỗi đợt thay đổi: **render preview chất lượng thấp** (đoạn ngắn, ví dụ 2017–2018 và đoạn có vấn đề),
    gửi người dùng xem, **chờ duyệt "OK" rồi mới làm tiếp**. Không tự render bản đầy đủ khi chưa được yêu cầu.
+   Gửi **preview trực tiếp trong chat**; **chỉ bản final mới tải lên Google Drive** (yêu cầu 28/10/2026).
    Preview: **luôn 60 fps**, mặc định 16:9, 480p (854×480): `FPS=60 … --res 480` (lệnh ở §8).
 3. Không nghe được âm thanh → chỉ báo số đo (LUFS, levels), nói rõ là chưa nghe, mời người dùng nghe góp ý.
 4. Commit + push lên branch `claude/bitcoin-price-chart-animation-l7ta0e` sau mỗi thay đổi (repo
@@ -316,7 +317,7 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
   114 nhãn cũ mờ sớm theo fallback đã duyệt. Một sự kiện trước ngày có giá được lưu nhưng không vẽ. Chưa render final.
   Preview 01/01–27/10/2026, 16:9 480p60, 45,37 s, 2 mốc sync ✓, −16,0 LUFS / peak −1,4 dBFS / LRA 4,4 LU;
   lưu `out/renders/xrp-preview-audit-20261028-480p60/`. Dữ liệu/nhạc đầy đủ đã khôi phục. Chờ duyệt preview.
-  Upload preview XRP lên Drive bị automatic approval review chặn, cần xác nhận riêng payload XRP; file local vẫn giữ.
+  Người dùng đã xác định cách giao file: preview gửi trực tiếp trong chat, chỉ final lên Drive. Preview local vẫn giữ.
 
 
 
