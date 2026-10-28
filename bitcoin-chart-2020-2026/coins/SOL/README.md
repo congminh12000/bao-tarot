@@ -1,4 +1,4 @@
-# Solana film — event list of 63 approved (2026-10-28), no preview yet
+# Solana film — full-history preview ready for review (2026-10-28)
 
 Prepared 2026-10-28 following PROJECT.md §11 and the palette in `coins/README.md`.
 
@@ -6,7 +6,22 @@ Prepared 2026-10-28 following PROJECT.md §11 and the palette in `coins/README.m
 - Events: 63 stored rows, all with sources; 56 shown (8 level 2 / 25 level 1 / 23 level 0), 7 `remove=true`.
 - Phases: 9 (5 uptrends, 4 downtrends) from the unchanged detector; ATH $4.95 · $58.6 · $260 · $295,
   ATL $1.03 · $22.1 · $8.00 · $60.1. Music: 9 distinct approved cues, `--strict` passes; full timeline ≈ 4:43.
-- Label check over the whole film: no overlaps, no early label exits. No video rendered: the event list waits for approval.
+- Running-film label check: no overlaps, no early label exits. Closing zoom-out has the known overlap below.
+
+## Full-history preview — 2026-10-28
+
+Explicitly requested after the 63-row event list was approved. Full saved range: 2020-04-10–2026-10-27,
+56 historical events + 8 generated ATH/ATL turns, 9 unique cues. Event flags, grades, phases and prices unchanged.
+16:9, 854×480, 60 fps, 282.666667 s, 16,960 decoded frames, 64,050,945 bytes. All input hashes unchanged.
+File: `out/sol-preview-full-20261028-480p.mp4`; kept at `out/renders/sol-preview-full-20261028-480p60/`,
+fingerprint `0bdb18e1db652aa2`. Full SOL data and music remain loaded; no FROM/TO cut.
+Decoded AAC: −16.0 LUFS, true peak −1.2 dBTP, LRA 4.5 LU; measured, not heard.
+Native AV verification: 13/17 markers pass. At ~45.6 s (ATH / China restriction) and ~195.1 s (TRUMP launch / ATH),
+two event pairs are only 82 ms and 76 ms apart: four measurements fail (adjacent onset / earlier flash selected).
+No score, picture or mix changes were made to hide these failures. Review these regions before a final export.
+Beginning, middle and closing frames inspected. The closing China-label/ATL overlap remains, not fixed.
+Evidence: `inputs.json`, `validation.json`, `verify.log`, `audio.log` and `contact.png` in the kept render directory.
+Awaiting preview review; no SOL final rendered.
 
 ```bash
 COIN=SOL node make-data.js --strict && COIN=SOL FPS=60 node song.js && COIN=SOL FPS=60 node check-labels.js

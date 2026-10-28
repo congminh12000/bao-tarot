@@ -318,6 +318,15 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **SOL preview full — 28/10/2026:** người dùng yêu cầu toàn dữ liệu sau khi duyệt 63 sự kiện. Render từ `765902d1`,
+  giữ 56 sự kiện hiển thị + 8 ATH/ATL, 9 bài không lặp, không đổi dữ liệu/phase/flag. 2020-04-10–2026-10-27.
+  File `out/sol-preview-full-20261028-480p.mp4`: 16:9 854×480 60 fps, 282,666667 s / 16.960 khung / 64.050.945 byte.
+  Lưu `out/renders/sol-preview-full-20261028-480p60/`, fingerprint `0bdb18e1db652aa2`; input hash không đổi.
+  Nguồn 63/63, nhãn đang chạy không chồng lấn / không rời sớm. Lỗi nhãn China/ATL ở zoom-out kết phim vẫn còn.
+  Native AV 13/17 đạt: 4 lỗi đo tại 2 cặp mốc sát nhau ~45,6 s và ~195,1 s (cách 82/76 ms); chưa sửa hình/nhạc.
+  AAC −16,0 LUFS / true peak −1,2 dBTP / LRA 4,5 LU; đo, chưa nghe. Ảnh đầu/giữa/cuối đã xem; bằng chứng nằm trong
+  thư mục bản lưu. Giữ dữ liệu và nhạc SOL đầy đủ. Chờ người dùng duyệt preview, chưa render final SOL.
+
 - **XRP final — 28/10/2026:** sau preview toàn timeline trong chat, người dùng chọn XRP / 16:9 / Full HD, 60 fps.
   Render từ `2830084b`, giữ nguyên 124 sự kiện đã chọn + 10 ATH/ATL, 11 bài không lặp; 360 mục remove vẫn lưu.
   File `out/xrp-final-20261028-16x9-1080p.mp4`: 1920×1080, 489,600 s / 29.376 khung giải mã / 409.790.700 byte.
