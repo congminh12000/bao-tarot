@@ -1,0 +1,49 @@
+{
+ "coin": "SOL",
+ "createdOn": "2026-10-28",
+ "policy": "remove=true keeps the row and its sources but hides it from every video (PROJECT.md \u00a716).",
+ "items": [
+  {
+   "date": "2020-07-22",
+   "text": "US banks allowed crypto custody",
+   "hit": 0,
+   "reason": "General market item with no clear SOL link (same policy the user approved for XRP group A)"
+  },
+  {
+   "date": "2020-09-25",
+   "text": "KuCoin exchange hack",
+   "hit": 0,
+   "reason": "General market item with no clear SOL link"
+  },
+  {
+   "date": "2020-10-01",
+   "text": "BitMEX executives charged",
+   "hit": 0,
+   "reason": "General market item with no clear SOL link"
+  },
+  {
+   "date": "2020-10-16",
+   "text": "OKEx suspends withdrawals",
+   "hit": 0,
+   "reason": "General market item with no clear SOL link"
+  },
+  {
+   "date": "2020-12-18",
+   "text": "Coinbase files for IPO",
+   "hit": 0,
+   "reason": "General market item with no clear SOL link"
+  },
+  {
+   "date": "2022-07-14",
+   "text": "Celsius files bankruptcy",
+   "hit": 0,
+   "reason": "Follow-up of Celsius halting withdrawals (retained)"
+  },
+  {
+   "date": "2023-03-19",
+   "text": "Crypto rally amid bank turmoil",
+   "hit": 0,
+   "reason": "General market item with no clear SOL link"
+  }
+ ]
+}
