@@ -3,6 +3,7 @@
 Channel texts (description EN/VI/KO, keywords, upload defaults, publishing schedule): `channel.md`.
 
 - `logo.png`: final avatar, solid green candle with lower wick and solid red candle with upper wick.
+- `logo-150-transparent.png`: the same two candles on a transparent background, 150 × 150 (watermark, small icon).
 - `banner-2560x1440.png`: upload this full banner to YouTube; 2560 × 1440 pixels, under 6 MB.
 - `preview-mobile.png`: centered 1546 × 423 safe-area preview.
 - `preview-desktop.png`: centered 2560 × 423 desktop preview.
