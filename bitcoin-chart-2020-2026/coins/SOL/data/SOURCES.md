@@ -32,7 +32,8 @@ across outlets (label 07-29; the court deadline was 07-29). CME futures were ann
 The Alpenglow vote results were published 2025-09-02. Mainnet Beta (March 2020) is not stored: the official page only
 says "March", and it is before the price data.
 
-Levels assigned on the user's request (2026-10-28): 8 level 2, 19 level 1, 8 level 0 visible. Seven general-market or
+Levels assigned on the user's request (2026-10-28). First list (42 rows) approved; the user then asked for more events,
+so 21 more were added and cross-checked the same day (see below). Now 63 rows: 8 level 2, 25 level 1, 23 level 0 visible. Seven general-market or
 follow-up rows are kept with `remove=true` (`removals-20261028.json`), the same policy the user approved for XRP group A.
 Not a claim that every event in Solana's history is covered.
 
@@ -41,3 +42,19 @@ Not a claim that every event in Solana's history is covered.
 Official logomark from https://solana.com/branding (`solanaLogoMark.svg`), kept as `logo.svg`, rasterised unchanged
 onto a transparent 1024×1024 `logo.png`; `logo-negative.png` by the documented ffmpeg command. Colours: the SOL row of
 `coins/README.md` (purple #B57BFF / teal #7EE8FF, glow #9945FF); awaits the user's approval.
+
+## Expansion — 2026-10-28 (21 more events, awaiting approval)
+
+Each link opened/read on 2026-10-28: The Block (Serum announced 2020-07-27; Tether USDT on Solana 2020-09-09 — the Solana
+Foundation post is dated 09-08; DeGods/y00ts bridge plan published 2022-12-26 for the 12-25 announcement; Robinhood
+delisting 2023-06-09; PUMP sale 2025-07-12; SEC generic listing standards 2025-09-17), Visa press release (USDC settlement
+on Solana, 2023-09-05), TechCrunch (Shopify + Solana Pay, 2023-08-23), CryptoSlate (Saga unveiled 2022-06-23), Yahoo
+Finance/CoinDesk (BONK debuted 2022-12-25), Decrypt (Jito airdrop 2023-12-07; LIBRA promoted late Friday 2025-02-14),
+CoinDesk (Jupiter airdrop 2024-01-31; v1.17.31 congestion fix 2024-04-15; Brazil CVM ETF approval disclosed 2024-08-07),
+Blockhead (Canadian spot SOL ETFs trading 2025-04-16), Grayscale release (GSOL on NYSE Arca 2025-10-29), solana.com Agave 4.2
+page (200 ms slot time at epoch 1053, 2026-10-09). SOL > $10 (2021-02-19) and SOL > $200 (2021-09-09) are first daily highs in the TradingView data. Coinbase Pro
+listing: Forkast and Cryptonews Australia (deposits 2021-05-20, trading 2021-05-24). Raydium launch (Feb 2021) not added:
+its sources could not be opened.
+Not added: USDC on Solana (only an announcement date), Fidelity FSOL (18 vs 19 Nov conflict), the 2022 January
+congestion (durations conflict), the Mainnet Beta date (no official day), the FTX estate SOL unlock (no reliable date).
+

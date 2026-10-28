@@ -2,15 +2,22 @@
 2020-04-10,Binance blog,https://www.binance.com/en/blog/all/binance-weekly-report-more-options-421499824684900515,Binance lists SOL
 2020-04-10,TradingView CRYPTO:SOLUSD,https://www.tradingview.com/symbols/SOLUSD/?exchange=CRYPTO,Binance lists SOL
 2020-07-22,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-green-lights-banks-for-cryptocurrency-custody-services,US banks allowed crypto custody
+2020-07-27,The Block,https://www.theblock.co/post/72924/ftx-dex-serum-solana-blockchain,FTX unveils Serum DEX
+2020-09-09,The Block,https://www.theblock.co/post/77274/tether-launches-on-solana-blockchain,Tether launches USDT on Solana
+2020-09-09,Solana Foundation,https://solana.com/news/tether-to-bring-usdt-to-the-solana-network,Tether launches USDT on Solana
 2020-09-25,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#kucoin-exchange-hacked-for-150-million-in-bitcoin,KuCoin exchange hack
 2020-10-01,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#owners-of-bitmex-a-leading-bitcoin-exchange-face-criminal-charges,BitMEX executives charged
 2020-10-16,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#okex-exchange-suspending-withdrawals-as-private-key-holder-is-out-of-contact,OKEx suspends withdrawals
 2020-10-21,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#paypal-allows-bitcoin-and-crypto-spending,PayPal crypto services
 2020-12-04,Solana Foundation,https://solana.com/news/mainnet-beta-stall---postmortem,Network stalls for ~6 hours
 2020-12-18,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-files-for-ipo,Coinbase files for IPO
+2021-02-19,TradingView CRYPTO:SOLUSD,https://www.tradingview.com/symbols/SOLUSD/?exchange=CRYPTO,SOL > $10
 2021-05-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-financial-institutions-from-cryptocurrency-business,China crypto ban
+2021-05-24,Forkast,https://forkast.news/solana-coinbase-listing-price-bitcoin-crash/,Coinbase Pro lists SOL
+2021-05-24,Cryptonews Australia,https://cryptonews.com.au/coinbase-pro-announces-listing-of-solana-sol-trading-starts-monday,Coinbase Pro lists SOL
 2021-06-09,The Block,https://www.theblock.co/post/107749/solana-labs-raises-314-million-funding-a16z-polychain-capital,Solana Labs raises $314M
 2021-08-30,TradingView CRYPTO:SOLUSD,https://www.tradingview.com/symbols/SOLUSD/?exchange=CRYPTO,SOL > $100
+2021-09-09,TradingView CRYPTO:SOLUSD,https://www.tradingview.com/symbols/SOLUSD/?exchange=CRYPTO,SOL > $200
 2021-09-14,Solana Foundation,https://solana.com/news/9-14-network-outage-initial-overview,17-hour network outage
 2021-09-24,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#china-bans-all-cryptocurrency-transactions,China bans all crypto
 2022-02-02,Merkle Science,https://www.merklescience.com/blog/hack-track-analysis-of-wormhole-token-bridge-exploit,Wormhole hack: $320M
@@ -20,29 +27,46 @@
 2022-05-07,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#luna-and-terrausd-crashes-crypto-market,LUNA collapse
 2022-06-01,Solana Foundation,https://solana.com/news/06-01-22-solana-mainnet-beta-outage-report-2,4.5-hour network outage
 2022-06-13,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-lender-celsius-pauses-withdrawals,Celsius halts withdrawals
+2022-06-23,CryptoSlate,https://cryptoslate.com/?p=245048,Saga phone unveiled
 2022-07-14,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#troubled-crypto-lender-celsius-files-for-bankruptcy,Celsius files bankruptcy
 2022-08-03,The Block,https://www.theblock.co/post/161325/solana-team-traces-exploit-back-to-slope-mobile-wallets,Slope wallet drain
 2022-08-03,Cointelegraph,https://cointelegraph.com/news/ongoing-solana-based-wallet-hack-has-already-seen-millions-drained,Slope wallet drain
 2022-09-30,Solana Foundation,https://solana.com/news/09-30-22-solana-mainnet-beta-outage-report,6-hour network outage
 2022-10-11,The Block,https://www.theblock.co/post/176445/hacker-steals-over-100-million-from-mango-markets,Mango Markets exploit
 2022-11-11,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ftx-crypto-exchange-files-for-bankruptcy,FTX bankrupt
+2022-12-25,Yahoo Finance (CoinDesk),https://ca.finance.yahoo.com/news/sam-bankman-fried-backed-solana-175012193.html,BONK airdrop to Solana users
+2022-12-25,The Block,https://www.theblock.co/post/197892/top-solana-nft-projects-degods-y00ts-are-headed-to-ethereum-and-polygon,DeGods and y00ts bridge off SOL
 2023-02-25,Solana Foundation,https://solana.com/news/02-25-23-solana-mainnet-beta-outage-report,Mainnet slowdown and restart
 2023-03-08,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#crypto-friendly-silvergate-bank-voluntarily-closes,Silvergate announces wind-down
 2023-03-08,SEC (Silvergate 8-K),https://www.sec.gov/Archives/edgar/data/1312109/000131210923000058/ex991sipressrelease3x8x23.htm,Silvergate announces wind-down
 2023-03-19,99Bitcoins,https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#banking-crisis-rallies-bitcoin,Crypto rally amid bank turmoil
 2023-06-05,SEC complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-101.pdf,SEC calls SOL a security
+2023-06-09,The Block,https://www.theblock.co/post/233961/robinhood-ends-support-for-solana-polygon-cardano-amid-sec-exchange-crackdown,Robinhood delists SOL
+2023-08-23,TechCrunch,https://techcrunch.com/2023/08/23/solana-pay-plug-in-with-shopify-for-usdc-payments,Shopify adds Solana Pay
+2023-09-05,Visa,https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.19881.html,Visa settles USDC on Solana
+2023-12-07,Decrypt,https://decrypt.co/209010/jito-airdrop-hands-out-225-million-solana-users,Jito airdrop: $225M
+2024-01-31,CoinDesk,https://www.coindesk.com/markets/2024/01/31/jupiters-jup-token-soars-after-massive-700m-airdrop-to-solana-wallets,Jupiter airdrop: $700M
 2024-02-06,Solana Foundation,https://solana.com/news/02-06-24-solana-mainnet-beta-outage-report,5-hour network outage
+2024-04-15,CoinDesk,https://www.coindesk.com/tech/2024/04/15/solana-rolls-out-update-to-tackle-network-congestion,Congestion fix v1.17.31
 2024-06-27,The Block,https://www.theblock.co/post/302297/sol-spikes-6-following-vanecks-spot-solana-etf-filing,VanEck files SOL ETF
 2024-07-29,Decrypt,https://decrypt.co/242315/sec-might-shelve-allegation-that-solana-is-a-security-in-binance-lawsuit,SEC shelves SOL claims
+2024-08-07,CoinDesk,https://www.coindesk.com/policy/2024/08/08/brazils-securities-and-exchange-commission-approves-solana-based-etf/,Brazil approves SOL ETF
 2024-09-20,The Block,https://www.theblock.co/post/317490/jump-frankendancer-launches-on-solana-mainnet,Frankendancer on mainnet
 2025-01-18,Cointelegraph,https://cointelegraph.com/markets/official-trump-memecoin-launch-breaks-records-as-solana-sol-rallies-to-new-all-time-high,TRUMP memecoin on Solana
+2025-02-14,Decrypt,https://decrypt.co/306134/did-argentina-president-javier-milei-launch-solana-meme-coin,LIBRA memecoin scandal
 2025-03-02,The Block,https://www.theblock.co/post/344092/trump-directs-working-group-to-move-forward-on-sol-xrp-and-ada-crypto-strategic-reserve,Trump: SOL in crypto reserve
 2025-03-17,The Defiant,https://thedefiant.io/news/tradfi-and-fintech/cme-group-launches-solana-futures-on-march-17-2025-following-falconx-s-first-etf-0b7b1dd3,CME SOL futures launch
 2025-03-17,The Block,https://www.theblock.co/post/343980/cme-group-solana-futures-march-17,CME SOL futures launch
 2025-03-20,Cointelegraph,https://cointelegraph.com/news/volatility-shares-launch-solana-futures-etfs-march-20,First US SOL ETFs (futures)
+2025-04-16,Blockhead,https://www.blockhead.co/2025/04/17/canada-leads-the-way-with-launch-of-spot-solana-etfs,Canada spot SOL ETFs trade
 2025-07-02,REX Shares,https://www.rexshares.com/rex-osprey-launches-first-u-s-etf-with-solana-exposure-plus-staking-rewards,First SOL staking ETF
+2025-07-12,The Block,https://www.theblock.co/post/362320/pump-fun-raises-500-million-in-12-minutes-as-pump-tokens-fully-sell-out,Pump.fun raises $600M
 2025-09-02,Cointelegraph,https://cointelegraph.com/news/solana-alpenglow-upgrade-clears-governance-vote-implementation,Alpenglow vote passes
 2025-09-08,Decrypt,https://decrypt.co/338475/forward-industries-stock-soars-1-65-billion-solana-pivot,Forward Industries $1.65B SOL
+2025-09-17,The Block,https://www.theblock.co/post/371157/sec-approves-new-exchange-listing-standards-fast-tracking-crypto-etf-listings,SEC generic ETF listing rules
 2025-10-10,The Block,https://www.theblock.co/post/374266/crypto-liquidations-near-10-billion-in-historic-drawdown-following-trumps-100-tariffs-on-china,Record crypto liquidations
 2025-10-28,Bitwise,https://bitwiseinvestments.com/newsroom/bitwise-launches-bsol-first-spot-solana-etp-in-us/,Spot SOL ETF launches
+2025-10-29,Grayscale (GlobeNewswire),https://www.globenewswire.com/news-release/2025/10/29/3176258/0/en/Grayscale-Solana-Trust-ETF-Ticker-GSOL-Launches-on-NYSE-Arca-with-Staking.html,Grayscale GSOL trades
+2025-10-29,AOL (release copy),https://lite.aol.com/sports/other/story/0022/20251029/9564026.htm,Grayscale GSOL trades
+2026-10-09,Solana Foundation,https://solana.com/upgrades/agave-4-2-release-overview,200ms slots go live
 2026-10-21,Solana Foundation,https://solana.com/upgrades/alpenglow,Alpenglow goes live
