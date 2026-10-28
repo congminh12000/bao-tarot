@@ -1,0 +1,83 @@
+# date,kind,hit,tag,text,remove
+2013-12-25,down,0,,Dogewallet hacked at Christmas,false
+2014-01-20,up,0,,DOGE funds Jamaica bobsled team,false
+2014-02-07,info,0,,Exchanges hit by DDoS attacks,true
+2014-02-24,down,2,,Mt. Gox collapses,false
+2014-03-25,info,0,,IRS crypto tax guidance,true
+2014-04-10,info,0,,China closes exchange accounts,false
+2014-07-17,info,0,,BitLicense proposal,true
+2014-09-11,info,1,upgrade,Merged mining with Litecoin,false
+2015-01-04,info,0,,Bitstamp hack,false
+2015-01-26,info,0,,Coinbase exchange launches,true
+2015-06-03,info,0,,BitLicense rules released,true
+2015-08-01,info,0,,Mt. Gox CEO arrested,true
+2015-09-17,info,0,,CFTC Bitcoin commodity ruling,true
+2015-10-08,info,0,,Gemini exchange launches,true
+2015-10-22,info,0,,EU crypto VAT ruling,true
+2016-08-02,info,0,,Bitfinex hack,false
+2017-09-04,down,1,,China bans ICOs,false
+2017-09-15,down,1,,Beijing orders exchange closures,false
+2017-12-28,info,0,,Korea exchange shutdown warning,false
+2018-01-08,info,0,,CMC removes Korean price feeds,false
+2018-01-26,info,0,,Coincheck hack; withdrawals halt,false
+2018-01-30,info,0,,Facebook bans crypto ads,true
+2018-03-07,info,0,,SEC exchange registration notice,true
+2018-03-14,info,0,,Google crypto ad ban announced,true
+2018-03-26,info,0,,Twitter crypto ad ban announced,true
+2018-05-11,info,0,,Upbit prosecutors raid,false
+2018-06-10,info,0,,Coinrail exchange hack,true
+2018-06-20,info,0,,Bithumb exchange hack,true
+2018-06-26,info,0,,Facebook eases crypto ad ban,true
+2018-07-16,info,0,,BlackRock explores crypto,true
+2018-09-05,info,0,,Goldman crypto desk report,true
+2018-09-14,info,0,,Zaif exchange hack,true
+2018-10-15,info,0,,Fidelity crypto platform,true
+2019-01-31,info,0,,Quadriga seeks creditor protection,true
+2019-03-01,info,0,,Facebook crypto project report,true
+2019-03-22,info,0,,Fake trading volume study,true
+2019-04-26,info,0,,Bitfinex + Tether investigation,false
+2019-05-07,info,0,,Binance exchange hack,false
+2019-06-18,info,0,,Facebook Libra announced,true
+2019-07-05,up,1,,Binance lists DOGE,false
+2019-08-07,info,0,,Binance KYC ransom demand,true
+2019-10-09,info,0,,UNICEF accepts crypto donations,true
+2019-10-28,info,0,,China endorses blockchain,false
+2019-12-23,info,0,,YouTube crypto video ban error,true
+2020-02-17,info,0,,FCoin exchange insolvency,true
+2020-03-04,info,0,,India lifts crypto banking ban,true
+2020-03-12,down,2,,COVID crypto-market crash,false
+2020-03-15,info,0,,Fed rate cuts + QE,false
+2020-03-23,info,0,,Fed expands QE,false
+2020-03-26,info,0,,Microsoft crypto patent,true
+2020-07-22,info,0,,US banks allowed crypto custody,true
+2020-09-25,info,0,,KuCoin exchange hack,true
+2020-10-01,info,0,,BitMEX executives charged,true
+2020-10-16,info,0,,OKEx suspends withdrawals,true
+2020-10-21,info,0,,PayPal crypto services,false
+2020-12-17,info,0,,Coinbase draft S-1 filing announced,true
+2021-01-28,up,1,,Reddit rally: DOGE +800%,false
+2021-04-14,up,0,,DOGE > $0.10,false
+2021-05-04,up,0,,DOGE > $0.50,false
+2021-05-08,down,1,,Musk on SNL; DOGE drops,false
+2021-05-09,up,0,,DOGE-1 Moon mission paid in DOGE,false
+2021-05-19,down,2,,Crypto market sell-off,false
+2021-06-03,up,1,,Coinbase Pro lists DOGE,false
+2021-09-24,down,1,,China bans all crypto,false
+2022-01-14,up,1,,Tesla accepts DOGE for merch,false
+2022-03-09,info,0,,US crypto executive order,false
+2022-05-07,down,2,,LUNA collapse,false
+2022-06-13,info,0,,Celsius halts withdrawals,false
+2022-07-14,info,0,,Celsius files bankruptcy,true
+2022-10-28,up,1,,Musk buys Twitter; DOGE doubles,false
+2022-11-11,down,2,,FTX bankrupt,false
+2023-03-08,info,0,,Silvergate announces wind-down,false
+2023-03-19,info,0,,Crypto rally amid bank turmoil,true
+2023-04-03,up,1,,Twitter logo turns Doge,false
+2024-05-24,info,0,,Kabosu the Doge dog dies,false
+2024-08-29,up,0,,$258B DOGE lawsuit dismissed,false
+2024-11-12,up,1,,Musk to lead D.O.G.E.,false
+2025-09-18,up,1,,First DOGE ETF (DOJE) trades,false
+2025-10-10,down,1,,Record crypto liquidations,false
+2025-11-24,up,2,,Spot DOGE ETF launches (GDOG),false
+2026-01-22,up,0,,21Shares TDOG launches,false
+2026-10-19,down,0,,Foundation ends House of Doge deal,false

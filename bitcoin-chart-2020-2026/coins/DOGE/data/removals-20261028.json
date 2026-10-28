@@ -1,0 +1,229 @@
+{
+ "coin": "DOGE",
+ "createdOn": "2026-10-28",
+ "policy": "remove=true keeps the row and its sources but hides it from every video (PROJECT.md \u00a716); general crypto-market items with no clear DOGE link follow the policy the user approved for XRP group A.",
+ "items": [
+  {
+   "date": "2014-02-07",
+   "text": "Exchanges hit by DDoS attacks",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2014-03-25",
+   "text": "IRS crypto tax guidance",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2014-07-17",
+   "text": "BitLicense proposal",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2015-01-26",
+   "text": "Coinbase exchange launches",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2015-06-03",
+   "text": "BitLicense rules released",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2015-08-01",
+   "text": "Mt. Gox CEO arrested",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2015-09-17",
+   "text": "CFTC Bitcoin commodity ruling",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2015-10-08",
+   "text": "Gemini exchange launches",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2015-10-22",
+   "text": "EU crypto VAT ruling",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-01-30",
+   "text": "Facebook bans crypto ads",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-03-07",
+   "text": "SEC exchange registration notice",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-03-14",
+   "text": "Google crypto ad ban announced",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-03-26",
+   "text": "Twitter crypto ad ban announced",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-06-10",
+   "text": "Coinrail exchange hack",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-06-20",
+   "text": "Bithumb exchange hack",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-06-26",
+   "text": "Facebook eases crypto ad ban",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-07-16",
+   "text": "BlackRock explores crypto",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-09-05",
+   "text": "Goldman crypto desk report",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-09-14",
+   "text": "Zaif exchange hack",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2018-10-15",
+   "text": "Fidelity crypto platform",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2019-01-31",
+   "text": "Quadriga seeks creditor protection",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2019-03-01",
+   "text": "Facebook crypto project report",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2019-03-22",
+   "text": "Fake trading volume study",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2019-06-18",
+   "text": "Facebook Libra announced",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2019-08-07",
+   "text": "Binance KYC ransom demand",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2019-10-09",
+   "text": "UNICEF accepts crypto donations",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2019-12-23",
+   "text": "YouTube crypto video ban error",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2020-02-17",
+   "text": "FCoin exchange insolvency",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2020-03-04",
+   "text": "India lifts crypto banking ban",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2020-03-26",
+   "text": "Microsoft crypto patent",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2020-07-22",
+   "text": "US banks allowed crypto custody",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2020-09-25",
+   "text": "KuCoin exchange hack",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2020-10-01",
+   "text": "BitMEX executives charged",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2020-10-16",
+   "text": "OKEx suspends withdrawals",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2020-12-17",
+   "text": "Coinbase draft S-1 filing announced",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  },
+  {
+   "date": "2022-07-14",
+   "text": "Celsius files bankruptcy",
+   "hit": 0,
+   "reason": "Follow-up of Celsius halting withdrawals (retained)"
+  },
+  {
+   "date": "2023-03-19",
+   "text": "Crypto rally amid bank turmoil",
+   "hit": 0,
+   "reason": "General crypto-market item with no clear DOGE link"
+  }
+ ]
+}

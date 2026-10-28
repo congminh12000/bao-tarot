@@ -318,6 +318,13 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- DOGE (28/10/2026): tạo `coins/DOGE/` theo §11. Giá TradingView `CRYPTO:DOGEUSD` 15/12/2013–27/10/2026, 4.700 nến
+  thật, không thiếu ngày; đối chiếu Coinbase lệch trung vị 0,03 %. 82 dòng sự kiện có nguồn (đã mở/đọc từng link):
+  45 hiện (6 / 14 / 25 theo mức 2/1/0, người dùng yêu cầu tự phân mức), 37 `remove=true` (tin thị trường chung, cùng
+  chính sách nhóm A của XRP). 99Bitcoins 234/234 ID; 9 phase / 9 bài không lặp, `--strict` ✓; nhãn toàn phim ✓, không
+  nhãn rời sớm. Logo chính thức (Dogecoin Core), màu theo bảng (chờ duyệt). **Danh sách sự kiện chờ người dùng duyệt →
+  chưa render.** Chi tiết: `coins/DOGE/README.md`, `coins/DOGE/data/SOURCES.md`.
+
 - **TRX preview full — 28/10/2026:** người dùng yêu cầu render toàn dữ liệu theo danh sách hiện tại; không đổi phân mức,
   giá, phase hay cờ remove. Từ `f63ea0e0`: 3.332 ngày giá 2017-09-13–2026-10-27, 45 sự kiện + 4 ATH/ATL, 5 bài không lặp.
   File `out/trx-preview-full-20261028-480p.mp4`: 16:9 854×480 60 fps, 343,674625 s / 20.620 khung / 71.363.621 byte.
