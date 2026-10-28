@@ -33,7 +33,7 @@ reusing the fact-checked XRP targets and date notes). DOGE-specific events, each
 Not added: SEC/CFTC "digital commodity" interpretation of 2026-03-17 (the Federal Register text does not name Dogecoin;
 only company filings say so), the NASCAR Talladega car (sources could not be opened), Grayscale/Bitwise dates other than
 GDOG, House of Doge listing, and other items without a dated, opened source. Levels assigned on the user's request:
-6 level 2, 14 level 1, 25 level 0 visible; 37 general-market or follow-up rows kept with `remove=true`
+6 level 2, 14 level 1, 35 level 0 visible (after the expansion below); 37 general-market or follow-up rows kept with `remove=true`
 (`removals-20261028.json`), the policy the user approved for XRP group A. Not a claim of complete coverage.
 
 ## Logo and colours
@@ -41,3 +41,13 @@ GDOG, House of Doge listing, and other items without a dated, opened source. Lev
 Official Dogecoin coin logo from the Dogecoin Core repository (`share/pixmaps/dogecoin256.svg`, the same mark as the
 dogecoin.com app icon), saved unchanged as `logo.svg`, rasterised onto a transparent 1024×1024 `logo.png`;
 `logo-negative.png` by the documented ffmpeg command. Colours: the DOGE row of `coins/README.md` (bronze gold); awaits approval.
+
+## Expansion — 2026-10-28 (10 more events, requested by the user, awaiting approval)
+
+Each link opened/read: CoinDesk (Doge4Water drive announced 2014-03-11; Dogecoin Foundation revived 2021-08-17), TechCrunch
+(Moolah announces shutdown 2014-10-14), Investing.com/Benzinga (Musk's first DOGE tweet, 2019-04-02), Fortune (TikTok
+challenge, DOGE up ~95 % from 2020-07-06; label 2020-07-07), Entrepreneur (Musk's "people's crypto" tweet, 2021-02-04),
+Cointelegraph (Bitwise S-1 for a spot DOGE ETF 2025-01-28; CleanCore $175M DOGE treasury 2025-09-02). DOGE > $0.001
+(2017-05-06) and > $0.01 (2017-12-25) are first daily highs in the TradingView data. Not added: fixed 10,000 DOGE block
+reward and Digishield fork (no dated source), Jackson Palmer's 2015 exit (no source found).
+
