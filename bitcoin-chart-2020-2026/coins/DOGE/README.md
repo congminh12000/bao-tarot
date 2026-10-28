@@ -1,4 +1,4 @@
-# Dogecoin film — event list awaiting approval
+# Dogecoin film — event list of 92 approved (2026-10-28), no preview yet
 
 Prepared 2026-10-28 following PROJECT.md §11 and the palette in `coins/README.md`.
 

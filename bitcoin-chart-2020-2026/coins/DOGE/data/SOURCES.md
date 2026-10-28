@@ -42,7 +42,7 @@ Official Dogecoin coin logo from the Dogecoin Core repository (`share/pixmaps/do
 dogecoin.com app icon), saved unchanged as `logo.svg`, rasterised onto a transparent 1024×1024 `logo.png`;
 `logo-negative.png` by the documented ffmpeg command. Colours: the DOGE row of `coins/README.md` (bronze gold); awaits approval.
 
-## Expansion — 2026-10-28 (10 more events, requested by the user, awaiting approval)
+## Expansion — 2026-10-28 (10 more events, requested by the user; list of 92 approved 2026-10-28)
 
 Each link opened/read: CoinDesk (Doge4Water drive announced 2014-03-11; Dogecoin Foundation revived 2021-08-17), TechCrunch
 (Moolah announces shutdown 2014-10-14), Investing.com/Benzinga (Musk's first DOGE tweet, 2019-04-02), Fortune (TikTok

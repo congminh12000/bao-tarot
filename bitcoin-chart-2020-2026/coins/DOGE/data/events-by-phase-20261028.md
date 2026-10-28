@@ -1,4 +1,4 @@
-# DOGE — danh sách sự kiện (mở rộng) chờ duyệt
+# DOGE — danh sách sự kiện (mở rộng), đã duyệt 28/10/2026
 
 28/10/2026. 92 dòng: **55 hiện** (6 mức 2 / 14 mức 1 / 35 mức 0) + **37 remove=true**. 🆕 = 10 sự kiện mới thêm. Chưa tính ATH/ATL tự tạo.
 
