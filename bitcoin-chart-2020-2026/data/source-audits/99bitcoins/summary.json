@@ -91,7 +91,14 @@
         188,
         207,
         220
-      ]
+      ],
+      "videoRemoved": 146,
+      "videoEligible": 338,
+      "videoEligibleByLevel": {
+        "0": 208,
+        "1": 114,
+        "2": 16
+      }
     }
   }
 }

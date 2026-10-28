@@ -3,6 +3,13 @@
 Prepared 2026-10-27. Event labels describe historical happenings without assigning price causation.
 XRP the asset is distinct from Ripple the company. The logo is XRP's X symbol, not Ripple's corporate mark.
 
+## Video exclusions — 2026-10-28
+
+All 484 research events and their 1,013 citations are retained, including 146 explicitly excluded level-0 technical/
+repeated entries. `remove=true` affects video selection only; no claim/source/grade is deleted. See
+`removals-20261028.json` for each decision. Eligible counts: 338 (208 / 114 / 16), 337 within the price range.
+Earlier visible-label counts and previews below describe the pre-exclusion state.
+
 ## Current audit — 2026-10-28 (supersedes preparation counts below)
 
 - 484 historical events: 354 level 0 / 114 level 1 / 16 level 2; 1,013 exact source rows, no event missing a citation.

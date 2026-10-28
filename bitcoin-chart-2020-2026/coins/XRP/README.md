@@ -11,6 +11,18 @@ The unchanged phase detector yields 11 phases and 11 unique approved cues. Full 
 older labels fading early under the approved fallback; no overlap. One stored 2013-04-11 event precedes the price
 series: 483 historical events appear in full data, plus 10 generated ATH/ATL labels. No full video rendered.
 
+## Visibility selection — 2026-10-28 (supersedes earlier visible counts)
+
+`events.csv` now ends in `remove` (`true`/`false`). All **484 research events and 1,013 citations remain**;
+146 level-0 technical/repetitive rows are explicitly excluded. The eligible set is **338 = 208 / 114 / 16**
+at levels 0 / 1 / 2; one early funding row precedes the price series, so full video data contains 337 historical
+events plus 10 generated turns. No level-1/2 changes, no price/phase/cue changes.
+
+Excluded: 102 routine rippled/Clio releases, 23 maintenance entries, 12 minor activations, two technical migrations,
+and seven later reports repeating retained security incidents. Original security incidents remain.
+Exact choices and reasons: `data/removals-20261028.json`. To restore an event, set its final column to `false` and
+regenerate; source audits intentionally include both removed and visible rows. These flags must survive refreshes.
+
 ## Original preparation (historical notes)
 
 Prepared 2026-10-27 under PROJECT.md §11 and the palette in `coins/README.md`.
@@ -72,3 +84,15 @@ Kept: `out/renders/xrp-preview-audit-20261028-480p60/`.
 MP4: `out/xrp-preview-audit-20261028-16x9-480p.mp4`. No full render. Full data and full music restored.
 Preview awaits user review. Delivery preference confirmed: previews directly in chat; only finals on Google Drive.
 The local preview is preserved.
+
+## Exclusion preview — 2026-10-28
+
+2026-01-01–2026-10-27, 47 historical events, 16:9 854×480 60 fps, 45.37 seconds.
+Two sync markers pass (0 frames / 0 ms). AAC −16.0 LUFS, peak −1.4 dBFS, LRA 4.4 LU;
+contact sheet visually inspected, audio assessed by measurement rather than listening.
+Kept: `out/renders/xrp-preview-removed-events-20261028-480p60/`.
+MP4: `out/xrp-preview-removed-events-20261028-16x9-480p.mp4`.
+Full-history labels pass with 65 early-fade fallbacks (114 before filtering); no overlap.
+Full XRP data and music restored. No full render. Preview awaits user review.
+Drive upload was rejected by automatic approval review: prior permission covered the older preview,
+not this changed post-exclusion payload. New explicit authorization is required before upload.

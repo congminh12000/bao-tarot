@@ -1,0 +1,1073 @@
+{
+  "requestedOn": "2026-10-28",
+  "coin": "XRP",
+  "policy": "Explicit user-requested video exclusion. Original rows, grades, citations and source coverage retained. Change remove back to false to restore visibility. Only level 0 is marked; level 1/2 remain unchanged.",
+  "schema": "date,kind,hit,tag,text,remove",
+  "storedEvents": 484,
+  "removedEvents": 146,
+  "eligibleEvents": 338,
+  "eligibleByLevel": {
+    "0": 208,
+    "1": 114,
+    "2": 16
+  },
+  "beforePriceHistory": 1,
+  "visibleHistoricalEvents": 337,
+  "generatedTurns": 10,
+  "visibleLabelsIncludingTurns": 347,
+  "groups": {
+    "Routine rippled/Clio software release notice or publication": 102,
+    "Minor protocol amendment activation/update at level 0": 12,
+    "Routine XRPL maintenance/fix activation": 23,
+    "Follow-up security report repeats an incident already retained on its occurrence/discovery date": 7,
+    "Technical migration/maintenance notice": 2
+  },
+  "events": [
+    {
+      "date": "2016-02-10",
+      "text": "rippled 0.30.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2016-06-10",
+      "text": "rippled 0.31.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2016-06-27",
+      "text": "rippled 0.32.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2016-07-29",
+      "text": "rippled 0.32.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2016-09-29",
+      "text": "rippled 0.33.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2016-10-16",
+      "text": "rippled 0.33.0-hf1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2016-12-20",
+      "text": "rippled 0.40.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-01-03",
+      "text": "CryptoConditions enabled",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2017-01-11",
+      "text": "rippled 0.40.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-01-27",
+      "text": "rippled 0.50.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-01-30",
+      "text": "rippled 0.50.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-03-14",
+      "text": "rippled 0.50.3 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-03-17",
+      "text": "rippled 0.60.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-03-29",
+      "text": "rippled 0.60.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-03-30",
+      "text": "rippled 0.60.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-05-11",
+      "text": "rippled 0.60.3 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-06-15",
+      "text": "rippled 0.70.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-07-10",
+      "text": "rippled 0.70.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-09-21",
+      "text": "rippled 0.70.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-10-23",
+      "text": "rippled 0.80.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2017-11-14",
+      "text": "SortedDirectories + 4 upgrades",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2017-12-15",
+      "text": "rippled 0.80.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2018-01-08",
+      "text": "rippled 0.81.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2018-02-21",
+      "text": "rippled 0.90.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2018-03-22",
+      "text": "rippled 0.90.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2018-06-14",
+      "text": "rippled 1.0.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2018-06-19",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2018-06-20",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2018-06-21",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2018-09-14",
+      "text": "rippled 1.1.0 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2018-10-23",
+      "text": "rippled 1.1.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2018-12-11",
+      "text": "rippled 1.1.2 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2019-02-13",
+      "text": "rippled 1.2.0 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2019-02-26",
+      "text": "rippled 1.2.1 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2019-03-06",
+      "text": "rippled 1.2.2 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2019-03-23",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2019-04-02",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2019-04-02",
+      "text": "rippled 1.2.3 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2019-04-17",
+      "text": "MultiSignReserve enabled",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2019-04-17",
+      "text": "rippled 1.2.4 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2019-07-25",
+      "text": "rippled 1.3.1 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2019-10-02",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2019-12-02",
+      "text": "rippled 1.4.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2020-04-10",
+      "text": "rippled 1.5.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2020-05-01",
+      "text": "XRPL maintenance: 2 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2020-07-03",
+      "text": "RequireFullyCanonicalSig enabled",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2020-07-09",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2020-08-19",
+      "text": "rippled 1.6.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2021-02-24",
+      "text": "rippled 1.7.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2021-04-08",
+      "text": "HardenedValidations + 2 upgrades",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2021-05-24",
+      "text": "rippled 1.7.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2021-08-27",
+      "text": "rippled 1.7.3 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2021-11-11",
+      "text": "FlowSortStrands + 1 upgrades",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2021-11-18",
+      "text": "TicketBatch + 1 upgrades",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2021-12-02",
+      "text": "rippled 1.8.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2021-12-20",
+      "text": "rippled 1.8.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-01-13",
+      "text": "rippled 1.8.4 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-02-08",
+      "text": "rippled 1.8.5 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-03-23",
+      "text": "Clio 0.1.0 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-04-07",
+      "text": "rippled 1.9.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-05-23",
+      "text": "rippled 1.9.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-05-25",
+      "text": "Clio 0.2.0 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-06-29",
+      "text": "Clio 1.0.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-07-13",
+      "text": "Clio 1.0.1 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-07-26",
+      "text": "rippled 1.9.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-08-11",
+      "text": "Clio 1.0.2 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-08-26",
+      "text": "rippled 1.9.3 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-09-20",
+      "text": "rippled 1.9.4 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2022-10-13",
+      "text": "ExpandedSignerList enabled",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2022-10-27",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2022-11-17",
+      "text": "Clio 1.0.3 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2023-01-23",
+      "text": "CheckCashMakesTrustLine enabled",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2023-02-02",
+      "text": "Clio 1.0.4 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2023-03-14",
+      "text": "rippled 1.10.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2023-03-22",
+      "text": "rippled 1.10.1 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2023-06-21",
+      "text": "rippled 1.11.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2023-08-21",
+      "text": "DisallowIncoming + 4 upgrades",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2023-09-06",
+      "text": "rippled 1.12.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2023-10-31",
+      "text": "Clio 2.0.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2023-11-24",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2023-11-27",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2024-01-29",
+      "text": "rippled 2.0.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-02-14",
+      "text": "Clio 2.1.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-02-20",
+      "text": "rippled 2.1.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-03-23",
+      "text": "Clio 2.1.1 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-03-25",
+      "text": "XRPFees enabled",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2024-03-27",
+      "text": "rippled 2.1.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-04-08",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2024-04-11",
+      "text": "XRPL maintenance: 3 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2024-04-12",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2024-06-04",
+      "text": "rippled 2.2.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-06-05",
+      "text": "Clio 2.1.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-06-26",
+      "text": "Clio 2.2.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-07-08",
+      "text": "Clio 2.2.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-07-22",
+      "text": "Clio 2.2.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-07-30",
+      "text": "rippled 2.2.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-09-03",
+      "text": "rippled 2.2.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-09-14",
+      "text": "rippled 2.2.3 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-09-19",
+      "text": "Clio 2.2.3 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-09-24",
+      "text": "XRPL maintenance: 1 fix",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2024-09-27",
+      "text": "XRPL maintenance: 2 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2024-10-07",
+      "text": "Clio 2.2.4 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-10-21",
+      "text": "Clio 2.2.5 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-11-25",
+      "text": "rippled 2.3.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2024-12-12",
+      "text": "Clio 2.3.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-01-10",
+      "text": "Node crash report published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Follow-up security report repeats an incident already retained on its occurrence/discovery date"
+    },
+    {
+      "date": "2025-01-30",
+      "text": "rippled 2.3.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-02-12",
+      "text": "Clio 2.3.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-02-15",
+      "text": "NFTokenMintOffer enabled",
+      "hit": 0,
+      "remove": true,
+      "reason": "Minor protocol amendment activation/update at level 0"
+    },
+    {
+      "date": "2025-02-19",
+      "text": "XRPL Foundation migration begins",
+      "hit": 0,
+      "remove": true,
+      "reason": "Technical migration/maintenance notice"
+    },
+    {
+      "date": "2025-03-06",
+      "text": "rippled 2.4.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-03-18",
+      "text": "Clio 2.4.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-04-28",
+      "text": "xrpl.js incident report published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Follow-up security report repeats an incident already retained on its occurrence/discovery date"
+    },
+    {
+      "date": "2025-05-15",
+      "text": "XRPL maintenance: 2 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2025-05-27",
+      "text": "Clio 2.4.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-06-24",
+      "text": "rippled 2.5.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-07-24",
+      "text": "Clio 2.5.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-08-27",
+      "text": "rippled 2.6.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-08-29",
+      "text": "XRPL maintenance: 3 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2025-09-08",
+      "text": "rippled 2.5.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-09-18",
+      "text": "Default UNL migration notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Technical migration/maintenance notice"
+    },
+    {
+      "date": "2025-09-29",
+      "text": "Delegation security report published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Follow-up security report repeats an incident already retained on its occurrence/discovery date"
+    },
+    {
+      "date": "2025-10-06",
+      "text": "rippled 2.6.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-10-22",
+      "text": "Clio 2.6.0 release published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-11-19",
+      "text": "rippled 2.6.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2025-12-18",
+      "text": "XRPL maintenance: 1 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2026-01-27",
+      "text": "Clio 2.7.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-01-27",
+      "text": "XRPL maintenance: 5 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2026-01-28",
+      "text": "rippled 3.1.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-02-23",
+      "text": "rippled 3.1.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-02-26",
+      "text": "Batch security report published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Follow-up security report repeats an incident already retained on its occurrence/discovery date"
+    },
+    {
+      "date": "2026-03-12",
+      "text": "rippled 3.1.2 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-05-14",
+      "text": "rippled 3.1.3 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-05-27",
+      "text": "XRPL maintenance: 1 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2026-06-15",
+      "text": "rippled 3.2.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-07-20",
+      "text": "Clio 2.7.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-07-29",
+      "text": "XRPL maintenance: 1 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2026-07-31",
+      "text": "rippled 3.2.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-08-06",
+      "text": "rippled 3.3.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-08-18",
+      "text": "Manifest-flood report published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Follow-up security report repeats an incident already retained on its occurrence/discovery date"
+    },
+    {
+      "date": "2026-08-20",
+      "text": "Clio 2.8.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-09-11",
+      "text": "XRPL maintenance: 1 fixes",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine XRPL maintenance/fix activation"
+    },
+    {
+      "date": "2026-09-16",
+      "text": "rippled 3.4.0 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-09-21",
+      "text": "Sponsor security report published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Follow-up security report repeats an incident already retained on its occurrence/discovery date"
+    },
+    {
+      "date": "2026-09-25",
+      "text": "rippled 3.4.1 release notice",
+      "hit": 0,
+      "remove": true,
+      "reason": "Routine rippled/Clio software release notice or publication"
+    },
+    {
+      "date": "2026-10-09",
+      "text": "Batch + overflow report published",
+      "hit": 0,
+      "remove": true,
+      "reason": "Follow-up security report repeats an incident already retained on its occurrence/discovery date"
+    }
+  ],
+  "validation": {
+    "tests": "5 parser/reversibility tests passed; boolean false does not hide a row; invalid flags rejected",
+    "fullTimeline": "Exactly the selected 146 rows absent from generated events; all surviving labels/grades, daily candles, phase boundaries and cue assignments identical",
+    "otherCoins": "BTC/ETH/BNB generated full-data SHA256 exactly unchanged after adding false column",
+    "formats": "Full, FROM/TO preview and SHORT=10 exclusions verified",
+    "sources": "484/484 events retain citations, including removed rows; 1013 source rows",
+    "sourceCoverage": "2026-10-28 live 99Bitcoins check passed for all four coins, 234 IDs each",
+    "fullLabelCheck": "No overlap; 65 earlier labels fade early under the approved fallback (previously 114)"
+  },
+  "preview": {
+    "from": "2026-01-01",
+    "to": "2026-10-27",
+    "visibleHistoricalEvents": 47,
+    "durationSeconds": 45.37,
+    "fps": 60,
+    "format": "16:9",
+    "resolution": "854x480",
+    "sync": "2/2 markers passed, sound 0 ms and picture 0 frames",
+    "integratedLUFS": -16.0,
+    "peakDBFS": -1.4,
+    "loudnessRangeLU": 4.4,
+    "kept": "out/renders/xrp-preview-removed-events-20261028-480p60/",
+    "delivery": "Automatic approval review rejected uploading this newly changed preview to Drive; exact new-payload approval required. File preserved locally."
+  }
+}

@@ -43,7 +43,12 @@ def validate(live=False):
             errors.append(f"{coin['symbol']}: no source coverage file")
             continue
         coverage = read_json(coverage_path)
-        rows = list(csv.reader(line for line in (directory/'events.csv').read_text().splitlines() if line.strip() and not line.startswith('#')))
+        event_lines = (directory/'events.csv').read_text().splitlines()
+        has_remove = any(re.fullmatch(r'#\s*date,kind,hit,tag,text,remove\s*', line) for line in event_lines)
+        rows = list(csv.reader(line for line in event_lines if line.strip() and not line.startswith('#')))
+        if has_remove and any(len(row) != 6 or row[5].strip().lower() not in ['true', 'false'] for row in rows):
+            errors.append(f"{coin['symbol']}: remove must be true or false on every event row")
+        # Deliberately include remove=true: video exclusion never deletes source coverage.
         targets = {(r[0], r[4], int(r[2])) for r in rows}
         entries = coverage['entries']
         cids = [e['sourceId'] for e in entries]

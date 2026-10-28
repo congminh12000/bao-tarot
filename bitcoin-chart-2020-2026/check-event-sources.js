@@ -13,7 +13,8 @@ function check(symbol) {
   const coin = JSON.parse(fs.readFileSync(path.join(__dirname, 'coins', symbol, 'coin.json'), 'utf8'));
   const dir = path.join(__dirname, coin.dataDir || path.join('coins', symbol, 'data'));
   const evFile = path.join(dir, 'events.csv'), srcFile = path.join(dir, 'event-sources.csv');
-  const events = rows(evFile).map((l) => { const p = l.split(','); return { date: p[0].trim(), text: p.slice(4).join(',').trim() }; });
+  // Removed events still need their original sources and remain in the audit.
+  const events = require('./event-csv').readEvents(evFile);
   const sources = fs.existsSync(srcFile) ? rows(srcFile).map((l) => {
     const p = l.split(','); // date,source,url,text (source and url hold no comma; text may)
     return { date: (p[0] || '').trim(), source: (p[1] || '').trim(), url: (p[2] || '').trim(), text: p.slice(3).join(',').trim(), line: l };

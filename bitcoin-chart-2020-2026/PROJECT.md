@@ -111,7 +111,7 @@ Có thể tái sử dụng hình/tiếng của final đã lưu; không tự đ�
 
 ## 3. Nhãn sự kiện (đã duyệt)
 
-- Nguồn: `data/events.csv` (`date,kind,hit,tag,text`) — 99Bitcoins (ATH theo TradingView), người dùng soạn/kiểm chứng.
+- Nguồn: `data/events.csv` (`date,kind,hit,tag,text,remove`) — 99Bitcoins (ATH theo TradingView), người dùng soạn/kiểm chứng.
   `tag`: để trống, hoặc `halving` = sự kiện nội tại đặc biệt → nhãn **màu vàng** (#FFC93C, cỡ mức 1), còn hiện khi zoom-out.
   `kind`: up/down/info. **Hiển thị theo coin**: BTC chỉ mức 1/2; mọi altcoin hiện đủ mức 0/1/2.
   `hit 0` = bổ sung (nhãn xám nhỏ, không SFX/hiệu ứng như mức 1), `hit 1` = quan trọng, `hit 2` = cột mốc / khủng hoảng.
@@ -307,6 +307,19 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- XRP loại nhãn kỹ thuật lặp (28/10/2026, yêu cầu người dùng): thêm cột `remove` true/false cho events CSV (§16).
+  484 dòng nghiên cứu vẫn giữ nguyên, đánh dấu **146 mức 0**: 102 release rippled/Clio, 23 maintenance, 12 nâng cấp nhỏ,
+  2 migration kỹ thuật, 7 báo cáo nhắc lại sự cố đã có. Còn 338 dòng được phép hiện (208 / 114 / 16 theo mức 0/1/2),
+  trong đó 1 dòng trước ngày có giá; phim đầy đủ hiện 337 sự kiện + 10 ATH/ATL tự tạo. Mức 1/2, nguồn, giá và phase không đổi.
+  Chi tiết từng mục và lý do: `coins/XRP/data/removals-20261028.json`. Các coin khác đều `remove=false` và dữ liệu sinh ra
+  không đổi. `remove=true` được lọc trước khi sinh phim dài/preview/Shorts; kiểm tra nguồn vẫn tính mọi dòng, kể cả đã ẩn.
+  Nhãn toàn phim ✓, 65 nhãn cũ mờ sớm (trước lọc 114). Preview 2026 dài 45,37 s / 47 sự kiện, 16:9 480p60,
+  sync 2/2 ✓, −16,0 LUFS / peak −1,4 dBFS / LRA 4,4 LU. Lưu `out/renders/xrp-preview-removed-events-20261028-480p60/`.
+  Khôi phục data/nhạc đầy đủ; chưa render final. Upload Drive bị automatic approval review chặn vì payload preview mới,
+  cần cho phép riêng bản sau khi loại sự kiện; file local giữ nguyên, chờ người dùng duyệt.
+
+
+
 - XRP audit (28/10/2026, thay thế số cũ bên dưới): người dùng yêu cầu tự phân mức; **484 sự kiện = 354 mức 0 /
   114 mức 1 / 16 mức 2**, 1.013 dòng nguồn, không thiếu nguồn; tăng ròng 353, sửa 14 ngày/nhãn cũ và 23 phân mức cũ.
   97 kích hoạt amendment đã đối chiếu; 96 khớp explorer, CryptoConditions giải quyết bằng giao dịch validated.
@@ -427,7 +440,7 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
    sàn lớn bằng `node fetch-tradingview.js <mã> --print`, chọn mã có **lịch sử dài nhất**.
 2. **Giá**: `COIN=<SYMBOL> node fetch-tradingview.js` → `coins/<SYMBOL>/data/tradingview/`.
 3. **Sự kiện**: trang "historical price/events" của **99Bitcoins** cho đồng đó (mở bằng trình duyệt nếu WebFetch bị chặn);
-   nếu 99Bitcoins không có, dùng nguồn uy tín khác và **ghi rõ nguồn**. Cùng định dạng `date,kind,hit,tag,text`, cả mức
+   nếu 99Bitcoins không có, dùng nguồn uy tín khác và **ghi rõ nguồn**. Cùng định dạng `date,kind,hit,tag,text,remove`, cả mức
    0/1/2 (lưu đầy đủ theo §13; BTC hiển thị 1/2, altcoin hiển thị 0/1/2), chữ ngắn, tiếng Anh, không bịa nguyên nhân; `tag` cho sự kiện nội tại đặc biệt của giao thức (Bitcoin: `halving`,
    ETH: nâng cấp mạng…). ATH/ATL do `score.js` tự gắn. Ghi nguồn chung vào `coin.json` (`eventsSource`) và
    **nguồn từng sự kiện** (tên + link) vào `coins/<SYMBOL>/data/event-sources.csv` (§15).
@@ -514,3 +527,18 @@ Không viết sự kiện, ngày hay con số từ trí nhớ hoặc suy đoán.
   báo sự kiện thiếu nguồn, dòng nguồn hỏng và dòng nguồn không khớp sự kiện nào; `npm run build` chạy lệnh này trước render final.
 - Khi báo hoàn tất cập nhật sự kiện: báo số sự kiện đã có nguồn / còn thiếu nguồn. Sự kiện cũ chưa có dòng nguồn phải
   được bổ sung khi chạm tới (sửa, duyệt lại, hoặc trước render final của coin đó).
+
+
+## 16. Loại sự kiện khỏi video bằng remove — yêu cầu 28/10/2026
+
+- Schema `events.csv`: `# date,kind,hit,tag,text,remove`; mỗi dòng có giá trị `true` hoặc `false` ở cột cuối.
+  `remove=true` = giữ nguyên dòng nghiên cứu và nguồn nhưng không đưa vào video. `false` = áp dụng quy tắc mức của coin.
+  Muốn hiện lại chỉ đổi về `false`; không cần thêm lại sự kiện hay sửa phân mức. File cũ 5 cột mặc định là `false`.
+- Cờ này ưu tiên trước quy tắc hiển thị §3/§14 và quy tắc không bỏ nhãn: chỉ những sự kiện không bị loại mới bắt buộc
+  hiện đủ và tham gia xếp nhãn. Áp dụng thống nhất phim dài, preview, Shorts, nhạc/SFX và chương từ dữ liệu sinh ra.
+  ATH/ATL tự tạo vẫn theo dữ liệu giá; không thay phase, tempo hay giá khi loại một sự kiện nghiên cứu.
+- Thu thập mới mặc định `remove=false`. Khi làm mới nguồn phải giữ lựa chọn `remove` đã có, không tự bật lại mục người
+  dùng đã loại. `check-event-sources.js` và audit 99Bitcoins vẫn đối chiếu toàn bộ dòng nghiên cứu, bao gồm `remove=true`.
+- Đợt XRP này chỉ loại mức 0: bản phát hành rippled/Clio, maintenance/fix, nâng cấp nhỏ, migration kỹ thuật và báo cáo
+  lặp lại sự cố đã lưu. Giữ sự cố bảo mật gốc và mọi mức 1/2. Các thông báo đối tác khác nhau không mặc nhiên là trùng.
+- Kiểm tra parser: `npm run test:events`; sinh lại bằng `COIN=XRP node make-data.js --strict` sau khi đổi cờ.

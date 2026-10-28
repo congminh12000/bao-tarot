@@ -31,10 +31,12 @@ Chỉ dựng một giai đoạn: `FROM=2020-01-01 node make-data.js` (thêm `TO=
 
 ## Thêm / sửa sự kiện
 
-Mỗi dòng trong `events.csv` có dạng `ngày,kind,hit,tag,nội dung`:
+Mỗi dòng trong `events.csv` có dạng `ngày,kind,hit,tag,nội dung,remove`:
 - `kind`: `up` (nhãn đặt trên đỉnh nến), `down` (dưới đáy), `info`
 - `hit`: `1` = quan trọng (nhãn nhỏ, không SFX), `2` = cột mốc / khủng hoảng (nhãn lớn + SFX + hiệu ứng). `0` = sự kiện bổ sung, hiển thị như nhãn mức 1 ở mọi altcoin; riêng BTC ẩn mức 0.
 - `tag`: để trống, hoặc `halving` = sự kiện nội tại đặc biệt (nhãn màu vàng, còn hiện khi zoom-out cuối phim)
+- `remove`: `true` = không đưa vào video, `false` = áp dụng mức hiển thị. Giữ cả dòng và nguồn; đổi về false để hiện lại.
+  File cũ 5 cột mặc định false. Không tự bật lại cờ khi refresh nguồn. Xem PROJECT.md §16.
 - ALL-TIME HIGH / ALL-TIME LOW ở các điểm chuyển phase do `score.js` tự gắn (hoặc tự tạo), không cần ghi tay
 
 Thời lượng video và bản nhạc tự tính lại theo dữ liệu và các hit.

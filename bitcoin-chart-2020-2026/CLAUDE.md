@@ -8,6 +8,9 @@ In short:
   FROM/TO range), send it, and
   **wait for the user's OK** before doing anything else. Never render the full film unless asked.
 - Deliver previews directly in chat; upload only final videos to Google Drive (user request 2026-10-28).
+- `events.csv` has a final `remove` boolean column (PROJECT.md §16). `true` explicitly excludes that row from all video
+  formats; `false` applies normal level visibility. Preserve all rows/citations and existing flags during refresh.
+  Source audits include removed rows; new events default false. The no-drop rule applies to non-removed events.
 - Never drop an event label, never let labels overlap each other or cover candles; up labels above, down below,
   right of the candle or centred first, left only when needed (details in PROJECT.md §3).
 - Phases change ONLY at an ALL-TIME HIGH or ALL-TIME LOW (no minor tops/bottoms, no TOP/BOTTOM labels). At a turn the

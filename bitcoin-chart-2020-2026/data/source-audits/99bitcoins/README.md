@@ -63,3 +63,7 @@ Automatic editorial grading was explicitly requested. Original source dates rema
 targets and explanations are retained in XRP coverage and `review-20261028.json`. All 97 dated mainnet amendment
 activations are reconciled, including one explorer majority/activation conflict resolved by validated transactions.
 See the XRP source inventory for archive gaps and issuer-only claims; this is not exhaustive world-news coverage.
+
+Video exclusion update (2026-10-28): XRP retains all 484 rows/citations; 146 level-0 technical/repeated entries
+now have `remove=true`, leaving 338 eligible events (one precedes the price series). Source coverage audits
+continue to include removed rows; source completeness and video selection are separate (PROJECT.md §16).

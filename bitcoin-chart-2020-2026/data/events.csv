@@ -1,239 +1,239 @@
-# date,kind,hit,tag,text
-2009-01-03,info,1,,Genesis block
-2009-10-05,info,0,,First quoted BTC exchange rate
-2009-10-12,info,0,,Early BTC sale for fiat money
-2010-05-22,up,1,,Bitcoin Pizza Day
-2010-07-11,up,0,,Slashdot features Bitcoin
-2010-07-18,up,1,,Mt. Gox opens
-2010-08-15,down,1,,Overflow bug
-2010-12-10,up,0,,PC World publishes Bitcoin coverage
-2011-02-09,up,1,,BTC hits $1
-2011-03-27,up,0,,New exchanges add fiat trading pairs
-2011-06-01,info,0,,Gawker publishes Silk Road report
-2011-06-08,up,2,,ALL-TIME HIGH: $32
-2011-06-19,down,1,,Mt. Gox hacked
-2011-12-19,info,0,,The Good Wife Bitcoin episode
-2012-02-11,down,0,,Paxum & Tradehill drop BTC
-2012-03-01,down,1,,Linode BTC theft
-2012-08-17,down,1,,BTCST halts payouts
-2012-11-15,up,1,,WordPress takes BTC
-2012-11-28,info,1,halving,1st halving
-2013-03-11,down,1,,v0.8 chain split
-2013-03-25,info,1,,Cyprus bail-in
-2013-04-10,up,2,,ALL-TIME HIGH: $266
-2013-05-14,down,1,,DHS seizes Mt. Gox funds
-2013-08-30,down,0,,Tradehill suspends operations again
-2013-10-01,down,1,,Silk Road shut
-2013-11-18,info,1,,US Senate hearing
-2013-11-20,info,0,,PBoC comments on Bitcoin use
-2013-11-29,up,2,,ALL-TIME HIGH: $1.2K
-2013-12-05,down,1,,China bank ban
-2014-02-07,down,1,,Exchange DDoS
-2014-02-24,down,2,,Mt. Gox collapses
-2014-03-06,info,0,,Newsweek alleges Dorian is Satoshi
-2014-03-26,info,0,,IRS: BTC taxed as property
-2014-04-10,down,1,,China closes bank accounts
-2014-06-13,down,1,,GHash.io 51% scare
-2014-06-27,info,0,,US Marshals auction seized BTC
-2014-07-17,info,1,,BitLicense draft
-2014-07-18,up,0,,Dell introduces BTC payments
-2014-09-08,up,0,,Braintree plans BTC payments
-2014-10-06,up,1,,BearWhale absorbed
-2014-12-11,up,1,,Microsoft takes BTC
-2014-12-19,info,0,,Charlie Shrem sentenced
-2015-01-04,down,1,,Bitstamp hacked
-2015-01-26,up,1,,Coinbase exchange opens
-2015-05-19,info,0,,Ulbricht life-sentence milestone
-2015-06-03,info,1,,BitLicense final
-2015-07-01,info,0,,Silk Road agents' theft pleas
-2015-08-01,info,0,,Japanese police arrest Mark Karpeles
-2015-08-15,info,1,,Bitcoin XT dispute
-2015-09-18,info,1,,CFTC: BTC is a commodity
-2015-10-08,up,0,,Gemini opens trading
-2015-10-22,up,1,,EU: no VAT on BTC
-2015-10-31,up,0,,Bitcoin on The Economist cover
-2015-11-03,info,0,,Unicode accepts Bitcoin symbol
-2015-12-08,info,0,,WIRED alleges Wright is Satoshi
-2016-01-14,down,1,,Mike Hearn quits
-2016-02-21,info,1,,Scaling roundtable
-2016-04-04,up,0,,OpenBazaar marketplace opens
-2016-04-27,up,0,,Steam adds BTC payment option
-2016-05-02,info,0,,Craig Wright claims Satoshi identity
-2016-07-09,info,1,halving,2nd halving
-2016-08-02,down,1,,Bitfinex hacked
-2016-11-09,info,0,,Markets react to Trump win
-2017-01-03,up,1,,Back above $1K
-2017-03-10,down,1,,SEC rejects Winklevoss ETF
-2017-03-28,down,0,,SEC rejects another BTC ETF
-2017-04-01,up,1,,Japan legalizes BTC
-2017-08-01,info,1,,Bitcoin Cash fork
-2017-09-03,down,1,,China bans ICOs
-2017-09-12,down,0,,Jamie Dimon calls Bitcoin fraudulent
-2017-09-15,down,1,,China shuts exchanges
-2017-10-13,up,1,,BTC > $5K
-2017-10-25,info,0,,Bitcoin Gold fork launches
-2017-10-31,up,1,,CME futures announced
-2017-11-08,info,1,,SegWit2x called off
-2017-11-28,up,1,,BTC > $10K
-2017-12-11,up,1,,Cboe futures launch
-2017-12-17,up,2,,ALL-TIME HIGH: $19.8K
-2017-12-28,down,1,,Korea crackdown
-2018-01-02,up,0,,Report: Thiel fund buys BTC
-2018-01-08,down,1,,CMC drops Korea prices
-2018-01-13,info,0,,80% of BTC supply mined
-2018-01-26,down,1,,Coincheck hacked
-2018-01-30,down,0,,Facebook bans crypto ads
-2018-03-07,info,0,,SEC: exchanges must register
-2018-03-14,down,0,,Google restricts crypto ads
-2018-03-26,down,0,,Twitter restricts crypto ads
-2018-04-13,down,0,,Coinsecure reports BTC theft
-2018-05-02,up,0,,Goldman plans BTC trading
-2018-05-11,down,0,,Prosecutors raid Korean exchange
-2018-05-24,down,0,,DOJ probes BTC manipulation
-2018-06-10,down,0,,Coinrail reports exchange hack
-2018-06-11,info,0,,US seeks exchange trading records
-2018-06-20,down,0,,Bithumb reports exchange theft
-2018-06-26,up,0,,Facebook eases crypto ad ban
-2018-07-16,up,0,,BlackRock studies crypto
-2018-07-26,down,1,,SEC rejects ETF again
-2018-08-03,up,1,,Bakkt announced
-2018-08-07,down,0,,SEC postpones Bitcoin ETF decision
-2018-09-05,down,0,,Report: Goldman delays crypto desk
-2018-09-18,down,0,,Zaif reports crypto exchange theft
-2018-10-15,up,1,,Fidelity custody
-2018-10-31,info,0,,Bitcoin whitepaper tenth anniversary
-2018-11-15,down,1,,BCH hash war
-2018-12-03,info,0,,BTC mining difficulty drops
-2018-12-13,down,0,,Bomb threats demand BTC ransom
-2018-12-29,down,0,,Electrum wallet phishing attack
-2018-12-31,up,0,,Bakkt announces $182M funding
-2019-01-03,info,0,,Proof of Keys self-custody campaign
-2019-01-10,up,0,,Bitwise submits BTC ETF application
-2019-01-18,up,0,,Coinstar adds BTC purchases
-2019-01-23,down,0,,Cboe withdraws VanEck ETF proposal
-2019-01-31,up,0,,Cboe refiles VanEck-SolidX ETF
-2019-02-01,down,1,,QuadrigaCX collapse
-2019-03-01,info,0,,Report: Facebook develops crypto
-2019-03-14,info,0,,Karpeles gets suspended sentence
-2019-03-15,down,0,,Cboe stops new BTC futures listings
-2019-03-22,down,0,,Bitwise reports fake BTC volume
-2019-03-29,down,0,,SEC delays Bitwise & VanEck ETFs
-2019-04-08,down,0,,China weighs BTC mining limits
-2019-04-15,info,0,,Exchanges delist Bitcoin SV
-2019-04-26,down,1,,Bitfinex/Tether probe
-2019-05-08,down,1,,Binance $41M hack
-2019-05-21,info,0,,Wright files BTC copyright claims
-2019-05-30,info,0,,Another BTC copyright claim
-2019-06-03,info,0,,Justin Sun wins Buffett lunch
-2019-06-13,up,0,,Bakkt announces futures testing date
-2019-06-18,info,1,,Facebook Libra
-2019-07-11,down,0,,Trump publicly comments on Bitcoin
-2019-08-07,down,0,,Binance faces KYC-data ransom demand
-2019-08-15,up,0,,Coinbase buys Xapo custody
-2019-08-28,info,0,,Wright faces BTC court order
-2019-09-03,up,0,,VanEck/SolidX BTC product
-2019-09-22,up,1,,Bakkt futures launch
-2019-10-09,up,0,,UNICEF accepts crypto donations
-2019-10-15,info,0,,Oxford dictionary adds satoshi
-2019-10-28,up,1,,China blockchain push
-2019-10-29,info,0,,Canaan files US IPO paperwork
-2019-11-04,down,0,,Study alleges 2017 BTC manipulation
-2019-11-09,up,0,,New York licenses Fidelity crypto
-2019-12-10,down,0,,BitClub operators face Ponzi charges
-2019-12-23,down,0,,YouTube removes crypto in error
-2020-01-06,up,0,,BTC rises during US-Iran tensions
-2020-01-13,up,1,,CME options launch
-2020-01-19,info,0,,Schiff reports lost wallet access
-2020-01-29,up,0,,Swiss town adds BTC tax payments
-2020-02-02,info,0,,Twitter introduces Bitcoin emoji
-2020-02-05,up,0,,Lightning Labs secures $10M funding
-2020-02-17,down,0,,FCoin shuts down: insolvent
-2020-03-04,up,1,,India lifts bank ban
-2020-03-13,down,2,,COVID crash: -50% in 2 days
-2020-03-15,info,1,,Fed: 0% rates + QE
-2020-03-23,up,1,,Rally on Fed QE
-2020-03-26,info,0,,Microsoft body-data crypto patent
-2020-04-01,info,0,,Report: Binance buys CoinMarketCap
-2020-04-08,info,0,,Bitcoin Cash reduces block subsidy
-2020-04-09,up,0,,BTC fund lists in Toronto
-2020-05-07,up,1,,Paul Tudor Jones buys
-2020-05-11,info,1,halving,3rd halving
-2020-05-25,down,0,,China orders miners to shut down
-2020-06-22,info,0,,NZ seizes exchange-linked funds
-2020-07-02,down,0,,Bitcoin wallet flaw disclosed
-2020-07-15,down,0,,Twitter hacked for BTC scam
-2020-07-22,up,1,,OCC: banks may hold crypto
-2020-08-11,up,1,,MicroStrategy buys BTC
-2020-08-14,info,0,,US seizes terror-linked crypto
-2020-08-31,down,0,,Electrum user reports update theft
-2020-09-25,down,1,,KuCoin hacked
-2020-10-01,down,1,,BitMEX charged
-2020-10-08,up,1,,Square buys $50M
-2020-10-13,up,0,,Stone Ridge reveals 10000 BTC
-2020-10-16,down,1,,OKEx freezes withdrawals
-2020-10-21,up,1,,PayPal adds crypto
-2020-11-05,info,0,,US seizes $1B in Silk Road BTC
-2020-11-16,up,0,,Citibank BTC forecast leaks
-2020-12-08,up,0,,MicroStrategy plans BTC debt raise
-2020-12-10,up,1,,MassMutual buys $100M
-2020-12-16,up,2,,BTC > $20K: 2017 peak broken
-2020-12-18,up,0,,Coinbase files confidential listing
-2020-12-23,down,1,,SEC sues Ripple
-2021-01-29,up,1,,Musk's Bitcoin bio
-2021-02-08,up,1,,Tesla buys $1.5B
-2021-02-12,up,1,,Canada BTC ETF
-2021-02-23,up,1,,Square buys $170M
-2021-03-17,up,1,,Morgan Stanley BTC funds
-2021-03-24,up,1,,Tesla takes BTC
-2021-04-13,up,1,,BTC > $63K
-2021-04-14,up,2,,ALL-TIME HIGH: $64.9K | Coinbase lists
-2021-05-12,down,1,,Tesla drops BTC
-2021-05-19,down,2,,China crypto ban
-2021-06-04,down,0,,Musk's Bitcoin broken-heart tweet
-2021-06-06,up,1,,Bukele: BTC legal tender
-2021-06-07,info,0,,DOJ recovers roughly $2M in BTC
-2021-06-19,down,1,,China mining ban
-2021-07-09,up,0,,Square plans Bitcoin hardware wallet
-2021-07-15,up,0,,Square plans Bitcoin DeFi
-2021-07-26,info,0,,Amazon crypto-payment rumors
-2021-08-09,up,0,,AMC announces BTC payment plans
-2021-09-07,info,1,,El Salvador adopts BTC
-2021-09-17,info,0,,Satoshi statue unveiled
-2021-09-23,up,0,,Twitter adds BTC tips
-2021-09-24,down,1,,China bans all crypto
-2021-10-19,up,1,,US futures ETF launch
-2021-11-10,up,2,,ALL-TIME HIGH: $69K
-2021-11-14,info,1,,Taproot activates
-2021-11-21,up,0,,El Salvador plans Bitcoin City bonds
-2022-02-08,info,0,,DOJ recovers Bitfinex-linked $3.6B
-2022-02-14,info,0,,Coinbase Super Bowl ad crashes site
-2022-02-28,info,0,,BTC/ruble trading jumps
-2022-03-03,info,1,,US crypto order
-2022-04-27,up,1,,CAR adopts BTC
-2022-05-07,down,2,,LUNA collapse
-2022-06-13,down,1,,Celsius freezes
-2022-06-29,up,0,,MicroStrategy adds $10M in BTC
-2022-07-14,down,1,,Celsius bankrupt
-2022-07-20,down,1,,Tesla sells 75%
-2022-08-11,up,1,,BlackRock BTC trust
-2022-11-11,down,2,,FTX bankrupt
-2022-11-30,down,0,,ECB publishes criticism of Bitcoin
-2022-12-20,down,1,,Core Scientific bankrupt
-2022-12-29,info,0,,MicroStrategy reveals first BTC sale
-2023-01-21,info,1,,Ordinals launch
-2023-03-03,down,1,,Silvergate collapse
-2023-03-14,down,0,,US sells seized Silk Road BTC
-2023-03-19,up,1,,Rally on bank crisis
-2023-06-15,up,1,,BlackRock files ETF
-2023-06-21,up,0,,Managers refile spot BTC ETFs
-2024-01-10,up,2,,Spot ETFs approved
-2024-03-14,up,2,,ALL-TIME HIGH: $73.8K
-2024-04-19,info,1,halving,4th halving
-2024-05-05,info,1,,1B transactions
-2024-11-06,up,1,,Trump wins: new high
-2024-12-05,up,2,,BTC > $100K
-2025-01-20,up,2,,ALL-TIME HIGH: $109K | Inauguration
-2025-03-06,up,1,,US Bitcoin reserve
-2025-05-22,up,1,,BTC > $110K
-2025-07-15,up,1,,BTC > $120K
-2025-10-06,up,2,,ALL-TIME HIGH: $126K
+# date,kind,hit,tag,text,remove
+2009-01-03,info,1,,Genesis block,false
+2009-10-05,info,0,,First quoted BTC exchange rate,false
+2009-10-12,info,0,,Early BTC sale for fiat money,false
+2010-05-22,up,1,,Bitcoin Pizza Day,false
+2010-07-11,up,0,,Slashdot features Bitcoin,false
+2010-07-18,up,1,,Mt. Gox opens,false
+2010-08-15,down,1,,Overflow bug,false
+2010-12-10,up,0,,PC World publishes Bitcoin coverage,false
+2011-02-09,up,1,,BTC hits $1,false
+2011-03-27,up,0,,New exchanges add fiat trading pairs,false
+2011-06-01,info,0,,Gawker publishes Silk Road report,false
+2011-06-08,up,2,,ALL-TIME HIGH: $32,false
+2011-06-19,down,1,,Mt. Gox hacked,false
+2011-12-19,info,0,,The Good Wife Bitcoin episode,false
+2012-02-11,down,0,,Paxum & Tradehill drop BTC,false
+2012-03-01,down,1,,Linode BTC theft,false
+2012-08-17,down,1,,BTCST halts payouts,false
+2012-11-15,up,1,,WordPress takes BTC,false
+2012-11-28,info,1,halving,1st halving,false
+2013-03-11,down,1,,v0.8 chain split,false
+2013-03-25,info,1,,Cyprus bail-in,false
+2013-04-10,up,2,,ALL-TIME HIGH: $266,false
+2013-05-14,down,1,,DHS seizes Mt. Gox funds,false
+2013-08-30,down,0,,Tradehill suspends operations again,false
+2013-10-01,down,1,,Silk Road shut,false
+2013-11-18,info,1,,US Senate hearing,false
+2013-11-20,info,0,,PBoC comments on Bitcoin use,false
+2013-11-29,up,2,,ALL-TIME HIGH: $1.2K,false
+2013-12-05,down,1,,China bank ban,false
+2014-02-07,down,1,,Exchange DDoS,false
+2014-02-24,down,2,,Mt. Gox collapses,false
+2014-03-06,info,0,,Newsweek alleges Dorian is Satoshi,false
+2014-03-26,info,0,,IRS: BTC taxed as property,false
+2014-04-10,down,1,,China closes bank accounts,false
+2014-06-13,down,1,,GHash.io 51% scare,false
+2014-06-27,info,0,,US Marshals auction seized BTC,false
+2014-07-17,info,1,,BitLicense draft,false
+2014-07-18,up,0,,Dell introduces BTC payments,false
+2014-09-08,up,0,,Braintree plans BTC payments,false
+2014-10-06,up,1,,BearWhale absorbed,false
+2014-12-11,up,1,,Microsoft takes BTC,false
+2014-12-19,info,0,,Charlie Shrem sentenced,false
+2015-01-04,down,1,,Bitstamp hacked,false
+2015-01-26,up,1,,Coinbase exchange opens,false
+2015-05-19,info,0,,Ulbricht life-sentence milestone,false
+2015-06-03,info,1,,BitLicense final,false
+2015-07-01,info,0,,Silk Road agents' theft pleas,false
+2015-08-01,info,0,,Japanese police arrest Mark Karpeles,false
+2015-08-15,info,1,,Bitcoin XT dispute,false
+2015-09-18,info,1,,CFTC: BTC is a commodity,false
+2015-10-08,up,0,,Gemini opens trading,false
+2015-10-22,up,1,,EU: no VAT on BTC,false
+2015-10-31,up,0,,Bitcoin on The Economist cover,false
+2015-11-03,info,0,,Unicode accepts Bitcoin symbol,false
+2015-12-08,info,0,,WIRED alleges Wright is Satoshi,false
+2016-01-14,down,1,,Mike Hearn quits,false
+2016-02-21,info,1,,Scaling roundtable,false
+2016-04-04,up,0,,OpenBazaar marketplace opens,false
+2016-04-27,up,0,,Steam adds BTC payment option,false
+2016-05-02,info,0,,Craig Wright claims Satoshi identity,false
+2016-07-09,info,1,halving,2nd halving,false
+2016-08-02,down,1,,Bitfinex hacked,false
+2016-11-09,info,0,,Markets react to Trump win,false
+2017-01-03,up,1,,Back above $1K,false
+2017-03-10,down,1,,SEC rejects Winklevoss ETF,false
+2017-03-28,down,0,,SEC rejects another BTC ETF,false
+2017-04-01,up,1,,Japan legalizes BTC,false
+2017-08-01,info,1,,Bitcoin Cash fork,false
+2017-09-03,down,1,,China bans ICOs,false
+2017-09-12,down,0,,Jamie Dimon calls Bitcoin fraudulent,false
+2017-09-15,down,1,,China shuts exchanges,false
+2017-10-13,up,1,,BTC > $5K,false
+2017-10-25,info,0,,Bitcoin Gold fork launches,false
+2017-10-31,up,1,,CME futures announced,false
+2017-11-08,info,1,,SegWit2x called off,false
+2017-11-28,up,1,,BTC > $10K,false
+2017-12-11,up,1,,Cboe futures launch,false
+2017-12-17,up,2,,ALL-TIME HIGH: $19.8K,false
+2017-12-28,down,1,,Korea crackdown,false
+2018-01-02,up,0,,Report: Thiel fund buys BTC,false
+2018-01-08,down,1,,CMC drops Korea prices,false
+2018-01-13,info,0,,80% of BTC supply mined,false
+2018-01-26,down,1,,Coincheck hacked,false
+2018-01-30,down,0,,Facebook bans crypto ads,false
+2018-03-07,info,0,,SEC: exchanges must register,false
+2018-03-14,down,0,,Google restricts crypto ads,false
+2018-03-26,down,0,,Twitter restricts crypto ads,false
+2018-04-13,down,0,,Coinsecure reports BTC theft,false
+2018-05-02,up,0,,Goldman plans BTC trading,false
+2018-05-11,down,0,,Prosecutors raid Korean exchange,false
+2018-05-24,down,0,,DOJ probes BTC manipulation,false
+2018-06-10,down,0,,Coinrail reports exchange hack,false
+2018-06-11,info,0,,US seeks exchange trading records,false
+2018-06-20,down,0,,Bithumb reports exchange theft,false
+2018-06-26,up,0,,Facebook eases crypto ad ban,false
+2018-07-16,up,0,,BlackRock studies crypto,false
+2018-07-26,down,1,,SEC rejects ETF again,false
+2018-08-03,up,1,,Bakkt announced,false
+2018-08-07,down,0,,SEC postpones Bitcoin ETF decision,false
+2018-09-05,down,0,,Report: Goldman delays crypto desk,false
+2018-09-18,down,0,,Zaif reports crypto exchange theft,false
+2018-10-15,up,1,,Fidelity custody,false
+2018-10-31,info,0,,Bitcoin whitepaper tenth anniversary,false
+2018-11-15,down,1,,BCH hash war,false
+2018-12-03,info,0,,BTC mining difficulty drops,false
+2018-12-13,down,0,,Bomb threats demand BTC ransom,false
+2018-12-29,down,0,,Electrum wallet phishing attack,false
+2018-12-31,up,0,,Bakkt announces $182M funding,false
+2019-01-03,info,0,,Proof of Keys self-custody campaign,false
+2019-01-10,up,0,,Bitwise submits BTC ETF application,false
+2019-01-18,up,0,,Coinstar adds BTC purchases,false
+2019-01-23,down,0,,Cboe withdraws VanEck ETF proposal,false
+2019-01-31,up,0,,Cboe refiles VanEck-SolidX ETF,false
+2019-02-01,down,1,,QuadrigaCX collapse,false
+2019-03-01,info,0,,Report: Facebook develops crypto,false
+2019-03-14,info,0,,Karpeles gets suspended sentence,false
+2019-03-15,down,0,,Cboe stops new BTC futures listings,false
+2019-03-22,down,0,,Bitwise reports fake BTC volume,false
+2019-03-29,down,0,,SEC delays Bitwise & VanEck ETFs,false
+2019-04-08,down,0,,China weighs BTC mining limits,false
+2019-04-15,info,0,,Exchanges delist Bitcoin SV,false
+2019-04-26,down,1,,Bitfinex/Tether probe,false
+2019-05-08,down,1,,Binance $41M hack,false
+2019-05-21,info,0,,Wright files BTC copyright claims,false
+2019-05-30,info,0,,Another BTC copyright claim,false
+2019-06-03,info,0,,Justin Sun wins Buffett lunch,false
+2019-06-13,up,0,,Bakkt announces futures testing date,false
+2019-06-18,info,1,,Facebook Libra,false
+2019-07-11,down,0,,Trump publicly comments on Bitcoin,false
+2019-08-07,down,0,,Binance faces KYC-data ransom demand,false
+2019-08-15,up,0,,Coinbase buys Xapo custody,false
+2019-08-28,info,0,,Wright faces BTC court order,false
+2019-09-03,up,0,,VanEck/SolidX BTC product,false
+2019-09-22,up,1,,Bakkt futures launch,false
+2019-10-09,up,0,,UNICEF accepts crypto donations,false
+2019-10-15,info,0,,Oxford dictionary adds satoshi,false
+2019-10-28,up,1,,China blockchain push,false
+2019-10-29,info,0,,Canaan files US IPO paperwork,false
+2019-11-04,down,0,,Study alleges 2017 BTC manipulation,false
+2019-11-09,up,0,,New York licenses Fidelity crypto,false
+2019-12-10,down,0,,BitClub operators face Ponzi charges,false
+2019-12-23,down,0,,YouTube removes crypto in error,false
+2020-01-06,up,0,,BTC rises during US-Iran tensions,false
+2020-01-13,up,1,,CME options launch,false
+2020-01-19,info,0,,Schiff reports lost wallet access,false
+2020-01-29,up,0,,Swiss town adds BTC tax payments,false
+2020-02-02,info,0,,Twitter introduces Bitcoin emoji,false
+2020-02-05,up,0,,Lightning Labs secures $10M funding,false
+2020-02-17,down,0,,FCoin shuts down: insolvent,false
+2020-03-04,up,1,,India lifts bank ban,false
+2020-03-13,down,2,,COVID crash: -50% in 2 days,false
+2020-03-15,info,1,,Fed: 0% rates + QE,false
+2020-03-23,up,1,,Rally on Fed QE,false
+2020-03-26,info,0,,Microsoft body-data crypto patent,false
+2020-04-01,info,0,,Report: Binance buys CoinMarketCap,false
+2020-04-08,info,0,,Bitcoin Cash reduces block subsidy,false
+2020-04-09,up,0,,BTC fund lists in Toronto,false
+2020-05-07,up,1,,Paul Tudor Jones buys,false
+2020-05-11,info,1,halving,3rd halving,false
+2020-05-25,down,0,,China orders miners to shut down,false
+2020-06-22,info,0,,NZ seizes exchange-linked funds,false
+2020-07-02,down,0,,Bitcoin wallet flaw disclosed,false
+2020-07-15,down,0,,Twitter hacked for BTC scam,false
+2020-07-22,up,1,,OCC: banks may hold crypto,false
+2020-08-11,up,1,,MicroStrategy buys BTC,false
+2020-08-14,info,0,,US seizes terror-linked crypto,false
+2020-08-31,down,0,,Electrum user reports update theft,false
+2020-09-25,down,1,,KuCoin hacked,false
+2020-10-01,down,1,,BitMEX charged,false
+2020-10-08,up,1,,Square buys $50M,false
+2020-10-13,up,0,,Stone Ridge reveals 10000 BTC,false
+2020-10-16,down,1,,OKEx freezes withdrawals,false
+2020-10-21,up,1,,PayPal adds crypto,false
+2020-11-05,info,0,,US seizes $1B in Silk Road BTC,false
+2020-11-16,up,0,,Citibank BTC forecast leaks,false
+2020-12-08,up,0,,MicroStrategy plans BTC debt raise,false
+2020-12-10,up,1,,MassMutual buys $100M,false
+2020-12-16,up,2,,BTC > $20K: 2017 peak broken,false
+2020-12-18,up,0,,Coinbase files confidential listing,false
+2020-12-23,down,1,,SEC sues Ripple,false
+2021-01-29,up,1,,Musk's Bitcoin bio,false
+2021-02-08,up,1,,Tesla buys $1.5B,false
+2021-02-12,up,1,,Canada BTC ETF,false
+2021-02-23,up,1,,Square buys $170M,false
+2021-03-17,up,1,,Morgan Stanley BTC funds,false
+2021-03-24,up,1,,Tesla takes BTC,false
+2021-04-13,up,1,,BTC > $63K,false
+2021-04-14,up,2,,ALL-TIME HIGH: $64.9K | Coinbase lists,false
+2021-05-12,down,1,,Tesla drops BTC,false
+2021-05-19,down,2,,China crypto ban,false
+2021-06-04,down,0,,Musk's Bitcoin broken-heart tweet,false
+2021-06-06,up,1,,Bukele: BTC legal tender,false
+2021-06-07,info,0,,DOJ recovers roughly $2M in BTC,false
+2021-06-19,down,1,,China mining ban,false
+2021-07-09,up,0,,Square plans Bitcoin hardware wallet,false
+2021-07-15,up,0,,Square plans Bitcoin DeFi,false
+2021-07-26,info,0,,Amazon crypto-payment rumors,false
+2021-08-09,up,0,,AMC announces BTC payment plans,false
+2021-09-07,info,1,,El Salvador adopts BTC,false
+2021-09-17,info,0,,Satoshi statue unveiled,false
+2021-09-23,up,0,,Twitter adds BTC tips,false
+2021-09-24,down,1,,China bans all crypto,false
+2021-10-19,up,1,,US futures ETF launch,false
+2021-11-10,up,2,,ALL-TIME HIGH: $69K,false
+2021-11-14,info,1,,Taproot activates,false
+2021-11-21,up,0,,El Salvador plans Bitcoin City bonds,false
+2022-02-08,info,0,,DOJ recovers Bitfinex-linked $3.6B,false
+2022-02-14,info,0,,Coinbase Super Bowl ad crashes site,false
+2022-02-28,info,0,,BTC/ruble trading jumps,false
+2022-03-03,info,1,,US crypto order,false
+2022-04-27,up,1,,CAR adopts BTC,false
+2022-05-07,down,2,,LUNA collapse,false
+2022-06-13,down,1,,Celsius freezes,false
+2022-06-29,up,0,,MicroStrategy adds $10M in BTC,false
+2022-07-14,down,1,,Celsius bankrupt,false
+2022-07-20,down,1,,Tesla sells 75%,false
+2022-08-11,up,1,,BlackRock BTC trust,false
+2022-11-11,down,2,,FTX bankrupt,false
+2022-11-30,down,0,,ECB publishes criticism of Bitcoin,false
+2022-12-20,down,1,,Core Scientific bankrupt,false
+2022-12-29,info,0,,MicroStrategy reveals first BTC sale,false
+2023-01-21,info,1,,Ordinals launch,false
+2023-03-03,down,1,,Silvergate collapse,false
+2023-03-14,down,0,,US sells seized Silk Road BTC,false
+2023-03-19,up,1,,Rally on bank crisis,false
+2023-06-15,up,1,,BlackRock files ETF,false
+2023-06-21,up,0,,Managers refile spot BTC ETFs,false
+2024-01-10,up,2,,Spot ETFs approved,false
+2024-03-14,up,2,,ALL-TIME HIGH: $73.8K,false
+2024-04-19,info,1,halving,4th halving,false
+2024-05-05,info,1,,1B transactions,false
+2024-11-06,up,1,,Trump wins: new high,false
+2024-12-05,up,2,,BTC > $100K,false
+2025-01-20,up,2,,ALL-TIME HIGH: $109K | Inauguration,false
+2025-03-06,up,1,,US Bitcoin reserve,false
+2025-05-22,up,1,,BTC > $110K,false
+2025-07-15,up,1,,BTC > $120K,false
+2025-10-06,up,2,,ALL-TIME HIGH: $126K,false

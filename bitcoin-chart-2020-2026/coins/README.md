@@ -64,3 +64,6 @@ Tuân thủ PROJECT.md §13: lưu đủ nghiên cứu 0/1/2; đối chiếu từ
 Trang giá hoặc redirect sang BTC không phải timeline altcoin; luôn ghi rõ giới hạn nguồn.
 
 Hiển thị theo PROJECT.md §14: BTC chỉ 1/2; **mọi altcoin hiện đủ 0/1/2**, gồm cả Shorts. Mức 0 nhỏ/xám, không SFX.
+
+Sự kiện có cột cuối `remove` (`true`/`false`): chỉ các dòng không bị loại mới áp dụng quy tắc mức ở trên.
+`true` ẩn khỏi phim dài, preview và Shorts; vẫn giữ dòng, nguồn và audit. Mục mới mặc định `false`; giữ lựa chọn cũ khi cập nhật.
