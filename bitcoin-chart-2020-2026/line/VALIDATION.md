@@ -1,7 +1,8 @@
 # Coin Trail implementation checks — 28 October 2026
 
-No image or video rendered: DOGE event/caption manifest awaits the user's approval.
-This is implementation/data QA, not visual acceptance or final-film certification.
+Initial implementation/data checks were completed before rendering. The user approved the
+DOGE event/caption manifest on 29 October 2026; the motion preview below awaits visual approval.
+This is not final-film certification.
 
 - `npm run test:line`: 18 pilot bubbles (16 stored + 2 turns), three native-tempo cues,
   45 seconds; source identity/visibility/remove, authored-turn dedup, high/low anchors,
@@ -31,3 +32,26 @@ and collision frames, verify all SFX stems and encoded AAC, then wait for previe
 Decoded-frame regression and actual line-film audio/visual acceptance are still pending.
 `line/verify.js` provides container/timestamp/stem/AAC-correlation/loudness QA after rendering;
 it explicitly leaves picture inspection separate and has not yet been exercised on a line MP4.
+
+
+## Motion preview, 29 October 2026
+
+User approved all 18 events/captions. Rendered two cuts (10–19.8 s and 35.5–43.5 s),
+not the complete 45-second Short. Delivered 17.8 s, 480×854, CFR 60 fps, 1,068 frames,
+1,227,673 bytes. Initial concat timebase issue was corrected before delivery, original retained.
+
+- 8/8 included collisions: real SFX stems nonzero; encoded AAC correlation >=0.9962 and
+  lag <= one 8 kHz sample against original WAV after accounting for each cut offset.
+- 24 decoded frames (before/contact/after): deterministic rendered reference MAE <=1.31/255.
+  Inspected ATH, SNL, ATL layouts and decoded ATL frame; native source high/low/HUD/phase agree.
+- Actual-font caption wrapping sampled for all 18 captions: long words use the approved
+  ellipsis policy, e.g. COINB… / PRO. No canonical event text changed.
+- AAC measured -16.1 LUFS, true peak -2.0 dBTP; not listened to by the assistant.
+- All 1,068 video PTS continuous at 1/60 s. Original full data/music hashes unchanged.
+- Assets, manifests/approval, source cut offsets, encoded files and measurement scripts/results
+  retained under the part workspace's out/renders/doge-coin-trail-motion-preview-cfr-20261029/.
+- Preview uploaded and Drive metadata verified (id 1Lwn4rUkOLTPopOZWRaEjQUHXFhdFWZ-a).
+
+Pending: user visual/motion/SFX approval, full 45-second Short render/QA, full-timeline line
+verifier and decoded-frame regression for long/legacy. The old pre-approval checklist above
+is historical; source-code and legacy WAV identity already passed in implementation checks.

@@ -1,6 +1,6 @@
-# DOGE Coin Trail — review pending
+# DOGE Coin Trail — event/caption list approved 29/10/2026
 
-No frames or videos rendered. Each row has remove=false. Generated turns use TradingView high/low; other rows retain long-film classifications.
+User approved this exact event/caption list on 29/10/2026. Layout stills and a 17.8-second two-cut motion preview have been rendered; visual/motion approval is pending. Each row has remove=false. Generated turns use TradingView high/low; other rows retain long-film classifications.
 
 ## Part 1/1: 2021-01-01 → 2022-11-11 · 45s
 

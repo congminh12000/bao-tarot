@@ -727,9 +727,28 @@ trục/lưới, logo nền hay callout long. Quy tắc/lệnh đầy đủ: **sh
 
 **Trạng thái triển khai 28/10/2026:** code và manifest DOGE 01/01/2021–11/11/2022 đã tạo,
 18 bubble = 16 sự kiện đang giữ + ATH/ATL, 3 phase/cue, 45 s, FTX tại 44 s rồi hold 1 s.
-Danh sách/caption tại `coins/DOGE/coin-trail-review.md` **chờ người dùng duyệt**; chưa render ảnh/video.
+Danh sách/caption tại `coins/DOGE/coin-trail-review.md` **đã được người dùng duyệt ngày 29/10/2026**.
+Preview chuyển động xem trạng thái bên dưới.
 Kiểm tra không render: nguồn mọi coin đầy đủ liên kết; 7 coin sinh manifest thành công, dense split
 không mất ID; geometry/slope/no-overshoot/contact/HUD/same-day/seek/cue/text logic đạt.
 WAV fixture long và Shorts nến bit-identical với 907574fa. Root btc-data/score/film/index và
-WAV full giữ nguyên hash. Chưa kiểm tra hình thực tế, decoded-frame regression, audio line hoàn chỉnh
-hoặc peak AAC; thực hiện sau duyệt manifest. Không tuyên bố đã nghiệm thu visual/final.
+WAV full giữ nguyên hash. Kiểm tra preview thực tế xem bên dưới; chưa render/kiểm tra Short đầy đủ 45 s hoặc decoded-frame
+regression của long/Shorts nến. Không tuyên bố đã nghiệm thu visual/final.
+
+
+**DOGE Coin Trail preview — 29/10/2026:** người dùng duyệt 18 bubble/caption của commit 4050d770,
+contentHash `28e2086135bea51f6d59a6aa6eb51e7a01cf56ef64dd0e5008692eb088ea1b55`.
+Render layout ATH/SNL/ATL và hai đoạn 10–19,8 s + 35,5–43,5 s của timeline đã duyệt,
+ghép thành preview 17,800 s, 480×854, CFR 60 fps, 1.068 frame, 1.227.673 byte.
+8 va chạm (có 0/1/2/ATH/ATL), stem SFX đều có tín hiệu; AAC/reference correlation ≥0,9962,
+lag trong 1 sample ở 8 kHz. 24 frame trước/đúng/sau va chạm đối chiếu hình render deterministic:
+MAE tối đa 1,31/255; PTS liên tục. AAC đo −16,1 LUFS, true peak −2,0 dBTP (chưa nghe).
+Đã xem layout và frame giải mã; caption dài tự ellipsis đúng thiết kế, chưa duyệt thẩm mỹ.
+Bản ghép đầu có timebase khác CFR đã được giữ riêng, thay bằng bản CFR trước khi giao.
+Lưu `out/coin-trail/DOGE/2021-01-01_2022-11-11/part-1/out/renders/doge-coin-trail-motion-preview-cfr-20261029/`,
+fingerprint `1fdeabb355f1355f`, gồm manifest/approval, cut ranges, layout, frame tham chiếu/giải mã và QA.
+WAV/stems 45 s giữ ở workspace; các clip ATH/ATL cũng lưu riêng. Khi remux preview phải dùng cut ranges,
+không restore clip như thể full timeline 45 s. Root data/music vẫn nguyên hash, không cần restore.
+Drive preview đã upload và đọc metadata: https://drive.google.com/file/d/1Lwn4rUkOLTPopOZWRaEjQUHXFhdFWZ-a/view?usp=drivesdk
+Ảnh layout: https://drive.google.com/file/d/1yDkKhWmlAguh8Hej8hlVtGBtZBggZPoY/view?usp=drivesdk
+**Chờ duyệt hình/chuyển động/SFX trước khi render Short 45 s đầy đủ; chưa final.**
