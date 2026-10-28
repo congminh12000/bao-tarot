@@ -332,8 +332,8 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 
 - TRX (28/10/2026): tạo `coins/TRX/` theo §11. Giá TradingView `CRYPTO:TRXUSD` 13/09/2017–27/10/2026, 3.332 nến thật,
-  không thiếu ngày; đối chiếu Binance lệch trung vị 0,11 %. 67 dòng sự kiện có nguồn (đã mở/đọc từng link): 37 hiện
-  (6 / 14 / 17 theo mức 2/1/0, người dùng yêu cầu tự phân mức), 30 `remove=true` (tin thị trường chung không liên quan
+  không thiếu ngày; đối chiếu Binance lệch trung vị 0,11 %. 75 dòng sự kiện có nguồn (đã mở/đọc từng link; thêm 8 theo yêu cầu): 45 hiện
+  (6 / 15 / 24 theo mức 2/1/0, người dùng yêu cầu tự phân mức), 30 `remove=true` (tin thị trường chung không liên quan
   TRX, cùng chính sách nhóm A của XRP). 99Bitcoins 234/234 ID; 5 phase / 5 bài không lặp, `--strict` ✓; nhãn toàn phim ✓,
   không nhãn rời sớm; ảnh kết phim đã xem, không đè. Logo chính thức TRON Brand Kit; màu đề xuất san hô/đỏ sẫm (chờ duyệt).
   **Danh sách sự kiện chờ người dùng duyệt → chưa render.** Chi tiết: `coins/TRX/README.md`, `coins/TRX/data/SOURCES.md`.

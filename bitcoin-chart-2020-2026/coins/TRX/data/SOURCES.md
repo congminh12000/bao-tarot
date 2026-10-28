@@ -33,7 +33,7 @@ Not added (no reliable date or source could not be opened): whitepaper plagiaris
 USDD launch (only sponsored or aggregator pages), JustSwap launch (July vs 18 Aug 2020), Steemit sale (source 404),
 Poloniex hack (no editorial source opened), Binance.US listing and other 2026 items without a second source.
 
-Levels assigned on the user's request: 6 level 2, 14 level 1, 17 level 0 visible. 30 shared general-market or follow-up
+Levels assigned on the user's request: 6 level 2, 15 level 1, 24 level 0 visible (after the expansion below). 30 shared general-market or follow-up
 rows are kept with `remove=true` (`removals-20261028.json`), the policy the user approved for XRP group A.
 Not a claim that every event in TRON's history is covered.
 
@@ -43,3 +43,13 @@ Official icon from the TRON Brand Kit linked by trondao.org (https://tronbrandki
 saved unchanged as `logo.svg`, rasterised onto a transparent 1024×1024 `logo.png`; `logo-negative.png` by the documented
 ffmpeg command. TRX is not in the palette table: proposed coral #FF7A59 / #FFD1C2 on dark red #1E0A0A → #080303
 (kept off the red candle colour), glow #EA0029, special cyan #00E5FF; awaits the user's approval.
+
+## Expansion — 2026-10-28 (8 more events, requested by the user, awaiting approval)
+
+Each link opened/read: Decrypt (Sun postpones the Buffett lunch, 2019-07-22; Sun buys Cattelan's "Comedian", Sotheby's
+auction 2024-11-20), CoinDesk (Sun confirms being in the Poloniex investor group, 2019-11-12), Barbados Today citing the
+2021-12-17 CoinDesk report (Sun named Grenada's WTO ambassador), Blockhead + Kitco (Huobi announced the sale to About
+Capital on 2022-10-08), The Block (Poloniex hot-wallet hack 2023-11-10), Cointelegraph (T3 Financial Crime Unit,
+2024-09-10), Binance.US support (TRX relisted, trading 2026-04-16). Not added: BTT airdrop (official post could not be
+opened), SunPump launch (no dated editorial source opened), TVM activation (August release vs October activation).
+
