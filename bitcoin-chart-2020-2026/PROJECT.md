@@ -318,6 +318,19 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **SOL final — render xong 28/10/2026, chờ upload Drive:** người dùng chọn SOL toàn dữ liệu / 16:9 / Full HD / 60 fps.
+  Từ `f9037487`, giữ đúng preview: 56 sự kiện + 8 ATH/ATL, 9 bài không lặp. Render hình 833,6 s.
+  File `out/sol-final-20261028-16x9-1080p.mp4`: 1920×1080, 282,666667 s / 16.960 khung / 234.036.189 byte.
+  Lưu `out/renders/sol-final-20261028-1080p60/`, fingerprint `7b51e0b4dbdef005`; input hash không đổi, PTS liên tục.
+  AAC −16,0 LUFS / true peak −1,2 dBTP / LRA 4,5 LU; nguồn 63/63, audit snapshot ✓; live 99Bitcoins vẫn 403.
+  Native AV 13/17 đạt, giữ 4 lỗi đo ở ~45,6/~195,1 s và nhãn China/ATL chồng ở màn kết như preview, chưa sửa.
+  15 nhóm chương phủ 21 mốc, đã trích 36 ảnh từ final. `coins/SOL/youtube.md` có tiêu đề nháp/mô tả/chương; chưa đăng.
+  Upload connector bị HTTP 413 trước khi gọi Drive (giới hạn 100 MiB). Chrome cùng tài khoản Drive chứa preview yêu cầu
+  bật Allow access to file URLs cho tiện ích ChatGPT; chưa đổi quyền. Native báo Mac đang khóa. Thư mục Drive desktop
+  cũ của tài khoản khác không có tiến trình đồng bộ, chưa chép file vào đó. Cần người dùng mở khóa/bật quyền để upload
+  tiếp file final có sẵn, **không render lại**. Chi tiết lỗi ở `drive-upload.json` trong thư mục bản lưu.
+
+
 - TRX (28/10/2026): tạo `coins/TRX/` theo §11. Giá TradingView `CRYPTO:TRXUSD` 13/09/2017–27/10/2026, 3.332 nến thật,
   không thiếu ngày; đối chiếu Binance lệch trung vị 0,11 %. 67 dòng sự kiện có nguồn (đã mở/đọc từng link): 37 hiện
   (6 / 14 / 17 theo mức 2/1/0, người dùng yêu cầu tự phân mức), 30 `remove=true` (tin thị trường chung không liên quan

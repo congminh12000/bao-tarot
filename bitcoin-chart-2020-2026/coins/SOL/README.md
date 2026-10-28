@@ -1,3 +1,21 @@
+# SOL final — rendered 2026-10-28; Drive upload pending
+
+User selected SOL / full saved history / 16:9 / Full HD, always 60 fps, after viewing the full preview.
+Final: `out/sol-final-20261028-16x9-1080p.mp4`; kept at `out/renders/sol-final-20261028-1080p60/`.
+1920×1080, 282.666667 s, 16,960 decoded frames, 234,036,189 bytes. Fingerprint `7b51e0b4dbdef005`.
+56 historical events + 8 generated turns, 9 unique cues; all prices, events, flags and picture/audio code unchanged.
+All input hashes stayed unchanged and all video PTS are continuous. AAC −16.0 LUFS / −1.2 dBTP / LRA 4.5 LU.
+Source mappings 63/63 and saved audit pass; 99Bitcoins live 403 is not certified. Native AV 13/17 passes.
+Four adjacent-event measurements at ~45.6/~195.1 s and the closing China-label/ATL overlap remain as in preview.
+Render took 833.6 seconds. 15 chapter groups cover 21 required moments; 36 frame checks stored with the final.
+`youtube.md` contains title options and regenerated chapters; nothing published. Audio measured, not heard.
+Drive connector upload failed before invocation: 234,036,189 bytes exceeds its 100 MiB limit. Chrome fallback
+requires enabling Allow access to file URLs for the ChatGPT extension; native access also reports the Mac locked.
+No permission was changed. Resume upload of the existing final after the user enables that setting; no re-render.
+The verified Drive preview remains at https://drive.google.com/file/d/1-8YFC5hCYQ6cbCBAv8vPxvVdqcSmjveX/view.
+
+Historical preview notes below are superseded by this final status.
+
 # Solana film — full-history preview ready for review (2026-10-28)
 
 Prepared 2026-10-28 following PROJECT.md §11 and the palette in `coins/README.md`.
