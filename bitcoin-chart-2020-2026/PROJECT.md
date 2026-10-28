@@ -318,6 +318,16 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **DOGE final full — 28/10/2026:** người dùng yêu cầu DOGE / 16:9 / Full HD / 60 fps sau preview.
+  Giữ nguyên 4.700 nến thật, 55 sự kiện + 8 ATH/ATL, 9 cue, danh sách 92 đã duyệt và logo Doge vàng.
+  `out/doge-final-20261028-16x9-1080p.mp4`: 1920×1080, 479,466667 s, 28.768 frame, 367.635.147 bytes.
+  Lưu `out/renders/doge-final-20261028-1080p60/`, fingerprint `0d92968b10c6de23`; render hình 1.382 s.
+  PTS liên tục, DTS tăng; nhãn chạy không chồng/rời sớm; đã xem ảnh đầu/giữa/cuối. AAC −15,9 LUFS / −1,3 dBTP / LRA 3,6 LU (chưa nghe).
+  Native AV 13/15 đạt: cặp COVID/ATL tại 218,860/218,947 s báo tiếng +85 ms / hình −5 frame; chưa giải quyết hai phép đo này.
+  Nguồn 92/92, snapshot 234/234 từng coin đạt; live 99Bitcoins 403, không chứng nhận live.
+  Chương: 11 nhóm / 15 mốc, trích 26 ảnh final; `coins/DOGE/youtube.md`. Full data/music vẫn nạp.
+
+
 - **DOGE preview — 28/10/2026:** pull đến `3ad7d5c9`, danh sách 92 đã duyệt; giữ nguyên giá/phase/phân mức/remove.
   Render đoạn 01/01–30/06/2021 (Reddit/Musk/SNL/ATH), 16:9 854×480, 60 fps, 29,00 s / 1.740 frame;
   8 sự kiện + 1 ATH tự tạo, 2 cue theo phim đầy đủ. Native AV 3/3 ✓, hình 0 frame / tiếng tối đa 3 ms; nhãn không

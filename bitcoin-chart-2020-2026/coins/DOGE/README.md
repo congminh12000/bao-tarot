@@ -1,4 +1,4 @@
-# Dogecoin film — 2021 preview ready for review
+# Dogecoin film — full-history final
 
 Prepared 2026-10-28 following PROJECT.md §11 and the palette in `coins/README.md`.
 
@@ -14,6 +14,23 @@ Prepared 2026-10-28 following PROJECT.md §11 and the palette in `coins/README.m
 COIN=DOGE node make-data.js --strict && COIN=DOGE FPS=60 node song.js && COIN=DOGE FPS=60 node check-labels.js
 ```
 
+## Full-history final — 2026-10-28
+
+Requested DOGE / 16:9 / Full HD / 60 fps, retaining the approved events, palette and yellow Doge illustration.
+Full saved range 2013-12-15–2026-10-27: 4,700 real daily candles, no gaps, 55 selected events + 8 generated turns,
+9 distinct approved cues. All 92 research events have sources; 37 removed rows remain excluded.
+Final: `out/doge-final-20261028-16x9-1080p.mp4`; kept: `out/renders/doge-final-20261028-1080p60/`.
+1920×1080, 60 fps, 479.466667 seconds, 28,768 decoded frames, 367,635,147 bytes.
+Render source commit `a163e539`; fingerprint `0d92968b10c6de23`; frame rendering 1382.0 seconds.
+All video PTS continuous and DTS increasing. No running-label overlap or early exits; beginning/middle/closing frames viewed.
+Native AV 13/15 markers pass: adjacent COVID/ATL at 218.860/218.947 seconds report +85 ms audio and −5-frame picture.
+These two measurements remain unresolved; do not describe native verification as a full pass.
+Decoded AAC −15.9 LUFS, true peak −1.3 dBTP, LRA 3.6 LU; measured, not heard.
+Snapshot audit 234/234 IDs per configured coin passes. Live 99Bitcoins returned 403, so live coverage is not certified.
+11 chapter groups cover all 15 required moments; starts at least 3 seconds early and groups at least 10 seconds apart.
+26 unique chapter/event+1-second images extracted from this final; timestamps in `chapter-check.json`.
+Full DOGE data and music remain loaded. No Drive upload requested for this final. No YouTube publication.
+
 ## Preview — 2026-10-28
 
 Requested after approval of the 92-event list; no event levels, remove flags, prices or phases changed.
@@ -28,4 +45,4 @@ MP4: `out/doge-preview-2021-20261028-16x9-480p.mp4`.
 Kept frames, shareable MP4, fingerprint and validation: `out/renders/doge-preview-2021-20261028-480p60/`.
 Drive uploaded and metadata read back:
 https://drive.google.com/file/d/11Mk7cu0Gbw9EeZXcFqesjXcc0tpyqFuM/view?usp=drivesdk
-Awaiting preview/logo/palette review; no final rendered.
+Historical preview record; superseded by the final requested above.
