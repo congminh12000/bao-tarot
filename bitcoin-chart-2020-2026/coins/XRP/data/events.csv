@@ -1,41 +1,41 @@
 # date,kind,hit,tag,text,remove
 2013-04-11,info,0,,OpenCoin angel funding announced,false
-2013-08-30,info,0,,Tradehill shuts down,false
+2013-08-30,info,0,,Tradehill shuts down,true
 2013-11-12,info,0,,Ripple raises $3.5M funding,false
-2013-11-18,info,0,,US Senate crypto hearing,false
+2013-11-18,info,0,,US Senate crypto hearing,true
 2013-12-05,down,1,,China bank ban,false
-2014-02-07,info,0,,Exchanges hit by DDoS attacks,false
+2014-02-07,info,0,,Exchanges hit by DDoS attacks,true
 2014-02-24,down,2,,Mt. Gox collapses,false
-2014-03-25,info,0,,IRS crypto tax guidance,false
+2014-03-25,info,0,,IRS crypto tax guidance,true
 2014-04-10,info,0,,China closes exchange accounts,false
 2014-05-05,info,0,,Fidor adopts Ripple protocol,false
 2014-06-12,info,0,,AstroPay joins Ripple protocol,false
-2014-07-17,info,0,,BitLicense proposal,false
+2014-07-17,info,0,,BitLicense proposal,true
 2014-07-29,info,0,,GBI gold gateway launches,false
 2014-09-24,info,0,,First US banks join Ripple,false
 2014-12-04,info,0,,Earthport partners with Ripple,false
 2015-01-04,info,0,,Bitstamp hack,false
-2015-01-26,info,0,,Coinbase exchange launches,false
+2015-01-26,info,0,,Coinbase exchange launches,true
 2015-02-12,info,0,,Ripple joins W3C payments group,false
 2015-04-16,info,0,,Garlinghouse named Ripple COO,false
 2015-05-05,down,1,,FinCEN $700K penalty,false
 2015-05-19,info,0,,Ripple raises $28M Series A,false
 2015-06-03,info,0,,BitLicense rules released,false
-2015-08-01,info,0,,Mt. Gox CEO arrested,false
-2015-09-17,info,0,,CFTC Bitcoin commodity ruling,false
+2015-08-01,info,0,,Mt. Gox CEO arrested,true
+2015-09-17,info,0,,CFTC Bitcoin commodity ruling,true
 2015-10-06,info,0,,Ripple launches settlement tools,false
 2015-10-06,info,0,,Santander invests in Ripple,false
-2015-10-08,info,0,,Gemini exchange launches,false
-2015-10-22,info,0,,EU crypto VAT ruling,false
+2015-10-08,info,0,,Gemini exchange launches,true
+2015-10-22,info,0,,EU crypto VAT ruling,true
 2016-01-28,info,1,,SBI venture announced,false
 2016-02-10,info,0,,rippled 0.30.1 release notice,true
 2016-04-13,info,0,,MIT runs Ripple validator,false
-2016-05-19,info,1,,FeeEscalation enabled,false
+2016-05-19,info,1,,FeeEscalation enabled,true
 2016-06-10,info,0,,rippled 0.31.2 release notice,true
 2016-06-22,info,0,,Banks expand Ripple network,false
 2016-06-27,info,1,,MultiSign enabled,false
 2016-06-27,info,0,,rippled 0.32.0 release notice,true
-2016-07-19,info,1,,TrustSetAuth enabled,false
+2016-07-19,info,1,,TrustSetAuth enabled,true
 2016-07-29,info,0,,rippled 0.32.1 release notice,true
 2016-08-02,info,0,,Bitfinex hack,false
 2016-09-15,info,0,,More banks join Ripple network,false
@@ -44,14 +44,14 @@
 2016-09-29,info,0,,rippled 0.33.0 release notice,true
 2016-10-16,info,0,,rippled 0.33.0-hf1 release notice,true
 2016-10-20,info,1,,R3 banks trial XRP payments,false
-2016-10-21,info,1,,Flow enabled,false
+2016-10-21,info,1,,Flow enabled,true
 2016-11-01,info,0,,Garlinghouse named next CEO,false
 2016-12-20,info,0,,rippled 0.40.0 release notice,true
 2017-01-03,info,0,,CryptoConditions enabled,true
 2017-01-11,info,0,,rippled 0.40.1 release notice,true
 2017-01-27,info,0,,rippled 0.50.0 release notice,true
 2017-01-30,info,0,,rippled 0.50.2 release notice,true
-2017-02-21,info,1,,TickSize enabled,false
+2017-02-21,info,1,,TickSize enabled,true
 2017-03-14,info,0,,rippled 0.50.3 release notice,true
 2017-03-17,info,0,,rippled 0.60.0 release notice,true
 2017-03-29,info,0,,rippled 0.60.1 release notice,true
@@ -62,7 +62,7 @@
 2017-05-18,info,1,,XRP adds six exchange listings,false
 2017-06-15,info,0,,rippled 0.70.0 release notice,true
 2017-06-30,info,0,,SCB Japan-Thailand payments,false
-2017-07-07,info,1,,EnforceInvariants + 1 upgrades,false
+2017-07-07,info,1,,EnforceInvariants + 1 upgrades,true
 2017-07-10,info,0,,rippled 0.70.1 release notice,true
 2017-09-04,down,1,,China bans ICOs,false
 2017-09-15,down,1,,Beijing orders exchange closures,false
@@ -78,50 +78,50 @@
 2018-01-08,info,0,,rippled 0.81.0 release notice,true
 2018-01-11,info,1,,MoneyGram pilots XRP payments,false
 2018-01-26,info,0,,Coincheck hack; withdrawals halt,false
-2018-01-30,info,0,,Facebook bans crypto ads,false
+2018-01-30,info,0,,Facebook bans crypto ads,true
 2018-02-21,info,0,,Ripple adds emerging-market clients,false
 2018-02-21,info,0,,rippled 0.90.0 release notice,true
 2018-03-01,info,0,,FLEETCOR trials Ripple payments,false
-2018-03-07,info,0,,SEC exchange registration notice,false
-2018-03-14,info,0,,Google crypto ad ban announced,false
+2018-03-07,info,0,,SEC exchange registration notice,true
+2018-03-14,info,0,,Google crypto ad ban announced,true
 2018-03-22,info,0,,rippled 0.90.1 release notice,true
-2018-03-26,info,0,,Twitter crypto ad ban announced,false
-2018-04-06,info,1,,DepositAuth + 1 upgrades,false
+2018-03-26,info,0,,Twitter crypto ad ban announced,true
+2018-04-06,info,1,,DepositAuth + 1 upgrades,true
 2018-04-27,info,0,,Five new xVia customers,false
 2018-05-11,info,0,,Upbit prosecutors raid,false
 2018-05-11,info,1,,xRapid pilot results announced,false
 2018-05-14,info,1,,Xpring launches for XRP builders,false
-2018-05-31,info,1,,rippled 1.0.0 release notice,false
+2018-05-31,info,1,,rippled 1.0.0 release notice,true
 2018-06-04,info,0,,Ripple launches $50M UBRI,false
-2018-06-10,info,0,,Coinrail exchange hack,false
+2018-06-10,info,0,,Coinrail exchange hack,true
 2018-06-14,info,0,,rippled 1.0.1 release notice,true
 2018-06-19,info,0,,XRPL maintenance: 1 fix,true
 2018-06-20,info,0,,XRPL maintenance: 1 fix,true
 2018-06-21,info,0,,XRPL maintenance: 1 fix,true
-2018-06-26,info,0,,Facebook eases crypto ad ban,false
-2018-07-16,info,0,,BlackRock explores crypto,false
+2018-06-26,info,0,,Facebook eases crypto ad ban,true
+2018-07-16,info,0,,BlackRock explores crypto,true
 2018-08-17,info,1,,xRapid adds three exchanges,false
-2018-09-05,info,0,,Goldman crypto desk report,false
+2018-09-05,info,0,,Goldman crypto desk report,true
 2018-09-11,info,1,,Ripple and R3 settle dispute,false
-2018-09-14,info,0,,Zaif exchange hack,false
+2018-09-14,info,0,,Zaif exchange hack,true
 2018-09-14,info,0,,rippled 1.1.0 release published,true
 2018-09-20,info,0,,PNC joins RippleNet,false
-2018-09-20,info,0,,Zaif exchange hack disclosed,false
+2018-09-20,info,0,,Zaif exchange hack disclosed,true
 2018-10-01,up,2,,xRapid commercial launch,false
-2018-10-09,info,1,,DepositPreauth + 1 upgrades,false
-2018-10-15,info,0,,Fidelity crypto platform,false
+2018-10-09,info,1,,DepositPreauth + 1 upgrades,true
+2018-10-15,info,0,,Fidelity crypto platform,true
 2018-10-23,info,0,,rippled 1.1.1 release notice,true
 2018-11-15,info,0,,CIMB joins RippleNet,false
 2018-12-11,info,0,,rippled 1.1.2 release published,true
 2019-01-10,info,0,,RippleNet tops 200 customers,false
-2019-01-31,info,0,,Quadriga seeks creditor protection,false
+2019-01-31,info,0,,Quadriga seeks creditor protection,true
 2019-02-09,info,0,,UBRI adds China + Singapore,false
 2019-02-13,info,0,,rippled 1.2.0 release published,true
 2019-02-25,info,1,,Coinbase Pro adds XRP transfers,false
 2019-02-26,info,0,,rippled 1.2.1 release published,true
-2019-03-01,info,0,,Facebook crypto project report,false
+2019-03-01,info,0,,Facebook crypto project report,true
 2019-03-06,info,0,,rippled 1.2.2 release published,true
-2019-03-22,info,0,,Fake trading volume study,false
+2019-03-22,info,0,,Fake trading volume study,true
 2019-03-23,info,0,,XRPL maintenance: 1 fix,true
 2019-04-02,info,0,,XRPL maintenance: 1 fix,true
 2019-04-02,info,0,,rippled 1.2.3 release published,true
@@ -133,43 +133,43 @@
 2019-06-18,info,0,,Facebook Libra announced,false
 2019-07-25,info,0,,rippled 1.3.1 release published,true
 2019-07-30,info,0,,UBRI expands to Japan,false
-2019-08-07,info,0,,Binance KYC ransom demand,false
+2019-08-07,info,0,,Binance KYC ransom demand,true
 2019-10-02,info,0,,XRPL maintenance: 1 fix,true
-2019-10-09,info,0,,UNICEF accepts crypto donations,false
+2019-10-09,info,0,,UNICEF accepts crypto donations,true
 2019-10-10,info,0,,Finastra partners with Ripple,false
 2019-10-28,info,0,,China endorses blockchain,false
 2019-11-07,info,0,,RippleNet tops 300 customers,false
 2019-12-02,info,0,,rippled 1.4.0 release notice,true
 2019-12-20,info,1,,Ripple raises $200M Series C,false
-2019-12-23,info,0,,YouTube crypto video ban error,false
-2020-02-17,info,0,,FCoin exchange insolvency,false
+2019-12-23,info,0,,YouTube crypto video ban error,true
+2020-02-17,info,0,,FCoin exchange insolvency,true
 2020-02-26,info,0,,Ripple adds Korean remittance firms,false
 2020-02-27,info,1,,Azimo adopts XRP liquidity,false
-2020-03-04,info,0,,India lifts crypto banking ban,false
+2020-03-04,info,0,,India lifts crypto banking ban,true
 2020-03-12,down,2,,COVID crypto-market crash,false
 2020-03-15,info,0,,Fed rate cuts + QE,false
 2020-03-19,info,0,,DeeMoney joins RippleNet,false
 2020-03-23,info,0,,Fed expands QE,false
-2020-03-26,info,0,,Microsoft crypto patent,false
+2020-03-26,info,0,,Microsoft crypto patent,true
 2020-04-10,info,0,,rippled 1.5.0 release notice,true
 2020-04-28,info,0,,SCB expands Ripple payments,false
 2020-05-01,info,0,,XRPL maintenance: 2 fixes,true
-2020-05-08,info,1,,DeletableAccounts enabled,false
+2020-05-08,info,1,,DeletableAccounts enabled,true
 2020-06-15,info,0,,RippleNet Cloud adds first bank,false
-2020-06-18,info,1,,Checks enabled,false
+2020-06-18,info,1,,Checks enabled,true
 2020-07-03,info,0,,RequireFullyCanonicalSig enabled,true
 2020-07-09,info,0,,XRPL maintenance: 1 fix,true
-2020-07-22,info,0,,US banks allowed crypto custody,false
-2020-08-04,info,1,,FlowCross enabled,false
+2020-07-22,info,0,,US banks allowed crypto custody,true
+2020-08-04,info,1,,FlowCross enabled,true
 2020-08-19,info,0,,rippled 1.6.0 release notice,true
 2020-09-24,info,1,,XRPL Foundation established,false
-2020-09-25,info,0,,KuCoin exchange hack,false
+2020-09-25,info,0,,KuCoin exchange hack,true
 2020-09-30,info,0,,XRPL carbon-neutrality initiative,false
-2020-10-01,info,0,,BitMEX executives charged,false
+2020-10-01,info,0,,BitMEX executives charged,true
 2020-10-06,info,0,,Lemonway joins RippleNet,false
-2020-10-16,info,0,,OKEx suspends withdrawals,false
+2020-10-16,info,0,,OKEx suspends withdrawals,true
 2020-10-21,info,0,,PayPal crypto services,false
-2020-12-17,info,0,,Coinbase draft S-1 filing announced,false
+2020-12-17,info,0,,Coinbase draft S-1 filing announced,true
 2020-12-22,down,2,,SEC sues Ripple,false
 2020-12-23,info,0,,XRP falls after SEC complaint,false
 2020-12-25,info,1,,Bitstamp plans US XRP trading halt,false
@@ -198,7 +198,7 @@
 2021-11-10,info,0,,Liquidity Hub preview announced,false
 2021-11-11,info,0,,FlowSortStrands + 1 upgrades,true
 2021-11-18,info,0,,TicketBatch + 1 upgrades,true
-2021-11-21,info,1,,NegativeUNL enabled,false
+2021-11-21,info,1,,NegativeUNL enabled,true
 2021-11-23,info,0,,Palau digital-currency partnership,false
 2021-12-02,info,0,,rippled 1.8.1 release notice,true
 2021-12-20,info,0,,rippled 1.8.2 release notice,true
@@ -244,7 +244,7 @@
 2023-03-03,down,0,,Silvergate stops SEN transfers,false
 2023-03-08,info,0,,Silvergate announces wind-down,false
 2023-03-14,info,0,,rippled 1.10.0 release notice,true
-2023-03-19,info,0,,Crypto rally amid bank turmoil,false
+2023-03-19,info,0,,Crypto rally amid bank turmoil,true
 2023-03-22,info,0,,rippled 1.10.1 release published,true
 2023-04-04,info,0,,VP Bank adopts Metaco custody,false
 2023-05-17,info,1,,Ripple acquires Metaco,false
@@ -276,7 +276,7 @@
 2023-11-27,info,0,,XRPL maintenance: 1 fix,true
 2023-12-04,info,0,,Zodia joins Metaco network,false
 2023-12-20,info,0,,Ripple joins Ireland VASP register,false
-2024-01-09,info,1,,rippled 2.0.0 release notice,false
+2024-01-09,info,1,,rippled 2.0.0 release notice,true
 2024-01-29,info,0,,rippled 2.0.1 release notice,true
 2024-01-31,down,1,,Larsen personal XRP theft disclosed,false
 2024-02-08,info,1,,Clawback enabled,false
@@ -321,8 +321,8 @@
 2024-10-16,info,0,,IRC trials Ripple aid payments,false
 2024-10-21,info,0,,Clio 2.2.5 release published,true
 2024-10-23,info,0,,Garanti BBVA adopts Ripple custody,false
-2024-10-30,info,1,,DID enabled,false
-2024-11-02,info,1,,PriceOracle enabled,false
+2024-10-30,info,1,,DID enabled,true
+2024-11-02,info,1,,PriceOracle enabled,true
 2024-11-25,down,1,,XRPL pauses for about 10 minutes,false
 2024-11-25,info,1,,abrdn fund available on XRPL,false
 2024-11-25,info,0,,rippled 2.3.0 release notice,true
@@ -333,7 +333,7 @@
 2025-01-07,info,0,,RLUSD adopts Chainlink price feeds,false
 2025-01-10,info,0,,Node crash report published,true
 2025-01-28,info,1,,Ondo announces OUSG on XRPL,false
-2025-01-30,info,1,,AMMClawback + 5 upgrades,false
+2025-01-30,info,1,,AMMClawback + 5 upgrades,true
 2025-01-30,info,0,,rippled 2.3.1 release notice,true
 2025-02-04,down,2,,XRPL halts for about 64 minutes,false
 2025-02-10,info,0,,Unicambio joins Ripple payments,false
@@ -352,7 +352,7 @@
 2025-04-21,down,1,,Malicious xrpl.js packages published,false
 2025-04-25,info,1,,Hashdex XRP ETF starts on B3,false
 2025-04-28,info,0,,xrpl.js incident report published,true
-2025-05-04,info,1,,DeepFreeze enabled,false
+2025-05-04,info,1,,DeepFreeze enabled,true
 2025-05-08,info,1,,SEC-Ripple settlement proposed,false
 2025-05-15,info,0,,XRPL maintenance: 2 fixes,true
 2025-05-19,info,1,,CME XRP futures begin trading,false
@@ -363,7 +363,7 @@
 2025-05-27,info,0,,Clio 2.4.1 release notice,true
 2025-06-03,info,0,,Dubai recognizes RLUSD,false
 2025-06-10,info,1,,Guggenheim paper launches on XRPL,false
-2025-06-11,info,1,upgrade,DynamicNFT enabled,false
+2025-06-11,info,1,upgrade,DynamicNFT enabled,true
 2025-06-12,info,1,,Native USDC launches on XRPL,false
 2025-06-18,info,1,,Evolve XRP ETF begins trading,false
 2025-06-18,info,1,,Purpose XRP ETF begins trading,false
@@ -382,11 +382,11 @@
 2025-08-22,info,0,,SBI plans RLUSD Japan rollout,false
 2025-08-27,info,0,,rippled 2.6.0 release notice,true
 2025-08-29,info,0,,XRPL maintenance: 3 fixes,true
-2025-09-04,info,1,upgrade,Credentials enabled,false
+2025-09-04,info,1,upgrade,Credentials enabled,true
 2025-09-04,info,0,,RLUSD distribution expands in Africa,false
 2025-09-08,info,0,,rippled 2.5.1 release notice,true
 2025-09-09,info,0,,BBVA adopts Ripple custody,false
-2025-09-15,down,1,,Delegation bug found before activation,false
+2025-09-15,down,1,,Delegation bug found before activation,true
 2025-09-18,info,0,,DBS + Franklin RLUSD plan,false
 2025-09-18,info,0,,Default UNL migration notice,true
 2025-09-18,info,1,,REX-Osprey XRP ETF launches,false
@@ -410,7 +410,7 @@
 2025-11-27,info,0,,ADGM recognizes RLUSD,false
 2025-12-01,info,0,,Singapore expands Ripple license,false
 2025-12-02,info,0,,RedotPay joins Ripple Payments,false
-2025-12-09,info,1,,rippled 3.0.0 release notice,false
+2025-12-09,info,1,,rippled 3.0.0 release notice,true
 2025-12-11,info,1,,21shares XRP ETF begins trading,false
 2025-12-12,info,0,,AMINA Bank adopts Ripple Payments,false
 2025-12-12,info,1,,OCC conditional trust-bank approval,false
@@ -422,13 +422,13 @@
 2026-01-27,info,0,,XRPL maintenance: 5 fixes,true
 2026-01-28,info,0,,rippled 3.1.0 release notice,true
 2026-02-02,info,1,,Ripple gets Luxembourg EMI license,false
-2026-02-04,info,1,upgrade,PermissionedDomains enabled,false
+2026-02-04,info,1,upgrade,PermissionedDomains enabled,true
 2026-02-04,info,0,,Ripple Prime adds Hyperliquid,false
 2026-02-09,info,0,,Ripple Custody capabilities expand,false
 2026-02-11,info,0,,Aviva plans XRPL tokenization,false
-2026-02-12,info,1,upgrade,TokenEscrow enabled,false
+2026-02-12,info,1,upgrade,TokenEscrow enabled,true
 2026-02-18,info,1,upgrade,PermissionedDEX enabled,false
-2026-02-19,down,1,,Batch bug caught before activation,false
+2026-02-19,down,1,,Batch bug caught before activation,true
 2026-02-23,info,0,,rippled 3.1.1 release notice,true
 2026-02-26,info,0,,Batch security report published,true
 2026-03-03,info,0,,Ripple expands stablecoin payments,false
@@ -456,7 +456,7 @@
 2026-07-31,info,0,,rippled 3.2.1 release notice,true
 2026-08-03,info,0,,Ripple invests in ZILO + Licuido,false
 2026-08-06,info,0,,rippled 3.3.0 release notice,true
-2026-08-07,down,0,,Sponsor bug found before activation,false
+2026-08-07,down,0,,Sponsor bug found before activation,true
 2026-08-18,info,0,,Jeonbuk Bank partners with Ripple,false
 2026-08-18,info,0,,Manifest-flood report published,true
 2026-08-18,info,0,,Ripple Prime $275M notes offering,false
@@ -465,14 +465,14 @@
 2026-09-10,info,0,,Ripple Treasury adds governed AI,false
 2026-09-11,info,0,,XRPL maintenance: 1 fixes,true
 2026-09-16,info,0,,rippled 3.4.0 release notice,true
-2026-09-18,down,0,,Batch wrapper bug confirmed,false
+2026-09-18,down,0,,Batch wrapper bug confirmed,true
 2026-09-21,info,0,,Sponsor security report published,true
 2026-09-25,info,0,,rippled 3.4.1 release notice,true
 2026-09-29,info,1,,CSD BR XRPL market infrastructure,false
 2026-10-06,info,0,,Brevan Howard expands Ripple ties,false
-2026-10-08,info,1,upgrade,PermissionDelegationV1_1 enabled,false
+2026-10-08,info,1,upgrade,PermissionDelegationV1_1 enabled,true
 2026-10-09,info,0,,Batch + overflow report published,true
-2026-10-09,info,1,upgrade,BatchV1_1 + 1 upgrades,false
+2026-10-09,info,1,upgrade,BatchV1_1 + 1 upgrades,true
 2026-10-12,info,0,,Standard Chartered custodies RLUSD,false
 2026-10-14,info,0,,DriveWealth partners with Ripple,false
 2026-10-14,info,0,,Meritz adopts Ripple custody,false

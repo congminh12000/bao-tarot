@@ -318,6 +318,13 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- XRP lọc thêm (28/10/2026, người dùng duyệt nhóm A, E, F, G): đặt `remove=true` thêm 64 mục — 36 tin thị trường chung
+  không liên quan XRP, 21 amendment kỹ thuật tên khó hiểu (mức 1), 4 lỗi phát hiện trước khi kích hoạt, 3 bản phát hành
+  rippled. Nhóm B/C/D/H (154 mục: đối tác thường lệ, giấy phép sơ bộ, tin nhắc lại, gọi vốn nhỏ) **còn chờ người dùng
+  duyệt**, tạm vẫn hiện. **Danh sách XRP chưa duyệt xong → không render** (preview 09/2025–02/2026 đã chạy xong ngay trước lệnh dừng, chỉ lưu ở `out/renders/xrp-preview-remove-AEFG-20261028-480p/`, không gửi, không coi là bước duyệt).
+  Tổng 484 dòng, 210 remove, 274 hiện (170 / 88 / 16 theo mức 0/1/2). Mức, nguồn, giá, phase không đổi.
+  Danh sách từng mục + nguồn: `coins/XRP/data/removal-proposal-20261028.md` / `.json`.
+
 - XRP full-data preview (28/10/2026): sau khi xem lại toàn bộ danh sách giữ/loại, người dùng yêu cầu "Render video
   preview xrp full dữ liệu". Đây là yêu cầu render theo danh sách vừa trình (146 remove giữ nguyên), thay trạng thái
   chờ duyệt danh sách bên dưới. Chỉ lần này render preview toàn timeline 04/08/2013–27/10/2026 thay vì đoạn ngắn:

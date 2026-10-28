@@ -1,0 +1,4730 @@
+{
+ "coin": "XRP",
+ "proposedOn": "2026-10-28",
+ "status": "partly decided 2026-10-28: groups A, E, F, G approved (remove=true); groups B, C, D, H still under user review (remove=false for now). No render until the list review is finished.",
+ "groups": {
+  "A": "General crypto-market item with no clear XRP link",
+  "B": "Routine Ripple partner, client or expansion announcement",
+  "C": "Preliminary licence or plan superseded by a retained final step",
+  "D": "Follow-up or duplicate of a retained event",
+  "E": "Technical amendment whose name means nothing to viewers",
+  "F": "Bug caught before activation; nothing happened on mainnet",
+  "G": "Routine software release notice",
+  "H": "Minor funding, product or project item"
+ },
+ "items": [
+  {
+   "line": 2,
+   "date": "2013-04-11",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "OpenCoin angel funding announced",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple via Marketwired",
+     "https://www.globenewswire.com/news-release/2013/4/11/1146545/0/en/OpenCoin-Developer-of-Ripple-Protocol-Closes-Funding-From-Andreessen-Horowitz-FF-Angel-IV-Lightspeed-Venture-Partners-and-Angel-Investors.html"
+    ]
+   ],
+   "n": 202,
+   "decision": "pending user review"
+  },
+  {
+   "line": 3,
+   "date": "2013-08-30",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Tradehill shuts down",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#tradehill-shuts-down-again"
+    ]
+   ],
+   "n": 1,
+   "decision": "remove"
+  },
+  {
+   "line": 4,
+   "date": "2013-11-12",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple raises $3.5M funding",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "PYMNTS",
+     "https://www.pymnts.com/news/2013/ripple-raises-3-5m-for-open-source-protocol/"
+    ],
+    [
+     "Ripple via Marketwired",
+     "https://www.globenewswire.com/news-release/2013/11/12/1146606/0/en/ripple-labs-announces-3-5-million-investment-round.html"
+    ]
+   ],
+   "n": 203,
+   "decision": "pending user review"
+  },
+  {
+   "line": 5,
+   "date": "2013-11-18",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "US Senate crypto hearing",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-senate-holds-hearing-on-bitcoin"
+    ]
+   ],
+   "n": 2,
+   "decision": "remove"
+  },
+  {
+   "line": 7,
+   "date": "2014-02-07",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Exchanges hit by DDoS attacks",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#major-exchanges-hit-with-ddos-attacks"
+    ]
+   ],
+   "n": 3,
+   "decision": "remove"
+  },
+  {
+   "line": 9,
+   "date": "2014-03-25",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "IRS crypto tax guidance",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#irs-declares-bitcoin-to-be-taxed-as-property"
+    ],
+    [
+     "IRS",
+     "https://www.irs.gov/pub/irs-drop/n-14-21.pdf"
+    ],
+    [
+     "IRS Newswire",
+     "https://content.govdelivery.com/accounts/USIRS/bulletins/ad0db7"
+    ]
+   ],
+   "n": 4,
+   "decision": "remove"
+  },
+  {
+   "line": 12,
+   "date": "2014-06-12",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "AstroPay joins Ripple protocol",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/astropay-launches-first-latin-american-money-service-business-on-ripple-protocol/"
+    ]
+   ],
+   "n": 37,
+   "decision": "pending user review"
+  },
+  {
+   "line": 13,
+   "date": "2014-07-17",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "BitLicense proposal",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#new-york-dfs-releases-proposed-bitlicense"
+    ]
+   ],
+   "n": 5,
+   "decision": "remove"
+  },
+  {
+   "line": 14,
+   "date": "2014-07-29",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "GBI gold gateway launches",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/anyone-can-now-trade-send-and-spend-physical-gold-online-via-gbis-ripple-gateway/"
+    ]
+   ],
+   "n": 38,
+   "decision": "pending user review"
+  },
+  {
+   "line": 16,
+   "date": "2014-12-04",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Earthport partners with Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/earthport-and-ripple-labs-announce-global-partnership-to-improve-the-efficiency-and-speed-of-cross-border-payments/"
+    ]
+   ],
+   "n": 39,
+   "decision": "pending user review"
+  },
+  {
+   "line": 18,
+   "date": "2015-01-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Coinbase exchange launches",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-launches-us-licensed-exchange"
+    ]
+   ],
+   "n": 6,
+   "decision": "remove"
+  },
+  {
+   "line": 19,
+   "date": "2015-02-12",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple joins W3C payments group",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-labs-joins-w3c-web-payment-interest-group-to-help-set-standards-for-the-value-web/"
+    ]
+   ],
+   "n": 40,
+   "decision": "pending user review"
+  },
+  {
+   "line": 20,
+   "date": "2015-04-16",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Garlinghouse named Ripple COO",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/brad-garlinghouse-joins-ripple-labs-as-companys-first-chief-operating-officer/"
+    ]
+   ],
+   "n": 204,
+   "decision": "pending user review"
+  },
+  {
+   "line": 22,
+   "date": "2015-05-19",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple raises $28M Series A",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "CoinDesk",
+     "https://www.coindesk.com/tech/2015/05/19/ripple-labs-raises-28-million-in-series-a-round"
+    ],
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-labs-closes-28-million-series-a-funding-round/"
+    ],
+    [
+     "Ripple via Marketwired",
+     "https://www.globenewswire.com/news-release/2015/05/19/1146755/0/en/ripple-labs-closes-28-million-series-a-funding-round.html"
+    ]
+   ],
+   "n": 205,
+   "decision": "pending user review"
+  },
+  {
+   "line": 24,
+   "date": "2015-08-01",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Mt. Gox CEO arrested",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#mark-karpeles-arrested"
+    ]
+   ],
+   "n": 7,
+   "decision": "remove"
+  },
+  {
+   "line": 25,
+   "date": "2015-09-17",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "CFTC Bitcoin commodity ruling",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitcoin-declared-as-a-commodity-by-the-us-regulator"
+    ],
+    [
+     "CFTC",
+     "https://www.cftc.gov/PressRoom/PressReleases/7231-15"
+    ],
+    [
+     "CFTC history",
+     "https://www.cftc.gov/About/HistoryoftheCFTC/history_2010s.html"
+    ]
+   ],
+   "n": 8,
+   "decision": "remove"
+  },
+  {
+   "line": 26,
+   "date": "2015-10-06",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple launches settlement tools",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/new-ripple-settlement-and-fx-solutions-lower-the-total-cost-of-settlement-for-banks-and-their-customers/"
+    ]
+   ],
+   "n": 41,
+   "decision": "pending user review"
+  },
+  {
+   "line": 27,
+   "date": "2015-10-06",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Santander invests in Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-adds-santander-innoventures-fund-as-series-a-investor/"
+    ]
+   ],
+   "n": 42,
+   "decision": "pending user review"
+  },
+  {
+   "line": 28,
+   "date": "2015-10-08",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Gemini exchange launches",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#gemini-exchange-launched"
+    ]
+   ],
+   "n": 9,
+   "decision": "remove"
+  },
+  {
+   "line": 29,
+   "date": "2015-10-22",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "EU crypto VAT ruling",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#eu-declares-no-vat-on-bitcoin-trades"
+    ]
+   ],
+   "n": 10,
+   "decision": "remove"
+  },
+  {
+   "line": 32,
+   "date": "2016-04-13",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "MIT runs Ripple validator",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/mit-adopts-ripple-validator-advance-consensus-blockchain-research/"
+    ]
+   ],
+   "n": 43,
+   "decision": "pending user review"
+  },
+  {
+   "line": 33,
+   "date": "2016-05-19",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "FeeEscalation enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/5B1F1E8E791A9C243DD728680F108FEF1F28F21BA3B202B8F66E7833CA71D3C3"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/5B1F1E8E791A9C243DD728680F108FEF1F28F21BA3B202B8F66E7833CA71D3C3"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/5B1F1E8E791A9C243DD728680F108FEF1F28F21BA3B202B8F66E7833CA71D3C3"
+    ]
+   ],
+   "n": 174,
+   "decision": "remove"
+  },
+  {
+   "line": 35,
+   "date": "2016-06-22",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Banks expand Ripple network",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/financial-institutions-join-ripples-global-network/"
+    ]
+   ],
+   "n": 44,
+   "decision": "pending user review"
+  },
+  {
+   "line": 38,
+   "date": "2016-07-19",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "TrustSetAuth enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/0E589DE43C38AED63B64FF3DA87D349A038F1821212D370E403EB304C76D70DF"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/0E589DE43C38AED63B64FF3DA87D349A038F1821212D370E403EB304C76D70DF"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/0E589DE43C38AED63B64FF3DA87D349A038F1821212D370E403EB304C76D70DF"
+    ]
+   ],
+   "n": 175,
+   "decision": "remove"
+  },
+  {
+   "line": 41,
+   "date": "2016-09-15",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "More banks join Ripple network",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-adds-several-new-banks-global-network/"
+    ]
+   ],
+   "n": 45,
+   "decision": "pending user review"
+  },
+  {
+   "line": 43,
+   "date": "2016-09-23",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Global Payments Steering Group",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/major-banks-launch-global-payments-steering-group/"
+    ]
+   ],
+   "n": 46,
+   "decision": "pending user review"
+  },
+  {
+   "line": 47,
+   "date": "2016-10-21",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "Flow enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/C06CE3CABA3907389E4DD296C5F31C73B1548CC20BD7B83416C78CD7D4CD38FC"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/C06CE3CABA3907389E4DD296C5F31C73B1548CC20BD7B83416C78CD7D4CD38FC"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/C06CE3CABA3907389E4DD296C5F31C73B1548CC20BD7B83416C78CD7D4CD38FC"
+    ]
+   ],
+   "n": 176,
+   "decision": "remove"
+  },
+  {
+   "line": 54,
+   "date": "2017-02-21",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "TickSize enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/A12430E470BE5C846759EAE3C442FF03374D5D73ECE5815CF4906894B769565E"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/A12430E470BE5C846759EAE3C442FF03374D5D73ECE5815CF4906894B769565E"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/A12430E470BE5C846759EAE3C442FF03374D5D73ECE5815CF4906894B769565E"
+    ]
+   ],
+   "n": 177,
+   "decision": "remove"
+  },
+  {
+   "line": 60,
+   "date": "2017-04-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ten institutions join Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ten-financial-institutions-join-ripples-global-payments-network/"
+    ]
+   ],
+   "n": 47,
+   "decision": "pending user review"
+  },
+  {
+   "line": 64,
+   "date": "2017-06-30",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "SCB Japan-Thailand payments",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/scb-ripple-launch-first-blockchain-powered-payment-service-japan-thailand/"
+    ]
+   ],
+   "n": 48,
+   "decision": "pending user review"
+  },
+  {
+   "line": 65,
+   "date": "2017-07-07",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "EnforceInvariants + 1 upgrades",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/17593B03F7D3283966F3C0ACAF4984F26E9D884C9A202097DAED0523908E76C6"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/7EBA3852D111EA19D03469F6870FAAEBF84C64F1B9BAC13B041DDD26E28CA399"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/17593B03F7D3283966F3C0ACAF4984F26E9D884C9A202097DAED0523908E76C6"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/7EBA3852D111EA19D03469F6870FAAEBF84C64F1B9BAC13B041DDD26E28CA399"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/17593B03F7D3283966F3C0ACAF4984F26E9D884C9A202097DAED0523908E76C6"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/7EBA3852D111EA19D03469F6870FAAEBF84C64F1B9BAC13B041DDD26E28CA399"
+    ]
+   ],
+   "n": 178,
+   "decision": "remove"
+  },
+  {
+   "line": 70,
+   "date": "2017-10-10",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple network tops 100 members",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripples-blockchain-network-now-100-strong/"
+    ]
+   ],
+   "n": 49,
+   "decision": "pending user review"
+  },
+  {
+   "line": 81,
+   "date": "2018-01-30",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Facebook bans crypto ads",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-bans-all-ads-promoting-cryptocurrency"
+    ]
+   ],
+   "n": 11,
+   "decision": "remove"
+  },
+  {
+   "line": 82,
+   "date": "2018-02-21",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple adds emerging-market clients",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-extends-reach-emerging-markets-five-new-customers/"
+    ]
+   ],
+   "n": 50,
+   "decision": "pending user review"
+  },
+  {
+   "line": 84,
+   "date": "2018-03-01",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "FLEETCOR trials Ripple payments",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/fleetcor-ripple-team-up-to-modernize-payments-using-blockchain/"
+    ]
+   ],
+   "n": 51,
+   "decision": "pending user review"
+  },
+  {
+   "line": 85,
+   "date": "2018-03-07",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "SEC exchange registration notice",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-sec-says-crypto-exchanges-must-register-with-agency"
+    ]
+   ],
+   "n": 12,
+   "decision": "remove"
+  },
+  {
+   "line": 86,
+   "date": "2018-03-14",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Google crypto ad ban announced",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#google-bans-crypto-advertisements"
+    ],
+    [
+     "Reuters",
+     "https://www.marketscreener.com/quote/stock/META-PLATFORMS-INC-10547141/news/Facebook-Google-bans-cryptocurrency-advertising-bitcoin-price-slumps-26160985/"
+    ]
+   ],
+   "n": 13,
+   "decision": "remove"
+  },
+  {
+   "line": 88,
+   "date": "2018-03-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Twitter crypto ad ban announced",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#twitter-announces-ban-on-cryptocurrency-ads"
+    ],
+    [
+     "Cassels legal review",
+     "https://cassels.com/insights/major-technology-companies-restrict-cryptocurrency-advertisements-for-consumer-protection/"
+    ]
+   ],
+   "n": 14,
+   "decision": "remove"
+  },
+  {
+   "line": 89,
+   "date": "2018-04-06",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "DepositAuth + 1 upgrades",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/57FE540B8B8E2F26CE8B53D1282FEC55E605257E29F5B9EB49E15EA3989FCF6B"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/902C51270B918B40CD23A622E18D48B4ABB86F0FF4E84D72D9E1907BF3BD4B25"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/57FE540B8B8E2F26CE8B53D1282FEC55E605257E29F5B9EB49E15EA3989FCF6B"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/902C51270B918B40CD23A622E18D48B4ABB86F0FF4E84D72D9E1907BF3BD4B25"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/57FE540B8B8E2F26CE8B53D1282FEC55E605257E29F5B9EB49E15EA3989FCF6B"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/902C51270B918B40CD23A622E18D48B4ABB86F0FF4E84D72D9E1907BF3BD4B25"
+    ]
+   ],
+   "n": 179,
+   "decision": "remove"
+  },
+  {
+   "line": 90,
+   "date": "2018-04-27",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Five new xVia customers",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-grows-global-payments-network-five-new-xvia-customers/"
+    ]
+   ],
+   "n": 52,
+   "decision": "pending user review"
+  },
+  {
+   "line": 94,
+   "date": "2018-05-31",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "rippled 1.0.0 release notice",
+   "group": "G",
+   "reason_vi": "Bản phát hành phần mềm định kỳ",
+   "reason_en": "Routine software release notice",
+   "sources": [
+    [
+     "XRPL.org",
+     "https://xrpl.org/blog/2018/rippled-1.0.0"
+    ],
+    [
+     "XRPLF GitHub release",
+     "https://github.com/XRPLF/rippled/releases/tag/1.0.0"
+    ]
+   ],
+   "n": 199,
+   "decision": "remove"
+  },
+  {
+   "line": 95,
+   "date": "2018-06-04",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple launches $50M UBRI",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Berkeley Haas",
+     "https://newsroom.haas.berkeley.edu/news-release/the-haas-school-of-business-at-the-university-of-california-berkeley-partners-with-ripple-to-accelerate-innovation-in-blockchain-cryptocurrency/"
+    ],
+    [
+     "Ripple",
+     "https://ripple.com/insights/ripple-introduces-the-university-blockchain-research-initiative/"
+    ]
+   ],
+   "n": 206,
+   "decision": "pending user review"
+  },
+  {
+   "line": 96,
+   "date": "2018-06-10",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Coinrail exchange hack",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#south-korean-crypto-exchange-coinrail-has-been-hacked"
+    ]
+   ],
+   "n": 15,
+   "decision": "remove"
+  },
+  {
+   "line": 101,
+   "date": "2018-06-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Facebook eases crypto ad ban",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-lifting-ban-on-crypto-ads"
+    ]
+   ],
+   "n": 16,
+   "decision": "remove"
+  },
+  {
+   "line": 102,
+   "date": "2018-07-16",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "BlackRock explores crypto",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#blackrock-looks-into-crypto-and-blockchain"
+    ]
+   ],
+   "n": 17,
+   "decision": "remove"
+  },
+  {
+   "line": 103,
+   "date": "2018-08-17",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "xRapid adds three exchanges",
+   "group": "D",
+   "reason_vi": "Tin nhắc lại / hệ quả của sự kiện đã giữ",
+   "reason_en": "Follow-up or duplicate of a retained event",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/xrapid-brings-on-three-new-exchange-partners/"
+    ]
+   ],
+   "n": 165,
+   "decision": "pending user review"
+  },
+  {
+   "line": 104,
+   "date": "2018-09-05",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Goldman crypto desk report",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#goldman-sachs-drops-crypto-trading-plans"
+    ]
+   ],
+   "n": 18,
+   "decision": "remove"
+  },
+  {
+   "line": 106,
+   "date": "2018-09-14",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Zaif exchange hack",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#japanese-zaif-exchange-hacked-loosing-about-60m-in-crypto"
+    ],
+    [
+     "Reuters",
+     "https://www.investing.com/news/cryptocurrency-news/japan-hit-by-another-cryptocurrency-heist-60-million-stolen-1616872"
+    ],
+    [
+     "Tokyo Shoko Research",
+     "https://www.tsr-net.co.jp/data/detail/1189247_1527.html"
+    ]
+   ],
+   "n": 19,
+   "decision": "remove"
+  },
+  {
+   "line": 109,
+   "date": "2018-09-20",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Zaif exchange hack disclosed",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "Reuters",
+     "https://www.investing.com/news/cryptocurrency-news/japan-hit-by-another-cryptocurrency-heist-60-million-stolen-1616872"
+    ]
+   ],
+   "n": 20,
+   "decision": "remove"
+  },
+  {
+   "line": 108,
+   "date": "2018-09-20",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "PNC joins RippleNet",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/pnc-treasury-management-joins-ripplenet/"
+    ]
+   ],
+   "n": 53,
+   "decision": "pending user review"
+  },
+  {
+   "line": 111,
+   "date": "2018-10-09",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "DepositPreauth + 1 upgrades",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/6DF60D9EC8AF3C39B173840F4D1C57F8A8AB51E7C6571483B4A5F1AA0A9AAEBF"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/AD27403CB840AE67CADDB084BC54249D7BD1B403885819B39CCF723DC671F927"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/6DF60D9EC8AF3C39B173840F4D1C57F8A8AB51E7C6571483B4A5F1AA0A9AAEBF"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/AD27403CB840AE67CADDB084BC54249D7BD1B403885819B39CCF723DC671F927"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/6DF60D9EC8AF3C39B173840F4D1C57F8A8AB51E7C6571483B4A5F1AA0A9AAEBF"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/AD27403CB840AE67CADDB084BC54249D7BD1B403885819B39CCF723DC671F927"
+    ]
+   ],
+   "n": 180,
+   "decision": "remove"
+  },
+  {
+   "line": 112,
+   "date": "2018-10-15",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Fidelity crypto platform",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fidelity-launches-institutional-platform-for-cryptocurrencies"
+    ]
+   ],
+   "n": 21,
+   "decision": "remove"
+  },
+  {
+   "line": 114,
+   "date": "2018-11-15",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "CIMB joins RippleNet",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/cimb-group-joins-ripplenet-to-power-instant-payments-across-asean-2/"
+    ]
+   ],
+   "n": 54,
+   "decision": "pending user review"
+  },
+  {
+   "line": 116,
+   "date": "2019-01-10",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "RippleNet tops 200 customers",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripplenet-reaches-milestone-surpasses-200-customers/"
+    ]
+   ],
+   "n": 55,
+   "decision": "pending user review"
+  },
+  {
+   "line": 117,
+   "date": "2019-01-31",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Quadriga seeks creditor protection",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#canadian-crypto-exchange-quadrigacx-goes-bankrupt"
+    ],
+    [
+     "CMS legal review",
+     "https://cms.law/en/gbr/publication/the-curious-case-of-quadrigacx"
+    ],
+    [
+     "Reuters",
+     "https://www.yahoo.com/news/millions-cryptocurrencies-frozen-canadian-founders-125916487.html"
+    ]
+   ],
+   "n": 22,
+   "decision": "remove"
+  },
+  {
+   "line": 118,
+   "date": "2019-02-09",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "UBRI adds China + Singapore",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-announces-new-university-blockchain-research-initiative-partners-expands-to-china-and-singapore/"
+    ]
+   ],
+   "n": 56,
+   "decision": "pending user review"
+  },
+  {
+   "line": 122,
+   "date": "2019-03-01",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Facebook crypto project report",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#facebook-is-working-on-its-own-cryptocurrency"
+    ]
+   ],
+   "n": 23,
+   "decision": "remove"
+  },
+  {
+   "line": 124,
+   "date": "2019-03-22",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Fake trading volume study",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#bitwise-study-finds-majority-of-bitcoin-trading-volume-is-faked-by-unregulated-exchanges"
+    ]
+   ],
+   "n": 24,
+   "decision": "remove"
+  },
+  {
+   "line": 135,
+   "date": "2019-07-30",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "UBRI expands to Japan",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-expands-university-blockchain-research-initiative-program-to-japan-supports-33-university-partners-across-14-countries/"
+    ]
+   ],
+   "n": 57,
+   "decision": "pending user review"
+  },
+  {
+   "line": 136,
+   "date": "2019-08-07",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Binance KYC ransom demand",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#scammer-demands-300-bitcoin-from-binance-in-kyc-data-ransom"
+    ]
+   ],
+   "n": 25,
+   "decision": "remove"
+  },
+  {
+   "line": 138,
+   "date": "2019-10-09",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "UNICEF accepts crypto donations",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#unicef-accepts-crypto-donations"
+    ]
+   ],
+   "n": 26,
+   "decision": "remove"
+  },
+  {
+   "line": 139,
+   "date": "2019-10-10",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Finastra partners with Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-to-bring-blockchain-technology-to-finastras-banking-customers-2/"
+    ]
+   ],
+   "n": 58,
+   "decision": "pending user review"
+  },
+  {
+   "line": 141,
+   "date": "2019-11-07",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "RippleNet tops 300 customers",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-announces-more-than-300-customers-ripplenet-growth/"
+    ]
+   ],
+   "n": 59,
+   "decision": "pending user review"
+  },
+  {
+   "line": 144,
+   "date": "2019-12-23",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "YouTube crypto video ban error",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#youtube-bans-crypto-videos-by-mistake"
+    ]
+   ],
+   "n": 27,
+   "decision": "remove"
+  },
+  {
+   "line": 145,
+   "date": "2020-02-17",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "FCoin exchange insolvency",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#fcoin-exchange-shuts-down-after-becoming-insolvent"
+    ]
+   ],
+   "n": 28,
+   "decision": "remove"
+  },
+  {
+   "line": 146,
+   "date": "2020-02-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple adds Korean remittance firms",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-on-full-scale-to-tap-into-south-korean-market/"
+    ]
+   ],
+   "n": 60,
+   "decision": "pending user review"
+  },
+  {
+   "line": 147,
+   "date": "2020-02-27",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "Azimo adopts XRP liquidity",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/azimo-and-ripple-partner-to-deliver-faster-cheaper-payments-to-the-philippines/"
+    ]
+   ],
+   "n": 61,
+   "decision": "pending user review"
+  },
+  {
+   "line": 148,
+   "date": "2020-03-04",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "India lifts crypto banking ban",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#indian-supreme-court-lifts-ban-on-bitcoin-trading"
+    ]
+   ],
+   "n": 29,
+   "decision": "remove"
+  },
+  {
+   "line": 151,
+   "date": "2020-03-19",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "DeeMoney joins RippleNet",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/deemoney-partners-with-ripple-to-power-faster-and-cheaper-cross-border-money-transfers/"
+    ]
+   ],
+   "n": 62,
+   "decision": "pending user review"
+  },
+  {
+   "line": 153,
+   "date": "2020-03-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Microsoft crypto patent",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#microsoft-patents-new-cryptocurrency-system-using-body-activity-data"
+    ]
+   ],
+   "n": 30,
+   "decision": "remove"
+  },
+  {
+   "line": 155,
+   "date": "2020-04-28",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "SCB expands Ripple payments",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/scb-partners-with-ripple-extending-scb-global-payment-strategy/"
+    ]
+   ],
+   "n": 63,
+   "decision": "pending user review"
+  },
+  {
+   "line": 157,
+   "date": "2020-05-08",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "DeletableAccounts enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/47B90519D31E0CB376B5FEE5D9359FA65EEEB2289F1952F2A3EB71D623B945DE"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/47B90519D31E0CB376B5FEE5D9359FA65EEEB2289F1952F2A3EB71D623B945DE"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/47B90519D31E0CB376B5FEE5D9359FA65EEEB2289F1952F2A3EB71D623B945DE"
+    ]
+   ],
+   "n": 181,
+   "decision": "remove"
+  },
+  {
+   "line": 158,
+   "date": "2020-06-15",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "RippleNet Cloud adds first bank",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripplenet-cloud-reaches-new-milestone-signs-first-bank-customer/"
+    ]
+   ],
+   "n": 64,
+   "decision": "pending user review"
+  },
+  {
+   "line": 159,
+   "date": "2020-06-18",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "Checks enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/D88F2DCDFB10023F9F6CBA8DF34C18E321D655CAC8FDB962387A5DB1540242A6"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/D88F2DCDFB10023F9F6CBA8DF34C18E321D655CAC8FDB962387A5DB1540242A6"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/D88F2DCDFB10023F9F6CBA8DF34C18E321D655CAC8FDB962387A5DB1540242A6"
+    ]
+   ],
+   "n": 182,
+   "decision": "remove"
+  },
+  {
+   "line": 162,
+   "date": "2020-07-22",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "US banks allowed crypto custody",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#us-regulator-green-lights-banks-for-cryptocurrency-custody-services"
+    ]
+   ],
+   "n": 31,
+   "decision": "remove"
+  },
+  {
+   "line": 163,
+   "date": "2020-08-04",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "FlowCross enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/44C4B040448D89B6C5A5DEC97C17FEDC2E590BA094BC7DB63B7FDC888B9ED78F"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/44C4B040448D89B6C5A5DEC97C17FEDC2E590BA094BC7DB63B7FDC888B9ED78F"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/44C4B040448D89B6C5A5DEC97C17FEDC2E590BA094BC7DB63B7FDC888B9ED78F"
+    ]
+   ],
+   "n": 183,
+   "decision": "remove"
+  },
+  {
+   "line": 166,
+   "date": "2020-09-25",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "KuCoin exchange hack",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#kucoin-exchange-hacked-for-150-million-in-bitcoin"
+    ]
+   ],
+   "n": 32,
+   "decision": "remove"
+  },
+  {
+   "line": 167,
+   "date": "2020-09-30",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "XRPL carbon-neutrality initiative",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-leads-sustainability-agenda-to-achieve-carbon-neutrality-by-2030/"
+    ]
+   ],
+   "n": 207,
+   "decision": "pending user review"
+  },
+  {
+   "line": 168,
+   "date": "2020-10-01",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "BitMEX executives charged",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#owners-of-bitmex-a-leading-bitcoin-exchange-face-criminal-charges"
+    ]
+   ],
+   "n": 33,
+   "decision": "remove"
+  },
+  {
+   "line": 169,
+   "date": "2020-10-06",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Lemonway joins RippleNet",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/lemonway-joins-ripplenet-to-power-instant-cost-effective-euro-to-euro-payments/"
+    ]
+   ],
+   "n": 65,
+   "decision": "pending user review"
+  },
+  {
+   "line": 170,
+   "date": "2020-10-16",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "OKEx suspends withdrawals",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#okex-exchange-suspending-withdrawals-as-private-key-holder-is-out-of-contact"
+    ]
+   ],
+   "n": 34,
+   "decision": "remove"
+  },
+  {
+   "line": 172,
+   "date": "2020-12-17",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Coinbase draft S-1 filing announced",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#coinbase-files-for-ipo"
+    ],
+    [
+     "The Block",
+     "https://www.theblock.co/news/business/2020-12-17-coinbase-s-1-potential-ipo-filing-88293"
+    ],
+    [
+     "Yahoo Finance",
+     "https://finance.yahoo.com/news/coinbase-files-confidentially-for-ipo-aiming-for-major-crypto-industry-milestone-195758729.html"
+    ]
+   ],
+   "n": 35,
+   "decision": "remove"
+  },
+  {
+   "line": 174,
+   "date": "2020-12-23",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "XRP falls after SEC complaint",
+   "group": "D",
+   "reason_vi": "Tin nhắc lại / hệ quả của sự kiện đã giữ",
+   "reason_en": "Follow-up or duplicate of a retained event",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#ripple-xrp-plunges-as-sec-argues-the-cryptocurrency-isnt-a-currency"
+    ]
+   ],
+   "n": 166,
+   "decision": "pending user review"
+  },
+  {
+   "line": 175,
+   "date": "2020-12-25",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "Bitstamp plans US XRP trading halt",
+   "group": "D",
+   "reason_vi": "Tin nhắc lại / hệ quả của sự kiện đã giữ",
+   "reason_en": "Follow-up or duplicate of a retained event",
+   "sources": [
+    [
+     "Bitstamp",
+     "https://blog.bitstamp.net/post/xrp-trading-and-deposits-be-halted-us-customers/"
+    ]
+   ],
+   "n": 167,
+   "decision": "pending user review"
+  },
+  {
+   "line": 179,
+   "date": "2021-01-13",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "bKash remittances via RippleNet",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/bkash-and-mobile-money-connect-through-ripplenet-to-power-wallet-to-wallet-remittances-2/"
+    ]
+   ],
+   "n": 66,
+   "decision": "pending user review"
+  },
+  {
+   "line": 183,
+   "date": "2021-03-06",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Tetragon injunction rejected",
+   "group": "D",
+   "reason_vi": "Tin nhắc lại / hệ quả của sự kiện đã giữ",
+   "reason_en": "Follow-up or duplicate of a retained event",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/our-statement-on-order-denying-tetragons-request-for-preliminary-injunction/"
+    ]
+   ],
+   "n": 168,
+   "decision": "pending user review"
+  },
+  {
+   "line": 191,
+   "date": "2021-08-11",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "GME joins RippleNet",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/gme-remittance-korea-joins-ripplenet-to-accelerate-and-scale-payments-into-thailand/"
+    ]
+   ],
+   "n": 67,
+   "decision": "pending user review"
+  },
+  {
+   "line": 194,
+   "date": "2021-09-22",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Bhutan CBDC pilot announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/royal-monetary-authority-of-bhutan-ripple-partner-to-pilot-cbdc-using-private-blockchain/"
+    ]
+   ],
+   "n": 68,
+   "decision": "pending user review"
+  },
+  {
+   "line": 197,
+   "date": "2021-10-26",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "Pyypl adopts XRP liquidity",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-pyypl-debut-new-first-in-market-services-in-middle-east/"
+    ]
+   ],
+   "n": 69,
+   "decision": "pending user review"
+  },
+  {
+   "line": 198,
+   "date": "2021-11-10",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Liquidity Hub preview announced",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-previews-liquidity-hub-to-allow-customers-to-buy-sell-and-hold-crypto-assets/"
+    ]
+   ],
+   "n": 208,
+   "decision": "pending user review"
+  },
+  {
+   "line": 201,
+   "date": "2021-11-21",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "NegativeUNL enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/1500FADB73E7148191216C53040990E829C7110788B26E7F3246CB3660769EBA"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/1500FADB73E7148191216C53040990E829C7110788B26E7F3246CB3660769EBA"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/1500FADB73E7148191216C53040990E829C7110788B26E7F3246CB3660769EBA"
+    ]
+   ],
+   "n": 184,
+   "decision": "remove"
+  },
+  {
+   "line": 202,
+   "date": "2021-11-23",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Palau digital-currency partnership",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/republic-of-palau-partners-with-ripple-to-develop-digital-currency-strategy-2/"
+    ]
+   ],
+   "n": 70,
+   "decision": "pending user review"
+  },
+  {
+   "line": 206,
+   "date": "2022-01-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Allbridge adds XRPL support",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/allbridge-adds-support-for-xrp-ledger/"
+    ]
+   ],
+   "n": 71,
+   "decision": "pending user review"
+  },
+  {
+   "line": 207,
+   "date": "2022-02-02",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Modulr partners with Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/modulr-and-ripple-announce-strategic-partnership-to-enable-seamless-payments-into-the-uk-and-europe/"
+    ]
+   ],
+   "n": 72,
+   "decision": "pending user review"
+  },
+  {
+   "line": 209,
+   "date": "2022-02-17",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "STASIS plans EURS on XRPL",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/stasis-to-issue-euro-stablecoin-on-the-xrp-ledger/"
+    ]
+   ],
+   "n": 73,
+   "decision": "pending user review"
+  },
+  {
+   "line": 211,
+   "date": "2022-03-10",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "NFT creator fund adds partners",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-signs-first-creators-extends-nft-partnerships-with-creator-fund/"
+    ]
+   ],
+   "n": 209,
+   "decision": "pending user review"
+  },
+  {
+   "line": 215,
+   "date": "2022-04-14",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Allbridge XRPL bridge announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/cross-chain-bridge-allbridge-brings-defi-to-the-xrp-ledger/"
+    ]
+   ],
+   "n": 74,
+   "decision": "pending user review"
+  },
+  {
+   "line": 216,
+   "date": "2022-04-27",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "XRPL NFT creator grants expand",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-brings-more-creators-to-the-xrp-ledger-for-their-nft-projects/"
+    ]
+   ],
+   "n": 210,
+   "decision": "pending user review"
+  },
+  {
+   "line": 218,
+   "date": "2022-05-18",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "FINCI adopts XRP liquidity",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-finci-introduce-the-benefits-of-on-demand-liquidity-to-lithuania/"
+    ]
+   ],
+   "n": 75,
+   "decision": "pending user review"
+  },
+  {
+   "line": 219,
+   "date": "2022-05-19",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple pledges $100M for carbon",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-commits-100m-to-scale-and-strengthen-global-carbon-markets-addresses-quality-and-transparency-using-blockchain-and-crypto/"
+    ]
+   ],
+   "n": 211,
+   "decision": "pending user review"
+  },
+  {
+   "line": 222,
+   "date": "2022-06-07",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Lunu joins Ripple Liquidity Hub",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-lunu-partner-to-enable-luxury-retailers-to-accept-cryptocurrency-payments/"
+    ]
+   ],
+   "n": 76,
+   "decision": "pending user review"
+  },
+  {
+   "line": 224,
+   "date": "2022-06-17",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "FLUF announces Root Network",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-fluf-world-announce-partnership-introduce-the-root-network/"
+    ]
+   ],
+   "n": 77,
+   "decision": "pending user review"
+  },
+  {
+   "line": 226,
+   "date": "2022-07-12",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "CrossTower plans XRPL NFTs",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/crosstower-partners-with-ripple-to-support-nfts-minted-on-the-xrp-ledger/"
+    ]
+   ],
+   "n": 78,
+   "decision": "pending user review"
+  },
+  {
+   "line": 228,
+   "date": "2022-07-14",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Celsius files bankruptcy",
+   "group": "D",
+   "reason_vi": "Tin nhắc lại / hệ quả của sự kiện đã giữ",
+   "reason_en": "Follow-up or duplicate of a retained event",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#troubled-crypto-lender-celsius-files-for-bankruptcy"
+    ]
+   ],
+   "n": 169,
+   "decision": "pending user review"
+  },
+  {
+   "line": 229,
+   "date": "2022-07-26",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "FOMO Pay adopts XRP liquidity",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/fomo-pay-to-utilize-ripples-on-demand-liquidity-for-crypto-enabled-treasury-management/"
+    ]
+   ],
+   "n": 79,
+   "decision": "pending user review"
+  },
+  {
+   "line": 234,
+   "date": "2022-09-01",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Stably plans XRPL stablecoins",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/stably-to-support-stablecoins-minted-on-the-xrp-ledger/"
+    ]
+   ],
+   "n": 80,
+   "decision": "pending user review"
+  },
+  {
+   "line": 235,
+   "date": "2022-09-01",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "btrax Web3 lab announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/btrax-establishes-web3-design-lab-to-accelerate-new-business-creation-in-web-3-for-japanese-companies-with-ripple-as-strategic-partner/"
+    ]
+   ],
+   "n": 81,
+   "decision": "pending user review"
+  },
+  {
+   "line": 244,
+   "date": "2023-03-03",
+   "kind": "down",
+   "hit": 0,
+   "tag": "",
+   "text": "Silvergate stops SEN transfers",
+   "group": "D",
+   "reason_vi": "Tin nhắc lại / hệ quả của sự kiện đã giữ",
+   "reason_en": "Follow-up or duplicate of a retained event",
+   "sources": [
+    [
+     "SEC filing",
+     "https://www.sec.gov/Archives/edgar/data/1312109/000131210923000058/ex991sipressrelease3x8x23.htm"
+    ]
+   ],
+   "n": 170,
+   "decision": "pending user review"
+  },
+  {
+   "line": 247,
+   "date": "2023-03-19",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Crypto rally amid bank turmoil",
+   "group": "A",
+   "reason_vi": "Tin thị trường chung không liên quan XRP",
+   "reason_en": "General crypto-market item with no clear XRP link",
+   "sources": [
+    [
+     "99Bitcoins",
+     "https://99bitcoins.com/cryptocurrency/bitcoin/historical-price/#banking-crisis-rallies-bitcoin"
+    ]
+   ],
+   "n": 36,
+   "decision": "remove"
+  },
+  {
+   "line": 249,
+   "date": "2023-04-04",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "VP Bank adopts Metaco custody",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/vp-bank-consolidates-digital-asset-custody-and-tokenization-operations/"
+    ]
+   ],
+   "n": 82,
+   "decision": "pending user review"
+  },
+  {
+   "line": 251,
+   "date": "2023-05-18",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Fubon joins e-HKD property pilot",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-to-showcase-real-estate-asset-tokenization-solution-as-part-of-the-hong-kong-monetary-authoritys-inaugural-e-hkd-pilot-programme/"
+    ]
+   ],
+   "n": 83,
+   "decision": "pending user review"
+  },
+  {
+   "line": 252,
+   "date": "2023-05-18",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple launches CBDC platform",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-launches-cbdc-platform-for-the-development-of-cbdcs-and-stablecoins/"
+    ]
+   ],
+   "n": 212,
+   "decision": "pending user review"
+  },
+  {
+   "line": 253,
+   "date": "2023-06-06",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "GFT partners with Metaco",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/gft-and-metaco-partner-for-institutional-digital-asset-custody-and-tokenization-solutions/"
+    ]
+   ],
+   "n": 84,
+   "decision": "pending user review"
+  },
+  {
+   "line": 254,
+   "date": "2023-06-15",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Colombia blockchain pilot announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-peersyst-partner-with-colombias-banco-de-la-republica-in-advancing-the-implementation-and-utilization-of-blockchain-technology/"
+    ]
+   ],
+   "n": 85,
+   "decision": "pending user review"
+  },
+  {
+   "line": 256,
+   "date": "2023-06-22",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple preliminary Singapore license",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-obtains-in-principle-regulatory-approval-in-singapore/"
+    ]
+   ],
+   "n": 153,
+   "decision": "pending user review"
+  },
+  {
+   "line": 259,
+   "date": "2023-07-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Catalyze expands XRPL development",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/catalyze-research-and-ripple-to-drive-the-xrp-ledger-adoption-in-south-korea/"
+    ]
+   ],
+   "n": 86,
+   "decision": "pending user review"
+  },
+  {
+   "line": 264,
+   "date": "2023-09-08",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Fortress acquisition announced",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/insights/ripple-combines-forces-with-fortress-trust-to-power-web3-infrastructure/"
+    ],
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/leading-enterprise-crypto-company-ripple-acquires-fortress-trust/"
+    ]
+   ],
+   "n": 213,
+   "decision": "pending user review"
+  },
+  {
+   "line": 265,
+   "date": "2023-09-28",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple cancels Fortress acquisition",
+   "group": "D",
+   "reason_vi": "Tin nhắc lại / hệ quả của sự kiện đã giữ",
+   "reason_en": "Follow-up or duplicate of a retained event",
+   "sources": [
+    [
+     "CoinDesk",
+     "https://www.coindesk.com/business/2023/09/28/ripple-cancels-plan-to-buy-fortress-trust"
+    ],
+    [
+     "The Block",
+     "https://www.theblock.co/news/business/2023-09-28-ripple-will-no-longer-acquire-fortress-trust-ceo-brad-garlinghouse-says-253475"
+    ]
+   ],
+   "n": 171,
+   "decision": "pending user review"
+  },
+  {
+   "line": 269,
+   "date": "2023-10-24",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Uphold partners with Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-forges-new-partnership-with-uphold-to-enhance-underlying-crypto-liquidity-infrastructure/"
+    ]
+   ],
+   "n": 87,
+   "decision": "pending user review"
+  },
+  {
+   "line": 272,
+   "date": "2023-11-02",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Georgia selects Ripple for pilot",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/national-bank-of-georgia-selects-ripple-as-key-partner-for-digital-lari-pilot-project/"
+    ]
+   ],
+   "n": 88,
+   "decision": "pending user review"
+  },
+  {
+   "line": 273,
+   "date": "2023-11-08",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Onafriq partners with Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-partners-with-onafriq-to-power-digital-asset-enabled-cross-border-payments-between-africa-and-the-rest-of-the-world/"
+    ]
+   ],
+   "n": 89,
+   "decision": "pending user review"
+  },
+  {
+   "line": 274,
+   "date": "2023-11-08",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Payments platform update",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-transforms-payments-experience-to-unlock-enterprise-crypto-adoption/"
+    ]
+   ],
+   "n": 214,
+   "decision": "pending user review"
+  },
+  {
+   "line": 277,
+   "date": "2023-12-04",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Zodia joins Metaco network",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/zodia-custody-integrates-on-metaco-network/"
+    ]
+   ],
+   "n": 90,
+   "decision": "pending user review"
+  },
+  {
+   "line": 278,
+   "date": "2023-12-20",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple joins Ireland VASP register",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-added-to-central-bank-of-irelands-virtual-asset-service-providers-register/"
+    ]
+   ],
+   "n": 154,
+   "decision": "pending user review"
+  },
+  {
+   "line": 279,
+   "date": "2024-01-09",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "rippled 2.0.0 release notice",
+   "group": "G",
+   "reason_vi": "Bản phát hành phần mềm định kỳ",
+   "reason_en": "Routine software release notice",
+   "sources": [
+    [
+     "XRPL.org",
+     "https://xrpl.org/blog/2024/rippled-2.0.0"
+    ],
+    [
+     "XRPLF GitHub release",
+     "https://github.com/XRPLF/rippled/releases/tag/2.0.0"
+    ]
+   ],
+   "n": 200,
+   "decision": "remove"
+  },
+  {
+   "line": 283,
+   "date": "2024-02-13",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Standard Custody deal announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-announces-acquisition-of-standard-custody-and-trust-company-expands/"
+    ]
+   ],
+   "n": 91,
+   "decision": "pending user review"
+  },
+  {
+   "line": 294,
+   "date": "2024-04-29",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "HashKey DX builds on XRPL",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-joins-forces-with-hashkey-dx-to-introduce-xrp-ledger-powered/"
+    ]
+   ],
+   "n": 92,
+   "decision": "pending user review"
+  },
+  {
+   "line": 296,
+   "date": "2024-06-05",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Clear Junction joins Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-partners-with-clear-junction-to-enhance-uk-and-eu-cross-border/"
+    ]
+   ],
+   "n": 93,
+   "decision": "pending user review"
+  },
+  {
+   "line": 298,
+   "date": "2024-06-11",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "XRPL Japan-Korea fund launches",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-launches-dedicated-fund-to-accelerate-innovation-on-the-xrp-ledger-in-japan-and-korea/"
+    ]
+   ],
+   "n": 94,
+   "decision": "pending user review"
+  },
+  {
+   "line": 299,
+   "date": "2024-06-13",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "Archax plans XRPL tokenization",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-collaborates-with-archax-to-bring-hundreds-of-millions-of-dollars-of/"
+    ]
+   ],
+   "n": 95,
+   "decision": "pending user review"
+  },
+  {
+   "line": 303,
+   "date": "2024-07-29",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Fenasbac accelerator partnership",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-joins-fenasbacs-next-accelerator-to-advance-blockchain-innovation/"
+    ]
+   ],
+   "n": 96,
+   "decision": "pending user review"
+  },
+  {
+   "line": 305,
+   "date": "2024-08-01",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "OpenEden XRPL T-bills announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/openeden-introduces-tokenized-us-treasury-bills-onto-the-xrp-ledger/"
+    ]
+   ],
+   "n": 97,
+   "decision": "pending user review"
+  },
+  {
+   "line": 306,
+   "date": "2024-08-07",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "DIFC XRPL innovation partnership",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-announces-partnership-with-difc-innovation-hub-to-accelerate-adoption/"
+    ]
+   ],
+   "n": 98,
+   "decision": "pending user review"
+  },
+  {
+   "line": 308,
+   "date": "2024-09-03",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Futureverse selects Ripple Custody",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/futureverse-chooses-ripple-custody-to-provide-custody-solutions-for-web3-apps-games-and-experiences/"
+    ]
+   ],
+   "n": 99,
+   "decision": "pending user review"
+  },
+  {
+   "line": 309,
+   "date": "2024-09-03",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Yonsei joins UBRI",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/yonsei-university-joins-ripples-ubri-to-drive-innovation-in-blockchain-research/"
+    ]
+   ],
+   "n": 100,
+   "decision": "pending user review"
+  },
+  {
+   "line": 315,
+   "date": "2024-10-01",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple DFSA preliminary approval",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-receives-in-principle-approval-from-the-dubai-financial-services-authority/"
+    ]
+   ],
+   "n": 155,
+   "decision": "pending user review"
+  },
+  {
+   "line": 317,
+   "date": "2024-10-03",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Mercado Bitcoin joins Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-mercado-bitcoin-partner-to-transform-crypto-enabled-cross-border-payments-in-brazil/"
+    ]
+   ],
+   "n": 101,
+   "decision": "pending user review"
+  },
+  {
+   "line": 319,
+   "date": "2024-10-10",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Custody product expands",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-brings-bank-grade-custody-solution-to-crypto-businesses/"
+    ]
+   ],
+   "n": 102,
+   "decision": "pending user review"
+  },
+  {
+   "line": 320,
+   "date": "2024-10-15",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "RLUSD exchange partners announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-announces-ripple-usd-exchange-partners-for-global-distribution/"
+    ]
+   ],
+   "n": 103,
+   "decision": "pending user review"
+  },
+  {
+   "line": 321,
+   "date": "2024-10-16",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "IRC trials Ripple aid payments",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-international-rescue-committee-partner-to-innovate-humanitarian-aid-delivery/"
+    ]
+   ],
+   "n": 104,
+   "decision": "pending user review"
+  },
+  {
+   "line": 323,
+   "date": "2024-10-23",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Garanti BBVA adopts Ripple custody",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/garanti-bbva-collaborates-with-ripple-and-ibm/"
+    ]
+   ],
+   "n": 105,
+   "decision": "pending user review"
+  },
+  {
+   "line": 324,
+   "date": "2024-10-30",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "DID enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/7239CF04E6E1EEC606269135DA3C916B82D4B010F5315E7AEB3D5A3B6B5B343D"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/7239CF04E6E1EEC606269135DA3C916B82D4B010F5315E7AEB3D5A3B6B5B343D"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/7239CF04E6E1EEC606269135DA3C916B82D4B010F5315E7AEB3D5A3B6B5B343D"
+    ]
+   ],
+   "n": 185,
+   "decision": "remove"
+  },
+  {
+   "line": 325,
+   "date": "2024-11-02",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "PriceOracle enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/05D03F7BF08BF4A915483F7B10EAC7016034656A54A8A6AD4A49A9AD362764A1"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/05D03F7BF08BF4A915483F7B10EAC7016034656A54A8A6AD4A49A9AD362764A1"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/05D03F7BF08BF4A915483F7B10EAC7016034656A54A8A6AD4A49A9AD362764A1"
+    ]
+   ],
+   "n": 186,
+   "decision": "remove"
+  },
+  {
+   "line": 333,
+   "date": "2025-01-07",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "RLUSD adopts Chainlink price feeds",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-adopts-the-chainlink-standard-to-further-rippleusd-utility-and-access-in-defi/"
+    ]
+   ],
+   "n": 106,
+   "decision": "pending user review"
+  },
+  {
+   "line": 336,
+   "date": "2025-01-30",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "AMMClawback + 5 upgrades",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/2D9A29768A7FA4BAC01DF1941380077E304785279E5E49267EC269F53ABADF5A"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/426314C8BC64BA339E97E53B278602ADC44F115056274BF7971F694C9A8AF946"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/606FA84C4BA30F67582C11A39BBFC11A9D994E114CD515E9F63FC7D8701A8ED9"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/6D325D5EFF8230F1FECA3EE6418C9678637F3F56B0CA247013F70B3BDCFE75C8"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/71D5031A5BD927BDFE424E51699E69F2784097D615D0852BF20C168BA9B5EA76"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/8672DFD11FCF79F8E8F92E300187E8E533899ED8C8CF5AFB1A9C518195C16261"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/2D9A29768A7FA4BAC01DF1941380077E304785279E5E49267EC269F53ABADF5A"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/426314C8BC64BA339E97E53B278602ADC44F115056274BF7971F694C9A8AF946"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/606FA84C4BA30F67582C11A39BBFC11A9D994E114CD515E9F63FC7D8701A8ED9"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/6D325D5EFF8230F1FECA3EE6418C9678637F3F56B0CA247013F70B3BDCFE75C8"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/71D5031A5BD927BDFE424E51699E69F2784097D615D0852BF20C168BA9B5EA76"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/8672DFD11FCF79F8E8F92E300187E8E533899ED8C8CF5AFB1A9C518195C16261"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/2D9A29768A7FA4BAC01DF1941380077E304785279E5E49267EC269F53ABADF5A"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/426314C8BC64BA339E97E53B278602ADC44F115056274BF7971F694C9A8AF946"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/606FA84C4BA30F67582C11A39BBFC11A9D994E114CD515E9F63FC7D8701A8ED9"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/6D325D5EFF8230F1FECA3EE6418C9678637F3F56B0CA247013F70B3BDCFE75C8"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/71D5031A5BD927BDFE424E51699E69F2784097D615D0852BF20C168BA9B5EA76"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/8672DFD11FCF79F8E8F92E300187E8E533899ED8C8CF5AFB1A9C518195C16261"
+    ]
+   ],
+   "n": 187,
+   "decision": "remove"
+  },
+  {
+   "line": 339,
+   "date": "2025-02-10",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Unicambio joins Ripple payments",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-brings-crypto-enabled-cross-border-payments-to-portugal-in-partnership-with-unicambio/"
+    ]
+   ],
+   "n": 107,
+   "decision": "pending user review"
+  },
+  {
+   "line": 342,
+   "date": "2025-02-19",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "BBRL stablecoin launch announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/braza-group-announces-launch-of-bbrl-stablecoin-on-the-xrp-ledger/"
+    ]
+   ],
+   "n": 108,
+   "decision": "pending user review"
+  },
+  {
+   "line": 344,
+   "date": "2025-02-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "BDACS adopts Ripple custody",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/bdacs-signs-digital-asset-custody-partnership-with-ripple/"
+    ]
+   ],
+   "n": 109,
+   "decision": "pending user review"
+  },
+  {
+   "line": 346,
+   "date": "2025-03-13",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "Ripple gets DFSA payments license",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/regulated-crypto-payments-in-the-uae/"
+    ]
+   ],
+   "n": 156,
+   "decision": "pending user review"
+  },
+  {
+   "line": 349,
+   "date": "2025-03-27",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Chipper Cash partners with Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/crypto-enabled-payments-in-africa/"
+    ]
+   ],
+   "n": 110,
+   "decision": "pending user review"
+  },
+  {
+   "line": 355,
+   "date": "2025-05-04",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "DeepFreeze enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL Explorer (livenet)",
+     "https://livenet.xrpl.org/transactions/976281D793337FF5377A36409F2A1432DADAB64DB5064E12E71B1AC491EA3021"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/976281D793337FF5377A36409F2A1432DADAB64DB5064E12E71B1AC491EA3021"
+    ],
+    [
+     "XRPL docs (GitHub)",
+     "https://github.com/XRPLF/xrpl-dev-portal/blob/841327bca5e5cc20de9813541fcbbbcc6a2914ca/resources/known-amendments.md"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/976281D793337FF5377A36409F2A1432DADAB64DB5064E12E71B1AC491EA3021"
+    ]
+   ],
+   "n": 188,
+   "decision": "remove"
+  },
+  {
+   "line": 359,
+   "date": "2025-05-19",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Zand + Mamo join Ripple payments",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/zand-bank-and-mamo-newest-ripple-payments-customers-in-uae/"
+    ]
+   ],
+   "n": 111,
+   "decision": "pending user review"
+  },
+  {
+   "line": 361,
+   "date": "2025-05-22",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "EUROP stablecoin joins XRPL",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/euro-stablecoin-on-xrp-ledger/"
+    ]
+   ],
+   "n": 112,
+   "decision": "pending user review"
+  },
+  {
+   "line": 362,
+   "date": "2025-05-22",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "USDB stablecoin launch announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/usdb-stablecoin-on-xrp-ledger/"
+    ]
+   ],
+   "n": 113,
+   "decision": "pending user review"
+  },
+  {
+   "line": 364,
+   "date": "2025-06-03",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Dubai recognizes RLUSD",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/rlusd-stablecoin-dfsa-approval/"
+    ]
+   ],
+   "n": 114,
+   "decision": "pending user review"
+  },
+  {
+   "line": 366,
+   "date": "2025-06-11",
+   "kind": "info",
+   "hit": 1,
+   "tag": "upgrade",
+   "text": "DynamicNFT enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/CB5D27363B103D74F4018B5099EF9AD818AEB3634E8692D67F9FDF3CBBA778F5"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/CB5D27363B103D74F4018B5099EF9AD818AEB3634E8692D67F9FDF3CBBA778F5"
+    ]
+   ],
+   "n": 189,
+   "decision": "remove"
+  },
+  {
+   "line": 373,
+   "date": "2025-07-02",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "OpenPayd partners with Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-openpayd-partner-to-deliver-enterprise-stablecoin-and-payment-infrastructure/"
+    ]
+   ],
+   "n": 115,
+   "decision": "pending user review"
+  },
+  {
+   "line": 374,
+   "date": "2025-07-03",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Tenity XRPL accelerator announced",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-tenity-to-launch-blockchain-accelerator/"
+    ]
+   ],
+   "n": 116,
+   "decision": "pending user review"
+  },
+  {
+   "line": 375,
+   "date": "2025-07-04",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Mercado Bitcoin RWA plan on XRPL",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/mercado-bitcoin-expands-global-access-by-tokenizing-200m-in-regulated-financial-assets-on-the-xrp-ledger/"
+    ]
+   ],
+   "n": 117,
+   "decision": "pending user review"
+  },
+  {
+   "line": 377,
+   "date": "2025-07-16",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ctrl Alt adopts Ripple custody",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-expands-global-custody-footprint-into-middle-east-with-ctrl-alt/"
+    ]
+   ],
+   "n": 118,
+   "decision": "pending user review"
+  },
+  {
+   "line": 378,
+   "date": "2025-07-23",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "VERT credit platform on XRPL",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/tokenized-private-credit-operations-on-xrpl/"
+    ]
+   ],
+   "n": 119,
+   "decision": "pending user review"
+  },
+  {
+   "line": 382,
+   "date": "2025-08-22",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "SBI plans RLUSD Japan rollout",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-sbi-plan-to-distribute-rlusd-in-japan/"
+    ]
+   ],
+   "n": 157,
+   "decision": "pending user review"
+  },
+  {
+   "line": 386,
+   "date": "2025-09-04",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "RLUSD distribution expands in Africa",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripples-usd-backed-stablecoin-rlusd-arrives-in-Africa/"
+    ]
+   ],
+   "n": 120,
+   "decision": "pending user review"
+  },
+  {
+   "line": 385,
+   "date": "2025-09-04",
+   "kind": "info",
+   "hit": 1,
+   "tag": "upgrade",
+   "text": "Credentials enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/182C9331AB917370E9799C9A2946DE15F3E41D81522FBB55A1508829F8933A16"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/182C9331AB917370E9799C9A2946DE15F3E41D81522FBB55A1508829F8933A16"
+    ]
+   ],
+   "n": 190,
+   "decision": "remove"
+  },
+  {
+   "line": 388,
+   "date": "2025-09-09",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "BBVA adopts Ripple custody",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-expands-footprint-into-spain-through-new-agreement-with-bbva/"
+    ]
+   ],
+   "n": 121,
+   "decision": "pending user review"
+  },
+  {
+   "line": 389,
+   "date": "2025-09-15",
+   "kind": "down",
+   "hit": 1,
+   "tag": "",
+   "text": "Delegation bug found before activation",
+   "group": "F",
+   "reason_vi": "Lỗi phát hiện trước khi kích hoạt (không xảy ra trên mainnet)",
+   "reason_en": "Bug caught before activation; nothing happened on mainnet",
+   "sources": [
+    [
+     "XRPL.org",
+     "https://xrpl.org/blog/2025/vulnerabilitydisclosurereport-bug-sep2025"
+    ]
+   ],
+   "n": 195,
+   "decision": "remove"
+  },
+  {
+   "line": 390,
+   "date": "2025-09-18",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "DBS + Franklin RLUSD plan",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/dbs-franklin-templeton-to-launch-trading-and-lending-solutions-tokenised-mmf-ripple-stablecoin-rlusd/"
+    ]
+   ],
+   "n": 122,
+   "decision": "pending user review"
+  },
+  {
+   "line": 393,
+   "date": "2025-09-23",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Securitize adds RLUSD fund support",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-securitize-enable-rlusd-smart-sontract-functionality-for-blackrock-buidl-and-vaneck-vbill-tokenized-funds/"
+    ]
+   ],
+   "n": 123,
+   "decision": "pending user review"
+  },
+  {
+   "line": 397,
+   "date": "2025-10-09",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Bahrain partnership",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-expands-into-the-kingdom-of-bahrain-through-strategic-partnership-with-bahrain-fintech-bay/"
+    ]
+   ],
+   "n": 124,
+   "decision": "pending user review"
+  },
+  {
+   "line": 398,
+   "date": "2025-10-15",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Absa selects Ripple custody",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-expands-global-custody-footprint-into-africa-with-absa-bank/"
+    ]
+   ],
+   "n": 125,
+   "decision": "pending user review"
+  },
+  {
+   "line": 401,
+   "date": "2025-11-03",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Prime spot brokerage launches",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-launches-digital-asset-spot-prime-brokerage-for-the-united-states-market/"
+    ]
+   ],
+   "n": 126,
+   "decision": "pending user review"
+  },
+  {
+   "line": 402,
+   "date": "2025-11-03",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple acquires Palisade",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-acquires-palisade-to-offer-comprehensive-digital-asset-custody-solution/"
+    ]
+   ],
+   "n": 215,
+   "decision": "pending user review"
+  },
+  {
+   "line": 403,
+   "date": "2025-11-05",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Mastercard RLUSD settlement pilot",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-teams-up-with-mastercard-webbank-and-gemini/"
+    ]
+   ],
+   "n": 216,
+   "decision": "pending user review"
+  },
+  {
+   "line": 410,
+   "date": "2025-11-27",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "ADGM recognizes RLUSD",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/rlusd-recognized-as-accepted-fiat-referenced-token-for-use-within-abu-dhabis-adgm/"
+    ]
+   ],
+   "n": 127,
+   "decision": "pending user review"
+  },
+  {
+   "line": 411,
+   "date": "2025-12-01",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Singapore expands Ripple license",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-expands-scope-of-payment-activities-in-singapore-for-its-major-payment-institution-license/"
+    ]
+   ],
+   "n": 158,
+   "decision": "pending user review"
+  },
+  {
+   "line": 412,
+   "date": "2025-12-02",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "RedotPay joins Ripple Payments",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/redotpay-integrates-ripple-payments-to-extend-stablecoin-reach-and-launches-send-crypto-receive-ngn/"
+    ]
+   ],
+   "n": 128,
+   "decision": "pending user review"
+  },
+  {
+   "line": 413,
+   "date": "2025-12-09",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "rippled 3.0.0 release notice",
+   "group": "G",
+   "reason_vi": "Bản phát hành phần mềm định kỳ",
+   "reason_en": "Routine software release notice",
+   "sources": [
+    [
+     "XRPL.org",
+     "https://xrpl.org/blog/2025/rippled-3.0.0"
+    ],
+    [
+     "XRPLF GitHub release",
+     "https://github.com/XRPLF/rippled/releases/tag/3.0.0"
+    ]
+   ],
+   "n": 201,
+   "decision": "remove"
+  },
+  {
+   "line": 415,
+   "date": "2025-12-12",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "AMINA Bank adopts Ripple Payments",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-payments-sees-first-european-bank-adoption-with-amina-bank/"
+    ]
+   ],
+   "n": 129,
+   "decision": "pending user review"
+  },
+  {
+   "line": 417,
+   "date": "2025-12-18",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "TJM expands Ripple partnership",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-expands-partnership-with-tjm-to-enhance-institutional-trade-execution-and-clearing-services/"
+    ]
+   ],
+   "n": 130,
+   "decision": "pending user review"
+  },
+  {
+   "line": 420,
+   "date": "2026-01-14",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple preliminary Luxembourg EMI",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-expands-european-regulatory-footprint-with-preliminary-emi-approval-in-luxembourg/"
+    ]
+   ],
+   "n": 159,
+   "decision": "pending user review"
+  },
+  {
+   "line": 424,
+   "date": "2026-02-02",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "Ripple gets Luxembourg EMI license",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-receives-full-eu-electronic-money-institution-license-in-luxembourg/"
+    ]
+   ],
+   "n": 160,
+   "decision": "pending user review"
+  },
+  {
+   "line": 426,
+   "date": "2026-02-04",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Prime adds Hyperliquid",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-announces-support-for-hyperliquid-expanding-institutional-access-to-onchain-liquidity/"
+    ]
+   ],
+   "n": 131,
+   "decision": "pending user review"
+  },
+  {
+   "line": 425,
+   "date": "2026-02-04",
+   "kind": "info",
+   "hit": 1,
+   "tag": "upgrade",
+   "text": "PermissionedDomains enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/CC30BAB4CDE71E2B07E73AC980D3464F2515E9FBA51489E0B2C89C39D1A51416"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/CC30BAB4CDE71E2B07E73AC980D3464F2515E9FBA51489E0B2C89C39D1A51416"
+    ]
+   ],
+   "n": 191,
+   "decision": "remove"
+  },
+  {
+   "line": 427,
+   "date": "2026-02-09",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Custody capabilities expand",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-accelerates-institutional-custody-adoption-with-security-compliance-and-staking-capabilities/"
+    ]
+   ],
+   "n": 132,
+   "decision": "pending user review"
+  },
+  {
+   "line": 428,
+   "date": "2026-02-11",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Aviva plans XRPL tokenization",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/aviva-investors-seeks-to-tokenise-products-on-the-xrp-ledger-in-collaboration-with-ripple/"
+    ]
+   ],
+   "n": 161,
+   "decision": "pending user review"
+  },
+  {
+   "line": 429,
+   "date": "2026-02-12",
+   "kind": "info",
+   "hit": 1,
+   "tag": "upgrade",
+   "text": "TokenEscrow enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/90A1297408C5F76769626A94242BCBD671E3CCD02ABEF80D92D8C7D7623840D5"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/90A1297408C5F76769626A94242BCBD671E3CCD02ABEF80D92D8C7D7623840D5"
+    ]
+   ],
+   "n": 192,
+   "decision": "remove"
+  },
+  {
+   "line": 431,
+   "date": "2026-02-19",
+   "kind": "down",
+   "hit": 1,
+   "tag": "",
+   "text": "Batch bug caught before activation",
+   "group": "F",
+   "reason_vi": "Lỗi phát hiện trước khi kích hoạt (không xảy ra trên mainnet)",
+   "reason_en": "Bug caught before activation; nothing happened on mainnet",
+   "sources": [
+    [
+     "XRPL.org",
+     "https://xrpl.org/blog/2026/vulnerabilitydisclosurereport-bug-feb2026"
+    ]
+   ],
+   "n": 196,
+   "decision": "remove"
+  },
+  {
+   "line": 434,
+   "date": "2026-03-03",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple expands stablecoin payments",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-redefines-payments-with-end-to-end-stablecoin-platform-and-global-customer-momentum/"
+    ]
+   ],
+   "n": 133,
+   "decision": "pending user review"
+  },
+  {
+   "line": 435,
+   "date": "2026-03-11",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple plans Australian license",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-to-secure-australian-financial-services-license-expanding-payments-offering-across-apac/"
+    ]
+   ],
+   "n": 162,
+   "decision": "pending user review"
+  },
+  {
+   "line": 437,
+   "date": "2026-03-17",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple applies for Brazil license",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-deepens-commitment-to-brazil-with-expanded-payments-offering-growing-customer-momentum-and-vasp-license-application/"
+    ]
+   ],
+   "n": 163,
+   "decision": "pending user review"
+  },
+  {
+   "line": 438,
+   "date": "2026-03-23",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Transaction-set report published",
+   "group": "D",
+   "reason_vi": "Tin nhắc lại / hệ quả của sự kiện đã giữ",
+   "reason_en": "Follow-up or duplicate of a retained event",
+   "sources": [
+    [
+     "XRPL.org",
+     "https://xrpl.org/blog/2026/vulnerabilitydisclosurereport-bug-mar2026"
+    ]
+   ],
+   "n": 172,
+   "decision": "pending user review"
+  },
+  {
+   "line": 439,
+   "date": "2026-03-25",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple joins MAS BLOOM initiative",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-joins-monetary-authority-of-singapore-s-bloom-initiative-and-partners-with-unloq-to-advance-programmable-settlement-infrastructure-in-trade-finance/"
+    ]
+   ],
+   "n": 134,
+   "decision": "pending user review"
+  },
+  {
+   "line": 440,
+   "date": "2026-04-01",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Treasury adds digital assets",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-treasury-launches-the-first-treasury-management-system-tms-with-native-digital-asset-capabilities/"
+    ]
+   ],
+   "n": 135,
+   "decision": "pending user review"
+  },
+  {
+   "line": 441,
+   "date": "2026-04-15",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Kyobo tokenized bond pilot",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-kyobo-life-insurance-partner-to-pioneer-korea-s-first-tokenised-government-bond-settlement-on-blockchain/"
+    ]
+   ],
+   "n": 136,
+   "decision": "pending user review"
+  },
+  {
+   "line": 442,
+   "date": "2026-04-29",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Kbank selects Ripple custody",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-partners-with-kbank-to-deploy-scalable-digital-asset-wallet-infrastructure-through-ripple-custody/"
+    ]
+   ],
+   "n": 137,
+   "decision": "pending user review"
+  },
+  {
+   "line": 443,
+   "date": "2026-05-11",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Prime $200M debt facility",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-prime-secures-usd200-million-debt-facility-from-neuberger-specialty-finance-to-expand-capacity/"
+    ]
+   ],
+   "n": 217,
+   "decision": "pending user review"
+  },
+  {
+   "line": 445,
+   "date": "2026-05-19",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "EDX partners with Ripple Prime",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-prime-partners-with-edx-to-bridge-institutional-access-to-digital-asset-liquidity/"
+    ]
+   ],
+   "n": 138,
+   "decision": "pending user review"
+  },
+  {
+   "line": 447,
+   "date": "2026-06-02",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "RLUSD expands to Turkiye",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/new-partnerships-bring-rlusd-to-turkiye/"
+    ]
+   ],
+   "n": 139,
+   "decision": "pending user review"
+  },
+  {
+   "line": 448,
+   "date": "2026-06-09",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Bitso expands Ripple settlement",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-bitso-expand-partnership/"
+    ]
+   ],
+   "n": 140,
+   "decision": "pending user review"
+  },
+  {
+   "line": 450,
+   "date": "2026-06-23",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple preliminary MiCA approval",
+   "group": "C",
+   "reason_vi": "Giấy phép sơ bộ / kế hoạch đã có bản chính thức",
+   "reason_en": "Preliminary licence or plan superseded by a retained final step",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-secures-preliminary-MiCA-CASP-license/"
+    ]
+   ],
+   "n": 164,
+   "decision": "pending user review"
+  },
+  {
+   "line": 451,
+   "date": "2026-06-24",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "SBI + Ripple RLUSD Japan rollout",
+   "group": "D",
+   "reason_vi": "Tin nhắc lại / hệ quả của sự kiện đã giữ",
+   "reason_en": "Follow-up or duplicate of a retained event",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-sbi-group-partner-to-launch-ripple-usd-in-japan/"
+    ]
+   ],
+   "n": 173,
+   "decision": "pending user review"
+  },
+  {
+   "line": 457,
+   "date": "2026-08-03",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple invests in ZILO + Licuido",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-strengthens-digital-capital-markets-infrastructure-with-investments-in-zilo-and-licuido/"
+    ]
+   ],
+   "n": 141,
+   "decision": "pending user review"
+  },
+  {
+   "line": 459,
+   "date": "2026-08-07",
+   "kind": "down",
+   "hit": 0,
+   "tag": "",
+   "text": "Sponsor bug found before activation",
+   "group": "F",
+   "reason_vi": "Lỗi phát hiện trước khi kích hoạt (không xảy ra trên mainnet)",
+   "reason_en": "Bug caught before activation; nothing happened on mainnet",
+   "sources": [
+    [
+     "XRPL.org",
+     "https://xrpl.org/blog/2026/vulnerabilitydisclosurereport-bug-aug2026"
+    ]
+   ],
+   "n": 197,
+   "decision": "remove"
+  },
+  {
+   "line": 460,
+   "date": "2026-08-18",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Jeonbuk Bank partners with Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-jeonbuk-bank-partner-to-modernize-cross-border-payments-for-korea-s-regional-banking-sector/"
+    ]
+   ],
+   "n": 142,
+   "decision": "pending user review"
+  },
+  {
+   "line": 462,
+   "date": "2026-08-18",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Prime $275M notes offering",
+   "group": "H",
+   "reason_vi": "Gọi vốn / sản phẩm / dự án nhỏ",
+   "reason_en": "Minor funding, product or project item",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-prime-closes-275-million-senior-notes-offering/"
+    ]
+   ],
+   "n": 218,
+   "decision": "pending user review"
+  },
+  {
+   "line": 464,
+   "date": "2026-08-27",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Prime launches Delta One",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-prime-launches-delta-one-business-expanding-equity-derivatives-capabilities-for-institutional-clients/"
+    ]
+   ],
+   "n": 143,
+   "decision": "pending user review"
+  },
+  {
+   "line": 465,
+   "date": "2026-09-10",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple Treasury adds governed AI",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-treasury-brings-industry-s-first-governed-ai-for-enterprise-treasury/"
+    ]
+   ],
+   "n": 144,
+   "decision": "pending user review"
+  },
+  {
+   "line": 468,
+   "date": "2026-09-18",
+   "kind": "down",
+   "hit": 0,
+   "tag": "",
+   "text": "Batch wrapper bug confirmed",
+   "group": "F",
+   "reason_vi": "Lỗi phát hiện trước khi kích hoạt (không xảy ra trên mainnet)",
+   "reason_en": "Bug caught before activation; nothing happened on mainnet",
+   "sources": [
+    [
+     "XRPL.org",
+     "https://xrpl.org/blog/2026/vulnerabilitydisclosurereport-bug-20261009"
+    ]
+   ],
+   "n": 198,
+   "decision": "remove"
+  },
+  {
+   "line": 471,
+   "date": "2026-09-29",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "CSD BR XRPL market infrastructure",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/csdbr-and-ripple-use-the-xrpl-blockchain-to-expand-brazils-financial-market-infrastructure/"
+    ]
+   ],
+   "n": 145,
+   "decision": "pending user review"
+  },
+  {
+   "line": 472,
+   "date": "2026-10-06",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Brevan Howard expands Ripple ties",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-brevan-howard-deepen-relationship/"
+    ]
+   ],
+   "n": 146,
+   "decision": "pending user review"
+  },
+  {
+   "line": 473,
+   "date": "2026-10-08",
+   "kind": "info",
+   "hit": 1,
+   "tag": "upgrade",
+   "text": "PermissionDelegationV1_1 enabled",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/478284066BA0B83CC35CA1174F667F43D9577782F221440AFCC5541788F25A77"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/478284066BA0B83CC35CA1174F667F43D9577782F221440AFCC5541788F25A77"
+    ]
+   ],
+   "n": 193,
+   "decision": "remove"
+  },
+  {
+   "line": 475,
+   "date": "2026-10-09",
+   "kind": "info",
+   "hit": 1,
+   "tag": "upgrade",
+   "text": "BatchV1_1 + 1 upgrades",
+   "group": "E",
+   "reason_vi": "Amendment kỹ thuật, tên khó hiểu với người xem",
+   "reason_en": "Technical amendment whose name means nothing to viewers",
+   "sources": [
+    [
+     "RippleX mainnet activation API",
+     "https://vhs.prod.ripplex.io/v1/network/amendments/vote/main/"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/1717BD8BE3FED93C142C8CD38DA5AD1208A0E9AE4E24F0F7ED545FC750BCA20A"
+    ],
+    [
+     "XRPL activation transaction",
+     "https://livenet.xrpl.org/transactions/4A3B7683B30BE4E62FA6D8D92BFE9C5CC08627190286360DB42AC6CCDC7D3CD7"
+    ],
+    [
+     "XRPL.org",
+     "https://xrpl.org/resources/known-amendments"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/1717BD8BE3FED93C142C8CD38DA5AD1208A0E9AE4E24F0F7ED545FC750BCA20A"
+    ],
+    [
+     "XRPSCAN",
+     "https://xrpscan.com/tx/4A3B7683B30BE4E62FA6D8D92BFE9C5CC08627190286360DB42AC6CCDC7D3CD7"
+    ]
+   ],
+   "n": 194,
+   "decision": "remove"
+  },
+  {
+   "line": 476,
+   "date": "2026-10-12",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Standard Chartered custodies RLUSD",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/standard-chartered-launches-rlusd-custody-and-joins-planned-collateral-integration-with-ripple-and-lmax-group/"
+    ]
+   ],
+   "n": 147,
+   "decision": "pending user review"
+  },
+  {
+   "line": 477,
+   "date": "2026-10-14",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "DriveWealth partners with Ripple",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/drivewealth-and-ripple-partner-to-bring-institutional-digital-asset-infrastructure-to-global-investing/"
+    ]
+   ],
+   "n": 148,
+   "decision": "pending user review"
+  },
+  {
+   "line": 478,
+   "date": "2026-10-14",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Meritz adopts Ripple custody",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-and-meritz-securities-partner-to-bring-institutional-custody-and-tokenization-to-korea-s-capital-markets/"
+    ]
+   ],
+   "n": 149,
+   "decision": "pending user review"
+  },
+  {
+   "line": 479,
+   "date": "2026-10-15",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple adds RWA perpetual access",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-launches-support-for-institutions-to-access-real-world-asset-perpetual-swaps/"
+    ]
+   ],
+   "n": 150,
+   "decision": "pending user review"
+  },
+  {
+   "line": 481,
+   "date": "2026-10-26",
+   "kind": "info",
+   "hit": 0,
+   "tag": "",
+   "text": "Ripple always-on treasury platform",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/ripple-treasury-introduces-always-on-corporate-treasury-platform-to-modernize-corporate-cash-management/"
+    ]
+   ],
+   "n": 151,
+   "decision": "pending user review"
+  },
+  {
+   "line": 484,
+   "date": "2026-10-27",
+   "kind": "info",
+   "hit": 1,
+   "tag": "",
+   "text": "C2FO XRPL trade-finance initiative",
+   "group": "B",
+   "reason_vi": "Đối tác / khách hàng / mở rộng thường lệ của Ripple",
+   "reason_en": "Routine Ripple partner, client or expansion announcement",
+   "sources": [
+    [
+     "C2FO",
+     "https://c2fo.com/newsroom/c2fo-and-ripple-partner-to-modernize-trade-finance-using-the-xrp-ledger/"
+    ],
+    [
+     "Ripple",
+     "https://ripple.com/ripple-press/c2fo-and-ripple-partner-to-modernize-trade-finance-using-the-xrp-ledger/"
+    ]
+   ],
+   "n": 152,
+   "decision": "pending user review"
+  }
+ ],
+ "approvedGroups": [
+  "A",
+  "E",
+  "F",
+  "G"
+ ],
+ "removedCount": 64
+}
