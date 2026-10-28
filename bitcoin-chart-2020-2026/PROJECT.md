@@ -318,12 +318,16 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
-- XRP lọc thêm (28/10/2026, người dùng duyệt nhóm A, E, F, G): đặt `remove=true` thêm 64 mục — 36 tin thị trường chung
+- XRP lọc thêm (28/10/2026, người dùng duyệt nhóm A, E, F, G rồi B, C, D, H trừ 4 mục): đặt `remove=true` thêm 64 mục — 36 tin thị trường chung
   không liên quan XRP, 21 amendment kỹ thuật tên khó hiểu (mức 1), 4 lỗi phát hiện trước khi kích hoạt, 3 bản phát hành
-  rippled. Nhóm B/C/D/H (154 mục: đối tác thường lệ, giấy phép sơ bộ, tin nhắc lại, gọi vốn nhỏ) **còn chờ người dùng
-  duyệt**, tạm vẫn hiện. **Danh sách XRP chưa duyệt xong → không render** (preview 09/2025–02/2026 đã chạy xong ngay trước lệnh dừng, chỉ lưu ở `out/renders/xrp-preview-remove-AEFG-20261028-480p/`, không gửi, không coi là bước duyệt).
-  Tổng 484 dòng, 210 remove, 274 hiện (170 / 88 / 16 theo mức 0/1/2). Mức, nguồn, giá, phase không đổi.
-  Danh sách từng mục + nguồn: `coins/XRP/data/removal-proposal-20261028.md` / `.json`.
+  rippled. Sau đó người dùng chọn ẩn tiếp nhóm B/C/D/H (đối tác thường lệ, giấy phép sơ bộ, tin nhắc lại, gọi vốn nhỏ):
+  150 mục `remove=true`, giữ 4 mục tên lớn (#121 BBVA custody, #147 Standard Chartered RLUSD, #215 Palisade,
+  #216 Mastercard RLUSD pilot). Tổng 484 dòng, 360 remove, **124 hiện** (33 / 75 / 16 theo mức 0/1/2), phase 1 không
+  còn sự kiện lịch sử (chỉ ATH/ATL tự tạo). Mức, nguồn, giá, phase không đổi. Nhãn ✓ (11 nhãn cũ mờ sớm), nguồn ✓, audit ✓.
+  **Danh sách đã gửi người dùng kiểm tra lại (`coins/XRP/data/events-by-phase-20261028.md`) → chưa render.**
+  Preview 09/2025–02/2026 chạy xong ngay trước lệnh dừng (danh sách cũ) chỉ lưu ở
+  `out/renders/xrp-preview-remove-AEFG-20261028-480p/`, không gửi, không còn đúng danh sách hiện tại.
+  Đề xuất từng mục + nguồn: `coins/XRP/data/removal-proposal-20261028.md` / `.json`.
 
 - XRP full-data preview (28/10/2026): sau khi xem lại toàn bộ danh sách giữ/loại, người dùng yêu cầu "Render video
   preview xrp full dữ liệu". Đây là yêu cầu render theo danh sách vừa trình (146 remove giữ nguyên), thay trạng thái

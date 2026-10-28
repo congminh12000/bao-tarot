@@ -1,6 +1,6 @@
 # XRP — đề xuất ẩn sự kiện (remove=true)
 
-**Đã quyết 28/10/2026:** người dùng duyệt ẩn nhóm **A, E, F, G** (64 mục, đã đặt `remove=true`). Nhóm **B, C, D, H** (154 mục) **còn đang chờ người dùng duyệt**, tạm vẫn hiện (`remove=false`). Hiện còn **274** mục hiện (170 mức 0 / 88 mức 1 / 16 mức 2). Danh sách XRP chưa duyệt xong: không render.
+**Đã quyết 28/10/2026:** người dùng duyệt ẩn nhóm **A, E, F, G** (64 mục) và **B, C, D, H trừ 4 mục giữ lại** (#121, #147, #215, #216) → 214 mục `remove=true`. Còn **124** mục hiện (33 mức 0 / 75 mức 1 / 16 mức 2). Danh sách hiện tại theo phase: `events-by-phase-20261028.md`.
 
 Ngày 28/10/2026. Đề xuất **218** mục trong 338 mục đang hiện → còn **120** mục hiện (16 mức 2 / 75 mức 1 / 29 mức 0) + ATH/ATL tự tạo.
 Không xóa dòng, không đổi mức hay nguồn; chỉ đổi cột `remove` từ `false` sang `true`. 

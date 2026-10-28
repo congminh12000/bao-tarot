@@ -1,7 +1,7 @@
 {
  "coin": "XRP",
  "proposedOn": "2026-10-28",
- "status": "partly decided 2026-10-28: groups A, E, F, G approved (remove=true); groups B, C, D, H still under user review (remove=false for now). No render until the list review is finished.",
+ "status": "decided 2026-10-28: user approved hiding groups A, E, F, G and groups B, C, D, H except #121, #147, #215, #216 (kept). Event list awaiting the user's final check before any render.",
  "groups": {
   "A": "General crypto-market item with no clear XRP link",
   "B": "Routine Ripple partner, client or expansion announcement",
@@ -30,7 +30,7 @@
     ]
    ],
    "n": 202,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 3,
@@ -72,7 +72,7 @@
     ]
    ],
    "n": 203,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 5,
@@ -156,7 +156,7 @@
     ]
    ],
    "n": 37,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 13,
@@ -194,7 +194,7 @@
     ]
    ],
    "n": 38,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 16,
@@ -213,7 +213,7 @@
     ]
    ],
    "n": 39,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 18,
@@ -251,7 +251,7 @@
     ]
    ],
    "n": 40,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 20,
@@ -270,7 +270,7 @@
     ]
    ],
    "n": 204,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 22,
@@ -297,7 +297,7 @@
     ]
    ],
    "n": 205,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 24,
@@ -362,7 +362,7 @@
     ]
    ],
    "n": 41,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 27,
@@ -381,7 +381,7 @@
     ]
    ],
    "n": 42,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 28,
@@ -438,7 +438,7 @@
     ]
    ],
    "n": 43,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 33,
@@ -496,7 +496,7 @@
     ]
    ],
    "n": 44,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 38,
@@ -554,7 +554,7 @@
     ]
    ],
    "n": 45,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 43,
@@ -573,7 +573,7 @@
     ]
    ],
    "n": 46,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 47,
@@ -670,7 +670,7 @@
     ]
    ],
    "n": 47,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 64,
@@ -689,7 +689,7 @@
     ]
    ],
    "n": 48,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 65,
@@ -759,7 +759,7 @@
     ]
    ],
    "n": 49,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 81,
@@ -797,7 +797,7 @@
     ]
    ],
    "n": 50,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 84,
@@ -816,7 +816,7 @@
     ]
    ],
    "n": 51,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 85,
@@ -951,7 +951,7 @@
     ]
    ],
    "n": 52,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 94,
@@ -997,7 +997,7 @@
     ]
    ],
    "n": 206,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 96,
@@ -1073,7 +1073,7 @@
     ]
    ],
    "n": 165,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 104,
@@ -1157,7 +1157,7 @@
     ]
    ],
    "n": 53,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 111,
@@ -1246,7 +1246,7 @@
     ]
    ],
    "n": 54,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 116,
@@ -1265,7 +1265,7 @@
     ]
    ],
    "n": 55,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 117,
@@ -1311,7 +1311,7 @@
     ]
    ],
    "n": 56,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 122,
@@ -1368,7 +1368,7 @@
     ]
    ],
    "n": 57,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 136,
@@ -1425,7 +1425,7 @@
     ]
    ],
    "n": 58,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 141,
@@ -1444,7 +1444,7 @@
     ]
    ],
    "n": 59,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 144,
@@ -1501,7 +1501,7 @@
     ]
    ],
    "n": 60,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 147,
@@ -1520,7 +1520,7 @@
     ]
    ],
    "n": 61,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 148,
@@ -1558,7 +1558,7 @@
     ]
    ],
    "n": 62,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 153,
@@ -1596,7 +1596,7 @@
     ]
    ],
    "n": 63,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 157,
@@ -1654,7 +1654,7 @@
     ]
    ],
    "n": 64,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 159,
@@ -1789,7 +1789,7 @@
     ]
    ],
    "n": 207,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 168,
@@ -1827,7 +1827,7 @@
     ]
    ],
    "n": 65,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 170,
@@ -1892,7 +1892,7 @@
     ]
    ],
    "n": 166,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 175,
@@ -1911,7 +1911,7 @@
     ]
    ],
    "n": 167,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 179,
@@ -1930,7 +1930,7 @@
     ]
    ],
    "n": 66,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 183,
@@ -1949,7 +1949,7 @@
     ]
    ],
    "n": 168,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 191,
@@ -1968,7 +1968,7 @@
     ]
    ],
    "n": 67,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 194,
@@ -1987,7 +1987,7 @@
     ]
    ],
    "n": 68,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 197,
@@ -2006,7 +2006,7 @@
     ]
    ],
    "n": 69,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 198,
@@ -2025,7 +2025,7 @@
     ]
    ],
    "n": 208,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 201,
@@ -2083,7 +2083,7 @@
     ]
    ],
    "n": 70,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 206,
@@ -2102,7 +2102,7 @@
     ]
    ],
    "n": 71,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 207,
@@ -2121,7 +2121,7 @@
     ]
    ],
    "n": 72,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 209,
@@ -2140,7 +2140,7 @@
     ]
    ],
    "n": 73,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 211,
@@ -2159,7 +2159,7 @@
     ]
    ],
    "n": 209,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 215,
@@ -2178,7 +2178,7 @@
     ]
    ],
    "n": 74,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 216,
@@ -2197,7 +2197,7 @@
     ]
    ],
    "n": 210,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 218,
@@ -2216,7 +2216,7 @@
     ]
    ],
    "n": 75,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 219,
@@ -2235,7 +2235,7 @@
     ]
    ],
    "n": 211,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 222,
@@ -2254,7 +2254,7 @@
     ]
    ],
    "n": 76,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 224,
@@ -2273,7 +2273,7 @@
     ]
    ],
    "n": 77,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 226,
@@ -2292,7 +2292,7 @@
     ]
    ],
    "n": 78,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 228,
@@ -2311,7 +2311,7 @@
     ]
    ],
    "n": 169,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 229,
@@ -2330,7 +2330,7 @@
     ]
    ],
    "n": 79,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 234,
@@ -2349,7 +2349,7 @@
     ]
    ],
    "n": 80,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 235,
@@ -2368,7 +2368,7 @@
     ]
    ],
    "n": 81,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 244,
@@ -2387,7 +2387,7 @@
     ]
    ],
    "n": 170,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 247,
@@ -2425,7 +2425,7 @@
     ]
    ],
    "n": 82,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 251,
@@ -2444,7 +2444,7 @@
     ]
    ],
    "n": 83,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 252,
@@ -2463,7 +2463,7 @@
     ]
    ],
    "n": 212,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 253,
@@ -2482,7 +2482,7 @@
     ]
    ],
    "n": 84,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 254,
@@ -2501,7 +2501,7 @@
     ]
    ],
    "n": 85,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 256,
@@ -2520,7 +2520,7 @@
     ]
    ],
    "n": 153,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 259,
@@ -2539,7 +2539,7 @@
     ]
    ],
    "n": 86,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 264,
@@ -2562,7 +2562,7 @@
     ]
    ],
    "n": 213,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 265,
@@ -2585,7 +2585,7 @@
     ]
    ],
    "n": 171,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 269,
@@ -2604,7 +2604,7 @@
     ]
    ],
    "n": 87,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 272,
@@ -2623,7 +2623,7 @@
     ]
    ],
    "n": 88,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 273,
@@ -2642,7 +2642,7 @@
     ]
    ],
    "n": 89,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 274,
@@ -2661,7 +2661,7 @@
     ]
    ],
    "n": 214,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 277,
@@ -2680,7 +2680,7 @@
     ]
    ],
    "n": 90,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 278,
@@ -2699,7 +2699,7 @@
     ]
    ],
    "n": 154,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 279,
@@ -2741,7 +2741,7 @@
     ]
    ],
    "n": 91,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 294,
@@ -2760,7 +2760,7 @@
     ]
    ],
    "n": 92,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 296,
@@ -2779,7 +2779,7 @@
     ]
    ],
    "n": 93,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 298,
@@ -2798,7 +2798,7 @@
     ]
    ],
    "n": 94,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 299,
@@ -2817,7 +2817,7 @@
     ]
    ],
    "n": 95,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 303,
@@ -2836,7 +2836,7 @@
     ]
    ],
    "n": 96,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 305,
@@ -2855,7 +2855,7 @@
     ]
    ],
    "n": 97,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 306,
@@ -2874,7 +2874,7 @@
     ]
    ],
    "n": 98,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 308,
@@ -2893,7 +2893,7 @@
     ]
    ],
    "n": 99,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 309,
@@ -2912,7 +2912,7 @@
     ]
    ],
    "n": 100,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 315,
@@ -2931,7 +2931,7 @@
     ]
    ],
    "n": 155,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 317,
@@ -2950,7 +2950,7 @@
     ]
    ],
    "n": 101,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 319,
@@ -2969,7 +2969,7 @@
     ]
    ],
    "n": 102,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 320,
@@ -2988,7 +2988,7 @@
     ]
    ],
    "n": 103,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 321,
@@ -3007,7 +3007,7 @@
     ]
    ],
    "n": 104,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 323,
@@ -3026,7 +3026,7 @@
     ]
    ],
    "n": 105,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 324,
@@ -3123,7 +3123,7 @@
     ]
    ],
    "n": 106,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 336,
@@ -3241,7 +3241,7 @@
     ]
    ],
    "n": 107,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 342,
@@ -3260,7 +3260,7 @@
     ]
    ],
    "n": 108,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 344,
@@ -3279,7 +3279,7 @@
     ]
    ],
    "n": 109,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 346,
@@ -3298,7 +3298,7 @@
     ]
    ],
    "n": 156,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 349,
@@ -3317,7 +3317,7 @@
     ]
    ],
    "n": 110,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 355,
@@ -3375,7 +3375,7 @@
     ]
    ],
    "n": 111,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 361,
@@ -3394,7 +3394,7 @@
     ]
    ],
    "n": 112,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 362,
@@ -3413,7 +3413,7 @@
     ]
    ],
    "n": 113,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 364,
@@ -3432,7 +3432,7 @@
     ]
    ],
    "n": 114,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 366,
@@ -3482,7 +3482,7 @@
     ]
    ],
    "n": 115,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 374,
@@ -3501,7 +3501,7 @@
     ]
    ],
    "n": 116,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 375,
@@ -3520,7 +3520,7 @@
     ]
    ],
    "n": 117,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 377,
@@ -3539,7 +3539,7 @@
     ]
    ],
    "n": 118,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 378,
@@ -3558,7 +3558,7 @@
     ]
    ],
    "n": 119,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 382,
@@ -3577,7 +3577,7 @@
     ]
    ],
    "n": 157,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 386,
@@ -3596,7 +3596,7 @@
     ]
    ],
    "n": 120,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 385,
@@ -3646,7 +3646,7 @@
     ]
    ],
    "n": 121,
-   "decision": "pending user review"
+   "decision": "keep (user, 2026-10-28)"
   },
   {
    "line": 389,
@@ -3684,7 +3684,7 @@
     ]
    ],
    "n": 122,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 393,
@@ -3703,7 +3703,7 @@
     ]
    ],
    "n": 123,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 397,
@@ -3722,7 +3722,7 @@
     ]
    ],
    "n": 124,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 398,
@@ -3741,7 +3741,7 @@
     ]
    ],
    "n": 125,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 401,
@@ -3760,7 +3760,7 @@
     ]
    ],
    "n": 126,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 402,
@@ -3779,7 +3779,7 @@
     ]
    ],
    "n": 215,
-   "decision": "pending user review"
+   "decision": "keep (user, 2026-10-28)"
   },
   {
    "line": 403,
@@ -3798,7 +3798,7 @@
     ]
    ],
    "n": 216,
-   "decision": "pending user review"
+   "decision": "keep (user, 2026-10-28)"
   },
   {
    "line": 410,
@@ -3817,7 +3817,7 @@
     ]
    ],
    "n": 127,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 411,
@@ -3836,7 +3836,7 @@
     ]
    ],
    "n": 158,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 412,
@@ -3855,7 +3855,7 @@
     ]
    ],
    "n": 128,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 413,
@@ -3897,7 +3897,7 @@
     ]
    ],
    "n": 129,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 417,
@@ -3916,7 +3916,7 @@
     ]
    ],
    "n": 130,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 420,
@@ -3935,7 +3935,7 @@
     ]
    ],
    "n": 159,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 424,
@@ -3954,7 +3954,7 @@
     ]
    ],
    "n": 160,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 426,
@@ -3973,7 +3973,7 @@
     ]
    ],
    "n": 131,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 425,
@@ -4023,7 +4023,7 @@
     ]
    ],
    "n": 132,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 428,
@@ -4042,7 +4042,7 @@
     ]
    ],
    "n": 161,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 429,
@@ -4111,7 +4111,7 @@
     ]
    ],
    "n": 133,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 435,
@@ -4130,7 +4130,7 @@
     ]
    ],
    "n": 162,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 437,
@@ -4149,7 +4149,7 @@
     ]
    ],
    "n": 163,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 438,
@@ -4168,7 +4168,7 @@
     ]
    ],
    "n": 172,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 439,
@@ -4187,7 +4187,7 @@
     ]
    ],
    "n": 134,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 440,
@@ -4206,7 +4206,7 @@
     ]
    ],
    "n": 135,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 441,
@@ -4225,7 +4225,7 @@
     ]
    ],
    "n": 136,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 442,
@@ -4244,7 +4244,7 @@
     ]
    ],
    "n": 137,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 443,
@@ -4263,7 +4263,7 @@
     ]
    ],
    "n": 217,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 445,
@@ -4282,7 +4282,7 @@
     ]
    ],
    "n": 138,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 447,
@@ -4301,7 +4301,7 @@
     ]
    ],
    "n": 139,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 448,
@@ -4320,7 +4320,7 @@
     ]
    ],
    "n": 140,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 450,
@@ -4339,7 +4339,7 @@
     ]
    ],
    "n": 164,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 451,
@@ -4358,7 +4358,7 @@
     ]
    ],
    "n": 173,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 457,
@@ -4377,7 +4377,7 @@
     ]
    ],
    "n": 141,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 459,
@@ -4415,7 +4415,7 @@
     ]
    ],
    "n": 142,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 462,
@@ -4434,7 +4434,7 @@
     ]
    ],
    "n": 218,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 464,
@@ -4453,7 +4453,7 @@
     ]
    ],
    "n": 143,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 465,
@@ -4472,7 +4472,7 @@
     ]
    ],
    "n": 144,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 468,
@@ -4510,7 +4510,7 @@
     ]
    ],
    "n": 145,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 472,
@@ -4529,7 +4529,7 @@
     ]
    ],
    "n": 146,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 473,
@@ -4618,7 +4618,7 @@
     ]
    ],
    "n": 147,
-   "decision": "pending user review"
+   "decision": "keep (user, 2026-10-28)"
   },
   {
    "line": 477,
@@ -4637,7 +4637,7 @@
     ]
    ],
    "n": 148,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 478,
@@ -4656,7 +4656,7 @@
     ]
    ],
    "n": 149,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 479,
@@ -4675,7 +4675,7 @@
     ]
    ],
    "n": 150,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 481,
@@ -4694,7 +4694,7 @@
     ]
    ],
    "n": 151,
-   "decision": "pending user review"
+   "decision": "remove"
   },
   {
    "line": 484,
@@ -4717,7 +4717,7 @@
     ]
    ],
    "n": 152,
-   "decision": "pending user review"
+   "decision": "remove"
   }
  ],
  "approvedGroups": [
@@ -4726,5 +4726,11 @@
   "F",
   "G"
  ],
- "removedCount": 64
+ "removedCount": 214,
+ "keptByUser": [
+  121,
+  147,
+  215,
+  216
+ ]
 }
