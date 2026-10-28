@@ -318,6 +318,16 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **TRX final full dữ liệu — 28/10/2026:** đã render theo lựa chọn 16:9 / Full HD / 60 fps.
+  `out/trx-final-20261028-16x9-1080p.mp4`: 1920×1080, 343.666667 s, 20,620 frames, 261,763,331 bytes.
+  3,332 nến thật (2017-09-13–2026-10-27), 45 sự kiện + 4 ATH/ATL, 5 cue khác nhau; giữ nguyên danh sách preview.
+  Lưu `out/renders/trx-final-20261028-1080p60/`, fingerprint `d4db59f65fed0d5b`; render hình 872.4 s.
+  Native AV 11/11 đạt; PTS liên tục, input hash không đổi, nhãn chạy không chồng/thoát sớm; đã xem ảnh đầu/giữa/cuối.
+  AAC đo −16.0 LUFS / −1.4 dBTP / LRA 3.9 LU (chưa nghe). Snapshot audit đạt; live 99Bitcoins 403, không chứng nhận live.
+  Chương YouTube chạy lại sau final: 10 nhóm / 12 mốc, trích 21 ảnh kiểm tra; `coins/TRX/youtube.md`.
+  Full data/music vẫn nạp. Giao file local, chưa có yêu cầu Drive cho final này.
+
+
 - DOGE (28/10/2026): tạo `coins/DOGE/` theo §11. Giá TradingView `CRYPTO:DOGEUSD` 15/12/2013–27/10/2026, 4.700 nến
   thật, không thiếu ngày; đối chiếu Coinbase lệch trung vị 0,03 %. 82 dòng sự kiện có nguồn (đã mở/đọc từng link):
   45 hiện (6 / 14 / 25 theo mức 2/1/0, người dùng yêu cầu tự phân mức), 37 `remove=true` (tin thị trường chung, cùng
