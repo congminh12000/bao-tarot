@@ -1,3 +1,19 @@
+# XRP final — 2026-10-28
+
+Requested after the full-history preview and selection of XRP / 16:9 / Full HD, always 60 fps.
+Delivered final: `out/xrp-final-20261028-16x9-1080p.mp4`; kept at `out/renders/xrp-final-20261028-1080p60/`.
+1920×1080, 489.600 s, 29,376 decoded frames, 409,790,700 bytes. Fingerprint `1bcd3c7237e19358`.
+124 selected historical events + 10 generated turns, 11 unique approved cues. 360 removed research rows remain stored.
+Labels do not overlap; 8 early-fade fallbacks. 27 missing source-price days remain explicitly estimated.
+Input hashes stayed unchanged; all video timestamps continuous. AAC −16.0 LUFS / −1.3 dBTP / LRA 4.4 LU.
+Native AV check: 25/27 markers pass; the previously disclosed adjacent COVID/ATL conflict at ~224.1 s remains.
+The requested final preserves the preview's picture and mix; no timing, event, phase or audio fix was introduced.
+Saved-source audit and 484/484 source mappings pass; live 99Bitcoins check returned HTTP 403, not certified live.
+22 chapter groups cover 31 required moments; final-video frame evidence and validation are kept with the render.
+YouTube title options, description and regenerated chapters: `youtube.md`. No YouTube upload. Audio measured, not heard.
+
+Historical preparation and preview notes below are superseded by this final status.
+
 # XRP film — full-history preview ready for review
 
 Current request (2026-10-28): after viewing the complete retained/removed event list, the user requested

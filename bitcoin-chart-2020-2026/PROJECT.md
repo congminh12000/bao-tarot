@@ -318,6 +318,19 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **XRP final — 28/10/2026:** sau preview toàn timeline trong chat, người dùng chọn XRP / 16:9 / Full HD, 60 fps.
+  Render từ `2830084b`, giữ nguyên 124 sự kiện đã chọn + 10 ATH/ATL, 11 bài không lặp; 360 mục remove vẫn lưu.
+  File `out/xrp-final-20261028-16x9-1080p.mp4`: 1920×1080, 489,600 s / 29.376 khung giải mã / 409.790.700 byte.
+  Lưu `out/renders/xrp-final-20261028-1080p60/`, fingerprint `1bcd3c7237e19358`; hash input không đổi, timestamp liên tục.
+  Nhãn không chồng lấn (8 nhãn mờ sớm), nguồn 484/484, audit snapshot ✓; live 99Bitcoins vẫn 403, không chứng nhận live.
+  AAC −16,0 LUFS / true peak −1,3 dBTP / LRA 4,4 LU. Native AV **25/27 đạt**, giữ nguyên hai lỗi COVID/ATL ~224,1 s
+  đã nêu ở preview (mốc cách 86 ms, pre-hit gate chồng attack); không tự đổi nhạc/hình/dữ liệu để che lỗi.
+  Còn 27 ngày giá nội suy đã đánh dấu. 22 nhóm chương phủ 31 mốc cần thiết; ảnh chương/event+1 s và bằng chứng
+  ở thư mục bản lưu. `coins/XRP/youtube.md` chứa các tiêu đề nháp, mô tả và chương mới; chưa đăng YouTube.
+  Bản nháp BNB trước đây được giữ trong stash `BNB audit draft preserved before XRP preview 2026-10-28`, không áp đè
+  lên dữ liệu BNB mới của remote. Âm thanh đánh giá bằng số đo, chưa nghe.
+
+
 - SOL (28/10/2026): tạo `coins/SOL/` theo §11. Giá TradingView `CRYPTO:SOLUSD` 10/04/2020–27/10/2026, 2.392 nến thật,
   không thiếu ngày; đối chiếu Coinbase/Binance lệch trung vị 0,02–0,05 %. 42 sự kiện có nguồn (đã mở/đọc từng link):
   35 hiện (8 / 19 / 8 theo mức 2/1/0, người dùng yêu cầu tự phân mức), 7 `remove=true` (tin thị trường chung / tin tiếp
