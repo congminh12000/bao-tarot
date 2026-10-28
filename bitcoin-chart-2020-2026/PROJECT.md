@@ -318,6 +318,14 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **TRX preview full — 28/10/2026:** người dùng yêu cầu render toàn dữ liệu theo danh sách hiện tại; không đổi phân mức,
+  giá, phase hay cờ remove. Từ `f63ea0e0`: 3.332 ngày giá 2017-09-13–2026-10-27, 45 sự kiện + 4 ATH/ATL, 5 bài không lặp.
+  File `out/trx-preview-full-20261028-480p.mp4`: 16:9 854×480 60 fps, 343,674625 s / 20.620 khung / 71.363.621 byte.
+  Lưu `out/renders/trx-preview-full-20261028-480p60/`, fingerprint `6d5f7515cde888be`; render hình 208,7 s, input hash không đổi.
+  Nguồn 75/75, nhãn đang chạy không chồng lấn / không rời sớm, AV 11/11 đạt. Đã xem ảnh đầu/giữa/zoom-out cuối.
+  AAC −16,0 LUFS / true peak −1,4 dBTP / LRA 3,9 LU; đo, chưa nghe. Giữ dữ liệu và nhạc TRX đầy đủ.
+  Lệnh render này thay trạng thái chờ danh sách cho bản preview hiện tại; chờ duyệt video/logo/màu, chưa render final TRX.
+
 - **SOL final — render xong 28/10/2026, chờ upload Drive:** người dùng chọn SOL toàn dữ liệu / 16:9 / Full HD / 60 fps.
   Từ `f9037487`, giữ đúng preview: 56 sự kiện + 8 ATH/ATL, 9 bài không lặp. Render hình 833,6 s.
   File `out/sol-final-20261028-16x9-1080p.mp4`: 1920×1080, 282,666667 s / 16.960 khung / 234.036.189 byte.
