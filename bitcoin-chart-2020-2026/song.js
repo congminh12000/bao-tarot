@@ -11,6 +11,7 @@ const { T, DURATION, m, ev, clock, hits, FIRST_BAR, END_BAR, inBreath, breaths }
 
 // a short (SHORT=<n> node make-data.js) loops: it is rendered LOOP_TAIL s longer and that tail is folded onto its start
 const SHORT = sc.SHORT, LOOP_TAIL = SHORT ? 4 : 0;
+const LINE = sc.LINE || null;
 const N = Math.ceil((DURATION + LOOP_TAIL) * SR);
 const bus = () => new Bus(N);
 const drums = bus(), bass = bus(), pad = bus(), ost = bus(), lead = bus(), perc = bus(), fx = bus();
@@ -244,7 +245,7 @@ const { TB, BEATS, FIRST_BEAT, END_BEAT, PHASES } = sc;
 function layersAt(cue, k) {
   const A = cue.arrange, on = { drums: true, bass: true, ost: !!cue.ostinato, lead: true, answer: !!cue.answer, choir: !!cue.choir, double: false, drop: false };
   if (!A) return on;
-  const b = SHORT ? A.cycle - 4 + (k % 4) : k % A.cycle; // a short loops inside the cue's fullest 4 bars
+  const b = SHORT || LINE ? A.cycle - 4 + (k % 4) : k % A.cycle; // Shorts enter the full arrangement
   for (const [layer, from] of Object.entries(A.from || {})) on[layer] = (layer === 'double' || layer === 'chorus' || on[layer]) && b >= from;
   if ((A.drop || []).includes(b)) { on.drop = true; for (const l of ['drums', 'bass', 'ost', 'lead', 'answer', 'double']) on[l] = false; }
   return on;
@@ -400,6 +401,10 @@ PHASES.forEach((p, i) => {
 // cascade and an upward sweep, a crash adds a deep thud and a falling sweep
 const REV = I.crash(31).slice(0, Math.round(1.4 * SR)).reverse();
 for (const h of hits) {
+  if (LINE) {
+    require('./line-sfx').add({ h, fx: hFx, drums: hDrums, instruments: I });
+    continue;
+  }
   const up = h.kind !== 'down', ch = musicChordAt(h.t + 0.01), pre = REV.length / SR;
   hFx.addMono(REV, h.t - pre, 0.32);
   hFx.addMono(I.noiseSweep(1.6, up ? 400 : 1200, up ? 9000 : 6000, { q: 1.1, shape: (x) => x * x * x, pink: true, seed: h.day }), h.t - 1.6, 0.16);
@@ -422,7 +427,7 @@ for (const h of hits) {
 }
 // the music does not change or duck at a hit-2 event: the SFX play on top of it (they keep their own buses)
 // the end: the last candle closes (not in a short: its end is the hit of the closing turn, then the loop)
-if (!SHORT) {
+if (!SHORT && !LINE) {
 fx.addMono(I.subBoom(3.2), ev.end, 0.8);
 drums.addMono(CR, ev.end, 0.45); drums.addMono(K, ev.end, 0.9);
 perc.addMono(I.timpani(m('D2'), { decay: 2.5 }), ev.end, 0.8);
@@ -445,11 +450,13 @@ const out = path.join(__dirname, 'out');
 const mix = MIX.mixdown(stems, GAIN, { stemDir: process.env.STEMS ? out : null });
 MIX.highpass(mix, 24);
 for (const [a, b] of breaths) MIX.gate(mix, a, b); // one beat of real silence before each big moment
-for (const t of [...hits.map((h) => h.t), ...(SHORT ? [] : [ev.end])]) MIX.gate(mix, t - beatLen(t) / 4, t); // a held 16th before every hit and the end
+if (!LINE) for (const t of [...hits.map((h) => h.t), ...(SHORT ? [] : [ev.end])]) MIX.gate(mix, t - beatLen(t) / 4, t); // legacy pre-hit gates
 if (SHORT) { // the loop: what rings on past the end (reverb, the last notes) plays over the start, then cut to DURATION
   const n0 = Math.round(DURATION * SR);
   for (let i = n0; i < mix.n; i++) { mix.L[i - n0] += mix.L[i]; mix.R[i - n0] += mix.R[i]; }
   mix.L = mix.L.slice(0, n0); mix.R = mix.R.slice(0, n0); mix.n = n0;
+} else if (LINE) {
+  MIX.fadeOut(mix, DURATION - 0.22, DURATION);
 } else {
 MIX.fadeOut(mix, DURATION - 2.2, DURATION);
 const FADE_IN = 1.0; // the music fades in with the picture (film.js FADE_IN), an S-curve

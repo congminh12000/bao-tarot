@@ -16,7 +16,9 @@
     "labels": "node check-labels.js",
     "audit:events": "python3 audit-99bitcoins.py",
     "audit:events:live": "python3 audit-99bitcoins.py --live",
-    "audit:sources": "node check-event-sources.js --all"
+    "audit:sources": "node check-event-sources.js --all",
+    "test:line": "SHORT_STYLE=line COIN=DOGE FROM=2021-01-01 TO=2022-11-11 node make-data.js --strict && node line/test.js",
+    "test:line:regression": "node line/regression.js"
   },
   "devDependencies": {
     "playwright-core": "1.47.2"

@@ -67,6 +67,18 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
   like Bitcoin's; its own glow-tech colours (palette in `coins/README.md`, user approves); its exact official logo found
   on Google; the approved music in a shuffled order (automatic per coin; still no repeats). Run everything with
   `COIN=<SYMBOL>`. Before a preview render, ask which coin unless already working on one (§1.11); a final always asks (step 1).
+- **Coin Trail / `SHORT_STYLE=line` (PROJECT.md §17, shorts.md §8):** opt-in 9:16 60 fps curved line +
+  leading circular logo + interactive bubbles. Overrides ONLY line mode: multiple phases/partial phases; no candles,
+  axes/grid or background logo; preserve every eligible event (BTC 1/2, altcoins 0/1/2, remove=true excluded); all
+  bubble levels get graded SFX/VFX; price/date HUD changes only at contact; no synthetic loop or opening-turn omission.
+  Reuse long OHLC/phases/cues/palette/logo; close + real ATH high/ATL low, monotone curves with tangent ±45°.
+  Same-day events get distinct bubbles and sequential contacts at the same day/price. Target 45 s, 35–60 s, split
+  dense histories without dropping events, hold final bubble 1 s. Captions are separate, never rewrite events.csv.
+  Build review manifests in isolated out/coin-trail workspaces; long data/music remain intact. Send concrete review
+  and wait for user approval BEFORE any still/video render; record exact contentHash using line/approve.js only after
+  approval. Then layout still, short motion preview, wait for preview approval before full requested Short. Native
+  long-film strongest-flash verify is not sufficient: test all collision times, isolated SFX, AAC sync/peak and decoded
+  frames. Archive artifacts/QA and use authorized Drive fallback. Legacy instructions below remain for candle Shorts.
 - Shorts 9:16 (PROJECT.md §12, `shorts.md`): `SHORT=<phase> node make-data.js`, one phase per short, 20–45 s in 4-bar
   blocks, no axes, 2-row header, all event levels but NOT the opening turn label (downtrend: no ATH, uptrend: no ATL), loops by
   running on into the first candle (no zoom-out). Preview 480p 60 fps with at least one loop seam inside (play it twice,

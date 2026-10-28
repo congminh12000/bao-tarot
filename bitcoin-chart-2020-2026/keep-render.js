@@ -29,6 +29,11 @@ function fingerprint() {
   const h = crypto.createHash('sha256'), parts = {};
   const add = (label, buf) => { const d = crypto.createHash('sha256').update(buf).digest('hex').slice(0, 12); parts[label] = d; h.update(label + d); };
   for (const f of ['btc-data.js', 'score.js', 'film.js', 'look.js', 'index.html']) add(f, fs.readFileSync(path.join(ROOT, f)));
+  if (fs.existsSync(path.join(ROOT, 'manifest.json'))) {
+    for (const f of ['manifest.json', 'manifest.js', 'line-core.js']) add(f, fs.readFileSync(path.join(ROOT, f)));
+    const p = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifest.json'), 'utf8'));
+    add('coin logo', fs.readFileSync(path.join(ROOT, p.coin.logo)));
+  }
   for (const f of [...files(path.join(ROOT, 'engine', 'video')), ...files(path.join(ROOT, 'assets'))]) add(path.relative(ROOT, f), fs.readFileSync(f));
   const LIB = require('./data/music');
   add('cue tempos + TURN', JSON.stringify({ cues: LIB.CUES.map((c) => [c.id, c.phase, c.bpm, c.rotation !== false]), turn: LIB.TURN }));

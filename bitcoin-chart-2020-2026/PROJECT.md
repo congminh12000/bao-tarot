@@ -603,7 +603,7 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
 
 ## 12. Shorts 9:16 — TikTok, Reels, YouTube Shorts (đã duyệt 26/10/2026)
 
-Đặc tả đầy đủ và lệnh: **`shorts.md`**. Tóm tắt:
+Đặc tả đầy đủ và lệnh: **`shorts.md`**. Các quy tắc dưới đây áp dụng Shorts nến cũ; Coin Trail opt-in `SHORT_STYLE=line` xem §17 / shorts.md §8. Tóm tắt:
 
 - **1 short = 1 phase** (`SHORT=<số phase> node make-data.js`), cùng dữ liệu và bài nhạc như video dài; 20–45 s, bội số
   4 ô nhịp, tempo cố định. Không fade-in, không lấy đà, nhạc vào thẳng phần đầy đủ nhất.
@@ -696,3 +696,40 @@ Không viết sự kiện, ngày hay con số từ trí nhớ hoặc suy đoán.
 - Đợt XRP này chỉ loại mức 0: bản phát hành rippled/Clio, maintenance/fix, nâng cấp nhỏ, migration kỹ thuật và báo cáo
   lặp lại sự cố đã lưu. Giữ sự cố bảo mật gốc và mọi mức 1/2. Các thông báo đối tác khác nhau không mặc nhiên là trùng.
 - Kiểm tra parser: `npm run test:events`; sinh lại bằng `COIN=XRP node make-data.js --strict` sau khi đổi cờ.
+
+
+## 17. Coin Trail — Shorts line và bubble (thiết kế duyệt 28/10/2026)
+
+Người dùng yêu cầu triển khai kế hoạch Coin Trail: `SHORT_STYLE=line` dùng chung dữ liệu long,
+nhưng line curve màu primary có glow, logo tròn dẫn đầu, camera follow không xoay. Không nến,
+trục/lưới, logo nền hay callout long. Quy tắc/lệnh đầy đủ: **shorts.md §8**.
+
+- Chỉ chế độ line thay thế quy tắc Shorts nến §12: nhiều phase liên tiếp, cắt giữa phase được;
+  không bỏ turn đầu, không nối vòng giả. Giá close + high/low thật tại ATH/ATL của long;
+  đường không overshoot, tiếp tuyến ±45° nhờ giãn ngang. Local price dips/rallies được giữ.
+- Giữ phân mức/cờ remove/nguồn đã duyệt: BTC 1/2, altcoin 0/1/2. Mọi bubble đều có SFX/VFX
+  theo mức; nội tại/đặc biệt dùng màu và âm riêng. Đây là ngoại lệ cho line đối với §3/§14.
+  Nội dung tiếng Anh trong bubble là caption riêng, không sửa nhãn nghiên cứu gốc.
+- Bubble cùng ngày riêng biệt, turn → special → 2/1/0; đoạn trình bày ngang cùng giá/ngày,
+  không bịa giờ giao dịch. Va chạm, HUD, phase/cue và SFX dùng chung timeline tính trước.
+  Giá/ngày HUD đứng yên giữa các lần chạm; ngày turn dùng high/low cho các bubble cùng ngày.
+- 9:16 1080×1920, 60 fps; preview 480×854. Mặc định 45 s, 35–60 s theo ngân sách đọc;
+  nếu dày tự chia phần, không bỏ mục. Kết tại bubble cuối, giữ 1 s. Nhạc native BPM và
+  thứ tự cue đã duyệt của coin; không full-mix gate trước hit, không fold audio tail.
+- Sinh manifest từng phần và workspace tự chứa trong `out/coin-trail/`, không ghi đè root
+  btc-data.js, daily CSV hoặc out/music.wav; không cần restore khi chỉ làm line. Chạy legacy
+  FROM/TO/SHORT vẫn restore như trước. Quy trình §1.2 vẫn bắt buộc: duyệt manifest caption
+  cụ thể **trước mọi render**, rồi ảnh layout → motion preview → duyệt → full Short khi yêu cầu.
+  `line/approve.js` ghi contentHash sau khi người dùng duyệt; sinh lại workspace sẽ hủy bản ghi.
+- Lưu mọi artifact/manifest/QA/fingerprint; giao Drive nếu cloud không đính kèm trực tiếp được.
+  Kiểm tra collision/SFX stems/AAC và frame giải mã, không dùng strongest-flash detector của long
+  để chứng nhận bubble nhỏ. `line/verify.js` chỉ kiểm tra audio/container, không chứng nhận hình.
+
+**Trạng thái triển khai 28/10/2026:** code và manifest DOGE 01/01/2021–11/11/2022 đã tạo,
+18 bubble = 16 sự kiện đang giữ + ATH/ATL, 3 phase/cue, 45 s, FTX tại 44 s rồi hold 1 s.
+Danh sách/caption tại `coins/DOGE/coin-trail-review.md` **chờ người dùng duyệt**; chưa render ảnh/video.
+Kiểm tra không render: nguồn mọi coin đầy đủ liên kết; 7 coin sinh manifest thành công, dense split
+không mất ID; geometry/slope/no-overshoot/contact/HUD/same-day/seek/cue/text logic đạt.
+WAV fixture long và Shorts nến bit-identical với 907574fa. Root btc-data/score/film/index và
+WAV full giữ nguyên hash. Chưa kiểm tra hình thực tế, decoded-frame regression, audio line hoàn chỉnh
+hoặc peak AAC; thực hiện sau duyệt manifest. Không tuyên bố đã nghiệm thu visual/final.
