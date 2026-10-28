@@ -318,6 +318,16 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **DOGE preview — 28/10/2026:** pull đến `3ad7d5c9`, danh sách 92 đã duyệt; giữ nguyên giá/phase/phân mức/remove.
+  Render đoạn 01/01–30/06/2021 (Reddit/Musk/SNL/ATH), 16:9 854×480, 60 fps, 29,00 s / 1.740 frame;
+  8 sự kiện + 1 ATH tự tạo, 2 cue theo phim đầy đủ. Native AV 3/3 ✓, hình 0 frame / tiếng tối đa 3 ms; nhãn không
+  chồng lấn hoặc mờ sớm. AAC −16,0 LUFS / peak −1,3 dBFS / LRA 6,7 LU, đo chứ chưa nghe. Đã xem contact sheet/kết phim.
+  Nguồn 92/92, audit snapshot 234/234 từng 7 coin ✓; không chứng nhận live mới trong lượt preview.
+  Lưu `out/renders/doge-preview-2021-20261028-480p60/`; MP4 `out/doge-preview-2021-20261028-16x9-480p.mp4`.
+  Đã upload và đọc metadata Drive: https://drive.google.com/file/d/11Mk7cu0Gbw9EeZXcFqesjXcc0tpyqFuM/view
+  Khôi phục data/nhạc DOGE đầy đủ (4.700 ngày, 55 sự kiện, 9 phase/cue khác nhau). Chờ duyệt video/logo/màu; chưa final.
+
+
 - **TRX final full dữ liệu — 28/10/2026:** đã render theo lựa chọn 16:9 / Full HD / 60 fps.
   `out/trx-final-20261028-16x9-1080p.mp4`: 1920×1080, 343.666667 s, 20,620 frames, 261,763,331 bytes.
   3,332 nến thật (2017-09-13–2026-10-27), 45 sự kiện + 4 ATH/ATL, 5 cue khác nhau; giữ nguyên danh sách preview.
