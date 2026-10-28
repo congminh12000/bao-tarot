@@ -318,6 +318,22 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- XRP full-data preview (28/10/2026): sau khi xem lại toàn bộ danh sách giữ/loại, người dùng yêu cầu "Render video
+  preview xrp full dữ liệu". Đây là yêu cầu render theo danh sách vừa trình (146 remove giữ nguyên), thay trạng thái
+  chờ duyệt danh sách bên dưới. Chỉ lần này render preview toàn timeline 04/08/2013–27/10/2026 thay vì đoạn ngắn:
+  16:9 480p60, 489,59 s / 29.376 frame; 337 sự kiện + 10 ATH/ATL tự tạo, 11 cue không lặp. Không phải final.
+  Giá/dữ liệu/phase/flag không đổi; nhạc đầy đủ đã có và khớp timeline, tái sử dụng. Render bằng clip 0→DURATION
+  (JPEG/CRF20, preset veryfast có sẵn của engine, 60 fps), giữ đủ mọi frame và kiểm tra sync trước giao file.
+  Đã xuất đủ 29.376 frame, 489,60 s; bản giao 53.109.372 byte (CRF24, cap 1.150 kbit/s, AAC copy), không mất frame.
+  AAC −16,0 LUFS / peak −1,1 dBFS / LRA 4,4 LU. Native AV verify 25/27 đạt; 2 lỗi đo tại COVID/ATL cách 86 ms,
+  đồng thời gate trước hit sau che bớt attack hit trước. Không đổi dữ liệu/nhạc/engine để che lỗi. Đối chiếu độc lập
+  bản giao với WAV/video nguồn tại đoạn này: 0 ms / 0 frame; cần xử lý cách trình bày/mix hai hit sát nhau trước final.
+  Lưu `out/renders/xrp-preview-full-2013-2026-20261028-480p60/`, gồm manifest, báo cáo sync và đối chiếu riêng.
+  Đã upload và đọc lại metadata Drive: https://drive.google.com/file/d/168d2qfa9J5rkzDreRKqOyB_gUbh_n-Fh/view
+  Chờ người dùng xem preview; chưa xuất final.
+
+
+
 - Cập nhật quy trình (28/10/2026, yêu cầu mới nhất): **duyệt danh sách sự kiện trước mọi render** khi research/lọc/sửa
   sự kiện, rồi mới preview và duyệt hình. Research lưu đầy đủ nhưng tự đánh dấu mục lặp `remove=true` (§16).
   Cloud không đính kèm video trực tiếp được thì tự dùng Drive cho cả preview/final (§1.2), thay quy tắc giao file cũ.

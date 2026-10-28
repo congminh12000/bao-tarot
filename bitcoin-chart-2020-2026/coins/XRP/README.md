@@ -1,10 +1,11 @@
-# XRP film — event selection awaiting list approval
+# XRP film — full-history preview ready for review
 
-Current workflow (2026-10-28): the **146 proposed removals await event-list approval before any further render**.
-The previous render is preserved but is not evidence of list approval. Research still keeps all sourced events;
-repetitive entries are marked `remove=true`, with reasons retained for review. List approval precedes preview approval.
-Rules-only updates require no render. Where cloud video attachment is unavailable, previews and finals may be uploaded
-to Google Drive under the user's standing delivery instruction (PROJECT.md §1.2).
+Current request (2026-10-28): after viewing the complete retained/removed event list, the user requested
+**a full-data XRP preview**. This authorizes rendering that selection: 484 research rows retained, 146 removed,
+337 historical events within the price range plus 10 generated turns. No event flags, grades, prices or phases changed.
+The explicit full-history preview request supersedes the usual short preview range for this render only.
+16:9, 854×480, 60 fps, approximately 8:10; this is a low-resolution review copy, not a final render.
+Deliver through Google Drive under the standing cloud delivery instruction (§1.2); await review of the resulting video.
 
 Latest audit 2026-10-28: **484 events (354 / 114 / 16 at levels 0 / 1 / 2)**, all with citations (1,013 source rows).
 353 net additional events; fourteen prior date/wording corrections; automatic grading explicitly requested.
@@ -103,3 +104,27 @@ Full XRP data and music restored. No full render. Preview awaits user review.
 Drive upload was rejected by automatic approval review: prior permission covered the older preview,
 not this changed post-exclusion payload. That rejection is historical; the user subsequently authorized the general
 cloud-to-Drive fallback. The immediate next step remains event-list approval, not another render.
+
+## Full-history preview — 2026-10-28
+
+Requested after the user reviewed the retained/removed list. Full range 2013-08-04–2026-10-27;
+16:9 854×480, 60 fps, 489.60 seconds, all 29,376 frames. 337 historical events plus 10 generated turns;
+146 removed research entries remain excluded. All input hashes stayed unchanged throughout rendering.
+Full data and existing full music were retained; no FROM/TO cut or final render.
+
+Original JPEG/CRF20 engine clip is preserved (112,045,071 bytes). Delivery copy: H.264 CRF24 capped at
+1,150 kbit/s, AAC copied, 53,109,372 bytes; no frame loss. AAC −16.0 LUFS / peak −1.1 dBFS / LRA 4.4 LU.
+Contact sheet visually reviewed; audio assessed by measurement rather than listening.
+
+Native AV verification: **25/27 pass, two fail** around COVID March 12 and ATL March 13 2020, only 86.17 ms apart.
+The peak-window detector selects the adjacent onset/earlier flash. Additionally, the existing song pre-hit gate
+for the next event overlaps the first event's attack; that source mix/presentation issue remains for review before final.
+Independent dense-region checks show the delivered AAC matches the source WAV at **0 ms** (correlation 0.99915),
+and source/delivery video matches at **0 frames**. Do not describe native verification as a full pass.
+No audio timing, event dates, phases, score or engine code was altered to conceal the issue.
+
+Video: `out/xrp-preview-full-2013-2026-20261028-16x9-480p.mp4`.
+Kept video/fingerprint and evidence: `out/renders/xrp-preview-full-2013-2026-20261028-480p60/`.
+Drive uploaded and metadata read back (53,109,372 bytes):
+https://drive.google.com/file/d/168d2qfa9J5rkzDreRKqOyB_gUbh_n-Fh/view?usp=drivesdk
+Awaiting video review; dense-event audio requires attention before a final export.
