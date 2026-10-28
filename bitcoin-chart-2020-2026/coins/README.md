@@ -29,6 +29,8 @@ coins/<SYMBOL>/
 - `special`: màu nhãn sự kiện có `tag` (Bitcoin: halving; ETH: nâng cấp mạng…), mặc định vàng `#FFC93C`.
 - `event-sources.csv` (`date,source,url,text`): tên nguồn + link cho **từng** sự kiện trong `events.csv`; bắt buộc,
   không có nguồn đáng tin thì không thêm sự kiện (PROJECT.md §15).
+- `logoNegative`: ảnh logo mờ ở nền giữa chart (mặc định bản âm bản). Muốn giữ màu gốc thì trỏ tới chính `logo.png`
+  (DOGE dùng cách này theo yêu cầu 28/10/2026).
 - `musicShuffle`: mặc định xáo thứ tự các bài đã duyệt theo mã đồng (cố định giữa các lần chạy). Bitcoin = `false`.
 
 ## Bảng màu đề xuất (glow tech — chờ người dùng duyệt từng đồng khi làm)

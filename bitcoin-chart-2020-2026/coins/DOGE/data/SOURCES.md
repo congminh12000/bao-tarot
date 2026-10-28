@@ -40,5 +40,6 @@ GDOG, House of Doge listing, and other items without a dated, opened source. Lev
 
 Changed on the user's request (2026-10-28): the logo is now the Doge illustration served by the official site
 (https://dogecoin.com/assets/images/doge.svg), saved unchanged as `logo.svg`, rasterised onto a transparent 1024×1024
-`logo.png`; `logo-negative.png` by the documented ffmpeg command. The earlier coin mark from the Dogecoin Core repository
+`logo.png`. On the user's request the yellow `logo.png` is also used behind the chart (`coin.json` "logoNegative" points
+to it), so DOGE keeps its yellow colours instead of the inverted image; `logo-negative.png` stays unused. The earlier coin mark from the Dogecoin Core repository
 (`share/pixmaps/dogecoin256.svg`) is no longer used. Colours: the DOGE row of `coins/README.md` (bronze gold); awaits approval.

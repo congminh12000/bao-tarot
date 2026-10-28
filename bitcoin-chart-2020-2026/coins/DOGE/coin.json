@@ -5,7 +5,7 @@
   "tradingview": "CRYPTO:DOGEUSD",
   "eventsSource": "Dogecoin Core releases / Dogecoin Foundation posts, SEC/court filings, exchange and issuer announcements, major press (CoinDesk, The Block, Decrypt, Reuters, CNBC) cross-checked; shared market events from the verified 99Bitcoins Bitcoin timeline. Per-event links in data/event-sources.csv; limits in data/SOURCES.md; per-source-ID decisions in 99bitcoins-coverage.json.",
   "logo": "coins/DOGE/logo.png",
-  "logoNegative": "coins/DOGE/logo-negative.png",
+  "logoNegative": "coins/DOGE/logo.png",
   "logoGlow": "#C2A633",
   "colors": {
     "accent": "#D9B95A",
