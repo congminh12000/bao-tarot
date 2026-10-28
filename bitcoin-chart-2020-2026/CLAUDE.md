@@ -4,13 +4,22 @@
 In short:
 
 - Reply to the user in **Vietnamese**; all text inside the video is **English**.
-- After every change: render a **short, low-quality preview** (always 60 fps, 16:9, 480p: `FPS=60 … --res 480`, a short
-  FROM/TO range), send it, and
-  **wait for the user's OK** before doing anything else. Never render the full film unless asked.
-- Deliver previews directly in chat; upload only final videos to Google Drive (user request 2026-10-28).
+- When researching or changing event selection/levels/remove flags: send the concrete retained/removed event list
+  (date, label, level, remove flag, removal reason and sources) and **wait for list approval BEFORE ANY video render**,
+  including low-quality previews and Shorts (PROJECT.md §1.2). Do not render ahead while waiting. Research, data saves,
+  validation and requested commits/pushes may proceed to make the list reviewable. Rules/docs-only edits need no render.
+- After any required event-list approval, render a **short, low-quality preview** (always 60 fps, 16:9, 480p), send it,
+  then wait for preview approval. Visual-only edits do not require re-approval of an unchanged approved list, but never
+  bypass a pending list review. Never render a full film unless asked.
+- Deliver videos directly in chat when supported. If cloud cannot attach videos, upload previews AND finals to Google
+  Drive and send a verified link. The user has authorized this fallback, including updated previews within the task;
+  do not ask again merely because the preview payload changed. Never present cloud-local paths as downloadable attachments.
 - `events.csv` has a final `remove` boolean column (PROJECT.md §16). `true` explicitly excludes that row from all video
   formats; `false` applies normal level visibility. Preserve all rows/citations and existing flags during refresh.
-  Source audits include removed rows; new events default false. The no-drop rule applies to non-removed events.
+  Research retains every sourced event, including repetitive ones; proactively mark repetitive routine releases/fixes/
+  minor updates or duplicate follow-up reports remove=true and record why. Other new events default false. Preserve
+  approved decisions; distinct major milestones are not duplicates merely because they share a category. Source audits
+  include removed rows. Present selections for approval before rendering; the no-drop rule applies to non-removed events.
 - Never drop an event label, never let labels overlap each other or cover candles; up labels above, down below,
   right of the candle or centred first, left only when needed (details in PROJECT.md §3).
 - Phases change ONLY at an ALL-TIME HIGH or ALL-TIME LOW (no minor tops/bottoms, no TOP/BOTTOM labels). At a turn the

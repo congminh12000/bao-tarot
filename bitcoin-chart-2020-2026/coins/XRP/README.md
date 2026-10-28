@@ -1,4 +1,10 @@
-# XRP film — data audit updated; preview awaiting approval
+# XRP film — event selection awaiting list approval
+
+Current workflow (2026-10-28): the **146 proposed removals await event-list approval before any further render**.
+The previous render is preserved but is not evidence of list approval. Research still keeps all sourced events;
+repetitive entries are marked `remove=true`, with reasons retained for review. List approval precedes preview approval.
+Rules-only updates require no render. Where cloud video attachment is unavailable, previews and finals may be uploaded
+to Google Drive under the user's standing delivery instruction (PROJECT.md §1.2).
 
 Latest audit 2026-10-28: **484 events (354 / 114 / 16 at levels 0 / 1 / 2)**, all with citations (1,013 source rows).
 353 net additional events; fourteen prior date/wording corrections; automatic grading explicitly requested.
@@ -82,8 +88,8 @@ Mức 0 là nhãn nhỏ/xám không SFX, tham gia chống chồng lấn. Audit v
 Contact sheet visually inspected. Audio quality assessed by measurement, not listening.
 Kept: `out/renders/xrp-preview-audit-20261028-480p60/`.
 MP4: `out/xrp-preview-audit-20261028-16x9-480p.mp4`. No full render. Full data and full music restored.
-Preview awaits user review. Delivery preference confirmed: previews directly in chat; only finals on Google Drive.
-The local preview is preserved.
+This earlier delivery preference is superseded by PROJECT.md §1.2: use Drive for preview/final delivery when cloud
+cannot attach videos directly. The local preview is preserved.
 
 ## Exclusion preview — 2026-10-28
 
@@ -95,4 +101,5 @@ MP4: `out/xrp-preview-removed-events-20261028-16x9-480p.mp4`.
 Full-history labels pass with 65 early-fade fallbacks (114 before filtering); no overlap.
 Full XRP data and music restored. No full render. Preview awaits user review.
 Drive upload was rejected by automatic approval review: prior permission covered the older preview,
-not this changed post-exclusion payload. New explicit authorization is required before upload.
+not this changed post-exclusion payload. That rejection is historical; the user subsequently authorized the general
+cloud-to-Drive fallback. The immediate next step remains event-list approval, not another render.

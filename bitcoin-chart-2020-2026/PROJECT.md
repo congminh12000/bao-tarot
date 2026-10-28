@@ -26,9 +26,20 @@ git pull --ff-only
 nếu thay đổi local hoặc lịch sử phân kỳ làm pull không an toàn, báo rõ trước khi tiếp tục phần việc phụ thuộc.
 
 1. Người dùng giao tiếp bằng **tiếng Việt** → trả lời bằng tiếng Việt. Chữ hiển thị TRONG video là **tiếng Anh**.
-2. Sau mỗi đợt thay đổi: **render preview chất lượng thấp** (đoạn ngắn, ví dụ 2017–2018 và đoạn có vấn đề),
-   gửi người dùng xem, **chờ duyệt "OK" rồi mới làm tiếp**. Không tự render bản đầy đủ khi chưa được yêu cầu.
-   Gửi **preview trực tiếp trong chat**; **chỉ bản final mới tải lên Google Drive** (yêu cầu 28/10/2026).
+2. **Thay đổi danh sách sự kiện phải duyệt danh sách trước khi render** (cập nhật 28/10/2026): sau research, thêm/sửa,
+   phân mức hoặc đặt `remove`, gửi danh sách giữ/loại để người dùng duyệt, có ngày, nội dung, mức, `remove`, lý do loại
+   và nguồn tra soát. Phải đủ chi tiết từng mục, không chỉ báo tổng số hay tên nhóm. **Chờ người dùng duyệt danh sách
+   rồi mới render bất kỳ video nào**, kể cả preview chất lượng thấp và Shorts; không render sẵn trong lúc chờ.
+   Research, lưu dữ liệu/nguồn, đánh dấu remove, kiểm tra dữ liệu và commit/push được yêu cầu vẫn làm trước để có bản duyệt.
+   Sau khi danh sách được duyệt: render preview ngắn chất lượng thấp, gửi xem, **chờ duyệt preview rồi mới làm tiếp**.
+   Chỉnh hình mà không đổi danh sách đã duyệt thì không cần duyệt lại danh sách; nếu danh sách còn chờ duyệt thì không
+   được bỏ qua bước đó. Duyệt danh sách không đồng nghĩa duyệt hình hoặc yêu cầu render final.
+   Không tự render bản đầy đủ khi chưa được yêu cầu. Chỉ sửa rule/tài liệu thì không cần render.
+   **Giao video:** ưu tiên đính kèm trực tiếp trong chat. **Nếu AI cloud không gửi video trực tiếp được, tự tải lên Google
+   Drive và gửi link**, áp dụng cả preview lẫn final, kể cả các bản preview cập nhật trong công việc đã giao. Đây là
+   ủy quyền sẵn của người dùng, không hỏi lại chỉ vì đổi sang Drive hoặc file preview mới. Xác nhận upload thành công
+   và đọc lại metadata trước khi gửi link; không dùng đường dẫn nội bộ cloud như thể là file đính kèm có thể tải.
+   Quy tắc này thay thế quy tắc cũ "chỉ final lên Drive".
    Preview: **luôn 60 fps**, mặc định 16:9, 480p (854×480): `FPS=60 … --res 480` (lệnh ở §8).
 3. Không nghe được âm thanh → chỉ báo số đo (LUFS, levels), nói rõ là chưa nghe, mời người dùng nghe góp ý.
 4. Commit + push lên branch `claude/bitcoin-price-chart-animation-l7ta0e` sau mỗi thay đổi (repo
@@ -307,6 +318,14 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- Cập nhật quy trình (28/10/2026, yêu cầu mới nhất): **duyệt danh sách sự kiện trước mọi render** khi research/lọc/sửa
+  sự kiện, rồi mới preview và duyệt hình. Research lưu đầy đủ nhưng tự đánh dấu mục lặp `remove=true` (§16).
+  Cloud không đính kèm video trực tiếp được thì tự dùng Drive cho cả preview/final (§1.2), thay quy tắc giao file cũ.
+  **XRP: danh sách 146 mục đã đánh dấu remove vẫn chờ người dùng duyệt từng mục; chưa được coi là đã duyệt chỉ vì đã
+  yêu cầu cột remove hoặc sửa rule.** Bản preview tạo trước yêu cầu này chỉ là bản đã lưu, không thay thế bước duyệt
+  danh sách. Lượt sửa rule này không render, không upload video, không thay dữ liệu/flag hiện có. Commit/push rule vẫn thực hiện.
+
+
 - XRP loại nhãn kỹ thuật lặp (28/10/2026, yêu cầu người dùng): thêm cột `remove` true/false cho events CSV (§16).
   484 dòng nghiên cứu vẫn giữ nguyên, đánh dấu **146 mức 0**: 102 release rippled/Clio, 23 maintenance, 12 nâng cấp nhỏ,
   2 migration kỹ thuật, 7 báo cáo nhắc lại sự cố đã có. Còn 338 dòng được phép hiện (208 / 114 / 16 theo mức 0/1/2),
@@ -315,8 +334,8 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
   không đổi. `remove=true` được lọc trước khi sinh phim dài/preview/Shorts; kiểm tra nguồn vẫn tính mọi dòng, kể cả đã ẩn.
   Nhãn toàn phim ✓, 65 nhãn cũ mờ sớm (trước lọc 114). Preview 2026 dài 45,37 s / 47 sự kiện, 16:9 480p60,
   sync 2/2 ✓, −16,0 LUFS / peak −1,4 dBFS / LRA 4,4 LU. Lưu `out/renders/xrp-preview-removed-events-20261028-480p60/`.
-  Khôi phục data/nhạc đầy đủ; chưa render final. Upload Drive bị automatic approval review chặn vì payload preview mới,
-  cần cho phép riêng bản sau khi loại sự kiện; file local giữ nguyên, chờ người dùng duyệt.
+  Khôi phục data/nhạc đầy đủ; chưa render final. Upload Drive từng bị automatic approval review chặn vì payload preview
+  mới. Người dùng sau đó đã cho phép chung cách giao file qua Drive theo §1.2; trạng thái hiện tại là chờ duyệt danh sách.
 
 
 
@@ -330,7 +349,7 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
   114 nhãn cũ mờ sớm theo fallback đã duyệt. Một sự kiện trước ngày có giá được lưu nhưng không vẽ. Chưa render final.
   Preview 01/01–27/10/2026, 16:9 480p60, 45,37 s, 2 mốc sync ✓, −16,0 LUFS / peak −1,4 dBFS / LRA 4,4 LU;
   lưu `out/renders/xrp-preview-audit-20261028-480p60/`. Dữ liệu/nhạc đầy đủ đã khôi phục. Chờ duyệt preview.
-  Người dùng đã xác định cách giao file: preview gửi trực tiếp trong chat, chỉ final lên Drive. Preview local vẫn giữ.
+  Quy tắc giao file tại thời điểm đó đã được thay thế bởi §1.2: cloud không đính kèm video được thì dùng Drive cho cả preview/final.
 
 
 
@@ -451,7 +470,9 @@ Chi tiết thư mục, `coin.json`, bảng màu: **`coins/README.md`**. Bitcoin 
    (`colors`, `logoGlow`, `special`); chụp ảnh tĩnh cho người dùng duyệt.
 6. **Phase + nhạc**: `COIN=<SYMBOL> node make-data.js && COIN=<SYMBOL> node detect-phases.js && COIN=<SYMBOL> node make-data.js --strict`.
    Nhạc = các bài đã duyệt, thứ tự xáo theo mã đồng; nếu "NOT ENOUGH MUSIC" thì làm thêm bài (§1.8).
-7. **Preview → duyệt → final** như Bitcoin (§1.2, §1.6, §1.7), luôn `COIN=<SYMBOL>`, tên file theo mã đồng.
+7. **Danh sách sự kiện → người dùng duyệt → preview → duyệt → final khi được yêu cầu** (§1.2, §1.6, §1.7).
+   Research đầy đủ, đặt `remove=true` cho mục lặp lại theo §16. Chưa duyệt danh sách thì không render preview.
+   Luôn `COIN=<SYMBOL>`, tên file theo mã đồng.
 8. **YouTube**: `coins/<SYMBOL>/chapter-names.json` + `COIN=<SYMBOL> node youtube-chapters.js`; tiêu đề bắt đầu bằng tên đồng (§1.9).
 9. Commit + push dữ liệu, `coin.json`, logo, chapter names (không commit `out/`).
 
@@ -537,8 +558,16 @@ Không viết sự kiện, ngày hay con số từ trí nhớ hoặc suy đoán.
 - Cờ này ưu tiên trước quy tắc hiển thị §3/§14 và quy tắc không bỏ nhãn: chỉ những sự kiện không bị loại mới bắt buộc
   hiện đủ và tham gia xếp nhãn. Áp dụng thống nhất phim dài, preview, Shorts, nhạc/SFX và chương từ dữ liệu sinh ra.
   ATH/ATL tự tạo vẫn theo dữ liệu giá; không thay phase, tempo hay giá khi loại một sự kiện nghiên cứu.
-- Thu thập mới mặc định `remove=false`. Khi làm mới nguồn phải giữ lựa chọn `remove` đã có, không tự bật lại mục người
-  dùng đã loại. `check-event-sources.js` và audit 99Bitcoins vẫn đối chiếu toàn bộ dòng nghiên cứu, bao gồm `remove=true`.
+- **Research vẫn lưu đầy đủ sự kiện lớn nhỏ, mọi mức 0/1/2 và nguồn**, kể cả sự kiện lặp lại. Khi research/rà soát,
+  **tự đánh dấu `remove=true` cho sự kiện có tính lặp lại** và lưu lý do để người dùng duyệt: release/bảo trì định kỳ,
+  nâng cấp nhỏ lặp lại, bản tin hoặc báo cáo nhắc lại một sự kiện đã có. Không xóa dòng, ngày, phân mức hay nguồn.
+  Mục mới không lặp mặc định `false`. Mức `hit` và cờ `remove` là hai quyết định riêng; không hạ mức để thay cho remove.
+- Không coi mọi ETF, đối tác mới, nâng cấp lớn hoặc sự cố bảo mật riêng biệt là trùng chỉ vì cùng loại. Giữ cột mốc/
+  sự cố gốc; phân biệt thông báo, thực thi và báo cáo tiếp theo. Đợt lọc mới phải trình danh sách cụ thể theo §1.2,
+  chờ duyệt trước khi render; không tự quét lại và ẩn hàng loạt các coin khác trong một yêu cầu chỉ sửa rule.
+- Khi làm mới nguồn phải giữ lựa chọn `remove` đã có và quyết định đã duyệt; không tự bật lại mục người dùng đã loại
+  hoặc đổi lựa chọn người dùng đã xác nhận. `check-event-sources.js` và audit 99Bitcoins vẫn đối chiếu toàn bộ dòng
+  nghiên cứu, bao gồm `remove=true`.
 - Đợt XRP này chỉ loại mức 0: bản phát hành rippled/Clio, maintenance/fix, nâng cấp nhỏ, migration kỹ thuật và báo cáo
   lặp lại sự cố đã lưu. Giữ sự cố bảo mật gốc và mọi mức 1/2. Các thông báo đối tác khác nhau không mặc nhiên là trùng.
 - Kiểm tra parser: `npm run test:events`; sinh lại bằng `COIN=XRP node make-data.js --strict` sau khi đổi cờ.
