@@ -1,4 +1,4 @@
-# Solana film — expanded event list awaiting approval (first list of 42 approved 2026-10-28)
+# Solana film — event list of 63 approved (2026-10-28), no preview yet
 
 Prepared 2026-10-28 following PROJECT.md §11 and the palette in `coins/README.md`.
 

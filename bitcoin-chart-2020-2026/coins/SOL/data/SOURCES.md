@@ -43,7 +43,7 @@ Official logomark from https://solana.com/branding (`solanaLogoMark.svg`), kept 
 onto a transparent 1024×1024 `logo.png`; `logo-negative.png` by the documented ffmpeg command. Colours: the SOL row of
 `coins/README.md` (purple #B57BFF / teal #7EE8FF, glow #9945FF); awaits the user's approval.
 
-## Expansion — 2026-10-28 (21 more events, awaiting approval)
+## Expansion — 2026-10-28 (21 more events, approved by the user)
 
 Each link opened/read on 2026-10-28: The Block (Serum announced 2020-07-27; Tether USDT on Solana 2020-09-09 — the Solana
 Foundation post is dated 09-08; DeGods/y00ts bridge plan published 2022-12-26 for the 12-25 announcement; Robinhood

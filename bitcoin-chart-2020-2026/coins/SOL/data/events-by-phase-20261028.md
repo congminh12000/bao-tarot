@@ -1,4 +1,4 @@
-# SOL — danh sách sự kiện (mở rộng) chờ duyệt
+# SOL — danh sách sự kiện (mở rộng), đã duyệt 28/10/2026
 
 28/10/2026. 63 dòng: **56 hiện** (8 mức 2 / 25 mức 1 / 23 mức 0) + **7 remove=true**. 🆕 = 21 sự kiện mới thêm. Chưa tính ATH/ATL tự tạo.
 
