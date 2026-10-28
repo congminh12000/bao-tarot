@@ -7,7 +7,7 @@ Prepared 2026-10-28 following PROJECT.md §11 and the palette in `coins/README.m
 - Phases: 9 (5 uptrends, 4 downtrends); ATH $0.0023 · $0.0040 · $0.0188 · $0.739, ATL $0.000086 · $0.00065 · $0.0013 ·
   $0.049. Music: 9 distinct approved cues, `--strict` passes; full timeline ≈ 8:00.
 - Label check over the whole film: no overlaps, no early exits; closing still checked by eye.
-- Logo: official Dogecoin Core coin mark. Colours: DOGE row of the palette table, awaiting approval.
+- Logo: the Doge illustration from dogecoin.com (changed on request 2026-10-28). Colours: DOGE row of the palette table, awaiting approval.
 - Event list of 92 approved by the user on 2026-10-28. The preview below is ready; logo, palette and video await review.
 
 ```bash
