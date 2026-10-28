@@ -42,6 +42,7 @@ coins/<SYMBOL>/
 | **DOGE** | vàng đồng `#D9B95A` | `#F4E3A8` | `#1A1408` → `#070502` | `#C2A633` | cyan `#00E5FF` |
 | **XRP** | xám thép `#9FB8D6` | `#E6EEF8` | `#0B1220` → `#03060C` | `#9FB8D6` | vàng `#FFC93C` |
 | **ADA** | xanh hoàng gia `#3D7BFF` | `#9DBBFF` | `#06103A` → `#02040F` | `#0033AD` | vàng `#FFC93C` |
+| **TRX** (đề xuất 28/10/2026) | san hô `#FF7A59` | `#FFD1C2` | `#1E0A0A` → `#080303` | `#EA0029` | cyan `#00E5FF` |
 
 Đồng chưa có trong bảng: đề xuất theo màu thương hiệu của đồng (tông chính → accent, nền tối cùng tông), tránh màu
 quá gần xanh/đỏ của nến; người dùng duyệt.

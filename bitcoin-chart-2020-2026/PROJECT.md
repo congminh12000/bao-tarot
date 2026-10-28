@@ -318,6 +318,13 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- TRX (28/10/2026): tạo `coins/TRX/` theo §11. Giá TradingView `CRYPTO:TRXUSD` 13/09/2017–27/10/2026, 3.332 nến thật,
+  không thiếu ngày; đối chiếu Binance lệch trung vị 0,11 %. 67 dòng sự kiện có nguồn (đã mở/đọc từng link): 37 hiện
+  (6 / 14 / 17 theo mức 2/1/0, người dùng yêu cầu tự phân mức), 30 `remove=true` (tin thị trường chung không liên quan
+  TRX, cùng chính sách nhóm A của XRP). 99Bitcoins 234/234 ID; 5 phase / 5 bài không lặp, `--strict` ✓; nhãn toàn phim ✓,
+  không nhãn rời sớm; ảnh kết phim đã xem, không đè. Logo chính thức TRON Brand Kit; màu đề xuất san hô/đỏ sẫm (chờ duyệt).
+  **Danh sách sự kiện chờ người dùng duyệt → chưa render.** Chi tiết: `coins/TRX/README.md`, `coins/TRX/data/SOURCES.md`.
+
 - **SOL preview full — 28/10/2026:** người dùng yêu cầu toàn dữ liệu sau khi duyệt 63 sự kiện. Render từ `765902d1`,
   giữ 56 sự kiện hiển thị + 8 ATH/ATL, 9 bài không lặp, không đổi dữ liệu/phase/flag. 2020-04-10–2026-10-27.
   File `out/sol-preview-full-20261028-480p.mp4`: 16:9 854×480 60 fps, 282,666667 s / 16.960 khung / 64.050.945 byte.
