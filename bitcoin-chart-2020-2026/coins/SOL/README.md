@@ -11,3 +11,9 @@ Prepared 2026-10-28 following PROJECT.md §11 and the palette in `coins/README.m
 ```bash
 COIN=SOL node make-data.js --strict && COIN=SOL FPS=60 node song.js && COIN=SOL FPS=60 node check-labels.js
 ```
+
+## Stills checked — 2026-10-28
+
+Full HD stills of the full film at 2 s, 141.3 s and 281.5 s (kept locally in `out/stills/sol/`, not committed).
+Known issue, not fixed yet: on the closing zoom-out, the level-2 label "China crypto ban" (2021-05-19) is covered by
+"ALL-TIME LOW: $22" (2021-07-20). `check-labels.js` checks the running film, not the closing zoom-out, so it passes.
