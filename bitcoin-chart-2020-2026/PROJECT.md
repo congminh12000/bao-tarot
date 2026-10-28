@@ -324,7 +324,8 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
   150 mục `remove=true`, giữ 4 mục tên lớn (#121 BBVA custody, #147 Standard Chartered RLUSD, #215 Palisade,
   #216 Mastercard RLUSD pilot). Tổng 484 dòng, 360 remove, **124 hiện** (33 / 75 / 16 theo mức 0/1/2), phase 1 không
   còn sự kiện lịch sử (chỉ ATH/ATL tự tạo). Mức, nguồn, giá, phase không đổi. Nhãn ✓ (11 nhãn cũ mờ sớm), nguồn ✓, audit ✓.
-  **Danh sách đã gửi người dùng kiểm tra lại (`coins/XRP/data/events-by-phase-20261028.md`) → chưa render.**
+  **Người dùng đã duyệt danh sách 124 sự kiện** (`coins/XRP/data/events-by-phase-20261028.md`). Preview 07/2025–02/2026
+  bị dừng theo yêu cầu người dùng trước khi tạo file: **chưa có preview nào cho danh sách này**, chờ người dùng yêu cầu.
   Preview 09/2025–02/2026 chạy xong ngay trước lệnh dừng (danh sách cũ) chỉ lưu ở
   `out/renders/xrp-preview-remove-AEFG-20261028-480p/`, không gửi, không còn đúng danh sách hiện tại.
   Đề xuất từng mục + nguồn: `coins/XRP/data/removal-proposal-20261028.md` / `.json`.
