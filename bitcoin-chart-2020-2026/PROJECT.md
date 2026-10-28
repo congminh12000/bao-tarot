@@ -335,8 +335,8 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
   không thiếu ngày; đối chiếu Coinbase/Binance lệch trung vị 0,02–0,05 %. 42 sự kiện có nguồn (đã mở/đọc từng link):
   35 hiện (8 / 19 / 8 theo mức 2/1/0, người dùng yêu cầu tự phân mức), 7 `remove=true` (tin thị trường chung / tin tiếp
   nối, cùng chính sách nhóm A của XRP). 99Bitcoins 234/234 ID; 9 phase / 9 bài không lặp, `--strict` ✓; nhãn toàn phim ✓,
-  không nhãn rời sớm. Logo chính thức solana.com, màu theo bảng (chờ duyệt). **Danh sách sự kiện chờ người dùng duyệt →
-  chưa render.** Chi tiết: `coins/SOL/README.md`, `coins/SOL/data/SOURCES.md`.
+  không nhãn rời sớm. Logo chính thức solana.com, màu theo bảng (chờ duyệt). **Người dùng đã duyệt danh sách 42 sự kiện
+  (28/10/2026); chưa render preview.** Chi tiết: `coins/SOL/README.md`, `coins/SOL/data/SOURCES.md`.
 
 - XRP lọc thêm (28/10/2026, người dùng duyệt nhóm A, E, F, G rồi B, C, D, H trừ 4 mục): đặt `remove=true` thêm 64 mục — 36 tin thị trường chung
   không liên quan XRP, 21 amendment kỹ thuật tên khó hiểu (mức 1), 4 lỗi phát hiện trước khi kích hoạt, 3 bản phát hành
