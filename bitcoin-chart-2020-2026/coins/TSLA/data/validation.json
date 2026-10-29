@@ -1,0 +1,46 @@
+{
+  "checkedAtUTC": "2026-10-29T09:05:41.180090+00:00",
+  "scope": "Research and code/data validation only. No Tesla layout still or video rendered. No Tesla encoded-audio/visual QA claimed.",
+  "priceSessions": 4109,
+  "closedCalendarSlotsWithoutCandles": 1857,
+  "estimatedOpenSessions": 0,
+  "researchRows": 631,
+  "retained": 171,
+  "removed": 460,
+  "retainedLevels": {
+    "1": 135,
+    "2": 36
+  },
+  "sourceRows": 1280,
+  "IRArchiveEntries": 591,
+  "earningsQuarters": 66,
+  "separateDeliveryReleases": 47,
+  "embeddedDeliveryQuarters": 11,
+  "earlyFinancialContextOnlyQuarters": 8,
+  "verifiedSECReportingPeriods": 66,
+  "generatedTurnLabels": 8,
+  "totalVisibleLabels": 179,
+  "phases": 9,
+  "uniqueCues": 9,
+  "fullScoreSeconds": 542.4644257581542,
+  "checks": {
+    "equityTests": "7 passed",
+    "eventCsvTests": "5 passed",
+    "allAssetSourceLinks": "9 assets, no missing row citations; not a live truth certification",
+    "crypto99Snapshot": "234/234 IDs per crypto reconciled; equity not applicable; no new live 99Bitcoins claim",
+    "cryptoLongAndLegacyShortScore": "Matches pre-equity baseline score at sampled timing/candle/event points",
+    "DOGEFullGeneratedDataset": "Byte-identical to saved pre-task file and HEAD; restored after TSLA research",
+    "pendingReviewBuildGate": "PASS: audit-asset rejects pending concrete-list approval",
+    "syntax": "JS and Python changed entrypoints parsed",
+    "renderQA": "NOT RUN: awaiting concrete event-list approval"
+  },
+  "knownLimits": [
+    "5 OHLC fields on 3 dates differ >0.5% across providers; TradingView retained, discrepancies unresolved",
+    "8 early quarters have no verified uniform standalone delivery series",
+    "Some quarters use multiple issuer-origin documents, not independent newsrooms",
+    "Unknown publication times remain explicitly unknown",
+    "Source selection is curated; not a guarantee of all historical news"
+  ],
+  "review": "pending",
+  "generatedRootState": "Previous full DOGE dataset restored; existing music unchanged"
+}

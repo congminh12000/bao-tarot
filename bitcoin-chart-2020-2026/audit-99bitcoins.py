@@ -37,6 +37,9 @@ def validate(live=False):
         errors.append('No coins found')
     for config_path in configs:
         coin = read_json(config_path)
+        if coin.get('assetClass', 'crypto') != 'crypto':
+            print(f"{coin['symbol']}: not applicable to 99Bitcoins (assetClass={coin['assetClass']}); use equity source/quarter audit")
+            continue
         directory = ROOT / coin.get('dataDir', str(config_path.parent.relative_to(ROOT) / 'data'))
         coverage_path = directory / '99bitcoins-coverage.json'
         if not coverage_path.exists():

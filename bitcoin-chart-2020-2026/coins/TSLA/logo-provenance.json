@@ -1,0 +1,9 @@
+{
+  "url": "https://ir.tesla.com/",
+  "symbolId": "tds-icon-logo-wordmark",
+  "source": "Official Tesla IR SVG symbol",
+  "svg": "logo.svg",
+  "png": "logo.png",
+  "note": "Official wordmark, not a custom T icon. Red on transparent, centered on a square; video palette/appearance awaits user preview approval.",
+  "sha256": "2f7ff2192b6e4c6d7821da5b8707ac5c537df5229d59146dc04abd84fa22738c"
+}

@@ -1,0 +1,464 @@
+[
+  {
+    "quarter": "2010Q2",
+    "expectedPeriodEnd": "2010-06-30",
+    "actualPeriodEnd": "2010-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312510188792/d10q.htm",
+    "sha256": "f00f397a2722906a67d7cb391b5438bca00a9b6749299e05ab76725958ec2178"
+  },
+  {
+    "quarter": "2010Q3",
+    "expectedPeriodEnd": "2010-09-30",
+    "actualPeriodEnd": "2010-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312510259068/d10q.htm",
+    "sha256": "d3fe0c7575983635a2c2d8abd125c3b423e028ad5bb2a7edc87fc4524a93d05a"
+  },
+  {
+    "quarter": "2010Q4",
+    "expectedPeriodEnd": "2010-12-31",
+    "actualPeriodEnd": "2010-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312511054847/d10k.htm",
+    "sha256": "36d5436afe1388c6e49ac1f2c0a15a5ab4b2d19d9302f5e8a5632ce9a1bafd07"
+  },
+  {
+    "quarter": "2011Q1",
+    "expectedPeriodEnd": "2011-03-31",
+    "actualPeriodEnd": "2011-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312511139677/d10q.htm",
+    "sha256": "2f473cb9bbc6cb70a1348757c8505b24b36ebb9d46caa062b451b919107b6baa"
+  },
+  {
+    "quarter": "2011Q2",
+    "expectedPeriodEnd": "2011-06-30",
+    "actualPeriodEnd": "2011-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312511221497/d10q.htm",
+    "sha256": "e8c9ae3c6a17847d9e9d3d138738df883292c1ec97cb88efacf4691fb7a98ad5"
+  },
+  {
+    "quarter": "2011Q3",
+    "expectedPeriodEnd": "2011-09-30",
+    "actualPeriodEnd": "2011-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312511308489/d226201d10q.htm",
+    "sha256": "604b619a2843eec4a3a8036106e5621bd8629ca9b81b044d562abc7b644b4a2e"
+  },
+  {
+    "quarter": "2011Q4",
+    "expectedPeriodEnd": "2011-12-31",
+    "actualPeriodEnd": "2011-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312512081990/d279413d10k.htm",
+    "sha256": "23f62c797a0716486a62159d8d087f6ec3259c7eeef43fd3b11d5d1c4f1b513b"
+  },
+  {
+    "quarter": "2012Q1",
+    "expectedPeriodEnd": "2012-03-31",
+    "actualPeriodEnd": "2012-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312512225825/d325967d10q.htm",
+    "sha256": "eef98483b2b8e16f52885529856dff3954693d85bede7f80f87e044259ce9cf6"
+  },
+  {
+    "quarter": "2012Q2",
+    "expectedPeriodEnd": "2012-06-30",
+    "actualPeriodEnd": "2012-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312512332138/d364775d10q.htm",
+    "sha256": "37573671836d2d9dc3c939d95d1311c4db6894cddc38e96fc733c67280f8ab1d"
+  },
+  {
+    "quarter": "2012Q3",
+    "expectedPeriodEnd": "2012-09-30",
+    "actualPeriodEnd": "2012-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312512457610/d410318d10q.htm",
+    "sha256": "c9b02e419c113d9ef1a9e0c1dd96edad601392e4a7b5c6e51514c29590c81709"
+  },
+  {
+    "quarter": "2012Q4",
+    "expectedPeriodEnd": "2012-12-31",
+    "actualPeriodEnd": "2012-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312513096241/d452995d10k.htm",
+    "sha256": "d8b7f76f414e35ba2cebcae5d90c1ba63365051e92a8227227539e430f27c4c1"
+  },
+  {
+    "quarter": "2013Q1",
+    "expectedPeriodEnd": "2013-03-31",
+    "actualPeriodEnd": "2013-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312513212354/d511008d10q.htm",
+    "sha256": "d9351c6f74971917ed9494295c02c4eee3678204d54f568007614f3d7d0734fe"
+  },
+  {
+    "quarter": "2013Q2",
+    "expectedPeriodEnd": "2013-06-30",
+    "actualPeriodEnd": "2013-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312513327916/d549636d10q.htm",
+    "sha256": "2e386f5911e374fa9cc7739e6123d3e4e43c67266d640abdf254250bbb79d0e6"
+  },
+  {
+    "quarter": "2013Q3",
+    "expectedPeriodEnd": "2013-09-30",
+    "actualPeriodEnd": "2013-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312513435480/d588506d10q.htm",
+    "sha256": "cb3ac797c0348a1de2059b55131c30e1d518aced69af4d85422cc1f5438a4b0e"
+  },
+  {
+    "quarter": "2013Q4",
+    "expectedPeriodEnd": "2013-12-31",
+    "actualPeriodEnd": "2013-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312514069681/d668062d10k.htm",
+    "sha256": "aa292cf2462a3c59ac359e3a3e14d4a285ead36221334042091b00608bf2f43a"
+  },
+  {
+    "quarter": "2014Q1",
+    "expectedPeriodEnd": "2014-03-31",
+    "actualPeriodEnd": "2014-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312514192606/d715897d10q.htm",
+    "sha256": "75e86e41f41aae153e7f32299c9180fb34e76dd4626a40e496b35a722f24800c"
+  },
+  {
+    "quarter": "2014Q2",
+    "expectedPeriodEnd": "2014-06-30",
+    "actualPeriodEnd": "2014-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312514303175/d766922d10q.htm",
+    "sha256": "81d31703a6df7e41ec0ee9a0aa9d060fd6d70b78f28c63d71c95258479cde6b0"
+  },
+  {
+    "quarter": "2014Q3",
+    "expectedPeriodEnd": "2014-09-30",
+    "actualPeriodEnd": "2014-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312514403635/d812482d10q.htm",
+    "sha256": "e2880b956b1ce5eba3f5ef996adff86b5c3a02770eda2774dc19df87e468ce3f"
+  },
+  {
+    "quarter": "2014Q4",
+    "expectedPeriodEnd": "2014-12-31",
+    "actualPeriodEnd": "2014-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459015001031/tsla-10k_20141231.htm",
+    "sha256": "ce7f373ed0b3ae34804c978e513be5b0a019eaa69b57a669a1e50adf6d2dad01"
+  },
+  {
+    "quarter": "2015Q1",
+    "expectedPeriodEnd": "2015-03-31",
+    "actualPeriodEnd": "2015-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459015003789/tsla-10q_20150331.htm",
+    "sha256": "0f8df4e8b70c99e06ce1c102adcf0cb6e3fdc2f78583d1259d9c8aa451fec6cf"
+  },
+  {
+    "quarter": "2015Q2",
+    "expectedPeriodEnd": "2015-06-30",
+    "actualPeriodEnd": "2015-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459015006666/tsla-10q_20150630.htm",
+    "sha256": "ef672bb86ffa05ab81a6098565585360e97bb96276af298a55b549b7a8e93436"
+  },
+  {
+    "quarter": "2015Q3",
+    "expectedPeriodEnd": "2015-09-30",
+    "actualPeriodEnd": "2015-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459015009741/tsla-10q_20150930.htm",
+    "sha256": "64bfde33686b980d078fe6689df3fb239bed89e3de4c3a0f0554a6c83576f301"
+  },
+  {
+    "quarter": "2015Q4",
+    "expectedPeriodEnd": "2015-12-31",
+    "actualPeriodEnd": "2015-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459016013195/tsla-10k_20151231.htm",
+    "sha256": "77c67176c6ee95060fcd85914280af9e458d0f2206f3dbb7583ace880aa0250a"
+  },
+  {
+    "quarter": "2016Q1",
+    "expectedPeriodEnd": "2016-03-31",
+    "actualPeriodEnd": "2016-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459016018886/tsla-10q_20160331.htm",
+    "sha256": "88ded1d6647511b3ec1941cee9407db9d5e778a74342b6deb844eee241367bb8"
+  },
+  {
+    "quarter": "2016Q2",
+    "expectedPeriodEnd": "2016-06-30",
+    "actualPeriodEnd": "2016-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459016023024/tsla-10q_20160630.htm",
+    "sha256": "42bc44379abfa0d312a08e7dae5beb65a9d72a514ef1a59be12c9e794dd91b8e"
+  },
+  {
+    "quarter": "2016Q3",
+    "expectedPeriodEnd": "2016-09-30",
+    "actualPeriodEnd": "2016-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459016026820/tsla-10q_20160930.htm",
+    "sha256": "d3d277e1243e2326dad5778bd8e41c2f03a3a67d7117983cc257a1bae6086ce7"
+  },
+  {
+    "quarter": "2016Q4",
+    "expectedPeriodEnd": "2016-12-31",
+    "actualPeriodEnd": "2016-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459017003118/tsla-10k_20161231.htm",
+    "sha256": "8d8d2c2133c1d94be694df56753b91ecab095863617c581cd0cf13f4101f6d74"
+  },
+  {
+    "quarter": "2017Q1",
+    "expectedPeriodEnd": "2017-03-31",
+    "actualPeriodEnd": "2017-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459017009968/tsla-10q_20170331.htm",
+    "sha256": "e942b1704fc34d3e9985b6a45d2af386936869295be55df9669e864bb88c67b9"
+  },
+  {
+    "quarter": "2017Q2",
+    "expectedPeriodEnd": "2017-06-30",
+    "actualPeriodEnd": "2017-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459017015705/tsla-10q_20170630.htm",
+    "sha256": "f0726283248a569197eb3165627334aa283f4a93c51a2aad383a56c655e624af"
+  },
+  {
+    "quarter": "2017Q3",
+    "expectedPeriodEnd": "2017-09-30",
+    "actualPeriodEnd": "2017-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459017021343/tsla-10q_20170930.htm",
+    "sha256": "4e6541421e39df0d082aae7ca020ea1e54a94e69b11383d2cf4cc6f8920de3dc"
+  },
+  {
+    "quarter": "2017Q4",
+    "expectedPeriodEnd": "2017-12-31",
+    "actualPeriodEnd": "2017-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459018002956/tsla-10k_20171231.htm",
+    "sha256": "f2c4ec3090d5dd40d67d331117fd76dae695c112ef8a2c0bea2d84668987e2c0"
+  },
+  {
+    "quarter": "2018Q1",
+    "expectedPeriodEnd": "2018-03-31",
+    "actualPeriodEnd": "2018-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459018011086/tsla-10q_20180331.htm",
+    "sha256": "26b565d39cbb3855120861973ee029eb6a4385b67c390d6e4ff8b309e5ebe144"
+  },
+  {
+    "quarter": "2018Q2",
+    "expectedPeriodEnd": "2018-06-30",
+    "actualPeriodEnd": "2018-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459018019254/tsla-10q_20180630.htm",
+    "sha256": "ca61c06dc4bd404ebee6bebfcb76ccd4329dc58d7e9215ed6fa8286a4183e7a7"
+  },
+  {
+    "quarter": "2018Q3",
+    "expectedPeriodEnd": "2018-09-30",
+    "actualPeriodEnd": "2018-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459018026353/tsla-10q_20180930.htm",
+    "sha256": "74cde71a7a3c276e60e14f0db022c949c1280745edfe1636b7ac80c1c02bc5b7"
+  },
+  {
+    "quarter": "2018Q4",
+    "expectedPeriodEnd": "2018-12-31",
+    "actualPeriodEnd": "2018-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459019003165/tsla-10k_20181231.htm",
+    "sha256": "f07c28f96a95936c619f0f26913b3d45e3aaf1c23166a2b65b373b3e79e42306"
+  },
+  {
+    "quarter": "2019Q1",
+    "expectedPeriodEnd": "2019-03-31",
+    "actualPeriodEnd": "2019-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459019013462/tsla-10q_20190331.htm",
+    "sha256": "8a518fdeeec3b477df6f6fa45657069f93577bd44f699fd0cd85f8e6a8c20cf8"
+  },
+  {
+    "quarter": "2019Q2",
+    "expectedPeriodEnd": "2019-06-30",
+    "actualPeriodEnd": "2019-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459019026445/tsla-10q_20190630.htm",
+    "sha256": "f0fbfa76485fca0a48f7e30f3ecd5cda31e776be88467c8cb69665124afb7a75"
+  },
+  {
+    "quarter": "2019Q3",
+    "expectedPeriodEnd": "2019-09-30",
+    "actualPeriodEnd": "2019-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459019038256/tsla-10q_20190930.htm",
+    "sha256": "933149f172a62333ab2fdbca26536e973ed55607c34b872b1fdce704b5c9f670"
+  },
+  {
+    "quarter": "2019Q4",
+    "expectedPeriodEnd": "2019-12-31",
+    "actualPeriodEnd": "2019-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459020004475/tsla-10k_20191231.htm",
+    "sha256": "5d1c2ecc250395e117a43bb9d3d54fa7f42c03cbf6e3d9d52aba44abbac4f237"
+  },
+  {
+    "quarter": "2020Q1",
+    "expectedPeriodEnd": "2020-03-31",
+    "actualPeriodEnd": "2020-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459020019931/tsla-10q_20200331.htm",
+    "sha256": "a6fccc1bb3271cfd67e83fb5fb47dc32a1b40a2b244c8c8eb221e90037002717"
+  },
+  {
+    "quarter": "2020Q2",
+    "expectedPeriodEnd": "2020-06-30",
+    "actualPeriodEnd": "2020-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459020033670/tsla-10q_20200630.htm",
+    "sha256": "e303ba538cd1654ea17bd14ada879e9d734b25a493009b7b98f1c1e89fafe507"
+  },
+  {
+    "quarter": "2020Q3",
+    "expectedPeriodEnd": "2020-09-30",
+    "actualPeriodEnd": "2020-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459020047486/tsla-10q_20200930.htm",
+    "sha256": "3730d2b1bc6f589d6a6279bca8519e65c0d6ef24830a4e067c8e99c59f132f12"
+  },
+  {
+    "quarter": "2020Q4",
+    "expectedPeriodEnd": "2020-12-31",
+    "actualPeriodEnd": "2020-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm",
+    "sha256": "d4cb40aa599889a46ba407f5dbd28b3c95084408f6f093168463745c830143d1"
+  },
+  {
+    "quarter": "2021Q1",
+    "expectedPeriodEnd": "2021-03-31",
+    "actualPeriodEnd": "2021-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017021000046/tsla-20210331.htm",
+    "sha256": "e7ecfe3ab545922b775fcadae16e20ce17d4627d5a40bfde5f8d98b1a261e40d"
+  },
+  {
+    "quarter": "2021Q2",
+    "expectedPeriodEnd": "2021-06-30",
+    "actualPeriodEnd": "2021-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017021000524/tsla-20210630.htm",
+    "sha256": "01db5bc7b15effe0b686ce9bf0b7d7d30abc78fefe25391e1ce298a923ed7e9d"
+  },
+  {
+    "quarter": "2021Q3",
+    "expectedPeriodEnd": "2021-09-30",
+    "actualPeriodEnd": "2021-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017021002253/tsla-20210930.htm",
+    "sha256": "ddc978f2e25f33e05abae868fa52b0cf518fca8bb29cc7bdce3cbe637e661705"
+  },
+  {
+    "quarter": "2021Q4",
+    "expectedPeriodEnd": "2021-12-31",
+    "actualPeriodEnd": "2021-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022000796/tsla-20211231.htm",
+    "sha256": "72dc6305abb0da8cc64633341317ce8b1df4aed4f8a061640e0a15efb0b21859"
+  },
+  {
+    "quarter": "2022Q1",
+    "expectedPeriodEnd": "2022-03-31",
+    "actualPeriodEnd": "2022-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022006034/tsla-20220331.htm",
+    "sha256": "4e97154000842601f2f15638ec81caaabc94ad78983ac031683815423c94d28b"
+  },
+  {
+    "quarter": "2022Q2",
+    "expectedPeriodEnd": "2022-06-30",
+    "actualPeriodEnd": "2022-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022012936/tsla-20220630.htm",
+    "sha256": "c81a4dd3907a3ab64ae2992e3be7365138a7401a3a9c5d839def4553e01d1d9a"
+  },
+  {
+    "quarter": "2022Q3",
+    "expectedPeriodEnd": "2022-09-30",
+    "actualPeriodEnd": "2022-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm",
+    "sha256": "286cd0e8832f0fed4cb75d82dadf077d865c1f53f5b3a13b9d7b9f9afc02479d"
+  },
+  {
+    "quarter": "2022Q4",
+    "expectedPeriodEnd": "2022-12-31",
+    "actualPeriodEnd": "2022-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm",
+    "sha256": "509e7894a3e11e5e1ea6fe5fbb0f5a1eee340fd57af9beeb5d02d5aca2fa52c3"
+  },
+  {
+    "quarter": "2023Q1",
+    "expectedPeriodEnd": "2023-03-31",
+    "actualPeriodEnd": "2023-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023013890/tsla-20230331.htm",
+    "sha256": "1350b55ed17624817cd6f78e7520956b2ac2f3d1fa612675455f050036b267a4"
+  },
+  {
+    "quarter": "2023Q2",
+    "expectedPeriodEnd": "2023-06-30",
+    "actualPeriodEnd": "2023-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023033872/tsla-20230630.htm",
+    "sha256": "8e8ef5f2e1b0698059a3b5275fd6b85b2bab143295be82e4db858739484ef44d"
+  },
+  {
+    "quarter": "2023Q3",
+    "expectedPeriodEnd": "2023-09-30",
+    "actualPeriodEnd": "2023-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828023034847/tsla-20230930.htm",
+    "sha256": "5c7c99c254caa537b84e952c195d0b6b390753763e62af573fed62d0eb324b51"
+  },
+  {
+    "quarter": "2023Q4",
+    "expectedPeriodEnd": "2023-12-31",
+    "actualPeriodEnd": "2023-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm",
+    "sha256": "f67090374480277bcb34ccfc2806132ebb52838f2c81aba0693482851682a98e"
+  },
+  {
+    "quarter": "2024Q1",
+    "expectedPeriodEnd": "2024-03-31",
+    "actualPeriodEnd": "2024-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024017503/tsla-20240331.htm",
+    "sha256": "bafa988673880fa5b165484d73191890bf6e4d3c049d0240cd89557c7885ad5c"
+  },
+  {
+    "quarter": "2024Q2",
+    "expectedPeriodEnd": "2024-06-30",
+    "actualPeriodEnd": "2024-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024032662/tsla-20240630.htm",
+    "sha256": "55f114b162670d92f764e03109e0f6b43e42be6ee8cbafc9a32fb8e973948eb8"
+  },
+  {
+    "quarter": "2024Q3",
+    "expectedPeriodEnd": "2024-09-30",
+    "actualPeriodEnd": "2024-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm",
+    "sha256": "cc8328b8655da05253e25edaa334a7613056a43937a76ffff932b0c733780cd5"
+  },
+  {
+    "quarter": "2024Q4",
+    "expectedPeriodEnd": "2024-12-31",
+    "actualPeriodEnd": "2024-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm",
+    "sha256": "3ffc88e001fcbde894ec546c8185126a386d8ead1bc28834fb54aa07eda0a8a9"
+  },
+  {
+    "quarter": "2025Q1",
+    "expectedPeriodEnd": "2025-03-31",
+    "actualPeriodEnd": "2025-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025018911/tsla-20250331.htm",
+    "sha256": "9cdb5e81b0e7b9673852c38fa22bdb3e67c94cbb1fc6b58bc5f173f12d8265da"
+  },
+  {
+    "quarter": "2025Q2",
+    "expectedPeriodEnd": "2025-06-30",
+    "actualPeriodEnd": "2025-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025035806/tsla-20250630.htm",
+    "sha256": "fc5b249bb21353c31704cc5f453b7a697611c99ac55b4ee3b1d2e38d61e5fc62"
+  },
+  {
+    "quarter": "2025Q3",
+    "expectedPeriodEnd": "2025-09-30",
+    "actualPeriodEnd": "2025-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm",
+    "sha256": "80ef579c7dfeb4a2a552a1131dd1f5ebf043f9f1ae1529768acade2bc8c74ab9"
+  },
+  {
+    "quarter": "2025Q4",
+    "expectedPeriodEnd": "2025-12-31",
+    "actualPeriodEnd": "2025-12-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+    "sha256": "6438db16dae81e053bf7a0f886f7722f0d331b2f1e78bfff1ae3768c1189e36e"
+  },
+  {
+    "quarter": "2026Q1",
+    "expectedPeriodEnd": "2026-03-31",
+    "actualPeriodEnd": "2026-03-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm",
+    "sha256": "dc4bbb0b11ce8fc3c815f03e7799e4ea7585bc624fb684b68ac11238a4239b33"
+  },
+  {
+    "quarter": "2026Q2",
+    "expectedPeriodEnd": "2026-06-30",
+    "actualPeriodEnd": "2026-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+    "sha256": "f6bdfe0e724db91c5ff699e176ac38864af9da45dcf8ca6ff9192ed4cd52e838"
+  },
+  {
+    "quarter": "2026Q3",
+    "expectedPeriodEnd": "2026-09-30",
+    "actualPeriodEnd": "2026-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+    "sha256": "869c1f301f92c879f66cdf7512c318d1502bbad97b13eafa62a84a082d7d62a6"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "quarter": "2013Q1",
+    "badIRTableFiling": "https://www.sec.gov/Archives/edgar/data/1318605/000119312513096241/d452995d10k.htm",
+    "usedFiling": "https://www.sec.gov/Archives/edgar/data/1318605/000119312513212354/d511008d10q.htm",
+    "reason": "Read filing body: IR quarterly row linked a previous-year 10-K; replaced with actual matching-quarter 10-Q from SEC submissions archive."
+  },
+  {
+    "quarter": "2017Q1",
+    "badIRTableFiling": "https://www.sec.gov/Archives/edgar/data/1318605/000156459017003118/tsla-10k_20161231.htm",
+    "usedFiling": "https://www.sec.gov/Archives/edgar/data/1318605/000156459017009968/tsla-10q_20170331.htm",
+    "reason": "Read filing body: IR quarterly row linked a previous-year 10-K; replaced with actual matching-quarter 10-Q from SEC submissions archive."
+  }
+]

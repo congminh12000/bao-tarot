@@ -28,19 +28,30 @@
   const WIDE = W / H > 1.2;
 
   const DAYS = BTC.days; // [open, high, low, close]
+  const EQUITY = BTC.coin?.assetClass === 'equity';
+  if (node && EQUITY && /[\\/]engine[\\/]render\.js$/.test(process.argv[1] || '')) {
+    if (BTC.eventReview?.status !== 'approved')
+      throw new Error('Equity event list review pending: obtain user approval before ANY render (PROJECT.md equity policy)');
+    const path = require('path');
+    const config = require(`./coins/${BTC.coin.symbol}/coin.json`);
+    const liveReview = require('./equity').reviewState(path.join(__dirname, config.dataDir || `coins/${BTC.coin.symbol}/data`));
+    if (liveReview.status !== 'approved' || liveReview.eventHash !== BTC.eventReview.eventHash)
+      throw new Error('Equity event list review pending: source changed after generated data; review and rebuild first');
+  }
   const NDAYS = DAYS.length;
   const P0 = BTC.pre || 0;
   const LOOPLEN = NDAYS - P0, LOOPK = SHORT ? DAYS[P0][0] / DAYS[NDAYS - 1][3] : 1; // SHORT: day i ≡ day i + LOOPLEN × LOOPK
   if (SHORT) for (let i = P0 - 1; i >= 0; i--) DAYS[i] = DAYS[i + LOOPLEN].map((v) => v * LOOPK); // (a phase shorter than the pre-run wraps again) // day P0 = the first day of the film; the days before it are the pre-run under the title
   const START = Date.parse(BTC.start + 'T00:00:00Z');
   const dayOf = (s) => Math.round((Date.parse(s + 'T00:00:00Z') - START) / 86400000);
+  const eventDay = (e) => dayOf(e.anchorDate || e.date);
   const dateOf = (d) => new Date(START + Math.floor(d) * 86400000);
   const yearAt = (d) => dateOf(U.clamp(d, 0, NDAYS - 1)).getUTCFullYear();
 
   // ---------- the mood around each hit-2 event (a creeping shake into a crash, a glow into a rally) ----------
   // hit 1 events have no effect at all: their label just appears
   const MOODS = BTC.events.filter((e) => e.hit === 2 && (e.kind === 'up' || e.kind === 'down')).map((e) => (
-    { day: dayOf(e.date), up: e.kind === 'up', w: 1, before: 45, after: 6 }
+    { day: eventDay(e), up: e.kind === 'up', w: 1, before: 45, after: 6 }
   )).filter((e) => e.day >= (SHORT ? P0 + 1 : 0) && e.day < NDAYS); // (a short: not the turn it opens on)
   const smooth = (x) => x * x * (3 - 2 * x);
   function moodAt(d) {
@@ -92,6 +103,7 @@
   // every turn between two phases (an ALL-TIME HIGH or an ALL-TIME LOW, detect-phases.js) is a hit-2 event: the
   // "ALL-TIME HIGH / LOW" event the data has on that day, or one made here. The turn starts the moment its label appears.
   const kfmt = (v) => { // $0.08, $32, $1.2K, $19.8K, $109K, $41M (same as the event text, make-data.js)
+    if (EQUITY) return '$' + (v >= 1 ? v.toFixed(2) : +v.toPrecision(4));
     const [d, u] = v >= 1e6 ? [1e6, 'M'] : v >= 1e3 ? [1e3, 'K'] : [1, ''];
     const x = v / d, r = x >= 100 || !u ? Math.round(x) : Math.round(x * 10) / 10;
     return v < 1 ? `$${+v.toPrecision(2)}` : `$${r}${u}`;
@@ -113,14 +125,14 @@
     if (i === 0) return;
     const top = p.type === 'downtrend', d = p.d0; // a downtrend starts at an all-time high, an uptrend at an all-time low
     // the phase starts ON the turn's day, so its label (and the brake) falls inside the new phase's music
-    const name = top ? 'ALL-TIME HIGH' : 'ALL-TIME LOW';
+    const name = top ? 'ALL-TIME HIGH' : EQUITY && DAYS[d][2] > Math.min(BTC.historicalLowBeforeStart ?? Infinity, ...DAYS.slice(0, d + 1).map((r) => r[2])) + 1e-9 ? 'CYCLE LOW' : 'ALL-TIME LOW';
     const own = EVSRC.find((e) => dayOf(e.date) === d && e.kind === (top ? 'up' : 'down') && e.text.toUpperCase().startsWith(name));
     if (own) { own.hit = 2; own.turn = i; return; }
     const price = top ? DAYS[d][1] : DAYS[d][2];
     EVSRC.push({ date: iso(d), kind: top ? 'up' : 'down', hit: 2, text: `${name}: ${kfmt(price)}`, turn: i });
   });
   EVSRC.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
-  const hitEv = EVSRC.filter((e) => e.hit > 0 && !e.pre).map((e) => ({ ...e, day: dayOf(e.date) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
+  const hitEv = EVSRC.filter((e) => e.hit > 0 && !e.pre).map((e) => ({ ...e, day: eventDay(e) })).filter((e) => e.day >= 0 && e.day < NDAYS).sort((a, b) => a.day - b.day);
   // knots (beat, day): only the phase starts — inside a phase the chart runs at one steady pace right up to the
   // turn (events are NOT pinned to beats: pinning bent the pace and the chart seemed to brake before a top)
   const KN = PH.map((p) => [p.q0, p.d0]);
@@ -197,6 +209,7 @@
     return cl;
   }
   function candleAt(i, t) {
+    if (BTC.sessions && BTC.sessions[i] !== '1') return null;
     const D = dayAt(t);
     if (i > D) return null;
     const c = DAYS[i];
@@ -210,12 +223,12 @@
     const D = dayAt(t);
     if (D < 0) return DAYS[0][0];
     if (D >= NDAYS) return DAYS[NDAYS - 1][3];
-    return candleAt(Math.floor(D), t).c;
+    return candleAt(Math.floor(D), t)?.c ?? DAYS[Math.floor(D)][3];
   }
 
   // ---------- events ----------
   const EVENTS = EVSRC.map((e) => {
-    const d = dayOf(e.date);
+    const d = eventDay(e);
     if (d < 0 || d >= NDAYS) return null;
 
     const c = DAYS[d];
@@ -257,7 +270,7 @@
     FPS, FORMAT, W, H, SAFE, WIDE, DURATION, clock, T, BEAT, S, m, chords, chordAt, ev, markers,
     CH, DAYS, NDAYS, P0, REAL: BTC.real, dayAt, timeOfDay, candleAt, priceAt, dateOf, dayOf, EVENTS, hits, bigs,
     inBreath, breaths, moodAt, MOODS, PHASES: PH, BEATS, FIRST_BEAT, END_BEAT, FIRST_BAR, END_BAR, TB, LIB,
-    SHORT, LOOPLEN, LOOPK,
+    SHORT, LOOPLEN, LOOPK, ...(EQUITY ? { TRADING: BTC.sessions } : {}),
   };
   if (node) module.exports = SCORE; else globalThis.SCORE = SCORE;
 })();

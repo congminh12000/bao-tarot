@@ -12,13 +12,15 @@
     "mux": "node engine/render.js mux",
     "check": "node engine/render.js check",
     "verify": "node engine/render.js verify",
-    "build": "python3 audit-99bitcoins.py --live && node check-event-sources.js && node make-data.js --strict && node song.js && node check-labels.js && FPS=60 node engine/render.js video && FPS=60 node engine/render.js mux && FPS=60 node engine/render.js check && FPS=60 node engine/render.js verify && FPS=60 node keep-render.js save final-$(date +%Y%m%d)",
+    "build": "node audit-asset.js && node check-event-sources.js && node make-data.js --strict && node song.js && node check-labels.js && FPS=60 node engine/render.js video && FPS=60 node engine/render.js mux && FPS=60 node engine/render.js check && FPS=60 node engine/render.js verify && FPS=60 node keep-render.js save final-$(date +%Y%m%d)",
     "labels": "node check-labels.js",
     "audit:events": "python3 audit-99bitcoins.py",
     "audit:events:live": "python3 audit-99bitcoins.py --live",
     "audit:sources": "node check-event-sources.js --all",
     "test:line": "SHORT_STYLE=line COIN=DOGE FROM=2021-01-01 TO=2022-11-11 node make-data.js --strict && node line/test.js",
-    "test:line:regression": "node line/regression.js"
+    "test:line:regression": "node line/regression.js",
+    "audit:equity": "node check-equity.js",
+    "test:equity": "COIN=TSLA node make-data.js --strict && COIN=TSLA node --test test-equity.js"
   },
   "devDependencies": {
     "playwright-core": "1.47.2"

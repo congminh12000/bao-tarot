@@ -1,0 +1,13 @@
+{
+  "package": "exchange_calendars",
+  "version": "4.11.2",
+  "requestedExchange": "XNAS",
+  "resolvedCalendar": "XNYS",
+  "from": "2010-06-29",
+  "to": "2027-12-31",
+  "note": "XNAS aliases XNYS US equity holiday/early-close schedule in this package. Validate every actual price date; unexpected closures require calendar refresh.",
+  "officialReferences": [
+    "https://nasdaqtrader.com/Trader.aspx?id=Calendar",
+    "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
+  ]
+}

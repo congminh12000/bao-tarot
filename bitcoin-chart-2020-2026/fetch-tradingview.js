@@ -27,7 +27,12 @@ const bars = new Map();
 let last = -1;
 const day = (sec) => new Date(sec * 1000).toISOString().slice(0, 10);
 function finish() {
-  const rows = [...bars.values()].sort((a, b) => a[0] - b[0]);
+  let rows = [...bars.values()].sort((a, b) => a[0] - b[0]);
+  if (COIN.assetClass === 'equity') {
+    const sessions = require('./equity').readSessions(COIN.dataDir);
+    for (const r of rows) if (!sessions.has(day(r[0]))) throw new Error('Refresh equity exchange calendar before fetching: ' + day(r[0]));
+    rows = rows.filter((r) => Date.parse(sessions.get(day(r[0])).closeUTC) <= Date.now());
+  }
   if (!rows.length) { console.error(`${sym}: no data`); process.exit(1); }
   const first = day(rows[0][0]), end = day(rows[rows.length - 1][0]);
   console.log(`${sym}: ${rows.length} daily candles ${first} → ${end}`);

@@ -66,6 +66,20 @@ In short:
   like Bitcoin's; its own glow-tech colours (palette in `coins/README.md`, user approves); its exact official logo found
   on Google; the approved music in a shuffled order (automatic per coin; still no repeats). Run everything with
   `COIN=<SYMBOL>`. Before a preview render, ask which coin unless already working on one (§1.11); a final always asks (step 1).
+- **Equities / Tesla (PROJECT.md §18):** assetClass=equity is long candlesticks, not Coin Trail. Use full
+  split-adjusted TradingView sessions from IPO, verify against an independent OHLC source, disclose unresolved price
+  differences, preserve raw values. Calendar/DST/early closes are explicit; closed slots hold close for camera/HUD
+  without candles, and missing open-session OHLC must fail. Keep announcement dates distinct from reaction sessions;
+  after-close/closed-date announcements map forward, unknown timing remains unknown. Two checked documents per retained
+  event, primary first; two Tesla/SEC documents are not independent newsrooms. Keep EVERY quarterly earnings and
+  delivery report (exception to repetitive-news removal); early incomparable/missing delivery series need honest limits.
+  Retain removed small/routine research with reasons. Equity shows material levels 1/2, skips 99Bitcoins; crypto rules
+  remain intact. CYCLE LOW is not ATL; only genuine historical minima get ATL. Same long phase/cue logic, no equity
+  full-mix pre-hit gates. Official logo/brand palette await preview approval. Send concrete retained/removed review
+  before ANY still/video; record exact events/citations/details hash only after approval, and invalidate on edits.
+  Research/tests/commits proceed while pending; no render ahead. Then short 480p 16:9 60 fps preview and await preview
+  approval. Existing videos/data/music stay preserved; equity Shorts require a separate review. Equity YouTube title
+  uses company name and CYCLE LOW chapters, never Bitcoin/halving boilerplate. See coins/TSLA/README.md for commands.
 - **Coin Trail / `SHORT_STYLE=line` (PROJECT.md §17, shorts.md §8):** opt-in 9:16 60 fps curved line +
   leading circular logo + interactive bubbles. Overrides ONLY line mode: multiple phases/partial phases; no candles,
   axes/grid or background logo; preserve every eligible event (BTC 1/2, altcoins 0/1/2, remove=true excluded); all

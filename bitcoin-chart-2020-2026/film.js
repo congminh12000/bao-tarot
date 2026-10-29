@@ -45,7 +45,7 @@
   const LAB_TOP = SHORT ? 500 : 112, LAB_BOT = SHORT ? 1480 : H; // labels stay between these
   const FX = SHORT ? 0.5 : 1; // a short: shake, dust and scanlines at half strength (a phone screen is small)
 
-  const fmt = (p) => '$' + (p >= 100 ? Math.round(p).toLocaleString('en-US') : p >= 1 ? (Number.isInteger(p) ? String(p) : p.toFixed(2)) : p.toPrecision(2));
+  const fmt = (p) => COINCFG.assetClass === 'equity' ? '$' + (p >= 1 ? p.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : p.toPrecision(4)) : '$' + (p >= 100 ? Math.round(p).toLocaleString('en-US') : p >= 1 ? (Number.isInteger(p) ? String(p) : p.toFixed(2)) : p.toPrecision(2));
   const P0 = S.P0; // the first day of the film (the days before it are the pre-run under the title)
   const Y_DATA = S.dateOf(Math.min(0, Math.floor(S.dayAt(0)) - 120)).getUTCFullYear(); // the first year on screen (pre-run included), for the grid
   const Y_START = S.dateOf(P0).getUTCFullYear(), Y_END = S.dateOf(NDAYS - 1).getUTCFullYear();
@@ -438,7 +438,7 @@
       for (const m of cut) { PLACE[m].exit = e.t; PLACE[m].cut = e.t; }
     }
     const { q: ch, my: mid } = pick;
-    const P = { s, tw, bw, h, dh, date: dateStr(e.day), size, up, above: ch.above, off: ch.off, dir: ch.dir, ref: ch.ref, gap: mid - Y(ch.ref), forced: cut.length > 0 };
+    const P = { s, tw, bw, h, dh, date: dateStr(e.anchorDate ? S.dayOf(e.date) : e.day), size, up, above: ch.above, off: ch.off, dir: ch.dir, ref: ch.ref, gap: mid - Y(ch.ref), forced: cut.length > 0 };
     P.exit = exitTime(e, P);
     return (PLACE[n] = P);
   }
@@ -529,7 +529,8 @@
     const tt = SHORT ? t : Math.min(t, ev.end), D = S.dayAt(tt);
     const i = Math.min(NDAYS - 1, Math.max(0, Math.floor(D)));
     const c = D < 0 ? { o: DAYS[0][0], c: DAYS[0][0] } : D >= NDAYS ? { o: DAYS[i][0], c: DAYS[i][3] } : S.candleAt(i, tt);
-    return { D, o: c.o, p: c.c, up: c.c >= c.o };
+    const held = c || { o: DAYS[i][3], c: DAYS[i][3] };
+    return { D, o: held.o, p: held.c, up: held.c >= held.o };
   }
 
   // the dotted price line from the live candle across to the axis
@@ -735,6 +736,7 @@
     if (SHORT) return shortHud(ctx, t, D);
     const x = 96, y = 104;
     txt(ctx, COINCFG.pair, x, y, { size: 44, w: 800, color: L.text, glow: 10, spacing: 2 });
+    if (COINCFG.assetClass === 'equity') txt(ctx, 'SPLIT-ADJUSTED · USD', x, y + 28, { size: 15, w: 700, color: L.accent2 });
     const w = measure(ctx, COINCFG.pair, 44, 800) + 9 * 2;
     txt(ctx, dateStr(D), x + w + 30, y, { size: 25, w: 700, fam: L.mono, color: L.accent2, glow: 8, spacing: 2 });
     phaseBadge(ctx, x + w + 30 + measure(ctx, 'Mmm 00, 0000', 25, 700, L.mono) + 2 * 12 + 26, y, D);
@@ -743,6 +745,7 @@
     phaseTimeline(ctx, D);
     phaseBadge(ctx, PLOT_R + 14, y, D, 'price'); // right of the live price, in the price-axis column (a fixed spot: no jitter)
     if (L0.D >= 0) txt(ctx, fmt(L0.p), PLOT_R - 12, y, { size: 44, w: 800, fam: L.mono, color: '#FFFFFF', align: 'right', glow: 10 });
+    if (S.TRADING && S.TRADING[Math.floor(D)] === '0') txt(ctx, 'MARKET CLOSED · LAST CLOSE', PLOT_R - 12, y + 28, { size: 15, w: 700, color: L.accent2, align: 'right' });
   }
 
   // light glowing dust: specks of light drifting through the beam
@@ -905,7 +908,7 @@
       dust(ctx, t);
       scanlines(ctx, t);
     },
-    async init() { LOGO = await Studio.loadImage(COINCFG.logoNegative); COIN = await Studio.loadImage(COINCFG.logo); },
+    async init() { if (COINCFG.assetClass === 'equity' && globalThis.BTC.eventReview?.status !== 'approved') throw new Error('Equity event list approval required before render'); LOGO = await Studio.loadImage(COINCFG.logoNegative); COIN = await Studio.loadImage(COINCFG.logo); },
     post: { paper: 0, vignette: 0.5, grain: 0.035, bloom: 1.1 },
     fadeOut: SHORT ? 0 : 1.2,
   });

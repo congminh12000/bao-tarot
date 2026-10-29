@@ -67,3 +67,10 @@ not on screen yet, and it is on screen within 1 s after its moment (3 s later).
 8:19 ATH: the cycle top
 8:53 ATL: the cycle bottom
 ```
+
+## Equity exception — PROJECT.md §18
+
+For equity films use the company name (Tesla), its real business history and original corporate/regulatory sources.
+Do not copy Bitcoin title/description, crypto tags, halvings, or 99Bitcoins attribution. Include generated CYCLE LOW
+turns in chapters without renaming them ATL; ATL is allowed only for an actual all-time minimum. Chapter timestamps
+remain provisional until checked against the kept render of the same full timeline.

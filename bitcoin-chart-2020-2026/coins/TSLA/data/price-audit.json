@@ -1,0 +1,89 @@
+{
+  "symbol": "NASDAQ:TSLA",
+  "adjustment": "splits",
+  "range": [
+    "2010-06-29",
+    "2026-10-28"
+  ],
+  "candles": 4109,
+  "sessions": 4109,
+  "missingSessions": [],
+  "unexpectedSessions": [],
+  "calendarPackage": "exchange_calendars 4.11.2",
+  "calendarAlias": "XNAS -> XNYS; US equity holidays/early closes; Nasdaq source links in SOURCES.md",
+  "comparison": {
+    "source": "Yahoo Finance chart API",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA",
+    "matchedFields": 16436,
+    "medianRelativeError": 9.858601650893416e-07,
+    "maximumRelativeError": 0.04728538636982436,
+    "differencesOver0.5Percent": [
+      {
+        "date": "2014-08-14",
+        "field": "low",
+        "tv": 17.235983,
+        "yahoo": 17.100000381469727,
+        "relative": 0.007889461165648304
+      },
+      {
+        "date": "2018-03-13",
+        "field": "open",
+        "tv": 22.994644,
+        "yahoo": 21.907333374023438,
+        "relative": 0.04728538636982436
+      },
+      {
+        "date": "2018-03-13",
+        "field": "high",
+        "tv": 23.007977,
+        "yahoo": 23.1473331451416,
+        "relative": 0.00605686215444327
+      },
+      {
+        "date": "2018-03-13",
+        "field": "low",
+        "tv": 22.417544,
+        "yahoo": 21.766666412353516,
+        "relative": 0.029034295088100813
+      },
+      {
+        "date": "2018-03-16",
+        "field": "open",
+        "tv": 21.730645,
+        "yahoo": 21.528667449951172,
+        "relative": 0.00929459526161452
+      }
+    ]
+  },
+  "splits": [
+    {
+      "date": 1598880600,
+      "numerator": 5.0,
+      "denominator": 1.0,
+      "splitRatio": "5:1"
+    },
+    {
+      "date": 1661434200,
+      "numerator": 3.0,
+      "denominator": 1.0,
+      "splitRatio": "3:1"
+    }
+  ],
+  "decision": {
+    "policy": "Preserve TradingView raw OHLC; no silent substitution with comparison provider. Five fields remain unresolved cross-provider differences, not five corrected prices.",
+    "thirdSourceAttempts": [
+      {
+        "source": "Stooq",
+        "result": "HTML bot challenge, no usable price data; not bypassed"
+      },
+      {
+        "source": "Nasdaq historical public API",
+        "result": "data:null for requested historical windows; unable to resolve five differences"
+      }
+    ]
+  },
+  "inputHashes": {
+    "tradingview/NASDAQ_TSLA_1D_2010-06-29_2026-10-28.csv": "4718ba11167f636ca360751ee9c5b6a805c26a6f4102be7a500c6538bdb1d54c",
+    "source-price-yahoo.csv": "4158ea7fbd9f63001c1027f2c6d2c9325065f226d22ba324765187105042c564"
+  }
+}

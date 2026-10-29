@@ -74,3 +74,12 @@ Sự kiện có cột cuối `remove` (`true`/`false`): chỉ các dòng không 
 Giữ quyết định đã duyệt khi cập nhật. **Gửi danh sách giữ/loại để người dùng duyệt trước mọi render, kể cả preview** (§1.2).
 Lệnh render minh họa ở trên chỉ chạy sau bước duyệt này. Khi cloud không thể đính kèm video trong chat, dùng Google Drive
 cho cả preview và final, xác nhận file và gửi link; đây là cách giao file đã được người dùng cho phép.
+
+## Cổ phiếu (assetClass=equity)
+
+Dùng cùng cấu trúc `coins/<SYMBOL>/` cho tài sản ngoài crypto; bản đầu là [Tesla](TSLA/README.md), long candlestick.
+Thiết lập thêm `assetClass`, `exchange`, `timezone`, `currency`, `priceAdjustment: splits`, `minVisibleHit: 1`.
+**PROJECT.md §18** thay các quy tắc chỉ dành cho crypto: không áp 99Bitcoins hoặc hiển thị mức 0 altcoin; nghiên cứu
+hai tài liệu đã kiểm tra cho mỗi mục giữ, đủ mọi quý earnings/deliveries, lịch giao dịch thực, không nến ngày đóng cửa,
+không ước tính phiên mở bị thiếu, chỉ ATL nếu thực sự thấp nhất lịch sử; còn lại đáy chu kỳ là CYCLE LOW.
+Duyệt danh sách cụ thể trước ảnh/video, sau đó duyệt preview; không tự render full. Lệnh và giới hạn nguồn trong README Tesla.

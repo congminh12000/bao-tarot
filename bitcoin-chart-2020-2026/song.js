@@ -450,7 +450,7 @@ const out = path.join(__dirname, 'out');
 const mix = MIX.mixdown(stems, GAIN, { stemDir: process.env.STEMS ? out : null });
 MIX.highpass(mix, 24);
 for (const [a, b] of breaths) MIX.gate(mix, a, b); // one beat of real silence before each big moment
-if (!LINE) for (const t of [...hits.map((h) => h.t), ...(SHORT ? [] : [ev.end])]) MIX.gate(mix, t - beatLen(t) / 4, t); // legacy pre-hit gates
+if (!LINE && !sc.TRADING) for (const t of [...hits.map((h) => h.t), ...(SHORT ? [] : [ev.end])]) MIX.gate(mix, t - beatLen(t) / 4, t); // legacy crypto pre-hit gates; dense equity events must not erase preceding SFX
 if (SHORT) { // the loop: what rings on past the end (reverb, the last notes) plays over the start, then cut to DURATION
   const n0 = Math.round(DURATION * SR);
   for (let i = n0; i < mix.n; i++) { mix.L[i - n0] += mix.L[i]; mix.R[i - n0] += mix.R[i]; }

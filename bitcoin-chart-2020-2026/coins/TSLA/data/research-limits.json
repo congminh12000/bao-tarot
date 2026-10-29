@@ -1,0 +1,15 @@
+{
+  "rejectedSources": [
+    {
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=391030",
+      "reason": "Wrong litigation: Jan 30 2026 director-compensation decision, not Dec 19 2025 CEO award restoration."
+    }
+  ],
+  "sourceLimits": [
+    "Early quarterly financial filings and letters are issuer-origin; SEC publication is not an independent journalistic confirmation.",
+    "589/591 IR archive links returned HTTP 200; failed canonical links remain excluded/replaced, never used as sole verified evidence.",
+    "Eight Roadster-era quarters lack a verified separate, uniform quarterly global vehicle-delivery release.",
+    "Five OHLC fields on three historical sessions differ >0.5% between TradingView and Yahoo. Raw TradingView values retained without silent corrections; details in price-audit.json.",
+    "IR table SEC links for Q1 2013 and Q1 2017 pointed to prior-year 10-K; corrected to actual matching-quarter 10-Q after checking all 66 document report periods."
+  ]
+}
