@@ -1,6 +1,6 @@
 # Tesla — long candlestick price history
 
-**Current event selection approved for the requested full-data preview. Preview rendered/uploaded; awaiting visual feedback. No final requested.**
+**Full-data final completed on 2026-10-29: 16:9, 1920×1080, 60 fps, 542.466667 seconds. User requested the final after the clean-HUD/T-logo preview.**
 
 - [Review all 176 retained / 455 removed events](event-review.md), including dates, levels, selection reasons and citations.
 - [Quarter-by-quarter coverage](quarter-coverage.md): every earnings report from 2010 Q2 through 2026 Q3; 47 separate delivery releases; 11 delivery discussions embedded in earnings. Eight early Roadster quarters have financial context, without a verified comparable standalone delivery series.
@@ -66,3 +66,12 @@ Five previously removed level-0 items were explicitly restored by the user: webs
 ## T-logo update and screenshot
 
 User requested a Tesla logo change and the most informative frame. The official IR `tds-icon-logo` T paths replace the wordmark; red transparent asset is used for the main and background logo. [Full-HD screenshot, 08:06.60](https://drive.google.com/file/d/1aDCoy8oOek2-RwELj2epYixjpHVso0Ry/view?usp=drivesdk) shows five readable event labels plus price/date/uptrend HUD, selected from 420 candidates; see [frame metadata](data/logo-frame-preview.json). This still uses the new logo; the previously delivered full video is preserved as rendered. Equity render fingerprints now include logo bytes, so old frames cannot be reused after the asset changes.
+
+
+## Full-data final completed
+
+User selected Tesla / 16:9 / Full HD / 60 fps after the latest T-logo and clean-HUD preview. Final keeps the approved 176 research events plus 8 ATH/CYCLE LOW turns, all 4,109 source sessions through 2026-10-28, nine distinct cues, and original split-adjusted prices. The known five cross-provider OHLC discrepancies remain unresolved.
+
+`out/tesla-final-20261029-16x9-1080p.mp4`: 542.466667 seconds, 32,548 frames, 774,737,903 bytes. Silent CRF14 video was muxed by stream copy with AAC 256 kb/s. Complete decode and continuous frame timestamps pass; 51 deterministic reference frames pass (maximum MAE 1.943/255), and all 45 AAC/master windows align at 0 ms (minimum correlation 0.99976). AAC measures −16.0 LUFS / −1.3 dBTP / LRA 5.4 LU; audio has been measured, not listened to. The legacy strongest-onset/flash heuristic still flags 11 measurements in layered effects, as in the preview. Raw failures are retained and direct references support actual alignment; no manual offsets or allow-unclear overrides were used. Running labels do not overlap; three earlier labels leave early using the approved fallback.
+
+Archive: `out/renders/tesla-final-20261029-1080p60/`, fingerprint `7e097a8ab19e88f7`, with video, QA, 88 chapter/event images and snapshot hashes. The complete isolated source workspace is retained at `out/tesla-final-20261029-workspace/`; prior root data/music and previous renders are preserved. See [final metadata](data/final-render-20261029.json) and [YouTube draft](youtube.md). No YouTube publication or Drive upload was performed for this local final.
