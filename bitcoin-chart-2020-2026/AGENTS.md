@@ -70,7 +70,8 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
 - **Equities / Tesla (PROJECT.md §18):** assetClass=equity is long candlesticks, not Coin Trail. Use full
   split-adjusted TradingView sessions from IPO, verify against an independent OHLC source, disclose unresolved price
   differences, preserve raw values. Calendar/DST/early closes are explicit; closed slots hold close for camera/HUD
-  without candles, and missing open-session OHLC must fail. Keep announcement dates distinct from reaction sessions;
+  without candles, and missing open-session OHLC must fail. Omit split-adjusted/market-closed HUD sublabels per user request.
+  Keep announcement dates distinct from reaction sessions;
   after-close/closed-date announcements map forward, unknown timing remains unknown. Two checked documents per retained
   event, primary first; two Tesla/SEC documents are not independent newsrooms. Keep EVERY quarterly earnings and
   delivery report (exception to repetitive-news removal); early incomparable/missing delivery series need honest limits.

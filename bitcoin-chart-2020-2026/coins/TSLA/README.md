@@ -31,7 +31,7 @@ Same 45% reversal / minimum 45 calendar days / ±7-day wick seating as the long 
 | 2024-12-18 | ATH | 488.5399 |
 | 2025-04-07 | CYCLE LOW | 214.25 |
 
-A cycle low is not an all-time low. Initial price history stays available when determining labels in a later preview cut. Calendar-closed dates display `MARKET CLOSED · LAST CLOSE`; all prices disclose `SPLIT-ADJUSTED · USD`.
+A cycle low is not an all-time low. Initial price history stays available when determining labels in a later preview cut. Per user request, the HUD omits the `SPLIT-ADJUSTED · USD` and `MARKET CLOSED · LAST CLOSE` sublabels. Split adjustment and calendar-closed last-close handling remain documented in the data/source files.
 
 Proposed palette: Tesla red, near-black background, soft red/white glow; official Tesla **T emblem** extracted from Tesla IR (replaces the initial wordmark at user request), [provenance](logo-provenance.json). Visual approval is still required. This v1 supports long candlestick mode only; equity Shorts are deliberately blocked until separately designed/reviewed.
 
