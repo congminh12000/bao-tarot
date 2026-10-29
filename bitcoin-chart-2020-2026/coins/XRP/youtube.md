@@ -17,6 +17,12 @@ moments; chapters begin at least 3 seconds early and are at least 10 seconds apa
 and event +1 second are saved with timestamps in `out/renders/xrp-final-20261028-1080p60/chapter-check.json`.
 The beginning, middle and closing zoom-out were visually inspected. Evidence and checks remain with the kept final.
 
+## Title (chosen 2026-10-29, same pattern as Bitcoin/Ethereum)
+
+```text
+XRP Price History: Every All-Time High & Crash, Animated in 8 Minutes
+```
+
 ## Title options
 
 1. XRP Price History: Every All-Time High & Crash, Animated in 8 Minutes
@@ -28,7 +34,7 @@ The beginning, middle and closing zoom-out were visually inspected. Evidence and
 ```text
 Every all-time high. Every crash. The story of XRP, told by its price chart.
 
-This animated chart replays XRP's history one daily candle at a time: early market trading, escrow, payment channels, XRP Ledger upgrades, the Ripple litigation, stablecoins, and major market milestones.
+This animated chart replays XRP's history one daily candle at a time, from its early exchange trading to the latest close: the escrow lock-up, the first great crypto boom, XRP Ledger upgrades, the SEC lawsuit against Ripple and the court ruling, stablecoins, and the arrival of XRP ETFs.
 
 The market moves in two kinds of phases: a bull run, from an all-time low to the next all-time high, and a bear market, from an all-time high to the next all-time low. Each phase has its own original score: heroic in the climbs, tense in the falls. Protocol milestones are highlighted along the way.
 
@@ -72,5 +78,5 @@ Events: XRP Ledger documentation and on-chain records, Ripple announcements, reg
 ## Tags
 
 ```text
-Data Lab Motion, XRP, XRP Ledger, XRPL, Ripple, XRP price history, XRP history, XRP chart, crypto, cryptocurrency, crypto price history, price chart animation, animated chart, candlestick chart, all-time high, crypto crash, bull market, bear market, data visualization
+Data Lab Motion, XRP, XRP Ledger, XRPL, Ripple, XRP price, XRP price history, XRP history, XRP chart, SEC vs Ripple, Ripple lawsuit, XRP ETF, XRP escrow, RLUSD, crypto, cryptocurrency, crypto price history, crypto history, price chart animation, animated chart, candlestick chart, all-time high, crypto crash, bull market, bear market, altcoins, data visualization
 ```
