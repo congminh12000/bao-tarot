@@ -1,3 +1,5 @@
+> Selection update 2026-10-29: the counts/flags below describe the pre-trim audit snapshot. Current selection: 44 in-range events + 4 automatic turns, 108 newly hidden, 171 removed overall. See [current item-by-item review](events-important-review-20261029.md). Pending approval before any new render.
+
 # HYPE source audit — second pass, 2026-10-29
 
 ## Result and limits

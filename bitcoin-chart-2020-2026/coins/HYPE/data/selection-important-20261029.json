@@ -1,0 +1,4584 @@
+{
+  "baseCommit": "269f3cbf",
+  "status": "pending approval before render",
+  "counts": {
+    "researchRows": 225,
+    "sourceRows": 465,
+    "removed": 171,
+    "retained": 54,
+    "retainedWithinPriceRange": 44,
+    "newlyHidden": 108,
+    "visibleLevels": {
+      "1": 30,
+      "2": 14
+    },
+    "visibleYears": {
+      "2024": 2,
+      "2025": 27,
+      "2026": 15
+    },
+    "automaticATHATL": 4
+  },
+  "decisions": [
+    {
+      "date": "2023-11-01",
+      "kind": "info",
+      "hit": 1,
+      "text": "Points program begins",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/46"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/points"
+        ]
+      ]
+    },
+    {
+      "date": "2023-12-19",
+      "kind": "info",
+      "hit": 1,
+      "text": "Native USDC bridge announced",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/85"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ]
+    },
+    {
+      "date": "2023-12-21",
+      "kind": "info",
+      "hit": 1,
+      "text": "USDC bridge migration begins",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/87"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ]
+    },
+    {
+      "date": "2024-02-21",
+      "kind": "info",
+      "hit": 0,
+      "text": "TWAP orders introduced",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/136"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types"
+        ]
+      ]
+    },
+    {
+      "date": "2024-05-20",
+      "kind": "info",
+      "hit": 1,
+      "text": "Native EVM announced",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/184"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
+        ]
+      ]
+    },
+    {
+      "date": "2024-05-24",
+      "kind": "info",
+      "hit": 1,
+      "text": "Permissionless spot launches",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/185"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ]
+      ]
+    },
+    {
+      "date": "2024-10-01",
+      "kind": "info",
+      "hit": 1,
+      "text": "Builder codes launch",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/234"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes"
+        ]
+      ]
+    },
+    {
+      "date": "2024-10-03",
+      "kind": "info",
+      "hit": 0,
+      "text": "Mobile QR login added",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": false,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/236"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/connect-mobile-via-qr-code"
+        ]
+      ]
+    },
+    {
+      "date": "2024-10-07",
+      "kind": "down",
+      "hit": 1,
+      "text": "Arbitrum bridge briefly locked",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/238"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ]
+    },
+    {
+      "date": "2024-11-28",
+      "kind": "info",
+      "hit": 1,
+      "text": "HYPE genesis announced",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/258"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking"
+        ],
+        [
+          "Hyper Foundation",
+          "https://hyperfnd.medium.com/hype-genesis-1830a4dc2e3f"
+        ]
+      ]
+    },
+    {
+      "date": "2024-11-29",
+      "kind": "up",
+      "hit": 2,
+      "text": "HYPE genesis airdrop",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": false,
+      "reason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video.",
+      "sources": [
+        [
+          "Hyper Foundation",
+          "https://hyperfnd.medium.com/hype-genesis-1830a4dc2e3f"
+        ],
+        [
+          "The Block",
+          "https://www.theblock.co/news/ecosystems/2024-11-28-hyperliquid-plans-to-launch-hype-token-in-nov-29-genesis-event-328631"
+        ],
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/258"
+        ]
+      ]
+    },
+    {
+      "date": "2024-12-23",
+      "kind": "info",
+      "hit": 0,
+      "text": "Leverage limits updated",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/277"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2024-12-23",
+      "kind": "down",
+      "hit": 1,
+      "text": "Security concerns spark outflows",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Bloomberg Law",
+          "https://news.bloomberglaw.com/crypto/crypto-exchanges-outflows-swell-on-north-korean-trader-concern"
+        ],
+        [
+          "Blockworks",
+          "https://blockworks.com/news/hyperliquid-security-fuels-decentralization-concerns"
+        ]
+      ]
+    },
+    {
+      "date": "2024-12-26",
+      "kind": "info",
+      "hit": 0,
+      "text": "Staking UI tested",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/278"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking"
+        ]
+      ]
+    },
+    {
+      "date": "2024-12-30",
+      "kind": "up",
+      "hit": 2,
+      "text": "HYPE staking launches",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking"
+        ],
+        [
+          "CoinDesk via Yahoo Finance",
+          "https://finance.yahoo.com/news/hyperliquid-releases-native-staking-hype-103621422.html"
+        ],
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/286"
+        ],
+        [
+          "Hyper Foundation annual recap",
+          "https://hyperfnd.medium.com/2024-in-review-28c472091320"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-13",
+      "kind": "info",
+      "hit": 1,
+      "text": "ANIME rewards for HYPE stakers announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/287"
+        ],
+        [
+          "Animecoin tokenomics document",
+          "https://resources.cryptocompare.com/asset-management/18603/1739440506822.pdf"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-13",
+      "kind": "info",
+      "hit": 0,
+      "text": "Native multisig testnet opens",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/288"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-14",
+      "kind": "info",
+      "hit": 0,
+      "text": "Testnet balance reset announced",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/289"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-19",
+      "kind": "info",
+      "hit": 1,
+      "text": "Assistance Fund adds PURR",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/295"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-26",
+      "kind": "info",
+      "hit": 0,
+      "text": "OI-cap order validation improved",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/303"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/perpetual-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-26",
+      "kind": "info",
+      "hit": 0,
+      "text": "Spot deployment fee sharing updated",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/303"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-27",
+      "kind": "info",
+      "hit": 0,
+      "text": "Bridge test transaction clarified",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/304"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ]
+    },
+    {
+      "date": "2025-02-05",
+      "kind": "info",
+      "hit": 0,
+      "text": "Partial liquidation testnet opens",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/307"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-02-10",
+      "kind": "up",
+      "hit": 1,
+      "text": "Native multisig live by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/310"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig"
+        ]
+      ]
+    },
+    {
+      "date": "2025-02-12",
+      "kind": "info",
+      "hit": 0,
+      "text": "Native multisig guide published",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/312"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig"
+        ]
+      ]
+    },
+    {
+      "date": "2025-02-14",
+      "kind": "up",
+      "hit": 1,
+      "text": "Unit launches native BTC spot",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/314"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ],
+        [
+          "Unit Docs",
+          "https://docs.hyperunit.xyz"
+        ],
+        [
+          "OAK Research",
+          "https://oakresearch.io/en/analyses/innovations/hyper-unit-hidden-engine-powering-hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2025-02-18",
+      "kind": "up",
+      "hit": 2,
+      "text": "HyperEVM mainnet launches",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/316"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
+        ],
+        [
+          "The Block",
+          "https://www.theblock.co/news/ecosystems/2025-02-18-hyperliquid-launches-hyperevm-on-mainnet-to-bring-general-purpose-programmability-341424"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-04",
+      "kind": "info",
+      "hit": 0,
+      "text": "Official announcements page added",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/320"
+        ],
+        [
+          "Hyperliquid official announcements page",
+          "https://app.hyperliquid.xyz/announcements"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-04",
+      "kind": "info",
+      "hit": 1,
+      "text": "Permissionless validators announced",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/319"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-06",
+      "kind": "up",
+      "hit": 1,
+      "text": "Public mainnet nodes launch",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/321"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator"
+        ],
+        [
+          "Hyperliquid node repository",
+          "https://github.com/hyperliquid-dex/node"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-07",
+      "kind": "info",
+      "hit": 0,
+      "text": "Validator rollout update",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/322"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-12",
+      "kind": "info",
+      "hit": 0,
+      "text": "Delegation applications open",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/323"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/delegation-program"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-12",
+      "kind": "down",
+      "hit": 2,
+      "text": "ETH liquidation hits HLP",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/324"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults"
+        ],
+        [
+          "Arkham",
+          "https://info.arkm.com/research/hyperliquid-whale-passes-4m-loss-to-hlp-vault"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-13",
+      "kind": "info",
+      "hit": 1,
+      "text": "Margin safeguards strengthened",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/325"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-14",
+      "kind": "info",
+      "hit": 0,
+      "text": "Leverage reduced for risk control",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/326"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-19",
+      "kind": "up",
+      "hit": 1,
+      "text": "HYPE staking tiers announced",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/329"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-25",
+      "kind": "up",
+      "hit": 1,
+      "text": "HyperCore-HyperEVM linking live",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/331"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-26",
+      "kind": "down",
+      "hit": 2,
+      "text": "JELLY market emergency delisting",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/332"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting"
+        ],
+        [
+          "Arkham",
+          "https://info.arkm.com/research/jellyjelly-exploit-on-hyperliquid"
+        ],
+        [
+          "CoinDesk",
+          "https://www.coindesk.com/markets/2025/03/26/hyperliquid-delists-jellyjelly-after-vault-squeezed-in-usd13m-tussle"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-27",
+      "kind": "info",
+      "hit": 0,
+      "text": "JELLY user refunds detailed",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/334"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-27",
+      "kind": "up",
+      "hit": 1,
+      "text": "Unit adds native ETH spot",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/333"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ],
+        [
+          "OAK Research",
+          "https://oakresearch.io/en/analyses/innovations/hyper-unit-hidden-engine-powering-hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-28",
+      "kind": "up",
+      "hit": 1,
+      "text": "Onchain delisting votes launch",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/335"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-29",
+      "kind": "info",
+      "hit": 0,
+      "text": "First onchain delisting vote",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/336"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting"
+        ]
+      ]
+    },
+    {
+      "date": "2025-04-21",
+      "kind": "up",
+      "hit": 1,
+      "text": "Validator set expands to 21",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/347"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ]
+    },
+    {
+      "date": "2025-04-30",
+      "kind": "up",
+      "hit": 1,
+      "text": "HyperCore read precompiles live by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/352"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-01",
+      "kind": "up",
+      "hit": 1,
+      "text": "HIP-3 testnet opens",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/354"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-01",
+      "kind": "down",
+      "hit": 1,
+      "text": "Hyperliquid X account compromised",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/353"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ],
+        [
+          "RootData",
+          "https://www.rootdata.com/projects/detail/hyperliquid?k=ODM5NA%3D%3D"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-04",
+      "kind": "up",
+      "hit": 1,
+      "text": "Staking accounts can be linked",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/355"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-05",
+      "kind": "up",
+      "hit": 1,
+      "text": "Staking fee discounts scheduled",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/351"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-09",
+      "kind": "up",
+      "hit": 1,
+      "text": "USDT0 launches on Hyperliquid",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "USDT0",
+          "https://blog.usdt0.to/usdt0-is-live-on-hyperliquid"
+        ],
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/358"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-13",
+      "kind": "info",
+      "hit": 1,
+      "text": "Staking referral program proposed",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/362"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-13",
+      "kind": "up",
+      "hit": 1,
+      "text": "Unit adds SOL and FARTCOIN spot",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/363"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ],
+        [
+          "OAK Research",
+          "https://oakresearch.io/en/reports/protocols/hyperliquid-hype-s1-2025-activity-report"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-21",
+      "kind": "info",
+      "hit": 0,
+      "text": "Rabby-DeBank support confirmed",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/368"
+        ],
+        [
+          "Rabby official supported-chain display",
+          "https://go.rabby.io/mobile"
+        ],
+        [
+          "AiCoin",
+          "https://www.aicoin.com/en/news-flash/2377477"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-22",
+      "kind": "up",
+      "hit": 1,
+      "text": "HYPE spot-auction fees announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/371"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-22",
+      "kind": "info",
+      "hit": 1,
+      "text": "Labs files CFTC perpetuals comments",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "CFTC submission list",
+          "https://comments2.cftc.gov/PublicComments/CommentList.aspx?ctl00_ctl00_cphContentMain_MainContent_gvCommentListChangePage=14&id=7584"
+        ],
+        [
+          "Hyperliquid Labs letter via CFTC",
+          "https://comments2.cftc.gov/Handlers/PdfHandler.ashx?id=35635"
+        ],
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/372"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-22",
+      "kind": "info",
+      "hit": 1,
+      "text": "Margin tiers scheduled",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/367"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-23",
+      "kind": "info",
+      "hit": 0,
+      "text": "Labs CFTC letters announced",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/372"
+        ],
+        [
+          "Hyperliquid Labs letter via CFTC",
+          "https://comments2.cftc.gov/Handlers/PdfHandler.ashx?id=35635"
+        ],
+        [
+          "Hyperliquid Labs 24-7 letter via CFTC",
+          "https://comments.cftc.gov/Handlers/PdfHandler.ashx?id=35634"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-24",
+      "kind": "down",
+      "hit": 1,
+      "text": "Foundation X account compromised",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/373"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ],
+        [
+          "CryptoNews",
+          "https://cryptonews.com/news/hype-price-shoots-13-amid-crypto-whale-trading-frenzy/"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-25",
+      "kind": "info",
+      "hit": 0,
+      "text": "Additional margin tiers scheduled",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/374"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-26",
+      "kind": "info",
+      "hit": 1,
+      "text": "Faster HyperEVM blocks proposed",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/377"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-26",
+      "kind": "info",
+      "hit": 0,
+      "text": "Foundation X account recovered",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/375"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ],
+        [
+          "Lookonchain",
+          "https://lookonchain.com/feeds/14835"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-26",
+      "kind": "up",
+      "hit": 1,
+      "text": "HYPE auction fees live by update",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/378"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-26",
+      "kind": "info",
+      "hit": 0,
+      "text": "Margin transfer requirement reduced",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/378"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-30",
+      "kind": "up",
+      "hit": 1,
+      "text": "Binance HYPE futures launch",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Binance",
+          "https://www.binance.com/en-IN/support/announcement/detail/9166fe6f7b8a4b438262df3a040b007b"
+        ]
+      ]
+    },
+    {
+      "date": "2025-06-02",
+      "kind": "info",
+      "hit": 0,
+      "text": "HYPE margin tier rollout scheduled",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/380"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-06-10",
+      "kind": "info",
+      "hit": 0,
+      "text": "CoreWriter testing updated",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/382"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2025-06-20",
+      "kind": "up",
+      "hit": 1,
+      "text": "Eyenovia HYPE financing closes",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperion DeFi",
+          "https://ir.hyperiondefi.com/sec-filings/all-sec-filings/content/0001104659-26-036286/hypd-20251231x10k.htm"
+        ]
+      ]
+    },
+    {
+      "date": "2025-06-25",
+      "kind": "info",
+      "hit": 0,
+      "text": "CoreWriter enters final testing",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/383"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2025-06-25",
+      "kind": "info",
+      "hit": 0,
+      "text": "Local node HTTP API available by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/383"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes"
+        ]
+      ]
+    },
+    {
+      "date": "2025-06-25",
+      "kind": "info",
+      "hit": 0,
+      "text": "Post-only priority change announced",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/383"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-01",
+      "kind": "info",
+      "hit": 0,
+      "text": "Multiple quote assets on testnet",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/385"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-02",
+      "kind": "info",
+      "hit": 1,
+      "text": "CoreWriter mainnet rollout announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/386"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-03",
+      "kind": "info",
+      "hit": 0,
+      "text": "Validator expansion announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/387"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-07",
+      "kind": "up",
+      "hit": 0,
+      "text": "HyperEVM block explorer released",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/388"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
+        ],
+        [
+          "Etherscan HyperEVM explorer",
+          "https://hyperevmscan.io/"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-08",
+      "kind": "up",
+      "hit": 1,
+      "text": "Phantom launches Hyperliquid perps",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Phantom",
+          "https://phantom.com/learn/blog/phantom-perps"
+        ],
+        [
+          "Corroborating source",
+          "https://t.me/hyperliquid_announcements/389"
+        ],
+        [
+          "Corroborating source",
+          "https://www.tradingview.com/news/cointelegraph%3A0f72b5f85094b%3A0-how-hyperliquid-hit-330b-in-monthly-trading-volume-with-just-11-employees/"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-09",
+      "kind": "up",
+      "hit": 1,
+      "text": "CoreWriter live by update",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/390"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-14",
+      "kind": "up",
+      "hit": 1,
+      "text": "HSI treasury combination announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Sonnet SEC filing",
+          "https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001641172-25-018878/0001641172-25-018878.pdf"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-15",
+      "kind": "info",
+      "hit": 0,
+      "text": "Staking referral design reconsidered",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/398"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "kind": "info",
+      "hit": 0,
+      "text": "Generalized asset-transfer API tested",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/400"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "kind": "info",
+      "hit": 0,
+      "text": "CoreWriter integration guide",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/403"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-29",
+      "kind": "down",
+      "hit": 1,
+      "text": "API congestion delays orders",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/406"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator"
+        ],
+        [
+          "The Block",
+          "https://www.theblock.co/news/ecosystems/2025-07-30-hyperliquid-outage-api-traffic-spike-not-hack-vulnerability-exploit-364798"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-31",
+      "kind": "up",
+      "hit": 1,
+      "text": "Circle announces native USDC",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Circle",
+          "https://www.circle.com/blog/native-usdc-cctp-v2-are-coming-to-hyperliquid-what-you-need-to-know"
+        ],
+        [
+          "Corroborating source",
+          "https://t.me/hyperliquid_announcements/408"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-04",
+      "kind": "info",
+      "hit": 0,
+      "text": "API incident refunds distributed",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/410"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-05",
+      "kind": "info",
+      "hit": 0,
+      "text": "Foundation data node available by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/411"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node-for-infra-providers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-18",
+      "kind": "up",
+      "hit": 1,
+      "text": "Multiple spot quote assets live",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/415"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "kind": "up",
+      "hit": 1,
+      "text": "Assistance Fund fee share increase",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/420"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-27",
+      "kind": "info",
+      "hit": 0,
+      "text": "Hyperp mark prices updated",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/422"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-27",
+      "kind": "down",
+      "hit": 1,
+      "text": "XPL hyperp volatility triggers ADL",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/421"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "kind": "up",
+      "hit": 1,
+      "text": "21Shares HYPE staking ETP begins",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "21Shares",
+          "https://www.21shares.com/en-eu/product"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "kind": "up",
+      "hit": 1,
+      "text": "Validator set reaches 24 by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/423"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-05",
+      "kind": "info",
+      "hit": 1,
+      "text": "USDH ticker vote announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/427"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "kind": "info",
+      "hit": 0,
+      "text": "Quote-asset spot fee reductions live",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/428"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "kind": "info",
+      "hit": 0,
+      "text": "Referral claims span quote assets",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/428"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/referrals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-10",
+      "kind": "info",
+      "hit": 0,
+      "text": "USDH proposal discussion update",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/429"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "kind": "up",
+      "hit": 2,
+      "text": "Native USDC and CCTP launch",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Circle",
+          "https://www.circle.com/blog/circle-and-usdc-expansion-with-hyperliquid"
+        ],
+        [
+          "Corroborating source",
+          "https://www.circle.com/reports/internet-financial-system/capital-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 quote-collateral support proposed",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/432"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "kind": "up",
+      "hit": 1,
+      "text": "Native Markets wins USDH ticker",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/432"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "kind": "info",
+      "hit": 1,
+      "text": "Aligned stablecoins proposed",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/434"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-24",
+      "kind": "up",
+      "hit": 1,
+      "text": "USDH spot trading begins",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "The Block",
+          "https://www.theblock.co/news/markets/2025-09-24-hyperliquids-home-grown-stablecoin-usdh-goes-live-after-native-markets-winning-bid-372128"
+        ],
+        [
+          "Decrypt",
+          "https://decrypt.co/341087/bitcoin-ethereum-metaverse-tokens-sink-further-after-holiday-crypto-rally"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-25",
+      "kind": "info",
+      "hit": 0,
+      "text": "Bug bounty scope clarified",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/442"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-25",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 bug bounty testing expands",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/441"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "kind": "down",
+      "hit": 1,
+      "text": "Hyperdrive application exploit",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "The Block",
+          "https://www.theblock.co/news/ecosystems/2025-09-28-hyperliquid-based-hyperdrive-loses-782000-after-smart-contract-exploit-372662"
+        ],
+        [
+          "Crypto.news",
+          "https://crypto.news/hyperliquid-hyperdrive-resumes-services-700k-hack-2025/"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "kind": "info",
+      "hit": 0,
+      "text": "HYPE-USDH spot pair available by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/446"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "kind": "up",
+      "hit": 1,
+      "text": "Hypurr NFTs deployed",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/447"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "kind": "up",
+      "hit": 1,
+      "text": "Permissionless quote assets live by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/446"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "kind": "info",
+      "hit": 0,
+      "text": "Aligned quote assets on testnet",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/456"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "kind": "info",
+      "hit": 0,
+      "text": "Aligned stablecoin criteria revised",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/452"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "kind": "info",
+      "hit": 0,
+      "text": "Aligned stablecoin feedback clarified",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/453"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "kind": "info",
+      "hit": 0,
+      "text": "Aligned stablecoin rules clarified",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/455"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "kind": "info",
+      "hit": 0,
+      "text": "Stablecoin reserve criteria revised",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/454"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-08",
+      "kind": "up",
+      "hit": 1,
+      "text": "MetaMask launches Hyperliquid perps",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "MetaMask",
+          "https://metamask.io/en-GB/news/metamask-expands-trading-with-perpetual-futures-and-rewards-confirms-token"
+        ],
+        [
+          "Corroborating source",
+          "https://t.me/hyperliquid_announcements/458"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-10",
+      "kind": "down",
+      "hit": 2,
+      "text": "Market-wide liquidation shock",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/460"
+        ],
+        [
+          "Galaxy Research",
+          "https://www.galaxy.com/insights/research/10-10-anniversary-crypto-liquidation-19-billion-bitcoin-binance-hyperliquid-2026"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "kind": "up",
+      "hit": 2,
+      "text": "HIP-3 enabled on mainnet",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/461"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ],
+        [
+          "The Block",
+          "https://www.theblock.co/news/ecosystems/2025-10-13-hyperliquid-activate-hip-3-upgrade-374306"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "kind": "info",
+      "hit": 0,
+      "text": "Permissionless listing rules explained",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/462"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "kind": "info",
+      "hit": 0,
+      "text": "DEX abstraction added by update",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/464"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-24",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 frontend access simplified",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/468"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-29",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 frontend access live by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/469"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/frontend-checks"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-02",
+      "kind": "info",
+      "hit": 0,
+      "text": "Validator delisting rules clarified",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/471"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-06",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 sub-deployers supported",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/473"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-06",
+      "kind": "info",
+      "hit": 0,
+      "text": "HyperEVM gas capacity increased",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/473"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-12",
+      "kind": "down",
+      "hit": 1,
+      "text": "Arbitrum bridge safety lock",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/477"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-12",
+      "kind": "down",
+      "hit": 2,
+      "text": "POPCAT stress hits HLP",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "The Block",
+          "https://www.theblock.co/news/defi/2025-11-12-hyperliquid-pauses-deposits-withdrawals-popcat-trading-scheme-speculation-378606"
+        ],
+        [
+          "CoinGecko",
+          "https://www.coingecko.com/learn/geckopulse-hyperliquid-hlp-suffered-5m-loss-from-popcat"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-15",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 margin settings tested",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/479"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-19",
+      "kind": "up",
+      "hit": 1,
+      "text": "HIP-3 growth mode announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/480"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "kind": "up",
+      "hit": 1,
+      "text": "Aligned quote assets live by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "kind": "up",
+      "hit": 1,
+      "text": "HIP-3 growth mode live by update",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "kind": "info",
+      "hit": 0,
+      "text": "Legacy spot deployer fee share enabled",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-29",
+      "kind": "info",
+      "hit": 1,
+      "text": "Core contributor vesting begins",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperion DeFi SEC filing",
+          "https://ir.hyperiondefi.com/sec-filings/all-sec-filings/content/0001104659-26-036286/hypd-20251231x10k.htm"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-01",
+      "kind": "info",
+      "hit": 0,
+      "text": "USDC Core-EVM linking on testnet",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/484"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-02",
+      "kind": "up",
+      "hit": 1,
+      "text": "HSI business combination closes",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Nasdaq Trader",
+          "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2025-647"
+        ],
+        [
+          "Corroborating source",
+          "https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001493152-25-025886/0001493152-25-025886.pdf"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-03",
+      "kind": "up",
+      "hit": 1,
+      "text": "HSI shares begin Nasdaq trading",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Nasdaq Trader",
+          "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2025-647"
+        ],
+        [
+          "Corroborating source",
+          "https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001493152-25-025886/0001493152-25-025886.pdf"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-07",
+      "kind": "up",
+      "hit": 1,
+      "text": "Native USDC links Core and EVM",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/485"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-12",
+      "kind": "info",
+      "hit": 1,
+      "text": "Portfolio margin testnet opens",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/489"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-17",
+      "kind": "up",
+      "hit": 1,
+      "text": "Assistance Fund burn vote proposed",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/490"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-22",
+      "kind": "info",
+      "hit": 0,
+      "text": "Labs trading policy published",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/491"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "kind": "up",
+      "hit": 1,
+      "text": "Portfolio margin mainnet pre-alpha",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/494"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-24",
+      "kind": "up",
+      "hit": 2,
+      "text": "Assistance Fund burn vote passes",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Crypto.news",
+          "https://crypto.news/hyper-foundation-confirms-hype-burn-as-validators-back-assistance-fund-vote/"
+        ],
+        [
+          "Blockworks Transparency Filing",
+          "https://blockworks.com/token-transparency/filing/hyperliquid"
+        ],
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/497"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "kind": "info",
+      "hit": 0,
+      "text": "HyperEVM read gas costs reduced",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/497"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "kind": "info",
+      "hit": 0,
+      "text": "BTC collateral added to pre-alpha",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/503"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "kind": "info",
+      "hit": 0,
+      "text": "USDH borrowing added to pre-alpha",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/503"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-18",
+      "kind": "info",
+      "hit": 0,
+      "text": "Mobile staking interface added",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/506"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-stake-hype"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 normal isolated margin added",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/508"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "kind": "up",
+      "hit": 1,
+      "text": "Kraken HYPE trading launches",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Kraken",
+          "https://blog.kraken.com/product/asset-listings/hype-is-available-for-trading"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-31",
+      "kind": "up",
+      "hit": 1,
+      "text": "Unified account pre-alpha launches",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/509"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "kind": "up",
+      "hit": 1,
+      "text": "HIP-4 outcome markets announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/511"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "kind": "info",
+      "hit": 0,
+      "text": "Unified account default changes",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/512"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "kind": "up",
+      "hit": 1,
+      "text": "Ripple Prime supports Hyperliquid",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Ripple",
+          "https://ripple.com/ripple-press/ripple-announces-support-for-hyperliquid-expanding-institutional-access-to-onchain-liquidity/"
+        ],
+        [
+          "Corroborating source",
+          "https://etp.coinshares.com/corp/news/coinshares-launches-hyperliquid-staking-etp-with-0-management-fee-and-0-5-yield/"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-12",
+      "kind": "up",
+      "hit": 1,
+      "text": "CCTP becomes default USDC deposit",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/514"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-12",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 cross margin on testnet",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/516"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-18",
+      "kind": "up",
+      "hit": 1,
+      "text": "Foundation backs Policy Center",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/518"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking"
+        ],
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/launch-press-release"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-18",
+      "kind": "up",
+      "hit": 1,
+      "text": "Hyperliquid Policy Center launches",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/launch-press-release"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 cross margin rollout planned",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/520"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "kind": "info",
+      "hit": 0,
+      "text": "Builder-code approval removal added",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/521"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "kind": "up",
+      "hit": 1,
+      "text": "CoinShares HYPE staking ETP launches",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "CoinShares",
+          "https://etp.coinshares.com/corp/news/coinshares-launches-hyperliquid-staking-etp-with-0-management-fee-and-0-5-yield/"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "kind": "up",
+      "hit": 1,
+      "text": "HIP-3 cross margin live by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/521"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "kind": "up",
+      "hit": 1,
+      "text": "HIP-4 testnet opens",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/526"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "kind": "info",
+      "hit": 0,
+      "text": "Portfolio margin alpha announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/525"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-03-18",
+      "kind": "up",
+      "hit": 1,
+      "text": "Licensed S&P 500 perp announced",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "S&P Global",
+          "https://press.spglobal.com/2026-03-18-S-P-Dow-Jones-Indices-Licenses-S-P-500-R-to-Trade-XYZ-for-Perpetual-Contracts-on-Hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2026-03-19",
+      "kind": "up",
+      "hit": 1,
+      "text": "Fiat onramp enters testing",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/528"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "kind": "up",
+      "hit": 1,
+      "text": "Android app testing begins",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/531"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "kind": "up",
+      "hit": 1,
+      "text": "Bitwise European HYPE ETP begins",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Bitwise Europe",
+          "https://bitwiseinvestments.eu/products/bitwise-hyperliquid-staking-etp/"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "kind": "info",
+      "hit": 0,
+      "text": "Portfolio margin access broadened",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/532"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "kind": "info",
+      "hit": 0,
+      "text": "Portfolio margin entry rules eased",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/534"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "kind": "down",
+      "hit": 1,
+      "text": "FARTCOIN liquidation triggers ADL",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Cointelegraph",
+          "https://cointelegraph.com/news/trader-loses-3m-fartcoin-hyperliquid-adl-liquidation"
+        ],
+        [
+          "Whale Alert",
+          "https://whale-alert.io/stories/b5a301204c3089/Fartcoin-crashed-50-after-14524M-leveraged-long-on-Hyperliquid-liquidated-bettors-lost-3M-ADL-paid-849K-to-short-wallets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "kind": "info",
+      "hit": 0,
+      "text": "Legacy vault creation fee raised",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/535"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/hypercore-vaults-legacy"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "kind": "info",
+      "hit": 0,
+      "text": "Priority fees live by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/535"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "kind": "info",
+      "hit": 0,
+      "text": "DEX abstraction retirement announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/536"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-22",
+      "kind": "info",
+      "hit": 0,
+      "text": "HPC publishes policy agenda",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Recurring policy commentary; retained as research context.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/advancing-policy-for-the-house-of-all-finance"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-27",
+      "kind": "info",
+      "hit": 0,
+      "text": "Perp order priority fees expanded",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/538"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC files prediction-market comment",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-files-comment-to-the-cftc’s-anprm-on-prediction-markets"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "kind": "up",
+      "hit": 2,
+      "text": "HIP-4 mainnet initial release",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/541"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-07",
+      "kind": "up",
+      "hit": 1,
+      "text": "Multi-outcome markets launch",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/544"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-07",
+      "kind": "info",
+      "hit": 0,
+      "text": "Portfolio margin limits raised",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/543"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "kind": "up",
+      "hit": 2,
+      "text": "21Shares US HYPE ETF begins",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "21Shares",
+          "https://cdn.21shares.com/uploads/product_documents/Factsheets/Factsheet_THYP.pdf"
+        ],
+        [
+          "21Shares SEC financial statements",
+          "https://www.sec.gov/Archives/edgar/data/2090011/000121390026102705/R9.htm"
+        ],
+        [
+          "21Shares launch release via Nasdaq",
+          "https://www.nasdaq.com/press-release/21shares-launches-thyp-and-txxh-first-us-etfs-tracking-hyperliquid-2026-05-12"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "kind": "up",
+      "hit": 1,
+      "text": "AQAv2 stablecoin model proposed",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/547"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "kind": "up",
+      "hit": 1,
+      "text": "Coinbase-Circle AQAv2 plan",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/548"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ],
+        [
+          "Circle",
+          "https://www.circle.com/blog/circle-expands-support-for-usdc-on-hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "kind": "up",
+      "hit": 2,
+      "text": "Bitwise US HYPE ETF trading begins",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Bitwise",
+          "https://bitwiseinvestments.com/newsroom/bitwise-launches-spot-hyperliquid-etf-bhyp"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "kind": "info",
+      "hit": 0,
+      "text": "27-validator expansion announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/549"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "kind": "up",
+      "hit": 1,
+      "text": "Offchain-event outcome markets live",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/552"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "up",
+      "hit": 1,
+      "text": "HIP-4 uses USDC by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/553"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "info",
+      "hit": 0,
+      "text": "USDT borrowing tested",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/554"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "kind": "info",
+      "hit": 0,
+      "text": "USDT borrowing live by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/555"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "kind": "up",
+      "hit": 1,
+      "text": "Validator set reaches 27 by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/555"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "kind": "up",
+      "hit": 2,
+      "text": "Grayscale HYPE ETF lists",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Grayscale",
+          "https://etfs.grayscale.com/hypg"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC-Paradigm stablecoin comment",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-and-paradigm-file-joint-comment-on-treasury’s-genius-act-proposed-rule"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "kind": "info",
+      "hit": 0,
+      "text": "ETH-HYPE-SOL daily outcomes added",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/557"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "kind": "up",
+      "hit": 1,
+      "text": "USDC AQAv2 operating details",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/559"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "kind": "up",
+      "hit": 1,
+      "text": "USDC AQAv2 active by update",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/560"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "kind": "down",
+      "hit": 1,
+      "text": "USDH markets finish settlement",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/561"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "kind": "up",
+      "hit": 1,
+      "text": "Portfolio margin enters beta",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/563"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "kind": "down",
+      "hit": 1,
+      "text": "MAS Investor Alert List entry",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/564"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ],
+        [
+          "MAS",
+          "https://www.mas.gov.sg/investor-alert-list?q=hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-28",
+      "kind": "up",
+      "hit": 1,
+      "text": "USDH migration grants announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/566"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "kind": "up",
+      "hit": 1,
+      "text": "TradingView adds Hyperliquid data",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/570"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes"
+        ],
+        [
+          "TradingView",
+          "https://www.tradingview.com/blog/en/trade-xyz-and-hyperliquid-59210/"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "kind": "up",
+      "hit": 1,
+      "text": "VALR Hyperliquid perps announced",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "VALR",
+          "https://blog.valr.com/blog/valr-launches-200-hyperliquid-perps-markets"
+        ],
+        [
+          "Corroborating source",
+          "https://t.me/hyperliquid_announcements/569"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC-Phantom onchain market proposal",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-and-phantom-ask-the-cftc-to-make-room-for-onchain-market-infrastructure"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "kind": "info",
+      "hit": 0,
+      "text": "Chase limit orders added",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/576"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "kind": "info",
+      "hit": 1,
+      "text": "Permissionless HIP-4 proposed",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/575"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC supports prediction-market rules",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-and-multicoin-back-the-cftc-s-prediction-markets-framework"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "kind": "info",
+      "hit": 0,
+      "text": "TWAP trigger prices added",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/577"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "kind": "info",
+      "hit": 0,
+      "text": "Permissionless HIP-4 testnet active",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/578"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "kind": "info",
+      "hit": 0,
+      "text": "TWAP duration expanded",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/578"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC comments on agricultural markets",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-files-statement-in-connection-with-cftc-agricultural-advisory-committee-meeting"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "kind": "up",
+      "hit": 1,
+      "text": "xStocks goes live on HyperCore",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Payward",
+          "https://www.payward.com/press-release/xstocks-on-hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-3 deployer fees refined",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/579"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "kind": "info",
+      "hit": 0,
+      "text": "HIP-4 deployment tools expanded",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/580"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC backs market-structure reform",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-and-douro-labs-back-the-sec-s-move-to-retire-the-trade-through-rule"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC presents pre-IPO perps",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-and-trade-xyz-introduce-pre-ipo-perpetuals-to-the-sec"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "kind": "info",
+      "hit": 0,
+      "text": "HPC compares futures structures",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Recurring policy commentary; retained as research context.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/perpetual-futures-as-complements-to-dated-futures"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC seeks harmonized perp rules",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-urges-the-sec-and-cftc-to-adopt-a-harmonized-framework-for-perpetual-contracts"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "kind": "info",
+      "hit": 0,
+      "text": "Spot annotations added",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/582"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC seeks energy perp framework",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-and-trade-xyz-ask-the-cftc-to-bring-energy-perpetual-contracts-to-u.s.-markets"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "kind": "info",
+      "hit": 0,
+      "text": "HPC publishes perpetuals policy view",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Recurring policy commentary; retained as research context.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/perpetual-contracts-belong-at-the-center-of-the-cftc-s-innovation-agenda"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "kind": "up",
+      "hit": 1,
+      "text": "Permissionless HIP-4 live by update",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/585"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "kind": "info",
+      "hit": 1,
+      "text": "HIP-3 permissioned-market spec shared",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/586"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "kind": "up",
+      "hit": 1,
+      "text": "Manual borrowing live by update",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/586"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/manual-borrows"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC files futures amicus brief",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-files-amicus-brief-to-defend-innovation-in-u.s.-futures-markets"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "kind": "up",
+      "hit": 1,
+      "text": "Payward plans US HIP-3 markets",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Payward",
+          "https://www.payward.com/press-release/payward-hyperliquid-onchain-perpetual-futures"
+        ],
+        [
+          "Corroborating source",
+          "https://t.me/hyperliquid_announcements/598"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "kind": "info",
+      "hit": 0,
+      "text": "Manual borrowing guide published",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine feature refinement or duplicate follow-up; retained for research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/589"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/manual-borrows"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "kind": "info",
+      "hit": 0,
+      "text": "Trailing stops launch",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/590"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trailing-stops"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "up",
+      "hit": 2,
+      "text": "Binance HYPE spot trading begins",
+      "previousRemove": false,
+      "remove": false,
+      "inPriceRange": true,
+      "reason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể.",
+      "sources": [
+        [
+          "Binance",
+          "https://www.binance.bh/en-AE/support/announcement/detail/d49de208bb6d4a26b02677d7c3d89b5d"
+        ],
+        [
+          "Binance TR",
+          "https://www.binance.tr/tr/blog/Geli%C5%9Fmeler/cc5705200a3b48c78b3ee44579160210"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC comments on EU onchain rules",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-urges-the-european-commission-to-build-on-the-eu’s-existing-rules-for-onchain-markets"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC comments on SEC crypto rules",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-urges-the-sec-to-adopt-regulation-crypto-assets-with-five-refinements"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "info",
+      "hit": 1,
+      "text": "HPC proposes compute perps rules",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
+      "sources": [
+        [
+          "Hyperliquid Policy Center",
+          "https://hyperliquidpolicy.org/blog/hpc-urges-the-cftc-to-bring-compute-perpetual-contracts-to-u.s.-markets"
+        ],
+        [
+          "Hyperliquid Policy Center index",
+          "https://hyperliquidpolicy.org/blog"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "info",
+      "hit": 0,
+      "text": "Scheduled network upgrade completed",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Status",
+          "https://hyperliquid.statuspage.io/incidents/1g6btx6f71d0"
+        ],
+        [
+          "Hyperliquid Status current history",
+          "https://hyperliquid.statuspage.io/"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "up",
+      "hit": 1,
+      "text": "CFB Oracle launches for onchain markets",
+      "previousRemove": false,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
+      "sources": [
+        [
+          "Payward",
+          "https://www.payward.com/press-release/cf-benchmarks-launches-cfb-oracle"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "info",
+      "hit": 0,
+      "text": "API priority updates reported",
+      "previousRemove": true,
+      "remove": true,
+      "inPriceRange": true,
+      "reason": "Routine refinement or duplicate follow-up; retained in research.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/600"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees"
+        ]
+      ]
+    }
+  ]
+}

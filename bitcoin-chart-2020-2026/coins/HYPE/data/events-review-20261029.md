@@ -1,3 +1,5 @@
+> Selection update 2026-10-29: the counts/flags below describe the pre-trim audit snapshot. Current selection: 44 in-range events + 4 automatic turns, 108 newly hidden, 171 removed overall. See [current item-by-item review](events-important-review-20261029.md). Pending approval before any new render.
+
 # HYPE — danh sách sự kiện sau đối chiếu lần hai, 29/10/2026
 
 225 mục có nguồn; hit 0/1/2 = 94/116/15. 63 mục remove=true vẫn giữ trong nghiên cứu.

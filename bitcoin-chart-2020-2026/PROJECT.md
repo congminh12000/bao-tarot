@@ -318,6 +318,13 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **HYPE tinh gọn — 29/10/2026:** người dùng yêu cầu chỉ giữ sự kiện liên quan quan trọng.
+  Giữ 44 sự kiện trong đoạn giá (30 mức 1, 14 mức 2) + 4 ATH/ATL = 48 nhãn, từ 156 nhãn trước đó.
+  Đặt thêm 108 dòng remove=true; tổng 171 ẩn, 54 giữ (10 bối cảnh trước đoạn giá).
+  Giữ nguyên toàn bộ 225 dòng/465 nguồn, ngày/text/hit, giá, phase và nhạc; không mở lại mục đã ẩn.
+  Danh sách từng mục giữ/ẩn và lý do/nguồn: `coins/HYPE/data/events-important-review-20261029.md`.
+  **Chờ duyệt danh sách tinh gọn trước mọi render mới**; video preview cũ vẫn dùng 152 sự kiện.
+
 - **HYPE preview full — 29/10/2026:** người dùng yêu cầu render preview full với danh sách hiện tại (152 sự kiện trong đoạn giá).
   Chuẩn bị logo mint chính thức từ brand kit, bảng màu mint nháp để duyệt qua preview; 5 phase/5 cue không lặp.
   Render ở workspace riêng `out/hype-preview-full-workspace-20261029/`, giữ nguyên root data/music và CSV giá đầy đủ precision.

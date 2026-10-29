@@ -18,3 +18,7 @@ The research audit does not certify exhaustive world history. The subsequent ful
 ## Full preview requested 2026-10-29
 
 User requested the full preview with the current selection (152 in-range research events). Official mint blob from the Hyperliquid brand kit; draft mint palette pending visual approval. Five automatically detected phases use five distinct approved library cues. Render runs in an isolated workspace; root data/music and analytical daily price precision remain unchanged. See `preview-20261029.json`.
+
+## Important-only selection — pending approval
+
+Current events.csv keeps 44 in-range events (30 level 1, 14 level 2), plus four automatic turns = 48 video labels. 108 newly hidden; 171 removed overall; 54 retained including 10 pre-price context rows. All 225 research rows and 465 citations remain; no date/text/level, price, phase or cue changes. Existing full preview still contains the previous 152-event selection. Review `data/events-important-review-20261029.md` and approve before any new render.

@@ -1,7 +1,7 @@
 {
   "coin": "HYPE",
   "checkedOn": "2026-10-29",
-  "approval": "pending event-list review; do not render",
+  "approval": "pending compact event-list approval; do not render",
   "scope": "Dated protocol, token utility, material security incidents, institutional access and counterparty milestones; no claim of exhaustive worldwide history.",
   "grading": {
     "kind": "editorial direction/category; not proof of price causation",
@@ -32,7 +32,8 @@
       "dateBasis": "explicit effective date in announcement",
       "note": "",
       "post": 46,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2023-12-19",
@@ -55,7 +56,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 85,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2023-12-21",
@@ -78,7 +80,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 87,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2024-02-21",
@@ -101,7 +104,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 136,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2024-05-20",
@@ -124,7 +128,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 184,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2024-05-24",
@@ -147,7 +152,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 185,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2024-10-01",
@@ -170,7 +176,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 234,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2024-10-03",
@@ -193,7 +200,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 236,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2024-10-07",
@@ -216,7 +224,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "False-positive safety lock; not described as a hack.",
       "post": 238,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2024-11-28",
@@ -243,7 +252,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 258,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2024-11-29",
@@ -270,7 +280,8 @@
       "dateBasis": "dated primary announcement",
       "note": "HYPE launch precedes first available saved TradingView candle by five days; do not fabricate prices.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ dữ liệu bối cảnh; nằm trước phạm vi giá nên không hiện trên video."
     },
     {
       "date": "2024-12-23",
@@ -293,7 +304,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 277,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2024-12-23",
@@ -316,7 +328,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Reports of security concerns and outflows; no confirmed protocol hack claimed.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2024-12-26",
@@ -339,7 +352,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 278,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2024-12-30",
@@ -370,7 +384,8 @@
       "dateBasis": "dated primary announcement",
       "note": "December 30 launch; January 10 recap is not the launch date.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-01-13",
@@ -378,7 +393,7 @@
       "hit": 1,
       "tag": "",
       "text": "ANIME rewards for HYPE stakers announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -389,11 +404,12 @@
           "https://resources.cryptocompare.com/asset-management/18603/1739440506822.pdf"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Announced future TGE reward eligibility; not a claim of an already-completed HYPE airdrop.",
       "post": 287,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-01-13",
@@ -401,7 +417,7 @@
       "hit": 0,
       "tag": "",
       "text": "Native multisig testnet opens",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -412,11 +428,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 288,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-01-14",
@@ -439,7 +456,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 289,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-01-19",
@@ -447,7 +465,7 @@
       "hit": 1,
       "tag": "",
       "text": "Assistance Fund adds PURR",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -458,11 +476,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 295,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-01-26",
@@ -485,7 +504,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 303,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-01-26",
@@ -508,7 +528,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 303,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-01-27",
@@ -531,7 +552,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Clarification of a test transaction; not labelled as an exploit.",
       "post": 304,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-02-05",
@@ -539,7 +561,7 @@
       "hit": 0,
       "tag": "",
       "text": "Partial liquidation testnet opens",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -550,11 +572,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 307,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-02-10",
@@ -562,7 +585,7 @@
       "hit": 1,
       "tag": "",
       "text": "Native multisig live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -573,11 +596,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Already live as of this February 10 recap; not assuming February 12 explanatory post is the activation date.",
       "post": 310,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-02-12",
@@ -600,7 +624,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 312,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-02-14",
@@ -631,7 +656,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 314,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-02-18",
@@ -658,7 +684,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 316,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-03-04",
@@ -681,7 +708,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 320,
-      "verificationScope": "Dated primary notice plus official current announcements page; exact first publication not independently reconstructed."
+      "verificationScope": "Dated primary notice plus official current announcements page; exact first publication not independently reconstructed.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-03-04",
@@ -704,7 +732,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Announced as next upgrade; not marked as activated on March 4.",
       "post": 319,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-03-06",
@@ -712,7 +741,7 @@
       "hit": 1,
       "tag": "",
       "text": "Public mainnet nodes launch",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -727,11 +756,12 @@
           "https://github.com/hyperliquid-dex/node"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 321,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-03-07",
@@ -754,7 +784,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 322,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-03-12",
@@ -762,7 +793,7 @@
       "hit": 0,
       "tag": "",
       "text": "Delegation applications open",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -773,11 +804,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/delegation-program"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 323,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-03-12",
@@ -804,7 +836,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 324,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-03-13",
@@ -812,7 +845,7 @@
       "hit": 1,
       "tag": "",
       "text": "Margin safeguards strengthened",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -823,11 +856,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 325,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-03-14",
@@ -850,7 +884,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 326,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-03-19",
@@ -873,7 +908,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Proposal/announcement; later May 5 effective date kept separately.",
       "post": 329,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-03-25",
@@ -881,7 +917,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "HyperCore-HyperEVM linking live",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -892,11 +928,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 331,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-03-26",
@@ -927,7 +964,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 332,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-03-27",
@@ -950,7 +988,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 334,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-03-27",
@@ -958,7 +997,7 @@
       "hit": 1,
       "tag": "",
       "text": "Unit adds native ETH spot",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -973,11 +1012,12 @@
           "https://oakresearch.io/en/analyses/innovations/hyper-unit-hidden-engine-powering-hyperliquid"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 333,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-03-28",
@@ -985,7 +1025,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Onchain delisting votes launch",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -996,11 +1036,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 335,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-03-29",
@@ -1023,7 +1064,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 336,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-04-21",
@@ -1031,7 +1073,7 @@
       "hit": 1,
       "tag": "",
       "text": "Validator set expands to 21",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1042,11 +1084,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 347,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-04-30",
@@ -1054,7 +1097,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "HyperCore read precompiles live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1065,11 +1108,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 352,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-05-01",
@@ -1077,7 +1121,7 @@
       "hit": 1,
       "tag": "",
       "text": "HIP-3 testnet opens",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1088,11 +1132,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 354,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-05-01",
@@ -1100,7 +1145,7 @@
       "hit": 1,
       "tag": "",
       "text": "Hyperliquid X account compromised",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1115,11 +1160,12 @@
           "https://www.rootdata.com/projects/detail/hyperliquid?k=ODM5NA%3D%3D"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Social account compromise, not a blockchain exploit.",
       "post": 353,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid."
     },
     {
       "date": "2025-05-04",
@@ -1127,7 +1173,7 @@
       "hit": 1,
       "tag": "",
       "text": "Staking accounts can be linked",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1138,11 +1184,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 355,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-05-05",
@@ -1150,7 +1197,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Staking fee discounts scheduled",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1161,11 +1208,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "explicit effective date in announcement",
       "note": "Effective date scheduled in primary announcement; exact intraday activation not independently reconstructed.",
       "post": 351,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-05-09",
@@ -1188,7 +1236,8 @@
       "dateBasis": "dated primary announcement",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-05-13",
@@ -1196,7 +1245,7 @@
       "hit": 1,
       "tag": "",
       "text": "Staking referral program proposed",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1207,11 +1256,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Proposal; not falsely labelled final deployment.",
       "post": 362,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-05-13",
@@ -1219,7 +1269,7 @@
       "hit": 1,
       "tag": "",
       "text": "Unit adds SOL and FARTCOIN spot",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1234,11 +1284,12 @@
           "https://oakresearch.io/en/reports/protocols/hyperliquid-hype-s1-2025-activity-report"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 363,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-05-21",
@@ -1246,7 +1297,7 @@
       "hit": 0,
       "tag": "",
       "text": "Rabby-DeBank support confirmed",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1261,11 +1312,12 @@
           "https://www.aicoin.com/en/news-flash/2377477"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Protocol confirmation May 21; earlier May 20 reporting exists. Label deliberately does not claim first integration day.",
       "post": 368,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid."
     },
     {
       "date": "2025-05-22",
@@ -1273,7 +1325,7 @@
       "hit": 1,
       "tag": "",
       "text": "HYPE spot-auction fees announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1284,11 +1336,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 371,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-05-22",
@@ -1296,7 +1349,7 @@
       "hit": 1,
       "tag": "",
       "text": "Labs files CFTC perpetuals comments",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "CFTC submission list",
@@ -1311,11 +1364,12 @@
           "https://t.me/hyperliquid_announcements/372"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "CFTC public submission record",
       "note": "Letter dated May 21; CFTC submission list May 22; protocol recap May 23. Submission date used, not a regulatory approval.",
       "post": null,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-05-22",
@@ -1323,7 +1377,7 @@
       "hit": 1,
       "tag": "",
       "text": "Margin tiers scheduled",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1334,11 +1388,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "explicit effective date in announcement",
       "note": "",
       "post": 367,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-05-23",
@@ -1365,7 +1420,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Public announcement of the two letters; not the filing date.",
       "post": 372,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-05-24",
@@ -1373,7 +1429,7 @@
       "hit": 1,
       "tag": "",
       "text": "Foundation X account compromised",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1388,11 +1444,12 @@
           "https://cryptonews.com/news/hype-price-shoots-13-amid-crypto-whale-trading-frenzy/"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Social account compromise; blockchain explicitly reported unaffected.",
       "post": 373,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid."
     },
     {
       "date": "2025-05-25",
@@ -1415,7 +1472,8 @@
       "dateBasis": "explicit effective date in announcement",
       "note": "",
       "post": 374,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-05-26",
@@ -1423,7 +1481,7 @@
       "hit": 1,
       "tag": "",
       "text": "Faster HyperEVM blocks proposed",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1434,11 +1492,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Next-upgrade announcement; not an already-live assertion.",
       "post": 377,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-05-26",
@@ -1465,7 +1524,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 375,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-05-26",
@@ -1488,7 +1548,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Activation confirmed by May 26 recap; exact block/date not inferred.",
       "post": 378,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-05-26",
@@ -1511,7 +1572,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 378,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-05-30",
@@ -1530,7 +1592,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-06-02",
@@ -1553,7 +1616,8 @@
       "dateBasis": "explicit effective date in announcement",
       "note": "",
       "post": 380,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-06-10",
@@ -1576,7 +1640,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 382,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-06-20",
@@ -1595,7 +1660,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-06-25",
@@ -1618,7 +1684,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 383,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-06-25",
@@ -1626,7 +1693,7 @@
       "hit": 0,
       "tag": "",
       "text": "Local node HTTP API available by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1637,11 +1704,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 383,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-06-25",
@@ -1664,7 +1732,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Next-upgrade announcement in recap, not assumed live June 25.",
       "post": 383,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-07-01",
@@ -1672,7 +1741,7 @@
       "hit": 0,
       "tag": "",
       "text": "Multiple quote assets on testnet",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1683,11 +1752,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 385,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-07-02",
@@ -1695,7 +1765,7 @@
       "hit": 1,
       "tag": "",
       "text": "CoreWriter mainnet rollout announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1706,11 +1776,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 386,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-07-03",
@@ -1718,7 +1789,7 @@
       "hit": 0,
       "tag": "",
       "text": "Validator expansion announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1729,11 +1800,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 387,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-07-07",
@@ -1741,7 +1813,7 @@
       "hit": 0,
       "tag": "",
       "text": "HyperEVM block explorer released",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1756,11 +1828,12 @@
           "https://hyperevmscan.io/"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 388,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-07-08",
@@ -1787,7 +1860,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "July 8 Phantom announcement takes precedence over July 9 protocol recap.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-07-09",
@@ -1810,7 +1884,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Confirmed live by July 9; later July 21 recap says two weeks earlier; no exact launch day inferred.",
       "post": 390,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-07-14",
@@ -1818,18 +1893,19 @@
       "hit": 1,
       "tag": "",
       "text": "HSI treasury combination announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Sonnet SEC filing",
           "https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001641172-25-018878/0001641172-25-018878.pdf"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-07-15",
@@ -1837,7 +1913,7 @@
       "hit": 0,
       "tag": "",
       "text": "Staking referral design reconsidered",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1848,11 +1924,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 398,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-07-16",
@@ -1875,7 +1952,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 400,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-07-21",
@@ -1898,7 +1976,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 403,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-07-29",
@@ -1925,7 +2004,8 @@
       "dateBasis": "explicit effective date in announcement",
       "note": "Incident July 29, statement July 30; API delays 14:10–14:47 UTC; blockchain continued producing blocks.",
       "post": 406,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-07-31",
@@ -1933,7 +2013,7 @@
       "hit": 1,
       "tag": "",
       "text": "Circle announces native USDC",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Circle",
@@ -1944,11 +2024,12 @@
           "https://t.me/hyperliquid_announcements/408"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-08-04",
@@ -1971,7 +2052,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 410,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-08-05",
@@ -1979,7 +2061,7 @@
       "hit": 0,
       "tag": "",
       "text": "Foundation data node available by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1990,11 +2072,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node-for-infra-providers"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 411,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-08-18",
@@ -2002,7 +2085,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Multiple spot quote assets live",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2013,11 +2096,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 415,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-08-26",
@@ -2040,7 +2124,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "August 26 next-upgrade announcement, not assumed exact activation date.",
       "post": 420,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-08-27",
@@ -2063,7 +2148,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 422,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-08-27",
@@ -2086,7 +2172,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 421,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-08-28",
@@ -2105,7 +2192,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-08-31",
@@ -2113,7 +2201,7 @@
       "hit": 1,
       "tag": "",
       "text": "Validator set reaches 24 by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2124,11 +2212,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 423,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-09-05",
@@ -2136,7 +2225,7 @@
       "hit": 1,
       "tag": "",
       "text": "USDH ticker vote announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2147,11 +2236,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 427,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-09-09",
@@ -2159,7 +2249,7 @@
       "hit": 0,
       "tag": "",
       "text": "Quote-asset spot fee reductions live",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2170,11 +2260,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 428,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-09-09",
@@ -2197,7 +2288,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 428,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-09-10",
@@ -2220,7 +2312,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 429,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-09-16",
@@ -2243,7 +2336,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-09-17",
@@ -2251,7 +2345,7 @@
       "hit": 0,
       "tag": "",
       "text": "HIP-3 quote-collateral support proposed",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2262,11 +2356,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Pending testnet testing, not a completed mainnet change.",
       "post": 432,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-09-17",
@@ -2274,7 +2369,7 @@
       "hit": 1,
       "tag": "",
       "text": "Native Markets wins USDH ticker",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2285,11 +2380,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Winner confirmed by September 17 update; exact vote completion requires separate primary ledger evidence.",
       "post": 432,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-09-19",
@@ -2297,7 +2393,7 @@
       "hit": 1,
       "tag": "",
       "text": "Aligned stablecoins proposed",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2308,11 +2404,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 434,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-09-24",
@@ -2335,7 +2432,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Announcement of ticker winner is distinct from actual spot trading.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-09-25",
@@ -2358,7 +2456,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 442,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-09-25",
@@ -2381,7 +2480,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 441,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-09-27",
@@ -2404,7 +2504,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Third-party HyperEVM application; not a Hyperliquid L1 exploit. Saturday September 27 incident, reported September 28.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-09-28",
@@ -2412,7 +2513,7 @@
       "hit": 0,
       "tag": "",
       "text": "HYPE-USDH spot pair available by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2423,11 +2524,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 446,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-09-28",
@@ -2435,7 +2537,7 @@
       "hit": 1,
       "tag": "",
       "text": "Hypurr NFTs deployed",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2446,11 +2548,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 447,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid."
     },
     {
       "date": "2025-09-28",
@@ -2458,7 +2561,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Permissionless quote assets live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2469,11 +2572,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 446,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-10-06",
@@ -2481,7 +2585,7 @@
       "hit": 0,
       "tag": "",
       "text": "Aligned quote assets on testnet",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2492,11 +2596,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 456,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-10-06",
@@ -2519,7 +2624,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 452,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-10-06",
@@ -2542,7 +2648,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 453,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-10-06",
@@ -2565,7 +2672,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 455,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-10-06",
@@ -2588,7 +2696,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 454,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-10-08",
@@ -2611,7 +2720,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-10-10",
@@ -2634,7 +2744,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Market event; not claimed to be a Hyperliquid blockchain outage.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-10-13",
@@ -2661,7 +2772,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 461,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-10-15",
@@ -2684,7 +2796,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 462,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-10-20",
@@ -2707,7 +2820,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 464,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-10-24",
@@ -2730,7 +2844,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 468,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-10-29",
@@ -2738,7 +2853,7 @@
       "hit": 0,
       "tag": "",
       "text": "HIP-3 frontend access live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2749,11 +2864,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/frontend-checks"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 469,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-11-02",
@@ -2776,7 +2892,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 471,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-11-06",
@@ -2784,7 +2901,7 @@
       "hit": 0,
       "tag": "",
       "text": "HIP-3 sub-deployers supported",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2795,11 +2912,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 473,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-11-06",
@@ -2807,7 +2925,7 @@
       "hit": 0,
       "tag": "",
       "text": "HyperEVM gas capacity increased",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2818,11 +2936,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 473,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-11-12",
@@ -2830,7 +2949,7 @@
       "hit": 1,
       "tag": "",
       "text": "Arbitrum bridge safety lock",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2841,11 +2960,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Approximately 25-minute safety lock; funds reported safe, no exploit asserted.",
       "post": 477,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-11-12",
@@ -2868,7 +2988,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Use first report date November 12; several reports date the episode/bridge pause November 13. Exact UTC onset conflict remains; do not merge causally with the separately stated bridge safety lock.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-11-15",
@@ -2891,7 +3012,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 479,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-11-19",
@@ -2899,7 +3021,7 @@
       "hit": 1,
       "tag": "",
       "text": "HIP-3 growth mode announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2910,11 +3032,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 480,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-11-24",
@@ -2922,7 +3045,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Aligned quote assets live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2933,11 +3056,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 481,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-11-24",
@@ -2960,7 +3084,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 481,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-11-24",
@@ -2983,7 +3108,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 481,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-11-29",
@@ -3002,7 +3128,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-12-01",
@@ -3025,7 +3152,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 484,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2025-12-02",
@@ -3033,7 +3161,7 @@
       "hit": 1,
       "tag": "",
       "text": "HSI business combination closes",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Nasdaq Trader",
@@ -3044,11 +3172,12 @@
           "https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001493152-25-025886/0001493152-25-025886.pdf"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-12-03",
@@ -3071,7 +3200,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2025-12-07",
@@ -3079,7 +3209,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Native USDC links Core and EVM",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3090,11 +3220,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 485,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2025-12-12",
@@ -3102,7 +3233,7 @@
       "hit": 1,
       "tag": "",
       "text": "Portfolio margin testnet opens",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3113,11 +3244,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 489,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-12-17",
@@ -3125,7 +3257,7 @@
       "hit": 1,
       "tag": "",
       "text": "Assistance Fund burn vote proposed",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3136,11 +3268,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Proposal, not a new transfer/burn transaction.",
       "post": 490,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-12-22",
@@ -3163,7 +3296,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 491,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2025-12-23",
@@ -3171,7 +3305,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Portfolio margin mainnet pre-alpha",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3182,11 +3316,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 494,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2025-12-24",
@@ -3213,7 +3348,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Formal recognition of irretrievable system-address balances; not a new token transfer. December 26 follow-up report is not used as vote date.",
       "post": null,
-      "verificationScope": "Official protocol recap confirms stake-weighted burn recognition; December 24 date independently corroborated in reports."
+      "verificationScope": "Official protocol recap confirms stake-weighted burn recognition; December 24 date independently corroborated in reports.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-01-04",
@@ -3236,7 +3372,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 497,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2026-01-17",
@@ -3244,7 +3381,7 @@
       "hit": 0,
       "tag": "",
       "text": "BTC collateral added to pre-alpha",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3255,11 +3392,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 503,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-01-17",
@@ -3267,7 +3405,7 @@
       "hit": 0,
       "tag": "",
       "text": "USDH borrowing added to pre-alpha",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3278,11 +3416,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 503,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-01-18",
@@ -3305,7 +3444,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 506,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2026-01-27",
@@ -3313,7 +3453,7 @@
       "hit": 0,
       "tag": "",
       "text": "HIP-3 normal isolated margin added",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3324,11 +3464,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 508,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-01-27",
@@ -3347,7 +3488,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-01-31",
@@ -3355,7 +3497,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Unified account pre-alpha launches",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3366,11 +3508,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 509,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-02-02",
@@ -3378,7 +3521,7 @@
       "hit": 1,
       "tag": "",
       "text": "HIP-4 outcome markets announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3389,11 +3532,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 511,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-02-03",
@@ -3416,7 +3560,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 512,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-02-04",
@@ -3439,7 +3584,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-02-12",
@@ -3447,7 +3593,7 @@
       "hit": 1,
       "tag": "",
       "text": "CCTP becomes default USDC deposit",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3458,11 +3604,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 514,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-02-12",
@@ -3470,7 +3617,7 @@
       "hit": 0,
       "tag": "",
       "text": "HIP-3 cross margin on testnet",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3481,11 +3628,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 516,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-02-18",
@@ -3493,7 +3641,7 @@
       "hit": 1,
       "tag": "",
       "text": "Foundation backs Policy Center",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3508,11 +3656,12 @@
           "https://hyperliquidpolicy.org/blog/launch-press-release"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 518,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-02-18",
@@ -3520,18 +3669,19 @@
       "hit": 1,
       "tag": "",
       "text": "Hyperliquid Policy Center launches",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
           "https://hyperliquidpolicy.org/blog/launch-press-release"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-02-20",
@@ -3554,7 +3704,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 520,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-02-24",
@@ -3577,7 +3728,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 521,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2026-02-24",
@@ -3585,18 +3737,19 @@
       "hit": 1,
       "tag": "",
       "text": "CoinShares HYPE staking ETP launches",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "CoinShares",
           "https://etp.coinshares.com/corp/news/coinshares-launches-hyperliquid-staking-etp-with-0-management-fee-and-0-5-yield/"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-02-24",
@@ -3604,7 +3757,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "HIP-3 cross margin live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3615,11 +3768,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Confirmed by February 24 recap; no exact activation block assumed.",
       "post": 521,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-03-10",
@@ -3627,7 +3781,7 @@
       "hit": 1,
       "tag": "",
       "text": "HIP-4 testnet opens",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3638,11 +3792,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "February 2 was initial outcome-market announcement, not this March 10 testnet opening.",
       "post": 526,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-03-10",
@@ -3650,7 +3805,7 @@
       "hit": 0,
       "tag": "",
       "text": "Portfolio margin alpha announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3661,11 +3816,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 525,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-03-18",
@@ -3684,7 +3840,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-03-19",
@@ -3692,7 +3849,7 @@
       "hit": 1,
       "tag": "",
       "text": "Fiat onramp enters testing",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3703,11 +3860,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 528,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-04-01",
@@ -3715,7 +3873,7 @@
       "hit": 1,
       "tag": "",
       "text": "Android app testing begins",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3726,11 +3884,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 531,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-04-01",
@@ -3738,18 +3897,19 @@
       "hit": 1,
       "tag": "",
       "text": "Bitwise European HYPE ETP begins",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Bitwise Europe",
           "https://bitwiseinvestments.eu/products/bitwise-hyperliquid-staking-etp/"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-04-03",
@@ -3772,7 +3932,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 532,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-04-06",
@@ -3780,7 +3941,7 @@
       "hit": 0,
       "tag": "",
       "text": "Portfolio margin entry rules eased",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3791,11 +3952,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 534,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-04-09",
@@ -3818,7 +3980,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Report date April 9; some analyst posts April 8 and low-quality reposts April 23 conflict. No code exploit or exact HLP-loss attribution claimed.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-04-13",
@@ -3826,7 +3989,7 @@
       "hit": 0,
       "tag": "",
       "text": "Legacy vault creation fee raised",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3837,11 +4000,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/hypercore-vaults-legacy"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 535,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-04-13",
@@ -3849,7 +4013,7 @@
       "hit": 0,
       "tag": "",
       "text": "Priority fees live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3860,11 +4024,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 535,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-04-21",
@@ -3872,7 +4037,7 @@
       "hit": 0,
       "tag": "",
       "text": "DEX abstraction retirement announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3883,11 +4048,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Retirement announced for a later upgrade, not claimed already disabled.",
       "post": 536,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-04-22",
@@ -3910,7 +4076,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Recurring policy commentary; retained as research context."
     },
     {
       "date": "2026-04-27",
@@ -3933,7 +4100,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 538,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-04-30",
@@ -3941,7 +4109,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC files prediction-market comment",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -3952,11 +4120,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-05-02",
@@ -3979,7 +4148,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 541,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-05-07",
@@ -3987,7 +4157,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Multi-outcome markets launch",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -3998,11 +4168,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 544,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-05-07",
@@ -4025,7 +4196,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 543,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-05-12",
@@ -4052,7 +4224,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "Product page and anticipated Nasdaq circular say May 11; subsequent issuer SEC statements explicitly confirm operations and exchange listing May 12. Use actual commencement May 12.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-05-14",
@@ -4060,7 +4233,7 @@
       "hit": 1,
       "tag": "",
       "text": "AQAv2 stablecoin model proposed",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4071,11 +4244,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 547,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-05-14",
@@ -4083,7 +4257,7 @@
       "hit": 1,
       "tag": "",
       "text": "Coinbase-Circle AQAv2 plan",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4098,11 +4272,12 @@
           "https://www.circle.com/blog/circle-expands-support-for-usdc-on-hyperliquid"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 548,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-05-15",
@@ -4121,7 +4296,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-05-18",
@@ -4129,7 +4305,7 @@
       "hit": 0,
       "tag": "",
       "text": "27-validator expansion announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4140,11 +4316,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 549,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-05-25",
@@ -4152,7 +4329,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Offchain-event outcome markets live",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4163,11 +4340,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 552,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-05-26",
@@ -4175,7 +4353,7 @@
       "hit": 1,
       "tag": "",
       "text": "HIP-4 uses USDC by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4186,11 +4364,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 553,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-05-26",
@@ -4213,7 +4392,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 554,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-06-02",
@@ -4221,7 +4401,7 @@
       "hit": 0,
       "tag": "",
       "text": "USDT borrowing live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4232,11 +4412,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 555,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-06-02",
@@ -4244,7 +4425,7 @@
       "hit": 1,
       "tag": "",
       "text": "Validator set reaches 27 by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4255,11 +4436,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 555,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-06-03",
@@ -4278,7 +4460,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Issuer listing date 06/03/2026 (US date format).",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-06-09",
@@ -4286,7 +4469,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC-Paradigm stablecoin comment",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -4297,11 +4480,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-06-11",
@@ -4324,7 +4508,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 557,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-06-12",
@@ -4332,7 +4517,7 @@
       "hit": 1,
       "tag": "",
       "text": "USDC AQAv2 operating details",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4343,11 +4528,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "June 12 operational description; future yield accrual/payment dates are scheduled, not recorded as completed.",
       "post": 559,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-06-16",
@@ -4370,7 +4556,8 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 560,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-06-20",
@@ -4393,7 +4580,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 561,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-06-25",
@@ -4416,7 +4604,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 563,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-06-26",
@@ -4443,7 +4632,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 564,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-06-28",
@@ -4451,7 +4641,7 @@
       "hit": 1,
       "tag": "",
       "text": "USDH migration grants announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4462,11 +4652,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 566,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-07-02",
@@ -4474,7 +4665,7 @@
       "hit": 1,
       "tag": "",
       "text": "TradingView adds Hyperliquid data",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4489,11 +4680,12 @@
           "https://www.tradingview.com/blog/en/trade-xyz-and-hyperliquid-59210/"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 570,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-07-02",
@@ -4501,7 +4693,7 @@
       "hit": 1,
       "tag": "",
       "text": "VALR Hyperliquid perps announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "VALR",
@@ -4512,11 +4704,12 @@
           "https://t.me/hyperliquid_announcements/569"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "July 2 announcement schedules web access July 6; not claimed live July 2.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-07-09",
@@ -4524,7 +4717,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC-Phantom onchain market proposal",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -4535,11 +4728,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-07-20",
@@ -4562,7 +4756,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 576,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-07-20",
@@ -4570,7 +4765,7 @@
       "hit": 1,
       "tag": "",
       "text": "Permissionless HIP-4 proposed",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4581,11 +4776,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 575,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-07-27",
@@ -4593,7 +4789,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC supports prediction-market rules",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -4604,11 +4800,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-07-27",
@@ -4631,7 +4828,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 577,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-08-03",
@@ -4639,7 +4837,7 @@
       "hit": 0,
       "tag": "",
       "text": "Permissionless HIP-4 testnet active",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4650,11 +4848,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 578,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn thông báo/đề xuất/thử nghiệm; ưu tiên mốc triển khai quan trọng đã có, chưa coi đề xuất là kết quả."
     },
     {
       "date": "2026-08-03",
@@ -4677,7 +4876,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 578,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-08-07",
@@ -4685,7 +4885,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC comments on agricultural markets",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -4696,11 +4896,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-08-10",
@@ -4719,7 +4920,8 @@
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-08-12",
@@ -4742,7 +4944,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 579,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-08-14",
@@ -4765,7 +4968,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 580,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-08-17",
@@ -4773,7 +4977,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC backs market-structure reform",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -4784,11 +4988,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-08-18",
@@ -4796,7 +5001,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC presents pre-IPO perps",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -4807,11 +5012,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-08-21",
@@ -4834,7 +5040,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Recurring policy commentary; retained as research context."
     },
     {
       "date": "2026-08-24",
@@ -4842,7 +5049,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC seeks harmonized perp rules",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -4853,11 +5060,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-08-24",
@@ -4880,7 +5088,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 582,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-08-26",
@@ -4888,7 +5097,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC seeks energy perp framework",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -4899,11 +5108,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-08-27",
@@ -4926,7 +5136,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Recurring policy commentary; retained as research context."
     },
     {
       "date": "2026-08-31",
@@ -4949,7 +5160,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Confirmed by August 31 weekly recap; exact activation day not independently reconstructed.",
       "post": 585,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-09-08",
@@ -4957,7 +5169,7 @@
       "hit": 1,
       "tag": "",
       "text": "HIP-3 permissioned-market spec shared",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4968,11 +5180,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "Spec shared; not a permissioned mainnet activation or US regulatory approval.",
       "post": 586,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-09-08",
@@ -4980,7 +5193,7 @@
       "hit": 1,
       "tag": "",
       "text": "Manual borrowing live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4991,11 +5204,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/manual-borrows"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Already live by September 8 recap; September 18 dedicated explanation is not assumed activation date.",
       "post": 586,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-09-09",
@@ -5003,7 +5217,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC files futures amicus brief",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -5014,11 +5228,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-09-16",
@@ -5026,7 +5241,7 @@
       "hit": 1,
       "tag": "",
       "text": "Payward plans US HIP-3 markets",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Payward",
@@ -5037,11 +5252,12 @@
           "https://t.me/hyperliquid_announcements/598"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "Original issuer September 16 announcement takes precedence over October 26 Hyperliquid recap. Subject to regulatory approval; no US launch claimed.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-09-18",
@@ -5064,7 +5280,8 @@
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 589,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Routine feature refinement or duplicate follow-up; retained for research."
     },
     {
       "date": "2026-09-21",
@@ -5072,7 +5289,7 @@
       "hit": 0,
       "tag": "",
       "text": "Trailing stops launch",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -5083,11 +5300,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trailing-stops"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 590,
-      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+      "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
+      "selectionReason": "Ẩn chi tiết vận hành, cải tiến tính năng hoặc mốc phụ; giữ các thay đổi nền tảng và sự cố có tầm ảnh hưởng lớn hơn."
     },
     {
       "date": "2026-09-24",
@@ -5110,7 +5328,8 @@
       "dateBasis": "dated primary announcement",
       "note": "Spot listing; distinct from May 2025 futures launch.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
     },
     {
       "date": "2026-09-30",
@@ -5118,7 +5337,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC comments on EU onchain rules",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -5129,11 +5348,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-10-19",
@@ -5141,7 +5361,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC comments on SEC crypto rules",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -5152,11 +5372,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-10-20",
@@ -5164,7 +5385,7 @@
       "hit": 1,
       "tag": "",
       "text": "HPC proposes compute perps rules",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Policy Center",
@@ -5175,11 +5396,12 @@
           "https://hyperliquidpolicy.org/blog"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực.",
       "dateBasis": "dated primary announcement",
       "note": "Independent advocacy organization; comment/proposal is not regulatory approval.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn hoạt động vận động chính sách/bình luận thường kỳ; không phải quyết định pháp lý có hiệu lực."
     },
     {
       "date": "2026-10-25",
@@ -5202,7 +5424,8 @@
       "dateBasis": "Official status-page updates",
       "note": "Scheduled maintenance: in-progress 09:30 UTC, completed 09:50. Expected downtime ~10 minutes does not prove 20 minutes of actual unavailability. Do not label this an unplanned outage.",
       "post": null,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     },
     {
       "date": "2026-10-27",
@@ -5210,18 +5433,19 @@
       "hit": 1,
       "tag": "",
       "text": "CFB Oracle launches for onchain markets",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Payward",
           "https://www.payward.com/press-release/cf-benchmarks-launches-cfb-oracle"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
+      "selectionReason": "Ẩn tin phụ hoặc tích hợp/phần thưởng gián tiếp; ưu tiên mốc cốt lõi của HYPE và Hyperliquid."
     },
     {
       "date": "2026-10-28",
@@ -5244,19 +5468,27 @@
       "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
       "note": "High-level recap only; separate API channel lacks a readable public preview. No exact activation asserted.",
       "post": 600,
-      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "selectionReason": "Routine refinement or duplicate follow-up; retained in research."
     }
   ],
   "counts": {
-    "research": 225,
-    "levels": {
-      "1": 116,
-      "0": 94,
-      "2": 15
+    "researchRows": 225,
+    "sourceRows": 465,
+    "removed": 171,
+    "retained": 54,
+    "retainedWithinPriceRange": 44,
+    "newlyHidden": 108,
+    "visibleLevels": {
+      "1": 30,
+      "2": 14
     },
-    "removed": 63,
-    "retained": 162,
-    "retainedWithinPriceRange": 152,
-    "sourceRows": 465
-  }
+    "visibleYears": {
+      "2024": 2,
+      "2025": 27,
+      "2026": 15
+    },
+    "automaticATHATL": 4
+  },
+  "selectionPolicy": "2026-10-29 user requested only important directly relevant events; preserve sources, labels, levels, prior removals, price data, phases and cues."
 }
