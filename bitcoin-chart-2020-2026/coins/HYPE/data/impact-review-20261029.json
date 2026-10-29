@@ -1,6 +1,6 @@
 {
   "checkedOn": "2026-10-29",
-  "status": "proposal only; events.csv unchanged; pending approval before level edits/render",
+  "status": "User approved seven retained level-2 events; seven demotions applied. Further level-1 selection in level1-review-20261029.json.",
   "scope": "14 visible research level-2 events in compact HYPE preview; 4 automatic ATH/ATL unchanged; genesis outside price range remains level 2.",
   "methodology": {
     "returns": "100*(close(event date + n days)/close(day before event)-1), UTC daily TradingView CRYPTO:HYPEHUSD, raw full-precision saved candles",

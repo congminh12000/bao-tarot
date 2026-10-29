@@ -1,0 +1,637 @@
+{
+  "status": "Level-2 approved; level-1 selection pending approval before render",
+  "scope": "37 visible candidates after approved demotions; 22 newly hidden, no previously hidden event re-enabled",
+  "method": "Editorial materiality using stored citations and current primary docs; no new causal price impact study. Removed does not mean false or zero effect.",
+  "counts": {
+    "researchRows": 225,
+    "sourceRows": 465,
+    "removed": 193,
+    "retained": 32,
+    "retainedWithinPriceRange": 22,
+    "visibleLevels": {
+      "1": 15,
+      "2": 7
+    },
+    "automaticATHATL": 4,
+    "totalVideoLabels": 26
+  },
+  "decisions": [
+    {
+      "date": "2024-12-23",
+      "text": "Security concerns spark outflows",
+      "hit": 1,
+      "remove": false,
+      "reason": "Rủi ro niềm tin và dòng tiền rút khỏi nền tảng; không gọi là vụ hack đã xác nhận.",
+      "sources": [
+        [
+          "Bloomberg Law",
+          "https://news.bloomberglaw.com/crypto/crypto-exchanges-outflows-swell-on-north-korean-trader-concern"
+        ],
+        [
+          "Blockworks",
+          "https://blockworks.com/news/hyperliquid-security-fuels-decentralization-concerns"
+        ]
+      ]
+    },
+    {
+      "date": "2025-02-14",
+      "text": "Unit launches native BTC spot",
+      "hit": 1,
+      "remove": true,
+      "reason": "Mở thị trường BTC, nhưng chưa chứng minh tác động trọng yếu riêng tới nhu cầu HYPE.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/314"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ],
+        [
+          "Unit Docs",
+          "https://docs.hyperunit.xyz"
+        ],
+        [
+          "OAK Research",
+          "https://oakresearch.io/en/analyses/innovations/hyper-unit-hidden-engine-powering-hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-04",
+      "text": "Permissionless validators announced",
+      "hit": 1,
+      "remove": false,
+      "reason": "Thay đổi cơ chế tham gia validator, liên quan trực tiếp staking và bảo mật mạng.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/319"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-12",
+      "text": "ETH liquidation hits HLP",
+      "hit": 1,
+      "remove": false,
+      "reason": "Thiệt hại HLP và rủi ro thanh lý thực tế, ảnh hưởng niềm tin vào cơ chế quản lý rủi ro.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/324"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults"
+        ],
+        [
+          "Arkham",
+          "https://info.arkm.com/research/hyperliquid-whale-passes-4m-loss-to-hlp-vault"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-19",
+      "text": "HYPE staking tiers announced",
+      "hit": 1,
+      "remove": false,
+      "reason": "HYPE staked gắn với chiết khấu phí: tiện ích nắm giữ trực tiếp; đây là ngày thông báo, không ngày kích hoạt.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/329"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-09",
+      "text": "USDT0 launches on Hyperliquid",
+      "hit": 1,
+      "remove": true,
+      "reason": "Tích hợp stablecoin bổ sung; thiếu bằng chứng quy mô tác động trực tiếp tới HYPE.",
+      "sources": [
+        [
+          "USDT0",
+          "https://blog.usdt0.to/usdt0-is-live-on-hyperliquid"
+        ],
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/358"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-26",
+      "text": "HYPE auction fees live by update",
+      "hit": 1,
+      "remove": false,
+      "reason": "Thay đổi sử dụng HYPE cho phí đấu giá; tiện ích trực tiếp, ngày ghi nhận đã hoạt động.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/378"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-30",
+      "text": "Binance HYPE futures launch",
+      "hit": 1,
+      "remove": false,
+      "reason": "Mở kênh phái sinh/thanh khoản và price discovery lớn; không khẳng định tạo cầu mua spot.",
+      "sources": [
+        [
+          "Binance",
+          "https://www.binance.com/en-IN/support/announcement/detail/9166fe6f7b8a4b438262df3a040b007b"
+        ]
+      ]
+    },
+    {
+      "date": "2025-06-20",
+      "text": "Eyenovia HYPE financing closes",
+      "hit": 1,
+      "remove": false,
+      "reason": "Hồ sơ SEC xác nhận huy động vốn phục vụ chiến lược treasury HYPE; không đồng nghĩa mua toàn bộ HYPE ngay ngày đóng vốn.",
+      "sources": [
+        [
+          "Hyperion DeFi",
+          "https://ir.hyperiondefi.com/sec-filings/all-sec-filings/content/0001104659-26-036286/hypd-20251231x10k.htm"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-08",
+      "text": "Phantom launches Hyperliquid perps",
+      "hit": 1,
+      "remove": true,
+      "reason": "Thêm giao diện phân phối; chưa có định lượng dòng tiền/phí tăng thêm cho HYPE.",
+      "sources": [
+        [
+          "Phantom",
+          "https://phantom.com/learn/blog/phantom-perps"
+        ],
+        [
+          "Corroborating source",
+          "https://t.me/hyperliquid_announcements/389"
+        ],
+        [
+          "Corroborating source",
+          "https://www.tradingview.com/news/cointelegraph%3A0f72b5f85094b%3A0-how-hyperliquid-hit-330b-in-monthly-trading-volume-with-just-11-employees/"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-09",
+      "text": "CoreWriter live by update",
+      "hit": 1,
+      "remove": true,
+      "reason": "Chi tiết hạ tầng trong quá trình phát triển HyperEVM; ưu tiên mốc mainnet đã giữ.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/390"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-29",
+      "text": "API congestion delays orders",
+      "hit": 1,
+      "remove": true,
+      "reason": "Sự cố vận hành đã lưu; chưa đủ bằng chứng thiệt hại/cú sốc HYPE đáng kể để giữ trong bản tối giản.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/406"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator"
+        ],
+        [
+          "The Block",
+          "https://www.theblock.co/news/ecosystems/2025-07-30-hyperliquid-outage-api-traffic-spike-not-hack-vulnerability-exploit-364798"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "text": "Assistance Fund fee share increase",
+      "hit": 1,
+      "remove": false,
+      "reason": "Thay đổi phân bổ phí tới Assistance Fund, gắn trực tiếp cơ chế chuyển phí thành HYPE.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/420"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-27",
+      "text": "XPL hyperp volatility triggers ADL",
+      "hit": 1,
+      "remove": true,
+      "reason": "Rủi ro thị trường token khác; thiếu chứng cứ tác động đáng kể riêng tới HYPE, đã giữ ETH/JELLY/POPCAT.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/421"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "text": "21Shares HYPE staking ETP begins",
+      "hit": 1,
+      "remove": true,
+      "reason": "Đã giữ ETF HYPE đầu tiên tại Mỹ; chưa có bằng chứng quy mô riêng của ETP này đủ lớn cho bản tối giản.",
+      "sources": [
+        [
+          "21Shares",
+          "https://www.21shares.com/en-eu/product"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "text": "Native USDC and CCTP launch",
+      "hit": 1,
+      "remove": false,
+      "reason": "Circle xác nhận hạ tầng native USDC/CCTP và khoản đầu tư HYPE, gắn thanh khoản và tổ chức tham gia.",
+      "sources": [
+        [
+          "Circle",
+          "https://www.circle.com/blog/circle-and-usdc-expansion-with-hyperliquid"
+        ],
+        [
+          "Corroborating source",
+          "https://www.circle.com/reports/internet-financial-system/capital-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-24",
+      "text": "USDH spot trading begins",
+      "hit": 1,
+      "remove": true,
+      "reason": "Ra mắt stablecoin, chưa chứng minh tác động HYPE đáng kể; giữ AQAv2 là cơ chế kinh tế trực tiếp hơn.",
+      "sources": [
+        [
+          "The Block",
+          "https://www.theblock.co/news/markets/2025-09-24-hyperliquids-home-grown-stablecoin-usdh-goes-live-after-native-markets-winning-bid-372128"
+        ],
+        [
+          "Decrypt",
+          "https://decrypt.co/341087/bitcoin-ethereum-metaverse-tokens-sink-further-after-holiday-crypto-rally"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "text": "Hyperdrive application exploit",
+      "hit": 1,
+      "remove": true,
+      "reason": "Sự cố ứng dụng bên thứ ba; không phải khai thác L1/HYPE và thiếu bằng chứng tác động trọng yếu tới token.",
+      "sources": [
+        [
+          "The Block",
+          "https://www.theblock.co/news/ecosystems/2025-09-28-hyperliquid-based-hyperdrive-loses-782000-after-smart-contract-exploit-372662"
+        ],
+        [
+          "Crypto.news",
+          "https://crypto.news/hyperliquid-hyperdrive-resumes-services-700k-hack-2025/"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-08",
+      "text": "MetaMask launches Hyperliquid perps",
+      "hit": 1,
+      "remove": true,
+      "reason": "Tích hợp phân phối; chưa chứng minh doanh thu/dòng tiền tăng thêm có quy mô trọng yếu cho HYPE.",
+      "sources": [
+        [
+          "MetaMask",
+          "https://metamask.io/en-GB/news/metamask-expands-trading-with-perpetual-futures-and-rewards-confirms-token"
+        ],
+        [
+          "Corroborating source",
+          "https://t.me/hyperliquid_announcements/458"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-12",
+      "text": "POPCAT stress hits HLP",
+      "hit": 1,
+      "remove": false,
+      "reason": "Giữ rủi ro HLP thực tế ở mức 1; chưa chứng minh cú sốc giá lớn, nguồn còn lệch ngày 12/13-11.",
+      "sources": [
+        [
+          "The Block",
+          "https://www.theblock.co/news/defi/2025-11-12-hyperliquid-pauses-deposits-withdrawals-popcat-trading-scheme-speculation-378606"
+        ],
+        [
+          "CoinGecko",
+          "https://www.coingecko.com/learn/geckopulse-hyperliquid-hlp-suffered-5m-loss-from-popcat"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "text": "HIP-3 growth mode live by update",
+      "hit": 1,
+      "remove": false,
+      "reason": "Thay đổi đáng kể mô hình phí HIP-3; liên quan kinh tế giao thức, không khẳng định giảm phí làm doanh thu tăng.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-29",
+      "text": "Core contributor vesting begins",
+      "hit": 1,
+      "remove": false,
+      "reason": "Nguồn cung có thể chuyển nhượng tăng theo vesting; không khẳng định toàn bộ token đã được bán.",
+      "sources": [
+        [
+          "Hyperion DeFi SEC filing",
+          "https://ir.hyperiondefi.com/sec-filings/all-sec-filings/content/0001104659-26-036286/hypd-20251231x10k.htm"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-03",
+      "text": "HSI shares begin Nasdaq trading",
+      "hit": 1,
+      "remove": true,
+      "reason": "Giao dịch cổ phiếu treasury không đồng nghĩa mua mới HYPE; thiếu bằng chứng tác động tăng thêm tại ngày niêm yết.",
+      "sources": [
+        [
+          "Nasdaq Trader",
+          "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2025-647"
+        ],
+        [
+          "Corroborating source",
+          "https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001493152-25-025886/0001493152-25-025886.pdf"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "text": "Kraken HYPE trading launches",
+      "hit": 1,
+      "remove": true,
+      "reason": "Thêm sàn giao dịch; trong bản tối giản ưu tiên Binance spot, chưa có bằng chứng quy mô riêng đủ lớn.",
+      "sources": [
+        [
+          "Kraken",
+          "https://blog.kraken.com/product/asset-listings/hype-is-available-for-trading"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "text": "Ripple Prime supports Hyperliquid",
+      "hit": 1,
+      "remove": true,
+      "reason": "Mở tiếp cận tổ chức nhưng chưa xác minh khối lượng/phí hoặc nhu cầu HYPE thực tế tăng thêm.",
+      "sources": [
+        [
+          "Ripple",
+          "https://ripple.com/ripple-press/ripple-announces-support-for-hyperliquid-expanding-institutional-access-to-onchain-liquidity/"
+        ],
+        [
+          "Corroborating source",
+          "https://etp.coinshares.com/corp/news/coinshares-launches-hyperliquid-staking-etp-with-0-management-fee-and-0-5-yield/"
+        ]
+      ]
+    },
+    {
+      "date": "2026-03-18",
+      "text": "Licensed S&P 500 perp announced",
+      "hit": 1,
+      "remove": true,
+      "reason": "Thông báo giấy phép cho sản phẩm; chưa có số đo tác động thực tế tới HYPE tại ngày đó.",
+      "sources": [
+        [
+          "S&P Global",
+          "https://press.spglobal.com/2026-03-18-S-P-Dow-Jones-Indices-Licenses-S-P-500-R-to-Trade-XYZ-for-Perpetual-Contracts-on-Hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "text": "FARTCOIN liquidation triggers ADL",
+      "hit": 1,
+      "remove": true,
+      "reason": "Sự cố thị trường token khác; ngày nguồn còn giới hạn, chưa xác lập tác động trọng yếu riêng tới HYPE.",
+      "sources": [
+        [
+          "Cointelegraph",
+          "https://cointelegraph.com/news/trader-loses-3m-fartcoin-hyperliquid-adl-liquidation"
+        ],
+        [
+          "Whale Alert",
+          "https://whale-alert.io/stories/b5a301204c3089/Fartcoin-crashed-50-after-14524M-leveraged-long-on-Hyperliquid-liquidated-bettors-lost-3M-ADL-paid-849K-to-short-wallets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "text": "HIP-4 mainnet initial release",
+      "hit": 1,
+      "remove": false,
+      "reason": "Mở primitive outcome thị trường mới; giữ mức 1 vì bản đầu hạn chế và chưa định lượng giá trị cộng thêm cho HYPE.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/541"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "text": "Bitwise US HYPE ETF trading begins",
+      "hit": 1,
+      "remove": true,
+      "reason": "ETF bổ sung sau lần đầu; chưa chứng minh dòng vốn tăng thêm đủ lớn để giữ riêng.",
+      "sources": [
+        [
+          "Bitwise",
+          "https://bitwiseinvestments.com/newsroom/bitwise-launches-spot-hyperliquid-etf-bhyp"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "text": "Grayscale HYPE ETF lists",
+      "hit": 1,
+      "remove": true,
+      "reason": "ETF bổ sung sau lần đầu; tăng giá cùng ngày không chứng minh tác động riêng của quỹ.",
+      "sources": [
+        [
+          "Grayscale",
+          "https://etfs.grayscale.com/hypg"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "text": "USDC AQAv2 active by update",
+      "hit": 1,
+      "remove": false,
+      "reason": "Cơ chế chia sẻ lợi tức dự trữ stablecoin với giao thức; ngày xác nhận hoạt động không đồng nghĩa ngày nhận tiền đầu tiên.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/560"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "text": "USDH markets finish settlement",
+      "hit": 1,
+      "remove": true,
+      "reason": "Bước chuyển đổi stablecoin; ưu tiên giữ thay đổi AQAv2 thay vì nhiều bước chuyển tiếp.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/561"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "text": "Portfolio margin enters beta",
+      "hit": 1,
+      "remove": true,
+      "reason": "Nâng cấp sản phẩm nhưng chưa có bằng chứng định lượng tác động trọng yếu tới HYPE.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/563"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "text": "MAS Investor Alert List entry",
+      "hit": 1,
+      "remove": true,
+      "reason": "Thông tin pháp lý cần lưu; nguồn hiện có chưa đủ xác lập hạn chế mới hoặc tác động trọng yếu tới HYPE.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/564"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ],
+        [
+          "MAS",
+          "https://www.mas.gov.sg/investor-alert-list?q=hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "text": "xStocks goes live on HyperCore",
+      "hit": 1,
+      "remove": true,
+      "reason": "Thêm sản phẩm cổ phiếu token hóa; chưa chứng minh quy mô phí/cầu HYPE tăng thêm.",
+      "sources": [
+        [
+          "Payward",
+          "https://www.payward.com/press-release/xstocks-on-hyperliquid"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "text": "Permissionless HIP-4 live by update",
+      "hit": 1,
+      "remove": true,
+      "reason": "Bước mở rộng tiếp theo sau HIP-4; chưa chứng minh quy mô tác động tăng thêm để giữ nhãn riêng.",
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/585"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "text": "Binance HYPE spot trading begins",
+      "hit": 1,
+      "remove": false,
+      "reason": "Mở thanh khoản và tiếp cận mua/bán spot quy mô lớn; không coi là bằng chứng giá tăng.",
+      "sources": [
+        [
+          "Binance",
+          "https://www.binance.bh/en-AE/support/announcement/detail/d49de208bb6d4a26b02677d7c3d89b5d"
+        ],
+        [
+          "Binance TR",
+          "https://www.binance.tr/tr/blog/Geli%C5%9Fmeler/cc5705200a3b48c78b3ee44579160210"
+        ]
+      ]
+    }
+  ]
+}

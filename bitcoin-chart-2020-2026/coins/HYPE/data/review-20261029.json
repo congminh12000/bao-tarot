@@ -1,7 +1,7 @@
 {
   "coin": "HYPE",
   "checkedOn": "2026-10-29",
-  "approval": "Important-only selection approved for full preview by user request on 2026-10-29; visual/audio preview approval pending.",
+  "approval": "7 level-2 events approved by user; stricter level-1 selection pending review before render",
   "scope": "Dated protocol, token utility, material security incidents, institutional access and counterparty milestones; no claim of exhaustive worldwide history.",
   "grading": {
     "kind": "editorial direction/category; not proof of price causation",
@@ -329,7 +329,7 @@
       "note": "Reports of security concerns and outflows; no confirmed protocol hack claimed.",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Rủi ro niềm tin và dòng tiền rút khỏi nền tảng; không gọi là vụ hack đã xác nhận."
     },
     {
       "date": "2024-12-26",
@@ -633,7 +633,7 @@
       "hit": 1,
       "tag": "",
       "text": "Unit launches native BTC spot",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -652,12 +652,12 @@
           "https://oakresearch.io/en/analyses/innovations/hyper-unit-hidden-engine-powering-hyperliquid"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Mở thị trường BTC, nhưng chưa chứng minh tác động trọng yếu riêng tới nhu cầu HYPE.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 314,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Mở thị trường BTC, nhưng chưa chứng minh tác động trọng yếu riêng tới nhu cầu HYPE."
     },
     {
       "date": "2025-02-18",
@@ -733,7 +733,7 @@
       "note": "Announced as next upgrade; not marked as activated on March 4.",
       "post": 319,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thay đổi cơ chế tham gia validator, liên quan trực tiếp staking và bảo mật mạng."
     },
     {
       "date": "2025-03-06",
@@ -814,7 +814,7 @@
     {
       "date": "2025-03-12",
       "kind": "down",
-      "hit": 2,
+      "hit": 1,
       "tag": "",
       "text": "ETH liquidation hits HLP",
       "remove": false,
@@ -837,7 +837,7 @@
       "note": "",
       "post": 324,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thiệt hại HLP và rủi ro thanh lý thực tế, ảnh hưởng niềm tin vào cơ chế quản lý rủi ro."
     },
     {
       "date": "2025-03-13",
@@ -909,7 +909,7 @@
       "note": "Proposal/announcement; later May 5 effective date kept separately.",
       "post": 329,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "HYPE staked gắn với chiết khấu phí: tiện ích nắm giữ trực tiếp; đây là ngày thông báo, không ngày kích hoạt."
     },
     {
       "date": "2025-03-25",
@@ -1221,7 +1221,7 @@
       "hit": 1,
       "tag": "",
       "text": "USDT0 launches on Hyperliquid",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "USDT0",
@@ -1232,12 +1232,12 @@
           "https://t.me/hyperliquid_announcements/358"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Tích hợp stablecoin bổ sung; thiếu bằng chứng quy mô tác động trực tiếp tới HYPE.",
       "dateBasis": "dated primary announcement",
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Tích hợp stablecoin bổ sung; thiếu bằng chứng quy mô tác động trực tiếp tới HYPE."
     },
     {
       "date": "2025-05-13",
@@ -1549,7 +1549,7 @@
       "note": "Activation confirmed by May 26 recap; exact block/date not inferred.",
       "post": 378,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thay đổi sử dụng HYPE cho phí đấu giá; tiện ích trực tiếp, ngày ghi nhận đã hoạt động."
     },
     {
       "date": "2025-05-26",
@@ -1593,7 +1593,7 @@
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Mở kênh phái sinh/thanh khoản và price discovery lớn; không khẳng định tạo cầu mua spot."
     },
     {
       "date": "2025-06-02",
@@ -1661,7 +1661,7 @@
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Hồ sơ SEC xác nhận huy động vốn phục vụ chiến lược treasury HYPE; không đồng nghĩa mua toàn bộ HYPE ngay ngày đóng vốn."
     },
     {
       "date": "2025-06-25",
@@ -1841,7 +1841,7 @@
       "hit": 1,
       "tag": "",
       "text": "Phantom launches Hyperliquid perps",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Phantom",
@@ -1856,12 +1856,12 @@
           "https://www.tradingview.com/news/cointelegraph%3A0f72b5f85094b%3A0-how-hyperliquid-hit-330b-in-monthly-trading-volume-with-just-11-employees/"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Thêm giao diện phân phối; chưa có định lượng dòng tiền/phí tăng thêm cho HYPE.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "July 8 Phantom announcement takes precedence over July 9 protocol recap.",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thêm giao diện phân phối; chưa có định lượng dòng tiền/phí tăng thêm cho HYPE."
     },
     {
       "date": "2025-07-09",
@@ -1869,7 +1869,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "CoreWriter live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -1880,12 +1880,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Chi tiết hạ tầng trong quá trình phát triển HyperEVM; ưu tiên mốc mainnet đã giữ.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Confirmed live by July 9; later July 21 recap says two weeks earlier; no exact launch day inferred.",
       "post": 390,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Chi tiết hạ tầng trong quá trình phát triển HyperEVM; ưu tiên mốc mainnet đã giữ."
     },
     {
       "date": "2025-07-14",
@@ -1985,7 +1985,7 @@
       "hit": 1,
       "tag": "",
       "text": "API congestion delays orders",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2000,12 +2000,12 @@
           "https://www.theblock.co/news/ecosystems/2025-07-30-hyperliquid-outage-api-traffic-spike-not-hack-vulnerability-exploit-364798"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Sự cố vận hành đã lưu; chưa đủ bằng chứng thiệt hại/cú sốc HYPE đáng kể để giữ trong bản tối giản.",
       "dateBasis": "explicit effective date in announcement",
       "note": "Incident July 29, statement July 30; API delays 14:10–14:47 UTC; blockchain continued producing blocks.",
       "post": 406,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Sự cố vận hành đã lưu; chưa đủ bằng chứng thiệt hại/cú sốc HYPE đáng kể để giữ trong bản tối giản."
     },
     {
       "date": "2025-07-31",
@@ -2125,7 +2125,7 @@
       "note": "August 26 next-upgrade announcement, not assumed exact activation date.",
       "post": 420,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thay đổi phân bổ phí tới Assistance Fund, gắn trực tiếp cơ chế chuyển phí thành HYPE."
     },
     {
       "date": "2025-08-27",
@@ -2157,7 +2157,7 @@
       "hit": 1,
       "tag": "",
       "text": "XPL hyperp volatility triggers ADL",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -2168,12 +2168,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Rủi ro thị trường token khác; thiếu chứng cứ tác động đáng kể riêng tới HYPE, đã giữ ETH/JELLY/POPCAT.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 421,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Rủi ro thị trường token khác; thiếu chứng cứ tác động đáng kể riêng tới HYPE, đã giữ ETH/JELLY/POPCAT."
     },
     {
       "date": "2025-08-28",
@@ -2181,19 +2181,19 @@
       "hit": 1,
       "tag": "",
       "text": "21Shares HYPE staking ETP begins",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "21Shares",
           "https://www.21shares.com/en-eu/product"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Đã giữ ETF HYPE đầu tiên tại Mỹ; chưa có bằng chứng quy mô riêng của ETP này đủ lớn cho bản tối giản.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Đã giữ ETF HYPE đầu tiên tại Mỹ; chưa có bằng chứng quy mô riêng của ETP này đủ lớn cho bản tối giản."
     },
     {
       "date": "2025-08-31",
@@ -2318,7 +2318,7 @@
     {
       "date": "2025-09-16",
       "kind": "up",
-      "hit": 2,
+      "hit": 1,
       "tag": "",
       "text": "Native USDC and CCTP launch",
       "remove": false,
@@ -2337,7 +2337,7 @@
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Circle xác nhận hạ tầng native USDC/CCTP và khoản đầu tư HYPE, gắn thanh khoản và tổ chức tham gia."
     },
     {
       "date": "2025-09-17",
@@ -2417,7 +2417,7 @@
       "hit": 1,
       "tag": "",
       "text": "USDH spot trading begins",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "The Block",
@@ -2428,12 +2428,12 @@
           "https://decrypt.co/341087/bitcoin-ethereum-metaverse-tokens-sink-further-after-holiday-crypto-rally"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Ra mắt stablecoin, chưa chứng minh tác động HYPE đáng kể; giữ AQAv2 là cơ chế kinh tế trực tiếp hơn.",
       "dateBasis": "dated primary announcement",
       "note": "Announcement of ticker winner is distinct from actual spot trading.",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Ra mắt stablecoin, chưa chứng minh tác động HYPE đáng kể; giữ AQAv2 là cơ chế kinh tế trực tiếp hơn."
     },
     {
       "date": "2025-09-25",
@@ -2489,7 +2489,7 @@
       "hit": 1,
       "tag": "",
       "text": "Hyperdrive application exploit",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "The Block",
@@ -2500,12 +2500,12 @@
           "https://crypto.news/hyperliquid-hyperdrive-resumes-services-700k-hack-2025/"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Sự cố ứng dụng bên thứ ba; không phải khai thác L1/HYPE và thiếu bằng chứng tác động trọng yếu tới token.",
       "dateBasis": "dated primary announcement",
       "note": "Third-party HyperEVM application; not a Hyperliquid L1 exploit. Saturday September 27 incident, reported September 28.",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Sự cố ứng dụng bên thứ ba; không phải khai thác L1/HYPE và thiếu bằng chứng tác động trọng yếu tới token."
     },
     {
       "date": "2025-09-28",
@@ -2705,7 +2705,7 @@
       "hit": 1,
       "tag": "",
       "text": "MetaMask launches Hyperliquid perps",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "MetaMask",
@@ -2716,12 +2716,12 @@
           "https://t.me/hyperliquid_announcements/458"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Tích hợp phân phối; chưa chứng minh doanh thu/dòng tiền tăng thêm có quy mô trọng yếu cho HYPE.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Tích hợp phân phối; chưa chứng minh doanh thu/dòng tiền tăng thêm có quy mô trọng yếu cho HYPE."
     },
     {
       "date": "2025-10-10",
@@ -2970,7 +2970,7 @@
     {
       "date": "2025-11-12",
       "kind": "down",
-      "hit": 2,
+      "hit": 1,
       "tag": "",
       "text": "POPCAT stress hits HLP",
       "remove": false,
@@ -2989,7 +2989,7 @@
       "note": "Use first report date November 12; several reports date the episode/bridge pause November 13. Exact UTC onset conflict remains; do not merge causally with the separately stated bridge safety lock.",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Giữ rủi ro HLP thực tế ở mức 1; chưa chứng minh cú sốc giá lớn, nguồn còn lệch ngày 12/13-11."
     },
     {
       "date": "2025-11-15",
@@ -3085,7 +3085,7 @@
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 481,
       "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thay đổi đáng kể mô hình phí HIP-3; liên quan kinh tế giao thức, không khẳng định giảm phí làm doanh thu tăng."
     },
     {
       "date": "2025-11-24",
@@ -3129,7 +3129,7 @@
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Nguồn cung có thể chuyển nhượng tăng theo vesting; không khẳng định toàn bộ token đã được bán."
     },
     {
       "date": "2025-12-01",
@@ -3185,7 +3185,7 @@
       "hit": 1,
       "tag": "",
       "text": "HSI shares begin Nasdaq trading",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Nasdaq Trader",
@@ -3196,12 +3196,12 @@
           "https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001493152-25-025886/0001493152-25-025886.pdf"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Giao dịch cổ phiếu treasury không đồng nghĩa mua mới HYPE; thiếu bằng chứng tác động tăng thêm tại ngày niêm yết.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Giao dịch cổ phiếu treasury không đồng nghĩa mua mới HYPE; thiếu bằng chứng tác động tăng thêm tại ngày niêm yết."
     },
     {
       "date": "2025-12-07",
@@ -3477,19 +3477,19 @@
       "hit": 1,
       "tag": "",
       "text": "Kraken HYPE trading launches",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Kraken",
           "https://blog.kraken.com/product/asset-listings/hype-is-available-for-trading"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Thêm sàn giao dịch; trong bản tối giản ưu tiên Binance spot, chưa có bằng chứng quy mô riêng đủ lớn.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thêm sàn giao dịch; trong bản tối giản ưu tiên Binance spot, chưa có bằng chứng quy mô riêng đủ lớn."
     },
     {
       "date": "2026-01-31",
@@ -3569,7 +3569,7 @@
       "hit": 1,
       "tag": "",
       "text": "Ripple Prime supports Hyperliquid",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Ripple",
@@ -3580,12 +3580,12 @@
           "https://etp.coinshares.com/corp/news/coinshares-launches-hyperliquid-staking-etp-with-0-management-fee-and-0-5-yield/"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Mở tiếp cận tổ chức nhưng chưa xác minh khối lượng/phí hoặc nhu cầu HYPE thực tế tăng thêm.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Mở tiếp cận tổ chức nhưng chưa xác minh khối lượng/phí hoặc nhu cầu HYPE thực tế tăng thêm."
     },
     {
       "date": "2026-02-12",
@@ -3829,19 +3829,19 @@
       "hit": 1,
       "tag": "",
       "text": "Licensed S&P 500 perp announced",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "S&P Global",
           "https://press.spglobal.com/2026-03-18-S-P-Dow-Jones-Indices-Licenses-S-P-500-R-to-Trade-XYZ-for-Perpetual-Contracts-on-Hyperliquid"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Thông báo giấy phép cho sản phẩm; chưa có số đo tác động thực tế tới HYPE tại ngày đó.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thông báo giấy phép cho sản phẩm; chưa có số đo tác động thực tế tới HYPE tại ngày đó."
     },
     {
       "date": "2026-03-19",
@@ -3965,7 +3965,7 @@
       "hit": 1,
       "tag": "",
       "text": "FARTCOIN liquidation triggers ADL",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Cointelegraph",
@@ -3976,12 +3976,12 @@
           "https://whale-alert.io/stories/b5a301204c3089/Fartcoin-crashed-50-after-14524M-leveraged-long-on-Hyperliquid-liquidated-bettors-lost-3M-ADL-paid-849K-to-short-wallets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Sự cố thị trường token khác; ngày nguồn còn giới hạn, chưa xác lập tác động trọng yếu riêng tới HYPE.",
       "dateBasis": "dated primary announcement",
       "note": "Report date April 9; some analyst posts April 8 and low-quality reposts April 23 conflict. No code exploit or exact HLP-loss attribution claimed.",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Sự cố thị trường token khác; ngày nguồn còn giới hạn, chưa xác lập tác động trọng yếu riêng tới HYPE."
     },
     {
       "date": "2026-04-13",
@@ -4130,7 +4130,7 @@
     {
       "date": "2026-05-02",
       "kind": "up",
-      "hit": 2,
+      "hit": 1,
       "tag": "upgrade",
       "text": "HIP-4 mainnet initial release",
       "remove": false,
@@ -4149,7 +4149,7 @@
       "note": "",
       "post": 541,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Mở primitive outcome thị trường mới; giữ mức 1 vì bản đầu hạn chế và chưa định lượng giá trị cộng thêm cho HYPE."
     },
     {
       "date": "2026-05-07",
@@ -4282,22 +4282,22 @@
     {
       "date": "2026-05-15",
       "kind": "up",
-      "hit": 2,
+      "hit": 1,
       "tag": "",
       "text": "Bitwise US HYPE ETF trading begins",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Bitwise",
           "https://bitwiseinvestments.com/newsroom/bitwise-launches-spot-hyperliquid-etf-bhyp"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "ETF bổ sung sau lần đầu; chưa chứng minh dòng vốn tăng thêm đủ lớn để giữ riêng.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "ETF bổ sung sau lần đầu; chưa chứng minh dòng vốn tăng thêm đủ lớn để giữ riêng."
     },
     {
       "date": "2026-05-18",
@@ -4446,22 +4446,22 @@
     {
       "date": "2026-06-03",
       "kind": "up",
-      "hit": 2,
+      "hit": 1,
       "tag": "",
       "text": "Grayscale HYPE ETF lists",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Grayscale",
           "https://etfs.grayscale.com/hypg"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "ETF bổ sung sau lần đầu; tăng giá cùng ngày không chứng minh tác động riêng của quỹ.",
       "dateBasis": "dated primary announcement",
       "note": "Issuer listing date 06/03/2026 (US date format).",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "ETF bổ sung sau lần đầu; tăng giá cùng ngày không chứng minh tác động riêng của quỹ."
     },
     {
       "date": "2026-06-09",
@@ -4557,7 +4557,7 @@
       "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
       "post": 560,
       "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Cơ chế chia sẻ lợi tức dự trữ stablecoin với giao thức; ngày xác nhận hoạt động không đồng nghĩa ngày nhận tiền đầu tiên."
     },
     {
       "date": "2026-06-20",
@@ -4565,7 +4565,7 @@
       "hit": 1,
       "tag": "",
       "text": "USDH markets finish settlement",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4576,12 +4576,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Bước chuyển đổi stablecoin; ưu tiên giữ thay đổi AQAv2 thay vì nhiều bước chuyển tiếp.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 561,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Bước chuyển đổi stablecoin; ưu tiên giữ thay đổi AQAv2 thay vì nhiều bước chuyển tiếp."
     },
     {
       "date": "2026-06-25",
@@ -4589,7 +4589,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Portfolio margin enters beta",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4600,12 +4600,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Nâng cấp sản phẩm nhưng chưa có bằng chứng định lượng tác động trọng yếu tới HYPE.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 563,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Nâng cấp sản phẩm nhưng chưa có bằng chứng định lượng tác động trọng yếu tới HYPE."
     },
     {
       "date": "2026-06-26",
@@ -4613,7 +4613,7 @@
       "hit": 1,
       "tag": "",
       "text": "MAS Investor Alert List entry",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -4628,12 +4628,12 @@
           "https://www.mas.gov.sg/investor-alert-list?q=hyperliquid"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Thông tin pháp lý cần lưu; nguồn hiện có chưa đủ xác lập hạn chế mới hoặc tác động trọng yếu tới HYPE.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "",
       "post": 564,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thông tin pháp lý cần lưu; nguồn hiện có chưa đủ xác lập hạn chế mới hoặc tác động trọng yếu tới HYPE."
     },
     {
       "date": "2026-06-28",
@@ -4909,19 +4909,19 @@
       "hit": 1,
       "tag": "",
       "text": "xStocks goes live on HyperCore",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Payward",
           "https://www.payward.com/press-release/xstocks-on-hyperliquid"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Thêm sản phẩm cổ phiếu token hóa; chưa chứng minh quy mô phí/cầu HYPE tăng thêm.",
       "dateBasis": "explicit event/inception/effective date in original issuer or counterparty publication",
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Thêm sản phẩm cổ phiếu token hóa; chưa chứng minh quy mô phí/cầu HYPE tăng thêm."
     },
     {
       "date": "2026-08-12",
@@ -5145,7 +5145,7 @@
       "hit": 1,
       "tag": "upgrade",
       "text": "Permissionless HIP-4 live by update",
-      "remove": false,
+      "remove": true,
       "sources": [
         [
           "Hyperliquid Announcements",
@@ -5156,12 +5156,12 @@
           "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
         ]
       ],
-      "removalReason": "",
+      "removalReason": "Bước mở rộng tiếp theo sau HIP-4; chưa chứng minh quy mô tác động tăng thêm để giữ nhãn riêng.",
       "dateBasis": "announcement date; activation date only when explicitly stated",
       "note": "Confirmed by August 31 weekly recap; exact activation day not independently reconstructed.",
       "post": 585,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Bước mở rộng tiếp theo sau HIP-4; chưa chứng minh quy mô tác động tăng thêm để giữ nhãn riêng."
     },
     {
       "date": "2026-09-08",
@@ -5310,7 +5310,7 @@
     {
       "date": "2026-09-24",
       "kind": "up",
-      "hit": 2,
+      "hit": 1,
       "tag": "",
       "text": "Binance HYPE spot trading begins",
       "remove": false,
@@ -5329,7 +5329,7 @@
       "note": "Spot listing; distinct from May 2025 futures launch.",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits.",
-      "selectionReason": "Giữ mốc quan trọng: tiện ích/tokenomics, hạ tầng cốt lõi, tiếp cận thị trường/tổ chức hoặc sự cố đáng kể."
+      "selectionReason": "Mở thanh khoản và tiếp cận mua/bán spot quy mô lớn; không coi là bằng chứng giá tăng."
     },
     {
       "date": "2026-09-30",
@@ -5475,20 +5475,15 @@
   "counts": {
     "researchRows": 225,
     "sourceRows": 465,
-    "removed": 171,
-    "retained": 54,
-    "retainedWithinPriceRange": 44,
-    "newlyHidden": 108,
+    "removed": 193,
+    "retained": 32,
+    "retainedWithinPriceRange": 22,
     "visibleLevels": {
-      "1": 30,
-      "2": 14
+      "1": 15,
+      "2": 7
     },
-    "visibleYears": {
-      "2024": 2,
-      "2025": 27,
-      "2026": 15
-    },
-    "automaticATHATL": 4
+    "automaticATHATL": 4,
+    "totalVideoLabels": 26
   },
   "selectionPolicy": "2026-10-29 user requested only important directly relevant events; preserve sources, labels, levels, prior removals, price data, phases and cues."
 }

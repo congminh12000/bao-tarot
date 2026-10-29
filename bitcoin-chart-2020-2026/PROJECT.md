@@ -318,6 +318,12 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **HYPE rà mức 1 — 29/10/2026:** người dùng duyệt danh sách 7 mức 2; áp dụng 7 lần hạ mức 2→1.
+  Rà 37 mục mức 1, giữ 15, đặt thêm 22 remove=true. Hiện 22 sự kiện trong giá + 4 ATH/ATL = 26 nhãn.
+  Tổng research 225, nguồn 465, 193 ẩn, 32 giữ (10 ngoài đoạn giá); không đổi nhãn/ngày/giá/phase/nhạc.
+  Review cụ thể từng mục: `coins/HYPE/data/level1-review-20261029.md`.
+  **Mức 2 đã duyệt; chờ duyệt lựa chọn mức 1 trước render mới. Preview cũ 48 nhãn chưa cập nhật.**
+
 - **HYPE preview tinh gọn full — 29/10/2026:** người dùng yêu cầu render sau bảng lựa chọn 44 sự kiện;
   danh sách tinh gọn đã duyệt cho preview. 698 ngày giá 30/11/2024–28/10/2026, 44 sự kiện + 4 ATH/ATL.
   Hoàn tất 88,8167 s, 5.329 frame, 854×480/60 fps, 29.029.677 byte; giữ 5 phase/5 cue.

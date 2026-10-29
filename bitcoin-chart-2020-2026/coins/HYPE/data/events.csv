@@ -24,14 +24,14 @@
 2025-02-05,info,0,,Partial liquidation testnet opens,true
 2025-02-10,up,1,,Native multisig live by update,true
 2025-02-12,info,0,,Native multisig guide published,true
-2025-02-14,up,1,,Unit launches native BTC spot,false
+2025-02-14,up,1,,Unit launches native BTC spot,true
 2025-02-18,up,2,upgrade,HyperEVM mainnet launches,false
 2025-03-04,info,0,,Official announcements page added,true
 2025-03-04,info,1,,Permissionless validators announced,false
 2025-03-06,up,1,,Public mainnet nodes launch,true
 2025-03-07,info,0,,Validator rollout update,true
 2025-03-12,info,0,,Delegation applications open,true
-2025-03-12,down,2,,ETH liquidation hits HLP,false
+2025-03-12,down,1,,ETH liquidation hits HLP,false
 2025-03-13,info,1,,Margin safeguards strengthened,true
 2025-03-14,info,0,,Leverage reduced for risk control,true
 2025-03-19,up,1,,HYPE staking tiers announced,false
@@ -47,7 +47,7 @@
 2025-05-01,down,1,,Hyperliquid X account compromised,true
 2025-05-04,up,1,,Staking accounts can be linked,true
 2025-05-05,up,1,upgrade,Staking fee discounts scheduled,true
-2025-05-09,up,1,,USDT0 launches on Hyperliquid,false
+2025-05-09,up,1,,USDT0 launches on Hyperliquid,true
 2025-05-13,info,1,,Staking referral program proposed,true
 2025-05-13,up,1,,Unit adds SOL and FARTCOIN spot,true
 2025-05-21,info,0,,Rabby-DeBank support confirmed,true
@@ -72,34 +72,34 @@
 2025-07-02,info,1,,CoreWriter mainnet rollout announced,true
 2025-07-03,info,0,,Validator expansion announced,true
 2025-07-07,up,0,,HyperEVM block explorer released,true
-2025-07-08,up,1,,Phantom launches Hyperliquid perps,false
-2025-07-09,up,1,upgrade,CoreWriter live by update,false
+2025-07-08,up,1,,Phantom launches Hyperliquid perps,true
+2025-07-09,up,1,upgrade,CoreWriter live by update,true
 2025-07-14,up,1,,HSI treasury combination announced,true
 2025-07-15,info,0,,Staking referral design reconsidered,true
 2025-07-16,info,0,,Generalized asset-transfer API tested,true
 2025-07-21,info,0,,CoreWriter integration guide,true
-2025-07-29,down,1,,API congestion delays orders,false
+2025-07-29,down,1,,API congestion delays orders,true
 2025-07-31,up,1,,Circle announces native USDC,true
 2025-08-04,info,0,,API incident refunds distributed,true
 2025-08-05,info,0,,Foundation data node available by update,true
 2025-08-18,up,1,upgrade,Multiple spot quote assets live,true
 2025-08-26,up,1,,Assistance Fund fee share increase,false
 2025-08-27,info,0,,Hyperp mark prices updated,true
-2025-08-27,down,1,,XPL hyperp volatility triggers ADL,false
-2025-08-28,up,1,,21Shares HYPE staking ETP begins,false
+2025-08-27,down,1,,XPL hyperp volatility triggers ADL,true
+2025-08-28,up,1,,21Shares HYPE staking ETP begins,true
 2025-08-31,up,1,,Validator set reaches 24 by update,true
 2025-09-05,info,1,,USDH ticker vote announced,true
 2025-09-09,info,0,,Quote-asset spot fee reductions live,true
 2025-09-09,info,0,,Referral claims span quote assets,true
 2025-09-10,info,0,,USDH proposal discussion update,true
-2025-09-16,up,2,,Native USDC and CCTP launch,false
+2025-09-16,up,1,,Native USDC and CCTP launch,false
 2025-09-17,info,0,,HIP-3 quote-collateral support proposed,true
 2025-09-17,up,1,,Native Markets wins USDH ticker,true
 2025-09-19,info,1,,Aligned stablecoins proposed,true
-2025-09-24,up,1,,USDH spot trading begins,false
+2025-09-24,up,1,,USDH spot trading begins,true
 2025-09-25,info,0,,Bug bounty scope clarified,true
 2025-09-25,info,0,,HIP-3 bug bounty testing expands,true
-2025-09-27,down,1,,Hyperdrive application exploit,false
+2025-09-27,down,1,,Hyperdrive application exploit,true
 2025-09-28,info,0,,HYPE-USDH spot pair available by update,true
 2025-09-28,up,1,,Hypurr NFTs deployed,true
 2025-09-28,up,1,upgrade,Permissionless quote assets live by update,true
@@ -108,7 +108,7 @@
 2025-10-06,info,0,,Aligned stablecoin feedback clarified,true
 2025-10-06,info,0,,Aligned stablecoin rules clarified,true
 2025-10-06,info,0,,Stablecoin reserve criteria revised,true
-2025-10-08,up,1,,MetaMask launches Hyperliquid perps,false
+2025-10-08,up,1,,MetaMask launches Hyperliquid perps,true
 2025-10-10,down,2,,Market-wide liquidation shock,false
 2025-10-13,up,2,upgrade,HIP-3 enabled on mainnet,false
 2025-10-15,info,0,,Permissionless listing rules explained,true
@@ -119,7 +119,7 @@
 2025-11-06,info,0,,HIP-3 sub-deployers supported,true
 2025-11-06,info,0,,HyperEVM gas capacity increased,true
 2025-11-12,down,1,,Arbitrum bridge safety lock,true
-2025-11-12,down,2,,POPCAT stress hits HLP,false
+2025-11-12,down,1,,POPCAT stress hits HLP,false
 2025-11-15,info,0,,HIP-3 margin settings tested,true
 2025-11-19,up,1,,HIP-3 growth mode announced,true
 2025-11-24,up,1,upgrade,Aligned quote assets live by update,true
@@ -128,7 +128,7 @@
 2025-11-29,info,1,,Core contributor vesting begins,false
 2025-12-01,info,0,,USDC Core-EVM linking on testnet,true
 2025-12-02,up,1,,HSI business combination closes,true
-2025-12-03,up,1,,HSI shares begin Nasdaq trading,false
+2025-12-03,up,1,,HSI shares begin Nasdaq trading,true
 2025-12-07,up,1,upgrade,Native USDC links Core and EVM,true
 2025-12-12,info,1,,Portfolio margin testnet opens,true
 2025-12-17,up,1,,Assistance Fund burn vote proposed,true
@@ -140,11 +140,11 @@
 2026-01-17,info,0,,USDH borrowing added to pre-alpha,true
 2026-01-18,info,0,,Mobile staking interface added,true
 2026-01-27,info,0,,HIP-3 normal isolated margin added,true
-2026-01-27,up,1,,Kraken HYPE trading launches,false
+2026-01-27,up,1,,Kraken HYPE trading launches,true
 2026-01-31,up,1,upgrade,Unified account pre-alpha launches,true
 2026-02-02,up,1,,HIP-4 outcome markets announced,true
 2026-02-03,info,0,,Unified account default changes,true
-2026-02-04,up,1,,Ripple Prime supports Hyperliquid,false
+2026-02-04,up,1,,Ripple Prime supports Hyperliquid,true
 2026-02-12,up,1,,CCTP becomes default USDC deposit,true
 2026-02-12,info,0,,HIP-3 cross margin on testnet,true
 2026-02-18,up,1,,Foundation backs Policy Center,true
@@ -155,40 +155,40 @@
 2026-02-24,up,1,upgrade,HIP-3 cross margin live by update,true
 2026-03-10,up,1,,HIP-4 testnet opens,true
 2026-03-10,info,0,,Portfolio margin alpha announced,true
-2026-03-18,up,1,,Licensed S&P 500 perp announced,false
+2026-03-18,up,1,,Licensed S&P 500 perp announced,true
 2026-03-19,up,1,,Fiat onramp enters testing,true
 2026-04-01,up,1,,Android app testing begins,true
 2026-04-01,up,1,,Bitwise European HYPE ETP begins,true
 2026-04-03,info,0,,Portfolio margin access broadened,true
 2026-04-06,info,0,,Portfolio margin entry rules eased,true
-2026-04-09,down,1,,FARTCOIN liquidation triggers ADL,false
+2026-04-09,down,1,,FARTCOIN liquidation triggers ADL,true
 2026-04-13,info,0,,Legacy vault creation fee raised,true
 2026-04-13,info,0,,Priority fees live by update,true
 2026-04-21,info,0,,DEX abstraction retirement announced,true
 2026-04-22,info,0,,HPC publishes policy agenda,true
 2026-04-27,info,0,,Perp order priority fees expanded,true
 2026-04-30,info,1,,HPC files prediction-market comment,true
-2026-05-02,up,2,upgrade,HIP-4 mainnet initial release,false
+2026-05-02,up,1,upgrade,HIP-4 mainnet initial release,false
 2026-05-07,up,1,upgrade,Multi-outcome markets launch,true
 2026-05-07,info,0,,Portfolio margin limits raised,true
 2026-05-12,up,2,,21Shares US HYPE ETF begins,false
 2026-05-14,up,1,,AQAv2 stablecoin model proposed,true
 2026-05-14,up,1,,Coinbase-Circle AQAv2 plan,true
-2026-05-15,up,2,,Bitwise US HYPE ETF trading begins,false
+2026-05-15,up,1,,Bitwise US HYPE ETF trading begins,true
 2026-05-18,info,0,,27-validator expansion announced,true
 2026-05-25,up,1,upgrade,Offchain-event outcome markets live,true
 2026-05-26,up,1,,HIP-4 uses USDC by update,true
 2026-05-26,info,0,,USDT borrowing tested,true
 2026-06-02,info,0,,USDT borrowing live by update,true
 2026-06-02,up,1,,Validator set reaches 27 by update,true
-2026-06-03,up,2,,Grayscale HYPE ETF lists,false
+2026-06-03,up,1,,Grayscale HYPE ETF lists,true
 2026-06-09,info,1,,HPC-Paradigm stablecoin comment,true
 2026-06-11,info,0,,ETH-HYPE-SOL daily outcomes added,true
 2026-06-12,up,1,,USDC AQAv2 operating details,true
 2026-06-16,up,1,,USDC AQAv2 active by update,false
-2026-06-20,down,1,,USDH markets finish settlement,false
-2026-06-25,up,1,upgrade,Portfolio margin enters beta,false
-2026-06-26,down,1,,MAS Investor Alert List entry,false
+2026-06-20,down,1,,USDH markets finish settlement,true
+2026-06-25,up,1,upgrade,Portfolio margin enters beta,true
+2026-06-26,down,1,,MAS Investor Alert List entry,true
 2026-06-28,up,1,,USDH migration grants announced,true
 2026-07-02,up,1,,TradingView adds Hyperliquid data,true
 2026-07-02,up,1,,VALR Hyperliquid perps announced,true
@@ -200,7 +200,7 @@
 2026-08-03,info,0,,Permissionless HIP-4 testnet active,true
 2026-08-03,info,0,,TWAP duration expanded,true
 2026-08-07,info,1,,HPC comments on agricultural markets,true
-2026-08-10,up,1,,xStocks goes live on HyperCore,false
+2026-08-10,up,1,,xStocks goes live on HyperCore,true
 2026-08-12,info,0,,HIP-3 deployer fees refined,true
 2026-08-14,info,0,,HIP-4 deployment tools expanded,true
 2026-08-17,info,1,,HPC backs market-structure reform,true
@@ -210,14 +210,14 @@
 2026-08-24,info,0,,Spot annotations added,true
 2026-08-26,info,1,,HPC seeks energy perp framework,true
 2026-08-27,info,0,,HPC publishes perpetuals policy view,true
-2026-08-31,up,1,upgrade,Permissionless HIP-4 live by update,false
+2026-08-31,up,1,upgrade,Permissionless HIP-4 live by update,true
 2026-09-08,info,1,,HIP-3 permissioned-market spec shared,true
 2026-09-08,up,1,,Manual borrowing live by update,true
 2026-09-09,info,1,,HPC files futures amicus brief,true
 2026-09-16,up,1,,Payward plans US HIP-3 markets,true
 2026-09-18,info,0,,Manual borrowing guide published,true
 2026-09-21,info,0,,Trailing stops launch,true
-2026-09-24,up,2,,Binance HYPE spot trading begins,false
+2026-09-24,up,1,,Binance HYPE spot trading begins,false
 2026-09-30,info,1,,HPC comments on EU onchain rules,true
 2026-10-19,info,1,,HPC comments on SEC crypto rules,true
 2026-10-20,info,1,,HPC proposes compute perps rules,true
