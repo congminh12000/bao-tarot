@@ -4,7 +4,7 @@ Status: **BLOCKED — incomplete data**. No sales frames/video rendered.
 
 Global deliveries, 2015Q1–2026Q3; 47 quarters, 168 active-model cells, 17 accepted, **151 missing**, 67 pre-launch cells.
 
-Content hash: `9cacf461518189d9d928edd6804e7f468882ee17b88053f7da18495413c10f3b`. Approval must cover this exact data, sources, assets and storyboard. Plan approval does not approve facts.
+Content hash: `4078f1d8a2126e7ea3ca96b2f4cc158d40053bc75ed002b45fcf7f69617a6ddf`. Approval must cover this exact data, sources, assets and storyboard. Plan approval does not approve facts.
 
 A readable source is not automatically an accepted observation. Initial delivery releases can differ from later letters. Only literal, revised individual-model observations are accepted here; unresolved grouped revisions remain missing. Tesla/SEC republication is one issuer source group, not independent corroboration. Missing is not zero.
 

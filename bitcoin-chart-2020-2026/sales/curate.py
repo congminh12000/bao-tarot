@@ -38,5 +38,5 @@ for year in range(2015,2027):
    before=q<m['firstQuarter'];reason='Not launched; see config launchSources.' if before else 'Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded.'
    rows.append({'quarter':q,'model':m['id'],'geography':'global','metric':'deliveries','status':'reported' if obs else 'not_launched' if before else 'missing','units':obs[1]['units'] if obs else '', 'observation':obs[0] if obs else '', 'note':obs[1]['reviewNote'] if obs else reason})
 with open(D/'deliveries.csv','w',newline='') as f:
- w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+ w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator="\n");w.writeheader();w.writerows(rows)
 print('Accepted explicit facts:',len(observations),'matrix cells:',len(rows))
