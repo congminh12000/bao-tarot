@@ -1,9 +1,10 @@
 {
   "url": "https://ir.tesla.com/",
-  "symbolId": "tds-icon-logo-wordmark",
-  "source": "Official Tesla IR SVG symbol",
+  "symbolId": "tds-icon-logo",
+  "source": "Official Tesla IR T emblem SVG symbol",
   "svg": "logo.svg",
   "png": "logo.png",
-  "note": "Official wordmark, not a custom T icon. Red on transparent, centered on a square; video palette/appearance awaits user preview approval.",
-  "sha256": "2f7ff2192b6e4c6d7821da5b8707ac5c537df5229d59146dc04abd84fa22738c"
+  "note": "Official T paths preserved verbatim. Empty SVG margin trimmed with viewBox 20 20 120 120; red #E82127 on transparent. Background asset keeps Tesla red rather than inverting brand colors. Replaces previous TESLA wordmark at user request; previous video/assets preserved in archived render workspace.",
+  "sha256": "809096bffa47d9924d135e4e1b03abca8ca67f76e869629df4a8c3274354a546",
+  "sourcePageSHA256": "916c85fd0ef681000320ae7d25f4da6330b24a274f0afb39029ddf82a4d7d035"
 }

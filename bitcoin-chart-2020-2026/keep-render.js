@@ -29,6 +29,13 @@ function fingerprint() {
   const h = crypto.createHash('sha256'), parts = {};
   const add = (label, buf) => { const d = crypto.createHash('sha256').update(buf).digest('hex').slice(0, 12); parts[label] = d; h.update(label + d); };
   for (const f of ['btc-data.js', 'score.js', 'film.js', 'look.js', 'index.html']) add(f, fs.readFileSync(path.join(ROOT, f)));
+  // Equity logos live outside assets/. A logo change must invalidate old frames
+  // even when the configured filename and generated price data stay the same.
+  const data = require('./btc-data');
+  if (data.coin?.assetClass === 'equity') {
+    for (const key of ['logo', 'logoNegative'])
+      if (data.coin[key]) add(`equity ${key}`, fs.readFileSync(path.join(ROOT, data.coin[key])));
+  }
   if (fs.existsSync(path.join(ROOT, 'manifest.json'))) {
     for (const f of ['manifest.json', 'manifest.js', 'line-core.js']) add(f, fs.readFileSync(path.join(ROOT, f)));
     const p = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifest.json'), 'utf8'));

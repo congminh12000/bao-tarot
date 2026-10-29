@@ -33,7 +33,7 @@ Same 45% reversal / minimum 45 calendar days / ±7-day wick seating as the long 
 
 A cycle low is not an all-time low. Initial price history stays available when determining labels in a later preview cut. Calendar-closed dates display `MARKET CLOSED · LAST CLOSE`; all prices disclose `SPLIT-ADJUSTED · USD`.
 
-Proposed palette: Tesla red, near-black background, soft red/white glow; official Tesla **wordmark** extracted from Tesla IR, [provenance](logo-provenance.json). Visual approval is still required. This v1 supports long candlestick mode only; equity Shorts are deliberately blocked until separately designed/reviewed.
+Proposed palette: Tesla red, near-black background, soft red/white glow; official Tesla **T emblem** extracted from Tesla IR (replaces the initial wordmark at user request), [provenance](logo-provenance.json). Visual approval is still required. This v1 supports long candlestick mode only; equity Shorts are deliberately blocked until separately designed/reviewed.
 
 ## Generate and validate without rendering
 
@@ -62,3 +62,7 @@ Five previously removed level-0 items were explicitly restored by the user: webs
 ## Full-data preview delivered
 
 [Watch on Drive](https://drive.google.com/file/d/1IvkPyd_mt-nsredJg1yUHktrc6WZOboR/view?usp=drivesdk): 854×480, 16:9, 60 fps, 542.466667 s, 32,548 frames, 101,680,467 bytes. All 176 selected events + 8 turns are present; 184/184 labels verified visible, no overlaps. Five long labels use [separate display captions](label-captions.json), preserving original events and citations. Mastered AAC measures −16.0 LUFS / −1.1 dBTP. Full-frame PTS/decode, 51 deterministic reference images and 45 master/AAC windows pass. The legacy strongest-onset/flash heuristic flags 11 measurements in layered/neighboring effects; its raw failures are retained, not suppressed, and investigated with direct references. Details: [preview-render.json](data/preview-render.json). Full frames/music/code/QA archived in ignored out/renders/tesla-preview-full-drive-20261029-480p60; source workspace remains isolated, previous root data/music preserved. Await user visual approval before further rendering.
+
+## T-logo update and screenshot
+
+User requested a Tesla logo change and the most informative frame. The official IR `tds-icon-logo` T paths replace the wordmark; red transparent asset is used for the main and background logo. [Full-HD screenshot, 08:06.60](https://drive.google.com/file/d/1aDCoy8oOek2-RwELj2epYixjpHVso0Ry/view?usp=drivesdk) shows five readable event labels plus price/date/uptrend HUD, selected from 420 candidates; see [frame metadata](data/logo-frame-preview.json). This still uses the new logo; the previously delivered full video is preserved as rendered. Equity render fingerprints now include logo bytes, so old frames cannot be reused after the asset changes.

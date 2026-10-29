@@ -1,0 +1,29 @@
+{
+  "scope": "Logo-only visual update and a full-HD screenshot requested by user. Event selection/prices/timeline unchanged. Previous video remains archived with its original wordmark assets.",
+  "timeSeconds": 486.6,
+  "frameAt60FPS": 29196,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "chartDate": "2025-06-30",
+  "phase": 9,
+  "direction": "uptrend",
+  "visibleEventLabels": [
+    "Q1 2025 DELIVERIES",
+    "CYCLE LOW: $214.25",
+    "Q1 2025 EARNINGS",
+    "TRUMP-MUSK FEUD HITS TSLA",
+    "AUSTIN ROBOTAXI TEST LAUNCHES"
+  ],
+  "selectionMethod": "Ranked 420 candidate frames by fully-on-screen readable event labels (minimum 18px), with price/date/ticker HUD. Five readable event labels, including cycle low. Selected candidate snapped to frame grid.",
+  "logoSymbolId": "tds-icon-logo",
+  "logoSource": "https://ir.tesla.com/",
+  "imageSHA256": "dd402d3b77e4d004b54c4d7b233f9bb39b810d8b861dbc0e044098474ac95416",
+  "bytes": 3387622,
+  "drive": {
+    "id": "1aDCoy8oOek2-RwELj2epYixjpHVso0Ry",
+    "url": "https://drive.google.com/file/d/1aDCoy8oOek2-RwELj2epYixjpHVso0Ry/view?usp=drivesdk"
+  },
+  "archive": "out/tsla-logo-T-20261029-workspace/out/"
+}
