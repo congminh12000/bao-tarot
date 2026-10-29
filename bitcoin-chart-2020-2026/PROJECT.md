@@ -318,6 +318,15 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **HYPE preview tinh gọn full — 29/10/2026:** người dùng yêu cầu render sau bảng lựa chọn 44 sự kiện;
+  danh sách tinh gọn đã duyệt cho preview. 698 ngày giá 30/11/2024–28/10/2026, 44 sự kiện + 4 ATH/ATL.
+  Hoàn tất 88,8167 s, 5.329 frame, 854×480/60 fps, 29.029.677 byte; giữ 5 phase/5 cue.
+  Check-labels đạt (3 nhãn cũ rời sớm); 19/19 mốc âm thanh lệch ≤3 ms. Flash heuristic 18/19; mốc ATH gần
+  USDC nhận chớp trước, đối chiếu 3 frame trước/tại/sau đúng tham chiếu (MAE ≤3,76/255), không đổi offset.
+  AAC −16,0 LUFS, true peak −1,4 dBTP (chưa nghe). Lưu `out/renders/hype-preview-important-full-20261029-480p60/`.
+  Workspace riêng và root data/music giữ nguyên. Xem `coins/HYPE/preview-important-20261029.json`.
+  **Chờ duyệt hình/nhạc/SFX của preview mới; chưa final.**
+
 - **HYPE tinh gọn — 29/10/2026:** người dùng yêu cầu chỉ giữ sự kiện liên quan quan trọng.
   Giữ 44 sự kiện trong đoạn giá (30 mức 1, 14 mức 2) + 4 ATH/ATL = 48 nhãn, từ 156 nhãn trước đó.
   Đặt thêm 108 dòng remove=true; tổng 171 ẩn, 54 giữ (10 bối cảnh trước đoạn giá).

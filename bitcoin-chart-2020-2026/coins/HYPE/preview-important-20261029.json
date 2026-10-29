@@ -1,0 +1,50 @@
+{
+  "baseCommit": "07a91d03",
+  "approval": "User requested full preview immediately after receiving the important-only event selection.",
+  "fps": 60,
+  "resolution": "854x480",
+  "format": "16:9",
+  "workspace": "out/hype-preview-important-workspace-20261029",
+  "rootDataSha256": "9d120ed7d67a2e91380fe2c48754cfdb5258997fe7e8d104cb094e3d9439646e",
+  "rootMusicSha256": "30d13b8441014e7b3501820d91e66da5ac8604eedd985659bb1ab28554fba915",
+  "priceDays": 698,
+  "events": 44,
+  "automaticATHATL": 4,
+  "totalLabels": 48,
+  "phases": 5,
+  "distinctCues": 5,
+  "durationSeconds": 88.816667,
+  "frames": 5329,
+  "bytes": 29029677,
+  "loudnessLUFS": -16.0,
+  "truePeakDBTP": -1.4,
+  "renderSeconds": 92.1,
+  "renderPath": "out/renders/hype-preview-important-full-20261029-480p60/hype-preview-important-full-20261029-480p.mp4",
+  "fingerprint": "9deedee4375ce4b8",
+  "checks": {
+    "sourceLinks": "225/225 with 465 citation rows",
+    "strictDataGeneration": "pass: 698 TV candles, zero estimates, 44 events, 5 phases",
+    "labels": "no overlaps in check-labels; 3 earlier labels leave early",
+    "audioSync": "19/19 markers within 3 ms",
+    "flashHeuristic": "18/19; strongest-flash detector selects preceding hit for adjacent USDC/ATH events",
+    "decodedFrames": {
+      "checks": [
+        {
+          "frame": 2077,
+          "rgbMAE": 3.418860590684361
+        },
+        {
+          "frame": 2078,
+          "rgbMAE": 3.7515596539162113
+        },
+        {
+          "frame": 2079,
+          "rgbMAE": 3.5993706088992976
+        }
+      ],
+      "note": "Flash heuristic selected preceding hit; before/contact/after decoded frames match deterministic references. No offsets changed."
+    },
+    "heardByAssistant": false
+  },
+  "status": "Full preview complete; awaiting visual/audio approval."
+}

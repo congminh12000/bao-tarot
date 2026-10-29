@@ -1,4 +1,6 @@
-# HYPE — danh sách tinh gọn chờ duyệt
+# HYPE — danh sách tinh gọn đã duyệt cho preview
+
+Người dùng đã yêu cầu render preview full theo danh sách này ngày 29/10/2026. Chờ duyệt hình/âm thanh sau khi xem preview.
 
 Giữ **44 sự kiện + 4 ATH/ATL = 48 nhãn** trong video (trước đây 156). Ẩn thêm 108 sự kiện; không xóa dòng hoặc nguồn, không đổi ngày/nhãn/mức, không tự gán nguyên nhân giá.
 

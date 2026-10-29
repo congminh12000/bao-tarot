@@ -22,3 +22,7 @@ User requested the full preview with the current selection (152 in-range researc
 ## Important-only selection — pending approval
 
 Current events.csv keeps 44 in-range events (30 level 1, 14 level 2), plus four automatic turns = 48 video labels. 108 newly hidden; 171 removed overall; 54 retained including 10 pre-price context rows. All 225 research rows and 465 citations remain; no date/text/level, price, phase or cue changes. Existing full preview still contains the previous 152-event selection. Review `data/events-important-review-20261029.md` and approve before any new render.
+
+## Important-only full preview completed
+
+2026-10-29: user approved the compact selection by requesting its full preview. 44 research events + 4 automatic turns; 88.816667 s, 854×480 at 60 fps, 29,029,677 bytes. Source/strict-ingestion/label checks pass. Audio markers within 3 ms; adjacent flash detector ambiguity checked against decoded reference frames. AAC −16.0 LUFS, −1.4 dBTP; assistant has not listened. New preview awaits visual/audio approval. See `preview-important-20261029.json`. Earlier pending-selection notes describe the preceding review stage.

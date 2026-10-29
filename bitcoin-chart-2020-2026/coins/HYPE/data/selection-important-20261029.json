@@ -1,6 +1,6 @@
 {
   "baseCommit": "269f3cbf",
-  "status": "pending approval before render",
+  "status": "selection approved; full preview requested",
   "counts": {
     "researchRows": 225,
     "sourceRows": 465,
@@ -4580,5 +4580,6 @@
         ]
       ]
     }
-  ]
+  ],
+  "approval": "Important-only selection approved for full preview by user request on 2026-10-29; visual/audio preview approval pending."
 }
