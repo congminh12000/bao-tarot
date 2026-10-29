@@ -1,6 +1,6 @@
-# Tesla — danh sách sự kiện chờ duyệt
+# Tesla — danh sách sự kiện đã duyệt cho preview
 
-Trạng thái: **pending**. Chưa render ảnh bố cục hoặc video. Duyệt kế hoạch không thay cho duyệt danh sách này.
+Trạng thái: **approved**. Phạm vi phê duyệt được lưu trong review-state.json. Duyệt kế hoạch không thay cho duyệt danh sách cụ thể; sửa dữ liệu phải duyệt lại.
 
 Giá: **2010-06-29 → 2026-10-28**, 4109 phiên TradingView split-adjusted. Lưu 631 sự kiện nghiên cứu; giữ **176** (5 mức 0, 135 mức 1, 36 mức 2), remove=true **455**.
 

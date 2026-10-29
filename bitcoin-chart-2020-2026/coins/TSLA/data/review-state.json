@@ -1,4 +1,8 @@
 {
-  "status": "pending",
-  "note": "User restored five specific level-0 events. Full concrete-list approval/render authorization has not been given."
+  "status": "approved",
+  "note": "User restored five specific level-0 events. Full concrete-list approval/render authorization has not been given.",
+  "eventHash": "75cb5876547d7e041aa15700f6301e271d724ac54f7cc33ed952d89a49bac4a1",
+  "approvedAtUTC": "2026-10-29T09:40:20.312745+00:00",
+  "approvalEvidence": "Render preview tesla full dữ liệu hiện tại sau đó up lên drive",
+  "approvedScope": "User explicitly requests full-current-data preview and Drive upload after reviewing selection; authorizes this preview, not a final video."
 }

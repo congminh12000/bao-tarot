@@ -53,8 +53,8 @@ test('TSLA full calendar preserves exactly 4109 source sessions and hides 1857 c
  for(const e of S.EVENTS){assert.equal(BTC.sessions[e.day],'1');if(e.anchorDate)assert.equal(S.dateOf(e.day).toISOString().slice(0,10),e.anchorDate);}
  for(const e of S.EVENTS.filter(e=>e.turn!==undefined&&e.kind==='down'))assert.ok(e.text.startsWith('CYCLE LOW:'));
  for(const e of S.EVENTS.filter(e=>e.turn!==undefined&&e.kind==='up'))assert.ok(e.price>=Math.max(...BTC.days.slice(0,e.day+1).map((r,i)=>BTC.sessions[i]==='1'?r[1]:0))-1e-6);
- assert.equal(BTC.eventReview.status,'pending');
- assert.throws(()=>vm.runInNewContext(fs.readFileSync(path.join(__dirname,'score.js'),'utf8'),{require:(id)=>require(id),module:{exports:{}},process:{env:{},argv:['node','/project/engine/render.js']}}),/review pending/);
+ assert.equal(BTC.eventReview.status,E.reviewState(path.join(__dirname,'coins/TSLA/data')).status);
+ assert.throws(()=>vm.runInNewContext(fs.readFileSync(path.join(__dirname,'score.js'),'utf8'),{require:(id)=>id==='./btc-data'?{...BTC,eventReview:{...BTC.eventReview,status:'pending'}}:require(id),module:{exports:{}},process:{env:{},argv:['node','/project/engine/render.js']}}),/review pending/);
 });
 test('Crypto long and legacy Shorts score remain identical to pre-equity code',()=>{
  const previous=require('child_process').execFileSync('git',['show','8bdf03e8:bitcoin-chart-2020-2026/score.js'],{cwd:__dirname,encoding:'utf8'}),current=fs.readFileSync(path.join(__dirname,'score.js'),'utf8');

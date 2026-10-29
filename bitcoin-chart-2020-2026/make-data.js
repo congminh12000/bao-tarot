@@ -156,11 +156,13 @@ const shortMoney = (t) => t.replace(/\$(\d{1,3}(?:,\d{3})+)(?![\d.,]*[KMB])/g, (
 const storedEvents = require('./event-csv').readEvents(path.join(DIR, 'events.csv'));
 const detailPath = path.join(DIR, 'event-details.json');
 const details = EQUITY && fs.existsSync(detailPath) ? JSON.parse(fs.readFileSync(detailPath, 'utf8')) : {};
+const captionsPath = path.join(COIN.dir, 'label-captions.json');
+const captions = EQUITY && fs.existsSync(captionsPath) ? JSON.parse(fs.readFileSync(captionsPath, 'utf8')) : {};
 const mappedEvents = EQUITY ? storedEvents.map((e) => eq.anchorEvent(e, details[`${e.date}|${e.text}`], marketSessions)) : storedEvents;
 const events = mappedEvents
   .filter((e) => !e.remove && e.hit >= (COIN.minVisibleHit ?? (COIN.symbol === 'BTC' ? 1 : 0)) &&
     (e.anchorDate || e.date) >= FROM && (e.anchorDate || e.date) <= TO && (!EQUITY || e.anchorDate))
-  .map(({ remove, ...e }) => ({ ...e, text: shortMoney(e.text) }));
+  .map(({ remove, ...e }) => ({ ...e, text: shortMoney(e.text), ...(captions[`${e.date}|${e.text}`] ? { displayText: captions[`${e.date}|${e.text}`] } : {}) }));
 console.log(`  stored events: ${storedEvents.length}; remove=true: ${storedEvents.filter((e) => e.remove).length}`);
 
 // market phases (data/phases.csv, from detect-phases.js): clipped to this range, with the cue each one plays

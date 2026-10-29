@@ -1,0 +1,41 @@
+{
+  "renderedAtUTC": "2026-10-29T10:07:58.133450+00:00",
+  "eventReviewHash": "75cb5876547d7e041aa15700f6301e271d724ac54f7cc33ed952d89a49bac4a1",
+  "scope": "Full-current-data preview explicitly requested by user; visual preview not yet approved, no final requested",
+  "from": "2010-06-29",
+  "to": "2026-10-28",
+  "researchEvents": 176,
+  "turnLabels": 8,
+  "labels": 184,
+  "width": 854,
+  "height": 480,
+  "fps": 60,
+  "frames": 32548,
+  "duration": 542.466667,
+  "bytes": 101680467,
+  "sha256": "c856cc189343b680b2f32dd747efcd52948f8bec44e3cdd0c4554f1104d7726d",
+  "lufs": -16.0,
+  "truePeakDBFS": -1.1,
+  "allFramePTS": "PASS",
+  "completeDecode": "PASS",
+  "labelVisibility": "184/184",
+  "labelOverlap": "PASS",
+  "referenceFrames": 51,
+  "aacMasterWindows": 45,
+  "maxAudioOffsetMs": 0.0,
+  "legacyHeuristic": {
+    "status": "11 measurements flagged; not passed or suppressed",
+    "investigation": "All 45 marker frames are checked directly against deterministic rendering; all 45 AAC marker windows aligned with master. Strongest-onset/flash selection is ambiguous with layered music/SFX and neighboring flashes; actual reference alignment is the acceptance check.",
+    "log": "tesla-native-sync.log"
+  },
+  "drive": {
+    "id": "1IvkPyd_mt-nsredJg1yUHktrc6WZOboR",
+    "url": "https://drive.google.com/file/d/1IvkPyd_mt-nsredJg1yUHktrc6WZOboR/view?usp=drivesdk",
+    "metadataSizeVerified": 101680467,
+    "mimeType": "video/mp4"
+  },
+  "archive": "out/renders/tesla-preview-full-drive-20261029-480p60",
+  "workspace": "out/tsla-preview-20261029-workspace",
+  "fingerprint": "f8fd12239ce5a6a2",
+  "rootDatasetAndMusic": "Prior full DOGE dataset and music preserved; Tesla rendering isolated"
+}

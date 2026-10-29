@@ -16,8 +16,8 @@ const table = (rows) => ['| Ngày công bố | Phiên gắn nhãn | Thời đi�
     const d = details[`${e.date}|${e.text}`], mapped = E.anchorEvent(e, d, sessions);
     return `| ${e.date} | ${e.remove ? '—' : mapped.anchorDate || 'Pending session'} | ${mapped.marketTiming} | ${esc(e.text)} | ${e.hit} | ${e.remove} | ${esc(d.reason)} | ${links(d)} |`;
   })].join('\n');
-const content = [`# ${C.name} — danh sách sự kiện chờ duyệt`, '',
-  `Trạng thái: **${review.status}**. Chưa render ảnh bố cục hoặc video. Duyệt kế hoạch không thay cho duyệt danh sách này.`, '',
+const content = [`# ${C.name} — danh sách sự kiện ${review.status === 'approved' ? 'đã duyệt cho preview' : 'chờ duyệt'}`, '',
+  `Trạng thái: **${review.status}**. Phạm vi phê duyệt được lưu trong review-state.json. Duyệt kế hoạch không thay cho duyệt danh sách cụ thể; sửa dữ liệu phải duyệt lại.`, '',
   `Giá: **${audit.range.join(' → ')}**, ${audit.candles} phiên TradingView split-adjusted. Lưu ${events.length} sự kiện nghiên cứu; giữ **${kept.length}** (${kept.filter(e=>e.hit===0).length} mức 0, ${kept.filter(e=>e.hit===1).length} mức 1, ${kept.filter(e=>e.hit===2).length} mức 2), remove=true **${removed.length}**.`, '',
   `Giữ đủ ${quarters.length} kỳ earnings; ${deliveryCount('separate_release_verified')} kỳ có bản giao xe riêng, ${deliveryCount('embedded_in_earnings')} kỳ gộp trong earnings; ${deliveryCount('financial_report_context_only')} kỳ chỉ có ngữ cảnh báo cáo tài chính, chưa xác minh được chuỗi giao xe riêng thống nhất. Không dựng thêm số liệu.`, '',
   'Mức 1: báo cáo quý, hoạt động kinh doanh và cột mốc quan trọng. Mức 2: bước ngoặt lớn về sản phẩm, pháp lý, chiến lược hoặc thị trường. Mức 0 thường được remove vì nhỏ/lặp/ngoài phạm vi; các mục người dùng chỉ định bật lại giữ nguyên mức 0 và hiện nhãn nhỏ, không SFX/hiệu ứng. Không áp dụng yêu cầu lấy 99Bitcoins cho cổ phiếu.', '',

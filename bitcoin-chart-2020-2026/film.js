@@ -325,7 +325,7 @@
     const e = EVENTS[n], up = e.kind !== 'down', size = sizeOf(e), h = size * 1.3, dh = dhOf(e);
     // an ALL-TIME HIGH / LOW (a phase turn) holds its own side: up above the candles, down below, on a short line
     const turn = e.turn !== undefined, CG = turn ? 12 : 22;
-    const s = e.text.toUpperCase(), tw = measure(MEASURE, s, size, 800);
+    const s = (e.displayText || e.text).toUpperCase(), tw = measure(MEASURE, s, size, 800);
     const { X, Y, c } = camAt(e.t);
     const x = X(e.day + 0.5), ay = Y(e.price) + (up ? -8 : 8);
     const bw = tw + PAD * 2;
@@ -367,7 +367,7 @@
     for (let m = 0; m < n; m++) { const o = EVENTS[m]; if (o.t <= e.t && placeLabel(m).exit > e.t) others.push(m); }
     // (a turn label does not give way to them: the labels still to come find room around it instead)
     const coming = EVENTS.map((o, m) => ({ o, m })).filter(({ o, m }) => !turn && m > n && o.t > e.t && o.t < e.t + 20)
-      .map(({ o }) => ({ o, h: sizeOf(o) * 1.3 + dhOf(o), bw: measure(MEASURE, o.text.toUpperCase(), sizeOf(o), 800) + PAD * 2, up: o.kind !== 'down' }));
+      .map(({ o }) => ({ o, h: sizeOf(o) * 1.3 + dhOf(o), bw: measure(MEASURE, (o.displayText || o.text).toUpperCase(), sizeOf(o), 800) + PAD * 2, up: o.kind !== 'down' }));
     const samples = [];
     for (let ts = gridFrom(e.t); ts < DUR_END; ts += GRID) {
       const K = camAtM(ts);

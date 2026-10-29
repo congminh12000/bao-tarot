@@ -1,6 +1,6 @@
 {
-  "checkedAtUTC": "2026-10-29T09:31:56.898585+00:00",
-  "scope": "Research and code/data validation only. No Tesla layout still or video rendered. No Tesla encoded-audio/visual QA claimed.",
+  "checkedAtUTC": "2026-10-29T10:07:58.133450+00:00",
+  "scope": "Full-data preview rendered/uploaded; no final requested. File-level QA in preview-render.json.",
   "priceSessions": 4109,
   "closedCalendarSlotsWithoutCandles": 1857,
   "estimatedOpenSessions": 0,
@@ -33,7 +33,7 @@
     "DOGEFullGeneratedDataset": "Byte-identical to saved pre-task file and HEAD; restored after TSLA research",
     "pendingReviewBuildGate": "PASS: audit-asset rejects pending concrete-list approval",
     "syntax": "JS and Python changed entrypoints parsed",
-    "renderQA": "NOT RUN: awaiting concrete event-list approval",
+    "renderQA": "PASS: full decode/frame PTS; 184 labels visible, no overlaps; 51 reference frames; 45 AAC/master alignment windows. Legacy strongest-peak heuristic flags retained with investigation in preview-render.json.",
     "explicitRestore": "PASS: exactly five remove flags changed; dates, labels, levels and citations unchanged; all five present in generated score at level 0 without hit SFX"
   },
   "knownLimits": [
@@ -43,6 +43,7 @@
     "Unknown publication times remain explicitly unknown",
     "Source selection is curated; not a guarantee of all historical news"
   ],
-  "review": "pending",
-  "generatedRootState": "Previous full DOGE dataset restored; existing music unchanged"
+  "review": "approved for requested full-data preview",
+  "generatedRootState": "Previous full DOGE dataset restored; existing music unchanged",
+  "preview": "preview-render.json"
 }

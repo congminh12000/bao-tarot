@@ -1,6 +1,6 @@
 # Tesla — long candlestick price history
 
-**Research/code ready; concrete event selection and visual appearance are pending approval. No Tesla layout still or video has been rendered.**
+**Current event selection approved for the requested full-data preview. Preview rendered/uploaded; awaiting visual feedback. No final requested.**
 
 - [Review all 176 retained / 455 removed events](event-review.md), including dates, levels, selection reasons and citations.
 - [Quarter-by-quarter coverage](quarter-coverage.md): every earnings report from 2010 Q2 through 2026 Q3; 47 separate delivery releases; 11 delivery discussions embedded in earnings. Eight early Roadster quarters have financial context, without a verified comparable standalone delivery series.
@@ -57,4 +57,8 @@ Research does not replace the existing generated long-film dataset/music as a de
 
 ## User selection update
 
-Five previously removed level-0 items were explicitly restored by the user: website launch (2010-07-13), Supercharger launch (2012-09-24), Motor Trend award (2012-11-12), US/Canada Supercharger expansion (2013-05-30), and Cybertruck delivery-event details (2023-11-28). Their original levels/dates/text remain unchanged. `minVisibleHit: 0` allows these explicitly kept level-0 items to display quietly; all other remove flags remain unchanged. Current selection: **176 kept (5 / 135 / 36 at levels 0 / 1 / 2), 455 removed**, plus 8 generated turn labels. No render performed.
+Five previously removed level-0 items were explicitly restored by the user: website launch (2010-07-13), Supercharger launch (2012-09-24), Motor Trend award (2012-11-12), US/Canada Supercharger expansion (2013-05-30), and Cybertruck delivery-event details (2023-11-28). Their original levels/dates/text remain unchanged. `minVisibleHit: 0` allows these explicitly kept level-0 items to display quietly; all other remove flags remain unchanged. Current selection: **176 kept (5 / 135 / 36 at levels 0 / 1 / 2), 455 removed**, plus 8 generated turn labels. Full-data preview rendered after the subsequent explicit user request.
+
+## Full-data preview delivered
+
+[Watch on Drive](https://drive.google.com/file/d/1IvkPyd_mt-nsredJg1yUHktrc6WZOboR/view?usp=drivesdk): 854×480, 16:9, 60 fps, 542.466667 s, 32,548 frames, 101,680,467 bytes. All 176 selected events + 8 turns are present; 184/184 labels verified visible, no overlaps. Five long labels use [separate display captions](label-captions.json), preserving original events and citations. Mastered AAC measures −16.0 LUFS / −1.1 dBTP. Full-frame PTS/decode, 51 deterministic reference images and 45 master/AAC windows pass. The legacy strongest-onset/flash heuristic flags 11 measurements in layered/neighboring effects; its raw failures are retained, not suppressed, and investigated with direct references. Details: [preview-render.json](data/preview-render.json). Full frames/music/code/QA archived in ignored out/renders/tesla-preview-full-drive-20261029-480p60; source workspace remains isolated, previous root data/music preserved. Await user visual approval before further rendering.
