@@ -18,6 +18,12 @@ Full TRX data/music remain loaded. Final delivered locally; no Drive upload requ
 
 Title options await selection; no YouTube publication.
 
+## Title (chosen 2026-10-29, same pattern as Bitcoin/Ethereum/XRP)
+
+```text
+TRON Price History: Every All-Time High & Crash, Animated in 6 Minutes
+```
+
 ## Title options
 
 1. TRON Price History: Every All-Time High & Crash, Animated in 6 Minutes
@@ -29,7 +35,7 @@ Title options await selection; no YouTube publication.
 ```text
 Every all-time high. Every crash. The story of TRON, told by its price chart.
 
-This animated chart replays TRX's history one daily candle at a time: early exchange trading, the mainnet launch, protocol milestones, market crashes, regulatory cases, and network fee changes.
+This animated chart replays TRX's history one daily candle at a time, from its first exchange trades to the latest close: the first great crypto boom, the mainnet launch and the move off Ethereum, the BitTorrent acquisition, USDT's rise on the TRON network, the USDD stablecoin, the SEC case against Justin Sun and its settlement, network fee cuts, and the first U.S. TRX ETF.
 
 The market moves in two kinds of phases: a bull run, from an all-time low to the next all-time high, and a bear market, from an all-time high to the next all-time low. Each phase has its own original score: heroic in the climbs, tense in the falls. Protocol milestones are highlighted along the way.
 
