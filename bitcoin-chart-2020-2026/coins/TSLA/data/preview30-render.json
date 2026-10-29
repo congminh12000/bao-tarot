@@ -1,0 +1,120 @@
+{
+  "file": "clip_473.00-503.00-16x9-480p.mp4",
+  "width": 854,
+  "height": 480,
+  "fps": 60,
+  "frames": 1800,
+  "duration": 30.0,
+  "sourceScoreRange": [
+    473,
+    503
+  ],
+  "fullDataPreserved": true,
+  "logo": "Official Tesla T emblem",
+  "removedHUDSublabels": [
+    "SPLIT-ADJUSTED \u00b7 USD",
+    "MARKET CLOSED \u00b7 LAST CLOSE"
+  ],
+  "events": [
+    {
+      "date": "2025-04-02",
+      "text": "Q1 2025 deliveries",
+      "t": 2.657258181735642,
+      "hit": 1
+    },
+    {
+      "date": "2025-04-07",
+      "text": "CYCLE LOW: $214.25",
+      "t": 3.2919190177734663,
+      "hit": 2
+    },
+    {
+      "date": "2025-04-22",
+      "text": "Q1 2025 earnings",
+      "t": 5.895451125095974,
+      "hit": 1
+    },
+    {
+      "date": "2025-06-05",
+      "text": "Trump-Musk feud hits TSLA",
+      "t": 11.134673467168398,
+      "hit": 2
+    },
+    {
+      "date": "2025-06-22",
+      "text": "Austin Robotaxi test launches",
+      "t": 12.894719438924085,
+      "hit": 2
+    },
+    {
+      "date": "2025-07-02",
+      "text": "Q2 2025 deliveries",
+      "t": 13.73414604745767,
+      "hit": 1
+    },
+    {
+      "date": "2025-07-23",
+      "text": "Q2 2025 earnings",
+      "t": 15.931533296682346,
+      "hit": 1
+    },
+    {
+      "date": "2025-10-02",
+      "text": "Q3 2025 deliveries",
+      "t": 22.73919485223297,
+      "hit": 1
+    },
+    {
+      "date": "2025-10-22",
+      "text": "Q3 2025 earnings",
+      "t": 24.82357780295729,
+      "hit": 1
+    },
+    {
+      "date": "2025-11-06",
+      "text": "New Musk pay plan approved",
+      "t": 26.280091957875015,
+      "hit": 2
+    }
+  ],
+  "fullDecode": "PASS",
+  "allFrameTimestamps": "PASS",
+  "audioAlignment": [
+    {
+      "clipSeconds": 3.2919190177734663,
+      "offsetMs": 0.0,
+      "correlation": 0.9993214085815512
+    },
+    {
+      "clipSeconds": 11.134673467168398,
+      "offsetMs": 0.0,
+      "correlation": 0.9996468926958751
+    },
+    {
+      "clipSeconds": 12.894719438924085,
+      "offsetMs": 0.0,
+      "correlation": 0.9997360821895851
+    },
+    {
+      "clipSeconds": 26.280091957875015,
+      "offsetMs": 0.0,
+      "correlation": 0.9996033631901962
+    }
+  ],
+  "truePeakDBFS": -1.4,
+  "excerptLUFS": -15.0,
+  "bytes": 6527073,
+  "sha256": "5d209d8ef1f3d9d233fba764ee703bbb15db7a8cee6358e73220469125cdf6ae",
+  "kind": "clip",
+  "renderedAtUTC": "2026-10-29T11:41:21.224760+00:00",
+  "sourceCommit": "a72ba68e",
+  "drive": {
+    "id": "1AjwNAq5GGve-eRjjSPzVl8_6KFs6T9Xr",
+    "url": "https://drive.google.com/file/d/1AjwNAq5GGve-eRjjSPzVl8_6KFs6T9Xr/view?usp=drivesdk",
+    "verifiedBytes": 6527073
+  },
+  "archive": "out/renders/tesla-preview30-clean-HUD-20261029",
+  "reusableAsFullFilm": false,
+  "workspace": "out/tesla-preview30-clean-HUD-20261029-workspace",
+  "note": "30-second absolute-timeline excerpt, not a regenerated shortened dataset. Existing full data/music and previous renders preserved."
+}
