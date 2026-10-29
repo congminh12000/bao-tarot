@@ -13,5 +13,8 @@
 - Review: data/events-review-20261029.md; detailed evidence/limits: data/SOURCES.md and second-pass-20261029.json.
 - Parser/source links, snapshot reconciliation and isolated strict ingestion pass. Root film data/music unchanged.
 
-Event list/levels/remove flags await approval before any render. This data-only task does not prepare logo,
-palette, phases/music or a preview. No video rendered. Not a claim of exhaustive world history.
+The research audit does not certify exhaustive world history. The subsequent full-preview request is recorded below.
+
+## Full preview requested 2026-10-29
+
+User requested the full preview with the current selection (152 in-range research events). Official mint blob from the Hyperliquid brand kit; draft mint palette pending visual approval. Five automatically detected phases use five distinct approved library cues. Render runs in an isolated workspace; root data/music and analytical daily price precision remain unchanged. See `preview-20261029.json`.

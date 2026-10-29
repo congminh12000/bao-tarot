@@ -3,6 +3,18 @@
   "name": "Hyperliquid",
   "pair": "HYPE / USD",
   "tradingview": "CRYPTO:HYPEHUSD",
-  "eventsSource": "Hyperliquid official announcements cross-checked against protocol documentation, issuer/counterparty announcements and established reporting. See data/SOURCES.md and review-20261029.json. Research selection pending approval; no render authorized.",
-  "musicShuffle": true
+  "eventsSource": "Hyperliquid official announcements cross-checked against protocol documentation, issuer/counterparty announcements and established reporting. See data/SOURCES.md and review-20261029.json. User requested full preview after reviewing the event count on 2026-10-29.",
+  "musicShuffle": true,
+  "logo": "coins/HYPE/logo.png",
+  "logoNegative": "coins/HYPE/logo.png",
+  "logoGlow": "#97FCE4",
+  "colors": {
+    "accent": "#97FCE4",
+    "accent2": "#C9FFF1",
+    "bg1": "#06251F",
+    "bg0": "#010A08",
+    "grid": "rgba(151,252,228,0.09)",
+    "gridMajor": "rgba(151,252,228,0.32)"
+  },
+  "special": "#FFC93C"
 }

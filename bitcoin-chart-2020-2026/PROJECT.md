@@ -318,6 +318,15 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **HYPE preview full — 29/10/2026:** người dùng yêu cầu render preview full với danh sách hiện tại (152 sự kiện trong đoạn giá).
+  Chuẩn bị logo mint chính thức từ brand kit, bảng màu mint nháp để duyệt qua preview; 5 phase/5 cue không lặp.
+  Render ở workspace riêng `out/hype-preview-full-workspace-20261029/`, giữ nguyên root data/music và CSV giá đầy đủ precision.
+  Preview hoàn tất: 88,8167 s, 5.329 frame, 854×480/60 fps, 32.557.618 byte; 152 sự kiện + 4 ATH/ATL tự sinh.
+  Check-labels đạt; âm thanh 19/19 marker lệch ≤3 ms. Flash heuristic 18/19 đạt, một mốc gần nhau nhận nhầm
+  chớp trước 0,158 s; đối chiếu decoded frame trước/tại/sau mốc đúng tham chiếu (MAE ≤3,67/255), không nudge offset.
+  AAC −16,0 LUFS, true peak −1,4 dBTP (chưa nghe). Lưu `out/renders/hype-preview-full-20261029-480p60/`;
+  workspace/fingerprint giữ riêng để tái sử dụng. Xem `coins/HYPE/preview-20261029.json`; chờ duyệt hình/âm thanh trước final.
+
 - **HYPE đối chiếu lần hai — 29/10/2026:** tìm đúng ticker TradingView **CRYPTO:HYPEHUSD** (Hyperliquid aggregate).
   Thay feed chính Pyth, giữ bản cũ để đối chiếu. 698 nến ngày đã đóng 30/11/2024–28/10/2026, hai lần tải khớp từng
   OHLC, không ước tính/thiếu ngày trong đoạn; bổ sung được 4 ngày, chỉ còn genesis **29/11/2024** chưa có trên các feed thử.

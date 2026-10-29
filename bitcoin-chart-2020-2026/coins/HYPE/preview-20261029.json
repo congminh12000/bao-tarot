@@ -1,0 +1,60 @@
+{
+  "requestedOn": "2026-10-29",
+  "authorization": "User requested Render preview full for current HYPE selection after receiving event count.",
+  "format": "16:9",
+  "resolution": "854x480",
+  "fps": 60,
+  "priceDays": 698,
+  "researchEventsShown": 152,
+  "phases": 5,
+  "cueIds": [
+    "up-horizon",
+    "down-vertigo",
+    "up-crusade",
+    "down-tremor",
+    "up-titan"
+  ],
+  "paletteStatus": "Draft mint palette for preview review; not final approved.",
+  "logoSource": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit",
+  "logoAsset": "Hyperliquid PNG format.zip / PNG/Hyperliquid_Blob_Green.png",
+  "workspace": "out/hype-preview-full-workspace-20261029",
+  "rootDataSha256": "9d120ed7d67a2e91380fe2c48754cfdb5258997fe7e8d104cb094e3d9439646e",
+  "rootMusicSha256": "30d13b8441014e7b3501820d91e66da5ac8604eedd985659bb1ab28554fba915",
+  "note": "Isolated workspace retains generated rounded chart data; analytical hype-daily.csv remains full precision.",
+  "durationSeconds": 88.816667,
+  "frames": 5329,
+  "bytes": 32557618,
+  "totalLabels": 156,
+  "automaticTurnLabels": 4,
+  "labelOverlapCheck": "pass",
+  "loudnessLUFS": -16.0,
+  "truePeakDBTP": -1.4,
+  "renderSeconds": 90.4,
+  "renderPath": "out/renders/hype-preview-full-20261029-480p60/hype-preview-full-20261029-480p.mp4",
+  "verification": {
+    "audioMarkers": "19/19 within 3 ms",
+    "flashHeuristic": "18/19 pass; one strongest-flash selection points to preceding event 0.158 seconds earlier",
+    "decodedFrames": {
+      "checks": [
+        {
+          "frame": 2077,
+          "time": 34.61666666666667,
+          "rgbMAE": 3.6052929026801976
+        },
+        {
+          "frame": 2078,
+          "time": 34.63333333333333,
+          "rgbMAE": 3.6691931759042413
+        },
+        {
+          "frame": 2079,
+          "time": 34.65,
+          "rgbMAE": 3.650875780640125
+        }
+      ],
+      "note": "Before/contact/after decoded frames match deterministic references; strongest-flash heuristic selected preceding event 0.158s earlier. Audio all markers within 3ms; no offsets changed."
+    },
+    "notHeardByAssistant": true
+  },
+  "status": "Preview complete; awaiting user visual/audio approval."
+}
