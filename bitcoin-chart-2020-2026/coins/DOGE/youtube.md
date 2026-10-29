@@ -17,20 +17,25 @@ Snapshot audit 234/234 IDs per configured coin passes. Live 99Bitcoins returned 
 26 unique chapter/event+1-second images extracted from this final; timestamps in `chapter-check.json`.
 Full DOGE data and music remain loaded. No Drive upload requested for this final. No YouTube publication.
 
+## Title (chosen 2026-10-29, same pattern as Bitcoin/Ethereum/XRP/TRON)
+
+```text
+Dogecoin Price History: Every All-Time High & Crash, Animated in 8 Minutes
+```
+
 ## Title options
 
 1. Dogecoin Price History: Every All-Time High & Crash, Animated in 8 Minutes
 2. Dogecoin Price History: From Internet Meme to Major Milestones
 3. Dogecoin Price History: Bull Runs, Crashes and Historic Moments
 
-Title options await selection.
 
 ## Description
 
 ```text
 Every all-time high. Every crash. The story of Dogecoin, told by its price chart.
 
-This animated chart replays DOGE's history one daily candle at a time: early trading, community milestones, merged mining with Litecoin, market crashes, the Dogecoin boom, and exchange-traded funds.
+This animated chart replays DOGE's history one daily candle at a time, from a joke coin's first trades to the latest close: the Jamaican bobsled fundraiser and other community causes, merged mining with Litecoin, the Reddit and TikTok rallies, Elon Musk's tweets and his night on SNL, Tesla merchandise, the Twitter takeover and the Doge logo, the Department of Government Efficiency, and the first Dogecoin ETFs.
 
 The market moves in two kinds of phases: a bull run, from an all-time low to the next all-time high, and a bear market, from an all-time high to the next all-time low. Each phase has its own original score: heroic in the climbs, tense in the falls. Protocol milestones are highlighted along the way.
 
