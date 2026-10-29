@@ -2,7 +2,7 @@
 
 **Research/code ready; concrete event selection and visual appearance are pending approval. No Tesla layout still or video has been rendered.**
 
-- [Review all 171 retained / 460 removed events](event-review.md), including dates, levels, selection reasons and citations.
+- [Review all 176 retained / 455 removed events](event-review.md), including dates, levels, selection reasons and citations.
 - [Quarter-by-quarter coverage](quarter-coverage.md): every earnings report from 2010 Q2 through 2026 Q3; 47 separate delivery releases; 11 delivery discussions embedded in earnings. Eight early Roadster quarters have financial context, without a verified comparable standalone delivery series.
 - [Sources and known limits](SOURCES.md). 631 research rows, 1,280 citation rows, all 591 currently discovered IR archive entries accounted for. This is a curated history, not a claim that all potentially relevant news has been discovered.
 
@@ -18,7 +18,7 @@ The exchange calendar records timezone/DST and early closes. The pinned package 
 
 ## Phases and proposed look
 
-Same 45% reversal / minimum 45 calendar days / ±7-day wick seating as the long film; only real sessions may supply pivots. Nine phases (five up / four down), nine distinct approved-library cues. Eight generated turn labels are additional to the 171 research events:
+Same 45% reversal / minimum 45 calendar days / ±7-day wick seating as the long film; only real sessions may supply pivots. Nine phases (five up / four down), nine distinct approved-library cues. Eight generated turn labels are additional to the 176 research events:
 
 | Date | Type | Split-adjusted USD |
 |---|---|---:|
@@ -54,3 +54,7 @@ Run from the project root. A cloud proxy may require an environment-specific Web
 After the user approves this exact event list, record `status: approved`, `eventHash` from `equity.reviewState(dataDir)`, and the user's approval evidence in `data/review-state.json`, regenerate the full dataset and re-run strict audit. An event/source/detail change invalidates approval. Rendering checks both generated and live hashes. Then generate music, run label checks, produce a short 480p 16:9 60 fps preview, get preview approval, and only render a final if requested. No Tesla visual, label-layout, encoded-audio or full-render QA is claimed yet.
 
 Research does not replace the existing generated long-film dataset/music as a deliverable. Regenerate with `COIN=TSLA` after approval, or use isolated working files; never leave a FROM/TO cut active. Retain every preview/final and use the already authorized Drive fallback if video attachment is unavailable.
+
+## User selection update
+
+Five previously removed level-0 items were explicitly restored by the user: website launch (2010-07-13), Supercharger launch (2012-09-24), Motor Trend award (2012-11-12), US/Canada Supercharger expansion (2013-05-30), and Cybertruck delivery-event details (2023-11-28). Their original levels/dates/text remain unchanged. `minVisibleHit: 0` allows these explicitly kept level-0 items to display quietly; all other remove flags remain unchanged. Current selection: **176 kept (5 / 135 / 36 at levels 0 / 1 / 2), 455 removed**, plus 8 generated turn labels. No render performed.

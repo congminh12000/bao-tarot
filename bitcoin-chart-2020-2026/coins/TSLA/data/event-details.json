@@ -1786,7 +1786,7 @@
   },
   "2010-07-13|Tesla Launches New Website": {
     "category": "excluded_archive",
-    "reason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "reason": "Explicit user selection: restore this event to the video (remove=false); preserve original date, label and level 0.",
     "sources": [
       {
         "source": "Tesla IR archive",
@@ -1807,7 +1807,13 @@
     ],
     "marketTiming": "unknown",
     "sourceTitle": "Tesla Launches New Website",
-    "independentConfirmation": false
+    "independentConfirmation": false,
+    "previousRemovalReason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "selectionDecision": {
+      "remove": false,
+      "source": "User instruction in conversation",
+      "requestedLabel": "Tesla Launches New Website"
+    }
   },
   "2010-07-14|Tesla Roadster Goes the Distance at European Road Rallies": {
     "category": "excluded_archive",
@@ -3478,7 +3484,7 @@
   },
   "2012-09-24|Tesla Motors Launches Revolutionary Supercharger Enabling Convenient Long Distance Driving": {
     "category": "excluded_archive",
-    "reason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "reason": "Explicit user selection: restore this event to the video (remove=false); preserve original date, label and level 0.",
     "sources": [
       {
         "source": "Tesla IR archive",
@@ -3499,7 +3505,13 @@
     ],
     "marketTiming": "unknown",
     "sourceTitle": "Tesla Motors Launches Revolutionary Supercharger Enabling Convenient Long Distance Driving",
-    "independentConfirmation": false
+    "independentConfirmation": false,
+    "previousRemovalReason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "selectionDecision": {
+      "remove": false,
+      "source": "User instruction in conversation",
+      "requestedLabel": "Tesla Motors Launches Revolutionary Supercharger Enabling Convenient Long Distance Driving"
+    }
   },
   "2012-09-25|Tesla Motors Announces Follow-on Offering": {
     "category": "excluded_archive",
@@ -3714,7 +3726,7 @@
   },
   "2012-11-12|Tesla Model S Wins One of Automotive Industry's Highest Honors: Motor Trend 2013 Car of the Year": {
     "category": "excluded_archive",
-    "reason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "reason": "Explicit user selection: restore this event to the video (remove=false); preserve original date, label and level 0.",
     "sources": [
       {
         "source": "Tesla IR archive",
@@ -3735,7 +3747,13 @@
     ],
     "marketTiming": "unknown",
     "sourceTitle": "Tesla Model S Wins One of Automotive Industry's Highest Honors: Motor Trend 2013 Car of the Year",
-    "independentConfirmation": false
+    "independentConfirmation": false,
+    "previousRemovalReason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "selectionDecision": {
+      "remove": false,
+      "source": "User instruction in conversation",
+      "requestedLabel": "Tesla Model S Wins One of Automotive Industry's Highest Honors: Motor Trend 2013 Car of the Year"
+    }
   },
   "2012-11-16|Tesla Motors Opens First Canadian Store": {
     "category": "excluded_archive",
@@ -4908,7 +4926,7 @@
   },
   "2013-05-30|Tesla Dramatically Expands Supercharger Network, Delivering Convenient, Free long Distance Driving Throughout U.S. and Canada": {
     "category": "excluded_archive",
-    "reason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "reason": "Explicit user selection: restore this event to the video (remove=false); preserve original date, label and level 0.",
     "sources": [
       {
         "source": "Tesla IR archive",
@@ -4929,7 +4947,13 @@
     ],
     "marketTiming": "unknown",
     "sourceTitle": "Tesla Dramatically Expands Supercharger Network, Delivering Convenient, Free long Distance Driving Throughout U.S. and Canada",
-    "independentConfirmation": false
+    "independentConfirmation": false,
+    "previousRemovalReason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "selectionDecision": {
+      "remove": false,
+      "source": "User instruction in conversation",
+      "requestedLabel": "Tesla Dramatically Expands Supercharger Network, Delivering Convenient, Free long Distance Driving Throughout U.S. and Canada"
+    }
   },
   "2013-06-03|Tesla Motors Announces 2013 Annual Shareholder Meeting Webcast": {
     "category": "excluded_archive",
@@ -15064,7 +15088,7 @@
   },
   "2023-11-28|Tesla Announces Details for Cybertruck Delivery Event": {
     "category": "excluded_archive",
-    "reason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "reason": "Explicit user selection: restore this event to the video (remove=false); preserve original date, label and level 0.",
     "sources": [
       {
         "source": "Tesla IR archive",
@@ -15085,7 +15109,13 @@
     ],
     "marketTiming": "unknown",
     "sourceTitle": "Tesla Announces Details for Cybertruck Delivery Event",
-    "independentConfirmation": false
+    "independentConfirmation": false,
+    "previousRemovalReason": "Routine local rollout, award, promotion, personnel or other low-materiality notice; excluded from the material Tesla film.",
+    "selectionDecision": {
+      "remove": false,
+      "source": "User instruction in conversation",
+      "requestedLabel": "Tesla Announces Details for Cybertruck Delivery Event"
+    }
   },
   "2023-11-30|First Cybertruck deliveries": {
     "category": "milestone",

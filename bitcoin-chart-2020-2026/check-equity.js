@@ -14,7 +14,7 @@ for (const e of events) {
   const d = details[`${e.date}|${e.text}`]; assert.ok(d, 'Missing research detail: ' + e.text);
   assert.ok(d.sources.length >= 2, 'At least two documents per research row');
   const mapped = E.anchorEvent(e, d, sessions);
-  if (!e.remove) { assert.ok(mapped.anchorDate && sessions.has(mapped.anchorDate)); assert.ok(e.hit >= 1); }
+  if (!e.remove) { assert.ok(mapped.anchorDate && sessions.has(mapped.anchorDate)); assert.ok(e.hit >= (coin.minVisibleHit ?? 1)); }
   if (!e.remove) assert.ok(d.sources.filter((s) => s.checked === true).length >= 2, 'Two checked documents required: ' + e.text);
 }
 const expectedQuarters = [];

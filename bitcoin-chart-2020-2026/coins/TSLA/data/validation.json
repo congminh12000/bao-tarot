@@ -1,13 +1,14 @@
 {
-  "checkedAtUTC": "2026-10-29T09:05:41.180090+00:00",
+  "checkedAtUTC": "2026-10-29T09:31:56.898585+00:00",
   "scope": "Research and code/data validation only. No Tesla layout still or video rendered. No Tesla encoded-audio/visual QA claimed.",
   "priceSessions": 4109,
   "closedCalendarSlotsWithoutCandles": 1857,
   "estimatedOpenSessions": 0,
   "researchRows": 631,
-  "retained": 171,
-  "removed": 460,
+  "retained": 176,
+  "removed": 455,
   "retainedLevels": {
+    "0": 5,
     "1": 135,
     "2": 36
   },
@@ -19,7 +20,7 @@
   "earlyFinancialContextOnlyQuarters": 8,
   "verifiedSECReportingPeriods": 66,
   "generatedTurnLabels": 8,
-  "totalVisibleLabels": 179,
+  "totalVisibleLabels": 184,
   "phases": 9,
   "uniqueCues": 9,
   "fullScoreSeconds": 542.4644257581542,
@@ -32,7 +33,8 @@
     "DOGEFullGeneratedDataset": "Byte-identical to saved pre-task file and HEAD; restored after TSLA research",
     "pendingReviewBuildGate": "PASS: audit-asset rejects pending concrete-list approval",
     "syntax": "JS and Python changed entrypoints parsed",
-    "renderQA": "NOT RUN: awaiting concrete event-list approval"
+    "renderQA": "NOT RUN: awaiting concrete event-list approval",
+    "explicitRestore": "PASS: exactly five remove flags changed; dates, labels, levels and citations unchanged; all five present in generated score at level 0 without hit SFX"
   },
   "knownLimits": [
     "5 OHLC fields on 3 dates differ >0.5% across providers; TradingView retained, discrepancies unresolved",

@@ -48,7 +48,7 @@ test('TSLA full calendar preserves exactly 4109 source sessions and hides 1857 c
   const c=S.candleAt(i,S.DURATION);
   if(BTC.sessions[i]==='0')assert.equal(c,null);else assert.ok(c);
  }
- const selected = require('./event-csv').readEvents(path.join(__dirname,'coins/TSLA/data/events.csv')).filter(e=>!e.remove && e.hit>=1);
+ const selected = require('./event-csv').readEvents(path.join(__dirname,'coins/TSLA/data/events.csv')).filter(e=>!e.remove && e.hit>=(BTC.coin.minVisibleHit??1));
  assert.equal(S.EVENTS.filter(e=>e.turn===undefined).length,selected.length);
  for(const e of S.EVENTS){assert.equal(BTC.sessions[e.day],'1');if(e.anchorDate)assert.equal(S.dateOf(e.day).toISOString().slice(0,10),e.anchorDate);}
  for(const e of S.EVENTS.filter(e=>e.turn!==undefined&&e.kind==='down'))assert.ok(e.text.startsWith('CYCLE LOW:'));

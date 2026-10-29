@@ -78,7 +78,7 @@ cho cả preview và final, xác nhận file và gửi link; đây là cách gia
 ## Cổ phiếu (assetClass=equity)
 
 Dùng cùng cấu trúc `coins/<SYMBOL>/` cho tài sản ngoài crypto; bản đầu là [Tesla](TSLA/README.md), long candlestick.
-Thiết lập thêm `assetClass`, `exchange`, `timezone`, `currency`, `priceAdjustment: splits`, `minVisibleHit: 1`.
+Thiết lập thêm `assetClass`, `exchange`, `timezone`, `currency`, `priceAdjustment: splits`, `minVisibleHit` (mặc định 1; TSLA = 0 để hiện 5 mục mức 0 do người dùng bật lại).
 **PROJECT.md §18** thay các quy tắc chỉ dành cho crypto: không áp 99Bitcoins hoặc hiển thị mức 0 altcoin; nghiên cứu
 hai tài liệu đã kiểm tra cho mỗi mục giữ, đủ mọi quý earnings/deliveries, lịch giao dịch thực, không nến ngày đóng cửa,
 không ước tính phiên mở bị thiếu, chỉ ATL nếu thực sự thấp nhất lịch sử; còn lại đáy chu kỳ là CYCLE LOW.

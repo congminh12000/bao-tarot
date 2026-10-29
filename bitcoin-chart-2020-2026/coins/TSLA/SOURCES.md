@@ -20,7 +20,7 @@ Research cutoff: **2026-10-29 morning UTC**; prices through completed US session
 
 ## Selection and date review
 
-[All concrete retained/removed decisions](event-review.md) precede rendering. Level 1 = required quarterly updates or material operating milestone. Level 2 = major market/business/legal turning point. Level 0 archive research is excluded when routine, very small, duplicate, pre-IPO or not materially Tesla-specific; reasons remain stored.
+[All concrete retained/removed decisions](event-review.md) precede rendering. Level 1 = required quarterly updates or material operating milestone. Level 2 = major market/business/legal turning point. Level 0 archive research is excluded when routine, very small, duplicate, pre-IPO or not materially Tesla-specific; reasons remain stored. Five level-0 exceptions were explicitly restored by the user and display quietly without changing their levels; previous removal reasons remain in event-details.json.
 
 Quarterly results and delivery reports are the explicit exception to excluding repetitive news: keep every one. Coverage: 66 earnings quarters, 47 separate delivery releases, 11 embedded delivery discussions; eight early Roadster-era quarters lack a verified, comparable standalone quarterly global delivery release. Do not infer quarterly deliveries by subtracting cumulative Roadster totals. See [quarter coverage](quarter-coverage.md).
 

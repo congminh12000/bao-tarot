@@ -73,7 +73,7 @@ In short:
   after-close/closed-date announcements map forward, unknown timing remains unknown. Two checked documents per retained
   event, primary first; two Tesla/SEC documents are not independent newsrooms. Keep EVERY quarterly earnings and
   delivery report (exception to repetitive-news removal); early incomparable/missing delivery series need honest limits.
-  Retain removed small/routine research with reasons. Equity shows material levels 1/2, skips 99Bitcoins; crypto rules
+  Retain removed small/routine research with reasons. Equity shows material levels 1/2 plus explicitly user-kept level-0 exceptions (TSLA minVisibleHit=0), skips 99Bitcoins; crypto rules
   remain intact. CYCLE LOW is not ATL; only genuine historical minima get ATL. Same long phase/cue logic, no equity
   full-mix pre-hit gates. Official logo/brand palette await preview approval. Send concrete retained/removed review
   before ANY still/video; record exact events/citations/details hash only after approval, and invalidate on edits.

@@ -70,7 +70,7 @@
 2010-07-01,info,0,,Tesla Unveils Roadster 2.5 at Newest Stores in Europe and North America,true
 2010-07-02,info,0,,Tesla Premiers Roadster 2.5 at Goodwood Festival of Speed,true
 2010-07-08,info,0,,"Tesla Hires Apple, Gap Veteran to Revolutionize Car Buying Experience",true
-2010-07-13,info,0,,Tesla Launches New Website,true
+2010-07-13,info,0,,Tesla Launches New Website,false
 2010-07-14,info,0,,Tesla Roadster Goes the Distance at European Road Rallies,true
 2010-07-16,up,1,,Toyota RAV4 EV agreement,false
 2010-07-18,info,0,,Tesla Roadsters Reach Five New Countries on Three Continents,true
@@ -136,7 +136,7 @@
 2012-07-25,info,1,,Q2 2012 results + deliveries,false
 2012-08-15,info,0,,Tesla Motors Announces Canadian Pricing for Model S,true
 2012-09-21,info,0,,Tesla Motors Accelerates Into Fall With Retail Expansion,true
-2012-09-24,info,0,,Tesla Motors Launches Revolutionary Supercharger Enabling Convenient Long Distance Driving,true
+2012-09-24,info,0,,Tesla Motors Launches Revolutionary Supercharger Enabling Convenient Long Distance Driving,false
 2012-09-25,info,0,,Tesla Motors Announces Follow-on Offering,true
 2012-09-28,info,0,,Tesla Motors Announces Pricing of Its Follow-On Offering,true
 2012-10-04,info,0,,SOLARCITY Files Registration Statement for Proposed Initial Public Offering,true
@@ -145,7 +145,7 @@
 2012-11-01,info,0,,"Tesla Model S Blows Away the Competition and Wins AUTOMOBILE Magazine's ""Automobile of the Year""",true
 2012-11-01,info,0,,Tesla Motors Brings Model S to the Autobahn for the First Time,true
 2012-11-05,info,1,,Q3 2012 results + deliveries,false
-2012-11-12,info,0,,Tesla Model S Wins One of Automotive Industry's Highest Honors: Motor Trend 2013 Car of the Year,true
+2012-11-12,info,0,,Tesla Model S Wins One of Automotive Industry's Highest Honors: Motor Trend 2013 Car of the Year,false
 2012-11-16,info,0,,Tesla Motors Opens First Canadian Store,true
 2012-11-29,info,0,,Tesla Motors Sets New Pricing for Award-Winning Model S,true
 2012-12-11,info,0,,SolarCity Announces Pricing of its Initial Public Offering,true
@@ -191,7 +191,7 @@
 2013-05-16,info,0,,SolarCity and Goldman Sachs Create Largest U.S. Rooftop Solar Lease Financing Platform,true
 2013-05-22,up,1,,DOE loan repaid early,false
 2013-05-28,info,0,,Media Advisory | Tesla Motors Supercharger Announcement,true
-2013-05-30,info,0,,"Tesla Dramatically Expands Supercharger Network, Delivering Convenient, Free long Distance Driving Throughout U.S. and Canada",true
+2013-05-30,info,0,,"Tesla Dramatically Expands Supercharger Network, Delivering Convenient, Free long Distance Driving Throughout U.S. and Canada",false
 2013-06-03,info,0,,Tesla Motors Announces 2013 Annual Shareholder Meeting Webcast,true
 2013-06-05,info,0,,SolarCity Launches Zero-Down Solar Financing for Home Builders,true
 2013-06-18,info,0,,SolarCity Announces Proposed Convertible Senior Notes Offering and Related Share Lending Agreement,true
@@ -583,7 +583,7 @@
 2023-07-19,info,1,,Q2 2023 earnings,false
 2023-10-02,info,1,,Q3 2023 deliveries,false
 2023-10-18,info,1,,Q3 2023 earnings,false
-2023-11-28,info,0,,Tesla Announces Details for Cybertruck Delivery Event,true
+2023-11-28,info,0,,Tesla Announces Details for Cybertruck Delivery Event,false
 2023-11-30,up,2,,First Cybertruck deliveries,false
 2023-12-13,down,2,,Autopilot recall: 2M+ cars,false
 2024-01-02,info,1,,Q4 2023 deliveries,false

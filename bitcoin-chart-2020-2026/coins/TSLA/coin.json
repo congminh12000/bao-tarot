@@ -7,13 +7,20 @@
   "timezone": "America/New_York",
   "currency": "USD",
   "priceAdjustment": "splits",
-  "minVisibleHit": 1,
+  "minVisibleHit": 0,
   "tradingview": "NASDAQ:TSLA",
   "eventsSource": "Tesla Investor Relations; SEC EDGAR; relevant regulators/courts; independent major press. Quarterly reporting retained. Exact citations and coverage in data/.",
   "logo": "coins/TSLA/logo.png",
   "logoNegative": "coins/TSLA/logo-negative.png",
   "logoGlow": "#E82127",
-  "colors": { "accent": "#FF5360", "accent2": "#FFD9DC", "bg1": "#200B10", "bg0": "#070507", "grid": "rgba(255,83,96,0.09)", "gridMajor": "rgba(255,83,96,0.32)" },
+  "colors": {
+    "accent": "#FF5360",
+    "accent2": "#FFD9DC",
+    "bg1": "#200B10",
+    "bg0": "#070507",
+    "grid": "rgba(255,83,96,0.09)",
+    "gridMajor": "rgba(255,83,96,0.32)"
+  },
   "special": "#00E5FF",
   "musicShuffle": true
 }
