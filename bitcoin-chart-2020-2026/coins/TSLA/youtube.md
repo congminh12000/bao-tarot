@@ -1,16 +1,21 @@
 # Tesla YouTube draft
 
-## Suggested title
+## Title (chosen 2026-10-29, same pattern as the crypto films)
 
-Tesla Price History: Every All-Time High & Major Turning Point, Animated
+```text
+Tesla Stock Price History: Every All-Time High & Crash, Animated in 9 Minutes
+```
 
 ## Description
 
-Watch Tesla’s split-adjusted daily price history unfold through its IPO, vehicle launches, quarterly earnings and deliveries, factory expansion, and major corporate and regulatory events.
+```text
+Every all-time high. Every crash. The story of Tesla, told by its stock chart.
 
-Uptrends and downtrends each have their own original music. All-time highs and cycle lows mark the major turns in this animated candlestick chart. A cycle low is not an all-time low.
+This animated chart replays Tesla's history one trading day at a time, from its IPO to the latest close: the first Model S and Model X deliveries, the first profit, the SolarCity deal, the Model 3 ramp, the take-private tweet and the SEC settlement, the first Shanghai cars, S&P 500 inclusion, the Bitcoin buy, new factories in Berlin and Texas, price cuts, the Cybertruck, the Cybercab and the first robotaxi rides.
 
-Chapters:
+The stock moves in two kinds of phases: a bull run, from a cycle low to the next all-time high, and a downturn, from an all-time high to the next cycle low. Each phase has its own original score: heroic in the climbs, tense in the falls. A cycle low is not an all-time low.
+
+⏱ CHAPTERS
 0:00 The first trades · Tesla IPO
 0:35 First Model S deliveries
 0:51 First quarterly profit
@@ -36,13 +41,24 @@ Chapters:
 8:29 FSD probe upgrade reported
 8:45 Cybercab rides begin in Austin · NHTSA announces Cybercab probe
 
-Price data: TradingView NASDAQ:TSLA, regular-session OHLC adjusted for stock splits; independently compared with Yahoo Finance. Source prices are preserved, including documented cross-provider discrepancies. Dates without trading hold the last close without drawing a candle.
+📊 DATA
+Daily candles: TradingView, NASDAQ:TSLA, regular-session prices adjusted for stock splits, cross-checked with Yahoo Finance. All-time highs and cycle lows from the same data.
+Events: Tesla Investor Relations, SEC filings, public authorities and courts, and independent reporting. Per-event citations are recorded with the project data.
 
-Historical sources: Tesla Investor Relations, SEC EDGAR, relevant public authorities, and independent reporting. Exact event citations and research limits are recorded in the project’s Tesla source files. This is a curated history.
+🎵 Music and sound design: original, made for Data Lab Motion.
 
-Music and sound effects are synthesized for this film. No voice-over. For education and historical context; not financial advice.
+🔔 Subscribe for more animated price charts and Shorts.
 
-#Tesla #TSLA #StockMarket #PriceHistory #DataVisualization
+⚠️ For education and entertainment only. Not financial advice.
+
+#Tesla #TSLA #TeslaStock #StockMarket #PriceHistory #DataVisualization
+```
+
+## Tags
+
+```text
+Data Lab Motion, Tesla, TSLA, Tesla stock, Tesla stock price history, Tesla history, TSLA chart, Elon Musk, Model 3, Cybertruck, robotaxi, EV stocks, stock market, stock price history, price chart animation, animated chart, candlestick chart, all-time high, stock market crash, bull market, data visualization
+```
 
 ## Timing verification
 
