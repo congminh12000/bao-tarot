@@ -1,0 +1,85 @@
+{
+  "checkedOn": "2026-10-29",
+  "primary": "PYTH:HYPEUSD",
+  "priceType": "USD oracle feed on TradingView; not exchange spot trades",
+  "closedRange": [
+    "2024-12-04",
+    "2026-10-28"
+  ],
+  "count": 694,
+  "excludedIncompleteDates": [
+    "2026-10-29"
+  ],
+  "missingSinceGenesis": [
+    "2024-11-29",
+    "2024-11-30",
+    "2024-12-01",
+    "2024-12-02",
+    "2024-12-03"
+  ],
+  "comparisons": [
+    {
+      "symbol": "KUCOIN_HYPEUSDT",
+      "range": [
+        "2024-12-07",
+        "2026-10-29"
+      ],
+      "overlapClosedDays": 691,
+      "medianCloseDifferencePercent": 0.04109373004468342,
+      "maxCloseDifferencePercent": 0.6173044133721772,
+      "note": "USDT/USDC spot used only for comparison; not merged or assumed identical to USD oracle."
+    },
+    {
+      "symbol": "HYPERLIQUID_HYPEUSDC",
+      "range": [
+        "2025-03-22",
+        "2026-10-29"
+      ],
+      "overlapClosedDays": 586,
+      "medianCloseDifferencePercent": 0.017049418868286814,
+      "maxCloseDifferencePercent": 0.2412340630209231,
+      "note": "USDT/USDC spot used only for comparison; not merged or assumed identical to USD oracle."
+    }
+  ],
+  "sha256": "1544af400c7f47939a4b68e32d831e8f3c05d5a5b4d7d1375dbaef73f0009005",
+  "testedTradingViewSymbols": {
+    "PYTH:HYPEUSD": "2024-12-04..2026-10-29; oracle USD; selected and current candle excluded",
+    "KUCOIN:HYPEUSDT": "2024-12-07..2026-10-29; spot USDT comparison",
+    "HYPERLIQUID:HYPEUSDC": "2025-03-22..2026-10-29; spot USDC comparison",
+    "COINBASE:HYPEUSD": "2026-02-05..2026-10-29",
+    "GATEIO:HYPEUSDT": "2024-12-23..2026-10-29",
+    "BITGET:HYPEUSDT": "2024-12-18..2026-10-29",
+    "MEXC:HYPEUSDT": "2025-03-24..2026-10-29",
+    "BYBIT:HYPEUSDT": "2025-07-11..2026-10-29",
+    "OKX:HYPEUSDT": "2025-11-04..2026-10-29",
+    "COINEX:HYPEUSDT": "2024-12-30..2026-10-11",
+    "BINGX:HYPEUSDT": "2024-12-14..2026-10-29",
+    "HTX:HYPEUSDT": "2026-02-19..2026-10-28",
+    "KRAKEN:HYPEUSD": "2026-01-28..2026-10-29",
+    "CRYPTOCOM:HYPEUSD": "2026-06-29..2026-10-29",
+    "BITSTAMP:HYPEUSD": "2025-11-27..2026-10-29",
+    "BITFINEX:HYPEUSD": "2025-09-08..2026-10-29",
+    "BITGET:HYPEUSDT.P": "2024-12-19..2026-10-29; perpetual rejected for spot/oracle history",
+    "HYPERLIQUID:HYPEUSDC.P": "2025-03-22..2026-10-29; perpetual rejected",
+    "CRYPTO:HYPEUSD": "invalid symbol",
+    "INDEX:HYPEUSD": "invalid symbol",
+    "COINMARKETCAP:HYPEUSD": "invalid symbol",
+    "CRYPTO:HYPEUSDT": "invalid symbol",
+    "HYPERLIQUID:HYPEUSD": "invalid symbol",
+    "BITRUE:HYPEUSDT": "invalid symbol",
+    "LBANK:HYPEUSDT": "invalid symbol",
+    "BITMART:HYPEUSDT": "invalid symbol",
+    "POLONIEX:HYPEUSDT": "invalid symbol",
+    "COINW:HYPEUSDT": "invalid symbol"
+  },
+  "ohlcPositiveAndConsistent": true,
+  "datesUnique": true,
+  "gapsWithinSavedRange": 0,
+  "estimatedCandles": 0,
+  "limitations": [
+    "Five genesis dates missing on tested TradingView feeds; no synthetic or non-TradingView fill.",
+    "Primary is a USD oracle feed, not exchange transaction candles.",
+    "USD, USDT and USDC are distinct units; spot comparison feeds are not merged.",
+    "Closed UTC days only; October 29 candle stored separately as incomplete."
+  ]
+}

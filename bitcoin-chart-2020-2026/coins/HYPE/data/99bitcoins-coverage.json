@@ -1,0 +1,1416 @@
+{
+  "coin": "HYPE",
+  "checkedOn": "2026-10-29",
+  "snapshot": "data/source-audits/99bitcoins/snapshot.json",
+  "sourceCount": 234,
+  "processed": 234,
+  "unreviewed": 0,
+  "sourceTableCompleteness": "ID dispositions against saved snapshot only; not exhaustive HYPE history or live certification.",
+  "separateCoinTimeline": "No separate HYPE events timeline located in search; Bitcoin historical URL returned HTTP 403. HYPE-specific records use official and cross-checked sources.",
+  "entries": [
+    {
+      "sourceId": 1,
+      "sourceDate": "2009-01-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 2,
+      "sourceDate": "2009-10-05",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 3,
+      "sourceDate": "2009-10-12",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 4,
+      "sourceDate": "2010-05-22",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 5,
+      "sourceDate": "2010-07-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 6,
+      "sourceDate": "2010-07-18",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 7,
+      "sourceDate": "2010-08-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 8,
+      "sourceDate": "2010-12-10",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 9,
+      "sourceDate": "2011-02-09",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 10,
+      "sourceDate": "2011-03-27",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 11,
+      "sourceDate": "2011-06-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 12,
+      "sourceDate": "2011-06-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 13,
+      "sourceDate": "2011-12-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 14,
+      "sourceDate": "2012-02-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 15,
+      "sourceDate": "2012-03-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 16,
+      "sourceDate": "2012-08-17",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 17,
+      "sourceDate": "2012-11-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 18,
+      "sourceDate": "2012-11-28",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 19,
+      "sourceDate": "2013-03-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 20,
+      "sourceDate": "2013-03-25",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 21,
+      "sourceDate": "2013-04-10",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 22,
+      "sourceDate": "2013-05-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 23,
+      "sourceDate": "2013-08-30",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 24,
+      "sourceDate": "2013-10-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 25,
+      "sourceDate": "2013-11-18",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 26,
+      "sourceDate": "2013-11-20",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 27,
+      "sourceDate": "2013-11-29",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 28,
+      "sourceDate": "2013-12-05",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 29,
+      "sourceDate": "2014-02-07",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 30,
+      "sourceDate": "2014-02-24",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 31,
+      "sourceDate": "2014-03-06",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 32,
+      "sourceDate": "2014-03-26",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 33,
+      "sourceDate": "2014-04-10",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 34,
+      "sourceDate": "2014-06-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 35,
+      "sourceDate": "2014-06-27",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 36,
+      "sourceDate": "2014-07-17",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 37,
+      "sourceDate": "2014-07-18",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 38,
+      "sourceDate": "2014-09-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 39,
+      "sourceDate": "2014-10-06",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 40,
+      "sourceDate": "2014-12-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 41,
+      "sourceDate": "2014-12-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 42,
+      "sourceDate": "2015-01-04",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 43,
+      "sourceDate": "2015-01-26",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 44,
+      "sourceDate": "2015-05-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 45,
+      "sourceDate": "2015-06-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 46,
+      "sourceDate": "2015-07-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 47,
+      "sourceDate": "2015-08-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 48,
+      "sourceDate": "2015-08-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 49,
+      "sourceDate": "2015-09-18",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 50,
+      "sourceDate": "2015-10-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 51,
+      "sourceDate": "2015-10-22",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 52,
+      "sourceDate": "2015-10-31",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 53,
+      "sourceDate": "2015-11-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 54,
+      "sourceDate": "2015-12-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 55,
+      "sourceDate": "2016-01-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 56,
+      "sourceDate": "2016-02-21",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 57,
+      "sourceDate": "2016-04-04",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 58,
+      "sourceDate": "2016-04-27",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 59,
+      "sourceDate": "2016-05-02",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 60,
+      "sourceDate": "2016-07-09",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 61,
+      "sourceDate": "2016-08-02",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 62,
+      "sourceDate": "2016-11-09",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 63,
+      "sourceDate": "2017-01-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 64,
+      "sourceDate": "2017-03-10",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 65,
+      "sourceDate": "2017-03-28",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 66,
+      "sourceDate": "2017-04-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 67,
+      "sourceDate": "2017-08-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 68,
+      "sourceDate": "2017-09-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 69,
+      "sourceDate": "2017-09-12",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 70,
+      "sourceDate": "2017-09-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 71,
+      "sourceDate": "2017-10-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 72,
+      "sourceDate": "2017-10-25",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 73,
+      "sourceDate": "2017-10-31",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 74,
+      "sourceDate": "2017-11-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 75,
+      "sourceDate": "2017-11-28",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 76,
+      "sourceDate": "2017-12-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 77,
+      "sourceDate": "2017-12-18",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 78,
+      "sourceDate": "2017-12-28",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 79,
+      "sourceDate": "2018-01-02",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 80,
+      "sourceDate": "2018-01-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 81,
+      "sourceDate": "2018-01-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 82,
+      "sourceDate": "2018-01-26",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 83,
+      "sourceDate": "2018-01-30",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 84,
+      "sourceDate": "2018-03-07",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 85,
+      "sourceDate": "2018-03-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 86,
+      "sourceDate": "2018-03-26",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 87,
+      "sourceDate": "2018-04-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 88,
+      "sourceDate": "2018-05-02",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 89,
+      "sourceDate": "2018-05-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 90,
+      "sourceDate": "2018-05-24",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 91,
+      "sourceDate": "2018-06-10",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 92,
+      "sourceDate": "2018-06-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 93,
+      "sourceDate": "2018-06-20",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 94,
+      "sourceDate": "2018-06-26",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 95,
+      "sourceDate": "2018-07-16",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 96,
+      "sourceDate": "2018-07-26",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 97,
+      "sourceDate": "2018-08-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 98,
+      "sourceDate": "2018-08-07",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 99,
+      "sourceDate": "2018-09-05",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 100,
+      "sourceDate": "2018-09-18",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 101,
+      "sourceDate": "2018-10-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 102,
+      "sourceDate": "2018-10-31",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 103,
+      "sourceDate": "2018-11-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 104,
+      "sourceDate": "2018-12-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 105,
+      "sourceDate": "2018-12-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 106,
+      "sourceDate": "2018-12-29",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 107,
+      "sourceDate": "2018-12-31",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 108,
+      "sourceDate": "2019-01-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 109,
+      "sourceDate": "2019-01-10",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 110,
+      "sourceDate": "2019-01-18",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 111,
+      "sourceDate": "2019-01-23",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 112,
+      "sourceDate": "2019-01-31",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 113,
+      "sourceDate": "2019-02-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 114,
+      "sourceDate": "2019-03-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 115,
+      "sourceDate": "2019-03-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 116,
+      "sourceDate": "2019-03-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 117,
+      "sourceDate": "2019-03-22",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 118,
+      "sourceDate": "2019-03-29",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 119,
+      "sourceDate": "2019-04-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 120,
+      "sourceDate": "2019-04-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 121,
+      "sourceDate": "2019-04-26",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 122,
+      "sourceDate": "2019-05-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 123,
+      "sourceDate": "2019-05-21",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 124,
+      "sourceDate": "2019-05-30",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 125,
+      "sourceDate": "2019-06-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 126,
+      "sourceDate": "2019-06-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 127,
+      "sourceDate": "2019-06-18",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 128,
+      "sourceDate": "2019-07-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 129,
+      "sourceDate": "2019-08-07",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 130,
+      "sourceDate": "2019-08-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 131,
+      "sourceDate": "2019-08-28",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 132,
+      "sourceDate": "2019-09-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 133,
+      "sourceDate": "2019-09-22",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 134,
+      "sourceDate": "2019-10-09",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 135,
+      "sourceDate": "2019-10-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 136,
+      "sourceDate": "2019-10-28",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 137,
+      "sourceDate": "2019-10-29",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 138,
+      "sourceDate": "2019-11-04",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 139,
+      "sourceDate": "2019-11-09",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 140,
+      "sourceDate": "2019-12-10",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 141,
+      "sourceDate": "2019-12-23",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 142,
+      "sourceDate": "2020-01-06",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 143,
+      "sourceDate": "2020-01-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 144,
+      "sourceDate": "2020-01-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 145,
+      "sourceDate": "2020-01-29",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 146,
+      "sourceDate": "2020-02-02",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 147,
+      "sourceDate": "2020-02-05",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 148,
+      "sourceDate": "2020-02-17",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 149,
+      "sourceDate": "2020-03-04",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 150,
+      "sourceDate": "2020-03-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 151,
+      "sourceDate": "2020-03-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 152,
+      "sourceDate": "2020-03-23",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 153,
+      "sourceDate": "2020-03-26",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 154,
+      "sourceDate": "2020-04-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 155,
+      "sourceDate": "2020-04-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 156,
+      "sourceDate": "2020-04-09",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 157,
+      "sourceDate": "2020-05-07",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 158,
+      "sourceDate": "2020-05-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 159,
+      "sourceDate": "2020-05-25",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 160,
+      "sourceDate": "2020-06-22",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 161,
+      "sourceDate": "2020-07-02",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 162,
+      "sourceDate": "2020-07-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 163,
+      "sourceDate": "2020-07-22",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 164,
+      "sourceDate": "2020-08-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 165,
+      "sourceDate": "2020-08-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 166,
+      "sourceDate": "2020-08-31",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 167,
+      "sourceDate": "2020-09-25",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 168,
+      "sourceDate": "2020-10-01",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 169,
+      "sourceDate": "2020-10-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 170,
+      "sourceDate": "2020-10-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 171,
+      "sourceDate": "2020-10-16",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 172,
+      "sourceDate": "2020-10-21",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 173,
+      "sourceDate": "2020-11-05",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 174,
+      "sourceDate": "2020-11-16",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 175,
+      "sourceDate": "2020-12-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 176,
+      "sourceDate": "2020-12-10",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 177,
+      "sourceDate": "2020-12-16",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 178,
+      "sourceDate": "2020-12-18",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 179,
+      "sourceDate": "2020-12-23",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 180,
+      "sourceDate": "2021-01-29",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 181,
+      "sourceDate": "2021-02-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 182,
+      "sourceDate": "2021-02-12",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 183,
+      "sourceDate": "2021-02-23",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 184,
+      "sourceDate": "2021-03-17",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 185,
+      "sourceDate": "2021-03-24",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 186,
+      "sourceDate": "2021-04-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 187,
+      "sourceDate": "2021-05-12",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 188,
+      "sourceDate": "2021-05-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 189,
+      "sourceDate": "2021-06-04",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 190,
+      "sourceDate": "2021-06-06",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 191,
+      "sourceDate": "2021-06-07",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 192,
+      "sourceDate": "2021-06-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 193,
+      "sourceDate": "2021-07-09",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 194,
+      "sourceDate": "2021-07-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 195,
+      "sourceDate": "2021-07-26",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 196,
+      "sourceDate": "2021-08-09",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 197,
+      "sourceDate": "2021-09-07",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 198,
+      "sourceDate": "2021-09-17",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 199,
+      "sourceDate": "2021-09-23",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 200,
+      "sourceDate": "2021-09-24",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 201,
+      "sourceDate": "2021-10-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 202,
+      "sourceDate": "2021-11-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 203,
+      "sourceDate": "2021-11-21",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 204,
+      "sourceDate": "2022-02-08",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 205,
+      "sourceDate": "2022-02-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 206,
+      "sourceDate": "2022-02-28",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 207,
+      "sourceDate": "2022-03-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 208,
+      "sourceDate": "2022-04-27",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 209,
+      "sourceDate": "2022-05-07",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 210,
+      "sourceDate": "2022-06-13",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 211,
+      "sourceDate": "2022-06-29",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 212,
+      "sourceDate": "2022-07-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 213,
+      "sourceDate": "2022-07-20",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 214,
+      "sourceDate": "2022-08-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 215,
+      "sourceDate": "2022-11-11",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 216,
+      "sourceDate": "2022-11-30",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 217,
+      "sourceDate": "2022-12-20",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 218,
+      "sourceDate": "2022-12-29",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 219,
+      "sourceDate": "2023-01-21",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 220,
+      "sourceDate": "2023-03-03",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 221,
+      "sourceDate": "2023-03-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 222,
+      "sourceDate": "2023-03-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 223,
+      "sourceDate": "2023-06-15",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 224,
+      "sourceDate": "2023-06-21",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 225,
+      "sourceDate": "2024-01-10",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 226,
+      "sourceDate": "2024-03-14",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 227,
+      "sourceDate": "2024-04-19",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 228,
+      "sourceDate": "2024-05-05",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 229,
+      "sourceDate": "2024-11-06",
+      "status": "outside_coin_history",
+      "reason": "Before HYPE token genesis; source retained in shared Bitcoin snapshot."
+    },
+    {
+      "sourceId": 230,
+      "sourceDate": "2024-12-05",
+      "status": "not_applicable",
+      "reason": "Shared Bitcoin timeline item: Bitcoin Crosses 100k for the first time to reach a new ATH. No HYPE-specific fact or demonstrated HYPE linkage established from this item; not relabelled as a HYPE event."
+    },
+    {
+      "sourceId": 231,
+      "sourceDate": "2025-01-20",
+      "status": "not_applicable",
+      "reason": "Shared Bitcoin timeline item: Bitcoin hits a new ATH over $109k on Trump inauguration day. No HYPE-specific fact or demonstrated HYPE linkage established from this item; not relabelled as a HYPE event."
+    },
+    {
+      "sourceId": 232,
+      "sourceDate": "2025-03-06",
+      "status": "not_applicable",
+      "reason": "Shared Bitcoin timeline item: U.S Establishes a Strategic Bitcoin Reserve. No HYPE-specific fact or demonstrated HYPE linkage established from this item; not relabelled as a HYPE event."
+    },
+    {
+      "sourceId": 233,
+      "sourceDate": "2025-05-22",
+      "status": "not_applicable",
+      "reason": "Shared Bitcoin timeline item: Bitcoin crosses $110k level for the first time. No HYPE-specific fact or demonstrated HYPE linkage established from this item; not relabelled as a HYPE event."
+    },
+    {
+      "sourceId": 234,
+      "sourceDate": "2025-07-15",
+      "status": "not_applicable",
+      "reason": "Shared Bitcoin timeline item: Bitcoin Breaks $120k- July 14th, 2025. No HYPE-specific fact or demonstrated HYPE linkage established from this item; not relabelled as a HYPE event."
+    }
+  ]
+}

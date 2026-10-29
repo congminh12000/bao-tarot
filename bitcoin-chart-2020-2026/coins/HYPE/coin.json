@@ -1,0 +1,8 @@
+{
+  "symbol": "HYPE",
+  "name": "Hyperliquid",
+  "pair": "HYPE / USD",
+  "tradingview": "PYTH:HYPEUSD",
+  "eventsSource": "Hyperliquid official announcements cross-checked against protocol documentation, issuer/counterparty announcements and established reporting. See data/SOURCES.md and review-20261029.json. Research selection pending approval; no render authorized.",
+  "musicShuffle": true
+}

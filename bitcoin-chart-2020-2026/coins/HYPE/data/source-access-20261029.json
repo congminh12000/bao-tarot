@@ -1,0 +1,867 @@
+{
+  "checkedOn": "2026-10-29",
+  "checks": [
+    {
+      "url": "https://bitwiseinvestments.com/newsroom/bitwise-launches-spot-hyperliquid-etf-bhyp",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://bitwiseinvestments.com/newsroom/bitwise-launches-spot-hyperliquid-etf-bhyp",
+      "bytes": 198281,
+      "sha256": "d591ce8c0a44029a53606204b1e90143f61116f2eb08c8d6c03f04da508fc538",
+      "title": "Bitwise Launches Spot Hyperliquid ETF (BHYP)"
+    },
+    {
+      "url": "https://bitwiseinvestments.eu/products/bitwise-hyperliquid-staking-etp/",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://bitwiseinvestments.eu/products/bitwise-hyperliquid-staking-etp/",
+      "bytes": 543072,
+      "sha256": "95bc0ebd3837822a9acf46f56c9cac8a89a15e70d10bcf8a79ced0f5d0abb59a",
+      "title": "BHYP | Bitwise Hyperliquid Staking ETP | DE000A4ARTJ5 | Bitwise"
+    },
+    {
+      "url": "https://blockworks.com/news/hyperliquid-security-fuels-decentralization-concerns",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://blockworks.com/news/hyperliquid-security-fuels-decentralization-concerns",
+      "bytes": 5586,
+      "sha256": "76db31050c69a590de9d34ba34622d4510c7d4ed7f6ce2f2cbe407f6200fd07e",
+      "title": "Just a moment..."
+    },
+    {
+      "url": "https://blog.kraken.com/product/asset-listings/hype-is-available-for-trading",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://blog.kraken.com/product/asset-listings/hype-is-available-for-trading",
+      "bytes": 89216,
+      "sha256": "8a771b59eb2c020054ef6e1a386cfd8b4d0dfcb5416e3a531a1cfb26fb2beae7",
+      "title": "HYPE is available for trading! - Kraken Blog Kraken Blog"
+    },
+    {
+      "url": "https://blog.usdt0.to/usdt0-is-live-on-hyperliquid",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://blog.usdt0.to/usdt0-is-live-on-hyperliquid",
+      "bytes": 151858,
+      "sha256": "a58e8dbda0019e7b0de3aa369cf9d06565963852d02b6f7347d5ee3abe92ca23",
+      "title": "USDT0 is Live on Hyperliquid \u2014 USDT0 Blog"
+    },
+    {
+      "url": "https://blog.valr.com/blog/valr-launches-200-hyperliquid-perps-markets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://blog.valr.com/blog/valr-launches-200-hyperliquid-perps-markets",
+      "bytes": 250751,
+      "sha256": "d07099664af2c3391c359150ceb6189409f510bdd6d08e901463f21a4aac5f5c",
+      "title": "VALR Launches 200+ Hyperliquid Perps Markets &mdash; VALR"
+    },
+    {
+      "url": "https://cdn.21shares.com/uploads/product_documents/Factsheets/Factsheet_THYP.pdf",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://cdn.21shares.com/uploads/product_documents/Factsheets/Factsheet_THYP.pdf",
+      "bytes": 318590,
+      "sha256": "7f39e80d48bde7445b5cf1c53cb18d5e07abd09df2bbdae1fd3c6c339535510e",
+      "title": ""
+    },
+    {
+      "url": "https://etp.coinshares.com/corp/news/coinshares-launches-hyperliquid-staking-etp-with-0-management-fee-and-0-5-yield/",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://etp.coinshares.com/corp/news/coinshares-launches-hyperliquid-staking-etp-with-0-management-fee-and-0-5-yield/",
+      "bytes": 1045212,
+      "sha256": "4ec29a8bb5a435803e8e3cc3c186ce900410ea625d91c2507e0feb7355c9c0b3",
+      "title": "CoinShares launches Hyperliquid Staking ETP"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/hyperliquid-releases-native-staking-hype-103621422.html",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "429 https://finance.yahoo.com/news/hyperliquid-releases-native-staking-hype-103621422.html",
+      "bytes": 23,
+      "sha256": "0d24c98db98d3b4a87b9626a026e7d72c99754ab6bd88211a17bc372350b7d89",
+      "title": ""
+    },
+    {
+      "url": "https://github.com/hyperliquid-dex/node",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://github.com/hyperliquid-dex/node",
+      "bytes": 376909,
+      "sha256": "332481c5b0d6ed0fc3bad969f8497b411b56236ad4799e680aa67188bce35d55",
+      "title": "GitHub - hyperliquid-dex/node \u00b7 GitHub"
+    },
+    {
+      "url": "https://hyperfnd.medium.com/hype-genesis-1830a4dc2e3f",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://hyperfnd.medium.com/hype-genesis-1830a4dc2e3f",
+      "bytes": 5017,
+      "sha256": "cb14692618d7663b2fb4d9339aa6b488f4787d1fa6361573e9e851c164b3c50a",
+      "title": "Attention Required! | Cloudflare"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions",
+      "bytes": 749623,
+      "sha256": "6ffc9bcddea48121966d42791f9d3b07ad82f48cc68a31a7d9cfb375ff67252b",
+      "title": "HIP-4 deployer actions | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees",
+      "bytes": 461173,
+      "sha256": "34ec1be82e13cab0fae3268908be0c06285f2434902b02e12cd7a3d6d40965d5",
+      "title": "Priority fees | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore",
+      "bytes": 595635,
+      "sha256": "6bcf8f1048a575839b48a8c19fed50d1dc3b7861a253d60912f895cc60a64551",
+      "title": "Interacting with HyperCore | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets",
+      "bytes": 429314,
+      "sha256": "a4e023e941c7f8bc636324cbd52361ce8d21e97171f2c81f2d42be03793fbbd8",
+      "title": "Aligned quote assets | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig",
+      "bytes": 401270,
+      "sha256": "5299e44087a074f2e3466518f0b1a26add579c78ea6548fbae8ea712ea70cc2d",
+      "title": "Multi-sig | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets",
+      "bytes": 392209,
+      "sha256": "cbc369b60c26c36dec0363fc044bf7c17cfde77f48ea9523a72a7e3b3eb9ab0a",
+      "title": "Permissionless spot quote assets | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking",
+      "bytes": 401691,
+      "sha256": "1c33cef039f2520f34b8a446bd45b01107c86bb7df661d04ed47f977e26e8241",
+      "title": "Staking | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc",
+      "bytes": 379821,
+      "sha256": "a0f70baa9fd44db3b7d6c0f82a7841cfc657ef56eb8a4e616e645d445c01ea99",
+      "title": "USDC | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults",
+      "bytes": 382005,
+      "sha256": "c1946d843cdfc094e18ddb642252017cd259d284370414abb7721b1a47999be6",
+      "title": "Protocol vaults | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm",
+      "bytes": 397411,
+      "sha256": "64ada85efae80a03410d8e6a06d0c9871a05c74ecbd9eb4e21455b71e43759d5",
+      "title": "HyperEVM | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard",
+      "bytes": 477913,
+      "sha256": "f373138308c907ee3943e5ee177a03745e61707383f282d5c03951565675b4a3",
+      "title": "HIP-1: Native token standard | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals",
+      "bytes": 451423,
+      "sha256": "14d20ecb6da2370e79bd99dfa74eef37d4cb1450b82c4f05feccae8446d505d9",
+      "title": "HIP-3: Builder-deployed perpetuals | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets",
+      "bytes": 403664,
+      "sha256": "64d120aaaae28be7c815554f6707cfa62ae007a1ef9e13b460c029bb37fe32ef",
+      "title": "HIP-4: Outcome markets | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/points",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/points",
+      "bytes": 358650,
+      "sha256": "206c11cb0b5d2b10dee91f2b4083fe311ebe8612225fe505da8613d1f292bda0",
+      "title": "Points | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/manual-borrows",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/manual-borrows",
+      "bytes": 493421,
+      "sha256": "3e8f5dca1af2f9769755de5de5a592d3e679ce35394af1ccd4a8207167c7d627",
+      "title": "Manual borrows | Support | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trailing-stops",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trailing-stops",
+      "bytes": 538375,
+      "sha256": "080b8501d94250c1f773df8f84e561b3f0ef7df74a4c7c25f90ef7dd61428ca9",
+      "title": "Trailing stops | Support | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes",
+      "bytes": 608268,
+      "sha256": "fc225addec13de6cbe8e144f70aed96061e497d7cb102e8698f59ef3d0588cc2",
+      "title": "Account abstraction modes | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes",
+      "bytes": 404058,
+      "sha256": "3fd1c629ed0a5008f9684b821fd69dd1d9397100d94e98f805fe9bbcf0a9cd9f",
+      "title": "Builder codes | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting",
+      "bytes": 382402,
+      "sha256": "d4f6bafaa3d8546a7786643a05118be64e16104a7dbf6a97cc71f37e53367918",
+      "title": "Delisting | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
+      "bytes": 932745,
+      "sha256": "f6240b97267ae2a5f3101d5f15461df559a3630b580786c8daaed75486f9202b",
+      "title": "Fees | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers",
+      "bytes": 555963,
+      "sha256": "c0cf42338eda9745c7815d9b2d12eab630169e0eb6387a013e9eb57fe9e6a3b1",
+      "title": "Margin tiers | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types",
+      "bytes": 444411,
+      "sha256": "8fe2ea25d2d173196135c22abb0d9fcdc64d7db94f52fbe0c1f01b6705db8b8c",
+      "title": "Order types | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin",
+      "bytes": 443442,
+      "sha256": "13193a90ab49cfb968141ca43469560f224effdd8206400b918dd4d1e98617cf",
+      "title": "Portfolio margin | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/validators",
+      "bytes": 358450,
+      "sha256": "81386b69662bbc215e8bfcdce66378337d8c8d025c1216bfb5256a8d1c527cdc",
+      "title": "Validators | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator",
+      "bytes": 366005,
+      "sha256": "ae701428845daab528722bf2b7c8f59b5040efb9906dd523d81aa8dc387ba63f",
+      "title": "Running a validator | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/launch-press-release",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/launch-press-release",
+      "bytes": 329266,
+      "sha256": "ce485f249a6f352e07477f1c11b768cf1008eb70dacbd7b35b77ee9cfa2493a4",
+      "title": "Hyperliquid Policy Center Launches in the United States"
+    },
+    {
+      "url": "https://info.arkm.com/research/hyperliquid-whale-passes-4m-loss-to-hlp-vault",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://info.arkm.com/research/hyperliquid-whale-passes-4m-loss-to-hlp-vault",
+      "bytes": 400656,
+      "sha256": "4f735c7800e690da74769532244264334dba7466e0355bf18d2e48dfbf5abb67",
+      "title": "Hyperliquid Whale Passes $4M Loss to HLP Vault"
+    },
+    {
+      "url": "https://info.arkm.com/research/jellyjelly-exploit-on-hyperliquid",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://info.arkm.com/research/jellyjelly-exploit-on-hyperliquid",
+      "bytes": 400816,
+      "sha256": "fab17ce7d54b85faf7a166fa4807fae489a4b2efd42633cff3a15793b800889b",
+      "title": "JELLYJELLY Exploit on Hyperliquid"
+    },
+    {
+      "url": "https://ir.hyperiondefi.com/sec-filings/all-sec-filings/content/0001104659-26-036286/hypd-20251231x10k.htm",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://ir.hyperiondefi.com/sec-filings/all-sec-filings/content/0001104659-26-036286/hypd-20251231x10k.htm",
+      "bytes": 3745909,
+      "sha256": "ae6fd5e59cfd243081ee2e9bd7a756a68733c1cc623d139ffdbe5ba98234a81e",
+      "title": "March 30, 2026 - 10-K: Annual report [Section 13 and 15(d), not S-K Item 405] | Hyperion DeFi, Inc. (HYPD)"
+    },
+    {
+      "url": "https://metamask.io/en-GB/news/metamask-expands-trading-with-perpetual-futures-and-rewards-confirms-token",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://metamask.com/en-GB/news/metamask-expands-trading-with-perpetual-futures-and-rewards-confirms-token",
+      "bytes": 399399,
+      "sha256": "e71026d15822f76d8f336227cd0c5f39ec75a3b3b3921d89ec5d7ebbd6b44585",
+      "title": "MetaMask expands into trading with perpetual futures and rewards, confirms token plans"
+    },
+    {
+      "url": "https://news.bloomberglaw.com/crypto/crypto-exchanges-outflows-swell-on-north-korean-trader-concern",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://news.bloomberglaw.com/crypto/crypto-exchanges-outflows-swell-on-north-korean-trader-concern",
+      "bytes": 116068,
+      "sha256": "c1ac89e1fe7e1e8a6bab1558d24a68f7c97951a1b9e4d3d5f3da264e6707a773",
+      "title": "Crypto Exchange\u2019s Outflows Swell on North Korean Trader Concern"
+    },
+    {
+      "url": "https://phantom.com/learn/blog/phantom-perps",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://phantom.com/learn/blog/phantom-perps",
+      "bytes": 120775,
+      "sha256": "c2aacee2d14388f554a5fb9dae6a3cf37bf6008d0d23acc51614e3bf3306633f",
+      "title": "Introducing Phantom Perps"
+    },
+    {
+      "url": "https://press.spglobal.com/2026-03-18-S-P-Dow-Jones-Indices-Licenses-S-P-500-R-to-Trade-XYZ-for-Perpetual-Contracts-on-Hyperliquid",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://press.spglobal.com/2026-03-18-S-P-Dow-Jones-Indices-Licenses-S-P-500-R-to-Trade-XYZ-for-Perpetual-Contracts-on-Hyperliquid",
+      "bytes": 56122,
+      "sha256": "976ad952d764f157bae0b4dd2856767ade1a04de8c9421ad341a09d30cf21494",
+      "title": "S&P Dow Jones Indices Licenses S&P 500\u00ae to Trade[XYZ] for Perpetual Contracts on Hyperliquid - Mar 18, 2026"
+    },
+    {
+      "url": "https://ripple.com/ripple-press/ripple-announces-support-for-hyperliquid-expanding-institutional-access-to-onchain-liquidity/",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://ripple.com/ripple-press/ripple-announces-support-for-hyperliquid-expanding-institutional-access-to-onchain-liquidity/",
+      "bytes": 124215,
+      "sha256": "ca1c995030e6af93e8779813250aa7d57d6fc97068fe688c814561ec13b5f76a",
+      "title": "Ripple Announces Support for Hyperliquid, Expanding Institutional Access to Onchain Liquidity | Ripple"
+    },
+    {
+      "url": "https://www.21shares.com/en-eu/product",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.21shares.com/en-eu/product",
+      "bytes": 1638972,
+      "sha256": "56e232b32360a86b8ac3790267f1e6c1c1718dcd708cb7e46389b5232f5f9afe",
+      "title": "Crypto ETPs &amp; basket indices | 21shares"
+    },
+    {
+      "url": "https://www.binance.com/en-IN/support/announcement/detail/9166fe6f7b8a4b438262df3a040b007b",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "202 https://www.binance.com/en-IN/support/announcement/detail/9166fe6f7b8a4b438262df3a040b007b",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title": ""
+    },
+    {
+      "url": "https://www.circle.com/blog/circle-and-usdc-expansion-with-hyperliquid",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.circle.com/blog/circle-and-usdc-expansion-with-hyperliquid",
+      "bytes": 226956,
+      "sha256": "e6ddcacb0a9c38e34537a23a6f38167af0c1c607d81f80f5abc4605aef9f506b",
+      "title": "Circle &amp; USDC Expand with Hyperliquid to Build USDC Utility | Circle"
+    },
+    {
+      "url": "https://www.circle.com/blog/circle-expands-support-for-usdc-on-hyperliquid",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.circle.com/blog/circle-expands-support-for-usdc-on-hyperliquid",
+      "bytes": 219530,
+      "sha256": "d976040593abb0070a1d207714df05eb214f484156197c6ed7fa7ab7415c58fa",
+      "title": "Circle Expands Support for USDC on Hyperliquid | Circle"
+    },
+    {
+      "url": "https://www.circle.com/blog/native-usdc-cctp-v2-are-coming-to-hyperliquid-what-you-need-to-know",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.circle.com/blog/native-usdc-cctp-v2-are-coming-to-hyperliquid-what-you-need-to-know",
+      "bytes": 220621,
+      "sha256": "ee8de70f4afa1100c9fed321eb41a21f19361a54f29d0cf885e05531f899724c",
+      "title": "Native USDC &amp; CCTP V2 are Coming to Hyperliquid | Circle"
+    },
+    {
+      "url": "https://www.circle.com/reports/internet-financial-system/capital-markets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.circle.com/reports/internet-financial-system/capital-markets",
+      "bytes": 152827,
+      "sha256": "bb10afccc5595e2ab9b9968375d03a1e99d652d913f5be6567a051dd781e4dc9",
+      "title": "Internet Financial System Report | Capital Markets"
+    },
+    {
+      "url": "https://www.coindesk.com/markets/2025/03/26/hyperliquid-delists-jellyjelly-after-vault-squeezed-in-usd13m-tussle",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "429 https://www.coindesk.com/markets/2025/03/26/hyperliquid-delists-jellyjelly-after-vault-squeezed-in-usd13m-tussle",
+      "bytes": 40674,
+      "sha256": "ef44944d9e7ea9e25259b9cb2ed8660816cb116444b9ec836dd56e7555cb2275",
+      "title": "Vercel Security Checkpoint"
+    },
+    {
+      "url": "https://www.mas.gov.sg/investor-alert-list?q=hyperliquid",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.mas.gov.sg/investor-alert-list?q=hyperliquid",
+      "bytes": 853328,
+      "sha256": "59065b71de56ff12c967ad5df29d1f86e64508be540519d8a4a1d75230ccff98",
+      "title": "Maintenance"
+    },
+    {
+      "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2025-647",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2025-647",
+      "bytes": 64280,
+      "sha256": "ab31017a8d7d9c09f54a6d66b8a536c1536fdbd3fc6163fd46c0508432091922",
+      "title": "Equity Corporate Actions Alert #2025 - 647 (UPDATED: Closing completed) Information Regarding the Business Combination of Sonnet BioTherapeutics Holdings, Inc (SONN) and Hyperliqui"
+    },
+    {
+      "url": "https://www.payward.com/press-release/cf-benchmarks-launches-cfb-oracle",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.payward.com/press-release/cf-benchmarks-launches-cfb-oracle",
+      "bytes": 264624,
+      "sha256": "4970af650c2971fdfcdfffdbfce324988d41e1a60bc31313b43db6e118cece32",
+      "title": "Press release | CF Benchmarks Launches CFB Oracle to Deliver Institutional Benchmarks to Onchain Markets"
+    },
+    {
+      "url": "https://www.payward.com/press-release/payward-hyperliquid-onchain-perpetual-futures",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.payward.com/press-release/payward-hyperliquid-onchain-perpetual-futures",
+      "bytes": 262975,
+      "sha256": "ae4b573f703ff19aab4fd7f95e1e792af22fe9e107694e50e3f006df4b4d40f6",
+      "title": "Press release | Payward Intends to Bring Onchain Perpetual Futures to US Clients, Starting on Hyperliquid"
+    },
+    {
+      "url": "https://www.payward.com/press-release/xstocks-on-hyperliquid",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.payward.com/press-release/xstocks-on-hyperliquid",
+      "bytes": 276721,
+      "sha256": "2eab430027896484438eb89cc01014300c1ceda64525a4f83e0a1ac22df2d385",
+      "title": "Press release | xStocks Goes Live on Hyperliquid"
+    },
+    {
+      "url": "https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001493152-25-025886/0001493152-25-025886.pdf",
+      "curlExit": 60,
+      "httpAndEffectiveUrl": "000 https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001493152-25-025886/0001493152-25-025886.pdf",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title": ""
+    },
+    {
+      "url": "https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001641172-25-018878/0001641172-25-018878.pdf",
+      "curlExit": 60,
+      "httpAndEffectiveUrl": "000 https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001641172-25-018878/0001641172-25-018878.pdf",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title": ""
+    },
+    {
+      "url": "https://www.theblock.co/news/ecosystems/2024-11-28-hyperliquid-plans-to-launch-hype-token-in-nov-29-genesis-event-328631",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://www.theblock.co/news/ecosystems/2024-11-28-hyperliquid-plans-to-launch-hype-token-in-nov-29-genesis-event-328631",
+      "bytes": 5768,
+      "sha256": "5e6d5bd44b72ac289e3decb4cef0f429e2a71e11b35acd43960bf4f73bf5b9e6",
+      "title": "Just a moment..."
+    },
+    {
+      "url": "https://www.theblock.co/news/ecosystems/2025-02-18-hyperliquid-launches-hyperevm-on-mainnet-to-bring-general-purpose-programmability-341424",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://www.theblock.co/news/ecosystems/2025-02-18-hyperliquid-launches-hyperevm-on-mainnet-to-bring-general-purpose-programmability-341424",
+      "bytes": 5847,
+      "sha256": "5d587d353683500eba22e6efdbf891a9b5c114894295df37ccdb55ae84a7f46b",
+      "title": "Just a moment..."
+    },
+    {
+      "url": "https://www.theblock.co/news/ecosystems/2025-07-30-hyperliquid-outage-api-traffic-spike-not-hack-vulnerability-exploit-364798",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://www.theblock.co/news/ecosystems/2025-07-30-hyperliquid-outage-api-traffic-spike-not-hack-vulnerability-exploit-364798",
+      "bytes": 5813,
+      "sha256": "e25fc14bdb201399b7ce4f709bc8460326932311efd02545f13b70626698e4e1",
+      "title": "Just a moment..."
+    },
+    {
+      "url": "https://www.theblock.co/news/ecosystems/2025-10-13-hyperliquid-activate-hip-3-upgrade-374306",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://www.theblock.co/news/ecosystems/2025-10-13-hyperliquid-activate-hip-3-upgrade-374306",
+      "bytes": 5642,
+      "sha256": "2968095828a0422acfd0826534429b727160292a47e7d5e97435aba269559d2f",
+      "title": "Just a moment..."
+    },
+    {
+      "url": "https://www.tradingview.com/blog/en/trade-xyz-and-hyperliquid-59210/",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.tradingview.com/blog/en/trade-xyz-and-hyperliquid-59210/",
+      "bytes": 100998,
+      "sha256": "42adc1cbeff6d154e50764d7651afa24d08d5c08aa933721f2d8ad318301caee",
+      "title": "Trade[XYZ] and Hyperliquid Data Now Live on TradingView \u2014 TradingView Blog"
+    },
+    {
+      "url": "https://www.tradingview.com/news/cointelegraph%3A0f72b5f85094b%3A0-how-hyperliquid-hit-330b-in-monthly-trading-volume-with-just-11-employees/",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.tradingview.com/news/cointelegraph%3A0f72b5f85094b%3A0-how-hyperliquid-hit-330b-in-monthly-trading-volume-with-just-11-employees/",
+      "bytes": 233402,
+      "sha256": "ce31e199f2d9adc4c445ba68c18745dfb20fbe0cb642b26b784f3240f860fe28",
+      "title": "How Hyperliquid hit $330B in monthly trading volume with just 11 employees \u2014 TradingView News"
+    },
+    {
+      "url": "https://blockworks.com/token-transparency/filing/hyperliquid",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://blockworks.com/token-transparency/filing/hyperliquid",
+      "bytes": 448724,
+      "sha256": "4195c78dbb2cd0460e31bb647439b55c116b4dd66ee3e1837ef7df134412fe9c",
+      "title": "Hyperliquid Token Transparency Filing - Blockworks"
+    },
+    {
+      "url": "https://cointelegraph.com/news/trader-loses-3m-fartcoin-hyperliquid-adl-liquidation",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://cointelegraph.com/news/trader-loses-3m-fartcoin-hyperliquid-adl-liquidation",
+      "bytes": 177174,
+      "sha256": "9a24bae08c3ffc88b8ba0ed6690d5ee7f74aaa814f7e942c58ee1200b0464abe",
+      "title": "Trader\u2019s $3M Fartcoin Bet Unravels, Triggering Hyperliquid ADL"
+    },
+    {
+      "url": "https://crypto.news/hyper-foundation-confirms-hype-burn-as-validators-back-assistance-fund-vote/",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://crypto.news/hyper-foundation-confirms-hype-burn-as-validators-back-assistance-fund-vote/",
+      "bytes": 292686,
+      "sha256": "b42d5f5501db7a2002ea90cc03b944a4a6f02efa1a008aeb247b1f5a85f42956",
+      "title": "Hyper Foundation confirms HYPE burn as validators back Assistance Fund vote"
+    },
+    {
+      "url": "https://crypto.news/hyperliquid-hyperdrive-resumes-services-700k-hack-2025/",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://crypto.news/hyperliquid-hyperdrive-resumes-services-700k-hack-2025/",
+      "bytes": 285660,
+      "sha256": "4a494084867401be3e146f928b4304d6442a1ca2ebf5c620574ba82e20bcb668",
+      "title": "Hyperliquid-based Hyperdrive resumes services after exploit"
+    },
+    {
+      "url": "https://cryptonews.com/news/hype-price-shoots-13-amid-crypto-whale-trading-frenzy/",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://cryptonews.com/news/hype-price-shoots-13-amid-crypto-whale-trading-frenzy/",
+      "bytes": 5571,
+      "sha256": "3a41728bb66f6cd686d9d14373475ddcc9cd779e6dd0a98b4f65b7a6a8ed9941",
+      "title": "Just a moment..."
+    },
+    {
+      "url": "https://decrypt.co/341087/bitcoin-ethereum-metaverse-tokens-sink-further-after-holiday-crypto-rally",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://decrypt.co/341087/bitcoin-ethereum-metaverse-tokens-sink-further-after-holiday-crypto-rally",
+      "bytes": 722899,
+      "sha256": "1cc1485ebe7d63c4a591e57217423db9befe82451620ab0be56193bf1db56ecd",
+      "title": "&#x27;Hyperliquid-Aligned&#x27; USDH Native Markets Stablecoin Goes Live as HYPE Falls - Decrypt"
+    },
+    {
+      "url": "https://docs.hyperunit.xyz",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://docs.hyperunit.xyz/",
+      "bytes": 421525,
+      "sha256": "bc6edc130936e98b891e3d83b3a0e72b607054eee9dec31b3a973d90535ca3bb",
+      "title": "About Unit | Unit"
+    },
+    {
+      "url": "https://etfs.grayscale.com/hypg",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "429 https://etfs.grayscale.com/hypg",
+      "bytes": 40676,
+      "sha256": "af4519373da5e398c80ff6d05052b501c2accf1cc90a74e9e602b04ec97249a4",
+      "title": "Vercel Security Checkpoint"
+    },
+    {
+      "url": "https://hyperevmscan.io/",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperevmscan.io/",
+      "bytes": 139120,
+      "sha256": "afb65ef0f14ca9bc2df06dcab512d0b36f1aa24b6e414829112d169336580c72",
+      "title": "HyperEVM (HYPE) Blockchain Explorer"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/connect-mobile-via-qr-code",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/connect-mobile-via-qr-code",
+      "bytes": 372851,
+      "sha256": "14f829910d86c59aa236d6266413f274baf86c091826f443f3470f06c1b2bca9",
+      "title": "Connect mobile via QR code | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/validators/delegation-program",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquid.gitbook.io/hyperliquid-docs/validators/delegation-program",
+      "bytes": 407945,
+      "sha256": "833f108e6cc800b8bc32a35a7877e415aa8e1da94f32389bc88bb7a7e2d17ef2",
+      "title": "Delegation program | Hyperliquid Docs"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog",
+      "bytes": 384957,
+      "sha256": "d0619a818cbfb28a387987cfffbbc03e7c5733b661f5dc83b9b69d0a5a33f5fb",
+      "title": "Hyperliquid Policy Center"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/advancing-policy-for-the-house-of-all-finance",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/advancing-policy-for-the-house-of-all-finance",
+      "bytes": 341682,
+      "sha256": "54759379dfb60515bd717b51dcbd09c4bb153d0a383caa72795de2150ae11e05",
+      "title": "Advancing Policy for the House of All Finance"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-and-douro-labs-back-the-sec-s-move-to-retire-the-trade-through-rule",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-and-douro-labs-back-the-sec-s-move-to-retire-the-trade-through-rule",
+      "bytes": 338919,
+      "sha256": "3aa0633678aa06f9a8a05c43ffe460b544569bae72e06447759d5a44ce9cc5bc",
+      "title": "HPC and Douro Labs Back the SEC's Move to Retire the Trade-Through Rule"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-and-multicoin-back-the-cftc-s-prediction-markets-framework",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-and-multicoin-back-the-cftc-s-prediction-markets-framework",
+      "bytes": 335762,
+      "sha256": "496faec88584bd88701c33fc85eedf123695e2f885980db0239ab470a7b2cfc9",
+      "title": "HPC and Multicoin Back the CFTC's Prediction Markets Framework"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-and-paradigm-file-joint-comment-on-treasury\u2019s-genius-act-proposed-rule",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-and-paradigm-file-joint-comment-on-treasury%E2%80%99s-genius-act-proposed-rule",
+      "bytes": 336945,
+      "sha256": "9deeacb4e76a8cc0b3bb16586011ae2a637a36dd720bb6f883649e63bd6ac9c0",
+      "title": "HPC and Paradigm File Joint Comment on Treasury\u2019s GENIUS Act Proposed Rule"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-and-phantom-ask-the-cftc-to-make-room-for-onchain-market-infrastructure",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-and-phantom-ask-the-cftc-to-make-room-for-onchain-market-infrastructure",
+      "bytes": 333527,
+      "sha256": "5a5cc5bda62048ee28b1e91001211eb05188d6367c87dac613e32874a0c2a276",
+      "title": "HPC and Phantom Ask the CFTC to Make Room for Onchain Market Infrastructure"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-and-trade-xyz-ask-the-cftc-to-bring-energy-perpetual-contracts-to-u.s.-markets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-and-trade-xyz-ask-the-cftc-to-bring-energy-perpetual-contracts-to-u.s.-markets",
+      "bytes": 345971,
+      "sha256": "25aeaf88ab93b25c2324fc83e5f4d3561b9a8d83bae301c6cd6bec897b4f4690",
+      "title": "HPC and trade[XYZ] Ask the CFTC to Bring Energy Perpetual Contracts to U.S. Markets"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-and-trade-xyz-introduce-pre-ipo-perpetuals-to-the-sec",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-and-trade-xyz-introduce-pre-ipo-perpetuals-to-the-sec",
+      "bytes": 343080,
+      "sha256": "b89c520ee79a378f3e90222fa9cd72f3772d66864e78da6f01b821b7cbca42fd",
+      "title": "HPC and trade[XYZ] Introduce Pre-IPO Perpetuals to the SEC"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-files-amicus-brief-to-defend-innovation-in-u.s.-futures-markets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-files-amicus-brief-to-defend-innovation-in-u.s.-futures-markets",
+      "bytes": 338529,
+      "sha256": "e24e46a162b85ee5cd700ab174512dbd8000fbc84fe6169cbf45e0deba3c3717",
+      "title": "HPC Files Amicus Brief to Defend Innovation in U.S. Futures Markets"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-files-comment-to-the-cftc\u2019s-anprm-on-prediction-markets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-files-comment-to-the-cftc%E2%80%99s-anprm-on-prediction-markets",
+      "bytes": 331705,
+      "sha256": "ac5c8771b3b41b48508eb2f8fd3fc5fd759d43714ba3b7615a385793bebfd8ed",
+      "title": "HPC Files Comment to the CFTC\u2019s ANPRM on Prediction Markets"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-files-statement-in-connection-with-cftc-agricultural-advisory-committee-meeting",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-files-statement-in-connection-with-cftc-agricultural-advisory-committee-meeting",
+      "bytes": 330185,
+      "sha256": "a4f75bcac355b72a714f5a6832cb645e6d42ec10f2d14a75730f7f694dd4d9c9",
+      "title": "HPC Files Statement in Connection with CFTC Agricultural Advisory Committee Meeting"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-urges-the-cftc-to-bring-compute-perpetual-contracts-to-u.s.-markets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-urges-the-cftc-to-bring-compute-perpetual-contracts-to-u.s.-markets",
+      "bytes": 344789,
+      "sha256": "974d1b48ba17cece67107ec7b4629872a113e6a3e18178548ddab2963422b3b8",
+      "title": "HPC Urges the CFTC to Bring Compute Perpetual Contracts to U.S. Markets"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-urges-the-european-commission-to-build-on-the-eu\u2019s-existing-rules-for-onchain-markets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-urges-the-european-commission-to-build-on-the-eu%E2%80%99s-existing-rules-for-onchain-markets",
+      "bytes": 348841,
+      "sha256": "777a5bd36898c3f47d599ff3b75619e9ba434202ffb9693f9d1696dacdb7d3b6",
+      "title": "HPC Urges the European Commission to Build on the EU\u2019s Existing Rules for Onchain Markets"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-urges-the-sec-and-cftc-to-adopt-a-harmonized-framework-for-perpetual-contracts",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-urges-the-sec-and-cftc-to-adopt-a-harmonized-framework-for-perpetual-contracts",
+      "bytes": 340241,
+      "sha256": "da96efea6d1bae12c65fa807cacb56c6775027eacf0ac47c1d7492142d3c5e56",
+      "title": "HPC Urges the SEC and CFTC to Adopt a Harmonized Framework for Perpetual Contracts"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/hpc-urges-the-sec-to-adopt-regulation-crypto-assets-with-five-refinements",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/hpc-urges-the-sec-to-adopt-regulation-crypto-assets-with-five-refinements",
+      "bytes": 338731,
+      "sha256": "8b290e3eb95a192542ee73dcd38cfe1d97013b805cb6a27c4e0d2ebc430ec7c7",
+      "title": "HPC Urges the SEC to Adopt Regulation Crypto Assets with Five Refinements"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/perpetual-contracts-belong-at-the-center-of-the-cftc-s-innovation-agenda",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/perpetual-contracts-belong-at-the-center-of-the-cftc-s-innovation-agenda",
+      "bytes": 337157,
+      "sha256": "65072c6ac53ab05df561daaa0835ec75a9a7932f01a6f84df5785807ae17053a",
+      "title": "Perpetual Contracts Belong at the Center of the CFTC's Innovation Agenda"
+    },
+    {
+      "url": "https://hyperliquidpolicy.org/blog/perpetual-futures-as-complements-to-dated-futures",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://hyperliquidpolicy.org/blog/perpetual-futures-as-complements-to-dated-futures",
+      "bytes": 332536,
+      "sha256": "be40f9bb902edcf49f07c1c656d5822d30f2e340a4ebaa05412a2da6dd1f5267",
+      "title": "Perpetual Futures as Complements to Dated Futures"
+    },
+    {
+      "url": "https://lookonchain.com/feeds/14835",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://lookonchain.com/feeds/14835",
+      "bytes": 37680,
+      "sha256": "d1f1e82014e4f3e98462d628e3b25469ef9df281a9db46eca2676fe99016da62",
+      "title": "Hyperliquid: Foundation Official X Account Secure - Lookonchain - Looking for smartmoney onchain"
+    },
+    {
+      "url": "https://oakresearch.io/en/analyses/innovations/hyper-unit-hidden-engine-powering-hyperliquid",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://oakresearch.io/en/analyses/innovations/hyper-unit-hidden-engine-powering-hyperliquid",
+      "bytes": 425332,
+      "sha256": "8274fce94230aa3603e1152f6c3c7f717703fdd9fb5a628d81cc0ddb0bf90c6b",
+      "title": "HyperUnit: The Hidden Engine Powering Hyperliquid | OAK Research"
+    },
+    {
+      "url": "https://oakresearch.io/en/reports/protocols/hyperliquid-hype-s1-2025-activity-report",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://oakresearch.io/en/reports/protocols/hyperliquid-hype-s1-2025-activity-report",
+      "bytes": 569667,
+      "sha256": "e7aaa5182f84f2f1beb5e89de9f9590e9fc1386cb32d62df199c2197436cc634",
+      "title": "Hyperliquid (HYPE): S1 2025 Activity Report | OAK Research"
+    },
+    {
+      "url": "https://whale-alert.io/stories/b5a301204c3089/Fartcoin-crashed-50-after-14524M-leveraged-long-on-Hyperliquid-liquidated-bettors-lost-3M-ADL-paid-849K-to-short-wallets",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://whale-alert.io/stories/b5a301204c3089/Fartcoin-crashed-50-after-14524M-leveraged-long-on-Hyperliquid-liquidated-bettors-lost-3M-ADL-paid-849K-to-short-wallets",
+      "bytes": 45779,
+      "sha256": "c863101ccfb8c35921e768f4c7de0717d92343cedceef4f0f218015ffd356fd1",
+      "title": "Fartcoin crashed ~50% after $145.24M leveraged long on Hyperliquid liquidated; bettors lost ~$3M, ADL paid ~$849K to short wallets | Whale Alert"
+    },
+    {
+      "url": "https://www.binance.bh/en-AE/support/announcement/detail/d49de208bb6d4a26b02677d7c3d89b5d",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "202 https://www.binance.bh/en-AE/support/announcement/detail/d49de208bb6d4a26b02677d7c3d89b5d",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title": ""
+    },
+    {
+      "url": "https://www.binance.tr/tr/blog/Geli%C5%9Fmeler/cc5705200a3b48c78b3ee44579160210",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.binance.tr/tr/blog/Geli%C5%9Fmeler/cc5705200a3b48c78b3ee44579160210",
+      "bytes": 79702,
+      "sha256": "1d241e5ad3763a9e0868607e5bf2c6392f0bfa0f0d71df598e2495670efb6504",
+      "title": "Binance TR, HYPE (Hyperliquid)&#39;i TRY \u0130\u015flem \u00c7iftinde Listeleyecek"
+    },
+    {
+      "url": "https://www.coingecko.com/learn/geckopulse-hyperliquid-hlp-suffered-5m-loss-from-popcat",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://www.coingecko.com/learn/geckopulse-hyperliquid-hlp-suffered-5m-loss-from-popcat",
+      "bytes": 1451779,
+      "sha256": "1e5724eea5aea85bf9c95424754ec4116bc4031b30ee5fb3e184d6fb6201de35",
+      "title": "Challenge Verification | CoinGecko"
+    },
+    {
+      "url": "https://www.galaxy.com/insights/research/10-10-anniversary-crypto-liquidation-19-billion-bitcoin-binance-hyperliquid-2026",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.galaxy.com/insights/research/10-10-anniversary-crypto-liquidation-19-billion-bitcoin-binance-hyperliquid-2026",
+      "bytes": 105132,
+      "sha256": "bc96136b6e75c4741fae4dc918375eb6fe2c1a91f83a7ab8dfec41f06ba48ac9",
+      "title": "One Year After 10/10: The $19B Liquidation Event That Didn&#39;t Break Crypto | Galaxy"
+    },
+    {
+      "url": "https://www.nasdaq.com/press-release/21shares-launches-thyp-and-txxh-first-us-etfs-tracking-hyperliquid-2026-05-12",
+      "curlExit": 92,
+      "httpAndEffectiveUrl": "000 https://www.nasdaq.com/press-release/21shares-launches-thyp-and-txxh-first-us-etfs-tracking-hyperliquid-2026-05-12",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title": ""
+    },
+    {
+      "url": "https://www.rootdata.com/projects/detail/hyperliquid?k=ODM5NA%3D%3D",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "200 https://www.rootdata.com/projects/detail/hyperliquid?k=ODM5NA%3D%3D",
+      "bytes": 1447,
+      "sha256": "588fc92ca585d76f9a236b6c6f0fb55fff0f93352b584229478acb27d7f47b99",
+      "title": ""
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2090011/000121390026102705/R9.htm",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://www.sec.gov/Archives/edgar/data/2090011/000121390026102705/R9.htm",
+      "bytes": 4818,
+      "sha256": "52866a18b865127604f92e3a32706a29189ad93388ec79c9383b04024c355a32",
+      "title": "SEC.gov | Your Request Originates from an Undeclared Automated Tool"
+    },
+    {
+      "url": "https://www.theblock.co/news/defi/2025-11-12-hyperliquid-pauses-deposits-withdrawals-popcat-trading-scheme-speculation-378606",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://www.theblock.co/news/defi/2025-11-12-hyperliquid-pauses-deposits-withdrawals-popcat-trading-scheme-speculation-378606",
+      "bytes": 5783,
+      "sha256": "af2d9cd7121c0110baac82ed02395f902e477535b795b20d209f6f078afcbfea",
+      "title": "Just a moment..."
+    },
+    {
+      "url": "https://www.theblock.co/news/ecosystems/2025-09-28-hyperliquid-based-hyperdrive-loses-782000-after-smart-contract-exploit-372662",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://www.theblock.co/news/ecosystems/2025-09-28-hyperliquid-based-hyperdrive-loses-782000-after-smart-contract-exploit-372662",
+      "bytes": 5792,
+      "sha256": "ced14ca344988e0cf37d0dd9e745d67e03c9d89c776071db138c6249f21bef43",
+      "title": "Just a moment..."
+    },
+    {
+      "url": "https://www.theblock.co/news/markets/2025-09-24-hyperliquids-home-grown-stablecoin-usdh-goes-live-after-native-markets-winning-bid-372128",
+      "curlExit": 0,
+      "httpAndEffectiveUrl": "403 https://www.theblock.co/news/markets/2025-09-24-hyperliquids-home-grown-stablecoin-usdh-goes-live-after-native-markets-winning-bid-372128",
+      "bytes": 5841,
+      "sha256": "47ff89d4759b04eacafecb62f02aebbce8c2442e8859a7b8a43038825c269f6d",
+      "title": "Just a moment..."
+    }
+  ],
+  "note": "HTTP checks for all non-Telegram event URLs supplement source-content review via web; a 200/URL check alone does not certify facts. 403/429/timeouts explicitly retained.",
+  "unavailable": [
+    "99Bitcoins live table: HTTP 403",
+    "TradingView symbol search API: HTTP 403; chart websocket succeeded",
+    "Hyperliquid status API: both legacy and canonical hostname timed out; full incident-history coverage remains unverified"
+  ]
+}

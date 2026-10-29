@@ -1,0 +1,373 @@
+# date,source,url,text
+2023-11-01,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/46,Points program begins
+2023-11-01,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/points,Points program begins
+2023-12-19,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/85,Native USDC bridge announced
+2023-12-19,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc,Native USDC bridge announced
+2023-12-21,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/87,USDC bridge migration begins
+2023-12-21,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc,USDC bridge migration begins
+2024-02-21,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/136,TWAP orders introduced
+2024-02-21,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types,TWAP orders introduced
+2024-05-20,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/184,Native EVM announced
+2024-05-20,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm,Native EVM announced
+2024-05-24,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/185,Permissionless spot launches
+2024-05-24,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard,Permissionless spot launches
+2024-10-01,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/234,Builder codes launch
+2024-10-01,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes,Builder codes launch
+2024-10-03,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/236,Mobile QR login added
+2024-10-03,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/connect-mobile-via-qr-code,Mobile QR login added
+2024-10-07,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/238,Arbitrum bridge briefly locked
+2024-10-07,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc,Arbitrum bridge briefly locked
+2024-11-28,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/258,HYPE genesis announced
+2024-11-28,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking,HYPE genesis announced
+2024-11-28,Hyper Foundation,https://hyperfnd.medium.com/hype-genesis-1830a4dc2e3f,HYPE genesis announced
+2024-11-29,Hyper Foundation,https://hyperfnd.medium.com/hype-genesis-1830a4dc2e3f,HYPE genesis airdrop
+2024-11-29,The Block,https://www.theblock.co/news/ecosystems/2024-11-28-hyperliquid-plans-to-launch-hype-token-in-nov-29-genesis-event-328631,HYPE genesis airdrop
+2024-11-29,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/258,HYPE genesis airdrop
+2024-12-23,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/277,Leverage limits updated
+2024-12-23,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers,Leverage limits updated
+2024-12-23,Bloomberg Law,https://news.bloomberglaw.com/crypto/crypto-exchanges-outflows-swell-on-north-korean-trader-concern,Security concerns spark outflows
+2024-12-23,Blockworks,https://blockworks.com/news/hyperliquid-security-fuels-decentralization-concerns,Security concerns spark outflows
+2024-12-26,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/278,Staking UI tested
+2024-12-26,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking,Staking UI tested
+2024-12-30,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking,HYPE staking launches
+2024-12-30,CoinDesk via Yahoo Finance,https://finance.yahoo.com/news/hyperliquid-releases-native-staking-hype-103621422.html,HYPE staking launches
+2024-12-30,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/286,HYPE staking launches
+2025-01-13,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/288,Native multisig testnet opens
+2025-01-13,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig,Native multisig testnet opens
+2025-01-14,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/289,Testnet balance reset announced
+2025-01-14,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking,Testnet balance reset announced
+2025-01-19,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/295,Assistance Fund adds PURR
+2025-01-19,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults,Assistance Fund adds PURR
+2025-01-27,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/304,Bridge test transaction clarified
+2025-01-27,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc,Bridge test transaction clarified
+2025-02-05,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/307,Partial liquidation testnet opens
+2025-02-05,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers,Partial liquidation testnet opens
+2025-02-10,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/310,Native multisig live by update
+2025-02-10,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig,Native multisig live by update
+2025-02-12,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/312,Native multisig guide published
+2025-02-12,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/multi-sig,Native multisig guide published
+2025-02-14,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/314,Unit launches native BTC spot
+2025-02-14,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard,Unit launches native BTC spot
+2025-02-14,Unit Docs,https://docs.hyperunit.xyz,Unit launches native BTC spot
+2025-02-14,OAK Research,https://oakresearch.io/en/analyses/innovations/hyper-unit-hidden-engine-powering-hyperliquid,Unit launches native BTC spot
+2025-02-18,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/316,HyperEVM mainnet launches
+2025-02-18,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm,HyperEVM mainnet launches
+2025-02-18,The Block,https://www.theblock.co/news/ecosystems/2025-02-18-hyperliquid-launches-hyperevm-on-mainnet-to-bring-general-purpose-programmability-341424,HyperEVM mainnet launches
+2025-03-04,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/319,Permissionless validators announced
+2025-03-04,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators,Permissionless validators announced
+2025-03-06,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/321,Public mainnet nodes launch
+2025-03-06,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator,Public mainnet nodes launch
+2025-03-06,Hyperliquid node repository,https://github.com/hyperliquid-dex/node,Public mainnet nodes launch
+2025-03-07,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/322,Validator rollout update
+2025-03-07,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators,Validator rollout update
+2025-03-12,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/323,Delegation applications open
+2025-03-12,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators/delegation-program,Delegation applications open
+2025-03-12,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/324,ETH liquidation hits HLP
+2025-03-12,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults,ETH liquidation hits HLP
+2025-03-12,Arkham,https://info.arkm.com/research/hyperliquid-whale-passes-4m-loss-to-hlp-vault,ETH liquidation hits HLP
+2025-03-13,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/325,Margin safeguards strengthened
+2025-03-13,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers,Margin safeguards strengthened
+2025-03-14,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/326,Leverage reduced for risk control
+2025-03-14,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers,Leverage reduced for risk control
+2025-03-19,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/329,HYPE staking tiers announced
+2025-03-19,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees,HYPE staking tiers announced
+2025-03-25,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/331,HyperCore-HyperEVM linking live
+2025-03-25,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm,HyperCore-HyperEVM linking live
+2025-03-26,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/332,JELLY market emergency delisting
+2025-03-26,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting,JELLY market emergency delisting
+2025-03-26,Arkham,https://info.arkm.com/research/jellyjelly-exploit-on-hyperliquid,JELLY market emergency delisting
+2025-03-26,CoinDesk,https://www.coindesk.com/markets/2025/03/26/hyperliquid-delists-jellyjelly-after-vault-squeezed-in-usd13m-tussle,JELLY market emergency delisting
+2025-03-27,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/334,JELLY user refunds detailed
+2025-03-27,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting,JELLY user refunds detailed
+2025-03-27,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/333,Unit adds native ETH spot
+2025-03-27,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard,Unit adds native ETH spot
+2025-03-27,OAK Research,https://oakresearch.io/en/analyses/innovations/hyper-unit-hidden-engine-powering-hyperliquid,Unit adds native ETH spot
+2025-03-28,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/335,Onchain delisting votes launch
+2025-03-28,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting,Onchain delisting votes launch
+2025-03-29,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/336,First onchain delisting vote
+2025-03-29,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting,First onchain delisting vote
+2025-04-21,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/347,Validator set expands to 21
+2025-04-21,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators,Validator set expands to 21
+2025-05-01,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/354,HIP-3 testnet opens
+2025-05-01,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals,HIP-3 testnet opens
+2025-05-01,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/353,Hyperliquid X account compromised
+2025-05-01,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes,Hyperliquid X account compromised
+2025-05-01,RootData,https://www.rootdata.com/projects/detail/hyperliquid?k=ODM5NA%3D%3D,Hyperliquid X account compromised
+2025-05-04,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/355,Staking accounts can be linked
+2025-05-04,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking,Staking accounts can be linked
+2025-05-05,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/351,Staking fee discounts scheduled
+2025-05-05,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees,Staking fee discounts scheduled
+2025-05-09,USDT0,https://blog.usdt0.to/usdt0-is-live-on-hyperliquid,USDT0 launches on Hyperliquid
+2025-05-09,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/358,USDT0 launches on Hyperliquid
+2025-05-13,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/362,Staking referral program proposed
+2025-05-13,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees,Staking referral program proposed
+2025-05-13,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/363,Unit adds SOL and FARTCOIN spot
+2025-05-13,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard,Unit adds SOL and FARTCOIN spot
+2025-05-13,OAK Research,https://oakresearch.io/en/reports/protocols/hyperliquid-hype-s1-2025-activity-report,Unit adds SOL and FARTCOIN spot
+2025-05-22,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/371,HYPE spot-auction fees announced
+2025-05-22,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard,HYPE spot-auction fees announced
+2025-05-22,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/367,Margin tiers scheduled
+2025-05-22,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers,Margin tiers scheduled
+2025-05-24,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/373,Foundation X account compromised
+2025-05-24,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes,Foundation X account compromised
+2025-05-24,CryptoNews,https://cryptonews.com/news/hype-price-shoots-13-amid-crypto-whale-trading-frenzy/,Foundation X account compromised
+2025-05-25,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/374,Additional margin tiers scheduled
+2025-05-25,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers,Additional margin tiers scheduled
+2025-05-26,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/377,Faster HyperEVM blocks proposed
+2025-05-26,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm,Faster HyperEVM blocks proposed
+2025-05-26,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/375,Foundation X account recovered
+2025-05-26,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes,Foundation X account recovered
+2025-05-26,Lookonchain,https://lookonchain.com/feeds/14835,Foundation X account recovered
+2025-05-26,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/378,HYPE auction fees live by update
+2025-05-26,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard,HYPE auction fees live by update
+2025-05-30,Binance,https://www.binance.com/en-IN/support/announcement/detail/9166fe6f7b8a4b438262df3a040b007b,Binance HYPE futures launch
+2025-06-02,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/380,HYPE margin tier rollout scheduled
+2025-06-02,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers,HYPE margin tier rollout scheduled
+2025-06-10,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/382,CoreWriter testing updated
+2025-06-10,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore,CoreWriter testing updated
+2025-06-20,Hyperion DeFi,https://ir.hyperiondefi.com/sec-filings/all-sec-filings/content/0001104659-26-036286/hypd-20251231x10k.htm,Eyenovia HYPE financing closes
+2025-06-25,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/383,CoreWriter enters final testing
+2025-06-25,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore,CoreWriter enters final testing
+2025-07-01,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/385,Multiple quote assets on testnet
+2025-07-01,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets,Multiple quote assets on testnet
+2025-07-02,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/386,CoreWriter mainnet rollout announced
+2025-07-02,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore,CoreWriter mainnet rollout announced
+2025-07-03,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/387,Validator expansion announced
+2025-07-03,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators,Validator expansion announced
+2025-07-07,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/388,HyperEVM block explorer released
+2025-07-07,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm,HyperEVM block explorer released
+2025-07-07,Etherscan HyperEVM explorer,https://hyperevmscan.io/,HyperEVM block explorer released
+2025-07-08,Phantom,https://phantom.com/learn/blog/phantom-perps,Phantom launches Hyperliquid perps
+2025-07-08,Corroborating source,https://t.me/hyperliquid_announcements/389,Phantom launches Hyperliquid perps
+2025-07-08,Corroborating source,https://www.tradingview.com/news/cointelegraph%3A0f72b5f85094b%3A0-how-hyperliquid-hit-330b-in-monthly-trading-volume-with-just-11-employees/,Phantom launches Hyperliquid perps
+2025-07-09,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/390,CoreWriter live by update
+2025-07-09,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore,CoreWriter live by update
+2025-07-14,Sonnet SEC filing,https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001641172-25-018878/0001641172-25-018878.pdf,HSI treasury combination announced
+2025-07-15,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/398,Staking referral design reconsidered
+2025-07-15,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees,Staking referral design reconsidered
+2025-07-21,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/403,CoreWriter integration guide
+2025-07-21,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore,CoreWriter integration guide
+2025-07-29,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/406,API congestion delays orders
+2025-07-29,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator,API congestion delays orders
+2025-07-29,The Block,https://www.theblock.co/news/ecosystems/2025-07-30-hyperliquid-outage-api-traffic-spike-not-hack-vulnerability-exploit-364798,API congestion delays orders
+2025-07-31,Circle,https://www.circle.com/blog/native-usdc-cctp-v2-are-coming-to-hyperliquid-what-you-need-to-know,Circle announces native USDC
+2025-07-31,Corroborating source,https://t.me/hyperliquid_announcements/408,Circle announces native USDC
+2025-08-04,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/410,API incident refunds distributed
+2025-08-04,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators/running-a-validator,API incident refunds distributed
+2025-08-18,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/415,Multiple spot quote assets live
+2025-08-18,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets,Multiple spot quote assets live
+2025-08-26,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/420,Assistance Fund fee share increase
+2025-08-26,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees,Assistance Fund fee share increase
+2025-08-27,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/422,Hyperp mark prices updated
+2025-08-27,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers,Hyperp mark prices updated
+2025-08-27,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/421,XPL hyperp volatility triggers ADL
+2025-08-27,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margin-tiers,XPL hyperp volatility triggers ADL
+2025-08-28,21Shares,https://www.21shares.com/en-eu/product,21Shares HYPE staking ETP begins
+2025-09-05,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/427,USDH ticker vote announced
+2025-09-05,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets,USDH ticker vote announced
+2025-09-10,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/429,USDH proposal discussion update
+2025-09-10,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets,USDH proposal discussion update
+2025-09-16,Circle,https://www.circle.com/blog/circle-and-usdc-expansion-with-hyperliquid,Native USDC and CCTP launch
+2025-09-16,Corroborating source,https://www.circle.com/reports/internet-financial-system/capital-markets,Native USDC and CCTP launch
+2025-09-17,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/432,Native Markets wins USDH ticker
+2025-09-17,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets,Native Markets wins USDH ticker
+2025-09-19,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/434,Aligned stablecoins proposed
+2025-09-19,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,Aligned stablecoins proposed
+2025-09-24,The Block,https://www.theblock.co/news/markets/2025-09-24-hyperliquids-home-grown-stablecoin-usdh-goes-live-after-native-markets-winning-bid-372128,USDH spot trading begins
+2025-09-24,Decrypt,https://decrypt.co/341087/bitcoin-ethereum-metaverse-tokens-sink-further-after-holiday-crypto-rally,USDH spot trading begins
+2025-09-25,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/442,Bug bounty scope clarified
+2025-09-25,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals,Bug bounty scope clarified
+2025-09-25,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/441,HIP-3 bug bounty testing expands
+2025-09-25,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals,HIP-3 bug bounty testing expands
+2025-09-27,The Block,https://www.theblock.co/news/ecosystems/2025-09-28-hyperliquid-based-hyperdrive-loses-782000-after-smart-contract-exploit-372662,Hyperdrive application exploit
+2025-09-27,Crypto.news,https://crypto.news/hyperliquid-hyperdrive-resumes-services-700k-hack-2025/,Hyperdrive application exploit
+2025-09-28,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/447,Hypurr NFTs deployed
+2025-09-28,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm,Hypurr NFTs deployed
+2025-10-06,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/452,Aligned stablecoin criteria revised
+2025-10-06,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,Aligned stablecoin criteria revised
+2025-10-06,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/453,Aligned stablecoin feedback clarified
+2025-10-06,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,Aligned stablecoin feedback clarified
+2025-10-06,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/455,Aligned stablecoin rules clarified
+2025-10-06,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,Aligned stablecoin rules clarified
+2025-10-06,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/454,Stablecoin reserve criteria revised
+2025-10-06,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,Stablecoin reserve criteria revised
+2025-10-08,MetaMask,https://metamask.io/en-GB/news/metamask-expands-trading-with-perpetual-futures-and-rewards-confirms-token,MetaMask launches Hyperliquid perps
+2025-10-08,Corroborating source,https://t.me/hyperliquid_announcements/458,MetaMask launches Hyperliquid perps
+2025-10-10,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/460,Market-wide liquidation shock
+2025-10-10,Galaxy Research,https://www.galaxy.com/insights/research/10-10-anniversary-crypto-liquidation-19-billion-bitcoin-binance-hyperliquid-2026,Market-wide liquidation shock
+2025-10-13,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/461,HIP-3 enabled on mainnet
+2025-10-13,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals,HIP-3 enabled on mainnet
+2025-10-13,The Block,https://www.theblock.co/news/ecosystems/2025-10-13-hyperliquid-activate-hip-3-upgrade-374306,HIP-3 enabled on mainnet
+2025-10-15,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/462,Permissionless listing rules explained
+2025-10-15,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard,Permissionless listing rules explained
+2025-10-24,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/468,HIP-3 frontend access simplified
+2025-10-24,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes,HIP-3 frontend access simplified
+2025-11-02,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/471,Validator delisting rules clarified
+2025-11-02,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/delisting,Validator delisting rules clarified
+2025-11-12,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/477,Arbitrum bridge safety lock
+2025-11-12,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc,Arbitrum bridge safety lock
+2025-11-12,The Block,https://www.theblock.co/news/defi/2025-11-12-hyperliquid-pauses-deposits-withdrawals-popcat-trading-scheme-speculation-378606,POPCAT stress hits HLP
+2025-11-12,CoinGecko,https://www.coingecko.com/learn/geckopulse-hyperliquid-hlp-suffered-5m-loss-from-popcat,POPCAT stress hits HLP
+2025-11-19,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/480,HIP-3 growth mode announced
+2025-11-19,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals,HIP-3 growth mode announced
+2025-11-29,Hyperion DeFi SEC filing,https://ir.hyperiondefi.com/sec-filings/all-sec-filings/content/0001104659-26-036286/hypd-20251231x10k.htm,Core contributor vesting begins
+2025-12-02,Nasdaq Trader,https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2025-647,HSI business combination closes
+2025-12-02,Corroborating source,https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001493152-25-025886/0001493152-25-025886.pdf,HSI business combination closes
+2025-12-03,Nasdaq Trader,https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2025-647,HSI shares begin Nasdaq trading
+2025-12-03,Corroborating source,https://www.sonnetbio.com/investors/sec-filings/all-sec-filings/content/0001493152-25-025886/0001493152-25-025886.pdf,HSI shares begin Nasdaq trading
+2025-12-07,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/485,Native USDC links Core and EVM
+2025-12-07,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc,Native USDC links Core and EVM
+2025-12-12,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/489,Portfolio margin testnet opens
+2025-12-12,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin,Portfolio margin testnet opens
+2025-12-17,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/490,Assistance Fund burn vote proposed
+2025-12-17,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees,Assistance Fund burn vote proposed
+2025-12-22,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/491,Labs trading policy published
+2025-12-22,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees,Labs trading policy published
+2025-12-23,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/494,Portfolio margin mainnet pre-alpha
+2025-12-23,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin,Portfolio margin mainnet pre-alpha
+2025-12-24,Crypto.news,https://crypto.news/hyper-foundation-confirms-hype-burn-as-validators-back-assistance-fund-vote/,Assistance Fund burn vote passes
+2025-12-24,Blockworks Transparency Filing,https://blockworks.com/token-transparency/filing/hyperliquid,Assistance Fund burn vote passes
+2026-01-17,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/503,BTC collateral added to pre-alpha
+2026-01-17,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin,BTC collateral added to pre-alpha
+2026-01-27,Kraken,https://blog.kraken.com/product/asset-listings/hype-is-available-for-trading,Kraken HYPE trading launches
+2026-01-31,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/509,Unified account pre-alpha launches
+2026-01-31,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes,Unified account pre-alpha launches
+2026-02-02,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/511,HIP-4 outcome markets announced
+2026-02-02,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets,HIP-4 outcome markets announced
+2026-02-03,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/512,Unified account default changes
+2026-02-03,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes,Unified account default changes
+2026-02-04,Ripple,https://ripple.com/ripple-press/ripple-announces-support-for-hyperliquid-expanding-institutional-access-to-onchain-liquidity/,Ripple Prime supports Hyperliquid
+2026-02-04,Corroborating source,https://etp.coinshares.com/corp/news/coinshares-launches-hyperliquid-staking-etp-with-0-management-fee-and-0-5-yield/,Ripple Prime supports Hyperliquid
+2026-02-12,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/514,CCTP becomes default USDC deposit
+2026-02-12,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc,CCTP becomes default USDC deposit
+2026-02-12,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/516,HIP-3 cross margin on testnet
+2026-02-12,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals,HIP-3 cross margin on testnet
+2026-02-18,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/518,Foundation backs Policy Center
+2026-02-18,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking,Foundation backs Policy Center
+2026-02-18,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/launch-press-release,Foundation backs Policy Center
+2026-02-18,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/launch-press-release,Hyperliquid Policy Center launches
+2026-02-20,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/520,HIP-3 cross margin rollout planned
+2026-02-20,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals,HIP-3 cross margin rollout planned
+2026-02-24,CoinShares,https://etp.coinshares.com/corp/news/coinshares-launches-hyperliquid-staking-etp-with-0-management-fee-and-0-5-yield/,CoinShares HYPE staking ETP launches
+2026-02-24,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/521,HIP-3 cross margin live by update
+2026-02-24,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals,HIP-3 cross margin live by update
+2026-03-10,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/526,HIP-4 testnet opens
+2026-03-10,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets,HIP-4 testnet opens
+2026-03-10,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/525,Portfolio margin alpha announced
+2026-03-10,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin,Portfolio margin alpha announced
+2026-03-18,S&P Global,https://press.spglobal.com/2026-03-18-S-P-Dow-Jones-Indices-Licenses-S-P-500-R-to-Trade-XYZ-for-Perpetual-Contracts-on-Hyperliquid,Licensed S&P 500 perp announced
+2026-03-19,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/528,Fiat onramp enters testing
+2026-03-19,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes,Fiat onramp enters testing
+2026-04-01,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/531,Android app testing begins
+2026-04-01,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes,Android app testing begins
+2026-04-01,Bitwise Europe,https://bitwiseinvestments.eu/products/bitwise-hyperliquid-staking-etp/,Bitwise European HYPE ETP begins
+2026-04-03,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/532,Portfolio margin access broadened
+2026-04-03,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin,Portfolio margin access broadened
+2026-04-09,Cointelegraph,https://cointelegraph.com/news/trader-loses-3m-fartcoin-hyperliquid-adl-liquidation,FARTCOIN liquidation triggers ADL
+2026-04-09,Whale Alert,https://whale-alert.io/stories/b5a301204c3089/Fartcoin-crashed-50-after-14524M-leveraged-long-on-Hyperliquid-liquidated-bettors-lost-3M-ADL-paid-849K-to-short-wallets,FARTCOIN liquidation triggers ADL
+2026-04-13,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/535,Priority fees live by update
+2026-04-13,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees,Priority fees live by update
+2026-04-22,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/advancing-policy-for-the-house-of-all-finance,HPC publishes policy agenda
+2026-04-22,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC publishes policy agenda
+2026-04-27,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/538,Perp order priority fees expanded
+2026-04-27,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees,Perp order priority fees expanded
+2026-04-30,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-files-comment-to-the-cftc’s-anprm-on-prediction-markets,HPC files prediction-market comment
+2026-04-30,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC files prediction-market comment
+2026-05-02,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/541,HIP-4 mainnet initial release
+2026-05-02,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets,HIP-4 mainnet initial release
+2026-05-07,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/544,Multi-outcome markets launch
+2026-05-07,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets,Multi-outcome markets launch
+2026-05-07,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/543,Portfolio margin limits raised
+2026-05-07,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin,Portfolio margin limits raised
+2026-05-12,21Shares,https://cdn.21shares.com/uploads/product_documents/Factsheets/Factsheet_THYP.pdf,21Shares US HYPE ETF begins
+2026-05-12,21Shares SEC financial statements,https://www.sec.gov/Archives/edgar/data/2090011/000121390026102705/R9.htm,21Shares US HYPE ETF begins
+2026-05-12,21Shares launch release via Nasdaq,https://www.nasdaq.com/press-release/21shares-launches-thyp-and-txxh-first-us-etfs-tracking-hyperliquid-2026-05-12,21Shares US HYPE ETF begins
+2026-05-14,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/547,AQAv2 stablecoin model proposed
+2026-05-14,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,AQAv2 stablecoin model proposed
+2026-05-14,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/548,Coinbase-Circle AQAv2 plan
+2026-05-14,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,Coinbase-Circle AQAv2 plan
+2026-05-14,Circle,https://www.circle.com/blog/circle-expands-support-for-usdc-on-hyperliquid,Coinbase-Circle AQAv2 plan
+2026-05-15,Bitwise,https://bitwiseinvestments.com/newsroom/bitwise-launches-spot-hyperliquid-etf-bhyp,Bitwise US HYPE ETF trading begins
+2026-05-18,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/549,27-validator expansion announced
+2026-05-18,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators,27-validator expansion announced
+2026-05-25,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/552,Offchain-event outcome markets live
+2026-05-25,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets,Offchain-event outcome markets live
+2026-05-26,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/554,USDT borrowing tested
+2026-05-26,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin,USDT borrowing tested
+2026-06-02,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/555,Validator set reaches 27 by update
+2026-06-02,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/validators,Validator set reaches 27 by update
+2026-06-03,Grayscale,https://etfs.grayscale.com/hypg,Grayscale HYPE ETF lists
+2026-06-09,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-and-paradigm-file-joint-comment-on-treasury’s-genius-act-proposed-rule,HPC-Paradigm stablecoin comment
+2026-06-09,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC-Paradigm stablecoin comment
+2026-06-11,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/557,ETH-HYPE-SOL daily outcomes added
+2026-06-11,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets,ETH-HYPE-SOL daily outcomes added
+2026-06-12,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/559,USDC AQAv2 operating details
+2026-06-12,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,USDC AQAv2 operating details
+2026-06-20,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/561,USDH markets finish settlement
+2026-06-20,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,USDH markets finish settlement
+2026-06-25,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/563,Portfolio margin enters beta
+2026-06-25,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin,Portfolio margin enters beta
+2026-06-26,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/564,MAS Investor Alert List entry
+2026-06-26,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes,MAS Investor Alert List entry
+2026-06-26,MAS,https://www.mas.gov.sg/investor-alert-list?q=hyperliquid,MAS Investor Alert List entry
+2026-06-28,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/566,USDH migration grants announced
+2026-06-28,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets,USDH migration grants announced
+2026-07-02,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/570,TradingView adds Hyperliquid data
+2026-07-02,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes,TradingView adds Hyperliquid data
+2026-07-02,TradingView,https://www.tradingview.com/blog/en/trade-xyz-and-hyperliquid-59210/,TradingView adds Hyperliquid data
+2026-07-02,VALR,https://blog.valr.com/blog/valr-launches-200-hyperliquid-perps-markets,VALR Hyperliquid perps announced
+2026-07-02,Corroborating source,https://t.me/hyperliquid_announcements/569,VALR Hyperliquid perps announced
+2026-07-09,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-and-phantom-ask-the-cftc-to-make-room-for-onchain-market-infrastructure,HPC-Phantom onchain market proposal
+2026-07-09,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC-Phantom onchain market proposal
+2026-07-20,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/576,Chase limit orders added
+2026-07-20,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types,Chase limit orders added
+2026-07-20,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/575,Permissionless HIP-4 proposed
+2026-07-20,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets,Permissionless HIP-4 proposed
+2026-07-27,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-and-multicoin-back-the-cftc-s-prediction-markets-framework,HPC supports prediction-market rules
+2026-07-27,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC supports prediction-market rules
+2026-07-27,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/577,TWAP trigger prices added
+2026-07-27,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types,TWAP trigger prices added
+2026-08-03,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/578,TWAP duration expanded
+2026-08-03,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types,TWAP duration expanded
+2026-08-07,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-files-statement-in-connection-with-cftc-agricultural-advisory-committee-meeting,HPC comments on agricultural markets
+2026-08-07,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC comments on agricultural markets
+2026-08-10,Payward,https://www.payward.com/press-release/xstocks-on-hyperliquid,xStocks goes live on HyperCore
+2026-08-12,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/579,HIP-3 deployer fees refined
+2026-08-12,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals,HIP-3 deployer fees refined
+2026-08-14,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/580,HIP-4 deployment tools expanded
+2026-08-14,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions,HIP-4 deployment tools expanded
+2026-08-17,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-and-douro-labs-back-the-sec-s-move-to-retire-the-trade-through-rule,HPC backs market-structure reform
+2026-08-17,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC backs market-structure reform
+2026-08-18,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-and-trade-xyz-introduce-pre-ipo-perpetuals-to-the-sec,HPC presents pre-IPO perps
+2026-08-18,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC presents pre-IPO perps
+2026-08-21,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/perpetual-futures-as-complements-to-dated-futures,HPC compares futures structures
+2026-08-21,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC compares futures structures
+2026-08-24,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-urges-the-sec-and-cftc-to-adopt-a-harmonized-framework-for-perpetual-contracts,HPC seeks harmonized perp rules
+2026-08-24,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC seeks harmonized perp rules
+2026-08-24,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/582,Spot annotations added
+2026-08-24,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard,Spot annotations added
+2026-08-26,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-and-trade-xyz-ask-the-cftc-to-bring-energy-perpetual-contracts-to-u.s.-markets,HPC seeks energy perp framework
+2026-08-26,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC seeks energy perp framework
+2026-08-27,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/perpetual-contracts-belong-at-the-center-of-the-cftc-s-innovation-agenda,HPC publishes perpetuals policy view
+2026-08-27,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC publishes perpetuals policy view
+2026-08-31,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/585,Permissionless HIP-4 live by update
+2026-08-31,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets,Permissionless HIP-4 live by update
+2026-09-08,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/586,Manual borrowing live by update
+2026-09-08,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/manual-borrows,Manual borrowing live by update
+2026-09-09,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-files-amicus-brief-to-defend-innovation-in-u.s.-futures-markets,HPC files futures amicus brief
+2026-09-09,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC files futures amicus brief
+2026-09-16,Payward,https://www.payward.com/press-release/payward-hyperliquid-onchain-perpetual-futures,Payward plans US HIP-3 markets
+2026-09-16,Corroborating source,https://t.me/hyperliquid_announcements/598,Payward plans US HIP-3 markets
+2026-09-18,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/589,Manual borrowing guide published
+2026-09-18,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/manual-borrows,Manual borrowing guide published
+2026-09-21,Hyperliquid Announcements,https://t.me/hyperliquid_announcements/590,Trailing stops launch
+2026-09-21,Hyperliquid Docs,https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/trailing-stops,Trailing stops launch
+2026-09-24,Binance,https://www.binance.bh/en-AE/support/announcement/detail/d49de208bb6d4a26b02677d7c3d89b5d,Binance HYPE spot trading begins
+2026-09-24,Binance TR,https://www.binance.tr/tr/blog/Geli%C5%9Fmeler/cc5705200a3b48c78b3ee44579160210,Binance HYPE spot trading begins
+2026-09-30,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-urges-the-european-commission-to-build-on-the-eu’s-existing-rules-for-onchain-markets,HPC comments on EU onchain rules
+2026-09-30,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC comments on EU onchain rules
+2026-10-19,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-urges-the-sec-to-adopt-regulation-crypto-assets-with-five-refinements,HPC comments on SEC crypto rules
+2026-10-19,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC comments on SEC crypto rules
+2026-10-20,Hyperliquid Policy Center,https://hyperliquidpolicy.org/blog/hpc-urges-the-cftc-to-bring-compute-perpetual-contracts-to-u.s.-markets,HPC proposes compute perps rules
+2026-10-20,Hyperliquid Policy Center index,https://hyperliquidpolicy.org/blog,HPC proposes compute perps rules
+2026-10-27,Payward,https://www.payward.com/press-release/cf-benchmarks-launches-cfb-oracle,CFB Oracle launches for onchain markets

@@ -318,6 +318,18 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **HYPE data audit — 29/10/2026:** tạo bộ dữ liệu mới (trước đó chưa có HYPE ở commit `80d4f545`).
+  TradingView `PYTH:HYPEUSD` là feed oracle USD: 694 nến ngày đã đóng 04/12/2024–28/10/2026, không thiếu ngày trong
+  đoạn đã lưu, không ước tính. Còn thiếu **5 ngày 29/11–03/12/2024** từ genesis trong các mã TV đã thử; không nội suy.
+  Đối chiếu spot KUCOIN/HYPERLIQUID lệch close trung vị 0,04109% / 0,01705%; không trộn USD/USDT/USDC. Nến 29/10 chưa đóng loại riêng.
+  181 mục nghiên cứu / 372 nguồn; hit 0/1/2 = 60/106/15; 46 remove=true, giữ 135 (125 trong đoạn giá).
+  Inventory 586 thông báo đọc được; còn giới hạn xác minh mục riêng lẻ/recap/metric và một số xung đột ngày,
+  không chứng nhận đầy đủ tuyệt đối. Nguồn 181/181; parser và ingestion cô lập đạt, root data/music không đổi.
+  Snapshot 99Bitcoins 234/234 cho HYPE; live 403. Status API timeout, chưa chứng nhận toàn bộ lịch sử sự cố.
+  Xem `coins/HYPE/data/SOURCES.md`, `events-review-20261029.md`. **Chờ duyệt danh sách trước mọi render**;
+  chưa chuẩn bị logo/màu/phase/nhạc HYPE, chưa render.
+
+
 - **DOGE final full — 28/10/2026:** người dùng yêu cầu DOGE / 16:9 / Full HD / 60 fps sau preview.
   Giữ nguyên 4.700 nến thật, 55 sự kiện + 8 ATH/ATL, 9 cue, danh sách 92 đã duyệt và logo Doge vàng.
   `out/doge-final-20261028-16x9-1080p.mp4`: 1920×1080, 479,466667 s, 28.768 frame, 367.635.147 bytes.
