@@ -1,13 +1,15 @@
 {
-  "priceRows": 694,
+  "checkedOn": "2026-10-29",
+  "pass": 2,
+  "priceRows": 698,
+  "primaryFeed": "CRYPTO:HYPEHUSD",
   "savedDailyExactOHLCAndDatesMatchTradingView": true,
+  "secondIndependentRawFetchExactMatch": true,
   "zeroEstimates": true,
-  "eventResearchRows": 181,
-  "sourceRows": 372,
-  "inRangeRetainedEvents": 125,
+  "eventResearchRows": 225,
+  "sourceRows": 465,
+  "inRangeRetainedEvents": 152,
   "isolatedStrictIngestionExit": 0,
-  "existingRendererRoundingMaxAbsoluteDifferenceUSD": 0.0005000000000023874,
   "activeRootDataSha256": "9d120ed7d67a2e91380fe2c48754cfdb5258997fe7e8d104cb094e3d9439646e",
-  "tests": "5/5 CSV parser tests passed; no renderer/build invoked",
-  "note": "Existing make-data rounds chart values (5 significant figures below $100); not modified globally. Saved HYPE raw and daily CSV preserve full TradingView precision. A future make-data invocation regenerates the derived daily file with existing chart rounding. Structural/source-link checks do not certify exhaustive history."
+  "note": "Ingestion uses existing chart rounding; analytical/raw CSVs preserve precision. No full-film render/build performed. Structure/source-link checks do not certify exhaustive world history."
 }

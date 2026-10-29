@@ -1,47 +1,42 @@
 {
   "checkedOn": "2026-10-29",
-  "primary": "PYTH:HYPEUSD",
-  "priceType": "USD oracle feed on TradingView; not exchange spot trades",
+  "primary": "CRYPTO:HYPEHUSD",
+  "priceType": "TradingView Crypto assets USD aggregate for Hyperliquid (TradingView asset ticker HYPEH; native token HYPE)",
   "closedRange": [
-    "2024-12-04",
+    "2024-11-30",
     "2026-10-28"
   ],
-  "count": 694,
+  "count": 698,
   "excludedIncompleteDates": [
     "2026-10-29"
   ],
   "missingSinceGenesis": [
-    "2024-11-29",
-    "2024-11-30",
-    "2024-12-01",
-    "2024-12-02",
-    "2024-12-03"
+    "2024-11-29"
   ],
   "comparisons": [
     {
       "symbol": "KUCOIN_HYPEUSDT",
-      "range": [
-        "2024-12-07",
-        "2026-10-29"
-      ],
       "overlapClosedDays": 691,
-      "medianCloseDifferencePercent": 0.04109373004468342,
-      "maxCloseDifferencePercent": 0.6173044133721772,
-      "note": "USDT/USDC spot used only for comparison; not merged or assumed identical to USD oracle."
+      "medianCloseDifferencePercent": 0.04824561403508065,
+      "maxCloseDifferencePercent": 0.36297309621522444,
+      "note": "Independent feed cross-check only; not merged."
+    },
+    {
+      "symbol": "PYTH_HYPEUSD",
+      "overlapClosedDays": 694,
+      "medianCloseDifferencePercent": 0.021669531459983515,
+      "maxCloseDifferencePercent": 0.41811486851806023,
+      "note": "Independent feed cross-check only; not merged."
     },
     {
       "symbol": "HYPERLIQUID_HYPEUSDC",
-      "range": [
-        "2025-03-22",
-        "2026-10-29"
-      ],
       "overlapClosedDays": 586,
-      "medianCloseDifferencePercent": 0.017049418868286814,
-      "maxCloseDifferencePercent": 0.2412340630209231,
-      "note": "USDT/USDC spot used only for comparison; not merged or assumed identical to USD oracle."
+      "medianCloseDifferencePercent": 0.03213949627268731,
+      "maxCloseDifferencePercent": 0.3163336162333219,
+      "note": "Independent feed cross-check only; not merged."
     }
   ],
-  "sha256": "1544af400c7f47939a4b68e32d831e8f3c05d5a5b4d7d1375dbaef73f0009005",
+  "sha256": "36acb01b1435f231e7e0733c8f0da66f339dd6d40b082729a9325e4f2c942639",
   "testedTradingViewSymbols": {
     "PYTH:HYPEUSD": "2024-12-04..2026-10-29; oracle USD; selected and current candle excluded",
     "KUCOIN:HYPEUSDT": "2024-12-07..2026-10-29; spot USDT comparison",
@@ -70,16 +65,67 @@
     "LBANK:HYPEUSDT": "invalid symbol",
     "BITMART:HYPEUSDT": "invalid symbol",
     "POLONIEX:HYPEUSDT": "invalid symbol",
-    "COINW:HYPEUSDT": "invalid symbol"
+    "COINW:HYPEUSDT": "invalid symbol",
+    "CRYPTO:HYPEHUSD": "2024-11-30..2026-10-29; correct aggregate ticker, selected; open UTC candle excluded",
+    "INDEX:HYPEHUSD": "invalid symbol",
+    "CRYPTO:HYPEH": "invalid symbol",
+    "CRYPTO:HYPEHUSDT": "invalid symbol"
   },
   "ohlcPositiveAndConsistent": true,
   "datesUnique": true,
   "gapsWithinSavedRange": 0,
   "estimatedCandles": 0,
   "limitations": [
-    "Five genesis dates missing on tested TradingView feeds; no synthetic or non-TradingView fill.",
-    "Primary is a USD oracle feed, not exchange transaction candles.",
-    "USD, USDT and USDC are distinct units; spot comparison feeds are not merged.",
-    "Closed UTC days only; October 29 candle stored separately as incomplete."
-  ]
+    "2024-11-29 genesis day absent on tested TradingView feeds; no synthetic or non-TradingView fill.",
+    "Primary is a TradingView USD aggregate, not a single exchange execution feed.",
+    "USD, USDT and USDC are distinct; comparison feeds not merged.",
+    "Only closed UTC candles retained."
+  ],
+  "previousPass": {
+    "primary": "PYTH:HYPEUSD",
+    "priceType": "USD oracle feed on TradingView; not exchange spot trades",
+    "closedRange": [
+      "2024-12-04",
+      "2026-10-28"
+    ],
+    "count": 694,
+    "missingSinceGenesis": [
+      "2024-11-29",
+      "2024-11-30",
+      "2024-12-01",
+      "2024-12-02",
+      "2024-12-03"
+    ],
+    "comparisons": [
+      {
+        "symbol": "KUCOIN_HYPEUSDT",
+        "range": [
+          "2024-12-07",
+          "2026-10-29"
+        ],
+        "overlapClosedDays": 691,
+        "medianCloseDifferencePercent": 0.04109373004468342,
+        "maxCloseDifferencePercent": 0.6173044133721772,
+        "note": "USDT/USDC spot used only for comparison; not merged or assumed identical to USD oracle."
+      },
+      {
+        "symbol": "HYPERLIQUID_HYPEUSDC",
+        "range": [
+          "2025-03-22",
+          "2026-10-29"
+        ],
+        "overlapClosedDays": 586,
+        "medianCloseDifferencePercent": 0.017049418868286814,
+        "maxCloseDifferencePercent": 0.2412340630209231,
+        "note": "USDT/USDC spot used only for comparison; not merged or assumed identical to USD oracle."
+      }
+    ],
+    "sha256": "1544af400c7f47939a4b68e32d831e8f3c05d5a5b4d7d1375dbaef73f0009005"
+  },
+  "identityEvidence": [
+    "https://www.tradingview.com/symbols/HYPEHUSD/",
+    "TradingView page names Hyperliquid, links hyperliquid.xyz and native token explorer address; HYPEH is TradingView asset namespace, not another token."
+  ],
+  "secondIndependentFetchExactClosedOHLC": true,
+  "secondFetchClosedCount": 698
 }

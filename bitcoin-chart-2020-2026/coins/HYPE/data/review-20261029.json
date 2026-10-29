@@ -360,6 +360,10 @@
         [
           "Hyperliquid Announcements",
           "https://t.me/hyperliquid_announcements/286"
+        ],
+        [
+          "Hyper Foundation annual recap",
+          "https://hyperfnd.medium.com/2024-in-review-28c472091320"
         ]
       ],
       "removalReason": "",
@@ -367,6 +371,29 @@
       "note": "December 30 launch; January 10 recap is not the launch date.",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+    },
+    {
+      "date": "2025-01-13",
+      "kind": "info",
+      "hit": 1,
+      "tag": "",
+      "text": "ANIME rewards for HYPE stakers announced",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/287"
+        ],
+        [
+          "Animecoin tokenomics document",
+          "https://resources.cryptocompare.com/asset-management/18603/1739440506822.pdf"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Announced future TGE reward eligibility; not a claim of an already-completed HYPE airdrop.",
+      "post": 287,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-01-13",
@@ -436,6 +463,52 @@
       "note": "",
       "post": 295,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2025-01-26",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "OI-cap order validation improved",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/303"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/perpetual-assets"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 303,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2025-01-26",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Spot deployment fee sharing updated",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/303"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 303,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-01-27",
@@ -586,6 +659,29 @@
       "note": "",
       "post": 316,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+    },
+    {
+      "date": "2025-03-04",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Official announcements page added",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/320"
+        ],
+        [
+          "Hyperliquid official announcements page",
+          "https://app.hyperliquid.xyz/announcements"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 320,
+      "verificationScope": "Dated primary notice plus official current announcements page; exact first publication not independently reconstructed."
     },
     {
       "date": "2025-03-04",
@@ -953,6 +1049,29 @@
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
     },
     {
+      "date": "2025-04-30",
+      "kind": "up",
+      "hit": 1,
+      "tag": "upgrade",
+      "text": "HyperCore read precompiles live by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/352"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 352,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2025-05-01",
       "kind": "up",
       "hit": 1,
@@ -1122,6 +1241,33 @@
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
     },
     {
+      "date": "2025-05-21",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Rabby-DeBank support confirmed",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/368"
+        ],
+        [
+          "Rabby official supported-chain display",
+          "https://go.rabby.io/mobile"
+        ],
+        [
+          "AiCoin",
+          "https://www.aicoin.com/en/news-flash/2377477"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Protocol confirmation May 21; earlier May 20 reporting exists. Label deliberately does not claim first integration day.",
+      "post": 368,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2025-05-22",
       "kind": "up",
       "hit": 1,
@@ -1149,6 +1295,33 @@
       "kind": "info",
       "hit": 1,
       "tag": "",
+      "text": "Labs files CFTC perpetuals comments",
+      "remove": false,
+      "sources": [
+        [
+          "CFTC submission list",
+          "https://comments2.cftc.gov/PublicComments/CommentList.aspx?ctl00_ctl00_cphContentMain_MainContent_gvCommentListChangePage=14&id=7584"
+        ],
+        [
+          "Hyperliquid Labs letter via CFTC",
+          "https://comments2.cftc.gov/Handlers/PdfHandler.ashx?id=35635"
+        ],
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/372"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "CFTC public submission record",
+      "note": "Letter dated May 21; CFTC submission list May 22; protocol recap May 23. Submission date used, not a regulatory approval.",
+      "post": null,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2025-05-22",
+      "kind": "info",
+      "hit": 1,
+      "tag": "",
       "text": "Margin tiers scheduled",
       "remove": false,
       "sources": [
@@ -1166,6 +1339,33 @@
       "note": "",
       "post": 367,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2025-05-23",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Labs CFTC letters announced",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/372"
+        ],
+        [
+          "Hyperliquid Labs letter via CFTC",
+          "https://comments2.cftc.gov/Handlers/PdfHandler.ashx?id=35635"
+        ],
+        [
+          "Hyperliquid Labs 24-7 letter via CFTC",
+          "https://comments.cftc.gov/Handlers/PdfHandler.ashx?id=35634"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Public announcement of the two letters; not the filing date.",
+      "post": 372,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-05-24",
@@ -1291,6 +1491,29 @@
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
     },
     {
+      "date": "2025-05-26",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Margin transfer requirement reduced",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/378"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 378,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2025-05-30",
       "kind": "up",
       "hit": 1,
@@ -1396,6 +1619,52 @@
       "note": "",
       "post": 383,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2025-06-25",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Local node HTTP API available by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/383"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 383,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2025-06-25",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Post-only priority change announced",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/383"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Next-upgrade announcement in recap, not assumed live June 25.",
+      "post": 383,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-07-01",
@@ -1586,6 +1855,29 @@
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
     },
     {
+      "date": "2025-07-16",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Generalized asset-transfer API tested",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/400"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 400,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2025-07-21",
       "kind": "info",
       "hit": 0,
@@ -1680,6 +1972,29 @@
       "note": "",
       "post": 410,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2025-08-05",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Foundation data node available by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/411"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node-for-infra-providers"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 411,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-08-18",
@@ -1793,6 +2108,29 @@
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
     },
     {
+      "date": "2025-08-31",
+      "kind": "up",
+      "hit": 1,
+      "tag": "",
+      "text": "Validator set reaches 24 by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/423"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 423,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2025-09-05",
       "kind": "info",
       "hit": 1,
@@ -1814,6 +2152,52 @@
       "note": "",
       "post": 427,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2025-09-09",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Quote-asset spot fee reductions live",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/428"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 428,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2025-09-09",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Referral claims span quote assets",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/428"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/referrals"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 428,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-09-10",
@@ -1860,6 +2244,29 @@
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+    },
+    {
+      "date": "2025-09-17",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "HIP-3 quote-collateral support proposed",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/432"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Pending testnet testing, not a completed mainnet change.",
+      "post": 432,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-09-17",
@@ -2001,6 +2408,29 @@
     },
     {
       "date": "2025-09-28",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "HYPE-USDH spot pair available by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/446"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 446,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2025-09-28",
       "kind": "up",
       "hit": 1,
       "tag": "",
@@ -2021,6 +2451,52 @@
       "note": "",
       "post": 447,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2025-09-28",
+      "kind": "up",
+      "hit": 1,
+      "tag": "upgrade",
+      "text": "Permissionless quote assets live by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/446"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 446,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2025-10-06",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Aligned quote assets on testnet",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/456"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 456,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-10-06",
@@ -2211,6 +2687,29 @@
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
     },
     {
+      "date": "2025-10-20",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "DEX abstraction added by update",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/464"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 464,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2025-10-24",
       "kind": "info",
       "hit": 0,
@@ -2234,6 +2733,29 @@
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
     },
     {
+      "date": "2025-10-29",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "HIP-3 frontend access live by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/469"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/frontend-checks"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 469,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2025-11-02",
       "kind": "info",
       "hit": 0,
@@ -2255,6 +2777,52 @@
       "note": "",
       "post": 471,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2025-11-06",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "HIP-3 sub-deployers supported",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/473"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 473,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2025-11-06",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "HyperEVM gas capacity increased",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/473"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 473,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-11-12",
@@ -2303,6 +2871,29 @@
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
     },
     {
+      "date": "2025-11-15",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "HIP-3 margin settings tested",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/479"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 479,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2025-11-19",
       "kind": "up",
       "hit": 1,
@@ -2326,6 +2917,75 @@
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
     },
     {
+      "date": "2025-11-24",
+      "kind": "up",
+      "hit": 1,
+      "tag": "upgrade",
+      "text": "Aligned quote assets live by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 481,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2025-11-24",
+      "kind": "up",
+      "hit": 1,
+      "tag": "",
+      "text": "HIP-3 growth mode live by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 481,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2025-11-24",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Legacy spot deployer fee share enabled",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 481,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2025-11-29",
       "kind": "info",
       "hit": 1,
@@ -2343,6 +3003,29 @@
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+    },
+    {
+      "date": "2025-12-01",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "USDC Core-EVM linking on testnet",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/484"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 484,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2025-12-02",
@@ -2520,13 +3203,40 @@
         [
           "Blockworks Transparency Filing",
           "https://blockworks.com/token-transparency/filing/hyperliquid"
+        ],
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/497"
         ]
       ],
       "removalReason": "",
       "dateBasis": "dated primary announcement",
       "note": "Formal recognition of irretrievable system-address balances; not a new token transfer. December 26 follow-up report is not used as vote date.",
       "post": null,
-      "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+      "verificationScope": "Official protocol recap confirms stake-weighted burn recognition; December 24 date independently corroborated in reports."
+    },
+    {
+      "date": "2026-01-04",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "HyperEVM read gas costs reduced",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/497"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 497,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2026-01-17",
@@ -2550,6 +3260,75 @@
       "note": "",
       "post": 503,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2026-01-17",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "USDH borrowing added to pre-alpha",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/503"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 503,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2026-01-18",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Mobile staking interface added",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/506"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-stake-hype"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 506,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2026-01-27",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "HIP-3 normal isolated margin added",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/508"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 508,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2026-01-27",
@@ -2779,6 +3558,29 @@
     },
     {
       "date": "2026-02-24",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Builder-code approval removal added",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/521"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 521,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2026-02-24",
       "kind": "up",
       "hit": 1,
       "tag": "",
@@ -2973,6 +3775,29 @@
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
     },
     {
+      "date": "2026-04-06",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Portfolio margin entry rules eased",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/534"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 534,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2026-04-09",
       "kind": "down",
       "hit": 1,
@@ -3000,6 +3825,29 @@
       "kind": "info",
       "hit": 0,
       "tag": "",
+      "text": "Legacy vault creation fee raised",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/535"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/hypercore-vaults-legacy"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 535,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2026-04-13",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
       "text": "Priority fees live by update",
       "remove": false,
       "sources": [
@@ -3017,6 +3865,29 @@
       "note": "",
       "post": 535,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2026-04-21",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "DEX abstraction retirement announced",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/536"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Retirement announced for a later upgrade, not claimed already disabled.",
+      "post": 536,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2026-04-22",
@@ -3300,6 +4171,29 @@
     },
     {
       "date": "2026-05-26",
+      "kind": "up",
+      "hit": 1,
+      "tag": "",
+      "text": "HIP-4 uses USDC by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/553"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 553,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2026-05-26",
       "kind": "info",
       "hit": 0,
       "tag": "",
@@ -3320,6 +4214,29 @@
       "note": "",
       "post": 554,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2026-06-02",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "USDT borrowing live by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/555"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 555,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2026-06-02",
@@ -3431,6 +4348,29 @@
       "note": "June 12 operational description; future yield accrual/payment dates are scheduled, not recorded as completed.",
       "post": 559,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2026-06-16",
+      "kind": "up",
+      "hit": 1,
+      "tag": "",
+      "text": "USDC AQAv2 active by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/560"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 560,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2026-06-20",
@@ -3692,6 +4632,29 @@
       "note": "",
       "post": 577,
       "verificationScope": "Dated announcement plus current feature documentation; historical activation not independently reconstructed."
+    },
+    {
+      "date": "2026-08-03",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Permissionless HIP-4 testnet active",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/578"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 578,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     },
     {
       "date": "2026-08-03",
@@ -3990,6 +4953,29 @@
     },
     {
       "date": "2026-09-08",
+      "kind": "info",
+      "hit": 1,
+      "tag": "",
+      "text": "HIP-3 permissioned-market spec shared",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/586"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Spec shared; not a permissioned mainnet activation or US regulatory approval.",
+      "post": 586,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
+      "date": "2026-09-08",
       "kind": "up",
       "hit": 1,
       "tag": "",
@@ -4196,6 +5182,29 @@
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
     },
     {
+      "date": "2026-10-25",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Scheduled network upgrade completed",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Status",
+          "https://hyperliquid.statuspage.io/incidents/1g6btx6f71d0"
+        ],
+        [
+          "Hyperliquid Status current history",
+          "https://hyperliquid.statuspage.io/"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Official status-page updates",
+      "note": "Scheduled maintenance: in-progress 09:30 UTC, completed 09:50. Expected downtime ~10 minutes does not prove 20 minutes of actual unavailability. Do not label this an unplanned outage.",
+      "post": null,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
+    },
+    {
       "date": "2026-10-27",
       "kind": "up",
       "hit": 1,
@@ -4213,18 +5222,41 @@
       "note": "",
       "post": null,
       "verificationScope": "Original issuer/counterparty record or corroborated reporting; see dateBasis and note for limits."
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "API priority updates reported",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/600"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "High-level recap only; separate API channel lacks a readable public preview. No exact activation asserted.",
+      "post": 600,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly."
     }
   ],
   "counts": {
-    "research": 181,
+    "research": 225,
     "levels": {
-      "1": 106,
-      "0": 60,
+      "1": 116,
+      "0": 94,
       "2": 15
     },
-    "removed": 46,
-    "retained": 135,
-    "retainedWithinPriceRange": 125,
-    "sourceRows": 372
+    "removed": 63,
+    "retained": 162,
+    "retainedWithinPriceRange": 152,
+    "sourceRows": 465
   }
 }

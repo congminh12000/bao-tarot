@@ -318,6 +318,17 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **HYPE đối chiếu lần hai — 29/10/2026:** tìm đúng ticker TradingView **CRYPTO:HYPEHUSD** (Hyperliquid aggregate).
+  Thay feed chính Pyth, giữ bản cũ để đối chiếu. 698 nến ngày đã đóng 30/11/2024–28/10/2026, hai lần tải khớp từng
+  OHLC, không ước tính/thiếu ngày trong đoạn; bổ sung được 4 ngày, chỉ còn genesis **29/11/2024** chưa có trên các feed thử.
+  225 sự kiện / 465 nguồn (thêm 44), hit 0/1/2 = 94/116/15; 63 remove=true, giữ 162 (152 trong đoạn giá).
+  Giữ nguyên 181 dòng/cờ cũ; 49 thông báo cũ đã có quyết định cụ thể. Bổ sung protocol/margin/quote assets và hồ sơ CFTC;
+  ngày letter/submission/recap được tách rõ. Hai draft thiếu corroboration riêng giữ ở JSON, không đưa CSV.
+  Status page xác nhận 25/10 là bảo trì theo lịch; API lịch sử và preview kênh API còn giới hạn. Không tuyên bố đầy đủ tuyệt đối.
+  Xem `coins/HYPE/data/second-pass-20261029.json`, `SOURCES.md`, danh sách review. Checks/ingestion cô lập đạt;
+  root data/music không đổi. **Chưa duyệt danh sách để render**, chưa video HYPE.
+
+
 - **HYPE data audit — 29/10/2026:** tạo bộ dữ liệu mới (trước đó chưa có HYPE ở commit `80d4f545`).
   TradingView `PYTH:HYPEUSD` là feed oracle USD: 694 nến ngày đã đóng 04/12/2024–28/10/2026, không thiếu ngày trong
   đoạn đã lưu, không ước tính. Còn thiếu **5 ngày 29/11–03/12/2024** từ genesis trong các mã TV đã thử; không nội suy.

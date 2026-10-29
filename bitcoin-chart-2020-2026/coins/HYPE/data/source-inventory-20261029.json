@@ -399,7 +399,7 @@
       "url": "https://t.me/hyperliquid_announcements/46",
       "contentSha256": "291b690b5f4a3ba34423336007c72419ad16f5c9240b81db1e38aac3441d6bf6",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2023-11-01",
@@ -746,7 +746,7 @@
       "url": "https://t.me/hyperliquid_announcements/85",
       "contentSha256": "9df255e517499abbdbd0e3565f24507dc58eca18ec4f4737344bcbb27655557c",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2023-12-19",
@@ -769,7 +769,7 @@
       "url": "https://t.me/hyperliquid_announcements/87",
       "contentSha256": "ed0584b36009f191da17772b1ce8f413b8b1b2dcc29aca4ff2cc5ac38f853664",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2023-12-21",
@@ -1206,7 +1206,7 @@
       "url": "https://t.me/hyperliquid_announcements/136",
       "contentSha256": "9239b2e46f054ae8d800cf939f7332844366dcca56fc3e245fa33ce980e3c7c8",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-02-21",
@@ -1634,7 +1634,7 @@
       "url": "https://t.me/hyperliquid_announcements/184",
       "contentSha256": "50b21c052518896de580ff3d0625d68dfad01f29331f147f93855003db0e9859",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-05-20",
@@ -1648,7 +1648,7 @@
       "url": "https://t.me/hyperliquid_announcements/185",
       "contentSha256": "87fddc2cc5fa9b1a1d58967859be28b2959620d3ab52df44f9b70d89c0dba9a4",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-05-24",
@@ -2058,7 +2058,7 @@
       "url": "https://t.me/hyperliquid_announcements/234",
       "contentSha256": "585dabdb829ad1550906de3b02dd222459c93e2d0e9c97c1b452b615adcf4108",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-10-01",
@@ -2081,7 +2081,7 @@
       "url": "https://t.me/hyperliquid_announcements/236",
       "contentSha256": "c9c3c64a519617adb235a8ce317efcf002f1401c65c98b5f760e71b78a42f739",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-10-03",
@@ -2104,7 +2104,7 @@
       "url": "https://t.me/hyperliquid_announcements/238",
       "contentSha256": "6caa740df591ef47aef4607d8189fce065e152954ef2b866099a8b204593fee4",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-10-07",
@@ -2289,7 +2289,7 @@
       "url": "https://t.me/hyperliquid_announcements/258",
       "contentSha256": "69985abc89aafbb6ef400d8ada13f97da9c03c73da09a6963046e1f18ebe0ae9",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-11-28",
@@ -2307,7 +2307,7 @@
       "url": "https://t.me/hyperliquid_announcements/259",
       "contentSha256": "5f7b16a6b5e7cff4e77bb4c8ecb2d31d97eb6f36ef1dbba64def4bcac8335e05",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -2388,7 +2388,7 @@
       "url": "https://t.me/hyperliquid_announcements/268",
       "contentSha256": "d2c88e2269b8b953b9b6229fe05a4bd6e9de651c44f461e22b279a4012b1508c",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -2469,7 +2469,7 @@
       "url": "https://t.me/hyperliquid_announcements/277",
       "contentSha256": "7cae8f176b4e32afa0e16801ff309c8b7fb345a564e672ada5c7c89b3adbab4d",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-12-23",
@@ -2483,7 +2483,7 @@
       "url": "https://t.me/hyperliquid_announcements/278",
       "contentSha256": "65f80f11d502bf0841cef6316113dbd9d22136aa4f7590098af3ebb026308983",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-12-26",
@@ -2550,8 +2550,8 @@
       "date": "2025-01-07T14:54:49+00:00",
       "url": "https://t.me/hyperliquid_announcements/285",
       "contentSha256": "a4dc302806c8e7c1b85f7259fee93dd4a189767db51954419b098596f134ccb8",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -2560,7 +2560,7 @@
       "url": "https://t.me/hyperliquid_announcements/286",
       "contentSha256": "fe1b3ddac0cc0a1640c61fac355ebda6d15f6c5b8f5089ec14c002067b82883e",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2024-12-30",
@@ -2573,9 +2573,14 @@
       "date": "2025-01-13T00:24:05+00:00",
       "url": "https://t.me/hyperliquid_announcements/287",
       "contentSha256": "a16157f5b73f51787fa62d70b68496cc2508db23e6521c2bf845846aae08084e",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-01-13",
+          "text": "ANIME rewards for HYPE stakers announced"
+        }
+      ]
     },
     {
       "id": 288,
@@ -2583,7 +2588,7 @@
       "url": "https://t.me/hyperliquid_announcements/288",
       "contentSha256": "5f70a84049a5dd8ad1a2e3498cccfde2e76554846be8497114e999f595d703a0",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-01-13",
@@ -2597,7 +2602,7 @@
       "url": "https://t.me/hyperliquid_announcements/289",
       "contentSha256": "69406e8aef797172202e05b8227c3a139cadfadfc68ff6e5867137a529c56a6f",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-01-14",
@@ -2610,8 +2615,8 @@
       "date": "2025-01-15T11:54:01+00:00",
       "url": "https://t.me/hyperliquid_announcements/290",
       "contentSha256": "f8308c18d1bd297b0da73a27e733c291c381d94ff2b44e9ae07c8b548b9ee5e8",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -2646,8 +2651,8 @@
       "date": "2025-01-18T13:42:37+00:00",
       "url": "https://t.me/hyperliquid_announcements/294",
       "contentSha256": "f10522d32d019675505af89cdd75a6b105e277e01cfe15681dcdc95d0d9f2af7",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -2656,7 +2661,7 @@
       "url": "https://t.me/hyperliquid_announcements/295",
       "contentSha256": "56c342f84a1f18f25fe639b4ac3f9e9e090378c9f6fe6a422c5c26d8894c9257",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-01-19",
@@ -2687,8 +2692,8 @@
       "date": "2025-01-20T08:44:46+00:00",
       "url": "https://t.me/hyperliquid_announcements/298",
       "contentSha256": "b8cb6a86f92ddd883dc468d07dc352f5ba1d54de06972918209bf29d18e6bc4f",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -2705,8 +2710,8 @@
       "date": "2025-01-21T15:32:29+00:00",
       "url": "https://t.me/hyperliquid_announcements/300",
       "contentSha256": "e088c75d0cc1e0da11eb306b773e07f6a9d41cc4ef0cc338b13109740b21ac37",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -2732,9 +2737,18 @@
       "date": "2025-01-26T15:50:26+00:00",
       "url": "https://t.me/hyperliquid_announcements/303",
       "contentSha256": "9390212f14817e684fe993086af8ca96462482ee82f41d6867dcb4714b6f5109",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-01-26",
+          "text": "OI-cap order validation improved"
+        },
+        {
+          "date": "2025-01-26",
+          "text": "Spot deployment fee sharing updated"
+        }
+      ]
     },
     {
       "id": 304,
@@ -2742,7 +2756,7 @@
       "url": "https://t.me/hyperliquid_announcements/304",
       "contentSha256": "c215234b25ba0e5bc7ad961e93cd937b8f731d51a38205f0fb5f622f73848007",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-01-27",
@@ -2774,7 +2788,7 @@
       "url": "https://t.me/hyperliquid_announcements/307",
       "contentSha256": "95bde17fbb67ecf4ed0e53484a842b74b2e1af604a7e52ae027dd3e08440dc00",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-02-05",
@@ -2806,7 +2820,7 @@
       "url": "https://t.me/hyperliquid_announcements/310",
       "contentSha256": "89d60a887cb90bf1aafc00db184ff4e18647e0be2e9bea782a3a741c8e283978",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-02-10",
@@ -2829,7 +2843,7 @@
       "url": "https://t.me/hyperliquid_announcements/312",
       "contentSha256": "125ea21fabce0ea116e895b42d038c079f67f238b0198a1aea02ae6b1bba9447",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-02-12",
@@ -2852,7 +2866,7 @@
       "url": "https://t.me/hyperliquid_announcements/314",
       "contentSha256": "fed184b1223afb2097bd8c1cffc45c02f6114df921abca73802c0749124ec3aa",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-02-14",
@@ -2875,7 +2889,7 @@
       "url": "https://t.me/hyperliquid_announcements/316",
       "contentSha256": "aa8afe6ebf3916bc572b3c5c48e524659bfdc3c5db406d1a5b3700a11dc864fc",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-02-18",
@@ -2889,7 +2903,7 @@
       "url": "https://t.me/hyperliquid_announcements/317",
       "contentSha256": "6f13a0678b6e20a199e339c6cee5ded375f2c9b34d3d6cfacc58072c6631ab36",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -2907,7 +2921,7 @@
       "url": "https://t.me/hyperliquid_announcements/319",
       "contentSha256": "0bbd834bc9bfe2631f155e62a8e9a0fe91ac4c7ba4434913432d1b26446ed80f",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-04",
@@ -2920,9 +2934,14 @@
       "date": "2025-03-04T11:11:29+00:00",
       "url": "https://t.me/hyperliquid_announcements/320",
       "contentSha256": "8e6108c7a21b7c0d595e07a0e82e93faaa8cf31b551e055ed35489f779e9ba5a",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-03-04",
+          "text": "Official announcements page added"
+        }
+      ]
     },
     {
       "id": 321,
@@ -2930,7 +2949,7 @@
       "url": "https://t.me/hyperliquid_announcements/321",
       "contentSha256": "56cd9b775eec3ef097b92da84d72c66ae56d8c14e767a4e62f079bc55c928b32",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-06",
@@ -2944,7 +2963,7 @@
       "url": "https://t.me/hyperliquid_announcements/322",
       "contentSha256": "1cda1a03cd00111eda9a0af6e752d3eb991ce6837a0ecaaf11a6f003ae928253",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-07",
@@ -2958,7 +2977,7 @@
       "url": "https://t.me/hyperliquid_announcements/323",
       "contentSha256": "a2b5614cb3297fbd7ecebf40dbb6de3b7d12ba989170d4a8de0f0cb86044e40d",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-12",
@@ -2972,7 +2991,7 @@
       "url": "https://t.me/hyperliquid_announcements/324",
       "contentSha256": "dfd51492f9fd3293a5d15c8405dd75929013503b1d2458707098c43c6f45ba56",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-12",
@@ -2986,7 +3005,7 @@
       "url": "https://t.me/hyperliquid_announcements/325",
       "contentSha256": "9751d049ed4db18bb430a246dec5fb8c40a9d3c7eed9457cca8c48c10f742c2b",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-13",
@@ -3000,7 +3019,7 @@
       "url": "https://t.me/hyperliquid_announcements/326",
       "contentSha256": "b903d19b0b1184000325043f7a3da33b9a7638eb55f470ed2af8bb54a6675138",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-14",
@@ -3013,8 +3032,8 @@
       "date": "2025-03-17T03:43:31+00:00",
       "url": "https://t.me/hyperliquid_announcements/327",
       "contentSha256": "9ebd4a45926662f41ebaac412214dd89c7e5116433755c15f57ccf3a7e72a130",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -3022,8 +3041,8 @@
       "date": "2025-03-18T03:16:48+00:00",
       "url": "https://t.me/hyperliquid_announcements/328",
       "contentSha256": "56877d146fcec6f7bb6cadea417bcdf0bed787b81edb0f393c79e3a87adf7e4f",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "status": "deferred_specific_feature_evidence",
+      "reason": "Dated primary notice retained in second-pass deferredDrafts; generic current docs do not independently establish the specific historical feature.",
       "targets": []
     },
     {
@@ -3032,7 +3051,7 @@
       "url": "https://t.me/hyperliquid_announcements/329",
       "contentSha256": "eb8093e6a97ad4278e9cf4554891645321fe0fc06531e59dbd3fc730351a5264",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-19",
@@ -3055,7 +3074,7 @@
       "url": "https://t.me/hyperliquid_announcements/331",
       "contentSha256": "daef6a41d73e56876b31420047930fcd49c781c7d8db0bb975911eba14f3da44",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-25",
@@ -3069,7 +3088,7 @@
       "url": "https://t.me/hyperliquid_announcements/332",
       "contentSha256": "1581ecf8ee906d2891ae7d27b90b89d12bd93c55503daacfe23d0d70ca20532e",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-26",
@@ -3083,7 +3102,7 @@
       "url": "https://t.me/hyperliquid_announcements/333",
       "contentSha256": "6d8e2d2f2aa149a1b94de9d72839e05e8728dba36081bad21404a625af55c841",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-27",
@@ -3097,7 +3116,7 @@
       "url": "https://t.me/hyperliquid_announcements/334",
       "contentSha256": "8704e392bc261f8ecda8a9763fbe832e30fca7dd8cd8dc08390470ad7b03b74c",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-27",
@@ -3111,7 +3130,7 @@
       "url": "https://t.me/hyperliquid_announcements/335",
       "contentSha256": "fc5b0ea1e6930cbb7265da929833247a3434dbf7597116c946e1108fad35d617",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-28",
@@ -3125,7 +3144,7 @@
       "url": "https://t.me/hyperliquid_announcements/336",
       "contentSha256": "9855c2ecdfd2d59d4d519a726835028e2dcce73229a47ebe7f84eaa924658e1e",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-03-29",
@@ -3139,7 +3158,7 @@
       "url": "https://t.me/hyperliquid_announcements/337",
       "contentSha256": "f3b87c28112fe2064e56dfe9ab21457704accb50f2a1d12d0451c85871878934",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -3147,8 +3166,8 @@
       "date": "2025-04-04T08:19:08+00:00",
       "url": "https://t.me/hyperliquid_announcements/338",
       "contentSha256": "aea4a0f066f9e2a75f57449f6d7e6d925a41871cfa179c02ac1288e0d645a2c7",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3156,8 +3175,8 @@
       "date": "2025-04-04T15:32:36+00:00",
       "url": "https://t.me/hyperliquid_announcements/339",
       "contentSha256": "28aa8aba5f3429cd9e11b294387f4639abd02a5d3c53957ea76feaea9bde70d7",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3174,8 +3193,8 @@
       "date": "2025-04-10T08:11:01+00:00",
       "url": "https://t.me/hyperliquid_announcements/341",
       "contentSha256": "650ef9b3a26bccb7b4feb5a578b31f35001a69caa904bcc036eec4bd6f6b07ec",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3183,8 +3202,8 @@
       "date": "2025-04-11T13:56:47+00:00",
       "url": "https://t.me/hyperliquid_announcements/342",
       "contentSha256": "ba8795097a742ae6feff84832fd60f344633b1844c4cc0cad97e43285c2d0157",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3220,7 +3239,7 @@
       "url": "https://t.me/hyperliquid_announcements/346",
       "contentSha256": "3026efb1909900b7e474509d59ee22a72ffd07250f40172cfef2dfa2b56c1459",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -3229,7 +3248,7 @@
       "url": "https://t.me/hyperliquid_announcements/347",
       "contentSha256": "badb72f220ddc53886e904f97434fc6a48fa134344f0d7b22b3d3599f57955f8",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-04-21",
@@ -3270,7 +3289,7 @@
       "url": "https://t.me/hyperliquid_announcements/351",
       "contentSha256": "9c6fb6c414734bfc42b7f0fece4950b4c702197349ad33ac8e5f04246d7cd123",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-05",
@@ -3283,9 +3302,14 @@
       "date": "2025-04-30T10:58:17+00:00",
       "url": "https://t.me/hyperliquid_announcements/352",
       "contentSha256": "0ef1214ec4b52eebf4e722beaaeb846498fbbb92c5e8b2bb8abb9825df29ddeb",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-04-30",
+          "text": "HyperCore read precompiles live by update"
+        }
+      ]
     },
     {
       "id": 353,
@@ -3293,7 +3317,7 @@
       "url": "https://t.me/hyperliquid_announcements/353",
       "contentSha256": "551adbb3a9750dca7dbc91d0bf6e2bdaef20fdb6327f647648ba00fa1e28020f",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-01",
@@ -3307,7 +3331,7 @@
       "url": "https://t.me/hyperliquid_announcements/354",
       "contentSha256": "2b672682a759af5bcb700480524b7b7c76fd92346b9a7a85f6652b37fb16c15c",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-01",
@@ -3321,7 +3345,7 @@
       "url": "https://t.me/hyperliquid_announcements/355",
       "contentSha256": "1096d42fb2fd1300408fe13ea9e82646f8d78d33cb9f7dd6c04a82ae7d1203ef",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-04",
@@ -3353,7 +3377,7 @@
       "url": "https://t.me/hyperliquid_announcements/358",
       "contentSha256": "567e0ceaa95643a7d8369ec790e5eb7560394087609ad2b59edb7347ea958959",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-09",
@@ -3376,7 +3400,7 @@
       "url": "https://t.me/hyperliquid_announcements/360",
       "contentSha256": "71148b8291852a75b2906222b66843462809addee9ba226b6b05ab1b63e28b21",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -3394,7 +3418,7 @@
       "url": "https://t.me/hyperliquid_announcements/362",
       "contentSha256": "73bf28452bf804433add3dbd715cf24857a8c25e29d5b4d675cc47205c01f94e",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-13",
@@ -3408,7 +3432,7 @@
       "url": "https://t.me/hyperliquid_announcements/363",
       "contentSha256": "1dcdd4dc6f559642b38e0f76f1671c88e901ae8eca66ecc457c13af776caff46",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-13",
@@ -3430,8 +3454,8 @@
       "date": "2025-05-15T07:55:45+00:00",
       "url": "https://t.me/hyperliquid_announcements/365",
       "contentSha256": "4e5ea7afcd87a39e0c0f9d34cf0b0e162edf590d1817a827f8b856ea21d5484d",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -3449,7 +3473,7 @@
       "url": "https://t.me/hyperliquid_announcements/367",
       "contentSha256": "31f62cc7991ee64ac652144a2590d8530cb66bf884bb0fd7dd064abbebc62324",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-22",
@@ -3462,9 +3486,14 @@
       "date": "2025-05-21T06:41:30+00:00",
       "url": "https://t.me/hyperliquid_announcements/368",
       "contentSha256": "24142864049806c7a65085645fde8105ca9dfaa6e6686a786bc3c07af48cd6a6",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-05-21",
+          "text": "Rabby-DeBank support confirmed"
+        }
+      ]
     },
     {
       "id": 369,
@@ -3490,7 +3519,7 @@
       "url": "https://t.me/hyperliquid_announcements/371",
       "contentSha256": "716e553803f40ceefc3ec23b7e177196242571b4a78d52d1500d7713f507cf26",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-22",
@@ -3503,9 +3532,18 @@
       "date": "2025-05-23T05:35:13+00:00",
       "url": "https://t.me/hyperliquid_announcements/372",
       "contentSha256": "1258d0d7ad7cf479d94e112b0660875a5e1024c4a89b49939a44d146bdfd97c1",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-05-22",
+          "text": "Labs files CFTC perpetuals comments"
+        },
+        {
+          "date": "2025-05-23",
+          "text": "Labs CFTC letters announced"
+        }
+      ]
     },
     {
       "id": 373,
@@ -3513,7 +3551,7 @@
       "url": "https://t.me/hyperliquid_announcements/373",
       "contentSha256": "1d7d38d13ee57176d956dc51a5ccf3bdf65246e05da881a00d29f0747c130deb",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-24",
@@ -3527,7 +3565,7 @@
       "url": "https://t.me/hyperliquid_announcements/374",
       "contentSha256": "bff22d2343c4dd40fdb9e708886d687f5b2bdf6b6793aee67516b89bde9ddc8f",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-25",
@@ -3541,7 +3579,7 @@
       "url": "https://t.me/hyperliquid_announcements/375",
       "contentSha256": "a3f54f51d293b36741d6b442900cbb6a97e4e36c6cf43135bfb77e505f6cf7de",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-26",
@@ -3564,7 +3602,7 @@
       "url": "https://t.me/hyperliquid_announcements/377",
       "contentSha256": "69fde88a95c7cd8f22e977cb13956737edcf8a3d2e0502f4a8c60a906d04cac4",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-26",
@@ -3578,11 +3616,15 @@
       "url": "https://t.me/hyperliquid_announcements/378",
       "contentSha256": "0c8d1279a977d7cbcf883cec675ef5a6e770ed63e48404c0743c418ac3e3402c",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-05-26",
           "text": "HYPE auction fees live by update"
+        },
+        {
+          "date": "2025-05-26",
+          "text": "Margin transfer requirement reduced"
         }
       ]
     },
@@ -3601,7 +3643,7 @@
       "url": "https://t.me/hyperliquid_announcements/380",
       "contentSha256": "3372dfee2cf47569802f9aba4ac27e0cc32f686fb983761af9235fe876687c25",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-06-02",
@@ -3624,7 +3666,7 @@
       "url": "https://t.me/hyperliquid_announcements/382",
       "contentSha256": "52a2a992b981d8a97bdf08220d4106d8fc323601c3d89a04a747d1fa92551d29",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-06-10",
@@ -3638,11 +3680,19 @@
       "url": "https://t.me/hyperliquid_announcements/383",
       "contentSha256": "25d097a4ab176622a88de5491ad922368f504d6426031f613c436875964a2a79",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-06-25",
           "text": "CoreWriter enters final testing"
+        },
+        {
+          "date": "2025-06-25",
+          "text": "Local node HTTP API available by update"
+        },
+        {
+          "date": "2025-06-25",
+          "text": "Post-only priority change announced"
         }
       ]
     },
@@ -3661,7 +3711,7 @@
       "url": "https://t.me/hyperliquid_announcements/385",
       "contentSha256": "05a253d0eb364f32bb06528a61e51d44b62f5326c3efa8519ab034b619ac5de4",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-01",
@@ -3675,7 +3725,7 @@
       "url": "https://t.me/hyperliquid_announcements/386",
       "contentSha256": "68f0241c090291ed3302a5a9cb0e27f5127d6d76fb8129b55bef4978dcc502f8",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-02",
@@ -3689,7 +3739,7 @@
       "url": "https://t.me/hyperliquid_announcements/387",
       "contentSha256": "d380c8901dbf40cc2ea462a9b83816736e4ca608ddb6781af479d1e48fcc1c52",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-03",
@@ -3703,7 +3753,7 @@
       "url": "https://t.me/hyperliquid_announcements/388",
       "contentSha256": "1ad61ae1c36165d338b2531027df1786a5b2fc703495d02fc448ed3036761e73",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-07",
@@ -3717,7 +3767,7 @@
       "url": "https://t.me/hyperliquid_announcements/389",
       "contentSha256": "09254a6daa191b03530444b3df17299095f444541e7cd9fdf8240524a6a1f679",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-08",
@@ -3731,7 +3781,7 @@
       "url": "https://t.me/hyperliquid_announcements/390",
       "contentSha256": "4d53d179250be0277bc8a3b6fb314aa7f3784f0871ba75efa5f4d92781a8f27f",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-09",
@@ -3744,8 +3794,8 @@
       "date": "2025-07-10T03:39:05+00:00",
       "url": "https://t.me/hyperliquid_announcements/391",
       "contentSha256": "b6776c8750ed89e37726da6512d51e0c263a8bfe5f80761803869afe75ce2fce",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3762,8 +3812,8 @@
       "date": "2025-07-13T15:19:42+00:00",
       "url": "https://t.me/hyperliquid_announcements/393",
       "contentSha256": "6d3e4723ecadfb8719512dd857f307a9896d88edc405072b285c2dd2628f2694",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "metrics_not_independently_reconstructed",
+      "reason": "Venue rolling open-interest/volume claim; not independently reconstructed from chain history or labelled a HYPE price ATH.",
       "targets": []
     },
     {
@@ -3780,8 +3830,8 @@
       "date": "2025-07-14T17:58:50+00:00",
       "url": "https://t.me/hyperliquid_announcements/397",
       "contentSha256": "d53c9f81e7c3565a9052c828bb7f3c701a4b6588d360fb0e4f146100951b157c",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3790,7 +3840,7 @@
       "url": "https://t.me/hyperliquid_announcements/398",
       "contentSha256": "720f5d0a0be1d5a5f26509987dae15ddb958a9796e8e73b501809b307767afbe",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-15",
@@ -3812,9 +3862,14 @@
       "date": "2025-07-16T06:00:21+00:00",
       "url": "https://t.me/hyperliquid_announcements/400",
       "contentSha256": "b190f1d04d6ca6b8f4e23d7345a314fc58a1f4c1e637939d0dc2d8b77af89c5e",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-07-16",
+          "text": "Generalized asset-transfer API tested"
+        }
+      ]
     },
     {
       "id": 402,
@@ -3831,7 +3886,7 @@
       "url": "https://t.me/hyperliquid_announcements/403",
       "contentSha256": "ff93f5d038e99067943404e52e148e90a55642ecf4786dc2f6f6ba9bde7e0d31",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-21",
@@ -3853,8 +3908,8 @@
       "date": "2025-07-24T15:10:34+00:00",
       "url": "https://t.me/hyperliquid_announcements/405",
       "contentSha256": "4c9c524c3f2483f67d8b4299d5ae720b62a01234a995f138c5d8d25bc040857d",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3863,7 +3918,7 @@
       "url": "https://t.me/hyperliquid_announcements/406",
       "contentSha256": "1d417c55b92d2fbe631349684851aa043b87bba5d8d307e721dbbbb10de64a4c",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-29",
@@ -3876,8 +3931,8 @@
       "date": "2025-07-30T14:11:00+00:00",
       "url": "https://t.me/hyperliquid_announcements/407",
       "contentSha256": "66003e56b812c15ec867e161dd019ae344cc778b6448965f79c90b2322f0ab81",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3886,7 +3941,7 @@
       "url": "https://t.me/hyperliquid_announcements/408",
       "contentSha256": "a61b59a359aa92ddb93e126c538703df9ac3186715cd31d892329e2dacbe1275",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-07-31",
@@ -3899,8 +3954,8 @@
       "date": "2025-08-01T05:27:59+00:00",
       "url": "https://t.me/hyperliquid_announcements/409",
       "contentSha256": "cb1661feb1c63c33df894b01228dbfa7dbfcd035e7423b5c48a61ed6835fef3f",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3909,7 +3964,7 @@
       "url": "https://t.me/hyperliquid_announcements/410",
       "contentSha256": "839662d645440067b7c9b104c2618669129cb73b40115e5e64d41f56e47c1172",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-08-04",
@@ -3922,9 +3977,14 @@
       "date": "2025-08-05T09:15:38+00:00",
       "url": "https://t.me/hyperliquid_announcements/411",
       "contentSha256": "ac12fd1e210ac6db3918a848553eed1701e0b24c999459739378263ba7b2037e",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-08-05",
+          "text": "Foundation data node available by update"
+        }
+      ]
     },
     {
       "id": 412,
@@ -3950,7 +4010,7 @@
       "url": "https://t.me/hyperliquid_announcements/414",
       "contentSha256": "a9a313276ccdaf332f3afea97ec9ddc083ec715568b3ccd1096acd37ba7854d6",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -3959,7 +4019,7 @@
       "url": "https://t.me/hyperliquid_announcements/415",
       "contentSha256": "716bbee241749e06bdc76756d575027b6db9dadf92be412955430a5fbc04df76",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-08-18",
@@ -3981,8 +4041,8 @@
       "date": "2025-08-22T09:21:19+00:00",
       "url": "https://t.me/hyperliquid_announcements/417",
       "contentSha256": "9c4126d51773dead127dcbdd29be8d4b8e27c8648914ca84c763ad09e6bc2212",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3990,8 +4050,8 @@
       "date": "2025-08-23T10:33:53+00:00",
       "url": "https://t.me/hyperliquid_announcements/418",
       "contentSha256": "c0439ba6137900fbef025967f58263787c1c6224582da355f2330a31160ab07c",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -3999,8 +4059,8 @@
       "date": "2025-08-25T07:05:52+00:00",
       "url": "https://t.me/hyperliquid_announcements/419",
       "contentSha256": "7043e04dd2aef000eed7da25dc9fbce3ffa3f32c82160fc48f8d9fdf2b1e5d3a",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "metrics_not_independently_reconstructed",
+      "reason": "Venue rolling open-interest/volume claim; not independently reconstructed from chain history or labelled a HYPE price ATH.",
       "targets": []
     },
     {
@@ -4009,7 +4069,7 @@
       "url": "https://t.me/hyperliquid_announcements/420",
       "contentSha256": "3e8064256d6545a052cae64d05423fe86b0df7deeb2fd7d0a53009fb97fa5101",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-08-26",
@@ -4023,7 +4083,7 @@
       "url": "https://t.me/hyperliquid_announcements/421",
       "contentSha256": "5ec1d53de3848697350417f10da7243bd56270048de85f4149611a3c40e9633a",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-08-27",
@@ -4037,7 +4097,7 @@
       "url": "https://t.me/hyperliquid_announcements/422",
       "contentSha256": "1b7882248a8ffaba7bc14c247f7c02c234834fa77640d1a02891e8e3511021f5",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-08-27",
@@ -4050,17 +4110,22 @@
       "date": "2025-08-31T08:40:43+00:00",
       "url": "https://t.me/hyperliquid_announcements/423",
       "contentSha256": "1316d17d3f787961e92b4cd94cc5d58a6edf609d927011c09147e766b37cd921",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-08-31",
+          "text": "Validator set reaches 24 by update"
+        }
+      ]
     },
     {
       "id": 424,
       "date": "2025-09-01T09:33:21+00:00",
       "url": "https://t.me/hyperliquid_announcements/424",
       "contentSha256": "4c6bdcddeed2e88615b3482077cd00523b0cd4503c755c963f62a8318f86defc",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4077,8 +4142,8 @@
       "date": "2025-09-02T05:36:40+00:00",
       "url": "https://t.me/hyperliquid_announcements/426",
       "contentSha256": "47b327293a0cdfe8d3ff74b13e1bd7950c261e68ace2309d82c097b567d49f16",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4087,7 +4152,7 @@
       "url": "https://t.me/hyperliquid_announcements/427",
       "contentSha256": "ba7ebed1017cac0b9db49934ebdac4dcebebd11d7f03df4a6742edddfd25372f",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-09-05",
@@ -4100,9 +4165,18 @@
       "date": "2025-09-09T11:21:23+00:00",
       "url": "https://t.me/hyperliquid_announcements/428",
       "contentSha256": "c149f488c89fc24ee154724fab7307f806ac7e239388a93354ff42eb5e19ced2",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-09-09",
+          "text": "Quote-asset spot fee reductions live"
+        },
+        {
+          "date": "2025-09-09",
+          "text": "Referral claims span quote assets"
+        }
+      ]
     },
     {
       "id": 429,
@@ -4110,7 +4184,7 @@
       "url": "https://t.me/hyperliquid_announcements/429",
       "contentSha256": "1b7e4ee7e79254c5ba556c0fa0d4241527d954be2536df75ecc8991a8bc821da",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-09-10",
@@ -4142,8 +4216,12 @@
       "url": "https://t.me/hyperliquid_announcements/432",
       "contentSha256": "29b443b61f6a33aa0cb6ec3ec3b9d52cfac96238196058831de57272b67966c9",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
+        {
+          "date": "2025-09-17",
+          "text": "HIP-3 quote-collateral support proposed"
+        },
         {
           "date": "2025-09-17",
           "text": "Native Markets wins USDH ticker"
@@ -4165,7 +4243,7 @@
       "url": "https://t.me/hyperliquid_announcements/434",
       "contentSha256": "d2e28aa37cbc83fc38d558bcb8dc2476e820026dd1674640bae5b3e1baae5da7",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-09-19",
@@ -4205,8 +4283,8 @@
       "date": "2025-09-22T14:40:02+00:00",
       "url": "https://t.me/hyperliquid_announcements/438",
       "contentSha256": "666f9d79b7abf1e4d3f38cdd39970110bfca8d69400748002fc69ba60dde6632",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -4214,8 +4292,8 @@
       "date": "2025-09-23T16:32:33+00:00",
       "url": "https://t.me/hyperliquid_announcements/439",
       "contentSha256": "4c52fd9fa756e839d02e3bf9aa83d05abb7b56a6e258737b0d2d58ed8d790bda",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4233,7 +4311,7 @@
       "url": "https://t.me/hyperliquid_announcements/441",
       "contentSha256": "00661f745420921050aadad65f9694f90d2cbac979cc4e34fb64f41c8220ba86",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-09-25",
@@ -4247,7 +4325,7 @@
       "url": "https://t.me/hyperliquid_announcements/442",
       "contentSha256": "99dd1088eabf92690cf6881ee783140d85ecaaf12e7176bb68bf509cfcc98749",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-09-25",
@@ -4260,8 +4338,8 @@
       "date": "2025-09-25T13:07:48+00:00",
       "url": "https://t.me/hyperliquid_announcements/443",
       "contentSha256": "b5c94ac9fc6e620c9eaf7baa6b0873b0b60b08676661401a6035eb5976a9350a",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4287,9 +4365,18 @@
       "date": "2025-09-28T10:29:31+00:00",
       "url": "https://t.me/hyperliquid_announcements/446",
       "contentSha256": "2248fded0b58c530b62f044779f2e628170c86bca11e8a4de5566e8a6bdef42b",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-09-28",
+          "text": "HYPE-USDH spot pair available by update"
+        },
+        {
+          "date": "2025-09-28",
+          "text": "Permissionless quote assets live by update"
+        }
+      ]
     },
     {
       "id": 447,
@@ -4297,7 +4384,7 @@
       "url": "https://t.me/hyperliquid_announcements/447",
       "contentSha256": "8c3c4e451f695f7f32f3d441178e1a49fe18b2e986d641c62f2a7593a8b8087d",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-09-28",
@@ -4310,8 +4397,8 @@
       "date": "2025-10-01T08:27:58+00:00",
       "url": "https://t.me/hyperliquid_announcements/448",
       "contentSha256": "b1d33e28730501c35e39095c623abb2d63c5cb853f40c84fc6e89f363a82f0ea",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -4319,8 +4406,8 @@
       "date": "2025-10-02T13:03:31+00:00",
       "url": "https://t.me/hyperliquid_announcements/449",
       "contentSha256": "6e75d504e132a6b986765a6317cdb037715da4d1773b881fc00f5862d934f146",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4347,7 +4434,7 @@
       "url": "https://t.me/hyperliquid_announcements/452",
       "contentSha256": "400b06d6ec9768c069e3bee457522c51e22a4b7709e5db108e06ca96b03e2038",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-10-06",
@@ -4361,7 +4448,7 @@
       "url": "https://t.me/hyperliquid_announcements/453",
       "contentSha256": "7340232e855a54d16bc70c0e7ff512eca1985afb1ad47ff1b10a032458b646e3",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-10-06",
@@ -4375,7 +4462,7 @@
       "url": "https://t.me/hyperliquid_announcements/454",
       "contentSha256": "1c84a24461eae54e47cd34052ed87d44d3850f33ca5be7d14f762db5d15acdee",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-10-06",
@@ -4389,7 +4476,7 @@
       "url": "https://t.me/hyperliquid_announcements/455",
       "contentSha256": "6135a09fcbbe69b16d459372d9f398bc6a16ce016d1913efe62a3b0f39524cca",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-10-06",
@@ -4402,17 +4489,22 @@
       "date": "2025-10-06T08:12:26+00:00",
       "url": "https://t.me/hyperliquid_announcements/456",
       "contentSha256": "e0dbdcca9c1e2da6ebdb9cd303874e219728e3dacfb1fa0557bda257091a8ded",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-10-06",
+          "text": "Aligned quote assets on testnet"
+        }
+      ]
     },
     {
       "id": 457,
       "date": "2025-10-08T04:35:04+00:00",
       "url": "https://t.me/hyperliquid_announcements/457",
       "contentSha256": "6eb6f27640282197bbbf395977be7c6c79ddf4b9af0474cd473491334564cf81",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4421,7 +4513,7 @@
       "url": "https://t.me/hyperliquid_announcements/458",
       "contentSha256": "61cd653d058e84351eca30ab9da131e514902202a1326e05855e600e50f7927a",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-10-08",
@@ -4434,8 +4526,8 @@
       "date": "2025-10-10T11:00:25+00:00",
       "url": "https://t.me/hyperliquid_announcements/459",
       "contentSha256": "f0dc5e3ebd0ca13e9aa22379d3181275f5135ca80e78fe08cfc59952f0b2e628",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4444,7 +4536,7 @@
       "url": "https://t.me/hyperliquid_announcements/460",
       "contentSha256": "363a817080fbf4cf7643a822c219f3ef28c9d81370f1da6bda5bf023fc7d2fd7",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-10-10",
@@ -4458,7 +4550,7 @@
       "url": "https://t.me/hyperliquid_announcements/461",
       "contentSha256": "0721254461990fc3a2072983c8f37f521502ca57ea445c59158a47e5183610ec",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-10-13",
@@ -4472,7 +4564,7 @@
       "url": "https://t.me/hyperliquid_announcements/462",
       "contentSha256": "81c7af29305a408aea5b53b50c1c0009e07dd438469ffa32f01f1cf4b8cfdac1",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-10-15",
@@ -4485,8 +4577,8 @@
       "date": "2025-10-15T12:28:57+00:00",
       "url": "https://t.me/hyperliquid_announcements/463",
       "contentSha256": "651a6e413375714ad781f8325bd52829c68c853889fb3897904caae1b47bb7f8",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4494,17 +4586,22 @@
       "date": "2025-10-20T11:46:33+00:00",
       "url": "https://t.me/hyperliquid_announcements/464",
       "contentSha256": "8b3709c09f0da9a9a4219449a9f30d82ac2a329e806b2898249c80c6b425abea",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-10-20",
+          "text": "DEX abstraction added by update"
+        }
+      ]
     },
     {
       "id": 465,
       "date": "2025-10-22T15:33:55+00:00",
       "url": "https://t.me/hyperliquid_announcements/465",
       "contentSha256": "d65f48046e9686198cea059d2755aeb410c725b9d08af6ece316077b8efea74d",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4531,7 +4628,7 @@
       "url": "https://t.me/hyperliquid_announcements/468",
       "contentSha256": "2a8d8b8b6c1a4aa0115c88e28d2432aea63f95ff820829f11d2097da7f370961",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-10-24",
@@ -4544,17 +4641,22 @@
       "date": "2025-10-29T11:25:49+00:00",
       "url": "https://t.me/hyperliquid_announcements/469",
       "contentSha256": "96ea76f7872e9b661e3543651cd811d18abd851f43c4c171e3901c901958adef",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-10-29",
+          "text": "HIP-3 frontend access live by update"
+        }
+      ]
     },
     {
       "id": 470,
       "date": "2025-10-31T12:08:57+00:00",
       "url": "https://t.me/hyperliquid_announcements/470",
       "contentSha256": "7b42a634c42ed9490242238a3acc2b5a1ebf908a2fef31c173e8734fc496aa42",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4563,7 +4665,7 @@
       "url": "https://t.me/hyperliquid_announcements/471",
       "contentSha256": "e30f4f591c4031e7103c2ee320e880e15a10dab64b788911c2cadde61b14039a",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-11-02",
@@ -4585,9 +4687,18 @@
       "date": "2025-11-06T16:11:05+00:00",
       "url": "https://t.me/hyperliquid_announcements/473",
       "contentSha256": "6f8ddfa93d74f18712ca1e83e71e00cf82f4926ef385d799a0e73827e1bec34c",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-11-06",
+          "text": "HIP-3 sub-deployers supported"
+        },
+        {
+          "date": "2025-11-06",
+          "text": "HyperEVM gas capacity increased"
+        }
+      ]
     },
     {
       "id": 474,
@@ -4622,7 +4733,7 @@
       "url": "https://t.me/hyperliquid_announcements/477",
       "contentSha256": "c5f51b3c137021a90e40d9670edbf21d265153f3fb7dc324f21c99fee907810e",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-11-12",
@@ -4635,8 +4746,8 @@
       "date": "2025-11-14T16:47:32+00:00",
       "url": "https://t.me/hyperliquid_announcements/478",
       "contentSha256": "9dc4c592ef4b1eef622f70b9ea6ea9ed333120876ba46679d19ecef49547eea6",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4644,9 +4755,14 @@
       "date": "2025-11-15T08:24:27+00:00",
       "url": "https://t.me/hyperliquid_announcements/479",
       "contentSha256": "85f05e7849baac79f3720aec31312c6bade34c07d1747565a31d228689abcc33",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-11-15",
+          "text": "HIP-3 margin settings tested"
+        }
+      ]
     },
     {
       "id": 480,
@@ -4654,7 +4770,7 @@
       "url": "https://t.me/hyperliquid_announcements/480",
       "contentSha256": "6481eebcba321f262802438399bfb1cc56e6209468c155e000397a2c01a1fe9b",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-11-19",
@@ -4667,17 +4783,30 @@
       "date": "2025-11-24T06:04:57+00:00",
       "url": "https://t.me/hyperliquid_announcements/481",
       "contentSha256": "87ab89b4e761a8fbcd272192448515c18171b2a27d9e25fbcd672446e7f346a1",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-11-24",
+          "text": "Aligned quote assets live by update"
+        },
+        {
+          "date": "2025-11-24",
+          "text": "HIP-3 growth mode live by update"
+        },
+        {
+          "date": "2025-11-24",
+          "text": "Legacy spot deployer fee share enabled"
+        }
+      ]
     },
     {
       "id": 482,
       "date": "2025-11-24T14:02:16+00:00",
       "url": "https://t.me/hyperliquid_announcements/482",
       "contentSha256": "566d8e2ca7e31cf008ed982748511660f5f64e84d711968c6bc1d734cc648fb1",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4694,9 +4823,14 @@
       "date": "2025-12-01T14:00:14+00:00",
       "url": "https://t.me/hyperliquid_announcements/484",
       "contentSha256": "dbb229705dc92ab0d95ba3cd6cddb6d7b5453e4cc162dd2580cc0e5fe275167e",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-12-01",
+          "text": "USDC Core-EVM linking on testnet"
+        }
+      ]
     },
     {
       "id": 485,
@@ -4704,7 +4838,7 @@
       "url": "https://t.me/hyperliquid_announcements/485",
       "contentSha256": "9cb1aa5f6831d7208ce1b7029314530bd64c150ac9eb95cc79b9f10ac27337fe",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-12-07",
@@ -4726,8 +4860,8 @@
       "date": "2025-12-11T02:53:14+00:00",
       "url": "https://t.me/hyperliquid_announcements/487",
       "contentSha256": "d6bf225a5d8e69791f9ba0788d09a2bd26051a9a4e58400d7486ff69e2d3ac2b",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4736,7 +4870,7 @@
       "url": "https://t.me/hyperliquid_announcements/488",
       "contentSha256": "a36790b75ffb9414c529acfd9fa494743a6ad2ebac13df817dedd442071cd107",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -4745,7 +4879,7 @@
       "url": "https://t.me/hyperliquid_announcements/489",
       "contentSha256": "c2d21e11f2bdc28e824f5b6609658e6874d6aec567d2fdb0821269ad023f8e61",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-12-12",
@@ -4759,7 +4893,7 @@
       "url": "https://t.me/hyperliquid_announcements/490",
       "contentSha256": "ab88bb5ccace9eb6347d453410301ed5d0dc60dcbfc05df76be67ced5c05d098",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-12-17",
@@ -4773,7 +4907,7 @@
       "url": "https://t.me/hyperliquid_announcements/491",
       "contentSha256": "091dac3aac3db1c45fee1abe295abc2a734afb41b25465e9306bda0dffc3e8a2",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-12-22",
@@ -4786,8 +4920,8 @@
       "date": "2025-12-22T15:50:35+00:00",
       "url": "https://t.me/hyperliquid_announcements/492",
       "contentSha256": "ca7f91197439e8ea61bd9b33668b244663c8f241f6edacd82d38a6f56a4966a7",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -4796,7 +4930,7 @@
       "url": "https://t.me/hyperliquid_announcements/493",
       "contentSha256": "6971c03856820585e4c787ab91b8d953d9febe2d913b32b8e9b45ead6ea9a847",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -4805,7 +4939,7 @@
       "url": "https://t.me/hyperliquid_announcements/494",
       "contentSha256": "0a3d17950e0306a8adc977580509025310acdf21e9329662ae7fc21f291d9fa0",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2025-12-23",
@@ -4818,8 +4952,8 @@
       "date": "2025-12-24T08:48:31+00:00",
       "url": "https://t.me/hyperliquid_announcements/495",
       "contentSha256": "13caf86d39cee2253e54fe7fc1fc991f486950df5d6489213f0c21318e98350b",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -4836,17 +4970,26 @@
       "date": "2026-01-04T08:16:28+00:00",
       "url": "https://t.me/hyperliquid_announcements/497",
       "contentSha256": "bad7a56c1ce19f73059ed94ed6adeb57f3dcf75ec6d7c37c24eaa0d9dadbe576",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2025-12-24",
+          "text": "Assistance Fund burn vote passes"
+        },
+        {
+          "date": "2026-01-04",
+          "text": "HyperEVM read gas costs reduced"
+        }
+      ]
     },
     {
       "id": 498,
       "date": "2026-01-06T08:50:27+00:00",
       "url": "https://t.me/hyperliquid_announcements/498",
       "contentSha256": "02151497266744cfd0edc615f1e1985a30039cfb4032c978e90a140ce959b342",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -4855,7 +4998,7 @@
       "url": "https://t.me/hyperliquid_announcements/499",
       "contentSha256": "1c1e9440d050519c5114e624d4a86bd75de3ae33c111bb456a955aaf5c7cd570",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -4891,11 +5034,15 @@
       "url": "https://t.me/hyperliquid_announcements/503",
       "contentSha256": "1c356ee41b22309b6cc5a47f4214a2923ddc6c1d791a8cc4d5cf084fdfd037ec",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-01-17",
           "text": "BTC collateral added to pre-alpha"
+        },
+        {
+          "date": "2026-01-17",
+          "text": "USDH borrowing added to pre-alpha"
         }
       ]
     },
@@ -4922,9 +5069,14 @@
       "date": "2026-01-18T10:01:17+00:00",
       "url": "https://t.me/hyperliquid_announcements/506",
       "contentSha256": "7b8f7e4575c52ca9f48df4ed68f9fbaac692fca38eeb4d914b10bf520eca6087",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2026-01-18",
+          "text": "Mobile staking interface added"
+        }
+      ]
     },
     {
       "id": 507,
@@ -4940,9 +5092,14 @@
       "date": "2026-01-27T09:29:56+00:00",
       "url": "https://t.me/hyperliquid_announcements/508",
       "contentSha256": "9c03832000fcfa5f27fe5806df9bf57ab94766b8d7bc37252c3447ef2fc705aa",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2026-01-27",
+          "text": "HIP-3 normal isolated margin added"
+        }
+      ]
     },
     {
       "id": 509,
@@ -4950,7 +5107,7 @@
       "url": "https://t.me/hyperliquid_announcements/509",
       "contentSha256": "a57956ada76330b3d26240b8e11eb8bdda03b0839cb7abdf4be7cd0d5d0934e7",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-01-31",
@@ -4964,7 +5121,7 @@
       "url": "https://t.me/hyperliquid_announcements/510",
       "contentSha256": "1c57cbb3f7580ea2f71e0bdc563296066114945f6f458ca0c8c8bb61362bd122",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -4973,7 +5130,7 @@
       "url": "https://t.me/hyperliquid_announcements/511",
       "contentSha256": "1cc0c949b9468239875dc705e27caf7caf5a78ab7be8967fd62cdd5958a9f71a",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-02-02",
@@ -4987,7 +5144,7 @@
       "url": "https://t.me/hyperliquid_announcements/512",
       "contentSha256": "a178bc74cb07281822fdc7022e8208f1c59ac3ec8235901caf0d246a194daa5d",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-02-03",
@@ -5001,7 +5158,7 @@
       "url": "https://t.me/hyperliquid_announcements/513",
       "contentSha256": "f36500e7df88dd8cc62d7c7753b447823ad9e5dc73b6b9033e3ff321214cc344",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5010,7 +5167,7 @@
       "url": "https://t.me/hyperliquid_announcements/514",
       "contentSha256": "234c3ddee4686a5afdb102ad6a06df22fc90e57b1b03fcb4c5766332d48ac886",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-02-12",
@@ -5033,7 +5190,7 @@
       "url": "https://t.me/hyperliquid_announcements/516",
       "contentSha256": "6fe321916c96c82a1da1053726c23cc7396112d1d11ca86bf9a707e47b852edf",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-02-12",
@@ -5047,7 +5204,7 @@
       "url": "https://t.me/hyperliquid_announcements/517",
       "contentSha256": "3c407a3eaa65c7e918f1bd96cb1622365bb4fe475adde35a563a24d21f7d5aff",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5056,7 +5213,7 @@
       "url": "https://t.me/hyperliquid_announcements/518",
       "contentSha256": "a584f187297d4b1c2932423ce52859319925c2f8ed9676e1d9c07501a0f6390b",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-02-18",
@@ -5079,7 +5236,7 @@
       "url": "https://t.me/hyperliquid_announcements/520",
       "contentSha256": "8a1864ad75d492e0ce4bd569fdbef1443376576a499ec3afb380edaf8aaa955a",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-02-20",
@@ -5093,8 +5250,12 @@
       "url": "https://t.me/hyperliquid_announcements/521",
       "contentSha256": "3d9a51bc6d20961b3eed94a50a0b7faacc623c29a2d63a927623d2e78cf692fe",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
+        {
+          "date": "2026-02-24",
+          "text": "Builder-code approval removal added"
+        },
         {
           "date": "2026-02-24",
           "text": "HIP-3 cross margin live by update"
@@ -5107,7 +5268,7 @@
       "url": "https://t.me/hyperliquid_announcements/522",
       "contentSha256": "51fb813bc9ed33c4061f2107d5591255a15d5bc5359f5e58054c42f69a2fb185",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5116,7 +5277,7 @@
       "url": "https://t.me/hyperliquid_announcements/523",
       "contentSha256": "98646ca79fc3418e2df0ee40a2b443e70974191e99b1f0dbc013896b063a8988",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5124,8 +5285,8 @@
       "date": "2026-03-10T01:43:59+00:00",
       "url": "https://t.me/hyperliquid_announcements/524",
       "contentSha256": "7829263978914e654d3c4e7f033c10e23809621b2eb06e557e53740eed72c8f6",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -5134,7 +5295,7 @@
       "url": "https://t.me/hyperliquid_announcements/525",
       "contentSha256": "a2d587096a1b804309dfaedc6620a4983cadbee730feb6299bee37ec4f9cd140",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-03-10",
@@ -5148,7 +5309,7 @@
       "url": "https://t.me/hyperliquid_announcements/526",
       "contentSha256": "bf0c18286a15aac60334ac52829f0f745cde5359e0b009dd05f43fb214423032",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-03-10",
@@ -5162,7 +5323,7 @@
       "url": "https://t.me/hyperliquid_announcements/527",
       "contentSha256": "a8520818c64d9259b8fbade474197ed92e4e5dd0e7a090f89786664c55319fff",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5171,7 +5332,7 @@
       "url": "https://t.me/hyperliquid_announcements/528",
       "contentSha256": "fcdabd559611a2ae0e7b696d3ff72140edbf2263092a7a1aa1e1874823506082",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-03-19",
@@ -5185,7 +5346,7 @@
       "url": "https://t.me/hyperliquid_announcements/529",
       "contentSha256": "f313979a19cb31b081ba8ee287d3432958193e7f80097f5981ce4e7f547032c4",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5194,7 +5355,7 @@
       "url": "https://t.me/hyperliquid_announcements/530",
       "contentSha256": "f5271ebb5a623e802566e4bfc33285b856c76a423bc2e43f82d508e1ed2a03d4",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5203,7 +5364,7 @@
       "url": "https://t.me/hyperliquid_announcements/531",
       "contentSha256": "55779a6d33fb387c316ba7f9f5f650a664243c2e16c0a49677d182d7dcf428f4",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-04-01",
@@ -5217,7 +5378,7 @@
       "url": "https://t.me/hyperliquid_announcements/532",
       "contentSha256": "2cf498a4b5b610def228e8757031d2bd7eb62f169ab4f052becf71294704164c",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-04-03",
@@ -5230,8 +5391,8 @@
       "date": "2026-04-05T06:19:50+00:00",
       "url": "https://t.me/hyperliquid_announcements/533",
       "contentSha256": "4aca4e3dd33b66b71bfd4a9abbe150c1c02eb10ebfafb508dfe5dab36c511d0d",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -5239,9 +5400,14 @@
       "date": "2026-04-06T09:58:58+00:00",
       "url": "https://t.me/hyperliquid_announcements/534",
       "contentSha256": "51756f3a73bf3f774391741b2ee1b3157e25982322178b8a83605e8d35023242",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2026-04-06",
+          "text": "Portfolio margin entry rules eased"
+        }
+      ]
     },
     {
       "id": 535,
@@ -5249,8 +5415,12 @@
       "url": "https://t.me/hyperliquid_announcements/535",
       "contentSha256": "249d7236ae47a5b23d32b85356375d42fd8f59b4057fed526ec258137d3169ac",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
+        {
+          "date": "2026-04-13",
+          "text": "Legacy vault creation fee raised"
+        },
         {
           "date": "2026-04-13",
           "text": "Priority fees live by update"
@@ -5262,9 +5432,14 @@
       "date": "2026-04-21T02:53:57+00:00",
       "url": "https://t.me/hyperliquid_announcements/536",
       "contentSha256": "fba0d81685532b9852cb7bb2f979dce6ee7732b579c4938a03963e3c9fd58ede",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2026-04-21",
+          "text": "DEX abstraction retirement announced"
+        }
+      ]
     },
     {
       "id": 537,
@@ -5281,7 +5456,7 @@
       "url": "https://t.me/hyperliquid_announcements/538",
       "contentSha256": "d3a97367d8869e235f0f0eef1b72b8603c8537721e0916912fc461f0eaf3f56d",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-04-27",
@@ -5313,7 +5488,7 @@
       "url": "https://t.me/hyperliquid_announcements/541",
       "contentSha256": "97d8e38e60167cd5cb6bb2536ece2eded80bf7889c0a88ddb7382f9c3293e361",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-05-02",
@@ -5327,7 +5502,7 @@
       "url": "https://t.me/hyperliquid_announcements/542",
       "contentSha256": "bd9df3cd8bdb95e9fba5eb3ae0c2a39cecbd33264ba0704b8a6d0319a0922da3",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5336,7 +5511,7 @@
       "url": "https://t.me/hyperliquid_announcements/543",
       "contentSha256": "f145621c9f102ae52ed804c40b454993bb105cb818052e23b4a15de0ae607692",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-05-07",
@@ -5350,7 +5525,7 @@
       "url": "https://t.me/hyperliquid_announcements/544",
       "contentSha256": "18d113709e96351df50226e53203b00c5a6bbc040e7cb2c93956c4a5c3fdeb70",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-05-07",
@@ -5363,8 +5538,8 @@
       "date": "2026-05-07T17:27:31+00:00",
       "url": "https://t.me/hyperliquid_announcements/545",
       "contentSha256": "35ff17581dc5ca954644eee8caedd0c374baea533af4470caf950bb07f06cdf0",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -5373,7 +5548,7 @@
       "url": "https://t.me/hyperliquid_announcements/546",
       "contentSha256": "9961f76891a6ca859c005e1451d49d130ad5250581d8705c01fe83ac02d0be63",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5382,7 +5557,7 @@
       "url": "https://t.me/hyperliquid_announcements/547",
       "contentSha256": "ae63ddd2ad9567c30aab73932522e6bb3d3a0803923af351f701b4d188465f46",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-05-14",
@@ -5396,7 +5571,7 @@
       "url": "https://t.me/hyperliquid_announcements/548",
       "contentSha256": "a2958036a3fc897b35543b6fc0077f9447d7d5f8171f1fcec7a050b34e86f676",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-05-14",
@@ -5410,7 +5585,7 @@
       "url": "https://t.me/hyperliquid_announcements/549",
       "contentSha256": "bc6013f3048459bffa2268ecaaebb34d34dacf13f4cf4ba213fd55528f0c9cdc",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-05-18",
@@ -5424,7 +5599,7 @@
       "url": "https://t.me/hyperliquid_announcements/550",
       "contentSha256": "3ed76d5c147383058779f3c2e650f906a05116ace72433bfffb745c85e68c6bb",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5442,7 +5617,7 @@
       "url": "https://t.me/hyperliquid_announcements/552",
       "contentSha256": "69d69461f63da424bf6e1564137375b5f298cb13f70c4626542cdbcc51f293f3",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-05-25",
@@ -5455,9 +5630,14 @@
       "date": "2026-05-26T05:44:25+00:00",
       "url": "https://t.me/hyperliquid_announcements/553",
       "contentSha256": "771ee21f6ed807f1f54394e46908369f7c166d684c671f5181442d85206d5bd9",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2026-05-26",
+          "text": "HIP-4 uses USDC by update"
+        }
+      ]
     },
     {
       "id": 554,
@@ -5465,7 +5645,7 @@
       "url": "https://t.me/hyperliquid_announcements/554",
       "contentSha256": "98f4e80e1838b2461e800088f504542a3818a1d0d1383bc25412adc030686eae",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-05-26",
@@ -5479,8 +5659,12 @@
       "url": "https://t.me/hyperliquid_announcements/555",
       "contentSha256": "98d2116c1eb8684508f63b0ebe3bc241a707091690891aa2d7efe832005d3ff5",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
+        {
+          "date": "2026-06-02",
+          "text": "USDT borrowing live by update"
+        },
         {
           "date": "2026-06-02",
           "text": "Validator set reaches 27 by update"
@@ -5493,7 +5677,7 @@
       "url": "https://t.me/hyperliquid_announcements/556",
       "contentSha256": "5e319de1fb93b92064337c6812fb8ea7f13a79aaecf0533527f4e4cf8dd900ad",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5502,7 +5686,7 @@
       "url": "https://t.me/hyperliquid_announcements/557",
       "contentSha256": "20e8cdadd44055bd58a83257a233bd6fd7de7bb2936ac40fb98458e62a77cc12",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-06-11",
@@ -5525,7 +5709,7 @@
       "url": "https://t.me/hyperliquid_announcements/559",
       "contentSha256": "0bb0834400acc7b1ddfc6e74d5e6b199b25146c94fb96b1072c47bfe1a3a796f",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-06-12",
@@ -5538,9 +5722,14 @@
       "date": "2026-06-16T11:21:53+00:00",
       "url": "https://t.me/hyperliquid_announcements/560",
       "contentSha256": "d95deba4de9c2b5d2dd35b0c413676d5309de37e885eb2a66e605b2bb261f6d7",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2026-06-16",
+          "text": "USDC AQAv2 active by update"
+        }
+      ]
     },
     {
       "id": 561,
@@ -5548,7 +5737,7 @@
       "url": "https://t.me/hyperliquid_announcements/561",
       "contentSha256": "b07236c403fb25d949ea994f701f0bf4c9d8a9c8e9235c3299705ca8226a5a3d",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-06-20",
@@ -5562,7 +5751,7 @@
       "url": "https://t.me/hyperliquid_announcements/562",
       "contentSha256": "eb7e1c7e5cb2c0869bb6b41eb7930e3f2354a2021ef6c233735526b7f12bb47f",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5571,7 +5760,7 @@
       "url": "https://t.me/hyperliquid_announcements/563",
       "contentSha256": "c8c034f26b92489f1a658bf94c6e187fa26cf11065e4f98f174bb2bfa66e046b",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-06-25",
@@ -5585,7 +5774,7 @@
       "url": "https://t.me/hyperliquid_announcements/564",
       "contentSha256": "7db3b9c664cc096ca52bfc78637cb3fde572293d1b1d56b697c772192b769385",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-06-26",
@@ -5608,7 +5797,7 @@
       "url": "https://t.me/hyperliquid_announcements/566",
       "contentSha256": "e45d469c6167a4b68eb834a2e076b7ca654aad3f9d6dc504d272ca1f649f6868",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-06-28",
@@ -5622,7 +5811,7 @@
       "url": "https://t.me/hyperliquid_announcements/567",
       "contentSha256": "e532045c4b557665760ead554d42363e660246b01b29adbfb8ac7571adaf4c4f",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5640,7 +5829,7 @@
       "url": "https://t.me/hyperliquid_announcements/569",
       "contentSha256": "85e0c4595269bf2f300ebcb60a43e948b4d593c56e0296f90bc410b478e38862",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-07-02",
@@ -5654,7 +5843,7 @@
       "url": "https://t.me/hyperliquid_announcements/570",
       "contentSha256": "6ff8cd3367f4c9c946e4e6a37fd6c07b3c4ca19e8bba060bf6dc1f1d8104be08",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-07-02",
@@ -5668,7 +5857,7 @@
       "url": "https://t.me/hyperliquid_announcements/571",
       "contentSha256": "a0604126e201c5240b7099974762ba41fed4cabc2833bb3fd44ac448f4330661",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5676,8 +5865,8 @@
       "date": "2026-07-09T08:26:04+00:00",
       "url": "https://t.me/hyperliquid_announcements/572",
       "contentSha256": "636cf6c26ef98793aea4b9e35eedc9b1d4e225c4e0687523429fc09cc44c3042",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -5695,7 +5884,7 @@
       "url": "https://t.me/hyperliquid_announcements/574",
       "contentSha256": "f38cba690812b4aa8f83817997b1f3b0755056183a5f0703a9bf24c25d33bab7",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5704,7 +5893,7 @@
       "url": "https://t.me/hyperliquid_announcements/575",
       "contentSha256": "699a7cf830c2b233f85eab2a108db0297502997542f8eeddd9960f7397720566",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-07-20",
@@ -5718,7 +5907,7 @@
       "url": "https://t.me/hyperliquid_announcements/576",
       "contentSha256": "a1189823bab975e9600b931a9396f67d5779bccf2794ee493cb813e0a68548d2",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-07-20",
@@ -5732,7 +5921,7 @@
       "url": "https://t.me/hyperliquid_announcements/577",
       "contentSha256": "8b2f94053307f2ef46179e93d8d3d2e39b0f042eada9cad41cb62ebaee16a0d0",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-07-27",
@@ -5746,8 +5935,12 @@
       "url": "https://t.me/hyperliquid_announcements/578",
       "contentSha256": "b4b9bd33b8528640767f93767153c1a4aa1917ffcba3d47960b6e4f4c28b8ce7",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
+        {
+          "date": "2026-08-03",
+          "text": "Permissionless HIP-4 testnet active"
+        },
         {
           "date": "2026-08-03",
           "text": "TWAP duration expanded"
@@ -5760,7 +5953,7 @@
       "url": "https://t.me/hyperliquid_announcements/579",
       "contentSha256": "6e4a0f81f57d2c2bc498e1f21a8a692885ab814f97315ae6cc4d9518af9b654f",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-08-12",
@@ -5774,7 +5967,7 @@
       "url": "https://t.me/hyperliquid_announcements/580",
       "contentSha256": "ed8d65b700a5859996bc77cdba2f14390764d02597b4f7db6ef43bb6990a8022",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-08-14",
@@ -5797,7 +5990,7 @@
       "url": "https://t.me/hyperliquid_announcements/582",
       "contentSha256": "3d8c7e16c908906e67b69a7b9f65585133399990fbfb3a65e87a51368cadfc86",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-08-24",
@@ -5810,8 +6003,8 @@
       "date": "2026-08-27T06:01:25+00:00",
       "url": "https://t.me/hyperliquid_announcements/583",
       "contentSha256": "b1a545b40dc3365eb071d231f4070e1d3c5700108983e0da667c942f4b7d6c19",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -5829,7 +6022,7 @@
       "url": "https://t.me/hyperliquid_announcements/585",
       "contentSha256": "9afef176698b2cbdc9504052d27caf7e6d7afb5c48d58d57c94c53942fd8d5de",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-08-31",
@@ -5843,8 +6036,12 @@
       "url": "https://t.me/hyperliquid_announcements/586",
       "contentSha256": "95125dc9cca75ff21f5c29125bc6a0807d4dd588e2c0369ce8a19db1bf62ff7d",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
+        {
+          "date": "2026-09-08",
+          "text": "HIP-3 permissioned-market spec shared"
+        },
         {
           "date": "2026-09-08",
           "text": "Manual borrowing live by update"
@@ -5866,7 +6063,7 @@
       "url": "https://t.me/hyperliquid_announcements/589",
       "contentSha256": "b89b2b276c2b90db5c976dcf5c93a92cb52735440538dd0976e00a4e1134e7e1",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-09-18",
@@ -5880,7 +6077,7 @@
       "url": "https://t.me/hyperliquid_announcements/590",
       "contentSha256": "fd6070e265bce672f05ee54630692ac2625ab308e2d33986734e51218ebd80c2",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-09-21",
@@ -5894,7 +6091,7 @@
       "url": "https://t.me/hyperliquid_announcements/591",
       "contentSha256": "8ab1d5d03d6d078d212f5bd673e98343f1b0c3cb88b56251a3ebabfef4f23e2a",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5912,7 +6109,7 @@
       "url": "https://t.me/hyperliquid_announcements/593",
       "contentSha256": "835fa321de154e799799e0a01644347036cb6b29b0df189b5629d2a9edcefd77",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5920,8 +6117,8 @@
       "date": "2026-09-30T06:36:08+00:00",
       "url": "https://t.me/hyperliquid_announcements/594",
       "contentSha256": "f31206b0708b4582845923625f42580c4f741d0813abfc297de1b1c87c666d14",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted.",
       "targets": []
     },
     {
@@ -5930,7 +6127,7 @@
       "url": "https://t.me/hyperliquid_announcements/596",
       "contentSha256": "2a8436e70a70d4a208ea8e95db29a02eee28844fc01b2e20246fc7494b6d04ce",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5939,7 +6136,7 @@
       "url": "https://t.me/hyperliquid_announcements/597",
       "contentSha256": "b80aad29296fbc9daf68cc9b931b5342f5a2ced80e4166ea55686b816761d70c",
       "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
+      "reason": "Product/tech section reviewed in second pass; distinct verified changes added, repetitions linked elsewhere. Individual third-party ecosystem integrations and rolling metrics not certified exhaustive.",
       "targets": []
     },
     {
@@ -5948,7 +6145,7 @@
       "url": "https://t.me/hyperliquid_announcements/598",
       "contentSha256": "49ae75336c0d434d7579377859aec0e8dbb7b0d9a92c719fda6c9fc2ea1dfeab",
       "status": "stored",
-      "reason": "Dated event saved; linked documentation/counterparty corroborates the feature; independent date verification varies by row.",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
       "targets": [
         {
           "date": "2026-09-16",
@@ -5961,8 +6158,8 @@
       "date": "2026-10-27T06:50:07+00:00",
       "url": "https://t.me/hyperliquid_announcements/599",
       "contentSha256": "1154c5d94133ef0b038f9c3326ee219e7fcacf06f3509ee96d8c93ba32b8e62b",
-      "status": "not_promoted_pending_corroboration",
-      "reason": "Not promoted to event CSV without a sufficiently specific corroborating source/date. Retained in inventory for follow-up.",
+      "status": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation.",
       "targets": []
     },
     {
@@ -5970,9 +6167,15 @@
       "date": "2026-10-28T09:22:18+00:00",
       "url": "https://t.me/hyperliquid_announcements/600",
       "contentSha256": "1576ec8675f7558b1a319ee89fd1eedbf9a5fadb7dc0874a38e1228543082ef7",
-      "status": "recap_not_exhaustively_expanded",
-      "reason": "Aggregated recap; major protocol changes retained by dedicated rows where verified. Individual ecosystem integrations remain a coverage limit.",
-      "targets": []
+      "status": "stored",
+      "reason": "Explicit matching event row(s); historical date limits recorded in review JSON.",
+      "targets": [
+        {
+          "date": "2026-10-28",
+          "text": "API priority updates reported"
+        }
+      ]
     }
-  ]
+  ],
+  "secondPassNote": "All 49 previous unpromoted notices received explicit individual decisions: stored with corroboration or classified by scope. This does not certify every ecosystem integration/API-channel item as covered."
 }

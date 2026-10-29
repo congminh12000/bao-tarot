@@ -1,0 +1,1087 @@
+{
+  "checkedOn": "2026-10-29",
+  "baseCommit": "7f8a7dd4",
+  "addedEvents": [
+    {
+      "date": "2025-05-22",
+      "text": "Labs files CFTC perpetuals comments",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "CFTC submission list",
+          "https://comments2.cftc.gov/PublicComments/CommentList.aspx?ctl00_ctl00_cphContentMain_MainContent_gvCommentListChangePage=14&id=7584"
+        ],
+        [
+          "Hyperliquid Labs letter via CFTC",
+          "https://comments2.cftc.gov/Handlers/PdfHandler.ashx?id=35635"
+        ],
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/372"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-23",
+      "text": "Labs CFTC letters announced",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/372"
+        ],
+        [
+          "Hyperliquid Labs letter via CFTC",
+          "https://comments2.cftc.gov/Handlers/PdfHandler.ashx?id=35635"
+        ],
+        [
+          "Hyperliquid Labs 24-7 letter via CFTC",
+          "https://comments.cftc.gov/Handlers/PdfHandler.ashx?id=35634"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-13",
+      "text": "ANIME rewards for HYPE stakers announced",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/287"
+        ],
+        [
+          "Animecoin tokenomics document",
+          "https://resources.cryptocompare.com/asset-management/18603/1739440506822.pdf"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-21",
+      "text": "Rabby-DeBank support confirmed",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/368"
+        ],
+        [
+          "Rabby official supported-chain display",
+          "https://go.rabby.io/mobile"
+        ],
+        [
+          "AiCoin",
+          "https://www.aicoin.com/en/news-flash/2377477"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-26",
+      "text": "Spot deployment fee sharing updated",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/303"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-01-26",
+      "text": "OI-cap order validation improved",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/303"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/perpetual-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-03-04",
+      "text": "Official announcements page added",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/320"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq/building-on-hyperliquid/i-have-api-related-questions"
+        ]
+      ]
+    },
+    {
+      "date": "2025-04-30",
+      "text": "HyperCore read precompiles live by update",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/352"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2025-05-26",
+      "text": "Margin transfer requirement reduced",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/378"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining"
+        ]
+      ]
+    },
+    {
+      "date": "2025-06-25",
+      "text": "Local node HTTP API available by update",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/383"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes"
+        ]
+      ]
+    },
+    {
+      "date": "2025-06-25",
+      "text": "Post-only priority change announced",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/383"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "text": "Generalized asset-transfer API tested",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/400"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-05",
+      "text": "Foundation data node available by update",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/411"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/nodes/foundation-non-validating-node-for-infra-providers"
+        ]
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "text": "Validator set reaches 24 by update",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/423"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/validators"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "text": "Quote-asset spot fee reductions live",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/428"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "text": "Referral claims span quote assets",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/428"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/referrals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "text": "HIP-3 quote-collateral support proposed",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/432"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "text": "Permissionless quote assets live by update",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/446"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "text": "HYPE-USDH spot pair available by update",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/446"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/permissionless-spot-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "text": "Aligned quote assets on testnet",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/456"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "text": "DEX abstraction added by update",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/464"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ]
+      ]
+    },
+    {
+      "date": "2025-10-29",
+      "text": "HIP-3 frontend access live by update",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/469"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/frontend-checks"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-06",
+      "text": "HyperEVM gas capacity increased",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/473"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-06",
+      "text": "HIP-3 sub-deployers supported",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/473"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-15",
+      "text": "HIP-3 margin settings tested",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/479"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "text": "HIP-3 growth mode live by update",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "text": "Aligned quote assets live by update",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "text": "Legacy spot deployer fee share enabled",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/481"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/deploying-hip-1-and-hip-2-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2025-12-01",
+      "text": "USDC Core-EVM linking on testnet",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/484"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/usdc"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "text": "HyperEVM read gas costs reduced",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/497"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "text": "USDH borrowing added to pre-alpha",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/503"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-18",
+      "text": "Mobile staking interface added",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/506"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/how-to-stake-hype"
+        ]
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "text": "HIP-3 normal isolated margin added",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/508"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining"
+        ]
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "text": "Builder-code approval removal added",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/521"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "text": "Portfolio margin entry rules eased",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/534"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "text": "Legacy vault creation fee raised",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/535"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/hypercore-vaults-legacy"
+        ]
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "text": "DEX abstraction retirement announced",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/536"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/account-abstraction-modes"
+        ]
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "text": "HIP-4 uses USDC by update",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/553"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-4-outcome-markets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "text": "USDT borrowing live by update",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/555"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "text": "USDC AQAv2 active by update",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/560"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "text": "Permissionless HIP-4 testnet active",
+      "hit": 0,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/578"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-4-deployer-actions"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "text": "HIP-3 permissioned-market spec shared",
+      "hit": 1,
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/586"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/hip-3-deployer-actions"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "text": "API priority updates reported",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/600"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/priority-fees"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "text": "Scheduled network upgrade completed",
+      "hit": 0,
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Status",
+          "https://hyperliquid.statuspage.io/incidents/1g6btx6f71d0"
+        ],
+        [
+          "Hyperliquid Status current history",
+          "https://hyperliquid.statuspage.io/"
+        ]
+      ]
+    }
+  ],
+  "previous49NoticeDecisions": [
+    {
+      "id": 285,
+      "url": "https://t.me/hyperliquid_announcements/285",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 290,
+      "url": "https://t.me/hyperliquid_announcements/290",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 294,
+      "url": "https://t.me/hyperliquid_announcements/294",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 298,
+      "url": "https://t.me/hyperliquid_announcements/298",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 300,
+      "url": "https://t.me/hyperliquid_announcements/300",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 327,
+      "url": "https://t.me/hyperliquid_announcements/327",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 338,
+      "url": "https://t.me/hyperliquid_announcements/338",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 339,
+      "url": "https://t.me/hyperliquid_announcements/339",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 341,
+      "url": "https://t.me/hyperliquid_announcements/341",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 342,
+      "url": "https://t.me/hyperliquid_announcements/342",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 365,
+      "url": "https://t.me/hyperliquid_announcements/365",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 391,
+      "url": "https://t.me/hyperliquid_announcements/391",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 393,
+      "url": "https://t.me/hyperliquid_announcements/393",
+      "decision": "metrics_not_independently_reconstructed",
+      "reason": "Venue rolling open-interest/volume claim; not independently reconstructed from chain history or labelled a HYPE price ATH."
+    },
+    {
+      "id": 397,
+      "url": "https://t.me/hyperliquid_announcements/397",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 405,
+      "url": "https://t.me/hyperliquid_announcements/405",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 407,
+      "url": "https://t.me/hyperliquid_announcements/407",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 409,
+      "url": "https://t.me/hyperliquid_announcements/409",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 417,
+      "url": "https://t.me/hyperliquid_announcements/417",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 418,
+      "url": "https://t.me/hyperliquid_announcements/418",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 419,
+      "url": "https://t.me/hyperliquid_announcements/419",
+      "decision": "metrics_not_independently_reconstructed",
+      "reason": "Venue rolling open-interest/volume claim; not independently reconstructed from chain history or labelled a HYPE price ATH."
+    },
+    {
+      "id": 424,
+      "url": "https://t.me/hyperliquid_announcements/424",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 426,
+      "url": "https://t.me/hyperliquid_announcements/426",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 438,
+      "url": "https://t.me/hyperliquid_announcements/438",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 439,
+      "url": "https://t.me/hyperliquid_announcements/439",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 443,
+      "url": "https://t.me/hyperliquid_announcements/443",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 448,
+      "url": "https://t.me/hyperliquid_announcements/448",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 449,
+      "url": "https://t.me/hyperliquid_announcements/449",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 457,
+      "url": "https://t.me/hyperliquid_announcements/457",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 459,
+      "url": "https://t.me/hyperliquid_announcements/459",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 463,
+      "url": "https://t.me/hyperliquid_announcements/463",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 465,
+      "url": "https://t.me/hyperliquid_announcements/465",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 470,
+      "url": "https://t.me/hyperliquid_announcements/470",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 478,
+      "url": "https://t.me/hyperliquid_announcements/478",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 482,
+      "url": "https://t.me/hyperliquid_announcements/482",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 487,
+      "url": "https://t.me/hyperliquid_announcements/487",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 492,
+      "url": "https://t.me/hyperliquid_announcements/492",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 495,
+      "url": "https://t.me/hyperliquid_announcements/495",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 498,
+      "url": "https://t.me/hyperliquid_announcements/498",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 524,
+      "url": "https://t.me/hyperliquid_announcements/524",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 533,
+      "url": "https://t.me/hyperliquid_announcements/533",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    },
+    {
+      "id": 545,
+      "url": "https://t.me/hyperliquid_announcements/545",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 572,
+      "url": "https://t.me/hyperliquid_announcements/572",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 583,
+      "url": "https://t.me/hyperliquid_announcements/583",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 594,
+      "url": "https://t.me/hyperliquid_announcements/594",
+      "decision": "community_or_recap_context",
+      "reason": "Individually reviewed: annual recap, commentary, interview, gathering reminder or merchandise; no distinct token/protocol milestone asserted."
+    },
+    {
+      "id": 599,
+      "url": "https://t.me/hyperliquid_announcements/599",
+      "decision": "other_asset_market_notice",
+      "reason": "Individually reviewed: third-party asset listing, conversion, delisting or leverage adjustment; not relabelled as HYPE token adoption or price causation."
+    }
+  ],
+  "previous49PromotedIds": [
+    287,
+    368,
+    372,
+    497
+  ],
+  "counts": {
+    "research": 225,
+    "levels": {
+      "1": 116,
+      "0": 94,
+      "2": 15
+    },
+    "removed": 63,
+    "retained": 162,
+    "retainedWithinPriceRange": 152,
+    "sourceRows": 465
+  },
+  "priceChange": {
+    "previousFeed": "PYTH:HYPEUSD",
+    "newFeed": "CRYPTO:HYPEHUSD",
+    "previousClosedCount": 694,
+    "newClosedCount": 698,
+    "newDates": [
+      "2024-11-30",
+      "2024-12-01",
+      "2024-12-02",
+      "2024-12-03"
+    ],
+    "missingGenesisDates": [
+      "2024-11-29"
+    ]
+  },
+  "remainingLimits": [
+    "Genesis day November 29 not available on tested TradingView feeds.",
+    "Public preview for official hyperliquid_api channel unavailable; do not claim complete separate API history.",
+    "Status current page confirms scheduled October 25 maintenance; historical API/full history remains unavailable.",
+    "Rolling metrics and every third-party ecosystem integration not independently reconstructed.",
+    "Some event dates are announcement/as-of dates, not exact activation times."
+  ],
+  "deferredDrafts": [
+    {
+      "date": "2025-03-18",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Email login MFA enabled by update",
+      "remove": false,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/328"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/support/faq"
+        ]
+      ],
+      "removalReason": "",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by March 18 recap; not assumed exact first activation day.",
+      "post": 328,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "reviewStatus": "not_promoted",
+      "reason": "Current generic FAQ/UI documentation does not independently corroborate this specific historical change. Preserve dated primary notice as pending evidence, not a verified CSV event."
+    },
+    {
+      "date": "2025-04-30",
+      "kind": "info",
+      "hit": 0,
+      "tag": "",
+      "text": "Trading UI redesign released by update",
+      "remove": true,
+      "sources": [
+        [
+          "Hyperliquid Announcements",
+          "https://t.me/hyperliquid_announcements/352"
+        ],
+        [
+          "Hyperliquid Docs",
+          "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/miscellaneous-ui"
+        ]
+      ],
+      "removalReason": "Routine refinement or duplicate follow-up; retained in research.",
+      "dateBasis": "Dated primary announcement; current docs corroborate feature, not an independent historical activation date.",
+      "note": "Confirmed by this dated update; exact original activation day not reconstructed.",
+      "post": 352,
+      "verificationScope": "Second pass: exact dated source plus corroborating specification/counterparty. Date limits stated explicitly.",
+      "reviewStatus": "not_promoted",
+      "reason": "Current generic FAQ/UI documentation does not independently corroborate this specific historical change. Preserve dated primary notice as pending evidence, not a verified CSV event."
+    }
+  ],
+  "fullPriceFeedIdentity": "TradingView HYPEHUSD has project name Hyperliquid, native-token explorer link and hyperliquid.xyz website; confirmed correct asset."
+}
