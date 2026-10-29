@@ -1,0 +1,291 @@
+{
+  "2015Q1-s-issuer-revised": {
+    "accepted": true,
+    "quarter": "2015Q1",
+    "model": "s",
+    "units": 10045,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-3aff8c913b17"
+    ],
+    "excerpt": "10,045 Model S vehicles were delivered in Q1",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2015Q2-s-issuer-revised": {
+    "accepted": true,
+    "quarter": "2015Q2",
+    "model": "s",
+    "units": 11532,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-b05c69008f11"
+    ],
+    "excerpt": "We delivered 11,532 Model S vehicles in Q2",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2015Q4-x-issuer-revised": {
+    "accepted": true,
+    "quarter": "2015Q4",
+    "model": "x",
+    "units": 206,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-876ffc2bde4a"
+    ],
+    "excerpt": "We delivered 17,478 vehicles in Q4, including 206 Model X vehicles.",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2016Q2-s-issuer-revised": {
+    "accepted": true,
+    "quarter": "2016Q2",
+    "model": "s",
+    "units": 9764,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-37c84f5edd73"
+    ],
+    "excerpt": "9,764 Model S",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2016Q2-x-issuer-revised": {
+    "accepted": true,
+    "quarter": "2016Q2",
+    "model": "x",
+    "units": 4638,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-37c84f5edd73"
+    ],
+    "excerpt": "4,638 Model X",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2016Q3-s-issuer-revised": {
+    "accepted": true,
+    "quarter": "2016Q3",
+    "model": "s",
+    "units": 16047,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-a983942d5d78"
+    ],
+    "excerpt": "16,047 Model S",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2016Q3-x-issuer-revised": {
+    "accepted": true,
+    "quarter": "2016Q3",
+    "model": "x",
+    "units": 8774,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-a983942d5d78"
+    ],
+    "excerpt": "8,774 Model X",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2017Q3-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2017Q3",
+    "model": "3",
+    "units": 222,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-02f434643698"
+    ],
+    "excerpt": "222 Model 3 vehicles",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2017Q4-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2017Q4",
+    "model": "3",
+    "units": 1542,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-6b9f177e312c"
+    ],
+    "excerpt": "1,542 Model 3 vehicles",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2018Q1-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2018Q1",
+    "model": "3",
+    "units": 8182,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-cdcd8e0da497"
+    ],
+    "excerpt": "8,182 Model 3 vehicles",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2018Q2-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2018Q2",
+    "model": "3",
+    "units": 18449,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-4033945a38d1"
+    ],
+    "excerpt": "18,449 Model 3 vehicles",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2018Q3-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2018Q3",
+    "model": "3",
+    "units": 56065,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-8008b0e80df5"
+    ],
+    "excerpt": "In Q3, we delivered 56,065 Model 3s to customers.",
+    "reviewNote": "Revised issuer individual-model quarterly delivery count.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2018Q4-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2018Q4",
+    "model": "3",
+    "units": 63359,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-9f147a6351c4"
+    ],
+    "excerpt": "Model 3 deliveries 63,359 50,928 77,634 79,703 92,620",
+    "reviewNote": "Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2019Q1-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2019Q1",
+    "model": "3",
+    "units": 50928,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-9f147a6351c4"
+    ],
+    "excerpt": "Model 3 deliveries 63,359 50,928 77,634 79,703 92,620",
+    "reviewNote": "Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2019Q2-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2019Q2",
+    "model": "3",
+    "units": 77634,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-9f147a6351c4"
+    ],
+    "excerpt": "Model 3 deliveries 63,359 50,928 77,634 79,703 92,620",
+    "reviewNote": "Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2019Q3-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2019Q3",
+    "model": "3",
+    "units": 79703,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-9f147a6351c4"
+    ],
+    "excerpt": "Model 3 deliveries 63,359 50,928 77,634 79,703 92,620",
+    "reviewNote": "Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  },
+  "2019Q4-3-issuer-revised": {
+    "accepted": true,
+    "quarter": "2019Q4",
+    "model": "3",
+    "units": 92620,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "reported",
+    "sourceIds": [
+      "tesla-9f147a6351c4"
+    ],
+    "excerpt": "Model 3 deliveries 63,359 50,928 77,634 79,703 92,620",
+    "reviewNote": "Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split.",
+    "reviewedOn": "2026-10-29",
+    "independentCorroboration": false
+  }
+}

@@ -1,0 +1,919 @@
+{
+  "tesla-0ee37f370730": {
+    "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q1-2026-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "585393e06da51f759486ecb8e0cbf8c4eb9372ffb770cbd64037b5bb6ab1e485",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-0d4e587aacda": {
+    "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "cf19adfbc01d3959fa9f1b4fe97429c7947c4a687680a337ac6ff20ac8b77bd7",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-3cb0bd033873": {
+    "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2025-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "78f6db002919ddf60f8f2a4ea1e92bba8f3d1e749b7c2eebd977b8b1677d16da",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-48d160a8863d": {
+    "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "1e9ed2f3288c7f22343900a28e76c678063d60b237a15d3e5957619051288f19",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-a119046fdec1": {
+    "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q4-2025-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "05a5eb4fff82710fafa5639deb2127d531b297fd6f6d93af58e72a2869926a18",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-2df88f289dec": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/IR/TSLA-Q1-2025-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "3cb454f71181afc075c52d9d5f0c1254bfa931c0f992bc84a1c24e86b26df605",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-b03dec4696d3": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q1_2016_Tesla_Shareholder_Letter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "67b8d42ef55e870ab70d01c6357a315eb8fed76c817e6f9e94e8a01955244ccf",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-37c84f5edd73": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q2_16_Update_Letter_-_final",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "6c51b741299c7248d5a52394c832af42e4b2c923165e771b5d5122528f60caf6",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-c85f545d6d8e": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q3_15_Shareholder_Letter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "36e8096566d1c1e2dbf16f9116ff7b9930190a8eefb6d296d4ac7b477c44683a",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-a983942d5d78": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q3_16_Update_Letter_-_final",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "5ecca95a71ffad3ee3474a07a5740bcc113b5e20d9b5f88449b253e2cb89946b",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-876ffc2bde4a": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q4_15_Tesla_Update_Letter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "a0bb94dea78aa3d1bbbfc8d0b37ec641513771e6eed0ab75efcba53ad382dfa0",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-c81a0a518f98": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q1-2021-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "1943b0fdf0452d563e7834aca7e7130752e743e082504924662bd66844595a6d",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-42afdaa3750a": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q1-2022-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "37080e616dfe9afc22e36d17427f2f8b7eaecd5b6d00f433f95079783b7c05ee",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-228c60619833": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q1-2023-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "8b50efe637db182d4e5496aa3e64b696b763002d671c26a5e0c24d7fef035527",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-5d8639a70bd0": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q1-2024-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "116ab0e6c5dc24a245f58a0d4812c482a43b97422b39bf79007214f4f5280da1",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-5eed37ee928b": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2021-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "30d306ba278dff0b22b739eeac99664ac6c2bf1c1b3047670abf8f3338080691",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-5246447fdd15": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2022-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "0a910e1da65aac02c97a9d68f76076d7d312d85dfb011dc8abf4362f198fe1f8",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-033c7a7c490b": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2023-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "a051e04f95c5a1a5688a1b6c49aca06b669c1ffd470cacd8c26efba62fd76029",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-2f7fd954eb95": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2024-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "2b883e6deda8a7ec674ac948b9bc939c3d2edf93963499c94f75b400cfd32a06",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-dc291f7526a1": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2020-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "6eab07b1067bbc952085c0089b62280e93a53c3926bcacdc009d86b4570321a4",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-ab3b9f83a7b2": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2021-Quarterly-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "0eb7015cc07daca1b9f67e79e1f98b926d43147f1d95434f269381f2ab287bb2",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-d54caf321e82": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2022-Update",
+    "publisherGroup": "Tesla",
+    "checked": false,
+    "sha256": "bc36e0dff728e4859903c74ae009ac94dcf064318b176e35828ff7a7f7fe6cd5",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-62229a44f833": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2023-Update-3.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "847b5bc4152bb160666fca63ad7cd5481421d2893ac6ef658c8b7a085beb3b20",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-bd9905d9a506": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2024-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "e00d6dcc16f30a3f165ac0577faccb604c7fd6a35fe120f5421387718abaa42a",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-15e0830a8bf1": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2020-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "fc7d4a33ce0b5189b9b084c6a6d41ade0281c9638d26b3183ddb5a225382c5ea",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-b7d2c0883ed5": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2021-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "1b2f407790faa9e9a8c4f6f99aa581d966dfc5461c4fd138b35e25714835fb74",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-33fe6bdaa6e3": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2022-Update",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "176c40b739b7b67d14a5a1036acddaf783b8a0214c5de0ff7a81f001829f6c4a",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-892ed095df14": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2023-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "74b08a054d5d9b312d47a1ff043429ac87a2ef5e3a11630445eb779740b73885",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-2a4dadc9249d": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2024-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "05dfde334f800ec5f0ee140c0dd78409f24ad775e11a0c68f8a6b534b04cafdc",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-4033945a38d1": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Update-Letter-2018-2Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "add66979f6027e1b8690cef8f28e1b2cd80513e71be26ba48b0bfd02137c4b02",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-9c9915c999b2": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Q1_2017_Update_Letter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "b2f54844941e6cef6b41c8332fc3a751ae07c656e9b7979a1eb76073fac9fb32",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-3b05c8a807a4": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2016_4Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "845cc9d78ec3997278889c4a70ece68f24bdf751571e1df8cee6daf5353a4aeb",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-7f8817b7fa7e": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2017-2Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "89c86f34789bbad6c8731d0762f5a4b416c0e6a897086d746b2eeef11e544add",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-02f434643698": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2017-3Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "b5a214af62c81853f97227724650bc1033a45104971da1fbae42ea9a67f96f89",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-6b9f177e312c": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2017-4Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "107369bd794b7571bcf6913ab03bc042c9e8937057cb08b7b0b18c1a80643f97",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-cdcd8e0da497": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2018-1Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "4807f6d886fdca75d6765e196db792448aeb7b3d643c6a5f4a89739c84d6e6a8",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-8008b0e80df5": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2018-3Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "6984162535088e9a0690dc6e45114de28fc56065a14c5d8b8c0dff866ca7a569",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-ff3906030ad8": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2018-4Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "f9d6b550396d6c4169bd28636518348f3f2d2656f7f1db154ea3c262c4e8f2e5",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-7175782d3740": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2019-1Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "7c10cef6a833e161d1e62a3ca7636ad077a236244f3409de3f13547859d4d7fe",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-a5e1521ae469": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2019-2Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "81df9da11f16104c7b859389a39c25a38e95f2ee84cf6e3a29f814d2aadd15ef",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-de691e5b9b29": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2019-3Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "0efb0996be5525c1a4e116270edd2a25da37d672834b7b028be07234c733a810",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-9f147a6351c4": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2019-4Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "d8fc56e39db00f54413217f82dc7e8182ce99651dbe2d8a044d83d4b358905f7",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-90d4bef41e0c": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2020-1Q",
+    "publisherGroup": "Tesla",
+    "checked": false,
+    "sha256": "fca2272a05a50c0bd46ae793c067a53755c6ed3f8ea56a47f64f315de71b84c9",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-551958acb81e": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2020-2Q",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "8ae65557afbc5a0791f0307d7abc8700ee753c324161db6217323dc36db0bafb",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-3aff8c913b17": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Motors_Q1_15_Shareholder_Letter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "0128766eb6001d949061f899259a9b8b0e4f72ff018081bb18f5e26eaf3f6629",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-b05c69008f11": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Q2_2015_Shareholder_Letter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "23912454a42d08c7d42a3ebba65d61c2f8366b8ca8a018bd0882ff37d8bd7ea2",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-c3c1a16df85f": {
+    "url": "https://ir.tesla.com/_flysystem/s3/sec/000156459017013176/tsla-8k_20170703-gen_0.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "c5448507860e98f8d9fae5e00eddc628960b24da2b04b86be73b2d5264ade523",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-92250bb41496": {
+    "url": "https://ir.tesla.com/press-release/tesla-delivers-10030-vehicles-q1-2015",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "cce7b9eba65bea7632ac8fd7c8ebb7e88493e2951af2bdca09b6a9d02eba342f",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-04b2c2415f48": {
+    "url": "https://ir.tesla.com/press-release/tesla-delivers-11507-vehicles-q2-2015",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "ece25f3e0c74b4dcb906e3882677e067ce3bafcd6ebd1331b47ce3325e6aa0cc",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-bbb074f30e65": {
+    "url": "https://ir.tesla.com/press-release/tesla-delivers-11580-vehicles-q3-2015",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "446e832079fcec7300aa308665434ad8e3668912a73478a19dec2617a41e90d9",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-0e2344019cfd": {
+    "url": "https://ir.tesla.com/press-release/tesla-delivers-14820-vehicles-q1-2016-track-full-year-delivery",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "3642ed1a6de7c0fc630eaa3daeb5e5cc4782a7d2044bb147dccec32ce5101f7e",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-9af627a2244a": {
+    "url": "https://ir.tesla.com/press-release/tesla-first-quarter-2025-production-deliveries-and-deployments",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "158fb72eea2c5b86f2fbf9b675a5c858d84995d4170d05a47efc3daca9a4223c",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-e0fab2b122d9": {
+    "url": "https://ir.tesla.com/press-release/tesla-first-quarter-2026-production-deliveries-and-deployments",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "d3338da3fce7f940320b1bfd56a4a70e1bb088b93b4e96d0765aba40bcb05a9a",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-3d143f0dd166": {
+    "url": "https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "6b044d735a36cc2333cdb62cfe3bff34a445421c1d72bc52957a5171ecef0f5b",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-1f633b6c54e8": {
+    "url": "https://ir.tesla.com/press-release/tesla-fourth-quarter-2025-production-deliveries-deployments",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "9ec6d3339260caf85940b7496dacdd8e50142c43595c22facfdaad5911f0c1e6",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-f8734c6530e9": {
+    "url": "https://ir.tesla.com/press-release/tesla-q1-2017-vehicle-production-and-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "bdc03e443b217c8361a6ae6ec1d649253197463e4b182f4d62157c0231fcce25",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-63682ececb71": {
+    "url": "https://ir.tesla.com/press-release/tesla-q1-2018-vehicle-production-and-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "2112ca06271c351ed8ee4a251b6f47df69e6aa1fb9c045647b1ddd80a1b09e45",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-d00a6876ea2d": {
+    "url": "https://ir.tesla.com/press-release/tesla-q1-2019-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "74ff5250bcd5e72f0627dadf1c39a7c19ee7ea13e9d281ab8ec061f18d08049f",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-1d689e90a521": {
+    "url": "https://ir.tesla.com/press-release/tesla-q1-2020-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "bfbe67549c7bbd8c715ed60965387aeba99212f53ce0fc3c69ebeed56cc3a408",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-bc940af18a4b": {
+    "url": "https://ir.tesla.com/press-release/tesla-q1-2021-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "428b39370e7f48b64d4b9a827ab161efea788cc11a87154970c042dd8695de7e",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-61a0980fcbd6": {
+    "url": "https://ir.tesla.com/press-release/tesla-q2-2016-vehicle-production-and-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "99117bdfcf6242bc4997295863af44f280599f54284a59936830015247e224f0",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-71f5514d86e4": {
+    "url": "https://ir.tesla.com/press-release/tesla-q2-2018-vehicle-production-and-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "b77889b51bad6c761c77d4f0a9d30c654df7caf398311a157194523ef3d2f263",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-ab7761203248": {
+    "url": "https://ir.tesla.com/press-release/tesla-q2-2019-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "247bde960b80dcfe72df6e2db89490b2845c8f531a43fb3eeb0339897f164a5e",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-e5ac7a1d4322": {
+    "url": "https://ir.tesla.com/press-release/tesla-q2-2020-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "ebb7c4a4af1557a7016f39351ae40b387d8bd811f7279ae1884755e1158184ee",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-54aa220bfb57": {
+    "url": "https://ir.tesla.com/press-release/tesla-q2-2021-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "5f979e116f6ee3df1c87ace2728f282d43dbd0447e65c31e86c04dfd77971a5f",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-f24fa2dcff7b": {
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2016-production-and-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "13618d62141cf934dda69b70df6b562c5a2971764fdc74c40e20f2a8a34104a7",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-140413d7163d": {
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2017-vehicle-deliveries-and-production",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "c49e9af89af8fce636cfd40ec3819a411232874dbfe4f2a75b1cda3fd90595d4",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-d70e3064c7d5": {
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2018-vehicle-production-and-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "20eac58a445de54c05b752962dfa031984fa38a6260d6e2a276bc6afda380ee2",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-61ff40e502bd": {
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2019-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "015dd3fe59b573cdc1aabea560310195e0013a6dd481c8be65ad7f09adde3e9a",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-9e39ea25aebd": {
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2020-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "7f25538a7ef048e9d7299b67edb166c97fc28962c1eaf79b25ba6a816d629ffa",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-57826576267f": {
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2021-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "f3b3bce0652910d713f5b740cd7fa41dcb9a26a4ed28af14cca5e50de396795a",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-81af6a76ab77": {
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2016-production-and-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "a27a9918fba63289603129ac1864ff4819ec7ab48e63ee65b04f9a1d1caf785c",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-df37b3126b2b": {
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2017-vehicle-production-and-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "7a72695af97c7eb82882a14a0e269f227931c8c7131fe1526508fb62320cae0b",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-ee185028260c": {
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2018-vehicle-production-deliveries-also-announcing-2000",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "8a676881e681f4f0cb2b6dfd6cc8829c56d19cc754b8c7e60ded3d229521f817",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-e5533d0ca249": {
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2019-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "d94013432221980d657687be07bf26a3e4daf8c6ba26813b89baec86982eec12",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-99b574359490": {
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2020-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "24f8d7f512458207a50fd16d5bf2db347a4f7e62166af16cdef59cd3d75b768b",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-fb8909e9e6ee": {
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2021-vehicle-production-deliveries",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "84857d123db952ebd79705734cbd009afa896cd922c317d1a9ab0a017e99c599",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-77e270ddfed4": {
+    "url": "https://ir.tesla.com/press-release/tesla-second-quarter-2025-production-deliveries-deployments",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "44f00ebd0ce2627673eac475971c536246e47a2ebb7e9057163e84548dcc9de9",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-cadfa292c301": {
+    "url": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "d88076f434c4d865742bff00a06c9686f98aefd8a5d70a143d717c0c26ad8c41",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-d754c4d1239a": {
+    "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2024-production-deliveries-and-deployments",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "f711fe10ec9514f182eebcfe7c1ec415c9cad3a6e2a91d2e6c48c5235cf44813",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-b09f0ce7724b": {
+    "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2025-production-deliveries-deployments",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "8adf01998aea5e8b6a17c1be8931b566bd9ecaf55229a9bbb4ada8179f05efc2",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-16052fee57ea": {
+    "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "0274e48004c106ef495604f17023c18773c110965bb168bd3a93a80e1b6e5b24",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-f94569950e61": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-first-quarter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "478c10244ea76bb5b0e579f5f56ce8046590ec48f26193dda4adaa6b65e65f21",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-e59cb55c2296": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-first-quarter-2023",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "ec921135a72c8b6b2cf5a562029fdb3ab85e339aaad7eddf65a4165521770740",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-50360b907add": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-first-quarter-2024",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "93cd3657ea9c82b95f146949c8e04f398dde6fd4bf26a4b10ff87720f776c2cb",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-dfc7e32ea7e2": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-fourth-quarter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "9a90442565dd1948221e1ef4a1bf17eef8797dc8a77ff91307d060bfdf369c3a",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-47c1347043b7": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-fourth-quarter-2023",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "e3032ac03e583fd04f66ccdf393f9295dd5079cec1fa31ba32cb8a34f1458204",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-d5153db7c910": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-second-quarter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "26aae109aaf4b717d71c11db2c43f062dae8f7d132a25931fcf3682e10b58e05",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-5c78bc3660d8": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-second-quarter-2023",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "571bba91ca203c4f8490d4789e062e31dd68e49300cd67b92968c3336fe3efbe",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-8d44bd8662d0": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-second-quarter-2024",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "ce19cd85894e590cfe24c0652545fb50dfd0799165b9e0e8141bdfd323eea97f",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-327ca1047e04": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-third-quarter",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "66ec264563b232d15c4601a5234ace8a9e73800835694fda6081ae179cc0b1d1",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-4df80c5f5c81": {
+    "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-third-quarter-2023",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "b098e2c38cb29bba5cb829bb00a7a938519d6fc24f409fe5a759397b89258c12",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-eb1ce30bb9a4": {
+    "url": "https://www.globenewswire.com/news-release/2016/01/03/1035091/0/en/Tesla-Delivers-17-400-Vehicles-in-Q4-2015-Total-2015-Deliveries-Were-50-580.html",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "45904b0b4e2be543dd2d216a47d596d2279108e38959dd0eb3939f912b8f27f8",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-f1bc6605012e": {
+    "url": "https://www.globenewswire.com/news-release/2017/07/03/1038548/0/en/Tesla-Q2-2017-Vehicle-Production-and-Deliveries.html",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "da37b991b1cd802d49dae3c88b5aeefa54102048f92c2fc121ae0a6a0cd9df9d",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-96b3a3239e63": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "286cd0e8832f0fed4cb75d82dadf077d865c1f53f5b3a13b9d7b9f9afc02479d",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-5de56dcef59e": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312516418701/d106308dex991.htm",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "814d80fdf483a1d98638f6ceccc653406803b6ee702f88bb8ebb45aea5c2ffaa",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-44a62f05c908": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459020019931/tsla-10q_20200331.htm",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "a6fccc1bb3271cfd67e83fb5fb47dc32a1b40a2b244c8c8eb221e90037002717",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-f786a50cc388": {
+    "url": "https://www.tesla.com/sites/default/files/downloads/TSLA-Q2-2025-Update.pdf",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "2ec32ec8cc3b75243fcdd8edcbcdc6f69fceab6c5c5a8e7cd1b4023767113ed6",
+    "httpStatus": "200",
+    "retrieval": "Existing Tesla public-document cache; bytes/hash preserved",
+    "role": "issuer report; SEC republication is not an independent newsroom"
+  },
+  "tesla-eb016a8c19d3": {
+    "url": "https://ir.tesla.com/press-release/tesla-motors-delivers-worlds-first-premium-electric-sedan",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "303589f239f4a8599825957ae43710dd88daf7d4ff2a1d9f90bc95a0085ccc6e",
+    "role": "delivery-launch date proof"
+  },
+  "tesla-0b242a47884c": {
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q2_2012_Shareholder_Letter_Final",
+    "publisherGroup": "Tesla",
+    "checked": true,
+    "sha256": "e7864ef8ad8470c344c5cd047a24c3930934ec9aa1edcebea171bdf9ead149de",
+    "role": "delivery-launch date proof"
+  },
+  "tesla-19d3a60e5694": {
+    "url": "https://www.cbsnews.com/news/telsa-motors-launches-first-mass-market-electric-suv-model-x/",
+    "publisherGroup": "External corroboration",
+    "checked": true,
+    "sha256": "f8c0dba5d0eecb9891e4bdc3857027a1ecee93d79c9683af31220d2c69333419",
+    "role": "delivery-launch date proof"
+  },
+  "tesla-9f9f7a5022d0": {
+    "url": "https://www.sfchronicle.com/business/article/Elon-Musk-hands-over-the-1st-Tesla-Model-3s-and-11656698.php",
+    "publisherGroup": "External corroboration",
+    "checked": true,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "role": "delivery-launch date proof"
+  },
+  "tesla-6317b40a7a0b": {
+    "url": "https://kioncentralcoast.com/news/ap-california/2023/11/30/tesla-delivers-about-a-dozen-stainless-steel-cybertruck-pickups-as-it-tries-to-fix-production-woes/",
+    "publisherGroup": "External corroboration",
+    "checked": true,
+    "sha256": "99403d92209b80e36d42f656caf65c7cca023e0f972204d5f684b1fb8813f02e",
+    "role": "delivery-launch date proof"
+  }
+}

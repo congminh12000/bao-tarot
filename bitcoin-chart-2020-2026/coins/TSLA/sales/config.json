@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "asset": "TSLA",
+  "geography": "global",
+  "metric": "deliveries",
+  "from": "2015Q1",
+  "to": "2026Q3",
+  "fps": 60,
+  "duration": 480,
+  "format": "16:9",
+  "baseResolution": [
+    1920,
+    1080
+  ],
+  "quarterSeconds": 6,
+  "transitionSeconds": 0.8,
+  "introSeconds": 12,
+  "summarySeconds": 26,
+  "sourcePolicy": "public only; reported or sourced estimates; no splitting grouped figures; no US/global substitution",
+  "models": [
+    {
+      "id": "s",
+      "name": "Model S",
+      "firstQuarter": "2012Q2",
+      "color": "#FF5360",
+      "launchSources": [
+        "tesla-eb016a8c19d3",
+        "tesla-0b242a47884c"
+      ]
+    },
+    {
+      "id": "x",
+      "name": "Model X",
+      "firstQuarter": "2015Q3",
+      "color": "#65C7FF",
+      "launchSources": [
+        "tesla-c85f545d6d8e",
+        "tesla-19d3a60e5694"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Model 3",
+      "firstQuarter": "2017Q3",
+      "color": "#B995FF",
+      "launchSources": [
+        "tesla-02f434643698",
+        "tesla-9f9f7a5022d0"
+      ]
+    },
+    {
+      "id": "y",
+      "name": "Model Y",
+      "firstQuarter": "2020Q1",
+      "color": "#FFD166",
+      "launchSources": [
+        "tesla-1d689e90a521"
+      ]
+    },
+    {
+      "id": "ct",
+      "name": "Cybertruck",
+      "firstQuarter": "2023Q4",
+      "color": "#CED4DE",
+      "launchSources": [
+        "tesla-892ed095df14",
+        "tesla-6317b40a7a0b"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "hook",
+      "title": "Which Tesla leads?",
+      "t0": 0,
+      "t1": 12
+    },
+    {
+      "id": "pioneers",
+      "title": "The pioneers",
+      "from": "2015Q1",
+      "to": "2016Q4",
+      "t0": 12,
+      "t1": 76
+    },
+    {
+      "id": "challenger",
+      "title": "Model 3 joins the race",
+      "from": "2017Q1",
+      "to": "2019Q4",
+      "t0": 76,
+      "t1": 182
+    },
+    {
+      "id": "new-contender",
+      "title": "A new contender: Model Y",
+      "from": "2020Q1",
+      "to": "2021Q4",
+      "t0": 182,
+      "t1": 258
+    },
+    {
+      "id": "expansion",
+      "title": "The race expands",
+      "from": "2022Q1",
+      "to": "2023Q4",
+      "t0": 258,
+      "t1": 332
+    },
+    {
+      "id": "five-models",
+      "title": "Five models, one race",
+      "from": "2024Q1",
+      "to": "2026Q3",
+      "t0": 332,
+      "t1": 454
+    },
+    {
+      "id": "results",
+      "title": "The results",
+      "t0": 454,
+      "t1": 480
+    }
+  ],
+  "panels": [
+    {
+      "after": "2015Q3",
+      "duration": 16,
+      "kind": "launch",
+      "models": [
+        "x"
+      ],
+      "title": "Model X joins the race"
+    },
+    {
+      "after": "2017Q3",
+      "duration": 16,
+      "kind": "launch",
+      "models": [
+        "3"
+      ],
+      "title": "Meet Model 3"
+    },
+    {
+      "after": "2018Q2",
+      "duration": 18,
+      "kind": "head-to-head",
+      "models": [
+        "3",
+        "s"
+      ],
+      "title": "Model 3 vs Model S"
+    },
+    {
+      "after": "2020Q1",
+      "duration": 16,
+      "kind": "launch",
+      "models": [
+        "y"
+      ],
+      "title": "Model Y arrives"
+    },
+    {
+      "after": "2021Q4",
+      "duration": 12,
+      "kind": "momentum",
+      "title": "A year in motion"
+    },
+    {
+      "after": "2022Q4",
+      "duration": 10,
+      "kind": "annual",
+      "title": "The year in numbers"
+    },
+    {
+      "after": "2023Q4",
+      "duration": 16,
+      "kind": "launch",
+      "models": [
+        "ct"
+      ],
+      "title": "Cybertruck enters"
+    },
+    {
+      "after": "2024Q4",
+      "duration": 16,
+      "kind": "head-to-head",
+      "models": [
+        "ct",
+        "x"
+      ],
+      "title": "Cybertruck vs Model X"
+    },
+    {
+      "after": "2025Q4",
+      "duration": 20,
+      "kind": "momentum",
+      "title": "What changed?"
+    },
+    {
+      "after": "2026Q3",
+      "duration": 20,
+      "kind": "spotlight",
+      "models": [
+        "s",
+        "x",
+        "ct"
+      ],
+      "title": "Beyond the leaders"
+    }
+  ],
+  "cues": [
+    {
+      "t": 0,
+      "cue": "up-horizon"
+    },
+    {
+      "t": 120,
+      "cue": "up-crusade"
+    },
+    {
+      "t": 240,
+      "cue": "up-vanguard"
+    },
+    {
+      "t": 360,
+      "cue": "up-warpath"
+    }
+  ]
+}

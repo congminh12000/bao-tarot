@@ -98,6 +98,14 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
   blocks, no axes, 2-row header, all event levels but NOT the opening turn label (downtrend: no ATH, uptrend: no ATL), loops by
   running on into the first candle (no zoom-out). Preview 480p 60 fps with at least one loop seam inside (play it twice,
   `-loop2`); final = one cycle, end joins start. Always restore the long film's data after.
+- Tesla per-model sales long is a separate opt-in pipeline (`sales/`, PROJECT.md §19), not equity price history.
+  One bar per S/X/3/Y/Cybertruck; global quarterly deliveries 2015Q1–2026Q3, 480s/16:9/60fps. Never split issuer
+  groups, substitute US counts, allocate annual figures to quarters or use simulated data. Missing/prelaunch are null,
+  not zero. Sourced estimates need methodology and independent checked cross-checks; preserve issuer revisions.
+  Audit complete active-model coverage and obtain exact data/source/storyboard hash approval BEFORE ANY sales still/video;
+  plan approval is insufficient. Then layout, 30–45s preview, preview approval, and requested full with confirmed resolution.
+  Preserve unique out/tesla-sales workspaces and all artifacts; root long/Shorts generated data/music stay untouched.
+  Current dataset is incomplete; see coins/TSLA/sales/review.md. Do not report render-ready or silently narrow scope.
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.
 
 ## Running here (Codex / ChatGPT)

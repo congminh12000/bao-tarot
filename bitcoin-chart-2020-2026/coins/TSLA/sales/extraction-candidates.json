@@ -1,0 +1,452 @@
+[
+  {
+    "quarter": "2015Q1",
+    "model": "s",
+    "units": 10045,
+    "sourceId": "tesla-3aff8c913b17",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Motors_Q1_15_Shareholder_Letter",
+    "excerpt": "10,045 Model S vehicles were delivered in Q1, in line with our April announcement of approximately 10,030 deliveries.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q1",
+    "model": "s",
+    "units": 620542,
+    "sourceId": "tesla-3aff8c913b17",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Motors_Q1_15_Shareholder_Letter",
+    "excerpt": "ited) (In thousands, except per share data) Three Months Ended Mar 31, Dec 31, Mar 31, 2015 2014 2014 Revenues (GAAP) $ 939,880 $ 956,661 $ 620,542 Model S revenue deferred due to lease accounting (1) 163,676 138,973 92,506 Revenues (Non-GAAP) $ 1,103,556 $ 1,095,634 $ 713,048 Gross profit (GAAP) $ 260,073 $ 261,697 $ 155,1",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q1",
+    "model": "s",
+    "units": 155128,
+    "sourceId": "tesla-3aff8c913b17",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Motors_Q1_15_Shareholder_Letter",
+    "excerpt": "lease accounting (1) 163,676 138,973 92,506 Revenues (Non-GAAP) $ 1,103,556 $ 1,095,634 $ 713,048 Gross profit (GAAP) $ 260,073 $ 261,697 $ 155,128 Model S gross profit deferred due to lease accounting (1)(2) 46,396 26,072 21,384 Stock-based compensation expense 4,601 5,053 3,106 Gross profit (Non-GAAP) $ 311,070 $ 292,822 ",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q2",
+    "model": "s",
+    "units": 11507,
+    "sourceId": "tesla-04b2c2415f48",
+    "url": "https://ir.tesla.com/press-release/tesla-delivers-11507-vehicles-q2-2015",
+    "excerpt": "Vehicles in Q2 of 2015 Globe Newswire Jul 2, 2015 PALO ALTO, CA -- (Marketwired) -- 07/02/15 -- Today Tesla Motors (NASDAQ: TSLA) announced 11,507 Model S deliveries for Q2 2015.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q2",
+    "model": "s",
+    "units": 11532,
+    "sourceId": "tesla-b05c69008f11",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Q2_2015_Shareholder_Letter",
+    "excerpt": "We delivered 11,532 Model S vehicles in Q2, in line with our July announcement of approximately 11,507 deliveries.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q2",
+    "model": "s",
+    "units": 1389891,
+    "sourceId": "tesla-b05c69008f11",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Q2_2015_Shareholder_Letter",
+    "excerpt": "nths Ended June 30, Mar 31, June 30, June 30, June 30, 2015 2015 2014 2015 2014 Revenues (GAAP) $ 954,976 $ 939,880 $ 769,349 $ 1,894,856 $ 1,389,891 Model S revenue deferred due to lease accounting (1) 242,148 163,676 88,162 405,824 180,668 Revenues (Non-GAAP) $ 1,197,124 $ 1,103,556 $ 857,511 $ 2,300,680 $ 1,570,559 Gross p",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q2",
+    "model": "s",
+    "units": 368123,
+    "sourceId": "tesla-b05c69008f11",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Q2_2015_Shareholder_Letter",
+    "excerpt": "Revenues (Non-GAAP) $ 1,197,124 $ 1,103,556 $ 857,511 $ 2,300,680 $ 1,570,559 Gross profit (GAAP) $ 213,370 $ 260,073 $ 212,995 $ 473,443 $ 368,123 Model S gross profit deferred due to lease accounting (1)(2) 61,907 46,396 18,607 108,303 39,991 Stock-based compensation expense 4,820 4,601 3,912 9,421 7,018 Gross profit (Non",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q3",
+    "model": "s",
+    "units": 2241695,
+    "sourceId": "tesla-c85f545d6d8e",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q3_15_Shareholder_Letter",
+    "excerpt": "nths Ended Sept 30, June 30 Sept 30, Sept 30, Sept 30, 2015 2015 2014 2015 2014 Revenues (GAAP) $ 936,789 $ 954,976 $ 851,804 $ 2,831,647 $ 2,241,695 Model S revenue deferred due to lease accounting (1) 307,048 242,148 80,544 712,871 261,212 Revenues (Non-GAAP) $ 1,243,837 $ 1,197,124 $ 932,348 $ 3,544,518 $ 2,502,907 Gross p",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q3",
+    "model": "s",
+    "units": 619974,
+    "sourceId": "tesla-c85f545d6d8e",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q3_15_Shareholder_Letter",
+    "excerpt": "Revenues (Non-GAAP) $ 1,243,837 $ 1,197,124 $ 932,348 $ 3,544,518 $ 2,502,907 Gross profit (GAAP) $ 231,496 $ 213,370 $ 251,851 $ 704,939 $ 619,974 Model S gross profit deferred due to lease accounting (1)(2) 77,022 61,907 16,564 185,325 56,555 Stock-based compensation expense 3,828 4,820 5,383 13,249 12,401 Gross profit (N",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "s",
+    "units": 17192,
+    "sourceId": "tesla-5de56dcef59e",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312516418701/d106308dex991.htm",
+    "excerpt": "xhibit 99.1 TESLA DELIVERS 17,400 VEHICLES IN Q4 2015; TOTAL 2015 DELIVERIES WERE 50,580 SUNDAY, JANUARY 3, 2016 Q4 deliveries consisted of 17,192 Model S vehicles and 208 Model X vehicles.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "x",
+    "units": 208,
+    "sourceId": "tesla-5de56dcef59e",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312516418701/d106308dex991.htm",
+    "excerpt": "7,400 VEHICLES IN Q4 2015; TOTAL 2015 DELIVERIES WERE 50,580 SUNDAY, JANUARY 3, 2016 Q4 deliveries consisted of 17,192 Model S vehicles and 208 Model X vehicles.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "x",
+    "units": 507,
+    "sourceId": "tesla-5de56dcef59e",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312516418701/d106308dex991.htm",
+    "excerpt": "(507 Model X vehicles were produced during Q4 with the remainder to be delivered in early Q1.) Q4 Model S deliveries were approximately 48% more than our prior quarterly record and a",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "s",
+    "units": 17192,
+    "sourceId": "tesla-eb1ce30bb9a4",
+    "url": "https://www.globenewswire.com/news-release/2016/01/03/1035091/0/en/Tesla-Delivers-17-400-Vehicles-in-Q4-2015-Total-2015-Deliveries-Were-50-580.html",
+    "excerpt": "true : false, } PALO ALTO, CA--(Marketwired - Jan 3, 2016) - Tesla ( NASDAQ : TSLA ) Q4 deliveries consisted of 17,192 Model S vehicles and 208 Model X vehicles.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "x",
+    "units": 208,
+    "sourceId": "tesla-eb1ce30bb9a4",
+    "url": "https://www.globenewswire.com/news-release/2016/01/03/1035091/0/en/Tesla-Delivers-17-400-Vehicles-in-Q4-2015-Total-2015-Deliveries-Were-50-580.html",
+    "excerpt": "true : false, } PALO ALTO, CA--(Marketwired - Jan 3, 2016) - Tesla ( NASDAQ : TSLA ) Q4 deliveries consisted of 17,192 Model S vehicles and 208 Model X vehicles.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "x",
+    "units": 507,
+    "sourceId": "tesla-eb1ce30bb9a4",
+    "url": "https://www.globenewswire.com/news-release/2016/01/03/1035091/0/en/Tesla-Delivers-17-400-Vehicles-in-Q4-2015-Total-2015-Deliveries-Were-50-580.html",
+    "excerpt": "(507 Model X vehicles were produced during Q4 with the remainder to be delivered in early Q1.) Q4 Model S deliveries were approximately 48% more than our prior quarterly record and a",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "x",
+    "units": 507,
+    "sourceId": "tesla-eb1ce30bb9a4",
+    "url": "https://www.globenewswire.com/news-release/2016/01/03/1035091/0/en/Tesla-Delivers-17-400-Vehicles-in-Q4-2015-Total-2015-Deliveries-Were-50-580.html",
+    "excerpt": "(507 Model X vehicles were produced during Q4 with the...\\\"},\\\"AdditionalItems\\\":[{\\\"Key\\\":\\\"printedcopy\\\",\\\"Label\\\":\\\"Print\\\",\\\"Url\\\":\\\"https://www.globenewswire.com/news-release/20",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "x",
+    "units": 507,
+    "sourceId": "tesla-eb1ce30bb9a4",
+    "url": "https://www.globenewswire.com/news-release/2016/01/03/1035091/0/en/Tesla-Delivers-17-400-Vehicles-in-Q4-2015-Total-2015-Deliveries-Were-50-580.html",
+    "excerpt": "(507 Model X vehicles were produced during Q4 with the...\\\"},\\\"AdditionalItems\\\":[{\\\"Key\\\":\\\"printedcopy\\\",\\\"Label\\\":\\\"Print\\\",\\\"Url\\\":\\\"https://www.globenewswire.com/news-release/20",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "x",
+    "units": 206,
+    "sourceId": "tesla-876ffc2bde4a",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q4_15_Tesla_Update_Letter",
+    "excerpt": "We delivered 17,478 vehicles in Q4, including 206 Model X vehicles.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "s",
+    "units": 3198356,
+    "sourceId": "tesla-876ffc2bde4a",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q4_15_Tesla_Update_Letter",
+    "excerpt": "d Year Ended Dec 31, Sep 30, Dec 31, Dec 31, Dec 31, 2015 2015 2014 2015 2014 Revenues (GAAP) $ 1,214,378 $ 936,789 $ 956,661 $ 4,046,025 $ 3,198,356 Model S revenue deferred due to lease accounting (1) 532,646 307,048 138,973 1,245,517 400,185 Revenues (Non-GAAP) $ 1,747,024 $ 1,243,837 $ 1,095,634 $ 5,291,542 $ 3,598,541 Gr",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2015Q4",
+    "model": "s",
+    "units": 881671,
+    "sourceId": "tesla-876ffc2bde4a",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q4_15_Tesla_Update_Letter",
+    "excerpt": "venues (Non-GAAP) $ 1,747,024 $ 1,243,837 $ 1,095,634 $ 5,291,542 $ 3,598,541 Gross profit (GAAP) $ 218,563 $ 231,496 $ 261,697 $ 923,502 $ 881,671 Model S gross profit deferred due to lease accounting (1)(2) 124,190 77,022 26,072 309,515 82,626 Stock-based compensation expense 5,995 3,828 5,053 19,244 17,455 Gross profit (",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2016Q1",
+    "model": "x",
+    "units": 750,
+    "sourceId": "tesla-0e2344019cfd",
+    "url": "https://ir.tesla.com/press-release/tesla-delivers-14820-vehicles-q1-2016-track-full-year-delivery",
+    "excerpt": "By the last full week of March, the build rate rose to 750 Model X vehicles per week, however many of these vehicles were built too late to be delivered to their owners before end of quarter.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2016Q2",
+    "model": "s",
+    "units": 9764,
+    "sourceId": "tesla-37c84f5edd73",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q2_16_Update_Letter_-_final",
+    "excerpt": "In Q2, we delivered 14,402 new vehicles consisting of 9,764 Model S and 4,638 Model X, which was slightly higher than what we stated in our July announcement.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2016Q2",
+    "model": "x",
+    "units": 4638,
+    "sourceId": "tesla-37c84f5edd73",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q2_16_Update_Letter_-_final",
+    "excerpt": "In Q2, we delivered 14,402 new vehicles consisting of 9,764 Model S and 4,638 Model X, which was slightly higher than what we stated in our July announcement.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2016Q3",
+    "model": "s",
+    "units": 16047,
+    "sourceId": "tesla-a983942d5d78",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q3_16_Update_Letter_-_final",
+    "excerpt": "Deliveries increased 114% from the third quarter of 2015, and was comprised of 16,047 Model S and 8,774 Model X vehicles.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2016Q3",
+    "model": "x",
+    "units": 8774,
+    "sourceId": "tesla-a983942d5d78",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q3_16_Update_Letter_-_final",
+    "excerpt": "Deliveries increased 114% from the third quarter of 2015, and was comprised of 16,047 Model S and 8,774 Model X vehicles.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2016Q4",
+    "model": "s",
+    "units": 12700,
+    "sourceId": "tesla-81af6a76ab77",
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2016-production-and-deliveries",
+    "excerpt": "Tesla delivered approximately 22,200 vehicles in Q4, of which 12,700 were Model S and 9,500 were Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2016Q4",
+    "model": "x",
+    "units": 9500,
+    "sourceId": "tesla-81af6a76ab77",
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2016-production-and-deliveries",
+    "excerpt": "Tesla delivered approximately 22,200 vehicles in Q4, of which 12,700 were Model S and 9,500 were Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q2",
+    "model": "s",
+    "units": 12000,
+    "sourceId": "tesla-f1bc6605012e",
+    "url": "https://www.globenewswire.com/news-release/2017/07/03/1038548/0/en/Tesla-Q2-2017-Vehicle-Production-and-Deliveries.html",
+    "excerpt": "e, } PALO ALTO, Calif., July 03, 2017 (GLOBE NEWSWIRE) -- Tesla (Nasdaq:TSLA) delivered just over 22,000 vehicles in Q2, of which just over 12,000 were Model S and just over 10,000 were Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q2",
+    "model": "x",
+    "units": 10000,
+    "sourceId": "tesla-f1bc6605012e",
+    "url": "https://www.globenewswire.com/news-release/2017/07/03/1038548/0/en/Tesla-Q2-2017-Vehicle-Production-and-Deliveries.html",
+    "excerpt": "017 (GLOBE NEWSWIRE) -- Tesla (Nasdaq:TSLA) delivered just over 22,000 vehicles in Q2, of which just over 12,000 were Model S and just over 10,000 were Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q3",
+    "model": "s",
+    "units": 14065,
+    "sourceId": "tesla-140413d7163d",
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2017-vehicle-deliveries-and-production",
+    "excerpt": "02, 2017 (GLOBE NEWSWIRE) -- In Q3, Tesla delivered 26,150 vehicles, of which 14,065 were Model S, 11,865 were Model X, and 220 were Model 3.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q3",
+    "model": "x",
+    "units": 11865,
+    "sourceId": "tesla-140413d7163d",
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2017-vehicle-deliveries-and-production",
+    "excerpt": "02, 2017 (GLOBE NEWSWIRE) -- In Q3, Tesla delivered 26,150 vehicles, of which 14,065 were Model S, 11,865 were Model X, and 220 were Model 3.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q3",
+    "model": "3",
+    "units": 220,
+    "sourceId": "tesla-140413d7163d",
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2017-vehicle-deliveries-and-production",
+    "excerpt": "02, 2017 (GLOBE NEWSWIRE) -- In Q3, Tesla delivered 26,150 vehicles, of which 14,065 were Model S, 11,865 were Model X, and 220 were Model 3.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q3",
+    "model": "3",
+    "units": 222,
+    "sourceId": "tesla-02f434643698",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2017-3Q",
+    "excerpt": "In Q3, we delivered 25,915 Model S and Model X vehicles and 222 Model 3 vehicles, for a total of 26,137 deliveries.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q4",
+    "model": "s",
+    "units": 15200,
+    "sourceId": "tesla-df37b3126b2b",
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2017-vehicle-production-and-deliveries",
+    "excerpt": "03, 2018 (GLOBE NEWSWIRE) -- In Q4, Tesla delivered 29,870 vehicles, of which 15,200 were Model S, 13,120 were Model X, and 1,550 were Model 3.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q4",
+    "model": "x",
+    "units": 13120,
+    "sourceId": "tesla-df37b3126b2b",
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2017-vehicle-production-and-deliveries",
+    "excerpt": "03, 2018 (GLOBE NEWSWIRE) -- In Q4, Tesla delivered 29,870 vehicles, of which 15,200 were Model S, 13,120 were Model X, and 1,550 were Model 3.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q4",
+    "model": "3",
+    "units": 1550,
+    "sourceId": "tesla-df37b3126b2b",
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2017-vehicle-production-and-deliveries",
+    "excerpt": "03, 2018 (GLOBE NEWSWIRE) -- In Q4, Tesla delivered 29,870 vehicles, of which 15,200 were Model S, 13,120 were Model X, and 1,550 were Model 3.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2017Q4",
+    "model": "3",
+    "units": 1542,
+    "sourceId": "tesla-6b9f177e312c",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2017-4Q",
+    "excerpt": "In Q4, we delivered 28,425 Model S and Model X vehicles and 1,542 Model 3 vehicles, totaling 29,967 deliveries.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q1",
+    "model": "s",
+    "units": 11730,
+    "sourceId": "tesla-63682ececb71",
+    "url": "https://ir.tesla.com/press-release/tesla-q1-2018-vehicle-production-and-deliveries",
+    "excerpt": "Q1 deliveries totaled 29,980 vehicles, of which 11,730 were Model S, 10,070 were Model X, and 8,180 were Model 3.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q1",
+    "model": "x",
+    "units": 10070,
+    "sourceId": "tesla-63682ececb71",
+    "url": "https://ir.tesla.com/press-release/tesla-q1-2018-vehicle-production-and-deliveries",
+    "excerpt": "Q1 deliveries totaled 29,980 vehicles, of which 11,730 were Model S, 10,070 were Model X, and 8,180 were Model 3.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q1",
+    "model": "3",
+    "units": 8180,
+    "sourceId": "tesla-63682ececb71",
+    "url": "https://ir.tesla.com/press-release/tesla-q1-2018-vehicle-production-and-deliveries",
+    "excerpt": "Q1 deliveries totaled 29,980 vehicles, of which 11,730 were Model S, 10,070 were Model X, and 8,180 were Model 3.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q2",
+    "model": "3",
+    "units": 18440,
+    "sourceId": "tesla-71f5514d86e4",
+    "url": "https://ir.tesla.com/press-release/tesla-q2-2018-vehicle-production-and-deliveries",
+    "excerpt": "Q2 deliveries totaled 40,740 vehicles, of which 18,440 were Model 3, 10,930 were Model S, and 11,370 were Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q2",
+    "model": "s",
+    "units": 10930,
+    "sourceId": "tesla-71f5514d86e4",
+    "url": "https://ir.tesla.com/press-release/tesla-q2-2018-vehicle-production-and-deliveries",
+    "excerpt": "Q2 deliveries totaled 40,740 vehicles, of which 18,440 were Model 3, 10,930 were Model S, and 11,370 were Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q2",
+    "model": "x",
+    "units": 11370,
+    "sourceId": "tesla-71f5514d86e4",
+    "url": "https://ir.tesla.com/press-release/tesla-q2-2018-vehicle-production-and-deliveries",
+    "excerpt": "Q2 deliveries totaled 40,740 vehicles, of which 18,440 were Model 3, 10,930 were Model S, and 11,370 were Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q2",
+    "model": "3",
+    "units": 28386,
+    "sourceId": "tesla-71f5514d86e4",
+    "url": "https://ir.tesla.com/press-release/tesla-q2-2018-vehicle-production-and-deliveries",
+    "excerpt": "The remaining net Model 3 reservations count at the end of Q2 still stood at roughly 420,000 even though we have now delivered 28,386 Model 3 vehicles to date.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q3",
+    "model": "3",
+    "units": 55840,
+    "sourceId": "tesla-d70e3064c7d5",
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2018-vehicle-production-and-deliveries",
+    "excerpt": "Q3 deliveries totaled 83,500 vehicles: 55,840 Model 3, 14,470 Model S, and 13,190 Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q3",
+    "model": "s",
+    "units": 14470,
+    "sourceId": "tesla-d70e3064c7d5",
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2018-vehicle-production-and-deliveries",
+    "excerpt": "Q3 deliveries totaled 83,500 vehicles: 55,840 Model 3, 14,470 Model S, and 13,190 Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q3",
+    "model": "x",
+    "units": 13190,
+    "sourceId": "tesla-d70e3064c7d5",
+    "url": "https://ir.tesla.com/press-release/tesla-q3-2018-vehicle-production-and-deliveries",
+    "excerpt": "Q3 deliveries totaled 83,500 vehicles: 55,840 Model 3, 14,470 Model S, and 13,190 Model X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2018Q4",
+    "model": "3",
+    "units": 145846,
+    "sourceId": "tesla-ee185028260c",
+    "url": "https://ir.tesla.com/press-release/tesla-q4-2018-vehicle-production-deliveries-also-announcing-2000",
+    "excerpt": "In 2018, we delivered a total of 245,240 vehicles: 145,846 Model 3 and 99,394 Model S and X.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2019Q4",
+    "model": "3",
+    "units": 2019,
+    "sourceId": "tesla-9f147a6351c4",
+    "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2019-4Q",
+    "excerpt": "2017 2018 2019 Model 3 deliveries by region 7 CORE TECHNOLOGY Autopilot & Full Self Driving (FSD) To date, Tesla vehicles have driven over 3 billion miles in Autopilot mode.",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  },
+  {
+    "quarter": "2025Q2",
+    "model": "3",
+    "units": 2017,
+    "sourceId": "tesla-f786a50cc388",
+    "url": "https://www.tesla.com/sites/default/files/downloads/TSLA-Q2-2025-Update.pdf",
+    "excerpt": "Vehicle and Other Software Our cars get better over time: a 2017 Model 3 owner today has access to features that did not Cumulative miles driven with FSD (Supervised)1 (billions) exist when their car was built - improved security and safety (",
+    "review": "candidate; requires literal quarter/model/delivery/context verification"
+  }
+]

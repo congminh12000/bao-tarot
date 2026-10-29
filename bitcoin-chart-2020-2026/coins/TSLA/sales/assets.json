@@ -1,0 +1,72 @@
+{
+  "logo": {
+    "file": "coins/TSLA/logo.png",
+    "sourceUrl": "https://ir.tesla.com/",
+    "sha256": "7e5c7a431bf4562dfbf72cb6ee139903e18575c249ff567fe812c0a3e6e8b6fd"
+  },
+  "s": {
+    "file": "coins/TSLA/sales/assets/s.jpg",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-New-Exterior-Carousel-Slide-1-Desktop-NA.png",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Model-S-New-Exterior-Carousel-Slide-1-Desktop-NA.png",
+    "sourcePage": "https://www.tesla.com/models",
+    "sha256": "cbabe18168519232db1728871afd4dbbbedc5d493dcc7c2275a520acad6c8046",
+    "pixels": [
+      1000,
+      725
+    ],
+    "checkedOn": "2026-10-29",
+    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+  },
+  "x": {
+    "file": "coins/TSLA/sales/assets/x.jpg",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-X-New-Exterior-Carousel-Slide-1-Entry-Desktop.jpg",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Model-X-New-Exterior-Carousel-Slide-1-Entry-Desktop.jpg",
+    "sourcePage": "https://www.tesla.com/modelx",
+    "sha256": "36241e2e2552196ee19c77ae244b89b8baeaec89043517920dc25fbf89683496",
+    "pixels": [
+      1000,
+      725
+    ],
+    "checkedOn": "2026-10-29",
+    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+  },
+  "3": {
+    "file": "coins/TSLA/sales/assets/3.jpg",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Social.jpg",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Model-3-Social.jpg",
+    "sourcePage": "https://www.tesla.com/model3",
+    "sha256": "12d585ba0c49431dfaa436b924eb39cfbd2ea36b7d2cfb0e5842d373a975385f",
+    "pixels": [
+      1000,
+      523
+    ],
+    "checkedOn": "2026-10-29",
+    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+  },
+  "y": {
+    "file": "coins/TSLA/sales/assets/y.jpg",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-Y-Exterior-Carousel-Slide-1-Desktop.png",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Model-Y-Exterior-Carousel-Slide-1-Desktop.png",
+    "sourcePage": "https://www.tesla.com/modely",
+    "sha256": "3051a5aa1cb4ecacb9c917f0f182fbcfa8529094146d0783d06a92f47650ead9",
+    "pixels": [
+      1000,
+      500
+    ],
+    "checkedOn": "2026-10-29",
+    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+  },
+  "ct": {
+    "file": "coins/TSLA/sales/assets/ct.jpg",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Main-Hero-Desktop-v3.jpg",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Cybertruck-Main-Hero-Desktop-v3.jpg",
+    "sourcePage": "https://www.tesla.com/cybertruck",
+    "sha256": "1d166281848d27d4b9ddc9494c1d28ea97f8e1c475d907bf71106a401c279749",
+    "pixels": [
+      1000,
+      549
+    ],
+    "checkedOn": "2026-10-29",
+    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+  }
+}

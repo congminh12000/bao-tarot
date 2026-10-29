@@ -1,0 +1,236 @@
+quarter,model,geography,metric,status,units,observation,note
+2015Q1,s,global,deliveries,reported,10045,2015Q1-s-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2015Q1,x,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q1,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q1,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q1,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q2,s,global,deliveries,reported,11532,2015Q2-s-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2015Q2,x,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q2,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q2,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q2,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2015Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2015Q3,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q3,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q3,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2015Q4,x,global,deliveries,reported,206,2015Q4-x-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2015Q4,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q4,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2015Q4,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2016Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2016Q1,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q1,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q1,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q2,s,global,deliveries,reported,9764,2016Q2-s-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2016Q2,x,global,deliveries,reported,4638,2016Q2-x-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2016Q2,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q2,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q2,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q3,s,global,deliveries,reported,16047,2016Q3-s-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2016Q3,x,global,deliveries,reported,8774,2016Q3-x-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2016Q3,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q3,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q3,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2016Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2016Q4,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q4,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2016Q4,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2017Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2017Q1,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q1,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q1,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2017Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2017Q2,3,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q2,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q2,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2017Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2017Q3,3,global,deliveries,reported,222,2017Q3-3-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2017Q3,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q3,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2017Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2017Q4,3,global,deliveries,reported,1542,2017Q4-3-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2017Q4,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2017Q4,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2018Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2018Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2018Q1,3,global,deliveries,reported,8182,2018Q1-3-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2018Q1,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2018Q1,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2018Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2018Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2018Q2,3,global,deliveries,reported,18449,2018Q2-3-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2018Q2,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2018Q2,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2018Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2018Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2018Q3,3,global,deliveries,reported,56065,2018Q3-3-issuer-revised,Revised issuer individual-model quarterly delivery count.
+2018Q3,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2018Q3,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2018Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2018Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2018Q4,3,global,deliveries,reported,63359,2018Q4-3-issuer-revised,"Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split."
+2018Q4,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2018Q4,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2019Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2019Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2019Q1,3,global,deliveries,reported,50928,2019Q1-3-issuer-revised,"Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split."
+2019Q1,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2019Q1,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2019Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2019Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2019Q2,3,global,deliveries,reported,77634,2019Q2-3-issuer-revised,"Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split."
+2019Q2,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2019Q2,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2019Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2019Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2019Q3,3,global,deliveries,reported,79703,2019Q3-3-issuer-revised,"Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split."
+2019Q3,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2019Q3,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2019Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2019Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2019Q4,3,global,deliveries,reported,92620,2019Q4-3-issuer-revised,"Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split."
+2019Q4,y,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2019Q4,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2020Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q1,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q1,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q1,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2020Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q2,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q2,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q2,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2020Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q3,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q3,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q3,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2020Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q4,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q4,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2020Q4,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2021Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q1,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q1,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q1,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2021Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q2,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q2,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q2,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2021Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q3,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q3,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q3,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2021Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q4,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q4,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2021Q4,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2022Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q1,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q1,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q1,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2022Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q2,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q2,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q2,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2022Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q3,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q3,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q3,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2022Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q4,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q4,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2022Q4,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2023Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q1,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q1,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q1,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2023Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q2,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q2,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q2,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2023Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q3,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q3,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q3,ct,global,deliveries,not_launched,,,Not launched; see config launchSources.
+2023Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q4,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q4,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2023Q4,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q1,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q1,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q1,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q2,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q2,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q2,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q3,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q3,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q3,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q4,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q4,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2024Q4,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q1,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q1,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q1,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q2,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q2,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q2,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q3,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q3,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q3,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q4,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q4,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q4,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q4,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2025Q4,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q1,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q1,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q1,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q1,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q1,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q2,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q2,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q2,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q2,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q2,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q3,s,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q3,x,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q3,3,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q3,y,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."
+2026Q3,ct,global,deliveries,missing,,,"Individual-model global quarterly figure not verified; grouped, regional, annual and simulated figures excluded."

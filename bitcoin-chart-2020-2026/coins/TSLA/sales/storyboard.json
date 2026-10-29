@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "language": "en",
+  "status": "draft; concrete data/storyboard not yet approved",
+  "intro": "FIVE MODELS. ONE RACE.",
+  "metricCaption": "GLOBAL QUARTERLY DELIVERIES",
+  "estimateCaption": "ESTIMATED · SOURCED MODEL DATA",
+  "summaryCaption": "CUMULATIVE DELIVERIES · SINCE 2015",
+  "mainAxis": "fixed linear, zero baseline; ceiling rounded upward to 50000",
+  "spotlightAxis": "separate scale, explicitly labelled DETAIL SCALE",
+  "counterPolicy": "hold previous reported value during transition; hide moving labels; reveal exact target after 0.8s",
+  "claims": "Compute leadership, comparisons and records only from complete accepted observations. Never predeclare a winner.",
+  "reviewSequence": ["complete data and sources", "approve exact data/storyboard hash", "layout still", "30–45 second preview", "approve preview", "requested full film"]
+}

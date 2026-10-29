@@ -1,0 +1,382 @@
+[
+  {
+    "quarter": "2015Q1",
+    "deliveryReleaseDate": "2015-04-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-delivers-10030-vehicles-q1-2015",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Motors_Q1_15_Shareholder_Letter"
+    ]
+  },
+  {
+    "quarter": "2015Q2",
+    "deliveryReleaseDate": "2015-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-delivers-11507-vehicles-q2-2015",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Tesla_Q2_2015_Shareholder_Letter"
+    ]
+  },
+  {
+    "quarter": "2015Q3",
+    "deliveryReleaseDate": "2015-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-delivers-11580-vehicles-q3-2015",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q3_15_Shareholder_Letter"
+    ]
+  },
+  {
+    "quarter": "2015Q4",
+    "deliveryReleaseDate": "2016-01-03",
+    "urls": [
+      "https://www.sec.gov/Archives/edgar/data/1318605/000119312516418701/d106308dex991.htm",
+      "https://www.globenewswire.com/news-release/2016/01/03/1035091/0/en/Tesla-Delivers-17-400-Vehicles-in-Q4-2015-Total-2015-Deliveries-Were-50-580.html",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q4_15_Tesla_Update_Letter"
+    ]
+  },
+  {
+    "quarter": "2016Q1",
+    "deliveryReleaseDate": "2016-04-04",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-delivers-14820-vehicles-q1-2016-track-full-year-delivery",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q1_2016_Tesla_Shareholder_Letter"
+    ]
+  },
+  {
+    "quarter": "2016Q2",
+    "deliveryReleaseDate": "2016-07-03",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q2-2016-vehicle-production-and-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q2_16_Update_Letter_-_final"
+    ]
+  },
+  {
+    "quarter": "2016Q3",
+    "deliveryReleaseDate": "2016-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q3-2016-production-and-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/Q3_16_Update_Letter_-_final"
+    ]
+  },
+  {
+    "quarter": "2016Q4",
+    "deliveryReleaseDate": "2017-01-03",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q4-2016-production-and-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2016_4Q"
+    ]
+  },
+  {
+    "quarter": "2017Q1",
+    "deliveryReleaseDate": "2017-04-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q1-2017-vehicle-production-and-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Q1_2017_Update_Letter"
+    ]
+  },
+  {
+    "quarter": "2017Q2",
+    "deliveryReleaseDate": "2017-07-03",
+    "urls": [
+      "https://ir.tesla.com/_flysystem/s3/sec/000156459017013176/tsla-8k_20170703-gen_0.pdf",
+      "https://www.globenewswire.com/news-release/2017/07/03/1038548/0/en/Tesla-Q2-2017-Vehicle-Production-and-Deliveries.html",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2017-2Q"
+    ]
+  },
+  {
+    "quarter": "2017Q3",
+    "deliveryReleaseDate": "2017-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q3-2017-vehicle-deliveries-and-production",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2017-3Q"
+    ]
+  },
+  {
+    "quarter": "2017Q4",
+    "deliveryReleaseDate": "2018-01-03",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q4-2017-vehicle-production-and-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2017-4Q"
+    ]
+  },
+  {
+    "quarter": "2018Q1",
+    "deliveryReleaseDate": "2018-04-03",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q1-2018-vehicle-production-and-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2018-1Q"
+    ]
+  },
+  {
+    "quarter": "2018Q2",
+    "deliveryReleaseDate": "2018-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q2-2018-vehicle-production-and-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Update-Letter-2018-2Q"
+    ]
+  },
+  {
+    "quarter": "2018Q3",
+    "deliveryReleaseDate": "2018-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q3-2018-vehicle-production-and-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2018-3Q"
+    ]
+  },
+  {
+    "quarter": "2018Q4",
+    "deliveryReleaseDate": "2019-01-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q4-2018-vehicle-production-deliveries-also-announcing-2000",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2018-4Q"
+    ]
+  },
+  {
+    "quarter": "2019Q1",
+    "deliveryReleaseDate": "2019-04-03",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q1-2019-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2019-1Q"
+    ]
+  },
+  {
+    "quarter": "2019Q2",
+    "deliveryReleaseDate": "2019-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q2-2019-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2019-2Q"
+    ]
+  },
+  {
+    "quarter": "2019Q3",
+    "deliveryReleaseDate": "2019-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q3-2019-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2019-3Q"
+    ]
+  },
+  {
+    "quarter": "2019Q4",
+    "deliveryReleaseDate": "2020-01-03",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q4-2019-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2019-4Q"
+    ]
+  },
+  {
+    "quarter": "2020Q1",
+    "deliveryReleaseDate": "2020-04-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q1-2020-vehicle-production-deliveries",
+      "https://www.sec.gov/Archives/edgar/data/1318605/000156459020019931/tsla-10q_20200331.htm",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2020-1Q"
+    ]
+  },
+  {
+    "quarter": "2020Q2",
+    "deliveryReleaseDate": "2020-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q2-2020-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA_Update_Letter_2020-2Q"
+    ]
+  },
+  {
+    "quarter": "2020Q3",
+    "deliveryReleaseDate": "2020-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q3-2020-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2020-Update"
+    ]
+  },
+  {
+    "quarter": "2020Q4",
+    "deliveryReleaseDate": "2021-01-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q4-2020-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2020-Update"
+    ]
+  },
+  {
+    "quarter": "2021Q1",
+    "deliveryReleaseDate": "2021-04-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q1-2021-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q1-2021-Update"
+    ]
+  },
+  {
+    "quarter": "2021Q2",
+    "deliveryReleaseDate": "2021-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q2-2021-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2021-Update"
+    ]
+  },
+  {
+    "quarter": "2021Q3",
+    "deliveryReleaseDate": "2021-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q3-2021-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2021-Quarterly-Update"
+    ]
+  },
+  {
+    "quarter": "2021Q4",
+    "deliveryReleaseDate": "2022-01-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-q4-2021-vehicle-production-deliveries",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2021-Update"
+    ]
+  },
+  {
+    "quarter": "2022Q1",
+    "deliveryReleaseDate": "2022-04-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-first-quarter",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q1-2022-Update"
+    ]
+  },
+  {
+    "quarter": "2022Q2",
+    "deliveryReleaseDate": "2022-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-second-quarter",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2022-Update"
+    ]
+  },
+  {
+    "quarter": "2022Q3",
+    "deliveryReleaseDate": "2022-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-third-quarter",
+      "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2022-Update"
+    ]
+  },
+  {
+    "quarter": "2022Q4",
+    "deliveryReleaseDate": "2023-01-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-fourth-quarter",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2022-Update"
+    ]
+  },
+  {
+    "quarter": "2023Q1",
+    "deliveryReleaseDate": "2023-04-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-first-quarter-2023",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q1-2023-Update"
+    ]
+  },
+  {
+    "quarter": "2023Q2",
+    "deliveryReleaseDate": "2023-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-second-quarter-2023",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2023-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2023Q3",
+    "deliveryReleaseDate": "2023-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-third-quarter-2023",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2023-Update-3.pdf"
+    ]
+  },
+  {
+    "quarter": "2023Q4",
+    "deliveryReleaseDate": "2024-01-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-fourth-quarter-2023",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2023-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2024Q1",
+    "deliveryReleaseDate": "2024-04-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-first-quarter-2024",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q1-2024-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2024Q2",
+    "deliveryReleaseDate": "2024-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-second-quarter-2024",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q2-2024-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2024Q3",
+    "deliveryReleaseDate": "2024-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-third-quarter-2024-production-deliveries-and-deployments",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q3-2024-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2024Q4",
+    "deliveryReleaseDate": "2025-01-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2024-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2025Q1",
+    "deliveryReleaseDate": "2025-04-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-first-quarter-2025-production-deliveries-and-deployments",
+      "https://digitalassets.tesla.com/tesla-contents/image/upload/IR/IR/TSLA-Q1-2025-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2025Q2",
+    "deliveryReleaseDate": "2025-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-second-quarter-2025-production-deliveries-deployments",
+      "https://www.tesla.com/sites/default/files/downloads/TSLA-Q2-2025-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2025Q3",
+    "deliveryReleaseDate": "2025-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-third-quarter-2025-production-deliveries-deployments",
+      "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2025-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2025Q4",
+    "deliveryReleaseDate": "2026-01-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-fourth-quarter-2025-production-deliveries-deployments",
+      "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q4-2025-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2026Q1",
+    "deliveryReleaseDate": "2026-04-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-first-quarter-2026-production-deliveries-and-deployments",
+      "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q1-2026-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2026Q2",
+    "deliveryReleaseDate": "2026-07-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+      "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf"
+    ]
+  },
+  {
+    "quarter": "2026Q3",
+    "deliveryReleaseDate": "2026-10-02",
+    "urls": [
+      "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments",
+      "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+    ]
+  }
+]

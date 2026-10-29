@@ -1,0 +1,25 @@
+{
+  "checkedOn": "2026-10-29",
+  "salesTests": 15,
+  "existingEventTests": 5,
+  "renderedSalesFrames": 0,
+  "salesAudioGenerated": false,
+  "activeCells": 168,
+  "acceptedCells": 17,
+  "missingCells": 151,
+  "strictAuditExit": 1,
+  "buildBlockedBeforeWorkspaceCreation": true,
+  "unchangedRootHashes": {
+    "btc-data.js": "9d120ed7d67a2e91380fe2c48754cfdb5258997fe7e8d104cb094e3d9439646e",
+    "score.js": "a8d4a5ee3308956b4b4e0b6dd6291b37657693d37a57800e6918eddb4bcba230",
+    "film.js": "138ddee084ec06ba54f77002ac81addf7a5e684b983cb8fa2e0a4e27d723fc45",
+    "index.html": "480596fec3d650dedd825372712128b3fefc43661e3e74a3f9e0e235b59f9062",
+    "song.js": "ea71075ae99386eeeef3e78007a2cb2b843aed6e842f947e768ebc360a2b6585",
+    "out/music.wav": "56ec551d7030e79ae406de9ab12d4a37888e3cc6c4bc5a28fe6c9972f8fe7e16"
+  },
+  "limitations": [
+    "No end-to-end sales render or visual/audio acceptance: data incomplete; concrete review pending.",
+    "No claim of independent corroboration of issuer-only observations.",
+    "No decoded long/Shorts regression render was run; source/generated data/music hashes unchanged."
+  ]
+}

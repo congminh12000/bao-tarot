@@ -20,7 +20,11 @@
     "test:line": "SHORT_STYLE=line COIN=DOGE FROM=2021-01-01 TO=2022-11-11 node make-data.js --strict && node line/test.js",
     "test:line:regression": "node line/regression.js",
     "audit:equity": "node check-equity.js",
-    "test:equity": "COIN=TSLA node make-data.js --strict && COIN=TSLA node --test test-equity.js"
+    "test:equity": "COIN=TSLA node make-data.js --strict && COIN=TSLA node --test test-equity.js",
+    "test:sales": "node sales/test.js",
+    "review:sales": "node sales/review.js --review",
+    "audit:sales": "node sales/review.js",
+    "build:sales": "node sales/build.js"
   },
   "devDependencies": {
     "playwright-core": "1.47.2"
