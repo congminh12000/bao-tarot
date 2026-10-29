@@ -318,6 +318,13 @@ Môi trường cloud chạy bằng root: Chrome cần `--no-sandbox` → đặt 
 
 ## 10. Trạng thái hiện tại (26/10/2026)
 
+- **HYPE preview 26 nhãn đã duyệt — 29/10/2026:** người dùng duyệt 7 mức 2 + 15 mức 1 và yêu cầu preview full.
+  Hoàn tất 698 ngày giá, 22 sự kiện + 4 ATH/ATL, giữ 5 phase/5 cue. 88,8167 s, 5.329 frame, 854×480/60 fps,
+  24.340.305 byte. Source/strict-ingestion/check-labels đạt (1 nhãn cũ rời sớm), verify **12/12 in sync**.
+  AAC −15,9 LUFS, true peak −1,3 dBTP (chưa nghe). Lưu `out/renders/hype-preview-approved26-full-20261029-480p60/`,
+  fingerprint 13e59d745e5d82d6. Workspace riêng, root data/music giữ nguyên.
+  Xem `coins/HYPE/preview-approved26-20261029.json`. **Chờ duyệt hình/âm thanh; chưa final.**
+
 - **HYPE rà mức 1 — 29/10/2026:** người dùng duyệt danh sách 7 mức 2; áp dụng 7 lần hạ mức 2→1.
   Rà 37 mục mức 1, giữ 15, đặt thêm 22 remove=true. Hiện 22 sự kiện trong giá + 4 ATH/ATL = 26 nhãn.
   Tổng research 225, nguồn 465, 193 ẩn, 32 giữ (10 ngoài đoạn giá); không đổi nhãn/ngày/giá/phase/nhạc.

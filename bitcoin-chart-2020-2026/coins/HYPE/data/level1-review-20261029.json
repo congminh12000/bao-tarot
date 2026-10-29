@@ -1,5 +1,5 @@
 {
-  "status": "Level-2 approved; level-1 selection pending approval before render",
+  "status": "Selection approved; full preview requested; visual/audio approval pending.",
   "scope": "37 visible candidates after approved demotions; 22 newly hidden, no previously hidden event re-enabled",
   "method": "Editorial materiality using stored citations and current primary docs; no new causal price impact study. Removed does not mean false or zero effect.",
   "counts": {
@@ -633,5 +633,6 @@
         ]
       ]
     }
-  ]
+  ],
+  "approval": "User explicitly approved full 7 level-2 + 15 level-1 selection and requested full preview on 2026-10-29."
 }

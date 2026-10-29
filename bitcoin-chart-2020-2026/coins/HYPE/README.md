@@ -30,3 +30,7 @@ Current events.csv keeps 44 in-range events (30 level 1, 14 level 2), plus four 
 ## Latest selection: level-1 materiality review
 
 2026-10-29: seven level-2 events approved and demotions applied. Of 37 level-1 candidates, retain 15, newly hide 22. Current CSV: 7 level 2 + 15 level 1 in the price range; four automatic turns = 26 labels. 193 removed, 32 retained including ten pre-price context rows. All dates/text/source rows/prices/phases/cues unchanged. Level-1 selection awaits approval before rendering; existing 48-label preview is historical. See `data/level1-review-20261029.md`.
+
+## Approved 26-label full preview completed
+
+2026-10-29: user explicitly approved 7 level-2 + 15 level-1 events. New full preview includes these 22 events and 4 automatic turns, 88.816667 s at 854×480/60 fps, 24,340,305 bytes. Label check passes; verify 12/12 in sync; AAC −15.9 LUFS, −1.3 dBTP (not heard by assistant). Existing pending-selection notes above are historical. Visual/audio approval pending. See `preview-approved26-20261029.json`.

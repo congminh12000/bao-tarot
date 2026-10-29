@@ -1,0 +1,31 @@
+{
+  "approval": "User explicitly approved 7 level-2 and 15 level-1 events and requested full preview on 2026-10-29",
+  "rootDataSha256": "9d120ed7d67a2e91380fe2c48754cfdb5258997fe7e8d104cb094e3d9439646e",
+  "rootMusicSha256": "30d13b8441014e7b3501820d91e66da5ac8604eedd985659bb1ab28554fba915",
+  "status": "Preview complete; selection approved, visual/audio review pending",
+  "workspace": "out/hype-preview-approved26-workspace-20261029",
+  "path": "out/renders/hype-preview-approved26-full-20261029-480p60/hype-preview-approved26-full-20261029-480p.mp4",
+  "fps": 60,
+  "width": 854,
+  "height": 480,
+  "durationSeconds": 88.816667,
+  "frames": 5329,
+  "bytes": 24340305,
+  "priceDays": 698,
+  "events": 22,
+  "levels": {
+    "1": 15,
+    "2": 7
+  },
+  "automaticTurns": 4,
+  "labels": 26,
+  "phases": 5,
+  "cues": 5,
+  "sourceLinks": "225/225",
+  "labelCheck": "pass; one earlier label exits early",
+  "sync": "12/12 pass",
+  "AAC_LUFS": -15.9,
+  "AAC_truePeakDBTP": -1.3,
+  "heardByAssistant": false,
+  "fingerprint": "13e59d745e5d82d6"
+}

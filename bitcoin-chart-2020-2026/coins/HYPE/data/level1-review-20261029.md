@@ -1,4 +1,6 @@
-# HYPE — rà mức 1, chờ duyệt
+# HYPE — mức 1 đã duyệt cho preview
+
+Người dùng duyệt toàn bộ danh sách và yêu cầu render preview full ngày 29/10/2026. Chờ duyệt hình/âm thanh của preview mới.
 
 Mức 2 đã duyệt: 7 sự kiện. Mức 1: giữ 15, ẩn thêm 22. Video dự kiến **22 sự kiện + 4 ATH/ATL = 26 nhãn**. Toàn bộ 225 dòng nghiên cứu và 465 nguồn giữ nguyên. Không khẳng định có quan hệ nhân quả với giá; ẩn vì chưa đủ quan trọng cho bản tối giản, không phải vì tin sai. Nguồn hiện tại không tự chứng minh mọi tham số đúng tại ngày lịch sử. Các mốc trước 30/11/2024 không hiện trên video.
 
