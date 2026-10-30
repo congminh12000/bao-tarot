@@ -97,7 +97,7 @@
       const previousQuarter=i?periods[i-1]:null, t0=parts[0].t0,t1=parts.at(-1).t1;
       const actors=rows.filter(r=>r.quarter===quarter&&active(r)).map(r=>{
         const old=rows.find(a=>a.quarter===previousQuarter&&a.model===r.model);
-        return {...r,from:old&&active(old)?old.units:0};
+        return {...r,from:old&&active(old)?old.units:old?.status==='missing'?r.units:0,priorUnavailable:old?.status==='missing'};
       });
       const before=ranked(actors.map(r=>({...r,units:r.from})),orders[previousQuarter]||orders[quarter]).map(r=>r.model);
       const after=orders[quarter],crossings=[];
@@ -134,7 +134,7 @@
       let rank=block.before.indexOf(model.id);
       for(const c of block.crossings){const sign=c.a===model.id?c.aDelta:c.b===model.id?-c.aDelta:0;if(sign)rank+=sign*ease((t-c.start)/Math.max(1e-9,c.end-c.start));}
       const visualUnits=r.from+(r.units-r.from)*f;
-      return {model,visible:true,status:r.status,units:r.units,displayUnits:r.units,visualUnits,animatedUnits:Math.round(visualUnits),isInterpolating:f<1&&r.from!==r.units,rank,yoy:yoy(m.rows,q,model.id)};
+      return {model,visible:true,status:r.status,units:r.units,displayUnits:r.units,visualUnits,animatedUnits:Math.round(visualUnits),isInterpolating:f<1&&r.from!==r.units,priorUnavailable:r.priorUnavailable,rank,yoy:yoy(m.rows,q,model.id)};
     });
     for(const r of result.filter(r=>r.visible)){
       const separation=Math.min(1,...result.filter(a=>a.visible&&a.model.id!==r.model.id).map(a=>Math.abs(a.rank-r.rank)));
@@ -147,7 +147,13 @@
   function manifest(config, rows, sources, observations, options = {}) {
     const report = audit(config, rows, sources, observations);
     let renderWindow = null;
-    if (!report.ready && options.previewWindow) {
+    if (options.fullPreview) {
+      if (report.errors.length) throw new Error('Invalid source/data errors cannot be bypassed for preview');
+      if (!options.previewWindow || options.previewWindow[0] !== 0 || options.previewWindow[1] !== config.duration)
+        throw new Error('Full research preview must cover the exact full timeline');
+      renderWindow = [0,config.duration];
+    }
+    if (!report.ready && options.previewWindow && !options.fullPreview) {
       const [a,b] = options.previewWindow;
       if (!Number.isFinite(a) || !Number.isFinite(b) || a < 0 || b > config.duration || b <= a || b-a > 45) throw new Error('Invalid research preview window');
       if (report.errors.length) throw new Error('Invalid source/data errors cannot be bypassed for preview');
@@ -172,7 +178,7 @@
       orders[q] = order; previous = order;
     }
     const segments = schedule(config);
-    const m = { version: 1, fullDataReady:report.ready, coverage:report, renderWindow, config, rows, orders, leaderChanges, segments, duration: config.duration, fps: config.fps,
+    const m = { version: 1, fullResearchPreview:options.fullPreview===true, fullDataReady:report.ready, coverage:report, renderWindow, config, rows, orders, leaderChanges, segments, duration: config.duration, fps: config.fps,
       axisMax: Math.max(50000, Math.ceil(Math.max(...rows.filter(active).map(r => r.units)) / 50000) * 50000),
       cues: config.cues, events: segments.filter(s => s.kind === 'panel' && s.panelKind === 'launch').map(s => ({ t: s.t0, kind: 'launch', model: s.models[0], quarter: s.quarter }))
         .concat(leaderChanges.map(e => ({ ...e, t: segments.find(s => s.kind === 'race' && s.quarter === e.quarter).t0 + config.transitionSeconds, kind: 'lead-change' }))).sort((a,b) => a.t-b.t) };

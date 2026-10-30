@@ -118,6 +118,10 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
   The subsequent user instruction delegates verification and explicitly requests preview. A separate hash-bound preview
   permit allows only a ≤45s window with every rendered/context fact sourced; never full, missing facts or incomplete
   cumulative summaries. Show RESEARCH PREVIEW/≈, retain all missing cells and full scope; see PROJECT.md §19.
+  User subsequently requested “Gửi preview full tui xem nha”: exact-hash full-preview-authorization.json permits
+  the full 480s research preview at 480p60 only. Keep missing rows explicit N/A, never zero/pre-launch; do not
+  interpolate across unknown quarters. Incomplete comparisons are N/A; ending shows coverage, no cumulative totals.
+  Final remains blocked; source errors cannot be bypassed. See PROJECT.md §19 full-preview update.
   Preserve unique out/tesla-sales workspaces and all artifacts; root long/Shorts generated data/music stay untouched.
   Current dataset is incomplete; see coins/TSLA/sales/review.md. Do not report render-ready or silently narrow scope.
 - Commit and push to branch `claude/bitcoin-price-chart-animation-l7ta0e`; update PROJECT.md when an approved rule changes.

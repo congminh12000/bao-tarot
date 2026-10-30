@@ -54,3 +54,7 @@ Full-history builds remain blocked until every active-model cell has acceptable 
 21 data/logic tests and the existing event tests cover coverage, zero/null/prelaunch, grouped/regional/unread observations, estimates, timeline, stable ranks, YoY, bounded interpolation, deterministic seeking, review hashes, official assets, native cue times, preview context and direct-render guards. Actual preview checks inspect decoded frame count/PTS, native PNG versus encoded frames, AAC/master correlation and lag, isolated SFX signal, loudness/true peak and the file's input hashes. These measurements do not imply listening or user aesthetic acceptance.
 
 Keep every workspace/output. Deliver through the already-authorized Google Drive fallback and read back Drive metadata before sending its returned URL. Current measured/render/upload results are recorded separately in `coins/TSLA/sales/verification.json`; do not claim the full dataset or full film is done.
+
+## Explicit full-duration research preview
+
+User request on 30/10/2026 authorizes `node sales/render.js preview-full` (480p60 / 480s). Requires separate `full-preview-authorization.json` with matching content hash, mode full-research-preview and [0,480] range. Missing rows remain N/A, not zero/pre-launch. No interpolation from missing prior data; incomplete quarter rank is only among available data. Missing comparison/annual inputs yield N/A; ending is coverage instead of totals. Full final gate remains unchanged. Source audit errors remain fatal.

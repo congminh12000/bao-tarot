@@ -150,3 +150,45 @@ test('rank crossings and leader SFX follow value equality; labels fade only duri
   assert.ok(Math.abs(same.rows[0].visualUnits-same.rows[1].visualUnits)<1e-8);assert.equal(old.rows[0].rank,0);assert.equal(next.rows[0].rank,1);assert.equal(same.rows[0].labelAlpha,0);
   const hit=m.events.find(e=>e.kind==='lead-change');assert.equal(hit.t,cross.t);assert.equal(hit.from,'s');assert.equal(hit.to,'x');
 });
+
+test('explicit full research preview keeps all gaps null, blocks source errors and never bridges unknown quarters from zero',()=>{
+  const m=C.manifest(input.config,input.rows,input.sources,input.observations,{fullPreview:true,previewWindow:[0,480]});
+  assert.equal(m.fullResearchPreview,true);assert.equal(m.fullDataReady,false);assert.equal(m.coverage.missingCells,40);
+  assert.deepEqual(m.renderWindow,[0,480]);
+  for(const block of m.blocks){
+    for(const t of [block.t0,(block.t0+block.t1)/2,block.t1-1/60]){
+      const state=C.stateAt(m,t);
+      for(const r of state.rows){
+        const source=input.rows.find(a=>a.model===r.model.id&&a.quarter===block.quarter);
+        if(source.status==='missing'){assert.equal(r.visible,false);assert.equal(r.status,'missing');assert.equal(source.units,null);}
+        const prior=input.rows.find(a=>a.model===r.model.id&&a.quarter===block.previousQuarter);
+        if(r.visible&&prior?.status==='missing'){assert.equal(r.visualUnits,source.units);assert.equal(r.isInterpolating,false);}
+      }
+    }
+  }
+  assert.throws(()=>C.manifest(input.config,input.rows,input.sources,input.observations,{fullPreview:true,previewWindow:[0,479]}),/exact full timeline/);
+  const bad=structuredClone(input.rows);bad.find(r=>r.status==='reported').geography='US';
+  assert.throws(()=>C.manifest(input.config,bad,input.sources,input.observations,{fullPreview:true,previewWindow:[0,480]}),/source\/data errors/);
+  assert.throws(()=>C.manifest(input.config,input.rows,input.sources,input.observations),/Data incomplete/);
+});
+
+test('full research preview engine permit rejects final commands, higher resolution and out-of-range clips',()=>{
+  const vm=require('vm'),p={contentHash:'test-only'},approval={approved:true,contentHash:'test-only',evidence:'UNIT TEST ONLY',previewOnly:true,fullResearchPreview:true,renderWindow:[0,480]};
+  const fakeRequire=name=>name==='./manifest.json'?p:name==='fs'?{readFileSync:()=>JSON.stringify(approval)}:require(name);
+  for(const [args,error] of [[['video'],/cannot run a full film/],[['clip','0','480','--res','1080'],/limited to 480p/],[['clip','0','480'],/limited to 480p/],[['clip','-1','480','--res','480'],/outside/],[['clip','0','481','--res','480'],/outside/]]){
+    const sandbox={module:{exports:{}},require:fakeRequire,__dirname,process:{argv:['node','/test/engine/render.js',...args]}};
+    assert.throws(()=>vm.runInNewContext(fs.readFileSync(path.join(__dirname,'score.js'),'utf8'),sandbox),error);
+  }
+});
+test('full research preview actually draws every missing model as N/A and closes with coverage instead of incomplete sums',async()=>{
+  const vm=require('vm'),m=C.manifest(input.config,input.rows,input.sources,input.observations,{fullPreview:true,previewWindow:[0,480]});
+  m.contentHash=input.contentHash;m.storyboard=input.storyboard;m.assets=Object.fromEntries(['logo',...config.models.map(m=>m.id)].map(id=>[id,id]));
+  let film;const sandbox={G:{scale:1},SALES:m,TeslaSales:C,Studio:{film:f=>film=f,loadJSON:async()=>({approved:true,contentHash:m.contentHash,evidence:'UNIT TEST ONLY'}),loadImage:async()=>({width:880,height:495})}};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'film.js'),'utf8'),sandbox);await film.init();
+  let words=[];const ctx=new Proxy({fillText:value=>words.push(value),measureText:value=>({width:String(value).length*12}),createRadialGradient:()=>({addColorStop:()=>{}})},{get:(o,k)=>k in o?o[k]:()=>{}});
+  for(const block of m.blocks){words=[];sandbox.SalesScene.draw(ctx,(block.t0+block.t1)/2);const missing=input.rows.filter(r=>r.quarter===block.quarter&&r.status==='missing').length;
+    assert.equal(words.filter(w=>w==='DATA UNAVAILABLE').length,missing);assert.equal(words.filter(w=>w==='N/A').length,missing);
+    assert.ok(words.every(w=>typeof w==='string'&&!w.includes('NaN')&&!w.includes('undefined')));
+  }
+  words=[];sandbox.SalesScene.draw(ctx,460);assert.ok(words.includes('DATA COVERAGE'));assert.ok(words.includes('128 / 168 ACTIVE MODEL-QUARTERS SOURCED'));assert.ok(words.includes('TOTALS AND WINNERS WITHHELD UNTIL COVERAGE IS COMPLETE'));
+});

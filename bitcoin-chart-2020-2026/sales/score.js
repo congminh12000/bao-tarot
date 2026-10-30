@@ -9,6 +9,7 @@
       const args=process.argv.slice(2),cmd=args[0],range=approval.renderWindow;
       const valid=t=>Number.isFinite(+t)&&+t>=range[0]&&+t<range[1];
       if (cmd==='clip') {
+        if (approval.fullResearchPreview && (args[args.indexOf('--res')+1] !== '480' || !args.includes('--res'))) throw new Error('Full research preview is limited to 480p');
         if (!valid(args[1])||!Number.isFinite(+args[2])||+args[2]>range[1]||+args[2]<=+args[1]) throw new Error('Clip outside source-verified preview window');
       } else if (cmd==='stills') {
         const times=args.slice(1,args.indexOf('--res')>0?args.indexOf('--res'):undefined);
@@ -19,7 +20,7 @@
     if (/[\\/]engine[\\/]render\.js$/.test(process.argv[1] || '')) {
       const args = process.argv.slice(2), cmd = args[0];
       const full = ['video', 'mux', 'check', 'verify'].includes(cmd);
-      if ((full || (cmd === 'clip' && (!Number.isFinite(+args[1]) || !Number.isFinite(+args[2]) || +args[2] - +args[1] > 45))) &&
+      if ((full || (cmd === 'clip' && !approval.fullResearchPreview && (!Number.isFinite(+args[1]) || !Number.isFinite(+args[2]) || +args[2] - +args[1] > 45))) &&
           (!approval.previewApproved || !approval.finalRequested || !approval.finalResolution))
         throw new Error('Approve the short preview and explicitly request final/resolution before a full sales render.');
     }

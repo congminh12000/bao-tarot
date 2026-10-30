@@ -28,7 +28,7 @@
     const targetOrder=rows.slice().sort((a,b)=>a.rank-b.rank);
     const ceiling=detail?Math.max(10000,Math.ceil(Math.max(...rows.map(r=>r.units))/10000)*10000):P.axisMax;
     const divisions=small?2:4,step=ceiling/divisions, rowHeight=small?32:58;
-    text(ctx,detail?'DETAIL SCALE · GLOBAL DELIVERIES':'GLOBAL QUARTERLY DELIVERIES',x,y-55,small?21:24,'#C5ABB2');
+    text(ctx,detail?'DETAIL SCALE · GLOBAL DELIVERIES':state.rows.some(r=>r.status==='missing')?'AVAILABLE DATA · INCOMPLETE QUARTER':'GLOBAL QUARTERLY DELIVERIES',x,y-55,small?21:24,'#C5ABB2');
     for(let i=0;i<=divisions;i++) {
       const xx=x+w*i/divisions;ctx.strokeStyle='#FFFFFF16';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(xx,y-24);ctx.lineTo(xx,y+(detail?rows.length:5)*dy-30);ctx.stroke();
       text(ctx,N(step*i),xx,y-15,small?17:21,'#A98F98',i===0?'left':i===divisions?'right':'center');
@@ -48,16 +48,25 @@
       if(continuous&&!small)text(ctx,`Q${state.quarter.at(-1)} END · ${r.status==='estimated'?'≈ ':''}${N(r.units)}`,x+w+35,yy+rowHeight+27,18,'#BBA6AD','left',r.labelAlpha);
       else if(!small&&r.yoy!==null)text(ctx,`${r.yoy>=0?'+':''}${r.yoy.toFixed(1)}% YoY`,x+w+35,yy+rowHeight+27,21,'#BBA6AD','left',r.labelAlpha);
     }
+    // Missing is neither a zero-length bar nor a pre-launch model. Keep an explicit unranked row.
+    if(P.fullResearchPreview&&!small)state.rows.filter(r=>r.status==='missing').forEach((r,i)=>{
+      const yy=y+(rows.length+i)*dy;
+      photo(ctx,r.model.id,x-175,yy-8,140,82,.55);
+      text(ctx,r.model.name,x-185,yy+rowHeight*.72,27,r.model.color,'right',.7);
+      text(ctx,'DATA UNAVAILABLE',x+20,yy+rowHeight*.72,26,'#BDA7AE');
+      text(ctx,'N/A',x+w+35,yy+rowHeight*.72,34,'#BDA7AE');
+    });
   }
   function context(ctx,state) {
     photo(ctx,'logo',100,80,62,65);text(ctx,'TESLA',190,125,40);
     text(ctx,state.chapter?.title.toUpperCase()||'',100,195,27,'#BDA7AE');
     text(ctx,state.quarter,1810,141,70,'#FFFFFF','right');
+    const missing=state.rows.some(r=>r.status==='missing');
     const estimates=state.rows.some(r=>r.visible&&r.status==='estimated');
-    text(ctx,estimates?P.storyboard.estimateCaption:'ISSUER-REPORTED MODEL DATA',1810,193,21,'#BAA1AA','right');
+    text(ctx,missing?'INCOMPLETE QUARTER · MISSING IS NOT ZERO':estimates?P.storyboard.estimateCaption:'ISSUER-REPORTED MODEL DATA',1810,193,21,'#BAA1AA','right');
     if(continuous&&state.fromQuarter)text(ctx,state.fromQuarter+' → '+state.quarter,1810,230,20,'#A98F98','right');
     text(ctx,continuous?'WORLDWIDE · ~ ANIMATED BETWEEN QUARTER-END TOTALS':'WORLDWIDE · PASSENGER VEHICLES · MODEL-LEVEL DATA',100,1000,20,'#9B828C');
-    const absent=state.rows.filter(r=>!r.visible).map(r=>r.model.name);
+    const absent=state.rows.filter(r=>r.status==='not_launched').map(r=>r.model.name);
     if(absent.length)text(ctx,absent.join(' / ')+' · NOT LAUNCHED',1810,1000,20,'#9B828C','right');
     ctx.fillStyle='#FF536044';ctx.fillRect(100,1030,1710,3);ctx.fillStyle='#FF5360';ctx.fillRect(100,1030,1710*clamp(state.t/P.duration),3);
   }
@@ -97,12 +106,15 @@
   function overlay(ctx,state){
     const panel=state.panel;if(!panel)return;
     const rows=state.rows.filter(r=>r.visible&&(!panel.models||panel.models.includes(r.model.id)));
-    const format=r=>(r.status==='estimated'?'≈ ':'')+N(r.units);
+    const format=r=>!r?'N/A':(r.status==='estimated'?'≈ ':'')+N(r.units);
     let caption='';
-    if(panel.panelKind==='launch')caption=`${state.quarter} · FIRST DELIVERY QUARTER · ${format(rows[0])} DELIVERED`;
+    if(panel.models?.some(id=>!rows.some(r=>r.model.id===id)))caption=panel.models.map(id=>P.config.models.find(m=>m.id===id).name+': '+format(rows.find(r=>r.model.id===id))).join(' · ')+' · INCOMPLETE MODEL DATA';
+    else if(panel.panelKind==='launch')caption=`${state.quarter} · FIRST DELIVERY QUARTER · ${format(rows[0])} DELIVERED`;
     else if(panel.panelKind==='head-to-head'&&rows.length===2)caption=rows.map(r=>r.model.name+': '+format(r)).join('  /  ')+` · GAP ${rows.some(r=>r.status==='estimated')?'≈ ':''}${N(Math.abs(rows[0].units-rows[1].units))}`;
     else if(panel.panelKind==='annual')caption=rows.map(r=>{
       const year=state.quarter.slice(0,4),data=P.rows.filter(a=>a.model===r.model.id&&a.quarter.startsWith(year)&&C.active(a));
+      const all=P.rows.filter(a=>a.model===r.model.id&&a.quarter.startsWith(year));
+      if(all.length!==4||all.some(a=>a.status==='missing'))return r.model.name+': N/A';
       return r.model.name+': '+(data.some(a=>a.status==='estimated')?'≈ ':'')+N(data.reduce((n,a)=>n+a.units,0));
     }).join(' · ');
     else if(panel.panelKind==='momentum')caption=rows.map(r=>r.model.name+': '+(r.yoy===null?'N/A':`${r.status==='estimated'?'≈ ':''}${r.yoy>=0?'+':''}${r.yoy.toFixed(1)}% YoY`)).join(' · ');
@@ -116,6 +128,16 @@
     text(ctx,caption,280,950,22,'#C9AEB8','left',alpha);ctx.restore();
   }
   function summary(ctx,state) {
+    if(P.fullResearchPreview&&!P.fullDataReady){
+      text(ctx,'DATA COVERAGE',100,287,66);
+      text(ctx,`${P.coverage.verifiedCells} / ${P.coverage.activeCells} ACTIVE MODEL-QUARTERS SOURCED`,100,348,29,'#C5ABB2');
+      P.config.models.forEach((m,i)=>{const c=P.coverage.coverage[m.id],yy=420+i*92;
+        photo(ctx,m.id,100,yy-20,175,90);text(ctx,m.name,340,yy+35,38,m.color);
+        text(ctx,`${c.verified} / ${c.active} QUARTERS`,1100,yy+35,30,'#FFFFFF');
+        text(ctx,`${c.missing.length} MISSING`,1750,yy+35,27,'#BDA7AE','right');
+      });
+      text(ctx,'TOTALS AND WINNERS WITHHELD UNTIL COVERAGE IS COMPLETE',100,971,24,'#C5ABB2');return;
+    }
     text(ctx,'THE RESULTS',100,287,66);text(ctx,P.storyboard.summaryCaption,100,348,27,'#C5ABB2');
     const totals=P.config.models.map(m=>({m,rows:P.rows.filter(r=>r.model===m.id&&C.active(r))})).map(a=>({...a,total:a.rows.reduce((n,r)=>n+r.units,0)})).sort((a,b)=>b.total-a.total);
     totals.forEach((a,i)=>{const y=420+i*100;photo(ctx,a.m.id,100,y-20,175,90);text(ctx,String(i+1).padStart(2,'0'),310,y+35,35,'#92727D');text(ctx,a.m.name,415,y+35,42,a.m.color);text(ctx,(a.rows.some(r=>r.status==='estimated')?'≈ ':'')+N(a.total),1750,y+35,45,'#FFFFFF','right');});
@@ -126,7 +148,7 @@
     background(ctx,t);const state=C.stateAt(P,t);
     if(state.segment.kind==='intro')intro(ctx,t);
     else {context(ctx,state);if(state.segment.kind==='summary')summary(ctx,state);else if(continuous){bars(ctx,state,{dy:114});overlay(ctx,state);}else if(state.segment.kind==='panel')panel(ctx,state);else bars(ctx,state);pulse(ctx,t);}
-    if(P.renderWindow) text(ctx,'RESEARCH PREVIEW · PUBLISHED ESTIMATES MARKED ≈',960,1057,19,'#BEA6AE','center');
+    if(P.renderWindow) text(ctx,P.fullResearchPreview?'RESEARCH PREVIEW · DATA GAPS SHOWN · ESTIMATES MARKED ≈':'RESEARCH PREVIEW · PUBLISHED ESTIMATES MARKED ≈',960,1057,19,'#BEA6AE','center');
   }
   globalThis.SalesScene={draw};
   Studio.film({draw,duration:P.duration,fadeOut:1.4,post:{grain:0,paper:0,vignette:.10},init:async()=>{

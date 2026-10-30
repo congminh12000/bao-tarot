@@ -279,7 +279,7 @@
       "metadataVerified": true
     }
   },
-  "latestPreview": "continuousPreview",
+  "latestPreview": "fullResearchPreview",
   "motionUpdate": "Continuously interpolate through race and narrative time; source Qn END totals separate from ~ animation counters; unchanged research.",
   "iconStill": {
     "checkedOn": "2026-10-30",
@@ -396,5 +396,217 @@
       "metadataBytes": 1844573,
       "metadataVerified": true
     }
+  },
+  "fullResearchPreview": {
+    "file": "/workspace/bao-tarot/bitcoin-chart-2020-2026/out/tesla-sales/58fb6ae9ae4e-66dddd12-d4fF8s/out/clip_0.00-480.00-480p.mp4",
+    "sha256": "1e2f05881eeeca6f063de12c99204a41e6c81977aa1c1e3a18132faf591ea7af",
+    "bytes": 31982386,
+    "duration": 480,
+    "frames": 28800,
+    "fps": 60,
+    "resolution": [
+      854,
+      480
+    ],
+    "maxPtsErrorSeconds": 3.333333467026023e-07,
+    "aacLoudness": {
+      "input_i": "-16.06",
+      "input_tp": "-1.67",
+      "input_lra": "1.60",
+      "input_thresh": "-26.08",
+      "output_i": "-15.84",
+      "output_tp": "-1.50",
+      "output_lra": "1.50",
+      "output_thresh": "-25.85",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.16"
+    },
+    "sync": [
+      {
+        "clipTime": 1.5,
+        "lagMs": 0.0,
+        "correlation": 0.9993807824193627
+      },
+      {
+        "clipTime": 14.2,
+        "lagMs": 0.0,
+        "correlation": 0.99972306123084
+      },
+      {
+        "clipTime": 35,
+        "lagMs": 0.0,
+        "correlation": 0.9997580443016564
+      },
+      {
+        "clipTime": 120,
+        "lagMs": 0.0,
+        "correlation": 0.9995620225750709
+      },
+      {
+        "clipTime": 200,
+        "lagMs": 0.0,
+        "correlation": 0.9996388803694325
+      },
+      {
+        "clipTime": 239.5,
+        "lagMs": 0.0,
+        "correlation": 0.9995763753486253
+      },
+      {
+        "clipTime": 240.5,
+        "lagMs": 0.0,
+        "correlation": 0.9995232613138109
+      },
+      {
+        "clipTime": 310.2,
+        "lagMs": 0.0,
+        "correlation": 0.9996504791813347
+      },
+      {
+        "clipTime": 359.5,
+        "lagMs": 0.0,
+        "correlation": 0.9996279226778629
+      },
+      {
+        "clipTime": 360.5,
+        "lagMs": 0.0,
+        "correlation": 0.9995491764426909
+      },
+      {
+        "clipTime": 454,
+        "lagMs": 0.0,
+        "correlation": 0.9998649572107976
+      },
+      {
+        "clipTime": 477,
+        "lagMs": 0.0,
+        "correlation": 0.9997636568355851
+      }
+    ],
+    "decodedFrameComparisons": [
+      {
+        "scoreTime": 0,
+        "mae255": 0.9024736533957846
+      },
+      {
+        "scoreTime": 15,
+        "mae255": 0.8425017889669529
+      },
+      {
+        "scoreTime": 45,
+        "mae255": 0.9513571753838147
+      },
+      {
+        "scoreTime": 100,
+        "mae255": 1.0211057442102525
+      },
+      {
+        "scoreTime": 200,
+        "mae255": 1.1038072469424929
+      },
+      {
+        "scoreTime": 317,
+        "mae255": 1.2370649557637263
+      },
+      {
+        "scoreTime": 325,
+        "mae255": 1.225039845173042
+      },
+      {
+        "scoreTime": 330,
+        "mae255": 1.2271581446786364
+      },
+      {
+        "scoreTime": 340,
+        "mae255": 1.1140433905802758
+      },
+      {
+        "scoreTime": 370,
+        "mae255": 1.227396402550091
+      },
+      {
+        "scoreTime": 400,
+        "mae255": 1.2205893832943013
+      },
+      {
+        "scoreTime": 445,
+        "mae255": 1.1190858378870674
+      },
+      {
+        "scoreTime": 460,
+        "mae255": 1.1814768735362997
+      }
+    ],
+    "sfxEvents": [
+      {
+        "scoreTime": 24,
+        "kind": "launch",
+        "peak": 0.24655796587467194
+      },
+      {
+        "scoreTime": 88,
+        "kind": "launch",
+        "peak": 0.24655796587467194
+      },
+      {
+        "scoreTime": 131.07133746189015,
+        "kind": "lead-change",
+        "peak": 0.11570420116186142
+      },
+      {
+        "scoreTime": 182,
+        "kind": "launch",
+        "peak": 0.24655796587467194
+      },
+      {
+        "scoreTime": 237.75032432355604,
+        "kind": "lead-change",
+        "peak": 0.11570420116186142
+      },
+      {
+        "scoreTime": 310,
+        "kind": "launch",
+        "peak": 0.24655796587467194
+      }
+    ],
+    "contentHash": "58fb6ae9ae4eaebb3f08dc1d1f8766ad9a4f17faf3515946a2917d78307f6740",
+    "codeHash": "66dddd12544e935e75fac32bf796f609139e741342ac575dd0cda57b23a7839d",
+    "fullDatasetReady": false,
+    "scope": "Research preview only; published estimates marked; no claim of full historical data completeness.",
+    "listeningStatus": "Measured only; not listened to.",
+    "missingCells": 40,
+    "summaryMode": "coverage only; no partial sums/winner claims",
+    "fullResearchPreview": true,
+    "decodedContinuousBarEdges": [
+      {
+        "scoreTime": 317,
+        "decodedEdgePx": 626
+      },
+      {
+        "scoreTime": 325,
+        "decodedEdgePx": 647
+      },
+      {
+        "scoreTime": 330,
+        "decodedEdgePx": 656
+      }
+    ],
+    "checkedOn": "2026-10-30",
+    "workspace": "/workspace/bao-tarot/bitcoin-chart-2020-2026/out/tesla-sales/58fb6ae9ae4e-66dddd12-d4fF8s",
+    "tests": {
+      "sales": 24,
+      "events": 5
+    },
+    "sourceDataUnchanged": true,
+    "iconsUnchanged": true,
+    "renderSeconds": 384.7,
+    "drive": {
+      "id": "188QpJQ0FaZHoaVPbvKOWYs92aONBdPqy",
+      "url": "https://drive.google.com/file/d/188QpJQ0FaZHoaVPbvKOWYs92aONBdPqy/view?usp=drivesdk",
+      "metadataMimeType": "video/mp4",
+      "metadataBytes": 31982386,
+      "metadataVerified": true
+    },
+    "verificationNote": "First QA attempt stopped on unpadded still filename t_0.00 versus t_000.00. Fixed reference-name formatting; complete verification rerun passed. No picture/audio changes required."
   }
 }

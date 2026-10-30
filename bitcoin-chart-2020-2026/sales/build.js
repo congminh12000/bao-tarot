@@ -18,11 +18,12 @@ function build(input = IO.load(), options = {}) {
   const manifest = C.manifest(input.config, input.rows, input.sources, input.observations, options);
   let approval;
   if (options.previewWindow) {
-    const auth = JSON.parse(fs.readFileSync(path.join(input.dir, 'preview-authorization.json')));
+    const auth = JSON.parse(fs.readFileSync(path.join(input.dir, options.fullPreview ? 'full-preview-authorization.json' : 'preview-authorization.json')));
+    if (options.fullPreview && auth.mode !== 'full-research-preview') throw new Error('Explicit full research preview authorization missing');
     if (auth.authorized !== true || auth.contentHash !== input.contentHash || !auth.evidence) throw new Error('Explicit current-hash preview authorization missing');
     if (!Array.isArray(auth.window) || auth.window.length !== 2 || auth.window.some((t,i) => t !== options.previewWindow[i])) throw new Error('Preview range differs from the recorded authorization');
     approval = { approved:true, contentHash:input.contentHash, evidence:auth.evidence,
-      previewOnly:true, renderWindow:options.previewWindow, authority:'User delegated verification and explicitly requested preview; NOT full-dataset approval' };
+      previewOnly:true, fullResearchPreview:options.fullPreview===true, renderWindow:options.previewWindow, authority:'User delegated verification and explicitly requested preview; NOT full-dataset approval' };
   } else {
     approval = JSON.parse(fs.readFileSync(path.join(input.dir, 'approval.json'), 'utf8'));
     IO.approved(input, approval);
