@@ -915,5 +915,29 @@
     "checked": true,
     "sha256": "99403d92209b80e36d42f656caf65c7cca023e0f972204d5f684b1fb8813f02e",
     "role": "delivery-launch date proof"
+  },
+  "public-0d9b048face3": {
+    "url": "https://datawrapper.dwcdn.net/3hcKb/9/dataset.csv",
+    "publisherGroup": "CleanTechnica",
+    "checked": true,
+    "sha256": "f7644cf3669976f7d3ea04c9148ea50edc7037681ce1b6cabd3e9e80d169bf8b",
+    "checkedOn": "2026-10-29",
+    "role": "Published worldwide model estimates; source notes acknowledge assumptions/Troy Teslike; exact model accuracy not independently confirmed."
+  },
+  "public-193f9530932a": {
+    "url": "https://cleantechnica.com/2026/07/02/tesla-has-its-4th-best-quarter-ever/",
+    "publisherGroup": "CleanTechnica",
+    "checked": true,
+    "sha256": "5d2ebac21c8babe8e18ccb50728990d3058f41a1d163769a86a37b99def796be",
+    "checkedOn": "2026-10-29",
+    "role": "Published worldwide model estimates; source notes acknowledge assumptions/Troy Teslike; exact model accuracy not independently confirmed."
+  },
+  "public-c26aa655c7b9": {
+    "url": "https://datawrapper.dwcdn.net/3hcKb/9/",
+    "publisherGroup": "CleanTechnica",
+    "checked": true,
+    "sha256": "a872b6f8ff09955f0b20e7998d1770dabbf182f1457a191ff8e192f9b3b84d62",
+    "checkedOn": "2026-10-29",
+    "role": "Published worldwide model estimates; source notes acknowledge assumptions/Troy Teslike; exact model accuracy not independently confirmed."
   }
 }

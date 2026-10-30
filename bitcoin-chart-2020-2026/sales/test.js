@@ -15,7 +15,7 @@ function fixture() {
 const audit=f=>C.audit(f.config,f.rows,f.sources,f.observations);
 test('real coverage: 47 quarters, 168 active, 67 pre-launch; incomplete data cannot build',()=>{
   const a=audit(input);assert.equal(a.expectedCells,235);assert.equal(a.activeCells,168);assert.equal(a.notLaunchedCells,67);
-  assert.equal(a.verifiedCells,17);assert.equal(a.missingCells,151);assert.deepEqual(a.errors,[]);
+  assert.equal(a.verifiedCells,128);assert.equal(a.missingCells,40);assert.deepEqual(a.errors,[]);
   const dir=path.join(input.root,'out/tesla-sales'), before=fs.existsSync(dir)?fs.readdirSync(dir):[];
   assert.throws(()=>build(input),/Data incomplete/);assert.deepEqual(fs.existsSync(dir)?fs.readdirSync(dir):[],before);
 });
@@ -111,4 +111,24 @@ test('direct engine full-film invocation cannot bypass preview/final approval',(
   };
   const sandbox={module:{exports:{}},require:fakeRequire,__dirname,process:{argv:['node','/test/engine/render.js','video']}};
   assert.throws(()=>vm.runInNewContext(fs.readFileSync(path.join(__dirname,'score.js'),'utf8'),sandbox),/Approve the short preview/);
+});
+
+test('research preview verifies rendered quarters plus preceding transition, never full-data completeness',()=>{
+  const m=C.manifest(input.config,input.rows,input.sources,input.observations,{previewWindow:[296,332]});
+  assert.equal(m.fullDataReady,false);assert.deepEqual(m.renderWindow,[296,332]);assert.equal(m.coverage.missingCells,40);
+  assert.throws(()=>C.manifest(input.config,input.rows,input.sources,input.observations),/Data incomplete/);
+  assert.throws(()=>C.manifest(input.config,input.rows,input.sources,input.observations,{previewWindow:[332,368]}),/unavailable facts/);
+});
+test('preview cannot include missing context, an incomplete summary, or exceed 45 seconds',()=>{
+  for(const range of [[290,336],[460,480],[-1,20],[500,510]]) assert.throws(()=>C.manifest(input.config,input.rows,input.sources,input.observations,{previewWindow:range}));
+});
+test('preserve issuer priorities and unresolved Other Models splits; no US-as-global substitution',()=>{
+  assert.equal(Object.values(input.observations).filter(o=>o.accepted&&o.status==='reported').length,17);
+  assert.equal(Object.values(input.observations).filter(o=>o.accepted&&o.status==='estimated').length,111);
+  for(const r of input.rows.filter(r=>r.quarter>='2024Q1'&&['s','x','ct'].includes(r.model)))assert.equal(r.status,'missing');
+  for(const r of input.rows)assert.equal(r.geography,'global');
+});
+
+test('preview build cannot expand the recorded authorized range even within sourced quarters',()=>{
+  assert.throws(()=>build(input,{previewWindow:[298,330]}),/range differs from the recorded authorization/);
 });

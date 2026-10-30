@@ -5,6 +5,16 @@
     const fs = require('fs'), path = require('path'), crypto = require('crypto');
     const approval = JSON.parse(fs.readFileSync(path.join(__dirname, 'render-approval.json')));
     if (!approval.approved || approval.contentHash !== P.contentHash || !approval.evidence) throw new Error('Sales data/storyboard approval missing');
+    if (approval.previewOnly && /[\\/]engine[\\/]render\.js$/.test(process.argv[1] || '')) {
+      const args=process.argv.slice(2),cmd=args[0],range=approval.renderWindow;
+      const valid=t=>Number.isFinite(+t)&&+t>=range[0]&&+t<range[1];
+      if (cmd==='clip') {
+        if (!valid(args[1])||!Number.isFinite(+args[2])||+args[2]>range[1]||+args[2]<=+args[1]) throw new Error('Clip outside source-verified preview window');
+      } else if (cmd==='stills') {
+        const times=args.slice(1,args.indexOf('--res')>0?args.indexOf('--res'):undefined);
+        if (!times.length||!times.every(valid)) throw new Error('Still outside source-verified preview window');
+      } else throw new Error('Research-preview permit cannot run a full film or unsupported frame command');
+    }
     // Direct engine invocations must honor the same preview/final gate as render.js.
     if (/[\\/]engine[\\/]render\.js$/.test(process.argv[1] || '')) {
       const args = process.argv.slice(2), cmd = args[0];

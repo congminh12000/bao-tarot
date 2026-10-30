@@ -1,12 +1,12 @@
 {
-  "checkedOn": "2026-10-29",
-  "salesTests": 15,
+  "checkedOn": "2026-10-30",
+  "salesTests": 19,
   "existingEventTests": 5,
-  "renderedSalesFrames": 0,
-  "salesAudioGenerated": false,
+  "renderedSalesFrames": 2160,
+  "salesAudioGenerated": true,
   "activeCells": 168,
-  "acceptedCells": 17,
-  "missingCells": 151,
+  "acceptedCells": 128,
+  "missingCells": 40,
   "strictAuditExit": 1,
   "buildBlockedBeforeWorkspaceCreation": true,
   "unchangedRootHashes": {
@@ -18,8 +18,123 @@
     "out/music.wav": "56ec551d7030e79ae406de9ab12d4a37888e3cc6c4bc5a28fe6c9972f8fe7e16"
   },
   "limitations": [
-    "No end-to-end sales render or visual/audio acceptance: data incomplete; concrete review pending.",
-    "No claim of independent corroboration of issuer-only observations.",
-    "No decoded long/Shorts regression render was run; source/generated data/music hashes unchanged."
-  ]
+    "Full historical data remains incomplete: 40 active-model cells are missing; full film is blocked.",
+    "111 published estimates are checked against issuer quarter/group context, not independently verified precise individual model counts.",
+    "No audio listening or user aesthetic acceptance; native/decoded frames and measured AAC/master sync/loudness checked.",
+    "No decoded long/Shorts regression render was run; root source/generated data/music hashes unchanged."
+  ],
+  "reportedCells": 17,
+  "estimatedCells": 111,
+  "scope": "Full-history build blocked; separate source-covered preview delivered under explicit user request",
+  "preview": {
+    "file": "/workspace/bao-tarot/bitcoin-chart-2020-2026/out/tesla-sales/5e5d0fa7318c-fafa15ca-vfhVMR/out/clip_296.00-332.00-480p.mp4",
+    "sha256": "69ae724bdab5aa33e4bdb2243923636462ce64e34550703d2c51736c36cccc73",
+    "bytes": 1961798,
+    "duration": 36,
+    "frames": 2160,
+    "fps": 60,
+    "resolution": [
+      854,
+      480
+    ],
+    "maxPtsErrorSeconds": 3.3333333604446125e-07,
+    "aacLoudness": {
+      "input_i": "-16.20",
+      "input_tp": "-2.95",
+      "input_lra": "1.70",
+      "input_thresh": "-26.20",
+      "output_i": "-16.17",
+      "output_tp": "-3.09",
+      "output_lra": "1.70",
+      "output_thresh": "-26.17",
+      "normalization_type": "dynamic",
+      "target_offset": "0.17"
+    },
+    "sync": [
+      {
+        "clipTime": 1.5,
+        "lagMs": 0.0,
+        "correlation": 0.9996466715701455
+      },
+      {
+        "clipTime": 4,
+        "lagMs": 0.0,
+        "correlation": 0.999715198984196
+      },
+      {
+        "clipTime": 9,
+        "lagMs": 0.0,
+        "correlation": 0.9997021272419673
+      },
+      {
+        "clipTime": 14.8,
+        "lagMs": 0.0,
+        "correlation": 0.9997846443576011
+      },
+      {
+        "clipTime": 20.2,
+        "lagMs": 0.0,
+        "correlation": 0.999744115123932
+      },
+      {
+        "clipTime": 27,
+        "lagMs": 0.0,
+        "correlation": 0.9998332558297482
+      },
+      {
+        "clipTime": 34,
+        "lagMs": 0.0,
+        "correlation": 0.999752933604862
+      }
+    ],
+    "decodedFrameComparisons": [
+      {
+        "scoreTime": 306,
+        "mae255": 1.1491835805360395
+      },
+      {
+        "scoreTime": 310.4,
+        "mae255": 0.9971262685402029
+      },
+      {
+        "scoreTime": 317,
+        "mae255": 1.1493559718969555
+      },
+      {
+        "scoreTime": 316,
+        "mae255": 1.0693265352589123
+      }
+    ],
+    "sfxEvents": [
+      {
+        "scoreTime": 316,
+        "kind": "launch",
+        "peak": 0.24655796587467194
+      }
+    ],
+    "contentHash": "5e5d0fa7318c927e213f6fd653cc022d5e55de43880d803353a60d09e89cfe75",
+    "codeHash": "fafa15caba2c47ef3d1491b274b54e81c141862411c92c5f92f1b5565bef35df",
+    "fullDatasetReady": false,
+    "scope": "Research preview only; published estimates marked; no claim of full historical data completeness.",
+    "listeningStatus": "Measured only; not listened to.",
+    "drive": {
+      "id": "1lNXs6lYphPuthQbMRDT3VkfkI80XPMUd",
+      "url": "https://drive.google.com/file/d/1lNXs6lYphPuthQbMRDT3VkfkI80XPMUd/view?usp=drivesdk",
+      "metadataMimeType": "video/mp4",
+      "metadataBytes": 1961798,
+      "metadataVerified": true
+    },
+    "masterLoudness": {
+      "input_i": "-16.01",
+      "input_tp": "-1.48",
+      "input_lra": "1.60",
+      "input_thresh": "-26.02",
+      "output_i": "-15.84",
+      "output_tp": "-1.37",
+      "output_lra": "1.50",
+      "output_thresh": "-25.85",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.16"
+    }
+  }
 }

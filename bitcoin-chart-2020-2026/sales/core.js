@@ -84,18 +84,35 @@
     const a = rows.find(r => r.quarter === quarter && r.model === model), b = rows.find(r => r.quarter === prev && r.model === model);
     return a && b && active(a) && active(b) && b.units > 0 ? (a.units / b.units - 1) * 100 : null;
   }
-  function manifest(config, rows, sources, observations) {
+  function manifest(config, rows, sources, observations, options = {}) {
     const report = audit(config, rows, sources, observations);
-    if (!report.ready) throw new Error(`Data incomplete: ${report.missingCells} missing model-quarter cells; ${report.errors.length} errors. Never render partial/synthetic global data.`);
+    let renderWindow = null;
+    if (!report.ready && options.previewWindow) {
+      const [a,b] = options.previewWindow;
+      if (!Number.isFinite(a) || !Number.isFinite(b) || a < 0 || b > config.duration || b <= a || b-a > 45) throw new Error('Invalid research preview window');
+      if (report.errors.length) throw new Error('Invalid source/data errors cannot be bypassed for preview');
+      const segments = schedule(config).filter(s => s.t0 < b && s.t1 > a);
+      if (segments.some(s => s.kind === 'summary')) throw new Error('Incomplete data cannot support cumulative summary');
+      const qs = segments.map(s => s.quarter || config.from).sort();
+      let first = qs[0], last = qs.at(-1);
+      const periods = quarters(config.from,config.to), i = periods.indexOf(first);
+      if (i > 0) first = periods[i-1]; // transitions also require the real preceding quarter
+      for (const s of segments.filter(s => s.panelKind === 'annual')) first = [first,s.quarter.slice(0,4)+'Q1'].sort()[0];
+      const selected = rows.filter(r => r.quarter >= first && r.quarter <= last);
+      const check = audit({...config,from:first,to:last},selected,sources,observations);
+      if (!check.ready) throw new Error(`Preview window has unavailable facts: ${check.missing.join(', ')}`);
+      renderWindow = [a,b];
+    }
+    if (!report.ready && !renderWindow) throw new Error(`Data incomplete: ${report.missingCells} missing model-quarter cells; ${report.errors.length} errors. Never render partial/synthetic global data.`);
     const periods = quarters(config.from, config.to), orders = {}, leaderChanges = [];
     let previous = [];
     for (const q of periods) {
       const order = ranked(rows.filter(r => r.quarter === q), previous).map(r => r.model);
-      if (previous.length && order[0] !== previous[0]) leaderChanges.push({ quarter: q, from: previous[0], to: order[0] });
+      if (previous.length && !rows.some(r => [q,periods[periods.indexOf(q)-1]].includes(r.quarter) && r.status === 'missing') && order[0] !== previous[0]) leaderChanges.push({ quarter: q, from: previous[0], to: order[0] });
       orders[q] = order; previous = order;
     }
     const segments = schedule(config);
-    return { version: 1, config, rows, orders, leaderChanges, segments, duration: config.duration, fps: config.fps,
+    return { version: 1, fullDataReady:report.ready, coverage:report, renderWindow, config, rows, orders, leaderChanges, segments, duration: config.duration, fps: config.fps,
       axisMax: Math.max(50000, Math.ceil(Math.max(...rows.filter(active).map(r => r.units)) / 50000) * 50000),
       cues: config.cues, events: segments.filter(s => s.kind === 'panel' && s.panelKind === 'launch').map(s => ({ t: s.t0, kind: 'launch', model: s.models[0], quarter: s.quarter }))
         .concat(leaderChanges.map(e => ({ ...e, t: segments.find(s => s.kind === 'race' && s.quarter === e.quarter).t0 + config.transitionSeconds, kind: 'lead-change' }))).sort((a,b) => a.t-b.t) };
@@ -109,7 +126,7 @@
     const order = m.orders[q], prevOrder = m.orders[previousQuarter];
     const rows = m.config.models.map(model => {
       const r = m.rows.find(r => r.model === model.id && r.quarter === q);
-      if (!active(r)) return { model, status: 'not_launched', visible: false };
+      if (!active(r)) return { model, status: r.status, visible: false };
       const old = m.rows.find(r => r.model === model.id && r.quarter === previousQuarter);
       const from = moving && active(old) ? old.units : moving ? 0 : r.units;
       const newRank = order.indexOf(model.id), oldRank = prevOrder.includes(model.id) ? prevOrder.indexOf(model.id) : newRank;

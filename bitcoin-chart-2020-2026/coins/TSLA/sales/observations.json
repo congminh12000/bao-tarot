@@ -287,5 +287,3115 @@
     "reviewNote": "Global operational table: columns Q4-2018, Q1-2019, Q2-2019, Q3-2019, Q4-2019. S/X row is grouped and is NOT split.",
     "reviewedOn": "2026-10-29",
     "independentCorroboration": false
+  },
+  "2020Q1-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q1",
+    "model": "3",
+    "units": 73975,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q1 2020",
+      "row": "Tesla Model 3",
+      "units": 73975
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-1d689e90a521",
+      "tesla-44a62f05c908"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q2-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q2",
+    "model": "3",
+    "units": 63793,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q2 2020",
+      "row": "Tesla Model 3",
+      "units": 63793
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-551958acb81e",
+      "tesla-e5ac7a1d4322"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q3-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q3",
+    "model": "3",
+    "units": 94049,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q3 2020",
+      "row": "Tesla Model 3",
+      "units": 94049
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-dc291f7526a1",
+      "tesla-9e39ea25aebd"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q4-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q4",
+    "model": "3",
+    "units": 126624,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q4 2020",
+      "row": "Tesla Model 3",
+      "units": 126624
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-15e0830a8bf1",
+      "tesla-99b574359490"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q1-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q1",
+    "model": "3",
+    "units": 115077,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q1 2021",
+      "row": "Tesla Model 3",
+      "units": 115077
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-c81a0a518f98",
+      "tesla-bc940af18a4b"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q2-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q2",
+    "model": "3",
+    "units": 110054,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q2 2021",
+      "row": "Tesla Model 3",
+      "units": 110054
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5eed37ee928b",
+      "tesla-54aa220bfb57"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q3-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q3",
+    "model": "3",
+    "units": 111225,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q3 2021",
+      "row": "Tesla Model 3",
+      "units": 111225
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-ab3b9f83a7b2",
+      "tesla-57826576267f"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q4-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q4",
+    "model": "3",
+    "units": 140000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q4 2021",
+      "row": "Tesla Model 3",
+      "units": 140000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-b7d2c0883ed5",
+      "tesla-fb8909e9e6ee"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q1-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q1",
+    "model": "3",
+    "units": 129764,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q1 2022",
+      "row": "Tesla Model 3",
+      "units": 129764
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-42afdaa3750a",
+      "tesla-f94569950e61"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q2-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q2",
+    "model": "3",
+    "units": 100066,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q2 2022",
+      "row": "Tesla Model 3",
+      "units": 100066
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5246447fdd15",
+      "tesla-d5153db7c910"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q3-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q3",
+    "model": "3",
+    "units": 120308,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q3 2022",
+      "row": "Tesla Model 3",
+      "units": 120308
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-327ca1047e04",
+      "tesla-96b3a3239e63"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q4-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q4",
+    "model": "3",
+    "units": 135846,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q4 2022",
+      "row": "Tesla Model 3",
+      "units": 135846
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-33fe6bdaa6e3",
+      "tesla-dfc7e32ea7e2"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q1-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q1",
+    "model": "3",
+    "units": 132180,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q1 2023",
+      "row": "Tesla Model 3",
+      "units": 132180
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-228c60619833",
+      "tesla-e59cb55c2296"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q2-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q2",
+    "model": "3",
+    "units": 146915,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q2 2023",
+      "row": "Tesla Model 3",
+      "units": 146915
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-033c7a7c490b",
+      "tesla-5c78bc3660d8"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q3-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q3",
+    "model": "3",
+    "units": 117074,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q3 2023",
+      "row": "Tesla Model 3",
+      "units": 117074
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-62229a44f833",
+      "tesla-4df80c5f5c81"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q4-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q4",
+    "model": "3",
+    "units": 130000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q4 2023",
+      "row": "Tesla Model 3",
+      "units": 130000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-892ed095df14",
+      "tesla-47c1347043b7"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2024Q1-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2024Q1",
+    "model": "3",
+    "units": 99841,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q1 2024",
+      "row": "Tesla Model 3",
+      "units": 99841
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5d8639a70bd0",
+      "tesla-50360b907add"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2024Q2-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2024Q2",
+    "model": "3",
+    "units": 114049,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q2 2024",
+      "row": "Tesla Model 3",
+      "units": 114049
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-2f7fd954eb95",
+      "tesla-8d44bd8662d0"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2024Q3-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2024Q3",
+    "model": "3",
+    "units": 118793,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q3 2024",
+      "row": "Tesla Model 3",
+      "units": 118793
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-bd9905d9a506",
+      "tesla-d754c4d1239a"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2024Q4-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2024Q4",
+    "model": "3",
+    "units": 146298,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q4 2024",
+      "row": "Tesla Model 3",
+      "units": 146298
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-2a4dadc9249d",
+      "tesla-3d143f0dd166"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2025Q1-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2025Q1",
+    "model": "3",
+    "units": 106854,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q1 2025",
+      "row": "Tesla Model 3",
+      "units": 106854
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-2df88f289dec",
+      "tesla-9af627a2244a"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2025Q2-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2025Q2",
+    "model": "3",
+    "units": 112118,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q2 2025",
+      "row": "Tesla Model 3",
+      "units": 112118
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-77e270ddfed4",
+      "tesla-f786a50cc388"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2025Q3-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2025Q3",
+    "model": "3",
+    "units": 144350,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q3 2025",
+      "row": "Tesla Model 3",
+      "units": 144350
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-3cb0bd033873",
+      "tesla-b09f0ce7724b"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2025Q4-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2025Q4",
+    "model": "3",
+    "units": 121976,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q4 2025",
+      "row": "Tesla Model 3",
+      "units": 121976
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-a119046fdec1",
+      "tesla-1f633b6c54e8"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2026Q1-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2026Q1",
+    "model": "3",
+    "units": 102568,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q1 2026",
+      "row": "Tesla Model 3",
+      "units": 102568
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-0ee37f370730",
+      "tesla-e0fab2b122d9"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2026Q2-3-published-estimate": {
+    "accepted": true,
+    "quarter": "2026Q2",
+    "model": "3",
+    "units": 140329,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model 3\t0\t0\t0\t0\t0\t220\t1550\t8180\t18440\t55840\t63150\t50900\t77634\t79703\t92620\t73975\t63793\t94049\t126624\t115077\t110054\t111225\t140000\t129764\t100066\t120308\t135846\t132180\t146915\t117074\t130000\t99841\t114049\t118793\t146298\t106854\t112118\t144350\t121976\t102568\t140329",
+    "tableCell": {
+      "column": "Q2 2026",
+      "row": "Tesla Model 3",
+      "units": 140329
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-0d4e587aacda",
+      "tesla-cadfa292c301"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q1-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q1",
+    "model": "y",
+    "units": 2291,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q1 2020",
+      "row": "Tesla Model Y",
+      "units": 2291
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-1d689e90a521",
+      "tesla-44a62f05c908"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q2-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q2",
+    "model": "y",
+    "units": 16484,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q2 2020",
+      "row": "Tesla Model Y",
+      "units": 16484
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-551958acb81e",
+      "tesla-e5ac7a1d4322"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q3-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q3",
+    "model": "y",
+    "units": 30269,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q3 2020",
+      "row": "Tesla Model Y",
+      "units": 30269
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-dc291f7526a1",
+      "tesla-9e39ea25aebd"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q4-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q4",
+    "model": "y",
+    "units": 35123,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q4 2020",
+      "row": "Tesla Model Y",
+      "units": 35123
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-15e0830a8bf1",
+      "tesla-99b574359490"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q1-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q1",
+    "model": "y",
+    "units": 67780,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q1 2021",
+      "row": "Tesla Model Y",
+      "units": 67780
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-c81a0a518f98",
+      "tesla-bc940af18a4b"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q2-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q2",
+    "model": "y",
+    "units": 89360,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q2 2021",
+      "row": "Tesla Model Y",
+      "units": 89360
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5eed37ee928b",
+      "tesla-54aa220bfb57"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q3-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q3",
+    "model": "y",
+    "units": 120800,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q3 2021",
+      "row": "Tesla Model Y",
+      "units": 120800
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-ab3b9f83a7b2",
+      "tesla-57826576267f"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q4-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q4",
+    "model": "y",
+    "units": 156850,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q4 2021",
+      "row": "Tesla Model Y",
+      "units": 156850
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-b7d2c0883ed5",
+      "tesla-fb8909e9e6ee"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q1-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q1",
+    "model": "y",
+    "units": 165560,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q1 2022",
+      "row": "Tesla Model Y",
+      "units": 165560
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-42afdaa3750a",
+      "tesla-f94569950e61"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q2-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q2",
+    "model": "y",
+    "units": 138467,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q2 2022",
+      "row": "Tesla Model Y",
+      "units": 138467
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5246447fdd15",
+      "tesla-d5153db7c910"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q3-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q3",
+    "model": "y",
+    "units": 204850,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q3 2022",
+      "row": "Tesla Model Y",
+      "units": 204850
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-327ca1047e04",
+      "tesla-96b3a3239e63"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q4-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q4",
+    "model": "y",
+    "units": 252285,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q4 2022",
+      "row": "Tesla Model Y",
+      "units": 252285
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-33fe6bdaa6e3",
+      "tesla-dfc7e32ea7e2"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q1-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q1",
+    "model": "y",
+    "units": 280000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q1 2023",
+      "row": "Tesla Model Y",
+      "units": 280000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-228c60619833",
+      "tesla-e59cb55c2296"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q2-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q2",
+    "model": "y",
+    "units": 300000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q2 2023",
+      "row": "Tesla Model Y",
+      "units": 300000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-033c7a7c490b",
+      "tesla-5c78bc3660d8"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q3-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q3",
+    "model": "y",
+    "units": 302000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q3 2023",
+      "row": "Tesla Model Y",
+      "units": 302000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-62229a44f833",
+      "tesla-4df80c5f5c81"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q4-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q4",
+    "model": "y",
+    "units": 331538,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q4 2023",
+      "row": "Tesla Model Y",
+      "units": 331538
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-892ed095df14",
+      "tesla-47c1347043b7"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2024Q1-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2024Q1",
+    "model": "y",
+    "units": 269942,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q1 2024",
+      "row": "Tesla Model Y",
+      "units": 269942
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5d8639a70bd0",
+      "tesla-50360b907add"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2024Q2-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2024Q2",
+    "model": "y",
+    "units": 308356,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q2 2024",
+      "row": "Tesla Model Y",
+      "units": 308356
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-2f7fd954eb95",
+      "tesla-8d44bd8662d0"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2024Q3-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2024Q3",
+    "model": "y",
+    "units": 321182,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q3 2024",
+      "row": "Tesla Model Y",
+      "units": 321182
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-bd9905d9a506",
+      "tesla-d754c4d1239a"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2024Q4-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2024Q4",
+    "model": "y",
+    "units": 325632,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q4 2024",
+      "row": "Tesla Model Y",
+      "units": 325632
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-2a4dadc9249d",
+      "tesla-3d143f0dd166"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2025Q1-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2025Q1",
+    "model": "y",
+    "units": 216946,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q1 2025",
+      "row": "Tesla Model Y",
+      "units": 216946
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-2df88f289dec",
+      "tesla-9af627a2244a"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2025Q2-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2025Q2",
+    "model": "y",
+    "units": 261610,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q2 2025",
+      "row": "Tesla Model Y",
+      "units": 261610
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-77e270ddfed4",
+      "tesla-f786a50cc388"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2025Q3-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2025Q3",
+    "model": "y",
+    "units": 336816,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q3 2025",
+      "row": "Tesla Model Y",
+      "units": 336816
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-3cb0bd033873",
+      "tesla-b09f0ce7724b"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2025Q4-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2025Q4",
+    "model": "y",
+    "units": 284610,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q4 2025",
+      "row": "Tesla Model Y",
+      "units": 284610
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-a119046fdec1",
+      "tesla-1f633b6c54e8"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2026Q1-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2026Q1",
+    "model": "y",
+    "units": 239325,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q1 2026",
+      "row": "Tesla Model Y",
+      "units": 239325
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-0ee37f370730",
+      "tesla-e0fab2b122d9"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2026Q2-y-published-estimate": {
+    "accepted": true,
+    "quarter": "2026Q2",
+    "model": "y",
+    "units": 327433,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model Y\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2291\t16484\t30269\t35123\t67780\t89360\t120800\t156850\t165560\t138467\t204850\t252285\t280000\t300000\t302000\t331538\t269942\t308356\t321182\t325632\t216946\t261610\t336816\t284610\t239325\t327433",
+    "tableCell": {
+      "column": "Q2 2026",
+      "row": "Tesla Model Y",
+      "units": 327433
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-0d4e587aacda",
+      "tesla-cadfa292c301"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2016Q4-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2016Q4",
+    "model": "s",
+    "units": 12700,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q4 2016",
+      "row": "Tesla Model S",
+      "units": 12700
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-3b05c8a807a4",
+      "tesla-81af6a76ab77"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2017Q1-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2017Q1",
+    "model": "s",
+    "units": 13481,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q1 2017",
+      "row": "Tesla Model S",
+      "units": 13481
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-9c9915c999b2",
+      "tesla-f8734c6530e9"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2017Q2-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2017Q2",
+    "model": "s",
+    "units": 12010,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q2 2017",
+      "row": "Tesla Model S",
+      "units": 12010
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-7f8817b7fa7e",
+      "tesla-c3c1a16df85f",
+      "tesla-f1bc6605012e"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2017Q3-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2017Q3",
+    "model": "s",
+    "units": 14065,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q3 2017",
+      "row": "Tesla Model S",
+      "units": 14065
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-02f434643698",
+      "tesla-140413d7163d"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2017Q4-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2017Q4",
+    "model": "s",
+    "units": 15200,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q4 2017",
+      "row": "Tesla Model S",
+      "units": 15200
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-6b9f177e312c",
+      "tesla-df37b3126b2b"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2018Q1-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2018Q1",
+    "model": "s",
+    "units": 11730,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q1 2018",
+      "row": "Tesla Model S",
+      "units": 11730
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-cdcd8e0da497",
+      "tesla-63682ececb71"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2018Q2-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2018Q2",
+    "model": "s",
+    "units": 10930,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q2 2018",
+      "row": "Tesla Model S",
+      "units": 10930
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-4033945a38d1",
+      "tesla-71f5514d86e4"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2018Q3-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2018Q3",
+    "model": "s",
+    "units": 14470,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q3 2018",
+      "row": "Tesla Model S",
+      "units": 14470
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-8008b0e80df5",
+      "tesla-d70e3064c7d5"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2018Q4-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2018Q4",
+    "model": "s",
+    "units": 13500,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q4 2018",
+      "row": "Tesla Model S",
+      "units": 13500
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-ff3906030ad8",
+      "tesla-ee185028260c"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2019Q1-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2019Q1",
+    "model": "s",
+    "units": 6000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q1 2019",
+      "row": "Tesla Model S",
+      "units": 6000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-7175782d3740",
+      "tesla-d00a6876ea2d"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2019Q2-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2019Q2",
+    "model": "s",
+    "units": 8422,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q2 2019",
+      "row": "Tesla Model S",
+      "units": 8422
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-a5e1521ae469",
+      "tesla-ab7761203248"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2019Q3-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2019Q3",
+    "model": "s",
+    "units": 8383,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q3 2019",
+      "row": "Tesla Model S",
+      "units": 8383
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-de691e5b9b29",
+      "tesla-61ff40e502bd"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2019Q4-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2019Q4",
+    "model": "s",
+    "units": 8375,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q4 2019",
+      "row": "Tesla Model S",
+      "units": 8375
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-9f147a6351c4",
+      "tesla-e5533d0ca249"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q1-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q1",
+    "model": "s",
+    "units": 4525,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q1 2020",
+      "row": "Tesla Model S",
+      "units": 4525
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-1d689e90a521",
+      "tesla-44a62f05c908"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q2-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q2",
+    "model": "s",
+    "units": 3927,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q2 2020",
+      "row": "Tesla Model S",
+      "units": 3927
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-551958acb81e",
+      "tesla-e5ac7a1d4322"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q3-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q3",
+    "model": "s",
+    "units": 4583,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q3 2020",
+      "row": "Tesla Model S",
+      "units": 4583
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-dc291f7526a1",
+      "tesla-9e39ea25aebd"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q4-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q4",
+    "model": "s",
+    "units": 6060,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q4 2020",
+      "row": "Tesla Model S",
+      "units": 6060
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-15e0830a8bf1",
+      "tesla-99b574359490"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q1-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q1",
+    "model": "s",
+    "units": 1010,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q1 2021",
+      "row": "Tesla Model S",
+      "units": 1010
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-c81a0a518f98",
+      "tesla-bc940af18a4b"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q2-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q2",
+    "model": "s",
+    "units": 890,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q2 2021",
+      "row": "Tesla Model S",
+      "units": 890
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5eed37ee928b",
+      "tesla-54aa220bfb57"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q3-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q3",
+    "model": "s",
+    "units": 9000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q3 2021",
+      "row": "Tesla Model S",
+      "units": 9000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-ab3b9f83a7b2",
+      "tesla-57826576267f"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q4-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q4",
+    "model": "s",
+    "units": 4050,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q4 2021",
+      "row": "Tesla Model S",
+      "units": 4050
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-b7d2c0883ed5",
+      "tesla-fb8909e9e6ee"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q1-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q1",
+    "model": "s",
+    "units": 7362,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q1 2022",
+      "row": "Tesla Model S",
+      "units": 7362
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-42afdaa3750a",
+      "tesla-f94569950e61"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q2-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q2",
+    "model": "s",
+    "units": 8081,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q2 2022",
+      "row": "Tesla Model S",
+      "units": 8081
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5246447fdd15",
+      "tesla-d5153db7c910"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q3-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q3",
+    "model": "s",
+    "units": 7469,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q3 2022",
+      "row": "Tesla Model S",
+      "units": 7469
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-327ca1047e04",
+      "tesla-96b3a3239e63"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q4-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q4",
+    "model": "s",
+    "units": 6344,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q4 2022",
+      "row": "Tesla Model S",
+      "units": 6344
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-33fe6bdaa6e3",
+      "tesla-dfc7e32ea7e2"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q1-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q1",
+    "model": "s",
+    "units": 3695,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q1 2023",
+      "row": "Tesla Model S",
+      "units": 3695
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-228c60619833",
+      "tesla-e59cb55c2296"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q2-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q2",
+    "model": "s",
+    "units": 6225,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q2 2023",
+      "row": "Tesla Model S",
+      "units": 6225
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-033c7a7c490b",
+      "tesla-5c78bc3660d8"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q3-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q3",
+    "model": "s",
+    "units": 5985,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q3 2023",
+      "row": "Tesla Model S",
+      "units": 5985
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-62229a44f833",
+      "tesla-4df80c5f5c81"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q4-s-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q4",
+    "model": "s",
+    "units": 7779,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model S\t9764\t16047\t12700\t13481\t12010\t14065\t15200\t11730\t10930\t14470\t13500\t6000\t8422\t8383\t8375\t4525\t3927\t4583\t6060\t1010\t890\t9000\t4050\t7362\t8081\t7469\t6344\t3695\t6225\t5985\t7779\t3456\t3062\t2537\t3047\t1943\t1826\t3490\t2893\t4239\t2809",
+    "tableCell": {
+      "column": "Q4 2023",
+      "row": "Tesla Model S",
+      "units": 7779
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-892ed095df14",
+      "tesla-47c1347043b7"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2016Q4-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2016Q4",
+    "model": "x",
+    "units": 9500,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q4 2016",
+      "row": "Tesla Model X",
+      "units": 9500
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-3b05c8a807a4",
+      "tesla-81af6a76ab77"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2017Q1-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2017Q1",
+    "model": "x",
+    "units": 11570,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q1 2017",
+      "row": "Tesla Model X",
+      "units": 11570
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-9c9915c999b2",
+      "tesla-f8734c6530e9"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2017Q2-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2017Q2",
+    "model": "x",
+    "units": 10010,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q2 2017",
+      "row": "Tesla Model X",
+      "units": 10010
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-7f8817b7fa7e",
+      "tesla-c3c1a16df85f",
+      "tesla-f1bc6605012e"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2017Q3-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2017Q3",
+    "model": "x",
+    "units": 11865,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q3 2017",
+      "row": "Tesla Model X",
+      "units": 11865
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-02f434643698",
+      "tesla-140413d7163d"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2017Q4-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2017Q4",
+    "model": "x",
+    "units": 13120,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q4 2017",
+      "row": "Tesla Model X",
+      "units": 13120
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-6b9f177e312c",
+      "tesla-df37b3126b2b"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2018Q1-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2018Q1",
+    "model": "x",
+    "units": 10070,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q1 2018",
+      "row": "Tesla Model X",
+      "units": 10070
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-cdcd8e0da497",
+      "tesla-63682ececb71"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2018Q2-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2018Q2",
+    "model": "x",
+    "units": 11370,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q2 2018",
+      "row": "Tesla Model X",
+      "units": 11370
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-4033945a38d1",
+      "tesla-71f5514d86e4"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2018Q3-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2018Q3",
+    "model": "x",
+    "units": 13190,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q3 2018",
+      "row": "Tesla Model X",
+      "units": 13190
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-8008b0e80df5",
+      "tesla-d70e3064c7d5"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2018Q4-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2018Q4",
+    "model": "x",
+    "units": 14050,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q4 2018",
+      "row": "Tesla Model X",
+      "units": 14050
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-ff3906030ad8",
+      "tesla-ee185028260c"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2019Q1-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2019Q1",
+    "model": "x",
+    "units": 6100,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q1 2019",
+      "row": "Tesla Model X",
+      "units": 6100
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-7175782d3740",
+      "tesla-d00a6876ea2d"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2019Q2-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2019Q2",
+    "model": "x",
+    "units": 9300,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q2 2019",
+      "row": "Tesla Model X",
+      "units": 9300
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-a5e1521ae469",
+      "tesla-ab7761203248"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2019Q3-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2019Q3",
+    "model": "x",
+    "units": 9100,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q3 2019",
+      "row": "Tesla Model X",
+      "units": 9100
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-de691e5b9b29",
+      "tesla-61ff40e502bd"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2019Q4-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2019Q4",
+    "model": "x",
+    "units": 11100,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q4 2019",
+      "row": "Tesla Model X",
+      "units": 11100
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-9f147a6351c4",
+      "tesla-e5533d0ca249"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q1-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q1",
+    "model": "x",
+    "units": 7705,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q1 2020",
+      "row": "Tesla Model X",
+      "units": 7705
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-1d689e90a521",
+      "tesla-44a62f05c908"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q2-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q2",
+    "model": "x",
+    "units": 6687,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q2 2020",
+      "row": "Tesla Model X",
+      "units": 6687
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-551958acb81e",
+      "tesla-e5ac7a1d4322"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q3-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q3",
+    "model": "x",
+    "units": 10693,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q3 2020",
+      "row": "Tesla Model X",
+      "units": 10693
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-dc291f7526a1",
+      "tesla-9e39ea25aebd"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2020Q4-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2020Q4",
+    "model": "x",
+    "units": 12860,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q4 2020",
+      "row": "Tesla Model X",
+      "units": 12860
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-15e0830a8bf1",
+      "tesla-99b574359490"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q1-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q1",
+    "model": "x",
+    "units": 1010,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q1 2021",
+      "row": "Tesla Model X",
+      "units": 1010
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-c81a0a518f98",
+      "tesla-bc940af18a4b"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q2-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q2",
+    "model": "x",
+    "units": 1000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q2 2021",
+      "row": "Tesla Model X",
+      "units": 1000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5eed37ee928b",
+      "tesla-54aa220bfb57"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q3-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q3",
+    "model": "x",
+    "units": 275,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q3 2021",
+      "row": "Tesla Model X",
+      "units": 275
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-ab3b9f83a7b2",
+      "tesla-57826576267f"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2021Q4-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2021Q4",
+    "model": "x",
+    "units": 7700,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q4 2021",
+      "row": "Tesla Model X",
+      "units": 7700
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-b7d2c0883ed5",
+      "tesla-fb8909e9e6ee"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q1-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q1",
+    "model": "x",
+    "units": 7362,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q1 2022",
+      "row": "Tesla Model X",
+      "units": 7362
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-42afdaa3750a",
+      "tesla-f94569950e61"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q2-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q2",
+    "model": "x",
+    "units": 8081,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q2 2022",
+      "row": "Tesla Model X",
+      "units": 8081
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-5246447fdd15",
+      "tesla-d5153db7c910"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q3-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q3",
+    "model": "x",
+    "units": 11203,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q3 2022",
+      "row": "Tesla Model X",
+      "units": 11203
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-327ca1047e04",
+      "tesla-96b3a3239e63"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2022Q4-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2022Q4",
+    "model": "x",
+    "units": 10803,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q4 2022",
+      "row": "Tesla Model X",
+      "units": 10803
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-33fe6bdaa6e3",
+      "tesla-dfc7e32ea7e2"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q1-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q1",
+    "model": "x",
+    "units": 7000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q1 2023",
+      "row": "Tesla Model X",
+      "units": 7000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-228c60619833",
+      "tesla-e59cb55c2296"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q2-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q2",
+    "model": "x",
+    "units": 13000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q2 2023",
+      "row": "Tesla Model X",
+      "units": 13000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-033c7a7c490b",
+      "tesla-5c78bc3660d8"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q3-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q3",
+    "model": "x",
+    "units": 10000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q3 2023",
+      "row": "Tesla Model X",
+      "units": 10000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-62229a44f833",
+      "tesla-4df80c5f5c81"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q4-x-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q4",
+    "model": "x",
+    "units": 15000,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Model X\t4638\t8774\t9500\t11570\t10010\t11865\t13120\t10070\t11370\t13190\t14050\t6100\t9300\t9100\t11100\t7705\t6687\t10693\t12860\t1010\t1000\t275\t7700\t7362\t8081\t11203\t10803\t7000\t13000\t10000\t15000\t11571\t10249\t8493\t10199\t4533\t4262\t8143\t6749\t9891\t6555",
+    "tableCell": {
+      "column": "Q4 2023",
+      "row": "Tesla Model X",
+      "units": 15000
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-892ed095df14",
+      "tesla-47c1347043b7"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
+  },
+  "2023Q4-ct-published-estimate": {
+    "accepted": true,
+    "quarter": "2023Q4",
+    "model": "ct",
+    "units": 190,
+    "geography": "global",
+    "metric": "deliveries",
+    "grouped": false,
+    "status": "estimated",
+    "sourceIds": [
+      "public-0d9b048face3"
+    ],
+    "excerpt": "Tesla Cybertruck\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t190\t1601\t8240\t11885\t10394\t6406\t4306\t4300\t2000\t2000\t3000",
+    "tableCell": {
+      "column": "Q4 2023",
+      "row": "Tesla Cybertruck",
+      "units": 190
+    },
+    "methodology": "CleanTechnica author-published informed estimates drawing on Troy Teslike, EV-Volumes and issuer disclosures. Imported unchanged; no model allocation computed here. Provider assumptions are not fully reproducible; uncertainty is not quantified.",
+    "crossChecks": [
+      "tesla-892ed095df14",
+      "tesla-47c1347043b7"
+    ],
+    "crossCheckScope": "Independent Tesla issuer quarter/group context ONLY; not independent verification of the exact model split.",
+    "reviewNote": "Published estimate, shown with ≈. Independent issuer reports check quarter and group context, not each estimated model. Later group revisions are not redistributed.",
+    "independentCorroboration": false,
+    "reviewedOn": "2026-10-29"
   }
 }

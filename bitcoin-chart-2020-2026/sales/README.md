@@ -1,45 +1,55 @@
 # Tesla — global model-delivery race
 
-Independent long-film pipeline, **not yet render-ready**. No sales still/video has been rendered. The real 47-quarter / five-model matrix has **17 accepted, 151 missing active-model cells**, plus 67 correctly marked not-launched cells. Do not turn missing data into zero or render a polished but unsupported global comparison.
+Independent long-film pipeline. Full-history delivery data is **not complete**: 47 quarters / 235 cells, with **128 accepted active-model cells (17 issuer facts + 111 published estimates), 40 missing and 67 pre-launch**. Published model estimates come from the provider's downloadable table, imported unchanged. No local allocation of combined Tesla totals, regional-as-global substitution or simulated quantities.
 
-## What is implemented
+## Film and isolation
 
-- S, X, 3, Y and Cybertruck each have a separate model/bar/photo/color. Official Tesla T and five official product photographs are locally stored with source pages, original URLs, hashes and dimensions. Photos illustrate the model's current appearance, not each historical year's trim.
-- Deterministic zero-baseline, fixed-scale quarterly chart; 0.8-second monotone transitions; stable ties; hiding text during rank crossing; exact source counts only. Every state comes from absolute time.
-- Exactly 480s / 28,800 frames at 60fps: 12s intro, 47 × 6s quarters, ten narrative panels totaling 160s, 26s summary. Chapters and captions live in config/storyboard; comparative claims are computed, not assumed.
-- Launch, head-to-head, YoY, annual and a separately labeled small-model detail scale; cumulative summary clearly says since 2015. Prelaunch/missing are null. Published estimates get ≈ and a persistent estimate legend, methodology and an independent checked source group.
-- Four existing approved 100 BPM cues at 0/120/240/360s, preserving native long-film arrangement. Workspace-only song adapter adds restrained launch/leader chimes, removes whole-mix pre-hit gates and legacy ending hit. Shared song, root price data, renderer and music are untouched.
-- Strict audit and hash-bound concrete review gate. Building refuses missing/invalid data before creating any render workspace. Render entrypoint requires explicit review evidence, preview approval and final request/resolution for final.
-- Unique isolated `out/tesla-sales/<datahash>-<codehash>-<unique>/` workspaces, with full source/review inputs, engine, hashes, assets and generated manifest; retained WAV/stems/frames/outputs. Each engine invocation checks file fingerprints. No overwriting old renders; root full-data/music restoration is unnecessary because root generated files are never changed.
+- Separate bar, official photograph and color for Model S, X, 3, Y and Cybertruck. Official Tesla T; source URLs and image hashes in `assets.json`. Current product photos illustrate the model, not historical trims.
+- Fixed linear zero-baseline main scale; stable rank ties; bounded smoothstep transitions over 0.8s. Moving labels are hidden; visible counters are source values, not invented intermediate reported values. Small-model spotlight has an explicit separate DETAIL SCALE.
+- 480s / 28,800 frames at 60fps: 12s intro, 47 × 6s quarters, ten panels totaling 160s, 26s summary. Launch, head-to-head, annual, YoY and cumulative panels derive claims from data. Cumulative means selected period since 2015, not lifetime or all Tesla vehicles.
+- Prelaunch/missing stay null; neither is zero. Estimates always get ≈ and an estimate legend. A sourced estimate is not an independently verified precise count.
+- Four approved 100 BPM cues at 0/120/240/360s, native long arrangements. Workspace-only song adapter adds quiet launch/leader chimes; no whole-mix pre-event gates or legacy end impact. Target −16 LUFS.
+- Unique `out/tesla-sales/<datahash>-<codehash>-<unique>/` workspaces retain engine/source/review snapshots, manifest, photos, WAV/stems, encoded pictures and QA. Every engine invocation checks fingerprints. Root crypto/equity/Shorts data, score, film, song and full WAV remain untouched.
 
-## Data, research and review
+## Data and research
 
 ```sh
-node sales/review.js --review # writes review.md and coverage.json, no rendering
-node sales/review.js          # strict coverage audit; currently expected to fail
-node sales/test.js           # mathematical/data/gate tests, no fixture rendering
-python3 sales/research.py    # public reports; Python lxml + pdftotext + curl
-python3 sales/curate.py      # verify the 17 literal seed facts; preserves later edits
+npm run review:sales          # writes concrete review/coverage; no rendering
+npm run audit:sales           # full-history gate; fails while 40 cells are missing
+npm run test:sales            # 19 logic/data/authorization tests; no synthetic fixture pictures
+python3 sales/research.py     # public issuer reports; curl/lxml/pdftotext
+python3 sales/curate.py       # rechecks 17 literal seed facts, preserves later edits
+python3 sales/import-published.py # imports unchanged provider table; uses cache or public fetch
 ```
 
-`research.py` caches original public documents under ignored `out/sales-research`, reuses the existing Tesla document cache with original hashes, and exports **candidates only**. Regex candidates include financial/production false positives. Never promote them without literal quarter/model/metric/geography review. `sources.checked` means readable, not factual approval. The current accepted facts are issuer facts without claimed independent corroboration. Re-running research preserves additional manually added source records; seed verification does not overwrite subsequent decisions.
+Research/QA Python dependencies are in `sales/requirements.txt`; `curl` and `pdftotext` (Poppler) are needed for report research.
 
-`coins/TSLA/sales/deliveries.csv` contains all 235 model-quarter cells. `observations.json` is the accepted literal-evidence ledger; `report-index.json` points to 98 releases/letters; `source-discovery.md` records source limitations and excluded sources. `review.md` shows every missing quarter and every accepted quotation/link, plus the full storyboard. The CSV `note` and observation `reviewNote` retain revision decisions. If a source later revises only a combined group, do not redistribute that revision into individual models. Keep earlier published evidence as unaccepted history rather than silently inventing corrected per-model values.
+The public model table is [CleanTechnica/Datawrapper](https://datawrapper.dwcdn.net/3hcKb/9/dataset.csv), linked from [the July 2026 article](https://cleantechnica.com/2026/07/02/tesla-has-its-4th-best-quarter-ever/). Exact downloaded data is retained as `published-model-estimates.tsv`; original source hashes and explicit source notes are saved. It covers 2016Q2–2026Q2. The provider acknowledges informed assumptions based on Troy Teslike/EV-Volumes/other sources; its full estimating method and uncertainty intervals are not reproducible from the public notes.
 
-Asset refresh (only when deliberately updating the official photographs): fetch current official product pages into the research cache, inspect their image URLs and update `sales/acquire-assets.py` exact selections before running it. This is product-asset acquisition, not a sales render. Changes invalidate the review hash.
+Independent Tesla quarter reports check the quarter and combined-group context **only**, not the exact individual-model estimate. `independentCorroboration:false` is retained for those estimates. Repeated charts from the same publisher are not independent sources. Direct issuer model counts take priority; grouped revisions are not redistributed.
 
-## After coverage is complete
+All 30 S/X/Cybertruck cells from 2024Q1 onward remain unaccepted pending reconciliation. For example, the chart's global Cybertruck 2024Q3 estimate (11,885) conflicts with KBB's US estimate (16,692). Neither is silently overwritten and US counts are never called worldwide. Five early individual cells and five 2026Q3 cells also remain missing. See `source-discovery.md`, `published-candidates.json`, `coverage.json` and `review.md` for every decision and source.
 
-1. Run strict audit and send the exact data/source/storyboard review for user approval. Plan approval does not approve the dataset. Record `approval.json` with `approved:true`, current contentHash and exact user approval evidence only when actually received.
-2. `COIN=TSLA node sales/render.js layout 128` — layout at 480p, 16:9.
-3. `COIN=TSLA node sales/render.js preview 128` — 36s, 480p60, retains full music/data in its unique workspace. Deliver directly if supported, otherwise the already-authorized Drive fallback.
-4. Inspect layout/text collision/safe areas, source labels, photo identity, deterministic seek samples, decoded frame/PTS count and cue/SFX alignment; measure master and AAC loudness/true peak. Ask user to assess motion/music. Do not treat unit tests as visual/audio QA.
-5. Only after preview approval, explicit full request and resolution confirmation, record their evidence/`previewApproved`/`finalRequested`/`finalResolution`, then `node sales/render.js final`. Design format stays 16:9/60fps. Validate and retain all outputs and Drive metadata before delivery.
+`research.py` retains readable document hashes in ignored `out/sales-research`, reusing the older Tesla research cache where available. Regex extraction candidates include financial/production false positives; they are never facts automatically. A readable/HTTP200 source is not factual approval. Asset acquisition uses exact official product-page image URLs; changes invalidate data-review hashes.
 
-`node sales/build.js` materializes an approved, complete workspace without rendering. Use `sales/render.js` for production operations, not ad-hoc direct engine full-film commands that bypass the operator review sequence. No approval utility self-approves data. Pending data/storyboard approval is stored as false.
+## Preview authorization and full-film gate
 
-## Verification status and remaining work
+The user subsequently instructed: “Hoàn thiện tất cả, tự kiểm tra và làm cho xong. Sau đó render preview up lên drive.” This explicitly delegates verification and requests preview; it does **not** approve a fabricated or complete dataset. `preview-authorization.json` records that instruction and the current input hash, separately from pending full-data `approval.json`.
 
-15 unit/data tests pass: coverage, missing/zero/prelaunch, grouped/regional/unread observations, estimates, full timeline, ranking/ties, YoY, interpolation, deterministic seeks, review hash, assets and song adapter. Shared long/Shorts generated inputs remain unchanged. **No sales browser frames, music or AAC have been generated or visually/audibly verified** because the data gate correctly blocks them. End-to-end renderer, layout, sound synchronization and final mastering still require the completed real dataset and subsequent approvals.
+A research preview may render a **source-covered window of at most 45 seconds**. Audit every touched quarter, the preceding quarter used for transitions, and annual-panel dependencies. Any missing rendered/context fact or data error fails. Disallow incomplete cumulative summaries. Preserve all 47 quarters and missing cells in the research files; do not silently narrow the full film. Preview carries `RESEARCH PREVIEW` and the estimate legend. Browser frame and direct engine guards reject rendering outside the exact window or running full-film commands with a preview-only permit.
 
-A full worldwide model-by-quarter public dataset has not been established. MarkLines export required signup/login; EV-Volumes access was not established; KBB/GCBC/CarFigures regional counts cannot fill the global series; an apparently suitable GitHub dashboard explicitly used simulated data and was rejected. See the concrete missing-cell matrix, not a claim of worldwide completeness. Do not quietly change geography, omit quarters, group cars or allocate annual totals to fill the gaps.
+```sh
+node sales/render.js layout 296  # still, 480p; same bounded permit
+node sales/render.js preview 296 # 296–332s, 36s, 16:9/480p/60fps
+python3 sales/verify-preview.py /absolute/path/to/retained/workspace
+```
+
+The current preview shows 2023Q1–Q4 and Cybertruck entering, using five separate model bars once launched. At first the unreleased truck is labeled NOT LAUNCHED. The 16-second launch panel uses a clearly approximate published count.
+
+Full-history builds remain blocked until every active-model cell has acceptable source evidence and exact full-data/storyboard approval. Then layout/short preview, user preview approval, explicit final request and confirmed final resolution precede `node sales/render.js final`. Never self-approve final or reuse a preview permit for full film.
+
+## Verification and delivery
+
+19 data/logic tests and the existing event tests cover coverage, zero/null/prelaunch, grouped/regional/unread observations, estimates, timeline, stable ranks, YoY, bounded interpolation, deterministic seeking, review hashes, official assets, native cue times, preview context and direct-render guards. Actual preview checks inspect decoded frame count/PTS, native PNG versus encoded frames, AAC/master correlation and lag, isolated SFX signal, loudness/true peak and the file's input hashes. These measurements do not imply listening or user aesthetic acceptance.
+
+Keep every workspace/output. Deliver through the already-authorized Google Drive fallback and read back Drive metadata before sending its returned URL. Current measured/render/upload results are recorded separately in `coins/TSLA/sales/verification.json`; do not claim the full dataset or full film is done.

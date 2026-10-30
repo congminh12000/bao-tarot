@@ -26,11 +26,11 @@
     const rows=state.rows.filter(r=>r.visible&&(!models||models.includes(r.model.id)));
     const targetOrder=rows.slice().sort((a,b)=>a.rank-b.rank);
     const ceiling=detail?Math.max(10000,Math.ceil(Math.max(...rows.map(r=>r.units))/10000)*10000):P.axisMax;
-    const step=ceiling/4, rowHeight=small?32:58;
+    const divisions=small?2:4,step=ceiling/divisions, rowHeight=small?32:58;
     text(ctx,detail?'DETAIL SCALE · GLOBAL DELIVERIES':'GLOBAL QUARTERLY DELIVERIES',x,y-55,small?21:24,'#C5ABB2');
-    for(let i=0;i<=4;i++) {
-      const xx=x+w*i/4;ctx.strokeStyle='#FFFFFF16';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(xx,y-24);ctx.lineTo(xx,y+(detail?rows.length:5)*dy-30);ctx.stroke();
-      text(ctx,N(step*i),xx,y-15,small?17:21,'#A98F98',i===0?'left':i===4?'right':'center');
+    for(let i=0;i<=divisions;i++) {
+      const xx=x+w*i/divisions;ctx.strokeStyle='#FFFFFF16';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(xx,y-24);ctx.lineTo(xx,y+(detail?rows.length:5)*dy-30);ctx.stroke();
+      text(ctx,N(step*i),xx,y-15,small?17:21,'#A98F98',i===0?'left':i===divisions?'right':'center');
     }
     for(const r of rows) {
       const rank=detail?targetOrder.indexOf(r):r.rank,yy=y+rank*dy;
@@ -69,13 +69,13 @@
       bars(ctx,state,{x:500,y:440,w:940,dy:150,models:ids,detail:true});return;
     }
     const display=chosen.slice(0,2);
-    display.forEach((r,i)=>photo(ctx,r.model.id,100+i*340,320,320,220));
+    display.forEach((r,i)=>{const p=clamp((state.t-s.t0)/s.duration);photo(ctx,r.model.id,100+i*340+8*Math.sin(p*Math.PI),320,320,220,clamp((state.t-s.t0)/.65));});
     bars(ctx,state,{x:1120,y:335,w:405,dy:103,small:true});
     if(s.panelKind==='head-to-head') {
       const a=chosen.find(r=>r.model.id===ids[0]),b=chosen.find(r=>r.model.id===ids[1]);
       if(a&&b) {text(ctx,a.model.name+' / '+b.model.name,100,620,30,'#BAA1AA');text(ctx,`${N(a.units)} / ${N(b.units)}`,100,694,55);text(ctx,'QUARTERLY GAP  '+N(Math.abs(a.units-b.units)),100,758,29,'#FF8E9B');}
     } else if(s.panelKind==='launch') {
-      const a=chosen[0];if(a){text(ctx,a.model.name,100,620,46,a.model.color);text(ctx,N(a.units)+' DELIVERED',100,695,48);text(ctx,'FIRST DELIVERY QUARTER · WORLDWIDE',100,757,25,'#BAA1AA');}
+      const a=chosen[0];if(a){text(ctx,a.model.name,100,620,46,a.model.color);text(ctx,(a.status==='estimated'?'≈ ':'')+N(a.units)+' DELIVERED',100,695,48);text(ctx,'FIRST DELIVERY QUARTER · WORLDWIDE',100,757,25,'#BAA1AA');}
     } else {
       const metrics=chosen.map(r=>{
         if(s.panelKind==='annual') {
@@ -95,9 +95,11 @@
     text(ctx,'SELECTED PERIOD ONLY · NO ROADSTER OR SEMI · SOURCES IN DESCRIPTION',100,971,21,'#AA909A');
   }
   function draw(ctx,t) {
+    if (P.renderWindow && (t < P.renderWindow[0]-1e-8 || t >= P.renderWindow[1]+1e-8)) throw new Error('Frame outside authorized verified preview');
     background(ctx,t);const state=C.stateAt(P,t);
     if(state.segment.kind==='intro')intro(ctx,t);
     else {context(ctx,state);if(state.segment.kind==='panel')panel(ctx,state);else if(state.segment.kind==='summary')summary(ctx,state);else bars(ctx,state);pulse(ctx,t);}
+    if(P.renderWindow) text(ctx,'RESEARCH PREVIEW · PUBLISHED ESTIMATES MARKED ≈',960,1057,19,'#BEA6AE','center');
   }
   globalThis.SalesScene={draw};
   Studio.film({draw,duration:P.duration,fadeOut:1.4,post:{grain:0,paper:0,vignette:.10},init:async()=>{

@@ -26,3 +26,16 @@ Scope: worldwide individual-model quarterly deliveries, 2015Q1–2026Q3. This is
 - 2019Q4 letter has a global operational table with five columns 2018Q4–2019Q4, supplying five Model 3 observations. S/X row stays grouped.
 
 These are issuer revisions, not independent corroboration. `sources.json.checked` means readable document; only `observations.json.accepted=true` plus a matching literal quotation constitutes an accepted fact. Extraction candidates intentionally retain rejected/ambiguous material and are never promoted automatically. The initial accepted subset is conservative and is not a finished sales dataset.
+
+## Updated public-chart investigation (29 October 2026)
+
+
+CleanTechnica’s July 2026 article links the public model table at https://datawrapper.dwcdn.net/3hcKb/9/dataset.csv. Its 41 quarters run 2016Q2–2026Q2. Archived the exact downloadable TSV and source hashes; no chart-image reading or locally computed group allocation. Source notes explicitly acknowledge model-split assumptions, including Troy Teslike, EV-Volumes and KBB.
+
+The 17 preferred direct issuer observations remain. Added 111 published estimates as estimates, not official figures. Independent Tesla quarter reports establish group context only: they do not independently verify each model split. No confidence interval or fully reproducible provider methodology is available. This limit must appear in the review and persistent estimate legend.
+
+All 30 S/X/Cybertruck observations from 2024Q1 onward remain unaccepted pending reconciliation. Example: published global Cybertruck 2024Q3 = 11,885, versus KBB US estimate = 16,692, independently reported at https://driveteslacanada.ca/news/tesla-cybertruck-dominates-us-ev-pickup-sales-in-q3-2024/ and https://cleantechnica.com/2024/10/15/tesla-cybertruck-sales-more-than-doubled-in-q3-became-3rd-best-selling-ev-in-usa/ . These estimates conflict; neither is silently overwritten, neither regional count is relabeled global, and a disputed truck count also undermines the remaining S/X allocation in that group.
+
+Current public chart redirect still points to version 9 (bar) / 12 (line), through 2026Q2; Q3/2026 has not been found in the provider dataset. Do not extrapolate it. Five early active cells also remain missing because no suitably checked current individual observation has yet been accepted.
+
+Current matrix: 128 accepted (17 issuer facts + 111 estimates), 40 missing, 67 pre-launch. Full film remains blocked. The user explicitly delegated verification and requested a preview: build only a source-covered 36-second window 296–332s (2023Q1–Q4, Cybertruck launch panel), keep full scope and all missing cells in the research files, do not label the dataset complete. The exact preview authorization is separate from pending full-data approval.

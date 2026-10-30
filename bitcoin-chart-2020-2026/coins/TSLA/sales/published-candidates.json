@@ -1,0 +1,1242 @@
+[
+  {
+    "quarter": "2017Q3",
+    "model": "3",
+    "units": 220,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2017Q4",
+    "model": "3",
+    "units": 1550,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q1",
+    "model": "3",
+    "units": 8180,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q2",
+    "model": "3",
+    "units": 18440,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q3",
+    "model": "3",
+    "units": 55840,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q4",
+    "model": "3",
+    "units": 63150,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q1",
+    "model": "3",
+    "units": 50900,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q2",
+    "model": "3",
+    "units": 77634,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q3",
+    "model": "3",
+    "units": 79703,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q4",
+    "model": "3",
+    "units": 92620,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q1",
+    "model": "3",
+    "units": 73975,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q2",
+    "model": "3",
+    "units": 63793,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q3",
+    "model": "3",
+    "units": 94049,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q4",
+    "model": "3",
+    "units": 126624,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q1",
+    "model": "3",
+    "units": 115077,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q2",
+    "model": "3",
+    "units": 110054,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q3",
+    "model": "3",
+    "units": 111225,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q4",
+    "model": "3",
+    "units": 140000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q1",
+    "model": "3",
+    "units": 129764,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q2",
+    "model": "3",
+    "units": 100066,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q3",
+    "model": "3",
+    "units": 120308,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q4",
+    "model": "3",
+    "units": 135846,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q1",
+    "model": "3",
+    "units": 132180,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q2",
+    "model": "3",
+    "units": 146915,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q3",
+    "model": "3",
+    "units": 117074,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q4",
+    "model": "3",
+    "units": 130000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q1",
+    "model": "3",
+    "units": 99841,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q2",
+    "model": "3",
+    "units": 114049,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q3",
+    "model": "3",
+    "units": 118793,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q4",
+    "model": "3",
+    "units": 146298,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2025Q1",
+    "model": "3",
+    "units": 106854,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2025Q2",
+    "model": "3",
+    "units": 112118,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2025Q3",
+    "model": "3",
+    "units": 144350,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2025Q4",
+    "model": "3",
+    "units": 121976,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2026Q1",
+    "model": "3",
+    "units": 102568,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2026Q2",
+    "model": "3",
+    "units": 140329,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q1",
+    "model": "y",
+    "units": 2291,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q2",
+    "model": "y",
+    "units": 16484,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q3",
+    "model": "y",
+    "units": 30269,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q4",
+    "model": "y",
+    "units": 35123,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q1",
+    "model": "y",
+    "units": 67780,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q2",
+    "model": "y",
+    "units": 89360,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q3",
+    "model": "y",
+    "units": 120800,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q4",
+    "model": "y",
+    "units": 156850,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q1",
+    "model": "y",
+    "units": 165560,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q2",
+    "model": "y",
+    "units": 138467,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q3",
+    "model": "y",
+    "units": 204850,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q4",
+    "model": "y",
+    "units": 252285,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q1",
+    "model": "y",
+    "units": 280000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q2",
+    "model": "y",
+    "units": 300000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q3",
+    "model": "y",
+    "units": 302000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q4",
+    "model": "y",
+    "units": 331538,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q1",
+    "model": "y",
+    "units": 269942,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q2",
+    "model": "y",
+    "units": 308356,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q3",
+    "model": "y",
+    "units": 321182,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q4",
+    "model": "y",
+    "units": 325632,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2025Q1",
+    "model": "y",
+    "units": 216946,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2025Q2",
+    "model": "y",
+    "units": 261610,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2025Q3",
+    "model": "y",
+    "units": 336816,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2025Q4",
+    "model": "y",
+    "units": 284610,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2026Q1",
+    "model": "y",
+    "units": 239325,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2026Q2",
+    "model": "y",
+    "units": 327433,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2016Q2",
+    "model": "s",
+    "units": 9764,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2016Q3",
+    "model": "s",
+    "units": 16047,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2016Q4",
+    "model": "s",
+    "units": 12700,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2017Q1",
+    "model": "s",
+    "units": 13481,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2017Q2",
+    "model": "s",
+    "units": 12010,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2017Q3",
+    "model": "s",
+    "units": 14065,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2017Q4",
+    "model": "s",
+    "units": 15200,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q1",
+    "model": "s",
+    "units": 11730,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q2",
+    "model": "s",
+    "units": 10930,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q3",
+    "model": "s",
+    "units": 14470,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q4",
+    "model": "s",
+    "units": 13500,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q1",
+    "model": "s",
+    "units": 6000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q2",
+    "model": "s",
+    "units": 8422,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q3",
+    "model": "s",
+    "units": 8383,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q4",
+    "model": "s",
+    "units": 8375,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q1",
+    "model": "s",
+    "units": 4525,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q2",
+    "model": "s",
+    "units": 3927,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q3",
+    "model": "s",
+    "units": 4583,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q4",
+    "model": "s",
+    "units": 6060,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q1",
+    "model": "s",
+    "units": 1010,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q2",
+    "model": "s",
+    "units": 890,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q3",
+    "model": "s",
+    "units": 9000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q4",
+    "model": "s",
+    "units": 4050,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q1",
+    "model": "s",
+    "units": 7362,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q2",
+    "model": "s",
+    "units": 8081,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q3",
+    "model": "s",
+    "units": 7469,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q4",
+    "model": "s",
+    "units": 6344,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q1",
+    "model": "s",
+    "units": 3695,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q2",
+    "model": "s",
+    "units": 6225,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q3",
+    "model": "s",
+    "units": 5985,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q4",
+    "model": "s",
+    "units": 7779,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q1",
+    "model": "s",
+    "units": 3456,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2024Q2",
+    "model": "s",
+    "units": 3062,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2024Q3",
+    "model": "s",
+    "units": 2537,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2024Q4",
+    "model": "s",
+    "units": 3047,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q1",
+    "model": "s",
+    "units": 1943,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q2",
+    "model": "s",
+    "units": 1826,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q3",
+    "model": "s",
+    "units": 3490,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q4",
+    "model": "s",
+    "units": 2893,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2026Q1",
+    "model": "s",
+    "units": 4239,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2026Q2",
+    "model": "s",
+    "units": 2809,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2016Q2",
+    "model": "x",
+    "units": 4638,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2016Q3",
+    "model": "x",
+    "units": 8774,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2016Q4",
+    "model": "x",
+    "units": 9500,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2017Q1",
+    "model": "x",
+    "units": 11570,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2017Q2",
+    "model": "x",
+    "units": 10010,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2017Q3",
+    "model": "x",
+    "units": 11865,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2017Q4",
+    "model": "x",
+    "units": 13120,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q1",
+    "model": "x",
+    "units": 10070,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q2",
+    "model": "x",
+    "units": 11370,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q3",
+    "model": "x",
+    "units": 13190,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2018Q4",
+    "model": "x",
+    "units": 14050,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q1",
+    "model": "x",
+    "units": 6100,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q2",
+    "model": "x",
+    "units": 9300,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q3",
+    "model": "x",
+    "units": 9100,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2019Q4",
+    "model": "x",
+    "units": 11100,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q1",
+    "model": "x",
+    "units": 7705,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q2",
+    "model": "x",
+    "units": 6687,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q3",
+    "model": "x",
+    "units": 10693,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2020Q4",
+    "model": "x",
+    "units": 12860,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q1",
+    "model": "x",
+    "units": 1010,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q2",
+    "model": "x",
+    "units": 1000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q3",
+    "model": "x",
+    "units": 275,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2021Q4",
+    "model": "x",
+    "units": 7700,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q1",
+    "model": "x",
+    "units": 7362,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q2",
+    "model": "x",
+    "units": 8081,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q3",
+    "model": "x",
+    "units": 11203,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2022Q4",
+    "model": "x",
+    "units": 10803,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q1",
+    "model": "x",
+    "units": 7000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q2",
+    "model": "x",
+    "units": 13000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q3",
+    "model": "x",
+    "units": 10000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2023Q4",
+    "model": "x",
+    "units": 15000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q1",
+    "model": "x",
+    "units": 11571,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2024Q2",
+    "model": "x",
+    "units": 10249,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2024Q3",
+    "model": "x",
+    "units": 8493,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2024Q4",
+    "model": "x",
+    "units": 10199,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q1",
+    "model": "x",
+    "units": 4533,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q2",
+    "model": "x",
+    "units": 4262,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q3",
+    "model": "x",
+    "units": 8143,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q4",
+    "model": "x",
+    "units": 6749,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2026Q1",
+    "model": "x",
+    "units": 9891,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2026Q2",
+    "model": "x",
+    "units": 6555,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2023Q4",
+    "model": "ct",
+    "units": 190,
+    "sourceId": "public-0d9b048face3",
+    "decision": "retained-preferred-issuer",
+    "reason": "Source-published estimate; check with issuer group context, not independent confirmation of exact individual value."
+  },
+  {
+    "quarter": "2024Q1",
+    "model": "ct",
+    "units": 1601,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2024Q2",
+    "model": "ct",
+    "units": 8240,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2024Q3",
+    "model": "ct",
+    "units": 11885,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2024Q4",
+    "model": "ct",
+    "units": 10394,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q1",
+    "model": "ct",
+    "units": 6406,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q2",
+    "model": "ct",
+    "units": 4306,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q3",
+    "model": "ct",
+    "units": 4300,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2025Q4",
+    "model": "ct",
+    "units": 2000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2026Q1",
+    "model": "ct",
+    "units": 2000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  },
+  {
+    "quarter": "2026Q2",
+    "model": "ct",
+    "units": 3000,
+    "sourceId": "public-0d9b048face3",
+    "decision": "unresolved-other-model-estimates",
+    "reason": "2024+ Other Models split requires reconciliation: Cybertruck global estimates can fall below independently published US estimates. No arbitrary repair."
+  }
+]
