@@ -304,7 +304,7 @@
       "metadataVerified": true
     }
   },
-  "latestStill": "signaturePaletteStill",
+  "latestStill": "distinctPaletteStill",
   "signaturePaletteStill": {
     "checkedOn": "2026-10-30",
     "file": "/workspace/bao-tarot/bitcoin-chart-2020-2026/out/tesla-sales/4215144aace1-2ac7fd9b-9SGzzv/out/stills/t_325.00.png",
@@ -348,6 +348,52 @@
       "url": "https://drive.google.com/file/d/1MWWiMxJNHHvuevo0xPk-FuArBMMsp0A_/view?usp=drivesdk",
       "metadataMimeType": "image/png",
       "metadataBytes": 1847649,
+      "metadataVerified": true
+    }
+  },
+  "distinctPaletteStill": {
+    "checkedOn": "2026-10-30",
+    "file": "/workspace/bao-tarot/bitcoin-chart-2020-2026/out/tesla-sales/58fb6ae9ae4e-2ac7fd9b-ckF5k0/out/stills/t_325.00.png",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "scoreTime": 325,
+    "bytes": 1844573,
+    "sha256": "90f7cccd3df5b1b469050a82acf6f2e2ef5c4f8500da8b53189f93266e24fc18",
+    "contentHash": "58fb6ae9ae4eaebb3f08dc1d1f8766ad9a4f17faf3515946a2917d78307f6740",
+    "palette": {
+      "Model S": {
+        "color": "#4285D4",
+        "representative": "Deep blue"
+      },
+      "Model X": {
+        "color": "#F0F2F4",
+        "representative": "Pearl white"
+      },
+      "Model 3": {
+        "color": "#E3444D",
+        "representative": "Performance red"
+      },
+      "Model Y": {
+        "color": "#B45BA6",
+        "representative": "Cherry purple"
+      },
+      "Cybertruck": {
+        "color": "#929FA9",
+        "representative": "Stainless steel"
+      }
+    },
+    "basis": "Distinct representative vehicle paint families: S blue, X pearl white, 3 red, Y cherry purple, Cybertruck steel. Design swatches chosen for chart readability, not universal Tesla-declared signature colors or exact paint codes. Bar colors may differ from unchanged official icon pixels; never recolor the icons.",
+    "iconsUnchanged": true,
+    "sourceDataUnchanged": true,
+    "videoRendered": false,
+    "musicGenerated": false,
+    "drive": {
+      "id": "1q4V3G3xA0cqWqQz5fDah3TvzeRkSVL8N",
+      "url": "https://drive.google.com/file/d/1q4V3G3xA0cqWqQz5fDah3TvzeRkSVL8N/view?usp=drivesdk",
+      "metadataMimeType": "image/png",
+      "metadataBytes": 1844573,
       "metadataVerified": true
     }
   }

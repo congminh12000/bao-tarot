@@ -22,12 +22,12 @@
       "id": "s",
       "name": "Model S",
       "firstQuarter": "2012Q2",
-      "color": "#77818D",
+      "color": "#4285D4",
       "launchSources": [
         "tesla-eb016a8c19d3",
         "tesla-0b242a47884c"
       ],
-      "signatureColor": "Graphite grey"
+      "signatureColor": "Deep blue"
     },
     {
       "id": "x",
@@ -55,11 +55,11 @@
       "id": "y",
       "name": "Model Y",
       "firstQuarter": "2020Q1",
-      "color": "#BCC4CC",
+      "color": "#B45BA6",
       "launchSources": [
         "tesla-1d689e90a521"
       ],
-      "signatureColor": "Quicksilver"
+      "signatureColor": "Cherry purple"
     },
     {
       "id": "ct",
@@ -234,5 +234,5 @@
   ],
   "motion": "continuous",
   "rankTransitionSeconds": 0.8,
-  "palettePolicy": "Representative signature colors selected from the chosen official Tesla menu icons; design swatches, not universal Tesla-declared signature colors or exact paint codes. Preserve icon pixels and colors."
+  "palettePolicy": "Distinct representative vehicle paint families: S blue, X pearl white, 3 red, Y cherry purple, Cybertruck steel. Design swatches chosen for chart readability, not universal Tesla-declared signature colors or exact paint codes. Bar colors may differ from unchanged official icon pixels; never recolor the icons."
 }

@@ -1,12 +1,12 @@
 {
   "authorized": true,
-  "contentHash": "4215144aace1beeac1b0f2aed663782b8cf9b247e676c4d67bb1283956f2dd86",
-  "evidence": "User: “Hoàn thiện tất cả, tự kiểm tra và làm cho xong. Sau đó render preview up lên drive” (29/10/2026). Delegated verification and explicit preview request override a separate pre-preview list approval; factual coverage remains mandatory for every rendered quarter. Full dataset is NOT approved or complete. Visual update explicitly requested on 30/10/2026: “Tui muốn bar chart phải chuyển động liên tục”. Same research, same 296–332s preview; continuous interpolation and narrative overlay only. User visual request 30/10/2026: “Hình xe phải lấy đúng hình icon đại diện trong web tesla. Chụp hình preview tui xem là đc”. Asset-only update; render still only, no new video requested. User palette request 30/10/2026: “Màu bar theo màu xe đc ko? Nếu xe có nhiều màu thì lấy màu signature của nó”. Palette-only visual update; still preview as last requested.",
+  "contentHash": "58fb6ae9ae4eaebb3f08dc1d1f8766ad9a4f17faf3515946a2917d78307f6740",
+  "evidence": "User: “Hoàn thiện tất cả, tự kiểm tra và làm cho xong. Sau đó render preview up lên drive” (29/10/2026). Delegated verification and explicit preview request override a separate pre-preview list approval; factual coverage remains mandatory for every rendered quarter. Full dataset is NOT approved or complete. Visual update explicitly requested on 30/10/2026: “Tui muốn bar chart phải chuyển động liên tục”. Same research, same 296–332s preview; continuous interpolation and narrative overlay only. User visual request 30/10/2026: “Hình xe phải lấy đúng hình icon đại diện trong web tesla. Chụp hình preview tui xem là đc”. Asset-only update; render still only, no new video requested. User palette request 30/10/2026: “Màu bar theo màu xe đc ko? Nếu xe có nhiều màu thì lấy màu signature của nó”. Palette-only visual update; still preview as last requested. User requests distinct S/X/Y colors: “3 model Y X S ko có 3 màu khác nhau để dễ phân biệt sao?”; palette-only still update.",
   "window": [
     296,
     332
   ],
   "fullDatasetApproved": false,
-  "previousContentHash": "4a9e847a38ce46dec14c5e076f5587f9f3d8bb146954da2d08f83180064f6e0b",
-  "visualUpdate": "Vehicle-representative colors on bars, glow and labels; original official icons retained; source totals and motion unchanged"
+  "previousContentHash": "4215144aace1beeac1b0f2aed663782b8cf9b247e676c4d67bb1283956f2dd86",
+  "visualUpdate": "Distinct blue S / white X / cherry-purple Y bars; unchanged official icons and source data"
 }
