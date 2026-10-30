@@ -101,6 +101,8 @@ In short:
   One bar per S/X/3/Y/Cybertruck; global quarterly deliveries 2015Q1–2026Q3, 480s/16:9/60fps. Never split issuer
   groups, substitute US counts, allocate annual figures to quarters or use simulated data. Missing/prelaunch are null,
   not zero. Sourced estimates need methodology and independent checked cross-checks; preserve issuer revisions.
+  Bar/glow/name colors follow each vehicle icon’s representative signature paint family (config palettePolicy),
+  not arbitrary category colors; these are design swatches, not claimed official universal signature/paint codes.
   Vehicle art uses original transparent Tesla website navigation icons (Mega-Menu PNG variants), not hero/street photos;
   retain exact URLs/variant provenance and alpha, no invented artwork. A requested screenshot needs only a still render.
   Bars move continuously through each quarter's race AND narrative time. Keep full-size chart with bottom narrative

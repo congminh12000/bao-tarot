@@ -22,50 +22,55 @@
       "id": "s",
       "name": "Model S",
       "firstQuarter": "2012Q2",
-      "color": "#FF5360",
+      "color": "#77818D",
       "launchSources": [
         "tesla-eb016a8c19d3",
         "tesla-0b242a47884c"
-      ]
+      ],
+      "signatureColor": "Graphite grey"
     },
     {
       "id": "x",
       "name": "Model X",
       "firstQuarter": "2015Q3",
-      "color": "#65C7FF",
+      "color": "#F0F2F4",
       "launchSources": [
         "tesla-c85f545d6d8e",
         "tesla-19d3a60e5694"
-      ]
+      ],
+      "signatureColor": "Pearl white"
     },
     {
       "id": "3",
       "name": "Model 3",
       "firstQuarter": "2017Q3",
-      "color": "#B995FF",
+      "color": "#E3444D",
       "launchSources": [
         "tesla-02f434643698",
         "tesla-9f9f7a5022d0"
-      ]
+      ],
+      "signatureColor": "Performance red"
     },
     {
       "id": "y",
       "name": "Model Y",
       "firstQuarter": "2020Q1",
-      "color": "#FFD166",
+      "color": "#BCC4CC",
       "launchSources": [
         "tesla-1d689e90a521"
-      ]
+      ],
+      "signatureColor": "Quicksilver"
     },
     {
       "id": "ct",
       "name": "Cybertruck",
       "firstQuarter": "2023Q4",
-      "color": "#CED4DE",
+      "color": "#929FA9",
       "launchSources": [
         "tesla-892ed095df14",
         "tesla-6317b40a7a0b"
-      ]
+      ],
+      "signatureColor": "Stainless steel"
     }
   ],
   "chapters": [
@@ -228,5 +233,6 @@
     }
   ],
   "motion": "continuous",
-  "rankTransitionSeconds": 0.8
+  "rankTransitionSeconds": 0.8,
+  "palettePolicy": "Representative signature colors selected from the chosen official Tesla menu icons; design swatches, not universal Tesla-declared signature colors or exact paint codes. Preserve icon pixels and colors."
 }

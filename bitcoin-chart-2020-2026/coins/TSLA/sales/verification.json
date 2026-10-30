@@ -304,5 +304,51 @@
       "metadataVerified": true
     }
   },
-  "latestStill": "iconStill"
+  "latestStill": "signaturePaletteStill",
+  "signaturePaletteStill": {
+    "checkedOn": "2026-10-30",
+    "file": "/workspace/bao-tarot/bitcoin-chart-2020-2026/out/tesla-sales/4215144aace1-2ac7fd9b-9SGzzv/out/stills/t_325.00.png",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "scoreTime": 325,
+    "bytes": 1847649,
+    "sha256": "53c2fd65aabd396a962b530613adc14f0f3206b927a3b48064af3d028df15dda",
+    "contentHash": "4215144aace1beeac1b0f2aed663782b8cf9b247e676c4d67bb1283956f2dd86",
+    "palette": {
+      "Model S": {
+        "color": "#77818D",
+        "representative": "Graphite grey"
+      },
+      "Model X": {
+        "color": "#F0F2F4",
+        "representative": "Pearl white"
+      },
+      "Model 3": {
+        "color": "#E3444D",
+        "representative": "Performance red"
+      },
+      "Model Y": {
+        "color": "#BCC4CC",
+        "representative": "Quicksilver"
+      },
+      "Cybertruck": {
+        "color": "#929FA9",
+        "representative": "Stainless steel"
+      }
+    },
+    "basis": "Design swatches selected from the unchanged official Tesla menu icons; not official universal signature/paint codes.",
+    "iconsUnchanged": true,
+    "sourceDataUnchanged": true,
+    "videoRendered": false,
+    "musicGenerated": false,
+    "drive": {
+      "id": "1MWWiMxJNHHvuevo0xPk-FuArBMMsp0A_",
+      "url": "https://drive.google.com/file/d/1MWWiMxJNHHvuevo0xPk-FuArBMMsp0A_/view?usp=drivesdk",
+      "metadataMimeType": "image/png",
+      "metadataBytes": 1847649,
+      "metadataVerified": true
+    }
+  }
 }

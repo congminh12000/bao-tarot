@@ -1,12 +1,12 @@
 {
   "authorized": true,
-  "contentHash": "4a9e847a38ce46dec14c5e076f5587f9f3d8bb146954da2d08f83180064f6e0b",
-  "evidence": "User: “Hoàn thiện tất cả, tự kiểm tra và làm cho xong. Sau đó render preview up lên drive” (29/10/2026). Delegated verification and explicit preview request override a separate pre-preview list approval; factual coverage remains mandatory for every rendered quarter. Full dataset is NOT approved or complete. Visual update explicitly requested on 30/10/2026: “Tui muốn bar chart phải chuyển động liên tục”. Same research, same 296–332s preview; continuous interpolation and narrative overlay only. User visual request 30/10/2026: “Hình xe phải lấy đúng hình icon đại diện trong web tesla. Chụp hình preview tui xem là đc”. Asset-only update; render still only, no new video requested.",
+  "contentHash": "4215144aace1beeac1b0f2aed663782b8cf9b247e676c4d67bb1283956f2dd86",
+  "evidence": "User: “Hoàn thiện tất cả, tự kiểm tra và làm cho xong. Sau đó render preview up lên drive” (29/10/2026). Delegated verification and explicit preview request override a separate pre-preview list approval; factual coverage remains mandatory for every rendered quarter. Full dataset is NOT approved or complete. Visual update explicitly requested on 30/10/2026: “Tui muốn bar chart phải chuyển động liên tục”. Same research, same 296–332s preview; continuous interpolation and narrative overlay only. User visual request 30/10/2026: “Hình xe phải lấy đúng hình icon đại diện trong web tesla. Chụp hình preview tui xem là đc”. Asset-only update; render still only, no new video requested. User palette request 30/10/2026: “Màu bar theo màu xe đc ko? Nếu xe có nhiều màu thì lấy màu signature của nó”. Palette-only visual update; still preview as last requested.",
   "window": [
     296,
     332
   ],
   "fullDatasetApproved": false,
-  "previousContentHash": "f9969bfaa58a1d5569efd608ce8acddc6cfbab5487f569b434774ec16470d4b0",
-  "visualUpdate": "Official transparent Tesla navigation PNG icons; source data and continuous motion unchanged"
+  "previousContentHash": "4a9e847a38ce46dec14c5e076f5587f9f3d8bb146954da2d08f83180064f6e0b",
+  "visualUpdate": "Vehicle-representative colors on bars, glow and labels; original official icons retained; source totals and motion unchanged"
 }
