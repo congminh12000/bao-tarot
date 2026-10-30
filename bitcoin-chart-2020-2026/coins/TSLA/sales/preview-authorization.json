@@ -1,10 +1,12 @@
 {
   "authorized": true,
-  "contentHash": "5e5d0fa7318c927e213f6fd653cc022d5e55de43880d803353a60d09e89cfe75",
-  "evidence": "User: “Hoàn thiện tất cả, tự kiểm tra và làm cho xong. Sau đó render preview up lên drive” (29/10/2026). Delegated verification and explicit preview request override a separate pre-preview list approval; factual coverage remains mandatory for every rendered quarter. Full dataset is NOT approved or complete.",
+  "contentHash": "f9969bfaa58a1d5569efd608ce8acddc6cfbab5487f569b434774ec16470d4b0",
+  "evidence": "User: “Hoàn thiện tất cả, tự kiểm tra và làm cho xong. Sau đó render preview up lên drive” (29/10/2026). Delegated verification and explicit preview request override a separate pre-preview list approval; factual coverage remains mandatory for every rendered quarter. Full dataset is NOT approved or complete. Visual update explicitly requested on 30/10/2026: “Tui muốn bar chart phải chuyển động liên tục”. Same research, same 296–332s preview; continuous interpolation and narrative overlay only.",
   "window": [
     296,
     332
   ],
-  "fullDatasetApproved": false
+  "fullDatasetApproved": false,
+  "previousContentHash": "5e5d0fa7318c927e213f6fd653cc022d5e55de43880d803353a60d09e89cfe75",
+  "visualUpdate": "continuous bars; source totals unchanged"
 }

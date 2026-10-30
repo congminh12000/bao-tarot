@@ -102,6 +102,9 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
   One bar per S/X/3/Y/Cybertruck; global quarterly deliveries 2015Q1–2026Q3, 480s/16:9/60fps. Never split issuer
   groups, substitute US counts, allocate annual figures to quarters or use simulated data. Missing/prelaunch are null,
   not zero. Sourced estimates need methodology and independent checked cross-checks; preserve issuer revisions.
+  Bars move continuously through each quarter's race AND narrative time. Keep full-size chart with bottom narrative
+  cards; no 0.8s motion followed by holds. ~ counters are explicitly animated, published Qn END totals stay separate.
+  Fade labels only at actual rank crossings; never add motion to unchanged data. Launch/leader SFX share computed times.
   Full film requires complete coverage, exact data/storyboard approval, preview approval and a requested final/resolution.
   The subsequent user instruction delegates verification and explicitly requests preview. A separate hash-bound preview
   permit allows only a ≤45s window with every rendered/context fact sourced; never full, missing facts or incomplete

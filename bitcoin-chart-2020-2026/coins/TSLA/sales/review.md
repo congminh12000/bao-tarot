@@ -4,7 +4,7 @@ Status: **BLOCKED — incomplete data**. Full-history readiness only; separately
 
 Global deliveries, 2015Q1–2026Q3; 47 quarters, 168 active-model cells, 128 accepted, **40 missing**, 67 pre-launch cells.
 
-Content hash: `5e5d0fa7318c927e213f6fd653cc022d5e55de43880d803353a60d09e89cfe75`. Approval must cover this exact data, sources, assets and storyboard. Plan approval does not approve facts.
+Content hash: `f9969bfaa58a1d5569efd608ce8acddc6cfbab5487f569b434774ec16470d4b0`. Approval must cover this exact data, sources, assets and storyboard. Plan approval does not approve facts.
 
 A readable source is not automatically an accepted observation. Initial delivery releases can differ from later letters. Direct issuer observations take priority; additionally, clearly marked publisher estimates are accepted with issuer group-context checks only. Some group/model conflicts remain unresolved. These checks do not independently prove each model estimate. Tesla/SEC republication is one issuer source group, not independent corroboration. Missing is not zero.
 
@@ -135,6 +135,9 @@ No prewritten winner/leadership claims. Winners, head-to-head gaps, annual total
 | 428–434 | race | 2026Q3 | GLOBAL QUARTERLY DELIVERIES |
 | 434–454 | spotlight | 2026Q3 | Beyond the leaders |
 | 454–480 | summary | 2026Q3 | THE RESULTS · SINCE 2015 |
+
+Motion update: race + narrative time are one continuous quarter transition. Narrative cards overlay the full-size moving chart. ~ counters are animation values; separate Qn END labels are source quarter totals. Rank/SFX crossings use equality of animated values; no invented daily observations.
+
 
 Music: up-horizon @ 0s → up-crusade @ 120s → up-vanguard @ 240s → up-warpath @ 360s. Native 100 BPM, no whole-mix pre-event gates; −16 LUFS target, decoded AAC verification required.
 

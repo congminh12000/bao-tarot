@@ -1,6 +1,6 @@
 {
   "checkedOn": "2026-10-30",
-  "salesTests": 19,
+  "salesTests": 21,
   "existingEventTests": 5,
   "renderedSalesFrames": 2160,
   "salesAudioGenerated": true,
@@ -136,5 +136,149 @@
       "normalization_type": "dynamic",
       "target_offset": "-0.16"
     }
-  }
+  },
+  "continuousPreview": {
+    "file": "/workspace/bao-tarot/bitcoin-chart-2020-2026/out/tesla-sales/f9969bfaa58a-2ac7fd9b-rphX7h/out/clip_296.00-332.00-480p.mp4",
+    "sha256": "bb05b0c602dd2d32a8e42a092a04716c89ae24bf6e07aec93808c0edbcb846da",
+    "bytes": 2746941,
+    "duration": 36,
+    "frames": 2160,
+    "fps": 60,
+    "resolution": [
+      854,
+      480
+    ],
+    "maxPtsErrorSeconds": 3.3333333604446125e-07,
+    "aacLoudness": {
+      "input_i": "-16.20",
+      "input_tp": "-2.83",
+      "input_lra": "1.70",
+      "input_thresh": "-26.20",
+      "output_i": "-16.18",
+      "output_tp": "-2.81",
+      "output_lra": "1.60",
+      "output_thresh": "-26.18",
+      "normalization_type": "dynamic",
+      "target_offset": "0.18"
+    },
+    "sync": [
+      {
+        "clipTime": 1.5,
+        "lagMs": 0.0,
+        "correlation": 0.9997432371503888
+      },
+      {
+        "clipTime": 4,
+        "lagMs": 0.0,
+        "correlation": 0.9997175356367919
+      },
+      {
+        "clipTime": 9,
+        "lagMs": 0.0,
+        "correlation": 0.9996939588738211
+      },
+      {
+        "clipTime": 14.2,
+        "lagMs": 0.0,
+        "correlation": 0.99969335315213
+      },
+      {
+        "clipTime": 20.2,
+        "lagMs": 0.0,
+        "correlation": 0.9997612343677011
+      },
+      {
+        "clipTime": 27,
+        "lagMs": 0.0,
+        "correlation": 0.9998255651206763
+      },
+      {
+        "clipTime": 34,
+        "lagMs": 0.0,
+        "correlation": 0.9997416803004341
+      }
+    ],
+    "decodedFrameComparisons": [
+      {
+        "scoreTime": 306,
+        "mae255": 1.1859631147540983
+      },
+      {
+        "scoreTime": 310,
+        "mae255": 1.1865071233411397
+      },
+      {
+        "scoreTime": 310.4,
+        "mae255": 1.3165422521467602
+      },
+      {
+        "scoreTime": 317,
+        "mae255": 1.2870893507676295
+      },
+      {
+        "scoreTime": 325,
+        "mae255": 1.2937467473328128
+      },
+      {
+        "scoreTime": 330,
+        "mae255": 1.2929758652094718
+      }
+    ],
+    "sfxEvents": [
+      {
+        "scoreTime": 310,
+        "kind": "launch",
+        "peak": 0.24655796587467194
+      }
+    ],
+    "contentHash": "f9969bfaa58a1d5569efd608ce8acddc6cfbab5487f569b434774ec16470d4b0",
+    "codeHash": "2ac7fd9ba79b081722dac41534d9b991ecbb4ec09b55fd644dc7590142596911",
+    "fullDatasetReady": false,
+    "scope": "Research preview only; published estimates marked; no claim of full historical data completeness.",
+    "listeningStatus": "Measured only; not listened to.",
+    "continuousMotion": {
+      "framePairs": 2159,
+      "stationaryPairs": 0,
+      "samples": [
+        {
+          "t": 317,
+          "units": 309068.2592036063
+        },
+        {
+          "t": 325,
+          "units": 324469.7407963937
+        },
+        {
+          "t": 330,
+          "units": 330850.03756574006
+        }
+      ],
+      "decodedBarEdges": [
+        {
+          "scoreTime": 317,
+          "decodedEdgePx": 626,
+          "expectedEdgePx": 626.7501812266704
+        },
+        {
+          "scoreTime": 325,
+          "decodedEdgePx": 647,
+          "expectedEdgePx": 648.4589362336469
+        },
+        {
+          "scoreTime": 330,
+          "decodedEdgePx": 656,
+          "expectedEdgePx": 657.4521164418685
+        }
+      ]
+    },
+    "drive": {
+      "id": "1N5oAtQ_aRw-T4esjmtD3ERxQdUUOvqft",
+      "url": "https://drive.google.com/file/d/1N5oAtQ_aRw-T4esjmtD3ERxQdUUOvqft/view?usp=drivesdk",
+      "metadataMimeType": "video/mp4",
+      "metadataBytes": 2746941,
+      "metadataVerified": true
+    }
+  },
+  "latestPreview": "continuousPreview",
+  "motionUpdate": "Continuously interpolate through race and narrative time; source Qn END totals separate from ~ animation counters; unchanged research."
 }

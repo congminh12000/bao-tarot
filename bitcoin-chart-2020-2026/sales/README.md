@@ -5,7 +5,7 @@ Independent long-film pipeline. Full-history delivery data is **not complete**: 
 ## Film and isolation
 
 - Separate bar, official photograph and color for Model S, X, 3, Y and Cybertruck. Official Tesla T; source URLs and image hashes in `assets.json`. Current product photos illustrate the model, not historical trims.
-- Fixed linear zero-baseline main scale; stable rank ties; bounded smoothstep transitions over 0.8s. Moving labels are hidden; visible counters are source values, not invented intermediate reported values. Small-model spotlight has an explicit separate DETAIL SCALE.
+- Fixed linear zero-baseline main scale; stable rank ties; continuous bounded smoothstep transitions through each quarter's race + narrative duration. A full-size chart keeps moving behind bottom narrative cards. ~ counters are explicitly labeled animation values; separate Qn END values are the published source totals. Labels only fade briefly at actual rank crossings (0.8s rank transitions). Small-model spotlight has an explicit separate DETAIL SCALE.
 - 480s / 28,800 frames at 60fps: 12s intro, 47 × 6s quarters, ten panels totaling 160s, 26s summary. Launch, head-to-head, annual, YoY and cumulative panels derive claims from data. Cumulative means selected period since 2015, not lifetime or all Tesla vehicles.
 - Prelaunch/missing stay null; neither is zero. Estimates always get ≈ and an estimate legend. A sourced estimate is not an independently verified precise count.
 - Four approved 100 BPM cues at 0/120/240/360s, native long arrangements. Workspace-only song adapter adds quiet launch/leader chimes; no whole-mix pre-event gates or legacy end impact. Target −16 LUFS.
@@ -16,7 +16,7 @@ Independent long-film pipeline. Full-history delivery data is **not complete**: 
 ```sh
 npm run review:sales          # writes concrete review/coverage; no rendering
 npm run audit:sales           # full-history gate; fails while 40 cells are missing
-npm run test:sales            # 19 logic/data/authorization tests; no synthetic fixture pictures
+npm run test:sales            # 21 logic/data/authorization tests; no synthetic fixture pictures
 python3 sales/research.py     # public issuer reports; curl/lxml/pdftotext
 python3 sales/curate.py       # rechecks 17 literal seed facts, preserves later edits
 python3 sales/import-published.py # imports unchanged provider table; uses cache or public fetch
@@ -44,12 +44,12 @@ node sales/render.js preview 296 # 296–332s, 36s, 16:9/480p/60fps
 python3 sales/verify-preview.py /absolute/path/to/retained/workspace
 ```
 
-The current preview shows 2023Q1–Q4 and Cybertruck entering, using five separate model bars once launched. At first the unreleased truck is labeled NOT LAUNCHED. The 16-second launch panel uses a clearly approximate published count.
+The current preview shows 2023Q1–Q4 and Cybertruck entering, using five separate model bars once launched. At first the unreleased truck is labeled NOT LAUNCHED. The former 16-second launch hold is now part of the ongoing quarter transition with a bottom overlay. Its published launch count remains explicitly approximate. Launch SFX starts when the new bar enters, not after six seconds of movement. The 36-second continuous-motion check covers all 2,159 adjacent frame pairs and decoded bar-edge growth during that former hold.
 
 Full-history builds remain blocked until every active-model cell has acceptable source evidence and exact full-data/storyboard approval. Then layout/short preview, user preview approval, explicit final request and confirmed final resolution precede `node sales/render.js final`. Never self-approve final or reuse a preview permit for full film.
 
 ## Verification and delivery
 
-19 data/logic tests and the existing event tests cover coverage, zero/null/prelaunch, grouped/regional/unread observations, estimates, timeline, stable ranks, YoY, bounded interpolation, deterministic seeking, review hashes, official assets, native cue times, preview context and direct-render guards. Actual preview checks inspect decoded frame count/PTS, native PNG versus encoded frames, AAC/master correlation and lag, isolated SFX signal, loudness/true peak and the file's input hashes. These measurements do not imply listening or user aesthetic acceptance.
+21 data/logic tests and the existing event tests cover coverage, zero/null/prelaunch, grouped/regional/unread observations, estimates, timeline, stable ranks, YoY, bounded interpolation, deterministic seeking, review hashes, official assets, native cue times, preview context and direct-render guards. Actual preview checks inspect decoded frame count/PTS, native PNG versus encoded frames, AAC/master correlation and lag, isolated SFX signal, loudness/true peak and the file's input hashes. These measurements do not imply listening or user aesthetic acceptance.
 
 Keep every workspace/output. Deliver through the already-authorized Google Drive fallback and read back Drive metadata before sending its returned URL. Current measured/render/upload results are recorded separately in `coins/TSLA/sales/verification.json`; do not claim the full dataset or full film is done.

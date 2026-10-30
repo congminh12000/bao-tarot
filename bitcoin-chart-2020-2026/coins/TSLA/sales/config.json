@@ -226,5 +226,7 @@
       "t": 360,
       "cue": "up-warpath"
     }
-  ]
+  ],
+  "motion": "continuous",
+  "rankTransitionSeconds": 0.8
 }

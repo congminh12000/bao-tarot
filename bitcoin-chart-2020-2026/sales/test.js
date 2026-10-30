@@ -56,16 +56,15 @@ test('YoY is null before launch, without a base, or with zero denominator',()=>{
   assert.equal(C.yoy([{quarter:'2020Q1',model:'y',units:0,status:'reported'},{quarter:'2021Q1',model:'y',units:50,status:'reported'}],'2021Q1','y'),null);
   assert.ok(C.yoy(f.rows,'2016Q1','s')>0);
 });
-test('monotone interpolation stays bounded and hides moving counters; no fictitious reported numbers',()=>{
+test('continuous bars stay bounded through entire quarter and narrative; source totals stay distinct from animated counters',()=>{
   const f=fixture(),m=C.manifest(f.config,f.rows,f.sources,f.observations);
-  for(const s of m.segments.filter(s=>s.kind==='race')) for(let frame=0;frame<=48;frame++) {
-    const state=C.stateAt(m,s.t0+frame/60);
-    for(const r of state.rows.filter(r=>r.visible)) {
-      const qi=C.quarters(config.from,config.to).indexOf(s.quarter),prev=C.quarters(config.from,config.to)[Math.max(0,qi-1)];
-      const old=f.rows.find(a=>a.model===r.model.id&&a.quarter===prev),base=old.units??0;
-      assert.ok(r.visualUnits>=Math.min(base,r.units)-1e-8&&r.visualUnits<=Math.max(base,r.units)+1e-8);
-      assert.ok([old.units,r.units,null].includes(r.displayUnits));
-      if(state.f>0&&state.f<1)assert.equal(r.labelAlpha,0);
+  for(const block of m.blocks)for(const p of [0,.1,.5,.9,.999999]){
+    const state=C.stateAt(m,block.t0+p*(block.t1-block.t0));
+    for(const r of state.rows.filter(r=>r.visible)){
+      const actor=block.actors.find(a=>a.model===r.model.id);
+      assert.ok(r.visualUnits>=Math.min(actor.from,r.units)-1e-8&&r.visualUnits<=Math.max(actor.from,r.units)+1e-8);
+      assert.equal(r.displayUnits,r.units);assert.equal(r.animatedUnits,Math.round(r.visualUnits));
+      if(actor.from!==r.units&&state.f<1)assert.equal(r.isInterpolating,true);
     }
   }
 });
@@ -131,4 +130,23 @@ test('preserve issuer priorities and unresolved Other Models splits; no US-as-gl
 
 test('preview build cannot expand the recorded authorized range even within sourced quarters',()=>{
   assert.throws(()=>build(input,{previewWindow:[298,330]}),/range differs from the recorded authorization/);
+});
+
+test('real preview has no stopped frame pairs, including all 16 seconds of the former hold',()=>{
+  const m=C.manifest(input.config,input.rows,input.sources,input.observations,{previewWindow:[296,332]});let before=C.stateAt(m,296);
+  for(let frame=1;frame<2160;frame++){
+    const state=C.stateAt(m,296+frame/60);
+    assert.ok(state.rows.some(r=>r.visible&&before.rows.some(a=>a.visible&&a.model.id===r.model.id&&Math.abs(a.visualUnits-r.visualUnits)>1e-8)),`stopped at frame ${frame}`);
+    assert.equal(state.rows.find(r=>r.model.id==='y').labelAlpha,1);before=state;
+  }
+  const a=C.stateAt(m,316-1e-5),b=C.stateAt(m,316+1e-5);assert.equal(a.block.t0,b.block.t0);assert.ok(Math.abs(a.rows[0].visualUnits-b.rows[0].visualUnits)<.1);
+  assert.equal(C.stateAt(m,325).panel.title,'Cybertruck enters');assert.equal(m.events.find(e=>e.kind==='launch'&&e.model==='ct').t,310);
+});
+test('rank crossings and leader SFX follow value equality; labels fade only during the actual crossing',()=>{
+  const f=fixture(),cfg={...f.config,from:'2020Q1',to:'2020Q2',introSeconds:0,quarterSeconds:10,summarySeconds:1,duration:21,chapters:[],panels:[],models:f.config.models.filter(m=>['s','x'].includes(m.id))};
+  const rows=[['2020Q1','s',100],['2020Q1','x',60],['2020Q2','s',90],['2020Q2','x',160]].map(([quarter,model,units])=>({quarter,model,units,status:'reported',geography:'global',metric:'deliveries',observation:quarter+'-'+model}));
+  const observations=Object.fromEntries(rows.map(r=>[r.observation,{...r,accepted:true,grouped:false,sourceIds:['unit'],excerpt:'UNIT TEST ONLY'}]));
+  const m=C.manifest(cfg,rows,f.sources,observations),cross=m.blocks[1].crossings[0],same=C.stateAt(m,cross.t),old=C.stateAt(m,cross.start-.01),next=C.stateAt(m,cross.end+.01);
+  assert.ok(Math.abs(same.rows[0].visualUnits-same.rows[1].visualUnits)<1e-8);assert.equal(old.rows[0].rank,0);assert.equal(next.rows[0].rank,1);assert.equal(same.rows[0].labelAlpha,0);
+  const hit=m.events.find(e=>e.kind==='lead-change');assert.equal(hit.t,cross.t);assert.equal(hit.from,'s');assert.equal(hit.to,'x');
 });

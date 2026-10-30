@@ -1,6 +1,7 @@
 // Absolute-time Canvas film. No accumulating state/randomness; seeking and worker order are irrelevant.
 (function () {
   const P = globalThis.SALES, C = globalThis.TeslaSales, Studio = globalThis.Studio;
+  const continuous=P.config.motion==='continuous';
   const photos = {}, N = n => n.toLocaleString('en-US'), clamp = v => Math.max(0, Math.min(1,v));
   const text = (ctx, value, x, y, size=30, color='#F7F0F1', align='left', alpha=1) => {
     ctx.save(); ctx.globalAlpha = alpha; ctx.font = `700 ${size}px Inter`; ctx.fillStyle = color; ctx.textAlign = align; ctx.fillText(value,x,y); ctx.restore();
@@ -37,11 +38,15 @@
       const width=Math.max(0,r.visualUnits/ceiling*w);
       ctx.save();ctx.shadowColor=r.model.color;ctx.shadowBlur=12*(globalThis.G.scale||1);ctx.globalAlpha=.85;ctx.fillStyle=r.model.color;ctx.fillRect(x,yy,width,rowHeight);ctx.restore();
       ctx.fillStyle='#FFFFFF55';ctx.fillRect(x,yy,width,2);
-      const alpha=state.f>0&&state.f<1?0:1;
+      const alpha=continuous?r.labelAlpha:(state.f>0&&state.f<1?0:1);
       if(!small)photo(ctx,r.model.id,x-175,yy-8,140,82,alpha);
       text(ctx,r.model.name,x-(small?22:185),yy+rowHeight*.72,small?23:27,r.model.color,'right',alpha);
-      if(r.displayUnits!==null)text(ctx,(r.status==='estimated'?'≈ ':'')+N(r.displayUnits),x+w+35,yy+rowHeight*.72,small?24:34,'#FFFFFF','left',r.labelAlpha);
-      if(!small&&r.yoy!==null)text(ctx,`${r.yoy>=0?'+':''}${r.yoy.toFixed(1)}% YoY`,x+w+35,yy+rowHeight+27,21,'#BBA6AD','left',r.labelAlpha);
+      if(r.displayUnits!==null){
+        const value=continuous?r.animatedUnits:r.displayUnits,prefix=continuous&&r.isInterpolating?'~ ':(r.status==='estimated'?'≈ ':'');
+        text(ctx,prefix+N(value),x+w+35,yy+rowHeight*.72,small?24:34,'#FFFFFF','left',r.labelAlpha);
+      }
+      if(continuous&&!small)text(ctx,`Q${state.quarter.at(-1)} END · ${r.status==='estimated'?'≈ ':''}${N(r.units)}`,x+w+35,yy+rowHeight+27,18,'#BBA6AD','left',r.labelAlpha);
+      else if(!small&&r.yoy!==null)text(ctx,`${r.yoy>=0?'+':''}${r.yoy.toFixed(1)}% YoY`,x+w+35,yy+rowHeight+27,21,'#BBA6AD','left',r.labelAlpha);
     }
   }
   function context(ctx,state) {
@@ -50,7 +55,8 @@
     text(ctx,state.quarter,1810,141,70,'#FFFFFF','right');
     const estimates=state.rows.some(r=>r.visible&&r.status==='estimated');
     text(ctx,estimates?P.storyboard.estimateCaption:'ISSUER-REPORTED MODEL DATA',1810,193,21,'#BAA1AA','right');
-    text(ctx,'WORLDWIDE · PASSENGER VEHICLES · MODEL-LEVEL DATA',100,1000,20,'#9B828C');
+    if(continuous&&state.fromQuarter)text(ctx,state.fromQuarter+' → '+state.quarter,1810,230,20,'#A98F98','right');
+    text(ctx,continuous?'WORLDWIDE · ~ ANIMATED BETWEEN QUARTER-END TOTALS':'WORLDWIDE · PASSENGER VEHICLES · MODEL-LEVEL DATA',100,1000,20,'#9B828C');
     const absent=state.rows.filter(r=>!r.visible).map(r=>r.model.name);
     if(absent.length)text(ctx,absent.join(' / ')+' · NOT LAUNCHED',1810,1000,20,'#9B828C','right');
     ctx.fillStyle='#FF536044';ctx.fillRect(100,1030,1710,3);ctx.fillStyle='#FF5360';ctx.fillRect(100,1030,1710*clamp(state.t/P.duration),3);
@@ -88,6 +94,27 @@
       metrics.forEach(({r,value,estimated},i)=>{const yy=675+i*49;text(ctx,r.model.name,100,yy,27,r.model.color);text(ctx,value===null?'N/A':(estimated?'≈ ':'')+(s.panelKind==='annual'?N(value):`${value>=0?'+':''}${value.toFixed(1)}%`),740,yy,30,'#FFFFFF','right');});
     }
   }
+  function overlay(ctx,state){
+    const panel=state.panel;if(!panel)return;
+    const rows=state.rows.filter(r=>r.visible&&(!panel.models||panel.models.includes(r.model.id)));
+    const format=r=>(r.status==='estimated'?'≈ ':'')+N(r.units);
+    let caption='';
+    if(panel.panelKind==='launch')caption=`${state.quarter} · FIRST DELIVERY QUARTER · ${format(rows[0])} DELIVERED`;
+    else if(panel.panelKind==='head-to-head'&&rows.length===2)caption=rows.map(r=>r.model.name+': '+format(r)).join('  /  ')+` · GAP ${rows.some(r=>r.status==='estimated')?'≈ ':''}${N(Math.abs(rows[0].units-rows[1].units))}`;
+    else if(panel.panelKind==='annual')caption=rows.map(r=>{
+      const year=state.quarter.slice(0,4),data=P.rows.filter(a=>a.model===r.model.id&&a.quarter.startsWith(year)&&C.active(a));
+      return r.model.name+': '+(data.some(a=>a.status==='estimated')?'≈ ':'')+N(data.reduce((n,a)=>n+a.units,0));
+    }).join(' · ');
+    else if(panel.panelKind==='momentum')caption=rows.map(r=>r.model.name+': '+(r.yoy===null?'N/A':`${r.status==='estimated'?'≈ ':''}${r.yoy>=0?'+':''}${r.yoy.toFixed(1)}% YoY`)).join(' · ');
+    else caption='QUARTER-END TOTALS · '+rows.map(r=>r.model.name+': '+format(r)).join(' · ');
+    const alpha=Math.min(clamp((state.t-state.block.t0)/.65),clamp((state.block.t1-state.t)/.65));
+    ctx.save();ctx.globalAlpha=alpha;ctx.fillStyle='#1D0D14';ctx.strokeStyle='#FF536052';ctx.lineWidth=1;
+    ctx.beginPath();ctx.roundRect(100,870,1710,103,12);ctx.fill();ctx.stroke();
+    const id=panel.models?.[0]||'logo';photo(ctx,id,112,879,148,82,alpha);
+    text(ctx,panel.title.toUpperCase(),280,910,31,'#FFFFFF','left',alpha);
+    ctx.font='700 22px Inter';while(ctx.measureText(caption).width>1500)caption=caption.slice(0,-2).trimEnd()+'…';
+    text(ctx,caption,280,950,22,'#C9AEB8','left',alpha);ctx.restore();
+  }
   function summary(ctx,state) {
     text(ctx,'THE RESULTS',100,287,66);text(ctx,P.storyboard.summaryCaption,100,348,27,'#C5ABB2');
     const totals=P.config.models.map(m=>({m,rows:P.rows.filter(r=>r.model===m.id&&C.active(r))})).map(a=>({...a,total:a.rows.reduce((n,r)=>n+r.units,0)})).sort((a,b)=>b.total-a.total);
@@ -98,7 +125,7 @@
     if (P.renderWindow && (t < P.renderWindow[0]-1e-8 || t >= P.renderWindow[1]+1e-8)) throw new Error('Frame outside authorized verified preview');
     background(ctx,t);const state=C.stateAt(P,t);
     if(state.segment.kind==='intro')intro(ctx,t);
-    else {context(ctx,state);if(state.segment.kind==='panel')panel(ctx,state);else if(state.segment.kind==='summary')summary(ctx,state);else bars(ctx,state);pulse(ctx,t);}
+    else {context(ctx,state);if(state.segment.kind==='summary')summary(ctx,state);else if(continuous){bars(ctx,state,{dy:114});overlay(ctx,state);}else if(state.segment.kind==='panel')panel(ctx,state);else bars(ctx,state);pulse(ctx,t);}
     if(P.renderWindow) text(ctx,'RESEARCH PREVIEW · PUBLISHED ESTIMATES MARKED ≈',960,1057,19,'#BEA6AE','center');
   }
   globalThis.SalesScene={draw};
