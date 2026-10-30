@@ -97,6 +97,10 @@ In short:
   blocks, no axes, 2-row header, all event levels but NOT the opening turn label (downtrend: no ATH, uptrend: no ATL), loops by
   running on into the first candle (no zoom-out). Preview 480p 60 fps with at least one loop seam inside (play it twice,
   `-loop2`); final = one cycle, end joins start. Always restore the long film's data after.
+- News deep-dive (PROJECT.md §20, news/README.md): separate `news/` pipeline, 16:9 ~10 min, no voice-over, glow tech;
+  9 acts, one idea on screen at a time, reading time >= 1.0 s + 0.32 s/word, everything on the beat; "As of" stamp,
+  every number >= 2 independent sources (or 1 official), REPORTED/ESTIMATED/SUSPECTED tags; gates G0 notes → G1 facts →
+  G2 storyboard → G3 stills → G4 music → G5 preview → G6 final, each waits for the user's OK.
 - Tesla per-model sales long is a separate opt-in pipeline (`sales/`, PROJECT.md §19), not equity price history.
   One bar per S/X/3/Y/Cybertruck; global quarterly deliveries 2015Q1–2026Q3, 480s/16:9/60fps. Never split issuer
   groups, substitute US counts, allocate annual figures to quarters or use simulated data. Missing/prelaunch are null,

@@ -867,3 +867,33 @@ Kế hoạch người dùng yêu cầu triển khai: **mỗi bar là một xe** 
 **Bar palette theo xe — 30/10/2026:** người dùng muốn màu bar theo xe, chọn màu signature khi có nhiều màu. Bảng màu đại diện khớp bộ icon đang chọn: Model S graphite #77818D, Model 3 đỏ #E3444D, Model X trắng ngọc #F0F2F4, Model Y bạc #BCC4CC, Cybertruck thép #929FA9. Áp dụng cùng màu cho bar/glow/nhãn xe. Đây là design swatch theo icon, không khẳng định bảng signature phổ quát/mã sơn chính thức của Tesla. Giữ nguyên pixel icon, dữ liệu nguồn và chuyển động liên tục. Chụp riêng frame 325s Full HD, không render video/nhạc mới; workspace `out/tesla-sales/4215144aace1-2ac7fd9b-9SGzzv/`. PNG 1920×1080, 1.847.649 byte, SHA256 `53c2fd65aabd396a962b530613adc14f0f3206b927a3b48064af3d028df15dda`; Drive đã đọc metadata đúng PNG + bytes: https://drive.google.com/file/d/1MWWiMxJNHHvuevo0xPk-FuArBMMsp0A_/view?usp=drivesdk . Các ảnh/video trước giữ nguyên; chờ duyệt màu.
 
 **Distinct vehicle palette — 30/10/2026:** theo yêu cầu phân biệt S/X/Y, đổi Model S xanh dương #4285D4, Model Y đỏ tím cherry #B45BA6; giữ Model X trắng #F0F2F4, Model 3 đỏ #E3444D, Cybertruck thép #929FA9. Đây là bảng màu thiết kế đại diện theo họ màu sơn; không khẳng định signature hay mã sơn chính thức. Màu bar/glow/nhãn có thể khác màu icon, giữ nguyên PNG Tesla gốc. Chỉ chụp still score325s Full HD; không dựng video/nhạc mới. Workspace `/workspace/bao-tarot/bitcoin-chart-2020-2026/out/tesla-sales/58fb6ae9ae4e-2ac7fd9b-ckF5k0`, contentHash `58fb6ae9ae4eaebb3f08dc1d1f8766ad9a4f17faf3515946a2917d78307f6740`; PNG 1.844.573 bytes, SHA256 `90f7cccd3df5b1b469050a82acf6f2e2ef5c4f8500da8b53189f93266e24fc18`. Đã xem bố cục, audit 0 errors (vẫn 40 ô thiếu), root hash không đổi. Drive metadata đúng image/png + bytes: https://drive.google.com/file/d/1q4V3G3xA0cqWqQz5fDah3TvzeRkSVL8N/view?usp=drivesdk . Chờ phản hồi màu mới.
+
+## 20. News deep-dive — video phân tích tin nóng (kế hoạch duyệt 30/10/2026)
+
+Dạng video mới, **pipeline riêng `news/`**: đi theo mẫu cô lập của `sales/`, không đụng dữ liệu/nhạc của phim giá.
+Kế hoạch đầy đủ: **`news/README.md`**. Story đầu tiên là `news/stories/binance-hack-2026-10/`.
+
+- **16:9, khoảng 10 phút, 60 fps**. Phân tích và giải thích chi tiết, không phải bản tin thường. **Không voice-over**:
+  100% thông tin nằm trên hình. Giữ phong cách glow tech hologram.
+- **9 act** (cold open → what happened → how → who → follow the money → market shock → response → biggest hacks →
+  what to watch). Mỗi act có một bản nhạc riêng, và cũng là một chương YouTube. Khung nhịp mỗi act: tiêu đề act →
+  3–6 beat thông tin → khoảng thở → chuyển act.
+- **Ít mà rõ**: mỗi lúc 1 ý chính (≤ 1 tiêu đề ≤ 8 từ + 1 dòng phụ ≤ 14 từ + 1 khối số). Ý cũ ra trước khi ý mới
+  vào. Thời gian đọc ≥ 1,0 s + 0,32 s/từ, tối thiểu 2,5 s. Mọi thứ vào/ra trên phách. Mỗi act tối đa 2 hit lớn,
+  cách nhau ≥ 20 s. Nhãn REPORTED / ESTIMATED / SUSPECTED cho thông tin chưa chắc. Cỡ chữ ≥ 28 px, giữ vùng an toàn 5%.
+- **Tin đang diễn biến**: chốt dữ liệu tại một mốc **"As of <ngày giờ UTC>"** hiện trên thanh trên. Mỗi con số cần
+  ≥ 2 nguồn độc lập (hoặc 1 nguồn chính thức). Nguồn mâu thuẫn: ghi cả hai, chọn nguồn mạnh hơn và ghi chú lý do.
+  Không lấy số từ trí nhớ, kể cả số của các vụ hack cũ.
+- **Cổng duyệt (mỗi cổng chờ người dùng OK):**
+  1. G0: đồng bộ + đối chiếu ghi chú của người dùng.
+  2. G1: fact sheet (`claims.csv` + `sources.csv`, mở từng link trên máy local).
+  3. G2: storyboard (mọi chữ trên màn hình theo thời gian).
+  4. G3: khung hình tĩnh thiết kế.
+  5. G4: nghe thử nhạc từng act.
+  6. G5: preview 480p60 khoảng 60 s, sau đó toàn phim.
+  7. G6: final + YouTube.
+  Chưa qua G1 thì không viết storyboard; chưa qua G5 thì không render final.
+- Master −16 LUFS, true peak ≤ −1 dBTP. `verify` mọi hit lớn. Luôn giữ bản render (`keep-render.js`).
+- **Trạng thái 30/10/2026:** kế hoạch đã duyệt. Fact sheet bản nháp (từ kết quả tìm kiếm, **chưa mở được link gốc**
+  trên cloud) nằm ở `news/stories/binance-hack-2026-10/claims-draft.md`. Đang chờ người dùng dán nội dung thảo luận
+  ChatGPT (G0), sau đó làm G1 trên máy local (TradingView và trang báo bị chặn trên cloud).
