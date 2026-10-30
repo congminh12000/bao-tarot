@@ -102,6 +102,8 @@ and sound like, §8 the commands, §10 the current status and what is waiting fo
   One bar per S/X/3/Y/Cybertruck; global quarterly deliveries 2015Q1–2026Q3, 480s/16:9/60fps. Never split issuer
   groups, substitute US counts, allocate annual figures to quarters or use simulated data. Missing/prelaunch are null,
   not zero. Sourced estimates need methodology and independent checked cross-checks; preserve issuer revisions.
+  Vehicle art uses original transparent Tesla website navigation icons (Mega-Menu PNG variants), not hero/street photos;
+  retain exact URLs/variant provenance and alpha, no invented artwork. A requested screenshot needs only a still render.
   Bars move continuously through each quarter's race AND narrative time. Keep full-size chart with bottom narrative
   cards; no 0.8s motion followed by holds. ~ counters are explicitly animated, published Qn END totals stay separate.
   Fade labels only at actual rank crossings; never add motion to unchanged data. Launch/leader SFX share computed times.

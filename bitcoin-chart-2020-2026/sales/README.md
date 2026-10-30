@@ -4,7 +4,7 @@ Independent long-film pipeline. Full-history delivery data is **not complete**: 
 
 ## Film and isolation
 
-- Separate bar, official photograph and color for Model S, X, 3, Y and Cybertruck. Official Tesla T; source URLs and image hashes in `assets.json`. Current product photos illustrate the model, not historical trims.
+- Separate bar, original Tesla website navigation icon and color for Model S, X, 3, Y and Cybertruck. Official Tesla T; URLs, variant names, alpha and hashes in `assets.json`. Use transparent Mega-Menu PNGs: legacy official menu assets for S/X; transparent PNG menu variants for 3/Y rather than the current US opaque JPEG cards; current Cybertruck menu PNG. Preserve Tesla pixels/colors; no AI recreation or locally removed backgrounds. Icons represent model families, not historical trims.
 - Fixed linear zero-baseline main scale; stable rank ties; continuous bounded smoothstep transitions through each quarter's race + narrative duration. A full-size chart keeps moving behind bottom narrative cards. ~ counters are explicitly labeled animation values; separate Qn END values are the published source totals. Labels only fade briefly at actual rank crossings (0.8s rank transitions). Small-model spotlight has an explicit separate DETAIL SCALE.
 - 480s / 28,800 frames at 60fps: 12s intro, 47 × 6s quarters, ten panels totaling 160s, 26s summary. Launch, head-to-head, annual, YoY and cumulative panels derive claims from data. Cumulative means selected period since 2015, not lifetime or all Tesla vehicles.
 - Prelaunch/missing stay null; neither is zero. Estimates always get ≈ and an estimate legend. A sourced estimate is not an independently verified precise count.
@@ -30,7 +30,7 @@ Independent Tesla quarter reports check the quarter and combined-group context *
 
 All 30 S/X/Cybertruck cells from 2024Q1 onward remain unaccepted pending reconciliation. For example, the chart's global Cybertruck 2024Q3 estimate (11,885) conflicts with KBB's US estimate (16,692). Neither is silently overwritten and US counts are never called worldwide. Five early individual cells and five 2026Q3 cells also remain missing. See `source-discovery.md`, `published-candidates.json`, `coverage.json` and `review.md` for every decision and source.
 
-`research.py` retains readable document hashes in ignored `out/sales-research`, reusing the older Tesla research cache where available. Regex extraction candidates include financial/production false positives; they are never facts automatically. A readable/HTTP200 source is not factual approval. Asset acquisition uses exact official product-page image URLs; changes invalidate data-review hashes.
+`research.py` retains readable document hashes in ignored `out/sales-research`, reusing the older Tesla research cache where available. Regex extraction candidates include financial/production false positives; they are never facts automatically. A readable/HTTP200 source is not factual approval. Asset acquisition (`sales/acquire-assets.py`) uses checked official Tesla menu PNG CDN URLs and preserves transparency; changes invalidate data-review hashes. Original photographs remain archived for old renders, but are no longer referenced by the current manifest.
 
 ## Preview authorization and full-film gate
 

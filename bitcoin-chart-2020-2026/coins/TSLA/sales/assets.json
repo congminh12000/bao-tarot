@@ -5,68 +5,113 @@
     "sha256": "7e5c7a431bf4562dfbf72cb6ee139903e18575c249ff567fe812c0a3e6e8b6fd"
   },
   "s": {
-    "file": "coins/TSLA/sales/assets/s.jpg",
-    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-S-New-Exterior-Carousel-Slide-1-Desktop-NA.png",
-    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Model-S-New-Exterior-Carousel-Slide-1-Desktop-NA.png",
-    "sourcePage": "https://www.tesla.com/models",
-    "sha256": "cbabe18168519232db1728871afd4dbbbedc5d493dcc7c2275a520acad6c8046",
+    "file": "coins/TSLA/sales/assets/menu-s.png",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_png,w_880/Mega-Menu-Vehicles-Model-S.png",
+    "sourcePage": "https://www.tesla.com/",
+    "menuEndpoint": "https://www.tesla.com/api/tesla/header/megamenu/v1_2",
+    "sha256": "6dd4909bb04a8672a41827ef180af267a4a462a4647c05a6b5ee586f19b05082",
     "pixels": [
-      1000,
-      725
+      880,
+      495
     ],
-    "checkedOn": "2026-10-29",
-    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+    "alphaRange": [
+      0,
+      255
+    ],
+    "checkedOn": "2026-10-30",
+    "role": "Official Tesla website vehicle navigation icon; original transparent menu PNG variant",
+    "variant": "Mega-Menu-Vehicles-Model-S.png",
+    "currentUSMenuExactAsset": false,
+    "variantNote": "Legacy official menu icon; S/X absent from current US menu",
+    "legacyDiscovery": "https://rotationyou.tistory.com/43"
   },
   "x": {
-    "file": "coins/TSLA/sales/assets/x.jpg",
-    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-X-New-Exterior-Carousel-Slide-1-Entry-Desktop.jpg",
-    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Model-X-New-Exterior-Carousel-Slide-1-Entry-Desktop.jpg",
-    "sourcePage": "https://www.tesla.com/modelx",
-    "sha256": "36241e2e2552196ee19c77ae244b89b8baeaec89043517920dc25fbf89683496",
+    "file": "coins/TSLA/sales/assets/menu-x.png",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-X.png",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_png,w_880/Mega-Menu-Vehicles-Model-X.png",
+    "sourcePage": "https://www.tesla.com/",
+    "menuEndpoint": "https://www.tesla.com/api/tesla/header/megamenu/v1_2",
+    "sha256": "0a3cc225c991edc9965cd26e367ea8063f2677288848132f1de9a49549bc6cb7",
     "pixels": [
-      1000,
-      725
+      880,
+      495
     ],
-    "checkedOn": "2026-10-29",
-    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+    "alphaRange": [
+      0,
+      255
+    ],
+    "checkedOn": "2026-10-30",
+    "role": "Official Tesla website vehicle navigation icon; original transparent menu PNG variant",
+    "variant": "Mega-Menu-Vehicles-Model-X.png",
+    "currentUSMenuExactAsset": false,
+    "variantNote": "Legacy official menu icon; S/X absent from current US menu",
+    "legacyDiscovery": "https://rotationyou.tistory.com/43"
   },
   "3": {
-    "file": "coins/TSLA/sales/assets/3.jpg",
-    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Social.jpg",
-    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Model-3-Social.jpg",
-    "sourcePage": "https://www.tesla.com/model3",
-    "sha256": "12d585ba0c49431dfaa436b924eb39cfbd2ea36b7d2cfb0e5842d373a975385f",
+    "file": "coins/TSLA/sales/assets/menu-3.png",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-3-Performance-LHD.png",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_png,w_880/Mega-Menu-Vehicles-Model-3-Performance-LHD.png",
+    "sourcePage": "https://www.tesla.com/",
+    "menuEndpoint": "https://www.tesla.com/api/tesla/header/megamenu/v1_2",
+    "sha256": "c095a39da40c7e245f5a90238306fa2d0dcf367c248c01a30ffa7b3550866132",
     "pixels": [
-      1000,
-      523
+      880,
+      495
     ],
-    "checkedOn": "2026-10-29",
-    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+    "alphaRange": [
+      0,
+      255
+    ],
+    "checkedOn": "2026-10-30",
+    "role": "Official Tesla website vehicle navigation icon; original transparent menu PNG variant",
+    "variant": "Mega-Menu-Vehicles-Model-3-Performance-LHD.png",
+    "currentUSMenuExactAsset": false,
+    "variantNote": "Official transparent PNG menu variant; current US menu delivers an opaque JPEG variant",
+    "legacyDiscovery": "https://freelancehunt.com/en/project/svg-images/1513155.html"
   },
   "y": {
-    "file": "coins/TSLA/sales/assets/y.jpg",
-    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-Y-Exterior-Carousel-Slide-1-Desktop.png",
-    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Model-Y-Exterior-Carousel-Slide-1-Desktop.png",
-    "sourcePage": "https://www.tesla.com/modely",
-    "sha256": "3051a5aa1cb4ecacb9c917f0f182fbcfa8529094146d0783d06a92f47650ead9",
+    "file": "coins/TSLA/sales/assets/menu-y.png",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-Y-2-v2.png",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_png,w_880/Mega-Menu-Vehicles-Model-Y-2-v2.png",
+    "sourcePage": "https://www.tesla.com/",
+    "menuEndpoint": "https://www.tesla.com/api/tesla/header/megamenu/v1_2",
+    "sha256": "66a08b205d73543d966908f037939a9adbb5bd98a6205e5a039fe236d8560f32",
     "pixels": [
-      1000,
-      500
+      880,
+      495
     ],
-    "checkedOn": "2026-10-29",
-    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+    "alphaRange": [
+      0,
+      255
+    ],
+    "checkedOn": "2026-10-30",
+    "role": "Official Tesla website vehicle navigation icon; original transparent menu PNG variant",
+    "variant": "Mega-Menu-Vehicles-Model-Y-2-v2.png",
+    "currentUSMenuExactAsset": false,
+    "variantNote": "Official transparent PNG menu variant; current US menu delivers an opaque JPEG variant",
+    "legacyDiscovery": "https://freelancehunt.com/en/project/svg-images/1513155.html"
   },
   "ct": {
-    "file": "coins/TSLA/sales/assets/ct.jpg",
-    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Main-Hero-Desktop-v3.jpg",
-    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_jpg,q_85,w_1000/Cybertruck-Main-Hero-Desktop-v3.jpg",
-    "sourcePage": "https://www.tesla.com/cybertruck",
-    "sha256": "1d166281848d27d4b9ddc9494c1d28ea97f8e1c475d907bf71106a401c279749",
+    "file": "coins/TSLA/sales/assets/menu-ct.png",
+    "sourceUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Cybertruck-1x.png",
+    "downloadUrl": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_png,w_880/Mega-Menu-Vehicles-Cybertruck-1x.png",
+    "sourcePage": "https://www.tesla.com/",
+    "menuEndpoint": "https://www.tesla.com/api/tesla/header/megamenu/v1_2",
+    "sha256": "d92815aa5e0266cecf1f8e5b52d4ae6e4a63d45a45440b9ed7207ae5f7a343b0",
     "pixels": [
-      1000,
-      549
+      880,
+      495
     ],
-    "checkedOn": "2026-10-29",
-    "role": "Official product photograph; current appearance, not a historical quarter-specific trim"
+    "alphaRange": [
+      0,
+      255
+    ],
+    "checkedOn": "2026-10-30",
+    "role": "Official Tesla website vehicle navigation icon; original transparent menu PNG variant",
+    "variant": "Mega-Menu-Vehicles-Cybertruck-1x.png",
+    "currentUSMenuExactAsset": true,
+    "variantNote": "Current menu icon",
+    "legacyDiscovery": null
   }
 }
